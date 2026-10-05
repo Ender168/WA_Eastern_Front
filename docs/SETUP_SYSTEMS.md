@@ -1,4 +1,4 @@
-# Competitive setup systems v0.4
+# Competitive setup systems v0.5
 
 ## Runtime bootstrap status
 
@@ -20,18 +20,23 @@ Economic Fatigue, laws, starting technologies, stockpiles, convoys and scripted
 industry reset effects are temporarily disabled. They are design requirements,
 not active runtime features in this bootstrap build.
 
-## Bookmark
+## Bookmark bootstrap
 
-WAEF replaces `common/bookmarks` and exposes a single bookmark:
+WAEF no longer replaces `common/bookmarks`.
+
+World Ablaze keeps its own default 1936 bookmark and startup path. WAEF adds a
+separate `common/bookmarks/waef_1941.txt` bookmark:
 
 - 1 January 1941 at 12:00;
-- WEF as the default country;
-- `default = yes`, matching World Ablaze's primary Gathering Storm bookmark;
+- WEF as the scenario default country;
 - WEF and EEF as the two displayed player countries;
-- weather randomization plus the `waef_scenario_1941` global flag.
+- weather randomization plus the `waef_scenario_1941` global flag;
+- no `default = yes` marker.
 
-The explicit default marker is required while WAEF replaces all upstream
-bookmarks, otherwise there is no remaining default bookmark definition.
+This intentionally separates application/frontend startup from loading the
+experimental 1941 scenario. If HoI4 reaches the normal frontend but crashes only
+after selecting WAEF 1941, the fault is inside the scenario runtime rather than
+bookmark registration or base frontend initialization.
 
 ## Player countries
 
@@ -47,7 +52,7 @@ European civilian portraits:
 - EEF: `portrait_europe_generic_5.dds`.
 
 They use `despotism`, have no traits and contain no original-tag or national
-conditions. This avoids inheriting any GER/SOV/minor-country character logic.
+conditions.
 
 ## Geography baseline
 
@@ -68,7 +73,7 @@ tungsten, chromium, coal, bauxite and iron. Steel and aluminium remain zero.
 
 ## Country and unit history
 
-The mod replaces `history/countries` and `history/units`.
+The mod still replaces `history/countries` and `history/units`.
 
 Only WEF, EEF and OBS receive scenario country histories. Historical GER/SOV OOB,
 production, faction, advisor and national-spirit setup is not inherited.
