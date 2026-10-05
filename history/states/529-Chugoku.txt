@@ -1,0 +1,53 @@
+
+state = {
+	id = 529
+	name ="STATE_529" # Chugoku
+	manpower = 550000
+	state_category = metropolis
+
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 7
+			air_base = 5
+			dockyard = 5
+			arms_factory = 5
+			industrial_complex = 3
+			steel_refinery = 3
+			1092 = {
+				naval_base = 5
+				naval_headquarters = { # Hashirajima - major anchorage for the combined fleet
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
+			}
+		}
+
+		victory_points = {
+			7212 10
+		}
+		victory_points = {
+			1092 10
+		}
+	}
+
+	provinces = {
+		1092
+		1167
+		1191
+		4197
+		7050
+		7145
+		7212
+		9968
+		10052
+		10055
+		11946
+		11985
+	}
+}

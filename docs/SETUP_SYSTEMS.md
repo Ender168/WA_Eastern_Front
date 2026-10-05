@@ -1,32 +1,43 @@
-# Competitive setup systems v0.14 — two-country frontend validation
+# Competitive setup systems v0.15 — full static map retest
 
-## Confirmed root cause
+## Confirmed working baseline
 
-WAEF country tags must be declared before World Ablaze's
-`zz_dynamic_countries.txt` file, which starts with `dynamic_tags = yes`.
+The WAEF tags now load before World Ablaze's `dynamic_tags = yes` boundary.
 
-After renaming the WAEF tag file to `01_waef_countries.txt`, the frontend
-successfully opens with state 810 owned by WEF.
+Confirmed in-game:
+- the WAEF country-selection screen opens;
+- WEF and EEF are both selectable;
+- WEF can own East Berlin (810);
+- EEF can own Moscow (219);
+- singleplayer launches successfully at 1941.1.1.12.
 
-## Current validation target
+## Full-map retest
 
-Restore the actual WAEF scenario-selection shell while keeping map ownership
-minimal:
+Restore the previously generated complete scenario state map from the last
+known 182 / 182 / 743 static-map revision, but keep the corrected static-tag
+ordering and the now-working WEF/EEF bookmark.
 
-- start date: 1941.1.1.12;
-- default/selectable countries: WEF and EEF only;
-- WEF owns and cores state 810 (East Berlin);
-- EEF owns and cores state 219 (Moscow);
-- all other states remain native World Ablaze ownership;
-- World Ablaze country histories and OOBs remain available;
-- scenario flag `waef_scenario_1941` is restored;
-- weather initialization remains enabled.
+Ownership:
+- WEF: 182 states;
+- EEF: 182 states;
+- OBS: 743 states.
 
-This validates that both custom countries can coexist as ordinary static tags,
-own their capitals and appear together in the country-selection frontend.
+This deliberately reuses the previous state-map snapshot rather than
+regenerating it, so the test isolates the effect of the country-tag fix.
 
-## Next step after successful validation
+## What remains intentionally unchanged
 
-Scale state ownership from the two-capital bootstrap to the intended
-WEF / EEF / OBS map, preserving upstream World Ablaze state structure rather
-than altering unrelated map data at the same time.
+- start date remains 1941.1.1.12;
+- WEF and EEF remain the only bookmark countries;
+- World Ablaze country histories and OOBs are still active for this validation;
+- World Ablaze decision content is still active, so unrelated decisions may
+  appear during this stage.
+
+## Success criterion
+
+If the country-selection screen and game start remain stable with all 1107
+states assigned to WEF / EEF / OBS, the former full-map CTD was caused by the
+late dynamic-tag registration rather than the state-map architecture.
+
+After that, the next cleanup layer is to remove irrelevant historical
+country/OOB/decision runtime content and then restore only WAEF systems.

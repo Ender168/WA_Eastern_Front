@@ -1,0 +1,77 @@
+
+state = {
+	id = 335
+	name ="STATE_335" # Java
+	manpower = 550000
+
+	state_category = city
+
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			7381 10
+		}
+		victory_points = {
+			4608 10
+		}
+		victory_points = {
+			4406 10
+		}
+		victory_points = {
+			7421 10
+		}
+		victory_points = {
+			1413 10
+		}
+		victory_points = {
+			7223 10
+		}
+		victory_points = {
+			10479 10
+		}
+
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 5
+			7381 = {
+				naval_base = 5
+			}
+			4608 = {
+				naval_base = 5
+			}
+		}
+	}
+
+	provinces = {
+		1209
+		1386
+		1398
+		1413
+		1425
+		4306
+		4390
+		4406
+		4434
+		4608
+		4621
+		7223
+		7381
+		7421
+		7642
+		7654
+		10135
+		10279
+		10307
+		10479
+		10491
+		12249
+		12277
+		12293
+		12472
+	}
+}

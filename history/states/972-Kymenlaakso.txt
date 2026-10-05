@@ -1,0 +1,33 @@
+
+state = {
+	id = 972
+	name ="STATE_972" # Kymenlaakso
+	manpower = 550000
+
+	state_category = pastoral
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			3061 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+		}
+	}
+
+	provinces = {
+		52
+		139
+		3061
+		3131
+		6082
+		6186
+		9183
+		11056
+		13105
+	}
+}

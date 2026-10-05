@@ -1,0 +1,35 @@
+
+state = {
+	id = 565
+	name ="STATE_565" # Bodaybo
+	manpower = 550000
+	state_category = pastoral
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+		}
+	}
+
+	provinces = {
+		1666
+		1761
+		4716
+		4762
+		4795
+		4835
+		4868
+		7736
+		7759
+		7854
+		10583
+		10654
+		12506
+		12538
+		12575
+	}
+}

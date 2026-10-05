@@ -1,0 +1,30 @@
+
+state = {
+	id = 986
+	name ="STATE_986" # Puglia
+	manpower = 550000
+
+	state_category = town
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = {
+			9784 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			industrial_complex = 3
+		}
+	}
+
+	provinces = {
+		883
+		6843
+		6939
+		6980
+		9784
+	}
+}

@@ -1,0 +1,28 @@
+state = {
+	id = 793
+	name ="STATE_793"
+	manpower = 550000
+
+	state_category = enclave
+	impassable = yes
+
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+		}
+	}
+	provinces = {
+		2226
+		8149
+		8160
+		8191
+		8213
+		10940
+		12869
+	}
+}

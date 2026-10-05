@@ -1,0 +1,44 @@
+
+state = {
+	id = 307
+	name ="STATE_307" # Miranda
+
+	state_category = city
+	manpower = 550000
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 10
+			air_base = 5
+			8113 = {
+				naval_base = 5
+			}
+			10912 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			8113 10
+		}
+
+	}
+
+	provinces = {
+		4942
+		7968
+		8024
+		8080
+		8113
+		10767
+		10823
+		10912
+		5056
+		4892
+		5000
+	}
+}

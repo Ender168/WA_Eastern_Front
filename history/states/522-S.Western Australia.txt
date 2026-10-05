@@ -1,0 +1,52 @@
+
+state = {
+	id = 522
+	name ="STATE_522"
+	manpower = 550000
+	state_category = rural
+
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			air_base = 5
+			1652 = {
+				naval_base = 5
+				coastal_bunker = 1
+			}
+		}
+		victory_points = {
+			1652 10
+		}
+	}
+
+	provinces = {
+		1526
+		1540
+		1652
+		2157
+		2191
+		4630
+		5175
+		7453
+		7579
+		7608
+		8130
+		8200
+		8228
+		8243
+		10949
+		10969
+		10983
+		10997
+		11011
+		12948
+		12962
+		12976
+		12990
+	}
+}

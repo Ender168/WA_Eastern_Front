@@ -1,0 +1,23 @@
+state = {
+	id = 893
+	name ="STATE_893"
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			industrial_complex = 1
+		}
+	}
+
+	provinces = {
+		9412
+		13205
+	}
+	manpower = 550000
+	buildings_max_level_factor =1.000
+	state_category =rural
+}

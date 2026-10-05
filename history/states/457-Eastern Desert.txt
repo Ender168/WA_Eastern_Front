@@ -1,0 +1,29 @@
+state = {
+	id = 457
+	name ="STATE_457" # Eastern Desert
+	manpower = 550000
+
+	state_category = pastoral
+	
+	
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+		}
+
+	}
+	provinces = {
+		4068
+		4910
+		5069
+		7156
+		12002
+		12889
+		13963
+		13964
+	}
+}

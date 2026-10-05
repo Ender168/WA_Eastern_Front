@@ -1,0 +1,38 @@
+state = {
+	id = 785
+	name ="STATE_785"
+	manpower = 550000
+
+	state_category = large_town
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = {
+			11420 10
+		}
+		victory_points = {
+			9561 10
+		}
+		victory_points = {
+			6585 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			industrial_complex = 6
+			aluminium_refinery = 2
+		}
+	}
+
+	provinces = {
+		454
+		3402
+		3447
+		6585
+		9561
+		11420
+		11549
+	}
+}

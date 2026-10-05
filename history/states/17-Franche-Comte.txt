@@ -1,0 +1,42 @@
+
+state = {
+	id = 17
+	name ="STATE_17" # Lorraine
+	manpower = 550000
+
+	state_category = large_city
+
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = {
+			9642 10
+		}
+		victory_points = {
+			11516 10
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 6
+			arms_factory = 3
+			steel_refinery = 5
+			air_base = 5
+			anti_air_building = 4
+		}
+	}
+
+	provinces = {
+		521
+		698
+		3646
+		3666
+		6698
+		9642
+		9658
+		11488
+		11516
+		11642
+	}
+}

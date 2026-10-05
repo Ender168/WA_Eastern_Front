@@ -1,0 +1,32 @@
+
+state = {
+	id = 966
+	name ="STATE_966"
+	manpower = 550000
+
+	state_category = city
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		victory_points = {
+			9340 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 3
+			9340 = {
+				naval_base = 5
+			}
+		}
+	}
+
+	provinces = {
+		9240
+		9340
+		10323
+	}
+}

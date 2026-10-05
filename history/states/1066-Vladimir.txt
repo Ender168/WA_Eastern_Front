@@ -1,0 +1,43 @@
+
+state = {
+	id = 1066
+	name ="STATE_1066"
+	manpower = 550000
+
+	state_category = large_town
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 1
+			steel_refinery = 2
+		}
+		victory_points = {
+			6269 10
+		}
+	}
+
+	provinces = {
+		346
+		3240
+		3347
+		6135
+		6215
+		6247
+		6269
+		6358
+		9033
+		9159
+		9257
+		9267
+		11134
+		11239
+		11252
+		11338
+	}
+}

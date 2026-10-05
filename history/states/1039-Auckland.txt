@@ -1,0 +1,53 @@
+
+state = {
+	id = 1039
+	name ="STATE_1039" # North Island
+	manpower = 550000
+
+
+	state_category = large_town
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 5
+			air_base = 5
+			4543 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			10334 10
+		}
+		victory_points = {
+			7887 10
+		}
+		victory_points = {
+			12664 10
+		}
+		victory_points = {
+			4543 10
+		}
+	}
+
+	provinces = {
+		1565
+		1713
+		1746
+		4543
+		4615
+		4718
+		4748
+		7742
+		7887
+		10334
+		10373
+		10609
+		10710
+		12362
+		12664
+	}
+}

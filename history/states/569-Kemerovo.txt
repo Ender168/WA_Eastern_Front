@@ -1,0 +1,39 @@
+
+state = {
+	id = 569
+	name ="STATE_569" # Kemerovo
+	manpower = 550000
+
+	state_category = town
+	
+	
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		victory_points = {
+			4665 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			industrial_complex = 1
+		}
+	}
+
+	provinces = {
+		1369
+		1685
+		1702
+		1816
+		4665
+		4789
+		4793
+		7757
+		7822
+		7886
+		10580
+		10649
+		12631
+	}
+}

@@ -1,0 +1,31 @@
+state = {
+	id = 770
+	name ="STATE_770"
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			12986 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+
+		}
+
+	}
+
+	provinces = {
+		2255
+		12908
+		12986
+		13209
+		14159
+		14166
+	}
+	manpower = 550000
+	buildings_max_level_factor =1.000
+	state_category =pastoral
+}

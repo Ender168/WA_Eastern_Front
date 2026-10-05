@@ -1,0 +1,39 @@
+
+state = {
+	id = 533
+	name ="STATE_533" # Tohoku
+	manpower = 550000
+	buildings_max_level_factor = 1.000
+
+	state_category = metropolis
+
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			arms_factory = 2
+			industrial_complex = 3
+			fuel_silo = 1
+			infrastructure = 7
+			air_base = 5
+			7169 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			7169 10
+		}
+	}
+
+	provinces = {
+		1024
+		4067
+		4118
+		4122
+		4153
+		7169
+		14296
+	}
+}

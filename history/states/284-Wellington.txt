@@ -1,0 +1,45 @@
+
+state = {
+	id = 284
+	name ="STATE_284" # North Island
+	manpower = 550000
+
+	state_category = city
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 3
+			air_base = 5
+			1814 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			12604 10
+		}
+		victory_points = {
+			1801 10
+		}
+		victory_points = {
+			1814 10
+		}
+	}
+
+	provinces = {
+		1786
+		1801
+		1814
+		4804
+		7692
+		7783
+		7826
+		12604
+		12617
+		13977
+	}
+}

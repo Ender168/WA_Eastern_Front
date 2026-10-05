@@ -1,0 +1,40 @@
+
+state = {
+	id = 51
+	name ="STATE_51"
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = {
+			587 10
+		}
+		victory_points = {
+			6414 10
+		}
+		victory_points = {
+			9522 10
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 14
+			steel_refinery = 3
+			air_base = 5
+
+		}
+		set_demilitarized_zone = yes
+	}
+
+	provinces = {
+		587
+		3444
+		3547
+		6414
+		9522
+	}
+	manpower = 550000
+	buildings_max_level_factor =1.000
+	state_category =megalopolis
+}

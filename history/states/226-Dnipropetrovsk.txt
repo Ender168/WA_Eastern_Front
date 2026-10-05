@@ -1,0 +1,44 @@
+
+state = {
+	id = 226
+	name ="STATE_226" # Dnipropertovsk
+	manpower = 550000
+
+	state_category = town
+
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		victory_points = {
+			11437 10
+		}
+		victory_points = {
+			11561 10
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 4
+			aluminium_refinery = 1
+			air_base = 5
+		}
+	}
+
+	provinces = {
+		453
+		472
+		486
+		6423
+		9419
+		9433
+		9463
+		9479
+		11422
+		11437
+		11452
+		11561
+		13593
+	}
+}

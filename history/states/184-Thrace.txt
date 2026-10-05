@@ -1,0 +1,30 @@
+
+state = {
+	id = 184
+	name ="STATE_184"
+	manpower = 550000
+
+	state_category = pastoral
+
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = {
+			11905 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+		}
+	}
+
+	provinces = {
+		6990
+		9791
+		9930
+		11774
+		11905
+	}
+}

@@ -1,0 +1,35 @@
+state = {
+	id = 719
+	name ="STATE_719" # Natal
+	manpower = 550000
+
+	state_category = town
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 5
+			13604 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			13604 10
+		}
+	}
+
+	provinces = {
+		1468
+		1494
+		4556
+		7900
+		8178
+		13604
+		14407
+	}
+}

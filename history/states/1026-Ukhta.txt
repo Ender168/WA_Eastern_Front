@@ -1,0 +1,30 @@
+
+state = {
+	id = 1026
+	name ="STATE_1026"
+	manpower = 550000
+	state_category = pastoral
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		victory_points = {
+			1295 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+		}
+	}
+
+	provinces = {
+		1295
+		4298
+		7712
+		7898
+		10579
+		12393
+		12558
+	}
+}

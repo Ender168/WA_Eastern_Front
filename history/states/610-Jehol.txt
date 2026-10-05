@@ -1,0 +1,60 @@
+
+state = {
+	id = 610
+	name ="STATE_610" # Jehol
+	manpower = 550000
+
+	state_category = rural
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		#
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			9927 10
+		}
+		victory_points = {
+			7633 10
+		}
+	}
+
+	provinces = {
+		814
+		934
+		972
+		1508
+		3814
+		3828
+		3877
+		3881
+		3934
+		3978
+		4514
+		6852
+		6898
+		6988
+		7575
+		7633
+		9905
+		9927
+		10426
+		10429
+		10499
+		11855
+		11903
+		12478
+		14334
+		14335
+		14336
+		14337
+		14338
+		14341
+	}
+}

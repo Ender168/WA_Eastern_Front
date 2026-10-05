@@ -1,0 +1,52 @@
+
+state = {
+	id = 429
+	name ="STATE_429"
+	manpower = 550000
+	state_category = large_town
+
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			1349 10
+		}
+		victory_points = {
+			12182 10
+		}
+		victory_points = {
+			7060 10
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 2
+			steel_refinery = 1
+			dockyard = 1
+			air_base = 5
+			1349 = {
+				naval_base = 5
+			}
+		}
+	}
+
+	provinces = {
+		1349
+		1405
+		4072
+		4353
+		7013
+		7060
+		7119
+		7177
+		7232
+		10019
+		10210
+		10270
+		12142
+		12182
+		12269
+	}
+}

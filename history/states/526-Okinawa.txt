@@ -1,0 +1,83 @@
+
+state = {
+	id = 526
+	name ="STATE_526"
+	manpower = 550000
+
+	state_category = pastoral
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 7
+			air_base = 5
+			industrial_complex = 1
+			11932 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			11932 10
+		}
+		victory_points = {
+			8185 10
+		}
+		strategic_province_location = {
+			defensible_coastline = 1123
+		}
+		strategic_province_location = {
+			defensible_coastline = 5008
+		}
+		strategic_province_location = {
+			defensible_coastline = 7115
+		}
+		strategic_province_location = {
+			defensible_coastline = 8185
+		}
+		strategic_province_location = {
+			defensible_coastline = 10124
+		}
+		strategic_province_location = {
+			defensible_coastline = 11932
+		}
+		strategic_province_location = {
+			defensible_coastline = 13271
+		}
+		strategic_province_location = {
+			defensible_coastline = 13994
+		}
+		strategic_province_location = {
+			defensible_coastline = 13995
+		}
+		strategic_province_location = {
+			defensive_chokepoint = 13994
+		}
+		strategic_province_location = {
+			defensive_chokepoint = 8185
+		}
+		strategic_province_location = {
+			defensive_chokepoint = 13995
+		}
+		strategic_province_location = {
+			defensive_chokepoint = 11932
+		}
+		strategic_state_location = {
+			favorable_approach = 13271
+		}
+		
+	} 
+
+	provinces = {
+		1123
+		5008
+		7115
+		8185
+		10124
+		11932
+		13271
+		13994
+		13995
+	}
+}

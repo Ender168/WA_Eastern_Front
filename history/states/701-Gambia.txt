@@ -1,0 +1,31 @@
+state = {
+	id = 701
+	name ="STATE_701"
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			4989 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			4989 = {
+				naval_base = 5
+
+			}
+
+		}
+
+	}
+
+	provinces = {
+		4989
+		13213
+	}
+	manpower = 550000
+	buildings_max_level_factor =1.000
+	state_category =enclave
+}

@@ -1,0 +1,36 @@
+
+state = {
+	id = 535
+	name ="STATE_535" # Koshinetsu
+	manpower = 550000
+	state_category = large_city
+
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			air_base = 5
+			arms_factory = 4
+			industrial_complex = 6
+			infrastructure = 7
+			fuel_silo = 1
+
+		}
+
+		victory_points = {
+			10032 10
+		}
+
+	}
+
+	provinces = {
+		998
+		7102
+		7217
+		10015
+		10032
+		14299
+	}
+}

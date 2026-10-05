@@ -1,0 +1,41 @@
+
+state = {
+	id = 898
+	name ="STATE_898"
+	manpower = 550000
+
+	state_category = rural
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			3893 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			industrial_complex = 1
+			13319 = {
+				naval_base = 5
+			}
+		}
+		if = {
+			limit = { has_dlc = "Battle for the Bosporus"}
+			set_demilitarized_zone = yes
+		}
+	}
+
+	provinces = {
+		849
+		922
+		3879
+		3893
+		6895
+		11842
+		13319
+		13907
+		13908
+	}
+}

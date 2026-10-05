@@ -1,0 +1,39 @@
+
+state = {
+	id = 26
+	name ="STATE_26" # Auveregne
+	manpower = 550000
+
+	state_category = town
+
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = {
+			3594 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 2
+			fuel_silo = 2
+		}
+	}
+
+	provinces = {
+		590
+		769
+		3594
+		3754
+		6644
+		6773
+		6789
+		9593
+		9607
+		9748
+		11576
+	}
+}

@@ -1,0 +1,35 @@
+state = {
+	id = 605
+	name ="STATE_605"
+	manpower = 550000
+	buildings_max_level_factor =1.000
+	state_category = metropolis
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		#
+		buildings = {
+			infrastructure = 7
+			arms_factory = 5
+			industrial_complex = 4
+			air_base = 5
+		}
+		victory_points = {
+			6999 10
+		}
+	}
+
+	provinces = {
+		1395
+		6999
+		7240
+		12705
+		13546
+		13708
+		13709
+		13778
+		13779
+	}
+}

@@ -1,0 +1,28 @@
+
+state = {
+	id = 999
+	name ="STATE_999"
+	manpower = 550000
+
+	state_category = large_town
+
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			industrial_complex = 2
+		}
+	}
+
+	provinces = {
+		591
+		984
+		3601
+		6611
+		11901
+	}
+}

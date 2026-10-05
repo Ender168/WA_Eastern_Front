@@ -1,0 +1,44 @@
+
+state = {
+	id = 273
+	name ="STATE_273" # Libyan Desert
+	manpower = 550000
+
+	state_category = wasteland_impassable
+	impassable = yes
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+		}
+	}
+
+	provinces = {
+		1057
+		1060
+		1140
+		1186
+		1994
+		4191
+		4962
+		5004
+		7076
+		7985
+		8069
+		9977
+		10104
+		10754
+		10785
+		10884
+		11951
+		12022
+		12082
+		12866
+		13475
+		13508
+	}
+}

@@ -1,0 +1,45 @@
+
+state = {
+	id = 208
+	name ="STATE_208" # Luga
+	manpower = 550000
+
+	state_category = rural
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		buildings = {
+			infrastructure = 7
+			air_base = 5
+			industrial_complex = 1
+			104 = {
+				bunker = 1
+			}
+			126 = {
+				bunker = 1
+			}
+		}
+		victory_points = {
+			9098 10
+		}
+	}
+
+	provinces = {
+		79
+		104
+		126
+		181
+		3120
+		6139
+		6174
+		6197
+		9097
+		9098
+		11032
+		11080
+		11139
+		11186
+	}
+}

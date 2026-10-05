@@ -1,0 +1,41 @@
+
+state = {
+	id = 210
+	name ="STATE_210" # Nevel
+	manpower = 550000
+
+	state_category = rural
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			industrial_complex = 1
+		}
+		victory_points = {
+			11234 10
+		}
+		victory_points = {
+			9386 10
+		}
+	}
+
+	provinces = {
+		207
+		248
+		354
+		387
+		3333
+		6242
+		6293
+		9254
+		9331
+		9353
+		9386
+		11234
+		11259
+	}
+}

@@ -1,0 +1,28 @@
+state = {
+	id = 45
+	name ="STATE_45"
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = { 3617 10 }
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			industrial_complex = 3
+		}
+
+	}
+
+	provinces = {
+		619
+		3617
+		3623
+		9608
+		9621
+	}
+	manpower = 550000
+	buildings_max_level_factor =1.000
+	state_category =town
+}

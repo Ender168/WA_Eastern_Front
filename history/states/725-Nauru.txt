@@ -1,0 +1,26 @@
+state = {
+	id = 725
+	name ="STATE_725"
+	manpower = 550000
+	state_category = tiny_island
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			13038 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			13038 10
+		}
+	}
+
+	provinces = {
+		13038
+	}
+}
