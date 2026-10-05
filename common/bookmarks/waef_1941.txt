@@ -1,0 +1,28 @@
+bookmarks = {
+    bookmark = {
+        name = "WAEF_1941_NAME"
+        desc = "WAEF_1941_DESC"
+        date = 1941.1.1.12
+        picture = "GFX_select_date_1939"
+        default_country = "WEF"
+
+        "WEF" = {
+            history = "WAEF_WEF_DESC"
+            ideology = neutrality
+            ideas = { }
+            focuses = { }
+        }
+
+        "EEF" = {
+            history = "WAEF_EEF_DESC"
+            ideology = neutrality
+            ideas = { }
+            focuses = { }
+        }
+
+        effect = {
+            randomize_weather = 12345
+            set_global_flag = waef_scenario_1941
+        }
+    }
+}
