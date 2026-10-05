@@ -1,52 +1,70 @@
 # WA Eastern Front
 
-Competitive Germany vs Soviet Union scenario built as a thin submod for
-**World Ablaze (9.6)**.
+Competitive two-player Eastern Front scenario built on **World Ablaze (9.6)**.
 
 ## Scenario baseline
 
 - start date: **1 January 1941**;
-- World Ablaze remains the ruleset and map source;
-- Germany and the Soviet Union are the two intended player countries;
-- the rest of the world is consolidated under a dedicated passive `OBS` tag;
-- no World Ablaze map/state files are copied;
-- GER and SOV use clean symmetric country-history baselines;
+- World Ablaze remains the mechanical and geographical base;
+- the playable countries are custom scenario tags:
+  - `WEF` - Western Side;
+  - `EEF` - Eastern Side;
+- `OBS` owns the rest of the world;
+- WEF and EEF have no ruler, advisors or inherited GER/SOV characters;
+- historical World Ablaze country histories and OOBs are replaced;
+- all 1107 World Ablaze states are statically assigned to WEF, EEF or OBS;
 - normal focus-tree progression is disabled;
-- both players begin on World Ablaze generic/minor technology access;
-- World Ablaze national technology packages are selectable through adapted versions of its existing adoption decisions;
-- both players start with 30 civilian factories and choose one military-industry layout:
-  - **Forward Industry:** 60 MIL, concentrated closer to the front;
-  - **Deep Industry:** 50 MIL, dispersed into the rear.
+- both players begin with generic/minor World Ablaze technology access;
+- World Ablaze national technology packages remain available through adapted adoption decisions;
+- both players receive the same civilian industrial baseline and choose:
+  - **Forward Industry:** 60 MIL closer to the front;
+  - **Deep Industry:** 50 MIL in the rear.
 
-## Core implementation
+## Static map
 
-- `common/bookmarks/waef_1941.txt`
-- `common/scripted_effects/waef_map_setup.txt`
-- `common/scripted_effects/waef_industry_setup.txt`
-- `common/decisions/waef_industry.txt`
-- `history/countries/GER - Germany.txt`
-- `history/countries/SOV - Soviet union.txt`
-- `history/countries/OBS - Observer.txt`
+The complete generated state set lives in `history/states`.
 
-## World Ablaze compatibility overrides
+Ownership totals:
 
-Two World Ablaze files are intentionally copied and minimally patched:
+- WEF: **106 states**
+- EEF: **182 states**
+- OBS: **819 states**
+- Total: **1107 states**
 
-- `common/technology_tags/00_technology.txt`
+The state generator is kept in `tools/generate_static_states.py` and is pinned
+to World Ablaze commit `691c7085f3ec1333ac2a0742983da8a64011ca8b`.
+
+See `docs/STATIC_MAP.md`.
+
+## Replace paths
+
+WAEF replaces:
+
+- `common/bookmarks`;
+- `history/states`;
+- `history/countries`;
+- `history/units`.
+
+The original GER/SOV country-history overrides and the old scripted map-transfer
+system have been removed.
+
+## Technology
+
+WEF and EEF are new minor-style tags, so no `technology_tags` override is
+required. The only retained upstream compatibility copy is:
+
 - `common/decisions/_unique_technologies_adoption.txt`
 
-These files must be diffed against upstream World Ablaze after relevant WA updates.
-The project otherwise avoids copying World Ablaze systems.
+It preserves World Ablaze's existing technology packages and backfill effects,
+while allowing WEF/EEF to use them without a donor faction relationship.
 
 ## Next systems
 
-1. Starting armies, templates and equipment pools.
-2. Fixed war-start rules and preparation period.
-3. Manpower/resource normalization where required.
-4. Long-war and defensive-depth mechanics.
-5. Periodic strategic scoring.
-
-See `docs/MAP_SETUP.md` and `docs/SETUP_SYSTEMS.md`.
+1. Runtime validation of the static 1941 scenario.
+2. Starting armies, templates and equipment pools.
+3. Fixed war-start rules and preparation period.
+4. Manpower/resource balancing if testing shows it is required.
+5. Strategic scoring and defensive-depth mechanics.
 
 ## Dependency
 
