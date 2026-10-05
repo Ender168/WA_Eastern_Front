@@ -1,45 +1,40 @@
-# Competitive setup systems v0.10 — two-state WAEF bootstrap
+# Competitive setup systems v0.11 — pure World Ablaze 1941 date control
 
 ## Purpose
 
-The full upstream-history control build launches successfully. This proves that
-World Ablaze plus WAEF's remaining common content can reach and remain in the
-frontend.
+The normal World Ablaze 1936 frontend is stable, while the minimal WAEF build
+with only two state ownership changes still exits after frontend startup.
 
-This diagnostic build restores the WAEF scenario in the smallest useful form.
+This control isolates the bookmark date from every WAEF map/country change.
 
-## Bookmark
+## Configuration
 
-WAEF again replaces `common/bookmarks` and exposes only the 1 January 1941
-bookmark with WEF as the default country and EEF as the second player country.
+- `common/bookmarks` is still replaced so only one bookmark is exposed.
+- The bookmark content is copied from World Ablaze's own
+  `common/bookmarks/blitzkrieg.txt` at pinned commit
+  `691c7085f3ec1333ac2a0742983da8a64011ca8b`.
+- The only functional change to that upstream bookmark is:
+  `1939.8.14.12 -> 1941.1.1.12`.
+- Default country remains GER.
+- All listed major/minor countries remain the upstream World Ablaze set.
+- The normal World Ablaze weather effect is preserved.
+- There are no WAEF state-history overrides.
+- There is no `replace_path` for states, countries or units.
+- World Ablaze provides all state ownership, country histories and OOBs.
 
-## State history
-
-WAEF does **not** replace `history/states`.
-
-Only two state files are overridden by matching World Ablaze paths:
-
-- state 810 (East Berlin): owner/core changed from GER to WEF;
-- state 219 (Moscow): owner/core changed from SOV to EEF.
-
-Every other state is loaded unchanged from World Ablaze.
-
-No manpower, building, resource or victory-point normalization is applied.
-No OBS ownership is applied.
-
-## Country and unit history
-
-WAEF does not replace `history/countries` or `history/units`.
-
-World Ablaze's normal country histories and OOB therefore remain active, while
-the existing WEF/EEF/OBS history files are added alongside them.
+WEF/EEF/OBS definitions remain installed but are not referenced by this
+bookmark and own no states in this control.
 
 ## Diagnostic interpretation
 
-If this build remains stable, custom WEF/EEF tags, the WAEF 1941 bookmark and
-basic custom state ownership are valid. The crash in the full map build must
-then come from scaling or from one of the transformations performed across the
-1,107 generated state files.
+If this build crashes in the frontend, a direct 1 January 1941 bookmark against
+World Ablaze's historical database is sufficient to reproduce the failure.
+The WAEF map and custom player tags are then exonerated.
 
-If this build crashes, the failure is already reproducible with only two custom
-state owners, greatly narrowing the remaining compatibility problem.
+If this build remains stable, the 1941 date itself is valid and the next test
+will isolate WEF/EEF activation without changing map ownership.
+
+## Intended final scenario
+
+This is diagnostic only. The final scenario remains a symmetric WEF vs EEF
+Eastern Front setup beginning on 1 January 1941.
