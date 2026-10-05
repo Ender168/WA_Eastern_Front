@@ -2,26 +2,23 @@
 state = {
 	id = 31
 	name ="STATE_31"
-	manpower = 1825000
+	manpower = 550000
 
 	state_category = city
 
-	resources = {
-		iron = 16
-	}
 
 	history = {
-		owner = OBS
-		controller = OBS
-		add_core_of = OBS
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
 		victory_points = {
-			6766 15
+			6766
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 			arms_factory = 1
 			industrial_complex = 11
-			air_base = 2
+			air_base = 5
 
 		}
 	}

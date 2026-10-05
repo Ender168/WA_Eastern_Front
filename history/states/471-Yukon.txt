@@ -1,21 +1,18 @@
 state = {
 	id = 471
 	name = "STATE_471" # Northwestern Canada
-	manpower = 4681
+	manpower = 550000
 
 	state_category = wasteland
 
-	resources = {
-		iron = 15
-		chromium = 1
-	}
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 1
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

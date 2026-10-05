@@ -2,32 +2,42 @@
 state = {
 	id = 219
 	name ="STATE_219"
-	manpower = 8335992
+	manpower = 550000
 
 	state_category = megalopolis
 
-	history = {
+	
+	resources = {
+		oil = 10
+		rubber = 10
+		tungsten = 10
+		chromium = 10
+		coal = 10
+		bauxite = 10
+		iron = 10
+	}
+history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			6380 50
+			6380
 		}
 		victory_points = {
-			11330 1
+			11330
 		}
 		victory_points = {
-			6290 1
+			6290
 		}
 		victory_points = {
-			9302 1
+			9302
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 			arms_factory = 10
 			industrial_complex = 7
 			synthetic_refinery = 3
-			air_base = 8
+			air_base = 5
 			fuel_silo = 1
 
 			6380 = {

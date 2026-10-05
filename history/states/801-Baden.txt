@@ -2,26 +2,23 @@ state = {
 	id = 801
 	name ="STATE_801"
 
-	resources = {
-		iron = 41
-	}
 
 	history = {
 		owner = WEF
 		controller = WEF
 		add_core_of = WEF
 		victory_points = {
-			6568 3
+			6568
 		}
 		victory_points = {
-			3530 1
+			3530
 		}
 
 		buildings = {
-			infrastructure = 8
+			infrastructure = 7
 			arms_factory = 5
 			industrial_complex = 9
-			air_base = 3
+			air_base = 5
 		}
 		set_demilitarized_zone = yes
 
@@ -40,7 +37,7 @@ state = {
 		11640
 		13233
 	}
-	manpower =3000000
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =large_city
 }

@@ -2,19 +2,16 @@
 state = {
 	id = 20
 	name ="STATE_20" # Rhone
-	manpower = 2973200
-	resources = {
-		coal = 158
-	}
+	manpower = 550000
 
 	state_category = metropolis
 
 	history = {
-		owner = OBS
-		controller = OBS
-		add_core_of = OBS
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
 		victory_points = {
-			6613 20
+			6613
 		}
 		buildings = {
 			infrastructure = 7
@@ -22,7 +19,7 @@ state = {
 			industrial_complex = 7
 			aluminium_refinery = 1
 			steel_refinery = 1
-			air_base = 4
+			air_base = 5
 		}
 		
 	}

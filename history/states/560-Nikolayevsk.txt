@@ -2,26 +2,24 @@
 state = {
 	id = 560
 	name ="STATE_560" # Nikolayevsk
-	manpower = 97663
+	manpower = 550000
 
 	state_category = pastoral
 
-	resources = {
-		iron = 93
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 			7868 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 		victory_points = {
-			7868 1
+			7868
 		}
 	}
 

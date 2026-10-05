@@ -1,24 +1,22 @@
 state = {
 	id = 951
 	name ="STATE_951"
-	manpower =925000
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category = pastoral
 
-	resources = {
-		coal = 31
-	}
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		#
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 
 		}
 		victory_points = {
-			10934 1
+			10934
 		}
 	}
 	provinces = {

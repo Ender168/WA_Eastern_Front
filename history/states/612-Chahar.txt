@@ -2,11 +2,8 @@
 state = {
 	id = 612
 	name ="STATE_612" # Chahar
-	manpower = 710400
+	manpower = 550000
 
-	resources = {
-		coal = 155
-	}
 
 	state_category = rural
 
@@ -16,10 +13,11 @@ state = {
 		add_core_of = OBS
 
 		victory_points = {
-			1489 2
+			1489
 		}
 		buildings = {
-			infrastructure = 1
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 			arms_factory = 2
 		}

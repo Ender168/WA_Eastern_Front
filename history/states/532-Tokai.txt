@@ -2,7 +2,7 @@
 state = {
 	id = 532
 	name ="STATE_532" # Tokai
-	manpower = 6404000
+	manpower = 550000
 	state_category = large_metropolis
 
 	history = {
@@ -10,6 +10,7 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
+			air_base = 5
 			infrastructure = 7
 			arms_factory = 8
 			industrial_complex = 6
@@ -17,11 +18,11 @@ state = {
 		}
 
 		victory_points = {
-			7087 3
+			7087
 		}
 
 		victory_points = {
-			10125 25
+			10125
 		}
 	}
 

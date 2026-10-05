@@ -2,19 +2,16 @@
 state = {
 	id = 565
 	name ="STATE_565" # Bodaybo
-	manpower = 195325
+	manpower = 550000
 	state_category = pastoral
-	resources = {
-
-		chromium=5 # was: 12
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 1
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

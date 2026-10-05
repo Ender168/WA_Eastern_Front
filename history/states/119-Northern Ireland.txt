@@ -8,17 +8,17 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			3379 10
+			3379
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 			arms_factory = 1
 			industrial_complex = 4
 			fuel_silo = 1
-			air_base = 1
+			air_base = 5
 			dockyard = 1
 			3379 = {
-				naval_base = 4
+				naval_base = 5
 			}
 		}
 	}
@@ -32,11 +32,8 @@ state = {
 		3379
 		11257
 	}
-	manpower =1198537
+	manpower = 550000
 	buildings_max_level_factor =1
 	state_category ="city"
 
-	resources = {
-
-	}
 }

@@ -2,24 +2,22 @@
 state = {
 	id = 257
 	name ="STATE_257" # Tambov
-	manpower = 1779583
+	manpower = 550000
 
 	state_category = rural
 
-	resources = {
-		chromium=7 # was: 10
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 		}
 		victory_points = {
-			11351 1
+			11351
 		}
 	}
 

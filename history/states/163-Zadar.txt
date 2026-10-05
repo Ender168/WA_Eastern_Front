@@ -1,21 +1,22 @@
 state = {
 	id = 163
 	name ="STATE_163"
-	manpower = 18000
+	manpower = 550000
 
 	state_category = enclave
 
 	history = {
-		owner = OBS
-		controller = OBS
-		add_core_of = OBS
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
 		victory_points = {
-			3943 1
+			3943
 		}
 		buildings = {
-			infrastructure = 5
+			air_base = 5
+			infrastructure = 7
 			3943 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 	}

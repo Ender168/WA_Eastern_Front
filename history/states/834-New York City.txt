@@ -11,7 +11,7 @@ state = {
 			arms_factory = 1
 			industrial_complex = 18
 			dockyard = 6
-			air_base = 8
+			air_base = 5
 			13270 = {
 				naval_base = 5
 				landmark_statue_of_liberty = {
@@ -23,7 +23,7 @@ state = {
 			}
 		}
 		victory_points = {
-			13270 30
+			13270
 		}
 	}
 
@@ -34,7 +34,7 @@ state = {
 		13268
 		13270
 	}
-	manpower =4100000
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =megalopolis
 }

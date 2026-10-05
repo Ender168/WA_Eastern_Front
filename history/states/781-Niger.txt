@@ -2,7 +2,7 @@
 state = {
 	id = 781
 	name ="STATE_781" # Niger
-	manpower = 543817
+	manpower = 550000
 
 	state_category = pastoral
 
@@ -11,10 +11,11 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			2056 1
+			2056
 		}
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

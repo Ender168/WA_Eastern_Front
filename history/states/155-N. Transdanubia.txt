@@ -2,28 +2,25 @@
 state = {
 	id = 155
 	name ="STATE_155" # Transdanubia
-	manpower = 2037399
+	manpower = 550000
 
 	state_category = city
-	resources = {
-		coal = 67
-		bauxite = 559
-	}
 	history = {
 		owner = WEF
 		controller = WEF
 		add_core_of = WEF
 		victory_points = {
-			686 1
+			686
 		}
 		victory_points = {
-			6703 1
+			6703
 		}
 		victory_points = {
-			6720 5
+			6720
 		}
 		buildings = {
-			infrastructure = 6
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 7
 			arms_factory = 2
 		}

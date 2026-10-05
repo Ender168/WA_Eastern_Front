@@ -1,24 +1,25 @@
 state = {
 	id = 979
 	name ="STATE_979"
-	manpower = 2211000
+	manpower = 550000
 	state_category = large_city
 
 	history = {
-		owner = OBS
-		controller = OBS
-		add_core_of = OBS
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
 
 		victory_points = {
-			6598 30
+			6598
 		}
 
 		victory_points = {
-			13068 1
+			13068
 		}
 
 		buildings = {
-			infrastructure = 9
+			air_base = 5
+			infrastructure = 7
 			arms_factory = 2
 			industrial_complex = 6
 			dockyard = 1
@@ -26,7 +27,7 @@ state = {
 			6598 = {
 				bunker = 2
 				coastal_bunker = 2
-				naval_base = 8
+				naval_base = 5
 			}
 		}
 		add_extra_state_shared_building_slots = 2

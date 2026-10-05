@@ -2,7 +2,7 @@
 state = {
 	id = 1106
 	name ="STATE_1106" # Mali (previously French West Africa)
-	manpower = 1512503
+	manpower = 550000
 
 	state_category = pastoral
 
@@ -11,7 +11,8 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

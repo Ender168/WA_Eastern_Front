@@ -2,10 +2,7 @@
 state = {
 	id = 46
 	name ="STATE_46" # Bucharest
-	manpower = 992536
-	resources = {
-		oil = 5 # moved her from mutenia
-	}
+	manpower = 550000
 
 	state_category = large_city
 
@@ -13,9 +10,10 @@ state = {
 		owner = WEF
 		controller = WEF
 		add_core_of = WEF
-		victory_points = { 9617 20 }
+		victory_points = { 9617 }
 		buildings = {
-			infrastructure = 6
+			air_base = 5
+			infrastructure = 7
 			arms_factory = 5
 			industrial_complex = 7
 		}

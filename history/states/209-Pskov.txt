@@ -2,7 +2,7 @@
 state = {
 	id = 209
 	name ="STATE_209" # Pskov
-	manpower = 639587
+	manpower = 550000
 
 	state_category = town
 
@@ -11,11 +11,11 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			11202 3
+			11202
 		}
 		buildings = {
-			infrastructure = 4
-			air_base = 4
+			infrastructure = 7
+			air_base = 5
 			arms_factory = 2
 			industrial_complex = 3
 			11202 = {

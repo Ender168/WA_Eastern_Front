@@ -8,7 +8,8 @@ state = {
 		add_core_of = OBS
 
 		buildings = {
-			infrastructure = 6
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 10
 			dockyard = 1
 
@@ -22,7 +23,7 @@ state = {
 		9758
 		9786
 	}
-	manpower =500000
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =city
 }

@@ -1,20 +1,21 @@
 state = {
 	id = 582
 	name ="STATE_582"
-	manpower =610570
+	manpower = 550000
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			4261 3
+			4261
 		}
 		victory_points = {
-			10185 1
+			10185
 		}
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

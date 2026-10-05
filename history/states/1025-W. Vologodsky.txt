@@ -2,7 +2,7 @@
 state = {
 	id = 1025
 	name ="STATE_1025" # Vologda
-	manpower = 1019000
+	manpower = 550000
 
 	state_category = town
 
@@ -11,10 +11,11 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			9131 3
+			9131
 		}
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			arms_factory = 1
 			industrial_complex = 1
 			steel_refinery = 2

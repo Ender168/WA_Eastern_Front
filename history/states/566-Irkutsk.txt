@@ -3,21 +3,18 @@ state = {
 	name ="STATE_566" #Irktusk
 
 	state_category = rural
-	resources = {
-
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			4797 3
+			4797
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 7
 			arms_factory = 1
-			air_base = 1
+			air_base = 5
 
 		}
 
@@ -41,6 +38,6 @@ state = {
 		12647
 		13152
 	}
-	manpower =755237
+	manpower = 550000
 	buildings_max_level_factor =1.000
 }

@@ -2,17 +2,18 @@
 state = {
 	id = 962
 	name ="STATE_962"
-	manpower = 73066
+	manpower = 550000
 	state_category = pastoral
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			185 1
+			185
 		}
 		buildings = {
-			infrastructure = 4
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

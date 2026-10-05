@@ -2,30 +2,27 @@
 state = {
 	id = 17
 	name ="STATE_17" # Lorraine
-	manpower = 1517500
+	manpower = 550000
 
 	state_category = large_city
 
-	resources = {
-		iron = 212 #removed 100
-	}
 
 	history = {
-		owner = OBS
-		controller = OBS
-		add_core_of = OBS
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
 		victory_points = {
-			9642 5
+			9642
 		}
 		victory_points = {
-			11516 5
+			11516
 		}
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 6
 			arms_factory = 3
 			steel_refinery = 5
-			air_base = 4
+			air_base = 5
 			anti_air_building = 4
 		}
 	}

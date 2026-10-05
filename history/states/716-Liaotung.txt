@@ -1,10 +1,6 @@
 state = {
 	id = 716
 	name ="STATE_716"
-	resources = {
-		iron = 160
-		coal = 102
-	}
 
 	history = {
 		owner = OBS
@@ -12,29 +8,29 @@ state = {
 		add_core_of = OBS
 		#
 		buildings = {
-			infrastructure = 4
+			infrastructure = 7
 			arms_factory = 4
 			industrial_complex = 4
 			steel_refinery = 1
-			air_base = 4
+			air_base = 5
 			964 = {
-				naval_base = 3
+				naval_base = 5
 			}
 		}
 		victory_points = {
-			11764 1
+			11764
 		}
 		victory_points = {
-			6837 1
+			6837
 		}
 		victory_points = {
-			987 5
+			987
 		}
 		victory_points = {
-			11771 20
+			11771
 		}
 		victory_points = {
-			14385 3
+			14385
 		}
 	}
 
@@ -68,7 +64,7 @@ state = {
 		14384
 		14385
 	}
-	manpower =10264620
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =city
 }

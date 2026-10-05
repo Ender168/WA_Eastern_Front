@@ -1,19 +1,18 @@
 state = {
 	id = 888
 	name ="STATE_888"
-	manpower = 52100
+	manpower = 550000
 
 	state_category = enclave
 
-	resources = {
-	}
 
 	history = {
 		owner = WEF
 		controller = WEF
 		add_core_of = WEF
 		buildings = {
-			infrastructure = 4
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 		}
 	}

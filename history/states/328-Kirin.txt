@@ -2,13 +2,10 @@
 state = {
 	id = 328
 	name ="STATE_328" # Kirin
-	manpower = 6402060
+	manpower = 550000
 
 	state_category = town
 
-	resources = {
-		bauxite = 16
-	}
 
 	history = {
 		owner = OBS
@@ -16,19 +13,20 @@ state = {
 		add_core_of = OBS
 		#
 		buildings = {
-			infrastructure = 4
+			air_base = 5
+			infrastructure = 7
 			arms_factory = 2
 			industrial_complex = 3
 			steel_refinery = 3
 		}
 		victory_points = {
-			7663 1
+			7663
 		}
 		victory_points = {
-			10433 10
+			10433
 		}
 		victory_points = {
-			4572 15
+			4572
 		}
 
 	}

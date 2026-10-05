@@ -2,7 +2,7 @@
 state = {
 	id = 902
 	name ="STATE_902"
-	manpower = 10
+	manpower = 550000
 
 	state_category = wasteland_impassable
 	impassable = yes
@@ -13,7 +13,8 @@ state = {
 		add_core_of = OBS
 
 		buildings = {
-			infrastructure = 0
+			air_base = 5
+			infrastructure = 7
 		}
 
 	}

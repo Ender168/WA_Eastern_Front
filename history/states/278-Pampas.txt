@@ -2,7 +2,7 @@
 state = {
 	id = 278
 	name ="STATE_278" # Pampas
-	manpower = 5596366
+	manpower = 550000
 
 	state_category = large_city
 
@@ -11,28 +11,28 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 			arms_factory = 4
 			industrial_complex = 12
 			dockyard = 2
-			air_base = 4
+			air_base = 5
 			12364 = {
-				naval_base = 7
+				naval_base = 5
 				bunker = 1
 				coastal_bunker = 1
 			}
 			7621 = {
-				naval_base = 2
+				naval_base = 5
 			}
 			1639 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 		victory_points = {
-			12364 10
+			12364
 		}
 		victory_points = {
-			7621 1
+			7621
 		}
 
 	}

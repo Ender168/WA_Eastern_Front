@@ -2,25 +2,22 @@ state = {
 	id = 647
 	name ="STATE_647"
 	state_category = small_island
-	manpower = 12100
+	manpower = 550000
 
-	resources = {
-		bauxite = 12
-	}
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 1
-			air_base = 1
+			infrastructure = 7
+			air_base = 5
 			4357 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 
 		victory_points = {
-			4357 1
+			4357
 		}
 		strategic_province_location = {
 			defensive_chokepoint = 12103

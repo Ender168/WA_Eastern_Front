@@ -1,7 +1,7 @@
 state = {
 	id = 717
 	name ="STATE_717"
-	manpower =3116000
+	manpower = 550000
 	buildings_max_level_factor =1.000
 
 	state_category = rural
@@ -12,11 +12,12 @@ state = {
 		add_core_of = OBS
 		#
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 		}
 		victory_points = {
-			9766 2
+			9766
 		}
 	}
 

@@ -2,7 +2,7 @@
 state = {
 	id = 779
 	name ="STATE_779" # Ivory Coast
-	manpower = 3850734
+	manpower = 550000
 
 	state_category = pastoral
 	history = {
@@ -10,12 +10,13 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			10803 1
+			10803
 		}
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			10803 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 	}

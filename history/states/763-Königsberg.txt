@@ -2,7 +2,7 @@
 state = {
 	id = 763
 	name ="STATE_763"
-	manpower = 2140234
+	manpower = 550000
 	state_category = city
 
 	history = {
@@ -11,10 +11,10 @@ state = {
 		add_core_of = WEF
 
 		victory_points = {
-			6332 10
+			6332
 		}
 		victory_points = {
-			3384 1
+			3384
 		}
 		buildings = {
 			infrastructure = 7

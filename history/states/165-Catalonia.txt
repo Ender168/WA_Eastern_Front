@@ -2,11 +2,8 @@
 state = {
 	id = 165
 	name ="STATE_165"
-	manpower = 3036537
+	manpower = 550000
 
-	resources = {
-		bauxite = 11
-	}
 
 	state_category = large_city
 
@@ -15,21 +12,21 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			9764 20
+			9764
 		}
 		victory_points = {
-			6966 1
+			6966
 		}
 		victory_points = {
-			6927 1
+			6927
 		}
 		buildings = {
 			infrastructure = 7
 			arms_factory = 3
 			industrial_complex = 3
-			air_base = 2
+			air_base = 5
 			9764 = {
-				naval_base = 4
+				naval_base = 5
 			}
 		}
 	}

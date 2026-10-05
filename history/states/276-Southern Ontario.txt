@@ -1,7 +1,7 @@
 state = {
 	id = 276
 	name = "STATE_276" # Southern Ontario
-	manpower = 1906017
+	manpower = 550000
 
 	state_category = metropolis
 
@@ -15,10 +15,10 @@ state = {
 			industrial_complex = 9
 			steel_refinery = 2
 			aluminium_refinery = 1
-			air_base = 3
+			air_base = 5
 		}
 		victory_points = {
-			3775 20
+			3775
 		}
 
 	}

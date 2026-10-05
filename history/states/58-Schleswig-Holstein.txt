@@ -2,7 +2,7 @@
 state = {
 	id = 58
 	name ="STATE_58"
-	manpower = 1648150
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =large_city
 
@@ -11,20 +11,20 @@ state = {
 		controller = WEF
 		add_core_of = WEF
 		victory_points = {
-			6389 10
+			6389
 		}
 		victory_points = {
-			13518 3
+			13518
 		}
 
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 			arms_factory = 2
 			industrial_complex = 5
 			dockyard = 3
-			air_base = 4
+			air_base = 5
 			6389 = {
-				naval_base = 8
+				naval_base = 5
 				naval_headquarters = { # Kiel - baltic fleet HQ
 					level = 1
 					allowed = {

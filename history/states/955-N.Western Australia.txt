@@ -2,20 +2,17 @@
 state = {
 	id = 955
 	name ="STATE_955"
-
-	manpower = 51000
+	manpower = 550000
 	state_category = pastoral
 
-	resources = {
-		iron = 72
-	}
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

@@ -1,7 +1,7 @@
 state = {
 	id = 1015
 	name ="STATE_1015" #Atyrauskaya
-	manpower = 60250
+	manpower = 550000
 
 	state_category = pastoral
 
@@ -10,10 +10,11 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			3622 1
+			3622
 		}
 		buildings = {
-			infrastructure = 1
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

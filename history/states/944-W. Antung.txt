@@ -2,17 +2,10 @@
 state = {
 	id = 944
 	name ="STATE_944" # S Antung
-	manpower = 512060
-	resources = {
-		iron = 63
-	}
+	manpower = 550000
 
 	state_category = rural
 
-	resources = {
-		bauxite = 16
-		coal = 47
-	}
 
 	history = {
 		owner = OBS
@@ -20,7 +13,8 @@ state = {
 		add_core_of = OBS
 		#
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 		}
 
 	}

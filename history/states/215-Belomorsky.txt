@@ -1,22 +1,20 @@
 state = {
 	id = 215
 	name ="STATE_215"
-	resources = {
-
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			94 1
+			94
 		}
 		victory_points = {
-			9195 1
+			9195
 		}
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			155 = {
 				supply_node = 1
 			}
@@ -62,7 +60,7 @@ state = {
 		11212
 		13130
 	}
-	manpower =214858
+	manpower = 550000
 
 	state_category = pastoral
 	buildings_max_level_factor =1.000

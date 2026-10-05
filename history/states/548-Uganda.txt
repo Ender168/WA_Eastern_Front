@@ -3,25 +3,23 @@ state = {
 	name ="STATE_548"
 
 	state_category = rural
-	resources = {
-		rubber = 1 # was: 3
-	}
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 
 		}
 		victory_points = {
-			12989 5
+			12989
 		}
 		victory_points = {
-			3854 3
+			3854
 		}
 		victory_points = {
-			8223 3
+			8223
 		}
 	}
 
@@ -35,6 +33,6 @@ state = {
 		13177
 		14520
 	}
-	manpower =3515625
+	manpower = 550000
 	buildings_max_level_factor =1.000
 }

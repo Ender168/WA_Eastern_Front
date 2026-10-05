@@ -1,23 +1,21 @@
 state = {
 	id = 790
 	name ="STATE_790"
-	manpower = 60153
-	resources = {
-
-	}
+	manpower = 550000
 
 	state_category = rural
 
 	history = {
-		owner = OBS
-		controller = OBS
-		add_core_of = OBS
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
 		buildings = {
-			infrastructure = 6
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 			steel_refinery = 1
 		}
-		victory_points = { 3488 1 }
+		victory_points = { 3488 }
 	}
 
 	provinces = {

@@ -6,9 +6,10 @@ state = {
 		owner = WEF
 		controller = WEF
 		add_core_of = WEF
-		victory_points = { 3617 3 }
+		victory_points = { 3617 }
 		buildings = {
-			infrastructure = 6
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 3
 		}
 
@@ -21,7 +22,7 @@ state = {
 		9608
 		9621
 	}
-	manpower =838621
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =town
 }

@@ -2,7 +2,7 @@
 state = {
 	id = 447
 	name ="STATE_447"
-	manpower = 602100
+	manpower = 550000
 
 	state_category = city
 
@@ -12,18 +12,18 @@ state = {
 		add_core_of = OBS
 
 		victory_points = {
-			4076 10
+			4076
 		}
 		victory_points = {
-			7164 1
+			7164
 		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 7
 			arms_factory = 1
 			industrial_complex = 2
-			air_base = 3
+			air_base = 5
 			4076 = {
-				naval_base = 4
+				naval_base = 5
 				naval_headquarters = { # Alexandria - Mediterranean Fleet HQ
 					level = 1
 					allowed = {

@@ -4,23 +4,21 @@ state = {
 
 	state_category = rural
 
-	resources = {
-		chromium=16 # was: 22.000
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 2
 			12594 = {
 				supply_node = 1
 			}
 		}
 		victory_points = {
-			12594 1
+			12594
 		}
 	}
 
@@ -55,6 +53,6 @@ state = {
 		12635
 		13151
 	}
-	manpower =659223
+	manpower = 550000
 	buildings_max_level_factor =1.000
 }

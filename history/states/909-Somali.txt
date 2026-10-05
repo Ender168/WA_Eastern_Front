@@ -1,12 +1,7 @@
 state = {
 	id = 909
 	name ="STATE_909"
-	manpower = 2030050
-	resources = {
-		rubber =2 # was: 2
-		iron = 10
-		coal = 23
-	}
+	manpower = 550000
 
 	state_category = pastoral
 
@@ -15,23 +10,24 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 		}
 		victory_points = {
-			7980 5
+			7980
 		}
 		victory_points = {
-			13382 1
+			13382
 		}
 		victory_points = {
-			12757 1
+			12757
 		}
 		victory_points = {
-			12812 1
+			12812
 		}
 		victory_points = {
-			13378 1
+			13378
 		}
 		ITA = {
 			set_province_controller = 4995

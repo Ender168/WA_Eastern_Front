@@ -2,24 +2,21 @@ state = {
 	id = 89
 	name ="STATE_89"
 
-	resources = {
-		bauxite = 12
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			11411 1
+			11411
 		}
 		#victory_points = {
-		#	6483 1
+		#	6483
 		#}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 7
 			industrial_complex = 1
-			air_base = 3
+			air_base = 5
 
 		}
 
@@ -34,7 +31,7 @@ state = {
 		11411
 		11550
 	}
-	manpower =2180300
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =town
 }

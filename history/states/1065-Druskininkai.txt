@@ -1,7 +1,7 @@
 state = {
 	id = 1065
 	name ="STATE_1065"
-	manpower = 9058
+	manpower = 550000
 
 	state_category = enclave
 
@@ -10,10 +10,11 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			3320 3
+			3320
 		}
 		buildings = {
-			infrastructure = 4
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

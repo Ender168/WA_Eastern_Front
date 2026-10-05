@@ -2,7 +2,7 @@
 state = {
 	id = 345
 	name ="STATE_345" # Mersin
-	manpower = 411798
+	manpower = 550000
 
 	state_category = rural
 
@@ -11,10 +11,11 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			10056 1
+			10056
 		}
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

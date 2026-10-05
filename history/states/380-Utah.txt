@@ -1,26 +1,22 @@
 state = {
 	id = 380
 	name ="STATE_380"
-	manpower = 507846
+	manpower = 550000
 
 	state_category = rural
 
-	resources = {
-		tungsten = 49 # was: 106
-		iron = 5
-		coal = 44
-	}
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 4
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 		}
 		victory_points = {
-			4865 1
+			4865
 		}
 	}
 	provinces = {

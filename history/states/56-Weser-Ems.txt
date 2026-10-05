@@ -1,7 +1,7 @@
 state = {
 	id = 56
 	name ="STATE_56"
-	manpower = 2058467
+	manpower = 550000
 
 	state_category = city
 
@@ -10,22 +10,22 @@ state = {
 		controller = WEF
 		add_core_of = WEF
 		victory_points = {
-			241 5
+			241
 		}
 		victory_points = {
-			11360 1
+			11360
 		}
 		victory_points = {
-			11388 5
+			11388
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 			arms_factory = 2
 			industrial_complex = 7
 			dockyard = 5
 			fuel_silo = 1
 			241 = {
-				naval_base = 8
+				naval_base = 5
 				coastal_bunker = 5
 			}
 			air_base = 5

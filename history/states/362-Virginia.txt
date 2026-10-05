@@ -8,14 +8,14 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 			industrial_complex = 13
 			steel_refinery = 2
 			dockyard = 4
-			air_base = 8
+			air_base = 5
 			fuel_silo = 1
 			788 = {
-				naval_base = 10
+				naval_base = 5
 				naval_headquarters = { # Norfolk - De-facto Atlantic HQ until formal establishment post-war
 					level = 1
 					allowed = {
@@ -25,10 +25,10 @@ state = {
 			}
 		}
 		victory_points = {
-			3823 15
+			3823
 		}
 		victory_points = {
-			788 3
+			788
 		}
 
 	}
@@ -43,7 +43,7 @@ state = {
 		11738
 		11841
 	}
-	manpower =2351054
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =metropolis
 }

@@ -7,26 +7,27 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 			1269 = {
-				naval_base = 2
+				naval_base = 5
 
 			}
 			4226 = {
-				naval_base = 1
+				naval_base = 5
 
 			}
 			10234 = {
-				naval_base = 1
+				naval_base = 5
 
 			}
 
 		}
 		victory_points = {
-			1269 3
+			1269
 		}
 		victory_points = {
-			4226 1
+			4226
 		}
 		strategic_state_location = {
 			favorable_approach = 10291
@@ -50,7 +51,7 @@ state = {
 		10319
 		12265
 	}
-	manpower =150000
+	manpower = 550000
 	buildings_max_level_factor =1
 	state_category ="small_island"
 }

@@ -2,11 +2,7 @@
 state = {
 	id = 43
 	name ="STATE_43" # Northern Hungary
-	manpower = 2135598
-	resources = {
-		iron = 67
-		coal = 96
-	}
+	manpower = 550000
 
 	state_category = city
 
@@ -15,17 +11,17 @@ state = {
 		controller = WEF
 		add_core_of = WEF
 		victory_points = {
-			684 1
+			684
 		}
 		victory_points = {
-			3731 3
+			3731
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 			arms_factory = 3
 			industrial_complex = 4
 			steel_refinery = 2
-			air_base = 1
+			air_base = 5
 		}
 	}
 

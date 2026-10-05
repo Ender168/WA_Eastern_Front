@@ -2,7 +2,7 @@
 state = {
 	id = 308
 	name ="STATE_308"
-	manpower = 25678
+	manpower = 550000
 	state_category = tiny_island
 
 	history = {
@@ -10,12 +10,13 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 			4450 = {
-				naval_base = 1
+				naval_base = 5
 			}
 			7123 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 	}

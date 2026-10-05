@@ -2,10 +2,7 @@
 state = {
 	id = 343
 	name ="STATE_343" # Afyon
-	manpower = 955763
-	resources = {
-		chromium = 23
-	}
+	manpower = 550000
 
 	state_category = town
 
@@ -14,16 +11,17 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			10041 1
+			10041
 		}
 		victory_points = {
-			3856 1
+			3856
 		}
 		victory_points = {
-			9878 1
+			9878
 		}
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 2
 		}
 	}

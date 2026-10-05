@@ -2,24 +2,22 @@
 state = {
 	id = 40
 	name ="STATE_40" #Altai Krai
-	manpower = 2107451
+	manpower = 550000
 
 	state_category = town
-	resources = {
-		coal = 32
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 		}
 		
 		victory_points = {
-			1794 1
+			1794
 		}
 	}
 

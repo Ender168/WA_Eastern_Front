@@ -1,9 +1,6 @@
 state = {
 	id = 317
 	name ="STATE_317"
-	resources = {
-		chromium=1 # was: 1
-	}
 
 	state_category = town
 
@@ -12,18 +9,18 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 4
+			infrastructure = 7
 			arms_factory = 1
 			industrial_complex = 2
-			air_base = 1
+			air_base = 5
 			12738 = {
-				naval_base = 1
+				naval_base = 5
 
 			}
 
 		}
 		victory_points = {
-			12738 3
+			12738
 		}
 
 	}
@@ -36,6 +33,6 @@ state = {
 		13139
 		13178
 	}
-	manpower =683000
+	manpower = 550000
 	buildings_max_level_factor =1.000
 }

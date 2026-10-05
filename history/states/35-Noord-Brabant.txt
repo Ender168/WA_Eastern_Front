@@ -2,37 +2,35 @@ state = {
 	id = 35
 	name ="STATE_35"
 
-	resources = {
-		coal = 264
-	}
 
 	history = {
-		owner = OBS
-		controller = OBS
-		add_core_of = OBS
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
 		buildings = {
+			air_base = 5
 			infrastructure = 7
 			arms_factory = 1
 			industrial_complex = 13
 			dockyard = 3
 			9498 = {
-				naval_base = 7
+				naval_base = 5
 			}
 		}
 		victory_points = {
-			9498 20
+			9498
 		}
 		victory_points = {
-			3262 5
+			3262
 		}
 		victory_points = {
-			6496 3
+			6496
 		}
 		victory_points = {
-			11562 1
+			11562
 		}
 		victory_points = {
-			11456 1
+			11456
 		}
 	}
 
@@ -49,7 +47,7 @@ state = {
 		13354
 		13937
 	}
-	manpower =2449000
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =large_city
 }

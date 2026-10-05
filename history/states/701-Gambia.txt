@@ -7,12 +7,13 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			4989 1
+			4989
 		}
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			4989 = {
-				naval_base = 1
+				naval_base = 5
 
 			}
 
@@ -24,7 +25,7 @@ state = {
 		4989
 		13213
 	}
-	manpower =199520
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =enclave
 }

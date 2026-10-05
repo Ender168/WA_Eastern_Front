@@ -1,10 +1,7 @@
 state = {
 	id = 719
 	name ="STATE_719" # Natal
-	manpower = 1766574
-	resources = {
-		coal = 200
-	}
+	manpower = 550000
 
 	state_category = town
 
@@ -13,16 +10,16 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 3
+			infrastructure = 7
 			industrial_complex = 1
 			arms_factory = 1
-			air_base = 1
+			air_base = 5
 			13604 = {
-				naval_base = 2
+				naval_base = 5
 			}
 		}
 		victory_points = {
-			13604 5
+			13604
 		}
 	}
 

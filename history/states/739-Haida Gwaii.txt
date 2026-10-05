@@ -7,10 +7,11 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 1
+			air_base = 5
+			infrastructure = 7
 
 			1869 = {
-				naval_base = 1
+				naval_base = 5
 
 			}
 
@@ -21,7 +22,7 @@ state = {
 	provinces = {
 		1869
 	}
-	manpower =12684
+	manpower = 550000
 	buildings_max_level_factor =1
 	state_category ="small_island"
 }

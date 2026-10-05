@@ -1,7 +1,7 @@
 state = {
 	id = 953
 	name ="STATE_953"
-	manpower =21234
+	manpower = 550000
 	buildings_max_level_factor =1
 	state_category ="wasteland"
 
@@ -10,9 +10,10 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 1
+			air_base = 5
+			infrastructure = 7
 			13204 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 
