@@ -5,16 +5,17 @@ bookmarks = {
         date = 1941.1.1.12
         picture = "GFX_select_date_1939"
         default_country = "WEF"
+        default = yes
 
-        WEF = {
-            history = WAEF_WEF_DESC
+        "WEF" = {
+            history = "WAEF_WEF_DESC"
             ideology = neutrality
             ideas = { }
             focuses = { }
         }
 
-        EEF = {
-            history = WAEF_EEF_DESC
+        "EEF" = {
+            history = "WAEF_EEF_DESC"
             ideology = neutrality
             ideas = { }
             focuses = { }
