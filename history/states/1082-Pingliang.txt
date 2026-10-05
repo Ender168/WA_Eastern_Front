@@ -1,0 +1,25 @@
+state = {
+	id = 1082
+	name ="STATE_1082"
+	manpower = 401500
+	buildings_max_level_factor = 1.000
+
+	state_category = enclave
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces = {
+		517
+		1647
+		13794
+		14243
+	}
+}

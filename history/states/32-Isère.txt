@@ -1,0 +1,34 @@
+
+state = {
+	id = 32
+	name ="STATE_32"
+	manpower = 1007500
+
+	state_category = town
+
+	resources = {
+		bauxite = 49
+	}
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 5
+		}
+		victory_points = {
+			3768 1
+		}
+	}
+
+	provinces = {
+		762
+		780
+		3589
+		3768
+		6784
+		11713
+	}
+}

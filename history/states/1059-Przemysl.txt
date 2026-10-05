@@ -1,0 +1,27 @@
+state = {
+	id = 1059
+	name ="STATE_1059"
+	manpower =101000
+	buildings_max_level_factor =1.000
+	state_category = rural
+
+	resources = {
+	}
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+	}
+
+	provinces = {
+		3434
+		9494
+		14137
+		14138
+	}
+}

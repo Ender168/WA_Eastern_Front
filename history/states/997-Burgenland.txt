@@ -1,0 +1,21 @@
+state = {
+	id = 997
+	name = "STATE_997"
+	manpower = 136221
+	resources = {
+	}
+	state_category = rural
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+	provinces = {
+		3700
+		13572
+	}
+}

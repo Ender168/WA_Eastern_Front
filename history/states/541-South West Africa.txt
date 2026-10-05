@@ -1,0 +1,37 @@
+
+state = {
+	id = 541
+	name ="STATE_541"
+	manpower = 462000
+
+	state_category = pastoral
+
+	resources = {
+		tungsten = 2
+	}
+	
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		} 
+		victory_points = {
+			4879 1
+		}
+	}
+
+	provinces = {
+		2207
+		2229
+		4879
+		5154
+		5189
+		7605
+		10963
+		13627
+		14513
+	}
+}

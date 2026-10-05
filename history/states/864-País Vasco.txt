@@ -1,0 +1,35 @@
+
+state = {
+	id = 864
+	name ="STATE_864"
+	manpower = 929220
+
+	state_category = large_town
+
+	resources = {
+		coal = 15
+	}
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			740 5
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			740 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces = {
+		740
+		3735
+		6756
+		13286
+	}
+}

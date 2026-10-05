@@ -1,0 +1,33 @@
+
+state = {
+	id = 1093
+	name ="STATE_1093" 
+	manpower = 885237
+
+	state_category = pastoral
+
+	resources = {
+		coal = 2
+	}
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces = {
+		1731
+		1929
+		2024
+		4128
+		7716
+		8016
+		9986
+		10858
+		14466
+	}
+}

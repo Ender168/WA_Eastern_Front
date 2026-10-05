@@ -1,0 +1,28 @@
+
+state = {
+	id = 854
+	name ="STATE_854"
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces = {
+		1823
+		7393
+		13031
+		13032
+		13035
+		13034
+	}
+	manpower =36415
+	buildings_max_level_factor =1
+	state_category ="wasteland"
+}

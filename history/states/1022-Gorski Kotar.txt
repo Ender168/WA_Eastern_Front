@@ -1,0 +1,25 @@
+
+state = {
+	id = 1022
+	name ="STATE_1022"
+	manpower = 50200
+
+	state_category = enclave
+
+	resources = {
+	}
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		buildings = {
+			infrastructure = 5
+		}
+	}
+
+	provinces = {
+		13574
+		13961
+	}
+}

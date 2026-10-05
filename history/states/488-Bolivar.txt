@@ -1,0 +1,30 @@
+
+state = {
+	id = 488
+	name ="STATE_488"
+	manpower = 239242
+
+	state_category = pastoral
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			10879 1
+		}
+	}
+
+	provinces = {
+		1981
+		5317
+		7915
+		10736
+		10849
+		10879
+	}
+}

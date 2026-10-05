@@ -1,0 +1,37 @@
+state = {
+
+	id = 845
+	name ="STATE_845"
+	manpower = 2070970
+	state_category = rural
+
+	resources = {
+		tungsten = 20
+	}
+	
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+
+	}
+
+	provinces = {
+		3981
+		852
+		906
+		6963
+		11775
+		978
+		6928
+		11770
+		3912
+		11896
+		11828
+		9795
+	}
+}

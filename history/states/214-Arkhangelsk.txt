@@ -1,0 +1,44 @@
+
+state = {
+	id = 214
+	name ="STATE_214"
+	manpower = 209020
+
+	state_category = rural
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		victory_points = {
+			11089 1
+		}
+		victory_points = {
+			13889 5
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			13889 = {
+				naval_base = 3
+			}
+		}
+	}
+
+	provinces = {
+		87
+		180
+		3075
+		3338
+		6105
+		9041
+		11042
+		11089
+		13887
+		13888
+		13889
+		13894
+		13895
+		13896
+	}
+}

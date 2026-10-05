@@ -1,0 +1,47 @@
+
+state = {
+	id = 34
+	name ="STATE_34"
+	manpower = 2170800
+
+	state_category = metropolis
+
+	resources = {
+		coal = 457
+	}
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			3516 5
+		}
+		victory_points = {
+			11519 10
+		}
+		victory_points = {
+			9536 3
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 6
+			industrial_complex = 6
+			steel_refinery = 3
+			air_base = 1
+			11519 = {
+				bunker = 6
+			}
+			3516 = {
+				bunker = 3
+			}
+		}
+	}
+
+	provinces = {
+		3516
+		9536
+		11519
+		13081
+	}
+}

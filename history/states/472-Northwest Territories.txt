@@ -1,0 +1,37 @@
+state = {
+	id = 472
+	name = "STATE_472"
+	manpower = 17681
+
+	state_category = wasteland
+
+	resources = {
+		iron = 18
+		chromium = 3
+	}
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 1
+
+		}
+	}
+
+	provinces = {
+		2407
+		4272
+		7696
+		7830
+		7901
+		8653
+		10527
+		10703
+		13075
+		13189
+	}
+
+	buildings_max_level_factor =1.000
+}

@@ -1,0 +1,52 @@
+
+state = {
+	id = 347
+	name ="STATE_347"
+	manpower = 807660
+	resources = {
+		chromium = 18
+		coal = 36
+	}
+
+	state_category = town
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			11811 1
+		}
+		victory_points = {
+			904 1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			904 = {
+				naval_base = 2
+			}
+			11811 = {
+				naval_base = 8
+				naval_headquarters = { # Golcuk - main Turkish naval hq after demilitarization of Turkish Straits
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
+			}
+		}
+	}
+
+	provinces = {
+		890
+		904
+		3905
+		3919
+		6871
+		11811
+		11866
+		11883
+		13318
+	}
+}

@@ -1,0 +1,44 @@
+
+state = {
+	id = 155
+	name ="STATE_155" # Transdanubia
+	manpower = 2037399
+
+	state_category = city
+	resources = {
+		coal = 67
+		bauxite = 559
+	}
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = {
+			686 1
+		}
+		victory_points = {
+			6703 1
+		}
+		victory_points = {
+			6720 5
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 7
+			arms_factory = 2
+		}
+	}
+
+	provinces = {
+		686
+		701
+		3670
+		3683
+		6703
+		6720
+		9676
+		11627
+		11663
+		13125
+	}
+}

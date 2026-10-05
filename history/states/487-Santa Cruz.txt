@@ -1,0 +1,30 @@
+
+state = {
+	id = 487
+	name ="STATE_487"
+	manpower = 232300
+
+	state_category = pastoral
+
+	resources = {
+		rubber = 1
+	}
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+		}
+	}
+
+	provinces = {
+		2160
+		10924
+		12902
+		12916
+	}
+
+}
