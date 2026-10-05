@@ -16,6 +16,18 @@ waef_initialize_map = {
 
         set_global_flag = waef_map_initialized
 
+        # Ensure the dedicated observer tag exists before any state is transferred to it.
+        # Kanto is outside both player blocs and will belong to OBS anyway.
+        282 = { add_core_of = OBS }
+        JAP = {
+            if = {
+                limit = {
+                    NOT = { country_exists = OBS }
+                }
+                release = OBS
+            }
+        }
+
         every_state = {
             clr_state_flag = waef_start_ger
             clr_state_flag = waef_start_sov
