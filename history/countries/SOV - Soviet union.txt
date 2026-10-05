@@ -68,3 +68,5 @@ recruit_character = SOV_vasily_chuykov
 recruit_character = SOV_boris_shaposhnikov
 recruit_character = SOV_rodion_malinovsky
 recruit_character = SOV_nikolay_kuznetsov
+recruit_character = SOV_vyacheslav_molotov
+recruit_character = SOV_maksim_litvinov
