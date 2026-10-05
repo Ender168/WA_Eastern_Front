@@ -1,0 +1,20 @@
+# Empty scenario focus tree. WAEF deliberately uses decisions and World Ablaze systems.
+
+focus_tree = {
+    id = waef_empty_focus_tree
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 100000
+            OR = {
+                original_tag = GER
+                original_tag = SOV
+                original_tag = OBS
+            }
+        }
+    }
+
+    default = no
+    reset_on_civilwar = no
+}
