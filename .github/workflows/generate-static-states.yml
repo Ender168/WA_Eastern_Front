@@ -1,14 +1,7 @@
 name: Generate static state map
-# Balance normalization runner
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - balance/map-normalization-v1
-    paths:
-      - .github/workflows/generate-static-states.yml
-      - tools/generate_static_states.py
 
 permissions:
   contents: write
