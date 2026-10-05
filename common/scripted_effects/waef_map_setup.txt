@@ -2,9 +2,10 @@
 # Scenario map initialization.
 #
 # Design rule:
-# - Keep the World Ablaze map, state definitions, infrastructure, resources,
-#   railways, supply hubs and strategic regions untouched.
+# - Keep World Ablaze map/state definitions, infrastructure, resources, railways,
+#   supply hubs and strategic regions untouched.
 # - Reassign ownership at scenario start instead of copying history/states.
+# - Consolidate all non-player countries into OBS to stop normal world simulation.
 # - Preserve start-side state flags for later industry/scoring mechanics.
 
 waef_initialize_map = {
@@ -15,14 +16,13 @@ waef_initialize_map = {
 
         set_global_flag = waef_map_initialized
 
-        # Clear stale markers in case the effect is reused during development.
         every_state = {
             clr_state_flag = waef_start_ger
             clr_state_flag = waef_start_sov
+            clr_state_flag = waef_start_observer
         }
 
-        # German side: the old 1v1 concept grouped Central Europe and the
-        # Balkans into the German player country.
+        # German side: Central Europe, the Balkans and western Poland.
         every_state = {
             limit = {
                 OR = {
@@ -39,7 +39,7 @@ waef_initialize_map = {
             set_state_flag = waef_start_ger
         }
 
-        # Soviet side: USSR and the Baltic states.
+        # Soviet side: USSR and Baltic countries.
         every_state = {
             limit = {
                 OR = {
@@ -52,100 +52,96 @@ waef_initialize_map = {
             set_state_flag = waef_start_sov
         }
 
-        # Eastern Poland. These are the World Ablaze state IDs used by its
-        # Molotov-Ribbentrop implementation / Soviet 1939 war goal.
-        96 = {
-            clr_state_flag = waef_start_ger
-            set_state_flag = waef_start_sov
-        }
-        95 = {
-            clr_state_flag = waef_start_ger
-            set_state_flag = waef_start_sov
-        }
-        1058 = {
-            clr_state_flag = waef_start_ger
-            set_state_flag = waef_start_sov
-        }
-        97 = {
-            clr_state_flag = waef_start_ger
-            set_state_flag = waef_start_sov
-        }
-        94 = {
-            clr_state_flag = waef_start_ger
-            set_state_flag = waef_start_sov
-        }
-        93 = {
-            clr_state_flag = waef_start_ger
-            set_state_flag = waef_start_sov
-        }
-        91 = {
-            clr_state_flag = waef_start_ger
-            set_state_flag = waef_start_sov
-        }
-        89 = {
-            clr_state_flag = waef_start_ger
-            set_state_flag = waef_start_sov
-        }
-        1059 = {
-            clr_state_flag = waef_start_ger
-            set_state_flag = waef_start_sov
-        }
+        # Eastern Poland, matching World Ablaze's Molotov-Ribbentrop implementation.
+        96   = { clr_state_flag = waef_start_ger set_state_flag = waef_start_sov }
+        95   = { clr_state_flag = waef_start_ger set_state_flag = waef_start_sov }
+        1058 = { clr_state_flag = waef_start_ger set_state_flag = waef_start_sov }
+        97   = { clr_state_flag = waef_start_ger set_state_flag = waef_start_sov }
+        94   = { clr_state_flag = waef_start_ger set_state_flag = waef_start_sov }
+        93   = { clr_state_flag = waef_start_ger set_state_flag = waef_start_sov }
+        91   = { clr_state_flag = waef_start_ger set_state_flag = waef_start_sov }
+        89   = { clr_state_flag = waef_start_ger set_state_flag = waef_start_sov }
+        1059 = { clr_state_flag = waef_start_ger set_state_flag = waef_start_sov }
 
-        # Vilnius / Druskininkai end up on the Soviet side by January 1941
-        # after the Soviet annexation of Lithuania.
-        784 = {
-            clr_state_flag = waef_start_ger
-            set_state_flag = waef_start_sov
-        }
-        1065 = {
-            clr_state_flag = waef_start_ger
-            set_state_flag = waef_start_sov
-        }
+        # Vilnius / Druskininkai after Soviet annexation of Lithuania.
+        784  = { clr_state_flag = waef_start_ger set_state_flag = waef_start_sov }
+        1065 = { clr_state_flag = waef_start_ger set_state_flag = waef_start_sov }
 
         # Soviet territorial gains from Romania in 1940.
-        80 = {
-            clr_state_flag = waef_start_ger
-            set_state_flag = waef_start_sov
-        }
-        78 = {
-            clr_state_flag = waef_start_ger
-            set_state_flag = waef_start_sov
-        }
-        766 = {
-            clr_state_flag = waef_start_ger
-            set_state_flag = waef_start_sov
-        }
+        80  = { clr_state_flag = waef_start_ger set_state_flag = waef_start_sov }
+        78  = { clr_state_flag = waef_start_ger set_state_flag = waef_start_sov }
+        766 = { clr_state_flag = waef_start_ger set_state_flag = waef_start_sov }
 
-        # Memel is German by the scenario date, despite being Lithuanian in
-        # the 1936 state history used as our base.
-        188 = {
-            clr_state_flag = waef_start_sov
-            set_state_flag = waef_start_ger
-        }
+        # Memel is German by January 1941.
+        188 = { clr_state_flag = waef_start_sov set_state_flag = waef_start_ger }
 
-        # Everything outside the duel is held by Sweden as the neutral
-        # observer/world-holder, matching the old 1v1 concept.
+        # Everything outside the duel goes to the dedicated neutral observer.
         every_state = {
             limit = {
                 NOT = { has_state_flag = waef_start_ger }
                 NOT = { has_state_flag = waef_start_sov }
             }
-            transfer_state_to = SWE
+            set_state_flag = waef_start_observer
+            transfer_state_to = OBS
         }
 
-        # Apply the two playable blocs.
         every_state = {
-            limit = {
-                has_state_flag = waef_start_ger
-            }
+            limit = { has_state_flag = waef_start_ger }
             transfer_state_to = GER
+            GER = { add_state_core = PREV }
         }
 
         every_state = {
-            limit = {
-                has_state_flag = waef_start_sov
-            }
+            limit = { has_state_flag = waef_start_sov }
             transfer_state_to = SOV
+            SOV = { add_state_core = PREV }
         }
+
+        every_state = {
+            limit = { has_state_flag = waef_start_observer }
+            OBS = { add_state_core = PREV }
+        }
+
+        # Collapse all normal World Ablaze countries into OBS.
+        # transfer_troops = no prevents the observer from inheriting a planet-sized army.
+        every_country = {
+            limit = {
+                NOT = { tag = GER }
+                NOT = { tag = SOV }
+                NOT = { tag = OBS }
+            }
+            OBS = {
+                annex_country = {
+                    target = PREV
+                    transfer_troops = no
+                }
+            }
+        }
+
+        # The observer is a map holder only. Remove ordinary industry so it does not
+        # become a giant AI economy in the background.
+        OBS = {
+            every_owned_state = {
+                set_building_level = {
+                    type = industrial_complex
+                    level = 0
+                    instant_build = yes
+                }
+                set_building_level = {
+                    type = arms_factory
+                    level = 0
+                    instant_build = yes
+                }
+                set_building_level = {
+                    type = dockyard
+                    level = 0
+                    instant_build = yes
+                }
+            }
+        }
+
+        # Equalize ordinary starting industry before players choose its placement.
+        GER = { waef_reset_player_industry = yes }
+        SOV = { waef_reset_player_industry = yes }
     }
 }
