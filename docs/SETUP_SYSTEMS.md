@@ -1,40 +1,31 @@
-# Competitive setup systems v0.11 — pure World Ablaze 1941 date control
+# Competitive setup systems v0.12 — WEF ownership isolation
 
-## Purpose
+## Confirmed controls
 
-The normal World Ablaze 1936 frontend is stable, while the minimal WAEF build
-with only two state ownership changes still exits after frontend startup.
+- Native World Ablaze history/frontend works.
+- The World Ablaze bookmark copied unchanged except for a 1941.1.1.12 start date
+  successfully launches a single-player game.
+- Therefore the 1941 date itself is valid.
 
-This control isolates the bookmark date from every WAEF map/country change.
+## Current diagnostic
 
-## Configuration
+Keep the working 1941 World Ablaze bookmark exactly as in v0.11:
+- default country remains GER;
+- normal World Ablaze country list remains;
+- normal World Ablaze country and unit histories remain.
 
-- `common/bookmarks` is still replaced so only one bookmark is exposed.
-- The bookmark content is copied from World Ablaze's own
-  `common/bookmarks/blitzkrieg.txt` at pinned commit
-  `691c7085f3ec1333ac2a0742983da8a64011ca8b`.
-- The only functional change to that upstream bookmark is:
-  `1939.8.14.12 -> 1941.1.1.12`.
-- Default country remains GER.
-- All listed major/minor countries remain the upstream World Ablaze set.
-- The normal World Ablaze weather effect is preserved.
-- There are no WAEF state-history overrides.
-- There is no `replace_path` for states, countries or units.
-- World Ablaze provides all state ownership, country histories and OOBs.
+Change only one state:
+- state 810 (East Berlin) owner/core GER -> WEF.
 
-WEF/EEF/OBS definitions remain installed but are not referenced by this
-bookmark and own no states in this control.
+No EEF state is changed.
+WEF is not selected by the bookmark.
+No global state replacement is used.
 
-## Diagnostic interpretation
+## Interpretation
 
-If this build crashes in the frontend, a direct 1 January 1941 bookmark against
-World Ablaze's historical database is sufficient to reproduce the failure.
-The WAEF map and custom player tags are then exonerated.
+If this build launches, a state can safely be transferred to WEF and the next
+test should activate WEF as the bookmark/default country.
 
-If this build remains stable, the 1941 date itself is valid and the next test
-will isolate WEF/EEF activation without changing map ownership.
-
-## Intended final scenario
-
-This is diagnostic only. The final scenario remains a symmetric WEF vs EEF
-Eastern Front setup beginning on 1 January 1941.
+If this build fails in the frontend, merely giving an existing state to the WEF
+custom tag is sufficient to reproduce the failure, so the problem is in custom
+country/state integration rather than the bookmark date.
