@@ -1,31 +1,57 @@
-# Competitive setup systems v0.3
+# Competitive setup systems v0.4
+
+## Runtime bootstrap status
+
+The current build is intentionally reduced to a minimal runtime baseline while
+the 1941 scenario is validated in-game.
+
+The only active country-history setup for WEF/EEF is:
+
+- capital;
+- 5 research slots;
+- 75% stability;
+- 50% war support;
+- 200 political power;
+- neutrality at 100%;
+- one neutral generic country leader;
+- the `waef_player_country` flag.
+
+Economic Fatigue, laws, starting technologies, stockpiles, convoys and scripted
+industry reset effects are temporarily disabled. They are design requirements,
+not active runtime features in this bootstrap build.
+
+## Bookmark
+
+WAEF replaces `common/bookmarks` and exposes a single bookmark:
+
+- 1 January 1941 at 12:00;
+- WEF as the default country;
+- `default = yes`, matching World Ablaze's primary Gathering Storm bookmark;
+- WEF and EEF as the two displayed player countries;
+- weather randomization plus the `waef_scenario_1941` global flag.
+
+The explicit default marker is required while WAEF replaces all upstream
+bookmarks, otherwise there is no remaining default bookmark definition.
 
 ## Player countries
 
 The scenario uses custom tags `WEF` and `EEF`.
 
-Both receive the same country baseline:
+Both currently use neutrality and have no advisors, generals, field marshals or
+other recruited characters beyond the temporary country leaders.
 
-- 5 research slots;
-- 75% stability;
-- 50% war support;
-- 200 political power;
-- 100 convoys;
-- Economic Fatigue at 0;
-- Low Economic Mobilisation;
-- Limited Exports;
-- Limited Conscription;
-- 300 trains;
-- 2,000 motorized equipment;
-- the same generic starting technology baseline.
+The two temporary rulers are WAEF-owned characters using World Ablaze's generic
+European civilian portraits:
 
-Both currently use neutrality.
+- WEF: `portrait_europe_generic_4.dds`;
+- EEF: `portrait_europe_generic_5.dds`.
 
-There are no rulers, advisors or recruited characters.
+They use `despotism`, have no traits and contain no original-tag or national
+conditions. This avoids inheriting any GER/SOV/minor-country character logic.
 
 ## Geography baseline
 
-Both players now own exactly **182 states**.
+Both players own exactly **182 states**.
 
 State-level balancing:
 
@@ -47,7 +73,8 @@ The mod replaces `history/countries` and `history/units`.
 Only WEF, EEF and OBS receive scenario country histories. Historical GER/SOV OOB,
 production, faction, advisor and national-spirit setup is not inherited.
 
-Starting armies will be implemented separately.
+Starting armies will be implemented separately after the minimal scenario loads
+cleanly.
 
 ## Focus tree
 
@@ -55,28 +82,15 @@ WEF, EEF and OBS use `waef_empty_focus_tree`.
 
 ## Technology selection
 
-WEF and EEF naturally use generic/minor World Ablaze technology access.
+The intended design is for WEF and EEF to begin with generic/minor World Ablaze
+technology access and later choose a national technology package through an
+adapted version of World Ablaze's existing adoption system.
 
-The scenario adapts World Ablaze's existing
-`_unique_technologies_adoption.txt` so WEF and EEF can choose a national
-technology package without a donor faction relationship.
-
-World Ablaze's original package effects and date-based technology backfill are
-retained.
+Starting technologies are temporarily absent from country history during runtime
+isolation.
 
 ## Industry setup
 
-The separate industry-choice system still resets ordinary CIV/MIL/dockyard
-levels on WEF/EEF territory at scenario start.
-
-Both players receive 30 CIV and then choose:
-
-### Forward Industry
-
-60 MIL per player.
-
-### Deep Industry
-
-50 MIL per player.
-
-These values remain provisional competitive balance constants.
+The intended design keeps the Forward Industry / Deep Industry setup choice.
+The scripted reset and deployment effects are temporarily not executed from the
+bookmark while startup stability is being isolated.
