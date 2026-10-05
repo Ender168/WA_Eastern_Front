@@ -20,10 +20,10 @@ state = {
 			fuel_silo = 1
 		}
 		victory_points = {
-			9297
+			9297 10
 		}
 		victory_points = {
-			11345
+			11345 10
 		}
 	}
 

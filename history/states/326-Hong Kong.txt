@@ -9,7 +9,7 @@ state = {
 		add_core_of = OBS
 		#
 		victory_points = {
-			10062
+			10062 10
 		}
 		buildings = {
 			infrastructure = 7

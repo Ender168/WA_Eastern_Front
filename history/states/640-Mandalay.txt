@@ -16,7 +16,7 @@ state = {
 			air_base = 5
 		}
 		victory_points = {
-			1492
+			1492 10
 		}
 	}
 

@@ -19,10 +19,10 @@ state = {
 			synthetic_refinery = 1
 		}
 		victory_points = {
-			514
+			514 10
 		}
 		victory_points = {
-			3535
+			3535 10
 		}
 	}
 

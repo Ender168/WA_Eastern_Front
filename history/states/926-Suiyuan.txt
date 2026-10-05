@@ -10,10 +10,10 @@ state = {
 		#
 
 		victory_points = {
-			10629
+			10629 10
 		}
 		victory_points = {
-			7631
+			7631 10
 		}
 		buildings = {
 			air_base = 5

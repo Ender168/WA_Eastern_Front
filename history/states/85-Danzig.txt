@@ -9,7 +9,7 @@ state = {
 		controller = WEF
 		add_core_of = WEF
 		victory_points = {
-			362
+			362 10
 		}
 		set_demilitarized_zone = yes
 		buildings = {

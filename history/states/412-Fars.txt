@@ -11,10 +11,10 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			8117
+			8117 10
 		}
 		victory_points = {
-			7982
+			7982 10
 		}
 		buildings = {
 			air_base = 5

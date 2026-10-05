@@ -11,19 +11,19 @@ state = {
 		#
 
 		victory_points = {
-			9974
+			9974 10
 		}
 		victory_points = {
-			1168
+			1168 10
 		}
 		victory_points = {
-			1055
+			1055 10
 		}
 		victory_points = {
-			14260
+			14260 10
 		}
 		victory_points = {
-			7191
+			7191 10
 		}
 
 		buildings = {

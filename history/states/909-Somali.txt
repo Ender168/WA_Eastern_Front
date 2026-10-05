@@ -15,19 +15,19 @@ state = {
 			industrial_complex = 1
 		}
 		victory_points = {
-			7980
+			7980 10
 		}
 		victory_points = {
-			13382
+			13382 10
 		}
 		victory_points = {
-			12757
+			12757 10
 		}
 		victory_points = {
-			12812
+			12812 10
 		}
 		victory_points = {
-			13378
+			13378 10
 		}
 		ITA = {
 			set_province_controller = 4995

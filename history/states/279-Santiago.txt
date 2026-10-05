@@ -27,7 +27,7 @@ state = {
 			}
 		}
 		victory_points = {
-			650
+			650 10
 		}
 
 	}

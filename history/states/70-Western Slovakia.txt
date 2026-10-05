@@ -11,10 +11,10 @@ state = {
 		controller = WEF
 		add_core_of = WEF
 		victory_points = {
-			9692
+			9692 10
 		}
 		victory_points = {
-			11539
+			11539 10
 		}
 		buildings = {
 			infrastructure = 7

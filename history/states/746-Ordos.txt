@@ -17,7 +17,7 @@ state = {
 			infrastructure = 7
 		}
 		victory_points = {
-			3427
+			3427 10
 		}
 	}
 	provinces = {

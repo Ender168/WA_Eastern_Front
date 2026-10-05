@@ -21,13 +21,13 @@ state = {
 			}
 		}
 		#victory_points = {
-		#	12715
+		#	12715 10
 		#}
 		victory_points = {
-			4904
+			4904 10
 		}
 		#victory_points = {
-		#	4965
+		#	4965 10
 		#}
 	}
 

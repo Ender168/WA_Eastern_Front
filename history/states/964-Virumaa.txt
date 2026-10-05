@@ -10,10 +10,10 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			4640
+			4640 10
 		}
 		victory_points = {
-			11127
+			11127 10
 		}
 		buildings = {
 			air_base = 5

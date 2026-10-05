@@ -19,10 +19,10 @@ state = {
 			}
 		}
 		victory_points = {
-			11932
+			11932 10
 		}
 		victory_points = {
-			8185
+			8185 10
 		}
 		strategic_province_location = {
 			defensible_coastline = 1123

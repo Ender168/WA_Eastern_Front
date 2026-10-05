@@ -16,16 +16,16 @@ state = {
 			air_base = 5
 		}
 		victory_points = {
-			1984
+			1984 10
 		}
 		victory_points = {
-			2072
+			2072 10
 		}
 		victory_points = {
-			4954
+			4954 10
 		}
 		victory_points = {
-			7944
+			7944 10
 		}
 		ITA = {
 			set_province_controller = 2072

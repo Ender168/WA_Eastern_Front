@@ -15,7 +15,7 @@ state = {
 			}
 		}
 		victory_points = {
-			13261
+			13261 10
 		 }
 		strategic_province_location = {
 			natural_harbor = 12140

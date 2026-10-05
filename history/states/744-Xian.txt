@@ -11,10 +11,10 @@ state = {
 		add_core_of = OBS
 		#
 		victory_points = {
-			2006
+			2006 10
 		}
 		victory_points = {
-			7301
+			7301 10
 		}
 		buildings = {
 			air_base = 5

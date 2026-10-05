@@ -14,10 +14,10 @@ state = {
 			air_base = 5
 		}
 		victory_points = {
-			12806
+			12806 10
 		}
 		victory_points = {
-			13845
+			13845 10
 		}
 	}
 	provinces = {

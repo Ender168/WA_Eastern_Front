@@ -13,7 +13,7 @@ state = {
 			steel_refinery = 1
 		}
 		victory_points = {
-			4569
+			4569 10
 		}
 	}
 

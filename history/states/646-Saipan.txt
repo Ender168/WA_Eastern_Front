@@ -15,7 +15,7 @@ state = {
 			}
 		}
 		victory_points = {
-			3995
+			3995 10
 		}
 		
 		 strategic_province_location = {

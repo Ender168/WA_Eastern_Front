@@ -21,16 +21,16 @@ history = {
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			6380
+			6380 10
 		}
 		victory_points = {
-			11330
+			11330 10
 		}
 		victory_points = {
-			6290
+			6290 10
 		}
 		victory_points = {
-			9302
+			9302 10
 		}
 		buildings = {
 			infrastructure = 7

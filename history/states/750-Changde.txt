@@ -16,7 +16,7 @@ state = {
 			steel_refinery = 2
 		}
 		victory_points = {
-			7101
+			7101 10
 		}
 	}
 	provinces = {

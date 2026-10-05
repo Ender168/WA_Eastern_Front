@@ -19,10 +19,10 @@ state = {
 			arms_factory = 1
 		}
 		victory_points = {
-			413
+			413 10
 		}
 		victory_points = {
-			3566
+			3566 10
 		}
 	}
 

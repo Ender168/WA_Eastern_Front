@@ -19,7 +19,7 @@ state = {
 			aluminium_refinery = 6
 		}
 		victory_points = {
-			12501
+			12501 10
 		}
 
 	}

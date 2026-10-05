@@ -20,10 +20,10 @@ history = {
 		controller = WEF
 		add_core_of = WEF
 		victory_points = {
-			6521
+			6521 10
 		}
 		victory_points = {
-			13246
+			13246 10
 		}
 		buildings = {
 			air_base = 5

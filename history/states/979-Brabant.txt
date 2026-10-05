@@ -10,11 +10,11 @@ state = {
 		add_core_of = WEF
 
 		victory_points = {
-			6598
+			6598 10
 		}
 
 		victory_points = {
-			13068
+			13068 10
 		}
 
 		buildings = {

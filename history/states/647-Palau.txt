@@ -17,7 +17,7 @@ state = {
 		}
 
 		victory_points = {
-			4357
+			4357 10
 		}
 		strategic_province_location = {
 			defensive_chokepoint = 12103
