@@ -69,3 +69,4 @@ recruit_character = GER_heinz_guderian
 recruit_character = GER_hermann_hoth
 recruit_character = GER_albert_kesselring
 recruit_character = GER_karl_donitz
+recruit_character = GER_heinrich_himmler
