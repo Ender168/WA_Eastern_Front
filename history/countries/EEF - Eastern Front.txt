@@ -16,4 +16,6 @@ set_popularities = {
     neutrality = 100
 }
 
+recruit_character = EEF_generic_leader
+
 set_country_flag = waef_player_country
