@@ -10,12 +10,12 @@ state = {
 			infrastructure = 7
 			arms_factory = 1
 			industrial_complex = 18
-			air_base = 4
+			air_base = 5
 			steel_refinery = 5
 			steel_refinery_inactive = 2
 		}
 		victory_points = {
-			6710 20
+			6710 10
 		}
 	}
 
@@ -27,7 +27,7 @@ state = {
 		11656
 		11669
 	}
-	manpower =2800000
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =megalopolis
 }

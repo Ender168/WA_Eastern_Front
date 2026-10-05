@@ -2,29 +2,26 @@
 state = {
 	id = 6
 	name ="STATE_6" # Flanders
-	manpower = 2536700
-	resources = {
-		coal = 40
-	}
+	manpower = 550000
 
 	state_category = metropolis
 
 	history = {
-		owner = OBS
-		controller = OBS
-		add_core_of = OBS
-		victory_points = { 516 40 }
-		victory_points = { 3576 1 }
-		victory_points = { 13347 5 }
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = { 516 10 }
+		victory_points = { 3576 10 }
+		victory_points = { 13347 10 }
 		buildings = {
-			infrastructure = 9
+			infrastructure = 7
 			arms_factory = 2
 			industrial_complex = 10
 			dockyard = 1
 			steel_refinery = 3
-			air_base = 3
+			air_base = 5
 			6560 = {
-				naval_base = 3
+				naval_base = 5
 			}
 		}
 

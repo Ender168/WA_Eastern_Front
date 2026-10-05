@@ -1,26 +1,24 @@
 state = {
 	id = 667
 	name ="STATE_667"
-	resources = {
-		rubber = 16
-	}
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			1355 = {
-				naval_base = 1
+				naval_base = 5
 
 			}
 			10175 = {
-				naval_base = 1
+				naval_base = 5
 
 			}
 			12234 = {
-				naval_base = 1
+				naval_base = 5
 
 			}
 
@@ -45,7 +43,7 @@ state = {
 		12219
 		12234
 	}
-	manpower =3460200
+	manpower = 550000
 	buildings_max_level_factor =1
 	state_category ="town"
 }

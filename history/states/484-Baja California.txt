@@ -1,7 +1,7 @@
 state = {
 	id = 484
 	name ="STATE_484"
-	manpower = 108841
+	manpower = 550000
 	state_category = rural
 
 	history = {
@@ -9,13 +9,13 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 3
-			air_base = 3
+			infrastructure = 7
+			air_base = 5
 			1892 = {
-				naval_base = 2
+				naval_base = 5
 			}
 			12736 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 
@@ -23,13 +23,13 @@ state = {
 			12461 10
 		}
 		#victory_points = {
-		#	12736 3
+		#	12736 10
 		#}
 		#victory_points = {
-		#	1892 3
+		#	1892 10
 		#}
 		#victory_points = {
-		#	13215 5
+		#	13215 10
 		#}
 
 	}

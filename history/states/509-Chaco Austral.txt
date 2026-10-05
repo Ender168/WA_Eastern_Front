@@ -2,20 +2,18 @@
 state = {
 	id = 509
 	name ="STATE_509" # Chaco Australis
-	manpower = 704241
+	manpower = 550000
 
 	state_category = town
 
-	resources = {
-		tungsten = 25
-	}
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 2
 		}
 	}

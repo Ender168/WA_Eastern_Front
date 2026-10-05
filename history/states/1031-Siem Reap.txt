@@ -1,7 +1,7 @@
 state = {
 	id = 1031
 	name ="STATE_1031"
-	manpower = 903000
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category = rural
 
@@ -10,7 +10,8 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 1
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 	provinces = {

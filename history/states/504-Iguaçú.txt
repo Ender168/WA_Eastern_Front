@@ -5,16 +5,14 @@ state = {
 
 	state_category = rural
 
-	resources = {
-		rubber = 3
-	}
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 
 		}
 
@@ -29,6 +27,6 @@ state = {
 		10959
 		12951
 	}
-	manpower =229900
+	manpower = 550000
 	buildings_max_level_factor =1.000
 }

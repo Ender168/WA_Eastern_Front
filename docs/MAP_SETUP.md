@@ -1,8 +1,6 @@
-# Map setup v1.0
+# Map setup v1.1
 
-The scenario now uses a **static 1107-state ownership map**.
-
-The previous runtime ownership-transfer system has been removed.
+The scenario uses a **static 1107-state ownership map**.
 
 ## Countries
 
@@ -14,67 +12,58 @@ GER and SOV are not player countries.
 
 ## Ownership
 
-WEF receives states whose original World Ablaze owner was:
+EEF keeps its established 182-state eastern bloc.
 
-- GER
-- AUS
-- CZE
-- HUN
-- YUG
-- BUL
-- ROM
-- POL
+WEF has been expanded from 106 to 182 states by transferring exactly 76 former
+OBS states. The added territory is grouped geographically rather than selected
+at random:
 
-with the eastern-border overrides below.
+- metropolitan France;
+- Benelux;
+- Switzerland;
+- Denmark;
+- Italy;
+- Norway;
+- Greece.
 
-EEF receives states whose original owner was:
+Final totals:
 
-- SOV
-- LIT
-- LAT
-- EST
+- WEF: **182**
+- EEF: **182**
+- OBS: **743**
 
-and additionally:
+## Border overrides retained
+
+EEF:
 
 - Eastern Poland: 96, 95, 1058, 97, 94, 93, 91, 89, 1059
 - Vilnius / Druskininkai: 784, 1065
 - Romanian concessions: 80, 78, 766
 
-Memel (188) is explicitly WEF.
+WEF:
 
-Every remaining state is OBS.
-
-Final totals:
-
-- WEF: 106
-- EEF: 182
-- OBS: 819
+- Memel: 188
 
 ## State-history cleanup
 
-For every state, all previous political history entries are removed:
+All previous owner/controller/core/claim history is removed, including dated
+historical transfers.
 
-- owner/controller;
-- core additions/removals;
-- claims additions/removals.
+Every state receives exactly one owner, controller and core.
 
-Then exactly one scenario owner, controller and core is inserted.
+## Normalized map values
 
-This is important because dated World Ablaze history from 1938-1940 would
-otherwise transfer territory back to historical tags when the game executes
-history up to January 1941.
+Every state:
 
-Non-political state content remains intact.
+- manpower: 550000;
+- infrastructure: 7;
+- air base: 5.
 
-## Source and regeneration
+Every existing:
 
-The user-provided `states.rar` was used as the 1107-state reference set.
+- naval base: level 5;
+- victory point: value 10.
 
-The repository generator is pinned to World Ablaze commit:
-
-`691c7085f3ec1333ac2a0742983da8a64011ca8b`
-
-The generated files are committed directly to `history/states`, so the game no
-longer depends on runtime state-transfer effects.
-
-See `docs/STATIC_MAP.md` for the generator details.
+All map resources are removed except the resource packages in player-capital
+states 810 and 219. Each capital gets 10 oil, rubber, tungsten, chromium, coal,
+bauxite and iron. Steel and aluminium stay at zero.

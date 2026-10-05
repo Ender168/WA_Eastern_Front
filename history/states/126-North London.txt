@@ -1,7 +1,7 @@
 state = {
 	id = 126
 	name ="STATE_126"
-	manpower =5894578
+	manpower = 550000
 
 	state_category = megalopolis
 
@@ -10,15 +10,15 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			6103 50
+			6103 10
 		}
 		buildings = {
-			infrastructure = 9
+			infrastructure = 7
 			arms_factory = 3
 			industrial_complex = 22
 			anti_air_building = 1
 			radar_station = 1
-			air_base = 4
+			air_base = 5
 
 			6103 = {
 			    landmark_big_ben = {

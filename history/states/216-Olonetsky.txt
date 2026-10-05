@@ -9,11 +9,11 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			11159 1
+			11159 10
 		}
 		buildings = {
-			infrastructure = 3
-			air_base = 3
+			infrastructure = 7
+			air_base = 5
 
 		}
 
@@ -43,6 +43,6 @@ state = {
 		13194
 		13198
 	}
-	manpower =229564
+	manpower = 550000
 	buildings_max_level_factor =1.000
 }

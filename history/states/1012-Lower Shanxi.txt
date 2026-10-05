@@ -1,23 +1,22 @@
 state = {
 	id = 1012
 	name ="STATE_1012"
-	manpower = 603000
+	manpower = 550000
 	buildings_max_level_factor = 1.000
 
 	state_category = enclave
 
-	resources = {
-	}
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			1575 1
+			1575 10
 		}
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 		}
 	}

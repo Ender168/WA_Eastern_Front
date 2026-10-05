@@ -2,7 +2,7 @@
 state = {
 	id = 5
 	name ="STATE_5"
-	manpower = 1238108
+	manpower = 550000
 	state_category = town
 
 	history = {
@@ -10,14 +10,15 @@ state = {
 		controller = WEF
 		add_core_of = WEF
 		victory_points = {
-			6375 3
+			6375 10
 		}
 		#victory_points = {
-		#	11386 1
+		#	11386 10
 		#}
 
 		buildings = {
-			infrastructure = 6
+			air_base = 5
+			infrastructure = 7
 			arms_factory = 1
 			industrial_complex = 3
 		}

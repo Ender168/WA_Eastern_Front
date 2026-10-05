@@ -2,11 +2,8 @@
 state = {
 	id = 1039
 	name ="STATE_1039" # North Island
-	manpower = 424934
+	manpower = 550000
 
-	resources = {
-		coal = 35
-	}
 
 	state_category = large_town
 
@@ -15,24 +12,24 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 5
+			infrastructure = 7
 			industrial_complex = 5
-			air_base = 2
+			air_base = 5
 			4543 = {
-				naval_base = 3
+				naval_base = 5
 			}
 		}
 		victory_points = {
-			10334 1
+			10334 10
 		}
 		victory_points = {
-			7887 1
+			7887 10
 		}
 		victory_points = {
-			12664 1
+			12664 10
 		}
 		victory_points = {
-			4543 5
+			4543 10
 		}
 	}
 

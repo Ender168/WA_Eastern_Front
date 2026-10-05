@@ -8,16 +8,17 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 			12207 = {
-				naval_base = 1
+				naval_base = 5
 			}
 			4728 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 		victory_points = {
-			4728 1
+			4728 10
 		}
 	}
 
@@ -31,7 +32,7 @@ state = {
 		12207
 		12522
 	}
-	manpower =12316
+	manpower = 550000
 	buildings_max_level_factor =1
 	state_category ="wasteland"
 }

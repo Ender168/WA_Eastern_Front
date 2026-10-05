@@ -5,14 +5,15 @@ state = {
 	state_category = large_town
 
 	history = {
-		owner = OBS
-		controller = OBS
-		add_core_of = OBS
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
 		victory_points = {
-			6626 1
+			6626 10
 		}
 		buildings = {
-			infrastructure = 4
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 5
 			synthetic_refinery = 1
 			6626 = {
@@ -26,6 +27,6 @@ state = {
 		6626
 		9613
 	}
-	manpower = 622080
+	manpower = 550000
 	buildings_max_level_factor =1.000
 }

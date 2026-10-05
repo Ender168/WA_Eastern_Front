@@ -2,20 +2,16 @@
 state = {
 	id = 28
 	name ="STATE_28" # Alsace-Lorraine
-	manpower = 1915600
+	manpower = 550000
 
 	state_category = large_city
-	resources = {
-		iron = 652 #removed 100
-		coal = 93
-	}
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
-		victory_points = { 678 5 }
-		victory_points = { 9503 5 }
+		victory_points = { 678 10 }
+		victory_points = { 9503 10 }
 		victory_points = { 9559 10 }
         if = {
             limit = {
@@ -56,7 +52,7 @@ state = {
 				bunker = 6
 			}
 			anti_air_building = 4
-			air_base = 4
+			air_base = 5
 		}
 	}
 

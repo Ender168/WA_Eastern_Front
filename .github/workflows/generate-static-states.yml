@@ -15,18 +15,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Fetch pinned World Ablaze state source
+      - name: Prepare committed static state baseline
         shell: bash
         run: |
-          rm -rf /tmp/world-ablaze
-          git init /tmp/world-ablaze
-          git -C /tmp/world-ablaze remote add origin https://github.com/World-Ablaze/world-ablaze-beta.git
-          git -C /tmp/world-ablaze fetch --depth 1 origin 691c7085f3ec1333ac2a0742983da8a64011ca8b
-          git -C /tmp/world-ablaze checkout --detach FETCH_HEAD
+          rm -rf /tmp/waef-base
+          mkdir -p /tmp/waef-base
+          git archive origin/main history/states | tar -x -C /tmp/waef-base
 
-      - name: Generate WEF EEF OBS state histories
+      - name: Generate normalized WEF EEF OBS state histories
         run: |
-          python tools/generate_static_states.py /tmp/world-ablaze/history/states history/states
+          python tools/generate_static_states.py /tmp/waef-base/history/states history/states
 
       - name: Commit generated state map
         shell: bash
@@ -38,5 +36,5 @@ jobs:
             echo "No state changes to commit."
             exit 0
           fi
-          git commit -m "Regenerate static WEF EEF OBS state map"
+          git commit -m "Regenerate normalized WEF EEF OBS state map"
           git push

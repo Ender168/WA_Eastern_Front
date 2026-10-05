@@ -2,26 +2,24 @@
 state = {
 	id = 205
 	name ="STATE_205" # Kaluga
-	manpower = 1121004
+	manpower = 550000
 
 	state_category = town
 
-	resources = {
-		coal = 33
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 4
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 4
 			arms_factory = 2
 			steel_refinery = 2
 		}
 		victory_points = {
-			382 1
+			382 10
 		}
 	}
 

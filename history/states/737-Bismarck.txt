@@ -7,25 +7,25 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 2
-			air_base = 1
+			infrastructure = 7
+			air_base = 5
 			7251 = {
 				naval_base = 5
 
 			}
 			4352 = {
-				naval_base = 1
+				naval_base = 5
 
 			}
 			7339 = {
-				naval_base = 1
+				naval_base = 5
 
 			}
 
 		}
 
 		victory_points = {
-			7251 5
+			7251 10
 		}
 		strategic_province_location = {
 			defensive_chokepoint = 7251
@@ -56,7 +56,7 @@ state = {
 		10206
 		12222
 	}
-	manpower =345640
+	manpower = 550000
 	buildings_max_level_factor =1
 	state_category ="rural"
 }

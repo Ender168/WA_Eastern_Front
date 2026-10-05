@@ -2,16 +2,11 @@
 state = {
 	id = 433
 	name ="STATE_433" # Rajasthan
-	manpower = 11786000
+	manpower = 550000
 
 	state_category = rural
 
 
-	resources = {
-		#tungsten = 18
-		iron = 22
-		coal = 23
-	}
 
 	history = {
 		owner = OBS
@@ -21,13 +16,14 @@ state = {
 			2054 10
 		}
 		victory_points = {
-			1199 3
+			1199 10
 		}
 		victory_points = {
-			1908 3
+			1908 10
 		}
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 		}
 	}

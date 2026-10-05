@@ -1,7 +1,7 @@
 state = {
 	id = 1063
 	name ="STATE_1063"
-	manpower = 13500
+	manpower = 550000
 
 	state_category = rural
 
@@ -10,12 +10,13 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			14169 1
+			14169 10
 		}
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 			14169 = {
-				naval_base = 6
+				naval_base = 5
 				naval_supply_hub = 1 # Trincomalee - HQ for East Indies Station
 			}
 		}

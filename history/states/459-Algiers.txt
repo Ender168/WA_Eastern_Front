@@ -2,13 +2,9 @@
 state = {
 	id = 459
 	name ="STATE_459" # Algiers
-	manpower = 3089944
+	manpower = 550000
 	state_category = city
 
-	resources = {
-		iron = 72
-		coal = 5
-	}
 
 	history = {
 		owner = OBS
@@ -19,21 +15,21 @@ state = {
 			1145 10
 		}
 		victory_points = {
-			7132 5
+			7132 10
 		}
 		victory_points = {
-			11923 1
+			11923 10
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 7
 			industrial_complex = 3
 			arms_factory = 1
-			air_base = 8
+			air_base = 5
 			1145 = {
-				naval_base = 2
+				naval_base = 5
 			}
 			7132 = {
-				naval_base = 6
+				naval_base = 5
 			}
 		}
 	}

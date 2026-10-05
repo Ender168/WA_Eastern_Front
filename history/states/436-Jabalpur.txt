@@ -2,14 +2,10 @@
 state = {
 	id = 436
 	name ="STATE_436" # Jabalpur
-	manpower = 11123100
+	manpower = 550000
 
 	state_category = rural
 
-	resources = {
-		chromium = 4
-		iron = 15
-	}
 
 	history = {
 		owner = OBS
@@ -19,7 +15,8 @@ state = {
 			4883 10
 		}
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 		}
 	}

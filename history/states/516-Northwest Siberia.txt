@@ -2,7 +2,7 @@
 state = {
 	id = 516
 	name ="STATE_516" # Northwestern Siberia
-	manpower = 43948
+	manpower = 550000
 
 	state_category = wasteland
 	impassable = yes
@@ -12,7 +12,8 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 1
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

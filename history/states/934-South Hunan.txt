@@ -1,10 +1,6 @@
 state = {
 	id = 934
 	name ="STATE_934"
-	resources = {
-		iron = 30
-		tungsten = 40
-	}
 
 	history = {
 		owner = OBS
@@ -12,14 +8,15 @@ state = {
 		add_core_of = OBS
 		#
 		buildings = {
-			infrastructure = 1
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 2
 		}
 		victory_points = {
-			9982 1
+			9982 10
 		}
 		victory_points = {
-			10377 1
+			10377 10
 		}
 	}
 
@@ -43,7 +40,7 @@ state = {
 		13737
 		13739
 	}
-	manpower =8072300
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category = town
 }

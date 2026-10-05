@@ -2,7 +2,7 @@
 state = {
 	id = 610
 	name ="STATE_610" # Jehol
-	manpower = 1531177
+	manpower = 550000
 
 	state_category = rural
 
@@ -12,15 +12,16 @@ state = {
 		add_core_of = OBS
 		#
 		buildings = {
-			infrastructure = 4
+			air_base = 5
+			infrastructure = 7
 			arms_factory = 1
 			industrial_complex = 1
 		}
 		victory_points = {
-			9927 1
+			9927 10
 		}
 		victory_points = {
-			7633 1
+			7633 10
 		}
 	}
 

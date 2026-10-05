@@ -1,7 +1,7 @@
 state = {
 	id = 1005
 	name = "STATE_1005" # Central Ontario
-	manpower = 1511000
+	manpower = 550000
 
 	state_category = large_city
 
@@ -13,10 +13,10 @@ state = {
 			infrastructure = 7
 			arms_factory = 2
 			industrial_complex = 6
-			air_base = 4
+			air_base = 5
 		}
 		victory_points = {
-			3778 25
+			3778 10
 		}
 
 	}

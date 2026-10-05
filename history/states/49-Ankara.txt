@@ -2,10 +2,7 @@
 state = {
 	id = 49
 	name ="STATE_49" # Ankara
-	manpower = 770758
-	resources = {
-		chromium = 9
-	}
+	manpower = 550000
 
 	state_category = large_town
 
@@ -17,16 +14,16 @@ state = {
 			11747 10
 		}
 		victory_points = {
-			804 1
+			804 10
 		}
 		victory_points = {
-			3951 1
+			3951 10
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 7
 			arms_factory = 4
 			industrial_complex = 4
-			air_base = 3
+			air_base = 5
 		}
 	}
 

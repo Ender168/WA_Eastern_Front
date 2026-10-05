@@ -2,7 +2,7 @@
 state = {
 	id = 109
 	name ="STATE_109" # Croatia
-	manpower = 2121400
+	manpower = 550000
 
 	state_category = city
 
@@ -11,7 +11,8 @@ state = {
 		controller = WEF
 		add_core_of = WEF
 		buildings = {
-			infrastructure = 6
+			air_base = 5
+			infrastructure = 7
 			arms_factory = 2
 			industrial_complex = 5
 		}

@@ -2,23 +2,21 @@
 state = {
 	id = 569
 	name ="STATE_569" # Kemerovo
-	manpower = 1567322
+	manpower = 550000
 
 	state_category = town
 	
-	resources = {
-		coal = 458
-	}
 	
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			4665 1
+			4665 10
 		}
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 		}
 	}

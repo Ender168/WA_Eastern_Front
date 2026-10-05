@@ -2,7 +2,7 @@
 state = {
 	id = 281
 	name ="STATE_281"
-	manpower =79300
+	manpower = 550000
 
 	state_category = enclave
 
@@ -11,13 +11,14 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			4967 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 		victory_points = {
-			4967 1
+			4967 10
 		}
 	}
 

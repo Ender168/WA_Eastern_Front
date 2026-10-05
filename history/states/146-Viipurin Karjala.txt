@@ -1,7 +1,7 @@
 state = {
 	id = 146
 	name ="STATE_146"
-	manpower =310185
+	manpower = 550000
 	buildings_max_level_factor =1.000
 
 	state_category = rural
@@ -11,13 +11,14 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			9206 5
+			9206 10
 		}
 		victory_points = {
-			13290 1
+			13290 10
 		}
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 3
 
 			#Mannerheim Line
@@ -37,7 +38,7 @@ state = {
 				coastal_bunker = 1
 			}
 			13290 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 	}

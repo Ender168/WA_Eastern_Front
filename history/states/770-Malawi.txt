@@ -7,10 +7,11 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			12986 1
+			12986 10
 		}
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 
 		}
 
@@ -24,7 +25,7 @@ state = {
 		14159
 		14166
 	}
-	manpower =1603975
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =pastoral
 }

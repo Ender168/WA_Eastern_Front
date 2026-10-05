@@ -2,14 +2,11 @@
 state = {
 	id = 533
 	name ="STATE_533" # Tohoku
-	manpower = 4005000
+	manpower = 550000
 	buildings_max_level_factor = 1.000
 
 	state_category = metropolis
 
-	resources = {
-
-	}
 
 	history = {
 		owner = OBS
@@ -19,14 +16,14 @@ state = {
 			arms_factory = 2
 			industrial_complex = 3
 			fuel_silo = 1
-			infrastructure = 3
-			air_base = 2
+			infrastructure = 7
+			air_base = 5
 			7169 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
 		victory_points = {
-			7169 15
+			7169 10
 		}
 	}
 

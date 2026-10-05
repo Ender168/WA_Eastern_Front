@@ -1,7 +1,7 @@
 state = {
 	id = 698
 	name ="STATE_698"
-	manpower = 212012
+	manpower = 550000
 
 	state_category = small_island
 
@@ -10,14 +10,14 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			1751 3
+			1751 10
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 7
 			1751 = {
-				naval_base = 3
+				naval_base = 5
 			}
-			air_base = 1
+			air_base = 5
 		}
 		strategic_state_location = {
 			favorable_approach = 1751

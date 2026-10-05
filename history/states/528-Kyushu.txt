@@ -2,14 +2,9 @@
 state = {
 	id = 528
 	name ="STATE_528" # Kyushu
-	manpower = 6046000
+	manpower = 550000
 	state_category = megalopolis
 
-	resources = {
-		chromium=52 # was: 88
-		iron = 10
-		coal = 320
-	}
 
 	history = {
 		owner = OBS
@@ -17,29 +12,29 @@ state = {
 		add_core_of = OBS
 		buildings = {
 			infrastructure = 7
-			air_base = 2
+			air_base = 5
 			dockyard = 5
 			arms_factory = 10
 			industrial_complex = 4
 			steel_refinery = 2
 			9950 = {
-				naval_base = 6
+				naval_base = 5
 			}
 			1025 = {
-				naval_base = 3
+				naval_base = 5
 			}
 		}
 		victory_points = {
-			11925 5
+			11925 10
 		}
 		victory_points = {
 			7110 10
 		}
 		victory_points = {
-			1025 15
+			1025 10
 		}
 		victory_points = {
-			9950 30
+			9950 10
 		}
 	}
 

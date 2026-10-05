@@ -2,7 +2,7 @@
 state = {
 	id = 210
 	name ="STATE_210" # Nevel
-	manpower = 830133
+	manpower = 550000
 
 	state_category = rural
 
@@ -11,14 +11,15 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 4
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 		}
 		victory_points = {
-			11234 1
+			11234 10
 		}
 		victory_points = {
-			9386 1
+			9386 10
 		}
 	}
 

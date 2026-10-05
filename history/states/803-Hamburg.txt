@@ -8,15 +8,15 @@ state = {
 		add_core_of = WEF
 
 		victory_points = {
-			9347 20
+			9347 10
 		}
 		buildings = {
-			infrastructure = 9
+			infrastructure = 7
 			industrial_complex = 5
 			dockyard = 5
-			air_base = 4
+			air_base = 5
 			9347 = {
-				naval_base = 7
+				naval_base = 5
 			}
 		}
 	}
@@ -24,7 +24,7 @@ state = {
 	provinces = {
 		9347
 	}
-	manpower = 1600000
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =large_city
 }

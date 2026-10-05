@@ -2,26 +2,22 @@
 state = {
 	id = 570
 	name ="STATE_570" # Novosibirsk
-	manpower = 1765369
+	manpower = 550000
 
 	state_category = town
 
-	resources = {
-		coal = 21
-		iron = 146
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			7274 3
+			7274 10
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 7
 			industrial_complex = 2
-			air_base = 1
+			air_base = 5
 		}
 		
 	}

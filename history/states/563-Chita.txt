@@ -2,24 +2,18 @@
 state = {
 	id = 563
 	name ="STATE_563" # Chita
-	manpower = 1044310
+	manpower = 550000
 	state_category = rural
-	resources = {
-		bauxite = 62
-		chromium = 8 # was: 10
-		iron = 17
-		tungsten = 5
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 2
+			infrastructure = 7
 			arms_factory = 1
 			industrial_complex = 4
-			air_base = 2
+			air_base = 5
 			7785 = {
 				supply_node = 1
 			}

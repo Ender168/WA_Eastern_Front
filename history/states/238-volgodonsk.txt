@@ -2,7 +2,7 @@
 state = {
 	id = 238
 	name ="STATE_238"
-	manpower = 556677
+	manpower = 550000
 
 	state_category = rural
 
@@ -11,10 +11,11 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 		}
 		victory_points = {
-			775 1 # City of Volgodonsk only founded in 1950 to service the new reservoir
+			775 10 # City of Volgodonsk only founded in 1950 to service the new reservoir
 		}
 	}
 

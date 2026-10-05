@@ -2,23 +2,19 @@
 state = {
 	id = 399
 	name ="STATE_399"
-	manpower = 1304035
+	manpower = 550000
 	state_category = rural
-	resources = {
-		chromium=18 # was: 24
-		coal = 116
-		iron = 212
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			6278 5
+			6278 10
 		}
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 			steel_refinery = 1
 		}

@@ -2,30 +2,27 @@
 state = {
 	id = 1027
 	name ="STATE_1027" # Pechora
-	manpower = 20500
+	manpower = 550000
 
 	state_category = pastoral
 
-	resources = {
-		oil = 7
-		coal = 124
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			10723 1
+			10723 10
 		}
 		victory_points = {
-			13910 1
+			13910 10
 		}
 		victory_points = {
-			105 2
+			105 10
 		}
 		buildings = {
-			infrastructure = 1
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

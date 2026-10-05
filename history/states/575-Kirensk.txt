@@ -2,7 +2,7 @@
 state = {
 	id = 575
 	name ="STATE_575" # Kirensk
-	manpower = 146494
+	manpower = 550000
 
 	state_category = wasteland
 
@@ -11,7 +11,8 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 1
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

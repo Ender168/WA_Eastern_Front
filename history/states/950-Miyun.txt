@@ -2,7 +2,7 @@
 state = {
 	id = 950
 	name ="STATE_950" # East Hebei
-	manpower = 444200
+	manpower = 550000
 
 	state_category = pastoral
 
@@ -12,7 +12,8 @@ state = {
 		add_core_of = OBS
 		#
 		buildings = {
-			infrastructure = 5
+			air_base = 5
+			infrastructure = 7
 		}
 
 	}

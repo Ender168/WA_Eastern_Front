@@ -1,7 +1,7 @@
 state = {
 	id = 407
 	name ="STATE_407" #Uralsk
-	manpower = 176500
+	manpower = 550000
 	buildings_max_level_factor = 1.000
 	state_category = pastoral
 
@@ -10,10 +10,11 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 		}
 		victory_points = {
-			11537 1
+			11537 10
 		}
 	}
 

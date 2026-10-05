@@ -10,7 +10,8 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 0
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 
@@ -19,6 +20,6 @@ state = {
 		5136
 		10893
 	}
-	manpower =18744
+	manpower = 550000
 	buildings_max_level_factor =1.000
 }

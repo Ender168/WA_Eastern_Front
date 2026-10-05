@@ -2,29 +2,26 @@
 state = {
 	id = 573
 	name ="STATE_573" # Zlatoust
-	manpower = 456677
+	manpower = 550000
 
 	state_category = pastoral
-	resources = {
-		chromium = 23 # was: 32
-		bauxite = 188
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			10329 1
+			10329 10
 		}
 		victory_points = {
-			237 1
+			237 10
 		}
 		victory_points = {
-			361 1
+			361 10
 		}
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

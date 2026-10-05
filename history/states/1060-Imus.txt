@@ -1,7 +1,7 @@
 state = {
 	id = 1060
 	name ="STATE_1060"
-	manpower = 200320
+	manpower = 550000
 
 	state_category = pastoral
 	history = {
@@ -9,15 +9,15 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 3
-			air_base = 1
+			infrastructure = 7
+			air_base = 5
 			14167 = {
-				naval_base = 6
+				naval_base = 5
 				naval_supply_hub = 1 # Manila - Asiatic Fleet HQ
 			}
 		}
 		victory_points = {
-			14167 1
+			14167 10
 		}
 	}
 

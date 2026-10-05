@@ -2,12 +2,9 @@
 state = {
 	id = 529
 	name ="STATE_529" # Chugoku
-	manpower = 5571000
+	manpower = 550000
 	state_category = metropolis
 
-	resources = {
-		iron = 2
-	}
 
 	history = {
 		owner = OBS
@@ -15,13 +12,13 @@ state = {
 		add_core_of = OBS
 		buildings = {
 			infrastructure = 7
-			air_base = 3
+			air_base = 5
 			dockyard = 5
 			arms_factory = 5
 			industrial_complex = 3
 			steel_refinery = 3
 			1092 = {
-				naval_base = 10
+				naval_base = 5
 				naval_headquarters = { # Hashirajima - major anchorage for the combined fleet
 					level = 1
 					allowed = {
@@ -32,10 +29,10 @@ state = {
 		}
 
 		victory_points = {
-			7212 5
+			7212 10
 		}
 		victory_points = {
-			1092 30
+			1092 10
 		}
 	}
 

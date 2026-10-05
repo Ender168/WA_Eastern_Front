@@ -2,30 +2,27 @@
 state = {
 	id = 133
 	name ="STATE_133" # Lanark
-	manpower = 2457723
+	manpower = 550000
 
 	state_category = large_city
 
-	resources = {
-
-	}
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			3273 20
+			3273 10
 		}
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 6
 			dockyard = 4
 			anti_air_building = 1
-			air_base = 3
+			air_base = 5
 			fuel_silo = 1
 			6395 = {
-				naval_base = 2
+				naval_base = 5
 			}
 
 		}

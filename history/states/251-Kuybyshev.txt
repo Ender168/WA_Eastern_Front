@@ -2,25 +2,22 @@
 state = {
 	id = 251
 	name ="STATE_251"
-	manpower = 1391819
+	manpower = 550000
 
 	state_category = town
 
-	resources = {
-		oil = 9
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			11225 3
+			11225 10
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 7
 			industrial_complex = 3
-			air_base = 1
+			air_base = 5
 		}
 		
 	}

@@ -1,31 +1,28 @@
 state = {
 	id = 446
 	name = "STATE_446"
-	manpower = 6586596
+	manpower = 550000
 
 	state_category = large_town
 
-	resources = {
-		#
-	}
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			infrastructure = 5
+			infrastructure = 7
 			industrial_complex = 4
-			air_base = 4
+			air_base = 5
 		}
 		victory_points = {
-			7011 20
+			7011 10
 		}
 		victory_points = {
-			13343 5
+			13343 10
 		}
 		victory_points = {
-			7117 1
+			7117 10
 		}
 	}
 

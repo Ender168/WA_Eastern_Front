@@ -2,23 +2,21 @@
 state = {
 	id = 228
 	name ="STATE_228" # North Donetsk
-	manpower = 2167411
+	manpower = 550000
 
 	state_category = town
 
-	resources = {
-		coal = 247
-	}
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		victory_points = {
-			9461 3
+			9461 10
 		}
 		buildings = {
-			infrastructure = 5
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 5
 		}
 	}

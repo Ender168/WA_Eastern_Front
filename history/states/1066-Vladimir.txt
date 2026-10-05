@@ -2,7 +2,7 @@
 state = {
 	id = 1066
 	name ="STATE_1066"
-	manpower = 1504500
+	manpower = 550000
 
 	state_category = large_town
 
@@ -11,13 +11,14 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 2
 			arms_factory = 1
 			steel_refinery = 2
 		}
 		victory_points = {
-			6269 3
+			6269 10
 		}
 	}
 

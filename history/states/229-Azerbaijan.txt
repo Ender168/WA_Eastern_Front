@@ -1,13 +1,10 @@
 state = {
 	id = 229
 	name ="STATE_229"
-	manpower =2881049
+	manpower = 550000
 
 	state_category = town
 
-	resources = {
-		oil =156 # was: 126.0
-	}
 
 	history = {
 		owner = EEF
@@ -17,14 +14,14 @@ state = {
 			7661 10
 		}
 		victory_points = {
-			11674 1
+			11674 10
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 7
 			industrial_complex = 4
-			air_base = 1
+			air_base = 5
 			7661 = {
-				naval_base = 2
+				naval_base = 5
 			}
 		}
 

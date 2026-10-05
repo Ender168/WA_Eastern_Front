@@ -2,7 +2,7 @@
 state = {
 	id = 571
 	name ="STATE_571" # Omsk
-	manpower = 1317157
+	manpower = 550000
 
 	state_category = town
 	history = {
@@ -10,11 +10,12 @@ state = {
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			infrastructure = 2
+			air_base = 5
+			infrastructure = 7
 			arms_factory = 1
 		}
 		victory_points = {
-			10696 3
+			10696 10
 		}
 		
 	}

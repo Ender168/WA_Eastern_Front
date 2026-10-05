@@ -1,7 +1,7 @@
 state = {
 	id = 1064
 	name ="STATE_1064"
-	manpower =32000
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category = pastoral
 
@@ -10,13 +10,14 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			14168 1
+			14168 10
 		}
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			arms_factory = 1
 			14168 = {
-				naval_base = 4
+				naval_base = 5
 				naval_headquarters = { # Saigon - French naval HQ for far east
 					level = 1
 					allowed = {

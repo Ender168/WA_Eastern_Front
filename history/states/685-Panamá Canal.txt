@@ -1,7 +1,7 @@
 state = {
 	id = 685
 	name ="STATE_685"
-	manpower = 39467
+	manpower = 550000
 
 	state_category = enclave
 
@@ -10,13 +10,13 @@ state = {
 		controller = OBS
 		add_core_of = OBS
 		victory_points = {
-			7617 5
+			7617 10
 		}
 		buildings = {
-			infrastructure = 4
-			air_base = 1
+			infrastructure = 7
+			air_base = 5
 			7617 = {
-				naval_base = 6
+				naval_base = 5
 				naval_supply_hub = 1 # Panama Canal - Special Service Squadron (AKA Panama Canal fleet) HQ
 			}
 		}

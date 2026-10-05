@@ -1,7 +1,7 @@
 state = {
 	id = 1000
 	name ="STATE_1000"
-	manpower =25100
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =enclave
 
@@ -10,10 +10,11 @@ state = {
 		controller = WEF
 		add_core_of = WEF
 		victory_points = {
-			3254 1
+			3254 10
 		}
 		buildings = {
-			infrastructure = 4
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

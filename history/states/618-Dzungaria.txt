@@ -2,7 +2,7 @@
 state = {
 	id = 618
 	name ="STATE_618" # Dzungaria
-	manpower = 670800
+	manpower = 550000
 
 	state_category = pastoral
 
@@ -12,14 +12,15 @@ state = {
 		add_core_of = OBS
 		#
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 			industrial_complex = 1
 		}
 		victory_points = {
-			1708 1
+			1708 10
 		}
 		victory_points = {
-			4823 1
+			4823 10
 		}
 	}
 

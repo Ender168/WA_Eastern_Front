@@ -2,23 +2,22 @@
 state = {
 	id = 913
 	name ="STATE_913"
-	manpower =547200
+	manpower = 550000
 
 
 	state_category = rural
 
-	resources = {
-	}
 
 	history = {
 		owner = WEF
 		controller = WEF
 		add_core_of = WEF
 		victory_points = {
-			9894 3
+			9894 10
 		}
 		buildings = {
-			infrastructure = 4
+			air_base = 5
+			infrastructure = 7
 		}
 	}
 

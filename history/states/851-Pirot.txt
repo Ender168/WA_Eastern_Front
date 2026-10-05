@@ -1,7 +1,7 @@
 state = {
 	id = 851
 	name ="STATE_851"
-	manpower =101000
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category = pastoral
 
@@ -10,10 +10,11 @@ state = {
 		controller = WEF
 		add_core_of = WEF
 		victory_points = {
-			11857 1
+			11857 10
 		}
 		buildings = {
-			infrastructure = 3
+			air_base = 5
+			infrastructure = 7
 		}
 
 	}
