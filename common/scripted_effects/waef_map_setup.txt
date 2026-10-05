@@ -1,0 +1,151 @@
+# WA Eastern Front
+# Scenario map initialization.
+#
+# Design rule:
+# - Keep the World Ablaze map, state definitions, infrastructure, resources,
+#   railways, supply hubs and strategic regions untouched.
+# - Reassign ownership at scenario start instead of copying history/states.
+# - Preserve start-side state flags for later industry/scoring mechanics.
+
+waef_initialize_map = {
+    if = {
+        limit = {
+            NOT = { has_global_flag = waef_map_initialized }
+        }
+
+        set_global_flag = waef_map_initialized
+
+        # Clear stale markers in case the effect is reused during development.
+        every_state = {
+            clr_state_flag = waef_start_ger
+            clr_state_flag = waef_start_sov
+        }
+
+        # German side: the old 1v1 concept grouped Central Europe and the
+        # Balkans into the German player country.
+        every_state = {
+            limit = {
+                OR = {
+                    is_owned_by = GER
+                    is_owned_by = AUS
+                    is_owned_by = CZE
+                    is_owned_by = HUN
+                    is_owned_by = YUG
+                    is_owned_by = BUL
+                    is_owned_by = ROM
+                    is_owned_by = POL
+                }
+            }
+            set_state_flag = waef_start_ger
+        }
+
+        # Soviet side: USSR and the Baltic states.
+        every_state = {
+            limit = {
+                OR = {
+                    is_owned_by = SOV
+                    is_owned_by = LIT
+                    is_owned_by = LAT
+                    is_owned_by = EST
+                }
+            }
+            set_state_flag = waef_start_sov
+        }
+
+        # Eastern Poland. These are the World Ablaze state IDs used by its
+        # Molotov-Ribbentrop implementation / Soviet 1939 war goal.
+        96 = {
+            clr_state_flag = waef_start_ger
+            set_state_flag = waef_start_sov
+        }
+        95 = {
+            clr_state_flag = waef_start_ger
+            set_state_flag = waef_start_sov
+        }
+        1058 = {
+            clr_state_flag = waef_start_ger
+            set_state_flag = waef_start_sov
+        }
+        97 = {
+            clr_state_flag = waef_start_ger
+            set_state_flag = waef_start_sov
+        }
+        94 = {
+            clr_state_flag = waef_start_ger
+            set_state_flag = waef_start_sov
+        }
+        93 = {
+            clr_state_flag = waef_start_ger
+            set_state_flag = waef_start_sov
+        }
+        91 = {
+            clr_state_flag = waef_start_ger
+            set_state_flag = waef_start_sov
+        }
+        89 = {
+            clr_state_flag = waef_start_ger
+            set_state_flag = waef_start_sov
+        }
+        1059 = {
+            clr_state_flag = waef_start_ger
+            set_state_flag = waef_start_sov
+        }
+
+        # Vilnius / Druskininkai end up on the Soviet side by January 1941
+        # after the Soviet annexation of Lithuania.
+        784 = {
+            clr_state_flag = waef_start_ger
+            set_state_flag = waef_start_sov
+        }
+        1065 = {
+            clr_state_flag = waef_start_ger
+            set_state_flag = waef_start_sov
+        }
+
+        # Soviet territorial gains from Romania in 1940.
+        80 = {
+            clr_state_flag = waef_start_ger
+            set_state_flag = waef_start_sov
+        }
+        78 = {
+            clr_state_flag = waef_start_ger
+            set_state_flag = waef_start_sov
+        }
+        766 = {
+            clr_state_flag = waef_start_ger
+            set_state_flag = waef_start_sov
+        }
+
+        # Memel is German by the scenario date, despite being Lithuanian in
+        # the 1936 state history used as our base.
+        188 = {
+            clr_state_flag = waef_start_sov
+            set_state_flag = waef_start_ger
+        }
+
+        # Everything outside the duel is held by Sweden as the neutral
+        # observer/world-holder, matching the old 1v1 concept.
+        every_state = {
+            limit = {
+                NOT = { has_state_flag = waef_start_ger }
+                NOT = { has_state_flag = waef_start_sov }
+            }
+            transfer_state_to = SWE
+        }
+
+        # Apply the two playable blocs.
+        every_state = {
+            limit = {
+                has_state_flag = waef_start_ger
+            }
+            transfer_state_to = GER
+        }
+
+        every_state = {
+            limit = {
+                has_state_flag = waef_start_sov
+            }
+            transfer_state_to = SOV
+        }
+    }
+}
