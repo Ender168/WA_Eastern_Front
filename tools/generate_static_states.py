@@ -96,7 +96,7 @@ def normalize_victory_points(text: str) -> str:
         open_index = text.find("{", match.start(), match.end())
         close_index = find_matching_brace(text, open_index)
         body = text[open_index + 1:close_index]
-        body = re.sub(r"(\b\d+\b)(\s+)(-?\d+)", r"\1\2" + "10", body)
+        body = re.sub(r"(\b\d+\b)(\s+)(-?\d+)", lambda m: f"{m.group(1)}{m.group(2)}10", body)
         text = text[:open_index + 1] + body + text[close_index:]
         pos = open_index + 1 + len(body) + 1
 
