@@ -9,3 +9,4 @@ supported_version="1.19.*"
 dependencies={
     "World Ablaze (9.6)"
 }
+replace_path="common/bookmarks"
