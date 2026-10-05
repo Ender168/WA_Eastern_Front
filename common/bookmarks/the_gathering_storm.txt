@@ -23,9 +23,6 @@ bookmarks = {
         effect = {
             randomize_weather = 12345
             set_global_flag = waef_scenario_1941
-            WEF = { waef_reset_player_industry = yes }
-            EEF = { waef_reset_player_industry = yes }
-            OBS = { waef_clear_observer_industry = yes }
         }
     }
 }
