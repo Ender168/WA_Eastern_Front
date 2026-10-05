@@ -176,6 +176,14 @@ def normalize_state_values(text: str, state_id: int) -> str:
     return text
 
 def target_for(state_id: int, original_owner: str) -> str:
+    # When regenerating from our already-static main map, preserve existing
+    # scenario ownership and apply only explicit expansion overrides.
+    if original_owner in {"WEF", "EEF", "OBS"}:
+        if state_id in WEST_EXPANSION_IDS:
+            return "WEF"
+        return original_owner
+
+    # Compatibility with the original World Ablaze source set.
     if state_id in EAST_OVERRIDES:
         return "EEF"
     if state_id in WEST_OVERRIDES:
