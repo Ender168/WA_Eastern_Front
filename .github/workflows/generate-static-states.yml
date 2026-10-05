@@ -1,12 +1,7 @@
 name: Generate static state map
 
 on:
-  push:
-    branches:
-      - refactor/static-map-countries
-    paths:
-      - .github/workflows/generate-static-states.yml
-      - tools/generate_static_states.py
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -18,7 +13,6 @@ jobs:
       - name: Checkout scenario repository
         uses: actions/checkout@v4
         with:
-          ref: refactor/static-map-countries
           fetch-depth: 0
 
       - name: Fetch pinned World Ablaze state source
@@ -44,5 +38,5 @@ jobs:
             echo "No state changes to commit."
             exit 0
           fi
-          git commit -m "Generate static WEF EEF OBS state map"
-          git push origin HEAD:refactor/static-map-countries
+          git commit -m "Regenerate static WEF EEF OBS state map"
+          git push
