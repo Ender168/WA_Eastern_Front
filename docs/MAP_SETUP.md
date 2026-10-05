@@ -1,39 +1,21 @@
-# Map setup v0.1
+# Map setup v0.2
 
 The project does **not** copy the World Ablaze map.
 
-Instead, the custom January 1941 bookmark calls `waef_initialize_map`, which
-reassigns ownership while keeping all World Ablaze state definitions, province
-boundaries, terrain, resources, railways, supply hubs, air regions and strategic
-regions intact.
+The custom January 1941 bookmark calls `waef_initialize_map`, which reassigns
+ownership while keeping World Ablaze state definitions, province boundaries,
+terrain, resources, railways, supply hubs, air regions and strategic regions intact.
 
 ## Initial sides
 
 ### Germany
 
-States owned at the base World Ablaze start by:
-
-- GER
-- AUS
-- CZE
-- HUN
-- YUG
-- BUL
-- ROM
-- POL
-
-are marked for Germany, subject to the eastern-border overrides below.
+States owned by the base World Ablaze setup as GER, AUS, CZE, HUN, YUG, BUL,
+ROM or POL are assigned to Germany, subject to the eastern-border overrides.
 
 ### Soviet Union
 
-States owned at the base World Ablaze start by:
-
-- SOV
-- LIT
-- LAT
-- EST
-
-are marked for the Soviet Union.
+States owned by SOV, LIT, LAT or EST are assigned to the Soviet Union.
 
 Additional Soviet states:
 
@@ -41,32 +23,47 @@ Additional Soviet states:
 - Vilnius / Druskininkai: 784, 1065
 - Romanian concessions of 1940: 80, 78, 766
 
-### German override
+German override:
 
-- 188 Memel is reassigned to Germany.
+- 188 Memel
+
+These Polish IDs follow World Ablaze's own Molotov-Ribbentrop implementation.
 
 ## Neutral world
 
-All states not marked for Germany or the Soviet Union are transferred to SWE.
+A dedicated static country tag, `OBS`, is used as the world-holder.
 
-SWE is only a temporary observer/world-holder solution inherited from the old
-1v1 concept. It can be replaced by a dedicated observer tag later if World
-Ablaze systems make Sweden's normal country content undesirable.
+At scenario initialization:
+
+1. OBS is guaranteed to exist by giving it a core on Kanto (state 282) and
+   releasing it before the world transfer.
+2. Every state outside the GER and SOV blocs is transferred to OBS.
+3. Every other country is annexed into OBS with `transfer_troops = no`.
+4. OBS civilian factories, military factories and dockyards are set to zero.
+5. OBS receives cores on its world-holder territory.
+
+The observer is intentionally not a third active strategic participant.
+
+## Player cores
+
+All scenario-start GER and SOV territories become cores of the corresponding
+player. This avoids occupation mechanics being inherited accidentally from the
+countries consolidated into each side.
 
 ## Why ownership is scripted
 
-Copying `history/states` would make the submod brittle against World Ablaze
-map updates. Scripted ownership lets the project inherit future World Ablaze map
-changes automatically, except where World Ablaze changes one of the explicitly
-referenced border state IDs.
+Copying `history/states` would freeze the submod to one World Ablaze map
+snapshot. Scripted ownership allows terrain, supply, resource and map changes
+from later World Ablaze versions to flow through automatically.
 
-## Next validation
+Explicit state IDs remain maintenance-sensitive and must be rechecked if World
+Ablaze changes state boundaries or numbering.
 
-1. Launch only World Ablaze + WA Eastern Front.
-2. Select the January 1941 bookmark.
-3. Confirm only GER and SOV are intended playable sides.
-4. Inspect the GER-SOV border from the Baltic to the Black Sea.
-5. Check that railways, supply hubs and resources remain intact.
-6. Check Memel, Vilnius, eastern Poland, Bessarabia and Bucovina manually.
-7. Check whether landless former countries or SWE's normal World Ablaze content
-   produce unwanted events/effects.
+## Runtime validation still pending
+
+- OBS release and world consolidation;
+- initial border from Baltic to Black Sea;
+- Memel, Vilnius, eastern Poland, Bessarabia and Bucovina;
+- railways and supply hubs after ownership transfer;
+- removal of unwanted diplomacy/factions after country consolidation;
+- absence of unwanted observer AI behaviour.
