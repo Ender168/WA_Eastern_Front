@@ -1,31 +1,51 @@
-# Competitive setup systems v0.12 — WEF ownership isolation
+# Competitive setup systems v0.13 — static country-tag ordering fix
 
-## Confirmed controls
+## Root cause isolated
 
-- Native World Ablaze history/frontend works.
-- The World Ablaze bookmark copied unchanged except for a 1941.1.1.12 start date
-  successfully launches a single-player game.
-- Therefore the 1941 date itself is valid.
+World Ablaze defines its civil-war/dynamic tag boundary in:
 
-## Current diagnostic
+`common/country_tags/zz_dynamic_countries.txt`
 
-Keep the working 1941 World Ablaze bookmark exactly as in v0.11:
-- default country remains GER;
-- normal World Ablaze country list remains;
-- normal World Ablaze country and unit histories remain.
+with:
 
-Change only one state:
-- state 810 (East Berlin) owner/core GER -> WEF.
+`dynamic_tags = yes`
 
-No EEF state is changed.
-WEF is not selected by the bookmark.
-No global state replacement is used.
+Country tags loaded after that marker are treated as dynamic temporary tags.
 
-## Interpretation
+The WAEF tags were previously declared in:
 
-If this build launches, a state can safely be transferred to WEF and the next
-test should activate WEF as the bookmark/default country.
+`common/country_tags/zz_waef_countries.txt`
 
-If this build fails in the frontend, merely giving an existing state to the WEF
-custom tag is sufficient to reproduce the failure, so the problem is in custom
-country/state integration rather than the bookmark date.
+Alphabetically, `zz_waef_countries.txt` loads after
+`zz_dynamic_countries.txt`. Therefore WEF, EEF and OBS were being registered
+as dynamic tags instead of normal static countries.
+
+This explains the diagnostic sequence:
+- WAEF common content with no WEF/EEF territory can reach the frontend;
+- a pure World Ablaze 1941 bookmark launches successfully;
+- giving even one real state (East Berlin, state 810) to WEF causes a crash
+  when the country-selection frontend opens.
+
+## Fix
+
+The tag file is now:
+
+`common/country_tags/01_waef_countries.txt`
+
+so WEF/EEF/OBS are declared before World Ablaze's
+`zz_dynamic_countries.txt` marker.
+
+## Current diagnostic configuration
+
+- Start date: 1941.1.1.12.
+- Bookmark remains the working World Ablaze-style bookmark.
+- GER remains the default bookmark country.
+- State 810 (East Berlin) is owned/cored by WEF.
+- All other states, country histories and OOBs remain World Ablaze.
+- No EEF state ownership is active yet.
+
+## Expected result
+
+If the country-selection screen now remains stable, the static/dynamic tag
+ordering was the frontend crash cause. The next step is to restore both WEF and
+EEF as selectable scenario countries before scaling up territory ownership.
