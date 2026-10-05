@@ -1,4 +1,4 @@
-# Competitive setup systems v0.6
+# Competitive setup systems v0.7
 
 ## Runtime bootstrap status
 
@@ -22,37 +22,41 @@ not active runtime features in this bootstrap build.
 
 ## Bookmark bootstrap
 
-World Ablaze keeps its own default bookmarks. WAEF adds a separate
-`common/bookmarks/waef_1941.txt` bookmark:
+WAEF once again replaces `common/bookmarks`, but unlike the earlier failing
+configuration it now keeps World Ablaze country histories loaded for compatibility.
+
+The only visible bookmark is `common/bookmarks/waef_1941.txt`:
 
 - 1 January 1941 at 12:00;
-- WEF as the scenario default country;
+- WEF as the default country;
+- `default = yes`;
 - WEF and EEF as the two displayed player countries;
-- weather randomization plus the `waef_scenario_1941` global flag;
-- no `default = yes` marker.
+- weather randomization plus the `waef_scenario_1941` global flag.
 
-The latest diagnostic run confirmed that all three bookmark files parse
-successfully, including `waef_1941.txt`.
+This combines the two successful diagnostic findings:
 
-## Country-history compatibility diagnostic
+1. replacing the entire World Ablaze country-history database with only
+   WEF/EEF/OBS prevents stable frontend startup;
+2. leaving the World Ablaze 1936 bookmark active points the frontend at GER and
+   other historical countries which own no states on the WAEF static map.
 
-WAEF temporarily does **not** replace `history/countries`.
+The current test therefore preserves upstream country histories but exposes only
+the WAEF 1941 scenario.
 
-World Ablaze country histories are allowed to load alongside the WAEF-owned
-WEF/EEF/OBS histories. This is an isolation step prompted by a frontend crash
-after the 1936 history had already executed successfully.
+## Country-history compatibility layer
 
-The purpose is to test whether globally replacing `history/countries` with
-only WEF/EEF/OBS leaves the World Ablaze frontend and hardcoded country references
-without required country setup.
+WAEF does **not** replace `history/countries`.
 
-This is not the intended final architecture. Historical GER/SOV/ENG/etc. setup
-may therefore exist as zero-territory compatibility data during this test.
-Their armies remain suppressed because WAEF still replaces `history/units`.
+World Ablaze country histories load alongside the WAEF-owned WEF/EEF/OBS
+histories. Historical countries may therefore retain politics, characters,
+ideas and other compatibility data while owning no states.
 
-If the frontend reaches the menu with this build, country-history replacement is
-confirmed as the failing layer and we can replace it later with a controlled
-compatibility set rather than deleting the entire upstream database.
+This remains a temporary compatibility layer. Once startup is stable, it can be
+reduced to the minimum upstream country-history data required by World Ablaze
+scripts and hardcoded frontend/runtime references.
+
+Historical armies remain suppressed because WAEF still replaces
+`history/units`.
 
 ## Player countries
 
@@ -96,6 +100,17 @@ OOB is inherited.
 
 Starting armies will be implemented separately after the minimal scenario loads
 cleanly.
+
+## Known compatibility warning
+
+With Gotterdammerung active, World Ablaze's Belgium country history currently
+attempts to recruit several old pre-Gotterdammerung characters that its own
+character definitions disable when the DLC is present. These produce
+`Unknown character BEL_*` errors during history execution.
+
+The engine survives these errors and reaches frontend startup afterwards, so they
+are not treated as the current CTD cause. They will be cleaned up later if they
+remain relevant to the final compatibility layer.
 
 ## Focus tree
 
