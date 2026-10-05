@@ -1,0 +1,35 @@
+bookmarks = {
+    bookmark = {
+        name = "WAEF_1941_NAME"
+        desc = "WAEF_1941_DESC"
+        date = 1941.1.1.12
+        picture = "GFX_select_date_1939"
+        default_country = "GER"
+
+        GER = {
+            history = WAEF_GER_DESC
+            ideology = fascism
+            ideas = { }
+            focuses = { }
+        }
+
+        SOV = {
+            history = WAEF_SOV_DESC
+            ideology = communism
+            ideas = { }
+            focuses = { }
+        }
+
+        "---" = {
+            history = "WAEF_OTHER_DESC"
+        }
+
+        effect = {
+            randomize_weather = 19410101
+            set_global_flag = waef_scenario_1941
+            GER = {
+                waef_initialize_map = yes
+            }
+        }
+    }
+}
