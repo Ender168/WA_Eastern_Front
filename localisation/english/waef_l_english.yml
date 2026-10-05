@@ -1,6 +1,20 @@
 ﻿l_english:
  WAEF_1941_NAME:0 "Eastern Front 1v1 - January 1941"
- WAEF_1941_DESC:0 "A competitive Eastern Front scenario built on the complete World Ablaze map and mechanics. Germany and the Soviet Union prepare for a full-scale war while the rest of the world is neutralized under an observer country."
+ WAEF_1941_DESC:0 "A competitive Eastern Front scenario built on the complete World Ablaze map and mechanics. Germany and the Soviet Union prepare for a full-scale war while the rest of the world is consolidated under a neutral observer."
  WAEF_GER_DESC:0 "The western side controls Germany, Central Europe and the Balkan bloc. Prepare the economy, logistics and armed forces before the confrontation with the Soviet player."
  WAEF_SOV_DESC:0 "The eastern side controls the Soviet Union, the Baltic territories and the 1939-40 western acquisitions. Prepare the economy, logistics and armed forces before the confrontation with the German player."
- WAEF_OTHER_DESC:0 "This scenario is designed for Germany and the Soviet Union. Sweden is used as the neutral world-holder."
+ WAEF_OTHER_DESC:0 "This scenario is designed for Germany and the Soviet Union. OBS is the neutral world-holder and is not intended for normal play."
+
+ OBS:0 "Observer"
+ OBS_DEF:0 "the Observer"
+ OBS_ADJ:0 "Observer"
+ OBS_neutrality:0 "Observer"
+ OBS_neutrality_DEF:0 "the Observer"
+ OBS_neutrality_ADJ:0 "Observer"
+
+ waef_industry_setup:0 "Industrial Deployment"
+ waef_industry_setup_desc:0 "Choose how to distribute the country's normalized military industry. Civilian industry is identical for both players."
+ waef_choose_forward_industry:0 "Concentrate Industry Near the Front"
+ waef_choose_forward_industry_desc:0 "Deploy 60 military factories across the forward industrial belt. This provides greater immediate output, but exposes more industry to an enemy breakthrough."
+ waef_choose_deep_industry:0 "Disperse Industry into the Rear"
+ waef_choose_deep_industry_desc:0 "Deploy 50 military factories across the deep rear. This sacrifices immediate output in exchange for substantially safer industrial geography."
