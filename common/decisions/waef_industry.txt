@@ -5,8 +5,8 @@ waef_industry_setup = {
 
         allowed = {
             OR = {
-                tag = GER
-                tag = SOV
+                tag = WEF
+                tag = EEF
             }
         }
 
@@ -36,8 +36,8 @@ waef_industry_setup = {
 
         allowed = {
             OR = {
-                tag = GER
-                tag = SOV
+                tag = WEF
+                tag = EEF
             }
         }
 
