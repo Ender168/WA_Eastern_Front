@@ -50,7 +50,7 @@ Before adopting a package, the generic/minor folders remain available.
 
 This is also an upstream compatibility copy.
 
-WAEF removes the GER/SOV original-tag prohibition and allows either player to use
+WAEF gates the normal GER/SOV original-tag prohibition behind the scenario flag and allows either player to use
 the existing World Ablaze national technology adoption decisions without needing
 the donor country to remain an active faction partner.
 
