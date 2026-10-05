@@ -1,0 +1,29 @@
+characters = {
+    WEF_generic_leader = {
+        name = "Western Representative"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1.1"
+            id = -1
+        }
+    }
+
+    EEF_generic_leader = {
+        name = "Eastern Representative"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            expire = "1965.1.1.1"
+            id = -1
+        }
+    }
+}
