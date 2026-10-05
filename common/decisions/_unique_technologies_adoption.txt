@@ -1,5 +1,5 @@
 # WAEF compatibility copy of World Ablaze common/decisions/_unique_technologies_adoption.txt
-# WA complete_effect blocks are intentionally preserved. WAEF only broadens access for GER/SOV.
+# WA complete_effect blocks are preserved. Access changes are gated behind waef_scenario_1941.
 
 political_actions = {
 
@@ -9,6 +9,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -193,6 +201,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -381,6 +397,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -581,6 +605,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -837,6 +869,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -1032,6 +1072,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -1256,6 +1304,14 @@ political_actions = {
 			NOT = { original_tag = FRA }
 			NOT = { original_tag = ITA }
 			NOT = { original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = { original_tag = ENG }
 			NOT = { original_tag = USA }
 		}
@@ -1447,6 +1503,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -1530,6 +1594,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -1613,6 +1685,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -1696,6 +1776,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -1779,6 +1867,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -1862,6 +1958,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -1945,6 +2049,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -2351,6 +2463,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -2447,6 +2567,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -2548,6 +2676,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -2646,6 +2782,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -2771,6 +2915,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -2882,6 +3034,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -3008,6 +3168,14 @@ political_actions = {
 			NOT = { original_tag = FRA }
 			NOT = { original_tag = ITA }
 			NOT = { original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = { original_tag = ENG }
 			NOT = { original_tag = USA }
 		}
@@ -3117,6 +3285,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -3190,6 +3366,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -3263,6 +3447,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -3336,6 +3528,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -3409,6 +3609,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP }
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -3482,6 +3690,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
@@ -3555,6 +3771,14 @@ political_actions = {
 			NOT = {original_tag = FRA }
 			NOT = {original_tag = ITA }
 			NOT = {original_tag = JAP}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = GER }
+			}
+			OR = {
+				has_global_flag = waef_scenario_1941
+				NOT = { original_tag = SOV }
+			}
 			NOT = {original_tag = ENG }
 			NOT = {original_tag = USA }
 		}
