@@ -1,0 +1,23 @@
+state = {
+	id = 1065
+	name ="STATE_1065"
+	manpower = 9058
+
+	state_category = enclave
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		victory_points = {
+			3320 3
+		}
+		buildings = {
+			infrastructure = 4
+		}
+	}
+
+	provinces = {
+		14173
+	}
+}

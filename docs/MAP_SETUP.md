@@ -1,69 +1,80 @@
-# Map setup v0.2
+# Map setup v1.0
 
-The project does **not** copy the World Ablaze map.
+The scenario now uses a **static 1107-state ownership map**.
 
-The custom January 1941 bookmark calls `waef_initialize_map`, which reassigns
-ownership while keeping World Ablaze state definitions, province boundaries,
-terrain, resources, railways, supply hubs, air regions and strategic regions intact.
+The previous runtime ownership-transfer system has been removed.
 
-## Initial sides
+## Countries
 
-### Germany
+- `WEF`: Western Side
+- `EEF`: Eastern Side
+- `OBS`: neutral world holder
 
-States owned by the base World Ablaze setup as GER, AUS, CZE, HUN, YUG, BUL,
-ROM or POL are assigned to Germany, subject to the eastern-border overrides.
+GER and SOV are not player countries.
 
-### Soviet Union
+## Ownership
 
-States owned by SOV, LIT, LAT or EST are assigned to the Soviet Union.
+WEF receives states whose original World Ablaze owner was:
 
-Additional Soviet states:
+- GER
+- AUS
+- CZE
+- HUN
+- YUG
+- BUL
+- ROM
+- POL
+
+with the eastern-border overrides below.
+
+EEF receives states whose original owner was:
+
+- SOV
+- LIT
+- LAT
+- EST
+
+and additionally:
 
 - Eastern Poland: 96, 95, 1058, 97, 94, 93, 91, 89, 1059
 - Vilnius / Druskininkai: 784, 1065
-- Romanian concessions of 1940: 80, 78, 766
+- Romanian concessions: 80, 78, 766
 
-German override:
+Memel (188) is explicitly WEF.
 
-- 188 Memel
+Every remaining state is OBS.
 
-These Polish IDs follow World Ablaze's own Molotov-Ribbentrop implementation.
+Final totals:
 
-## Neutral world
+- WEF: 106
+- EEF: 182
+- OBS: 819
 
-A dedicated static country tag, `OBS`, is used as the world-holder.
+## State-history cleanup
 
-At scenario initialization:
+For every state, all previous political history entries are removed:
 
-1. OBS is guaranteed to exist by giving it a core on Kanto (state 282) and
-   releasing it before the world transfer.
-2. Every state outside the GER and SOV blocs is transferred to OBS.
-3. Every other country is annexed into OBS with `transfer_troops = no`.
-4. OBS civilian factories, military factories and dockyards are set to zero.
-5. OBS receives cores on its world-holder territory.
+- owner/controller;
+- core additions/removals;
+- claims additions/removals.
 
-The observer is intentionally not a third active strategic participant.
+Then exactly one scenario owner, controller and core is inserted.
 
-## Player cores
+This is important because dated World Ablaze history from 1938-1940 would
+otherwise transfer territory back to historical tags when the game executes
+history up to January 1941.
 
-All scenario-start GER and SOV territories become cores of the corresponding
-player. This avoids occupation mechanics being inherited accidentally from the
-countries consolidated into each side.
+Non-political state content remains intact.
 
-## Why ownership is scripted
+## Source and regeneration
 
-Copying `history/states` would freeze the submod to one World Ablaze map
-snapshot. Scripted ownership allows terrain, supply, resource and map changes
-from later World Ablaze versions to flow through automatically.
+The user-provided `states.rar` was used as the 1107-state reference set.
 
-Explicit state IDs remain maintenance-sensitive and must be rechecked if World
-Ablaze changes state boundaries or numbering.
+The repository generator is pinned to World Ablaze commit:
 
-## Runtime validation still pending
+`691c7085f3ec1333ac2a0742983da8a64011ca8b`
 
-- OBS release and world consolidation;
-- initial border from Baltic to Black Sea;
-- Memel, Vilnius, eastern Poland, Bessarabia and Bucovina;
-- railways and supply hubs after ownership transfer;
-- removal of unwanted diplomacy/factions after country consolidation;
-- absence of unwanted observer AI behaviour.
+The generated files are committed directly to `history/states`, so the game no
+longer depends on runtime state-transfer effects.
+
+See `docs/STATIC_MAP.md` for the generator details.

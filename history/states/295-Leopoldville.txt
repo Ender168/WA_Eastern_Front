@@ -1,0 +1,41 @@
+
+state = {
+	id = 295
+	name ="STATE_295" # Leopoldville
+	manpower = 1947522
+
+	state_category = rural
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			10968 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			191 1
+		}
+		victory_points = {
+			5117 3
+		}
+	}
+
+	provinces = {
+		5117
+		10025
+		10968
+		12775
+		12896
+		12925
+		12945
+		14420
+		14481
+		14482
+		14483
+	}
+}

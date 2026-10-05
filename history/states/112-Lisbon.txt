@@ -1,0 +1,46 @@
+
+state = {
+	id = 112
+	name ="STATE_112"
+	manpower = 1960000
+
+	state_category = city
+
+	resources = {
+		tungsten = 6
+	}
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			11805 20
+		}
+		victory_points = {
+			3798 1
+		}
+		victory_points = {
+			924 1
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 4
+			industrial_complex = 8
+			air_base = 8
+			11805 = {
+				naval_base = 8
+			}
+		}
+	}
+
+	provinces = {
+		799
+		924
+		3798
+		3861
+		6924
+		11805
+		13922
+	}
+}

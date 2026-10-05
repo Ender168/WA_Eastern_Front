@@ -1,0 +1,40 @@
+state = {
+	id = 723
+	name ="STATE_723"
+	manpower = 328319
+
+	resources = {
+		coal = 4
+	}
+
+	state_category = rural
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			2197 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			12632 1
+		}
+		victory_points = {
+			2197 5
+		}
+	}
+	provinces = {
+		2197
+		4819
+		5195
+		7839
+		8204
+		8212
+		10650
+		12632
+	}
+}

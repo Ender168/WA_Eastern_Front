@@ -1,0 +1,30 @@
+
+state = {
+	id = 985
+	name ="STATE_985"
+	manpower = 1210500
+
+	state_category = city
+
+	resources = {
+		iron = 10
+	}
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 5
+		}
+	}
+
+	provinces = {
+		6537
+		9418
+		9444
+		11407
+		14128
+	}
+}

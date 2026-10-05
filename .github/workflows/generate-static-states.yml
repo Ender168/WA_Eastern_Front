@@ -1,0 +1,42 @@
+name: Generate static state map
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout scenario repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch pinned World Ablaze state source
+        shell: bash
+        run: |
+          rm -rf /tmp/world-ablaze
+          git init /tmp/world-ablaze
+          git -C /tmp/world-ablaze remote add origin https://github.com/World-Ablaze/world-ablaze-beta.git
+          git -C /tmp/world-ablaze fetch --depth 1 origin 691c7085f3ec1333ac2a0742983da8a64011ca8b
+          git -C /tmp/world-ablaze checkout --detach FETCH_HEAD
+
+      - name: Generate WEF EEF OBS state histories
+        run: |
+          python tools/generate_static_states.py /tmp/world-ablaze/history/states history/states
+
+      - name: Commit generated state map
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A history/states
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+            exit 0
+          fi
+          git commit -m "Regenerate static WEF EEF OBS state map"
+          git push

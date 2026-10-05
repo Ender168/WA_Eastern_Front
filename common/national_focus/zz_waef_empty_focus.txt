@@ -1,4 +1,4 @@
-# Empty scenario focus tree. WAEF deliberately uses decisions and World Ablaze systems.
+# Empty scenario focus tree. WAEF uses decisions and World Ablaze systems.
 
 focus_tree = {
     id = waef_empty_focus_tree
@@ -8,9 +8,9 @@ focus_tree = {
         modifier = {
             add = 100000
             OR = {
-                original_tag = GER
-                original_tag = SOV
-                original_tag = OBS
+                tag = WEF
+                tag = EEF
+                tag = OBS
             }
         }
     }

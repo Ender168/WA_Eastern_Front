@@ -1,0 +1,66 @@
+
+state = {
+	id = 142
+	name ="STATE_142"
+	manpower = 352378
+
+	state_category = large_town
+
+	resources = {
+		chromium=1 # was: 2
+	}
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			dockyard = 2
+			122 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
+			3096 = {
+				naval_base = 2
+			}
+			11100 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			122 10
+		}
+		victory_points = {
+			3096 1
+		}
+		victory_points = {
+			11100 3
+		}
+	}
+
+	provinces = {
+		65
+		102
+		122
+		188
+		199
+		3090
+		3093
+		3096
+		3114
+		3180
+		3188
+		6145
+		6204
+		6216
+		9047
+		9127
+		9170
+		9216
+		11100
+		11198
+		13874
+	}
+}

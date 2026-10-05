@@ -1,0 +1,44 @@
+
+state = {
+	id = 340
+	name ="STATE_340"
+	manpower = 1026527
+	resources = {
+		chromium = 38
+	}
+
+	state_category = town
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			947 1
+		}
+		victory_points = {
+			9799 1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+		if = {
+			limit = { has_dlc = "Battle for the Bosporus"}
+			set_demilitarized_zone = yes
+		}
+	}
+
+	provinces = {
+		785
+		947
+		3786
+		3851
+		6864
+		6912
+		9799
+		9887
+		11778
+		11867
+	}
+}

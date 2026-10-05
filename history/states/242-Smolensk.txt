@@ -1,0 +1,46 @@
+
+state = {
+	id = 242
+	name ="STATE_242"
+	manpower = 1300028
+
+	state_category = large_town
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		victory_points = {
+			306 15
+		}
+		victory_points = {
+			11254 1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 6
+			arms_factory = 3
+			air_base = 8
+		}
+		
+	}
+
+	provinces = {
+		306
+		335
+		3247
+		3279
+		3313
+		3362
+		6273
+		6387
+		9272
+		9318
+		9382
+		9399
+		11254
+		11290
+		11353
+		11384
+	}
+}

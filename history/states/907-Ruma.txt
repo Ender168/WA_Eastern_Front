@@ -1,0 +1,22 @@
+
+state = {
+	id = 907
+	name ="STATE_907"
+	manpower = 103000
+
+	state_category = pastoral
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces = {
+		11577
+		11580
+	}
+}

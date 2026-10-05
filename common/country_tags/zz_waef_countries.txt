@@ -1,1 +1,3 @@
+WEF = "countries/WA Western Front.txt"
+EEF = "countries/WA Eastern Front.txt"
 OBS = "countries/WA Observer.txt"

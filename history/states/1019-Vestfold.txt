@@ -1,0 +1,33 @@
+
+state = {
+	id = 1019
+	name ="STATE_1019"
+	manpower = 102142
+
+	state_category = rural
+
+	resources = {
+	}
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			3094 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+
+	provinces = {
+		27
+		3059
+		3094
+		6080
+		6184
+		11037
+	}
+}

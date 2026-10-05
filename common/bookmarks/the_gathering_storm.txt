@@ -4,32 +4,28 @@ bookmarks = {
         desc = "WAEF_1941_DESC"
         date = 1941.1.1.12
         picture = "GFX_select_date_1939"
-        default_country = "GER"
+        default_country = "WEF"
 
-        GER = {
-            history = WAEF_GER_DESC
-            ideology = fascism
+        WEF = {
+            history = WAEF_WEF_DESC
+            ideology = neutrality
             ideas = { }
             focuses = { }
         }
 
-        SOV = {
-            history = WAEF_SOV_DESC
-            ideology = communism
+        EEF = {
+            history = WAEF_EEF_DESC
+            ideology = neutrality
             ideas = { }
             focuses = { }
-        }
-
-        "---" = {
-            history = "WAEF_OTHER_DESC"
         }
 
         effect = {
             randomize_weather = 12345
             set_global_flag = waef_scenario_1941
-            GER = {
-                waef_initialize_map = yes
-            }
+            WEF = { waef_reset_player_industry = yes }
+            EEF = { waef_reset_player_industry = yes }
+            OBS = { waef_clear_observer_industry = yes }
         }
     }
 }

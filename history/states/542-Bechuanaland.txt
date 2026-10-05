@@ -1,0 +1,43 @@
+state = {
+	id = 542
+	name ="STATE_542"
+	manpower = 234000
+	buildings_max_level_factor = 1.000
+
+	state_category = pastoral
+
+	resources = {
+	}
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13625 1
+		}
+	}
+
+	provinces = {
+		1580
+		8214
+		10525
+		12940
+		12963
+		13620
+		13621
+		13622
+		13623
+		13625
+		13626
+		14139
+		14140
+		14401
+		14402
+		14403
+		14458
+	}
+}

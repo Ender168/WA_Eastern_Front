@@ -1,0 +1,36 @@
+
+state = {
+	id = 136
+	name ="STATE_136"
+	manpower = 745466
+
+	state_category = town
+	resources = {
+		tungsten = 1
+	}
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			11136 1
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			fuel_silo = 2
+			industrial_complex = 2
+		}
+	}
+
+	provinces = {
+		200
+		3150
+		9161
+		11055
+		11136
+		11207
+		11306
+	}
+}

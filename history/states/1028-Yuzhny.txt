@@ -1,0 +1,24 @@
+
+state = {
+	id = 1028
+	name ="STATE_1028" # Pechora
+	manpower = 120
+
+	state_category = pastoral
+
+	resources = {
+	}
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces = {
+		11047
+	}
+}

@@ -27,7 +27,7 @@ waef_reset_player_industry = {
     }
 
     if = {
-        limit = { tag = GER }
+        limit = { tag = WEF }
     810 = {
         add_extra_state_shared_building_slots = 6
         add_building_construction = {
@@ -110,7 +110,7 @@ waef_reset_player_industry = {
     }
     }
     else_if = {
-        limit = { tag = SOV }
+        limit = { tag = EEF }
     219 = {
         add_extra_state_shared_building_slots = 6
         add_building_construction = {
@@ -198,7 +198,7 @@ waef_reset_player_industry = {
 
 waef_apply_forward_industry = {
     if = {
-        limit = { tag = GER }
+        limit = { tag = WEF }
     10 = {
         add_extra_state_shared_building_slots = 10
         add_building_construction = {
@@ -281,7 +281,7 @@ waef_apply_forward_industry = {
     }
     }
     else_if = {
-        limit = { tag = SOV }
+        limit = { tag = EEF }
     96 = {
         add_extra_state_shared_building_slots = 10
         add_building_construction = {
@@ -370,7 +370,7 @@ waef_apply_forward_industry = {
 
 waef_apply_deep_industry = {
     if = {
-        limit = { tag = GER }
+        limit = { tag = WEF }
     55 = {
         add_extra_state_shared_building_slots = 10
         add_building_construction = {
@@ -453,7 +453,7 @@ waef_apply_deep_industry = {
     }
     }
     else_if = {
-        limit = { tag = SOV }
+        limit = { tag = EEF }
     219 = {
         add_extra_state_shared_building_slots = 10
         add_building_construction = {
@@ -538,4 +538,25 @@ waef_apply_deep_industry = {
 
     clr_country_flag = waef_industry_choice_pending
     set_country_flag = waef_industry_deep
+}
+
+
+waef_clear_observer_industry = {
+    every_owned_state = {
+        set_building_level = {
+            type = industrial_complex
+            level = 0
+            instant_build = yes
+        }
+        set_building_level = {
+            type = arms_factory
+            level = 0
+            instant_build = yes
+        }
+        set_building_level = {
+            type = dockyard
+            level = 0
+            instant_build = yes
+        }
+    }
 }

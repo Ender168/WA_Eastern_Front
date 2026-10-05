@@ -1,0 +1,43 @@
+state = {
+	id = 422
+	name ="STATE_422"
+	manpower = 5487500
+
+	state_category = rural
+
+	resources = {
+		rubber = 93 # was: 116
+	}
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			7260 10
+		}
+		victory_points = {
+			1213 3
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 3
+			7260 = {
+				naval_base = 3
+				coastal_bunker = 3
+			}
+		}
+	}
+
+	provinces = {
+		1213
+		4219
+		7260
+		7344
+		10201
+		10229
+		10287
+		12258
+	}
+}

@@ -1,0 +1,37 @@
+
+state = {
+	id = 67
+	name ="STATE_67"
+	manpower = 1402591
+	resources = {
+
+	}
+
+	state_category = city
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = {
+			11467 5
+		}
+		victory_points = {
+			9511 3
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			aluminium_refinery = 1
+			arms_factory = 3
+		}
+	}
+
+	provinces = {
+		479
+		6512
+		9457
+		9511
+		11467
+	}
+}

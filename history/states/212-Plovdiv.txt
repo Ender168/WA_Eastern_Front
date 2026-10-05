@@ -1,0 +1,42 @@
+
+state = {
+	id = 212
+	name ="STATE_212"
+	manpower = 1500600
+
+	state_category = town
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = {
+			6923 5
+		}
+		victory_points = {
+			6814 1
+		}
+		victory_points = {
+			9862 1
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
+			air_base = 2
+		}
+		set_demilitarized_zone = yes
+	}
+
+	provinces = {
+		878
+		893
+		3937
+		6814
+		6923
+		6952
+		6982
+		9862
+		11813
+	}
+}

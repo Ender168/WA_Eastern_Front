@@ -1,0 +1,33 @@
+
+state = {
+	id = 581
+	name ="STATE_581"
+	manpower = 7200
+
+	state_category = wasteland
+
+	resources = {
+		chromium=40 # was: 44
+		coal = 70
+	}
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		victory_points = {
+			11098 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces = {
+		10551
+		10677
+		12502
+		13076
+		13899
+	}
+}

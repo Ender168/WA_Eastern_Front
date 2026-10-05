@@ -1,0 +1,41 @@
+
+state = {
+	id = 447
+	name ="STATE_447"
+	manpower = 602100
+
+	state_category = city
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+
+		victory_points = {
+			4076 10
+		}
+		victory_points = {
+			7164 1
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 3
+			4076 = {
+				naval_base = 4
+				naval_headquarters = { # Alexandria - Mediterranean Fleet HQ
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
+			}
+		}
+	}
+
+	provinces = {
+		4076
+		14248
+	}
+}
