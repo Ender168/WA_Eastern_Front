@@ -1,4 +1,5 @@
 name: Generate static state map
+# Re-run after VP normalization fix
 
 on:
   workflow_dispatch:
