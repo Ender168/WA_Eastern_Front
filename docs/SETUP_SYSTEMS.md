@@ -1,57 +1,45 @@
-# Competitive setup systems v0.9 — upstream history control
+# Competitive setup systems v0.10 — two-state WAEF bootstrap
 
-## Purpose of this build
+## Purpose
 
-This is a diagnostic control build, not the intended final scenario.
+The full upstream-history control build launches successfully. This proves that
+World Ablaze plus WAEF's remaining common content can reach and remain in the
+frontend.
 
-The previous WAEF 1941 build with minimal country-history compatibility stubs
-still completed history execution and reached `frontend.cpp: Startup time`
-before the application exited.
+This diagnostic build restores the WAEF scenario in the smallest useful form.
 
-The country stubs also removed the previous Belgium unknown-character errors.
-That makes the custom country-history layer an unlikely direct cause.
+## Bookmark
 
-## Control configuration
+WAEF again replaces `common/bookmarks` and exposes only the 1 January 1941
+bookmark with WEF as the default country and EEF as the second player country.
 
-For this test WAEF no longer uses any `replace_path` directives.
+## State history
 
-The local generated state-history files are removed so World Ablaze provides its
-native `history/states`.
+WAEF does **not** replace `history/states`.
 
-The 309 World Ablaze country-history compatibility stubs are removed so World
-Ablaze provides its native `history/countries`.
+Only two state files are overridden by matching World Ablaze paths:
 
-World Ablaze `history/units` is also restored.
+- state 810 (East Berlin): owner/core changed from GER to WEF;
+- state 219 (Moscow): owner/core changed from SOV to EEF.
 
-World Ablaze's normal bookmarks are restored. The WAEF 1941 bookmark is
-removed from this control build so the frontend uses only the known-good
-World Ablaze bookmark set.
+Every other state is loaded unchanged from World Ablaze.
 
-The WEF, EEF and OBS country definitions and their three WAEF-authored history
-files remain present. They are not the default countries in the restored World
-Ablaze 1936 frontend.
+No manpower, building, resource or victory-point normalization is applied.
+No OBS ownership is applied.
+
+## Country and unit history
+
+WAEF does not replace `history/countries` or `history/units`.
+
+World Ablaze's normal country histories and OOB therefore remain active, while
+the existing WEF/EEF/OBS history files are added alongside them.
 
 ## Diagnostic interpretation
 
-If this build reaches the normal World Ablaze frontend without crashing, the
-failure is inside WAEF's history replacement architecture, with the custom
-state-history layer the strongest remaining suspect.
+If this build remains stable, custom WEF/EEF tags, the WAEF 1941 bookmark and
+basic custom state ownership are valid. The crash in the full map build must
+then come from scaling or from one of the transformations performed across the
+1,107 generated state files.
 
-If this build still crashes, the history replacement layer is not sufficient to
-explain the failure. The next isolation pass should remove WAEF additions under
-`common/*` in groups, especially country tags/country definitions, characters,
-decisions, scripted effects and focus-tree additions.
-
-## Intended final architecture
-
-The intended scenario remains:
-
-- one WAEF 1941 competitive bookmark;
-- WEF and EEF as player countries;
-- OBS for the rest of the world;
-- a symmetric custom state map;
-- no historical World Ablaze OOB;
-- later restoration of WAEF technology, industry, Economic Fatigue and OOB
-  systems after startup stability is proven.
-
-This control build exists only to locate the crash boundary.
+If this build crashes, the failure is already reproducible with only two custom
+state owners, greatly narrowing the remaining compatibility problem.
