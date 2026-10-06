@@ -1,9 +1,8 @@
 state = {
 	id = 661
-	name ="STATE_661"
+	name = "STATE_661"
 	manpower = 550000
-
-	state_category = wasteland
+	state_category = city
 
 	history = {
 		owner = OBS
@@ -16,7 +15,6 @@ state = {
 			10067 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
 		}
 	}

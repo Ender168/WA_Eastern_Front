@@ -2,9 +2,7 @@ state = {
 	id = 331
 	name = "STATE_331"
 	manpower = 550000
-
-	state_category = pastoral
-
+	state_category = city
 
 	history = {
 		owner = OBS
@@ -15,10 +13,6 @@ state = {
 		}
 		buildings = {
 			infrastructure = 7
-			air_base = 5
-			13583 = {
-				naval_base = 5
-			}
 		}
 	}
 

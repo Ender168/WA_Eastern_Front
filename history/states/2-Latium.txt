@@ -1,28 +1,20 @@
 state = {
 	id = 2
-	name ="STATE_2" # Latium
-	manpower = 550000
-
+	name = "STATE_2"
+	manpower = 725000
 	state_category = city
 
 	history = {
 		owner = WEF
 		controller = WEF
 		add_core_of = WEF
-		victory_points = { 11846 10 }
+		victory_points = {
+			11846 10
+		}
 		buildings = {
 			infrastructure = 7
-			air_base = 5
-			industrial_complex = 6
-			dockyard = 1
-			arms_factory = 2
-			steel_refinery = 1
-			11751 = {
-				naval_base = 5
-			}
-			11846 = {
-				naval_base = 5
-			}
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

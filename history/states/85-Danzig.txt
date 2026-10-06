@@ -1,9 +1,9 @@
 state = {
 	id = 85
-	name ="STATE_85"
-	manpower = 550000
-
+	name = "STATE_85"
+	manpower = 725000
 	state_category = city
+
 	history = {
 		owner = WEF
 		controller = WEF
@@ -11,16 +11,10 @@ state = {
 		victory_points = {
 			362 10
 		}
-		set_demilitarized_zone = yes
 		buildings = {
 			infrastructure = 7
-			arms_factory = 2
-			industrial_complex = 2
-			dockyard = 3
-			air_base = 5
-			362 = {
-				naval_base = 5
-			}
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

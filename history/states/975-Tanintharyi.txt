@@ -1,25 +1,15 @@
-
 state = {
 	id = 975
-	name ="STATE_975"
+	name = "STATE_975"
 	manpower = 550000
-
-	state_category = pastoral
-
+	state_category = city
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-			1315 = {
-				naval_base = 5
-			}
-			12292 = {
-				naval_base = 5
-			}
 		}
 	}
 

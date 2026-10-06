@@ -1,7 +1,7 @@
 # WA Eastern Front: mutually exclusive World Ablaze technology-school adoption.
-# The complete effects below are copied from WA's native adoption decisions so
-# the real national technology flags, foreign_technologies idea and dated tech
-# grants remain intact.
+# The national technology flags and dated technology grants are copied from WA.
+# WAEF deliberately omits WA's foreign_technologies idea because its -10% Major
+# Technologies research-speed penalty is not part of this competitive scenario.
 
 waef_technology_assimilation = {
 
@@ -33,12 +33,7 @@ waef_technology_assimilation = {
             				}
             				remove_ideas = improvised_weapons
             			}
-            			if = {
-            				limit = {
-            					NOT = { has_idea = foreign_technologies }
-            				}
-            				add_ideas = foreign_technologies
-            			}
+
             			if = {
             				limit = {
             					has_country_flag = italian_technologies_tree_flag
@@ -173,12 +168,7 @@ waef_technology_assimilation = {
             				}
             				remove_ideas = improvised_weapons
             			}
-            			if = {
-            				limit = {
-            					NOT = { has_idea = foreign_technologies }
-            				}
-            				add_ideas = foreign_technologies
-            			}
+
             			if = {
             				limit = {
             					has_country_flag = french_technologies_tree_flag
@@ -315,12 +305,7 @@ waef_technology_assimilation = {
             				}
             				remove_ideas = improvised_weapons
             			}
-            			if = {
-            				limit = {
-            					NOT = { has_idea = foreign_technologies }
-            				}
-            				add_ideas = foreign_technologies
-            			}
+
             			if = {
             				limit = {
             					has_country_flag = french_technologies_tree_flag
@@ -469,12 +454,7 @@ waef_technology_assimilation = {
             				}
             				remove_ideas = improvised_weapons
             			}
-            			if = {
-            				limit = {
-            					NOT = { has_idea = foreign_technologies }
-            				}
-            				add_ideas = foreign_technologies
-            			}
+
             			if = {
             				limit = {
             					has_country_flag = french_technologies_tree_flag
@@ -658,12 +638,7 @@ waef_technology_assimilation = {
             				}
             				remove_ideas = improvised_weapons
             			}
-            			if = {
-            				limit = {
-            					NOT = { has_idea = foreign_technologies }
-            				}
-            				add_ideas = foreign_technologies
-            			}
+
             			if = {
             				limit = {
             					has_country_flag = french_technologies_tree_flag
@@ -797,12 +772,7 @@ waef_technology_assimilation = {
             				}
             				remove_ideas = improvised_weapons
             			}
-            			if = {
-            				limit = {
-            					NOT = { has_idea = foreign_technologies }
-            				}
-            				add_ideas = foreign_technologies
-            			}
+
             			if = {
             				limit = {
             					has_country_flag = french_technologies_tree_flag
@@ -944,12 +914,7 @@ waef_technology_assimilation = {
             				}
             				remove_ideas = improvised_weapons
             			}
-            			if = {
-            				limit = {
-            					NOT = { has_idea = foreign_technologies }
-            				}
-            				add_ideas = foreign_technologies
-            			}
+
             			if = {
             				limit = {
             					has_country_flag = french_technologies_tree_flag

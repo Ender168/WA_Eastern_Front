@@ -1,18 +1,18 @@
-
 state = {
 	id = 854
-	name ="STATE_854"
+	name = "STATE_854"
+	manpower = 725000
+	state_category = city
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-
+			industrial_complex = 1
+			arms_factory = 1
 		}
-
 	}
 
 	provinces = {
@@ -23,7 +23,4 @@ state = {
 		13035
 		13034
 	}
-	manpower = 550000
-	buildings_max_level_factor =1
-	state_category ="wasteland"
 }

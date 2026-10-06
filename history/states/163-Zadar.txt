@@ -1,9 +1,8 @@
 state = {
 	id = 163
-	name ="STATE_163"
-	manpower = 550000
-
-	state_category = enclave
+	name = "STATE_163"
+	manpower = 725000
+	state_category = city
 
 	history = {
 		owner = WEF
@@ -13,13 +12,12 @@ state = {
 			3943 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-			3943 = {
-				naval_base = 5
-			}
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
+
 	provinces = {
 		3943
 		13957

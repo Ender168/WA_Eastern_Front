@@ -1,20 +1,18 @@
 state = {
 	id = 407
-	name ="STATE_407" #Uralsk
+	name = "STATE_407"
 	manpower = 550000
-	buildings_max_level_factor = 1.000
-	state_category = pastoral
+	state_category = city
 
 	history = {
-		owner = EEF
-		controller = EEF
-		add_core_of = EEF
-		buildings = {
-			air_base = 5
-			infrastructure = 7
-		}
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
 		victory_points = {
 			11537 10
+		}
+		buildings = {
+			infrastructure = 7
 		}
 	}
 

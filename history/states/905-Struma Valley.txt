@@ -1,20 +1,18 @@
-
 state = {
 	id = 905
-	name ="STATE_905"
-	manpower = 550000
-
-	state_category = pastoral
+	name = "STATE_905"
+	manpower = 725000
+	state_category = city
 
 	history = {
 		owner = WEF
 		controller = WEF
 		add_core_of = WEF
 		buildings = {
-			air_base = 5
 			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
 		}
-		set_demilitarized_zone = yes
 	}
 
 	provinces = {

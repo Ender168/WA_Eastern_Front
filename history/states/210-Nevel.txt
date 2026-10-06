@@ -1,25 +1,23 @@
-
 state = {
 	id = 210
-	name ="STATE_210" # Nevel
-	manpower = 550000
-
-	state_category = rural
+	name = "STATE_210"
+	manpower = 725000
+	state_category = city
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
-		buildings = {
-			air_base = 5
-			infrastructure = 7
-			industrial_complex = 1
-		}
 		victory_points = {
 			11234 10
 		}
 		victory_points = {
 			9386 10
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

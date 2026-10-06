@@ -1,8 +1,9 @@
 state = {
 	id = 116
-	name ="STATE_116"
+	name = "STATE_116"
 	manpower = 550000
-	state_category = small_island
+	state_category = city
+
 	history = {
 		owner = OBS
 		controller = OBS
@@ -12,17 +13,9 @@ state = {
 		}
 		buildings = {
 			infrastructure = 7
-			air_base = 5
-			12003 = {
-				naval_base = 5
-				bunker = 2
-				coastal_bunker = 2
-			}
-		}
-		strategic_province_location = {
-			defensible_coastline = 12003
 		}
 	}
+
 	provinces = {
 		12003
 	}

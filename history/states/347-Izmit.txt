@@ -1,10 +1,8 @@
-
 state = {
 	id = 347
-	name ="STATE_347"
+	name = "STATE_347"
 	manpower = 550000
-
-	state_category = town
+	state_category = city
 
 	history = {
 		owner = OBS
@@ -17,21 +15,7 @@ state = {
 			904 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-			industrial_complex = 2
-			904 = {
-				naval_base = 5
-			}
-			11811 = {
-				naval_base = 5
-				naval_headquarters = { # Golcuk - main Turkish naval hq after demilitarization of Turkish Straits
-					level = 1
-					allowed = {
-						has_dlc = "No Compromise, No Surrender"
-					}
-				}
-			}
 		}
 	}
 

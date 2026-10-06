@@ -1,38 +1,22 @@
 state = {
 	id = 809
-	name ="STATE_809"
-
+	name = "STATE_809"
+	manpower = 550000
+	state_category = city
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
-		buildings = {
-			infrastructure = 7
-			industrial_complex = 18
-			arms_factory = 1
-			dockyard = 5
-			air_base = 5
-			9814 = {
-				naval_base = 5
-				naval_headquarters = { # San Diego - Pacific HQ pre-Pearl Harbor
-					level = 1
-					allowed = {
-						has_dlc = "No Compromise, No Surrender"
-					}
-				}
-			}
-			1562 = { # San Pedro - minor HQ for screens and subs pre-Pearl harbor
-				naval_base = 5
-			}
-		}
 		victory_points = {
 			9814 10
 		}
 		victory_points = {
 			1562 10
 		}
-
+		buildings = {
+			infrastructure = 7
+		}
 	}
 
 	provinces = {
@@ -41,7 +25,4 @@ state = {
 		9814
 		11757
 	}
-	manpower = 550000
-	buildings_max_level_factor =1.000
-	state_category =megalopolis
 }

@@ -1,9 +1,7 @@
-
 state = {
 	id = 43
-	name ="STATE_43" # Northern Hungary
-	manpower = 550000
-
+	name = "STATE_43"
+	manpower = 725000
 	state_category = city
 
 	history = {
@@ -18,10 +16,8 @@ state = {
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 3
-			industrial_complex = 4
-			steel_refinery = 2
-			air_base = 5
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

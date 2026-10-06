@@ -1,9 +1,8 @@
 state = {
 	id = 430
-	name ="STATE_430"
+	name = "STATE_430"
 	manpower = 550000
-	buildings_max_level_factor =1.000
-	state_category =town
+	state_category = city
 
 	history = {
 		owner = OBS
@@ -13,15 +12,7 @@ state = {
 			11929 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-			industrial_complex = 2
-			11929 = {
-				naval_base = 5
-			}
-			11968 = {
-				naval_base = 5
-			}
 		}
 	}
 

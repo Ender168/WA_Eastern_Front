@@ -1,16 +1,14 @@
-
 state = {
 	id = 538
-	name ="STATE_538" # Central Congo
+	name = "STATE_538"
 	manpower = 550000
+	state_category = city
 
-	state_category = pastoral
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			air_base = 5
 			infrastructure = 7
 		}
 	}

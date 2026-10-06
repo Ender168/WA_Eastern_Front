@@ -1,33 +1,19 @@
-
 state = {
 	id = 481
-	name ="STATE_481" # Durango
+	name = "STATE_481"
 	manpower = 550000
-
-	state_category = rural
-
+	state_category = city
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
-		buildings = {
-			air_base = 5
-			infrastructure = 7
-			dockyard = 1
-			8057 = {
-				naval_base = 5
-			}
-		}
 		victory_points = {
 			7921 10
 		}
-		#victory_points = {
-		#	8057 10
-		#}
-		#victory_points = {
-		#	10895 10
-		#}
+		buildings = {
+			infrastructure = 7
+		}
 	}
 
 	provinces = {
@@ -41,5 +27,4 @@ state = {
 		10895
 		12804
 	}
-
 }

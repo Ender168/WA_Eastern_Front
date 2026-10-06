@@ -1,10 +1,8 @@
-
 state = {
 	id = 965
-	name ="STATE_965"
-	manpower = 550000
-
-	state_category = town
+	name = "STATE_965"
+	manpower = 725000
+	state_category = city
 
 	history = {
 		owner = EEF
@@ -17,8 +15,9 @@ state = {
 			3255 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

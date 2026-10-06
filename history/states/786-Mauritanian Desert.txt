@@ -1,20 +1,17 @@
 state = {
 	id = 786
-	name ="STATE_786" # Mauritanian Desert
+	name = "STATE_786"
 	manpower = 550000
-
-	state_category = wasteland_impassable
 	impassable = yes
+	state_category = city
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			air_base = 5
 			infrastructure = 7
 		}
-
 	}
 
 	provinces = {

@@ -1,8 +1,9 @@
 state = {
 	id = 197
 	name = "STATE_197"
-	manpower = 550000
-	state_category = rural
+	manpower = 725000
+	state_category = city
+
 	history = {
 		owner = EEF
 		controller = EEF
@@ -12,11 +13,11 @@ state = {
 		}
 		buildings = {
 			infrastructure = 7
-			dockyard = 1
-			air_base = 5
-			industrial_complex = 3
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
+
 	provinces = {
 		409
 		574

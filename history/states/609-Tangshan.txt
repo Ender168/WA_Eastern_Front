@@ -1,28 +1,18 @@
-
 state = {
 	id = 609
-	name ="STATE_609" # East Hebei
+	name = "STATE_609"
 	manpower = 550000
-
-	state_category = town
-
+	state_category = city
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
-		#
-		buildings = {
-			air_base = 5
-			infrastructure = 7
-			arms_factory = 1
-			industrial_complex = 1
-			3900 = {
-				naval_base = 5
-			}
-		}
 		victory_points = {
 			12043 10
+		}
+		buildings = {
+			infrastructure = 7
 		}
 	}
 

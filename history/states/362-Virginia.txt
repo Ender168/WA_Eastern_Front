@@ -1,36 +1,22 @@
-
 state = {
 	id = 362
-	name ="STATE_362"
+	name = "STATE_362"
+	manpower = 550000
+	state_category = city
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
-		buildings = {
-			infrastructure = 7
-			industrial_complex = 13
-			steel_refinery = 2
-			dockyard = 4
-			air_base = 5
-			fuel_silo = 1
-			788 = {
-				naval_base = 5
-				naval_headquarters = { # Norfolk - De-facto Atlantic HQ until formal establishment post-war
-					level = 1
-					allowed = {
-						has_dlc = "No Compromise, No Surrender"
-					}
-				}
-			}
-		}
 		victory_points = {
 			3823 10
 		}
 		victory_points = {
 			788 10
 		}
-
+		buildings = {
+			infrastructure = 7
+		}
 	}
 
 	provinces = {
@@ -43,7 +29,4 @@ state = {
 		11738
 		11841
 	}
-	manpower = 550000
-	buildings_max_level_factor =1.000
-	state_category =metropolis
 }

@@ -2,30 +2,15 @@ state = {
 	id = 917
 	name = "STATE_917"
 	manpower = 550000
-
-	state_category = tiny_island
+	state_category = city
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-			1712 = {
-				naval_base = 5
-			}
-			13398 = {
-				naval_base = 5
-			}
-			13403 = {
-				naval_base = 5
-			}
-			13410 = {
-				naval_base = 5
-			}
 		}
-
 	}
 
 	provinces = {
@@ -34,6 +19,4 @@ state = {
 		13403
 		13410
 	}
-
-	#buildings_max_level_factor =1.000
 }

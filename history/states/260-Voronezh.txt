@@ -1,28 +1,23 @@
-
 state = {
 	id = 260
-	name ="STATE_260" # Voronezh
-	manpower = 550000
-
-	state_category = town
+	name = "STATE_260"
+	manpower = 725000
+	state_category = city
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
-		buildings = {
-			air_base = 5
-			infrastructure = 7
-			industrial_complex = 2
-			synthetic_refinery = 3
-			aluminium_refinery = 3
-			arms_factory = 1
-		}
 		victory_points = {
 			413 10
 		}
 		victory_points = {
 			3566 10
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

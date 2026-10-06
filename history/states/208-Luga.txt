@@ -1,28 +1,20 @@
-
 state = {
 	id = 208
-	name ="STATE_208" # Luga
-	manpower = 550000
-
-	state_category = rural
+	name = "STATE_208"
+	manpower = 725000
+	state_category = city
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
-		buildings = {
-			infrastructure = 7
-			air_base = 5
-			industrial_complex = 1
-			104 = {
-				bunker = 1
-			}
-			126 = {
-				bunker = 1
-			}
-		}
 		victory_points = {
 			9098 10
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

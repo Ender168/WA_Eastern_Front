@@ -1,22 +1,15 @@
-
 state = {
 	id = 563
-	name ="STATE_563" # Chita
+	name = "STATE_563"
 	manpower = 550000
-	state_category = rural
+	state_category = city
 
 	history = {
-		owner = EEF
-		controller = EEF
-		add_core_of = EEF
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
 		buildings = {
 			infrastructure = 7
-			arms_factory = 1
-			industrial_complex = 4
-			air_base = 5
-			7785 = {
-				supply_node = 1
-			}
 		}
 	}
 

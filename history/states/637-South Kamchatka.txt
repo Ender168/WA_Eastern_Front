@@ -1,24 +1,18 @@
-
 state = {
 	id = 637
-	name ="STATE_637"
+	name = "STATE_637"
+	manpower = 550000
+	state_category = city
 
 	history = {
-		owner = EEF
-		controller = EEF
-		add_core_of = EEF
-		buildings = {
-			air_base = 5
-			infrastructure = 7
-			12207 = {
-				naval_base = 5
-			}
-			4728 = {
-				naval_base = 5
-			}
-		}
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
 		victory_points = {
 			4728 10
+		}
+		buildings = {
+			infrastructure = 7
 		}
 	}
 
@@ -32,7 +26,4 @@ state = {
 		12207
 		12522
 	}
-	manpower = 550000
-	buildings_max_level_factor =1
-	state_category ="wasteland"
 }

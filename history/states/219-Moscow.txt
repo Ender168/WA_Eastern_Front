@@ -1,12 +1,9 @@
-
 state = {
 	id = 219
-	name ="STATE_219"
-	manpower = 550000
+	name = "STATE_219"
+	manpower = 725000
+	state_category = city
 
-	state_category = megalopolis
-
-	
 	resources = {
 		oil = 10
 		rubber = 10
@@ -16,7 +13,8 @@ state = {
 		bauxite = 10
 		steel = 10
 	}
-history = {
+
+	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
@@ -34,20 +32,8 @@ history = {
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 10
-			industrial_complex = 7
-			synthetic_refinery = 3
-			air_base = 5
-			fuel_silo = 1
-
-			6380 = {
-			    landmark_kremlin = {
-			        allowed = {
-			            has_dlc = "Gotterdammerung"
-			        }
-			        level = 1
-			    }
-			}
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

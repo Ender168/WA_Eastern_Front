@@ -1,15 +1,13 @@
-
 state = {
 	id = 763
-	name ="STATE_763"
-	manpower = 550000
+	name = "STATE_763"
+	manpower = 725000
 	state_category = city
 
 	history = {
 		owner = WEF
 		controller = WEF
 		add_core_of = WEF
-
 		victory_points = {
 			6332 10
 		}
@@ -18,18 +16,9 @@ state = {
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 3
-			industrial_complex = 5
-			dockyard = 4
-			steel_refinery = 2
-			6332 = {
-				bunker = 1
-				naval_base = 5
-			}
-			anti_air_building = 1
-			air_base = 5
+			industrial_complex = 1
+			arms_factory = 1
 		}
-		
 	}
 
 	provinces = {

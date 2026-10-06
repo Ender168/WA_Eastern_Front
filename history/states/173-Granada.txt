@@ -1,11 +1,8 @@
-
 state = {
 	id = 173
-	name ="STATE_173" # Granada
+	name = "STATE_173"
 	manpower = 550000
-
 	state_category = city
-
 
 	history = {
 		owner = OBS
@@ -22,15 +19,6 @@ state = {
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 2
-			industrial_complex = 3
-			air_base = 5
-			9979 = {
-				naval_base = 5
-			}
-			12038 = {
-				naval_base = 5
-			}
 		}
 	}
 

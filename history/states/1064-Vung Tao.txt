@@ -1,9 +1,8 @@
 state = {
 	id = 1064
-	name ="STATE_1064"
+	name = "STATE_1064"
 	manpower = 550000
-	buildings_max_level_factor =1.000
-	state_category = pastoral
+	state_category = city
 
 	history = {
 		owner = OBS
@@ -13,18 +12,7 @@ state = {
 			14168 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-			arms_factory = 1
-			14168 = {
-				naval_base = 5
-				naval_headquarters = { # Saigon - French naval HQ for far east
-					level = 1
-					allowed = {
-						has_dlc = "No Compromise, No Surrender"
-					}
-				}
-			}
 		}
 	}
 

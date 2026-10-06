@@ -1,6 +1,8 @@
 state = {
 	id = 215
-	name ="STATE_215"
+	name = "STATE_215"
+	manpower = 725000
+	state_category = city
 
 	history = {
 		owner = EEF
@@ -13,11 +15,9 @@ state = {
 			9195 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-			155 = {
-				supply_node = 1
-			}
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 
@@ -60,8 +60,4 @@ state = {
 		11212
 		13130
 	}
-	manpower = 550000
-
-	state_category = pastoral
-	buildings_max_level_factor =1.000
 }

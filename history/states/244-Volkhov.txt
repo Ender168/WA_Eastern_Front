@@ -1,24 +1,20 @@
-
 state = {
 	id = 244
-	name ="STATE_244" # Volkhov
-	manpower = 550000
-
-	state_category = rural
+	name = "STATE_244"
+	manpower = 725000
+	state_category = city
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
-		buildings = {
-			air_base = 5
-			infrastructure = 7
-			70 = {
-				naval_base = 5
-			}
-		}
 		victory_points = {
 			9197 10
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

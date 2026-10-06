@@ -1,76 +1,82 @@
-# Competitive setup systems v0.16 — compact land-war core
+# Competitive setup systems v0.17 — static clean map and regional supply mesh
 
-## Confirmed foundation
+## Why v0.16 did not visibly change the country-selection map
 
-The static-tag ordering fix is confirmed in game. WEF and EEF both launch as
-ordinary countries at 1941.1.1.12, so the diagnostic phase is closed.
+The v0.16 ownership changes were applied from the bookmark effect. That is too
+late for the scenario-selection map and some startup systems. WAEF now bakes
+the final ownership directly into all generated state histories.
 
-## Finalized map pass
+## Static final theatre
 
-The 182/182 bootstrap map is compacted at scenario initialization.
-
-- WEF: 141 playable states.
-- EEF: 141 playable states.
+- WEF: 141 states.
+- EEF: 141 states.
 - OBS: 825 states.
-- Norway, Greece, southern/island Italy and most of France are removed from WEF.
-- WEF keeps a compact north-eastern French belt, Benelux, Switzerland,
-  northern/central Italy and the continental Danish connection.
-- States 16, 28 and 29 fill the previous OBS holes in that retained western belt.
-- Siberia, the Far East and the Central Asian extension beyond the intended
-  Ural theatre are transferred from EEF to OBS.
+- States 16, 28 and 29 are WEF.
+- Norway, Greece, southern/island Italy and most of France are OBS.
+- The eastern playable theatre ends at the Urals; Siberia, the Far East and
+  the removed Central Asian extension are OBS.
 
-## Map normalization
+## State-history whitelist
 
-At scenario start:
-- every state category is set to `city` (15 shared building slots);
-- the two inherited +2 Belgian slot bonuses are neutralized;
-- infrastructure is level 7;
-- all civilian/military factories are cleared globally;
-- every WEF/EEF state receives exactly 1 CIV and 1 MIL;
-- all dockyards are removed;
-- all land forts, coastal forts and stronghold networks are removed;
-- every inherited supply node is removed;
-- every WEF/EEF state receives one supply node at its first VP (the WA regional
-  capital/main city convention), with a fallback node for states without a VP;
-- the entire inherited railway graph is normalized to level 3.
+Every one of the 1107 state files is reconstructed from a minimal whitelist:
+- state id and name;
+- provinces;
+- victory points;
+- final owner/controller/core;
+- normalized population;
+- state category;
+- the new minimal buildings block;
+- designated capital resources only.
 
-## Population
+This deliberately removes all inherited:
+- dynamic state modifiers;
+- dated state effects;
+- forts and stronghold networks;
+- naval bases and dockyards;
+- air bases;
+- anti-air;
+- refineries and silos;
+- special/landmark buildings;
+- extra building-slot effects;
+- claims and historical state-side scripts;
+- resource blocks outside the designated capitals.
 
-All static states start at 550,000 population. Each final WEF/EEF state receives
-+175,000 at scenario initialization.
+## Construction baseline
 
-141 × 725,000 = 102,225,000 civilian population per player.
+- every state category: city (15 shared slots);
+- infrastructure: 7 everywhere;
+- WEF/EEF: exactly 1 civilian factory + 1 military factory per state;
+- OBS: no civilian or military factories from WAEF state history;
+- WEF/EEF population: 725,000 per state = 102,225,000 per player.
 
 ## Resources
 
-The existing capital-resource convention is retained. Berlin and Moscow each
-hold 10 oil, rubber, tungsten, chromium, coal, bauxite and steel.
-Iron and aluminium remain at zero.
+Only Berlin (810) and Moscow (219) carry scenario resources:
+- oil 10;
+- rubber 10;
+- tungsten 10;
+- chromium 10;
+- coal 10;
+- bauxite 10;
+- steel 10.
 
-## Runtime cleanup
+Iron and aluminium are absent, and every other state has no resource block.
 
-The mod now replaces:
-- `history/countries`;
-- `history/units`;
-- `common/decisions`;
-- `common/decisions/categories`.
+## Supply and railways
 
-Only WEF/EEF/OBS country histories are active and inherited WA OOB files are
-disabled. Historical WA decision clutter is removed.
+- exactly one supply hub is generated for every WEF/EEF state;
+- hub position is the state's first victory-point province, falling back to the
+  first province only when the state has no VP;
+- province adjacency is derived from World Ablaze's pinned provinces.bmp;
+- every pair of adjacent playable states gets an end-to-end level-3 railway
+  route between their two regional supply hubs;
+- routes are calculated through adjacent land provinces;
+- shared trunks are deduplicated into unique railway segments, so multiple
+  hub-to-hub routes can share the same physical track without duplicate edges.
 
 ## Technology assimilation
 
-WEF and EEF both have 10 research slots and immediately see seven mutually
-exclusive zero-cost choices:
-
-- French;
-- Italian;
-- Japanese;
-- German;
-- Soviet;
-- British;
-- United States.
-
-Each decision preserves the original World Ablaze adoption complete-effect.
-After one is selected, `waef_technology_assimilated` permanently hides and
-locks the other six choices.
+All seven WA technology schools remain available. The original WA national
+technology flags and dated technology grants are preserved. WAEF does not add
+WA's `foreign_technologies` idea at all, so its -10% Major Technologies
+research-speed penalty never applies to WEF/EEF.
