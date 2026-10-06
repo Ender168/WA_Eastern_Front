@@ -29,7 +29,7 @@ EEF_REMOVE = {
     40, 402, 403, 404, 405, 408, 409, 516, 560, 561, 562, 563,
     564, 565, 566, 567, 568, 569, 570, 571, 574, 575, 576, 577,
     578, 579, 580, 584, 585, 586, 587, 588, 589, 590, 637, 644,
-    654, 732, 742, 1074,
+    583, 654, 732, 742, 1074,
 }
 WEF_ADD = {16, 28, 29}
 EEF_ADD = {1027, 407, 1015, 1014, 406}
@@ -355,7 +355,7 @@ def validate(states: list[dict]) -> None:
     by_id = {s["id"]: s for s in states}
     for s in states:
         counts[s["owner"]] += 1
-    expected = {"WEF": 141, "EEF": 142, "OBS": 824}
+    expected = {"WEF": 141, "EEF": 141, "OBS": 825}
     actual = {k: counts[k] for k in expected}
     if actual != expected:
         raise RuntimeError(f"Unexpected ownership counts: {actual}, expected {expected}")

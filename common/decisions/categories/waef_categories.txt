@@ -8,6 +8,5 @@ waef_technology_assimilation = {
 
     visible = {
         has_global_flag = waef_scenario_1941
-        NOT = { has_country_flag = waef_technology_assimilated }
     }
 }

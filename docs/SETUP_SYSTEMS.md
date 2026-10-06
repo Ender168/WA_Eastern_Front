@@ -105,3 +105,34 @@ Technology baseline is intentionally not bundled into this map/industry pass.
 The planned implementation is a separate one-time 1940 baseline decision
 unlocked only after a technology school is assimilated. That keeps national
 tree selection and bulk tech granting independently testable.
+
+
+## v0.19 — exact state symmetry, 1940 baseline and national Grand Strategy
+
+State 583 is removed from EEF and assigned to OBS. The playable state count is
+again exactly 141 WEF / 141 EEF / 825 OBS. Supply hubs and railways are
+regenerated after the removal.
+
+Each technology Assimilate now also assigns the matching World Ablaze Grand
+Strategy doctrine:
+- France: noria_tactics;
+- Italy: rapid_decision;
+- Japan: bushido;
+- Germany: auftragstaktik;
+- Soviet Union: deep_battle;
+- Britain: british_professionalism;
+- United States: overwhelming_firepower.
+
+After Assimilate, a separate one-time zero-cost decision applies the 1940
+technology baseline. The baseline is generated from the pinned World Ablaze
+technology definitions rather than maintained by hand.
+
+Generation rules:
+- start_year <= 1940;
+- shared Industry/Electronics/Support technologies;
+- only the selected national air/armor/artillery/infantry/naval files;
+- doctrine technologies excluded;
+- dependencies and sub-technologies included recursively only within the 1940 cutoff;
+- DLC-gated alternatives inherit their DLC conditions through the whole technology chain;
+- standard_industry is the neutral common industry philosophy;
+- concentrated_industry and dispersed_industry are not granted.

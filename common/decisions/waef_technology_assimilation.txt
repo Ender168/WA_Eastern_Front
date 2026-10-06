@@ -134,6 +134,7 @@ waef_technology_assimilation = {
             					set_technology = { fra_submarine_5 = 1 }
             				}
             			}
+            set_grand_doctrine = noria_tactics
             set_country_flag = waef_technology_assimilated
         }
 
@@ -271,6 +272,7 @@ waef_technology_assimilation = {
             					set_technology = { ita_submarine_5 = 1 }
             				}
             			}
+            set_grand_doctrine = rapid_decision
             set_country_flag = waef_technology_assimilated
         }
 
@@ -420,6 +422,7 @@ waef_technology_assimilation = {
             					set_technology = { jap_submarine_1 = 1 }
             				}
             			}
+            set_grand_doctrine = bushido
             set_country_flag = waef_technology_assimilated
         }
 
@@ -604,6 +607,7 @@ waef_technology_assimilation = {
             					}
             				}
             			}
+            set_grand_doctrine = auftragstaktik
             set_country_flag = waef_technology_assimilated
         }
 
@@ -738,6 +742,7 @@ waef_technology_assimilation = {
             					set_technology = { sov_submarine_3 = 1 }
             				}
             			}
+            set_grand_doctrine = deep_battle
             set_country_flag = waef_technology_assimilated
         }
 
@@ -880,6 +885,7 @@ waef_technology_assimilation = {
             					set_technology = { eng_submarine_5 = 1 }
             				}
             			}
+            set_grand_doctrine = british_professionalism
             set_country_flag = waef_technology_assimilated
         }
 
@@ -1015,7 +1021,68 @@ waef_technology_assimilation = {
             					set_technology = { usa_submarine_2 = 1 }
             				}
             			}
+            set_grand_doctrine = overwhelming_firepower
             set_country_flag = waef_technology_assimilated
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+
+    waef_apply_1940_technology_baseline = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_technology_assimilated
+            NOT = { has_country_flag = waef_1940_technology_baseline_applied }
+        }
+
+        available = {
+            has_country_flag = waef_technology_assimilated
+            NOT = { has_country_flag = waef_1940_technology_baseline_applied }
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            waef_grant_shared_1940_technologies = yes
+
+            if = {
+                limit = { has_country_flag = french_technologies_tree_flag }
+                waef_grant_french_1940_technologies = yes
+            }
+            else_if = {
+                limit = { has_country_flag = italian_technologies_tree_flag }
+                waef_grant_italian_1940_technologies = yes
+            }
+            else_if = {
+                limit = { has_country_flag = japanese_technologies_tree_flag }
+                waef_grant_japanese_1940_technologies = yes
+            }
+            else_if = {
+                limit = { has_country_flag = german_technologies_tree_flag }
+                waef_grant_german_1940_technologies = yes
+            }
+            else_if = {
+                limit = { has_country_flag = soviet_technologies_tree_flag }
+                waef_grant_soviet_1940_technologies = yes
+            }
+            else_if = {
+                limit = { has_country_flag = british_technologies_tree_flag }
+                waef_grant_british_1940_technologies = yes
+            }
+            else_if = {
+                limit = { has_country_flag = unitedstates_technologies_tree_flag }
+                waef_grant_unitedstates_1940_technologies = yes
+            }
+
+            set_country_flag = waef_1940_technology_baseline_applied
         }
 
         ai_will_do = { base = 0 }
