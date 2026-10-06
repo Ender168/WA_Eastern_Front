@@ -10,6 +10,10 @@ army_experience = 100
 air_experience = 100
 add_ideas = waef_initial_doctrine_window
 add_ideas = waef_reduced_fuel_capacity_civilian
+set_technology = {
+    basic_train = 1
+}
+
 add_equipment_to_stockpile = { type = train_equipment_1 amount = 7000 producer = WEF }
 
 # Air doctrine is common to both sides. Great War / Tier 0 is therefore
