@@ -3,22 +3,19 @@ waef_war_setup = {
     waef_war_preparation_countdown = {
         icon = generic_prepare_civil_war
 
-        # This mission is started explicitly from country history, like MEFO.
-        # Keeping allowed/activation false prevents automatic mission spawning.
+        # Forced non-selectable mission, following World Ablaze patterns:
+        # the country is allowed to own it, but it cannot start by itself
+        # and cannot complete early through its goal condition.
         allowed = {
-            always = no
+            OR = { tag = WEF tag = EEF }
         }
 
         activation = {
             always = no
         }
 
-        # Non-selectable missions complete automatically as soon as available
-        # becomes true. Keep it permanently false so only the timer can end it.
         available = {
-            hidden_trigger = {
-                always = no
-            }
+            always = no
         }
 
         selectable_mission = no
