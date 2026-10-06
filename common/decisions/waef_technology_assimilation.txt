@@ -1116,6 +1116,9 @@ waef_technology_assimilation = {
         fire_only_once = yes
 
         complete_effect = {
+            custom_effect_tooltip = waef_create_starting_forces_tt
+
+            hidden_effect = {
             # Keep this template first. HOI4 exposes no script effect for
             # directly assigning the occupation garrison template.
             division_template = {
@@ -1670,6 +1673,7 @@ waef_technology_assimilation = {
             }
 
             set_country_flag = waef_starting_forces_created
+            }
         }
 
         ai_will_do = { base = 0 }
