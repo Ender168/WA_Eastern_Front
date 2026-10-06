@@ -1,7 +1,7 @@
 waef_war_setup = {
 
     waef_war_preparation_countdown = {
-        icon = generic_prepare_for_war
+        icon = generic_prepare_civil_war
 
         allowed = {
             OR = { tag = WEF tag = EEF }
@@ -29,7 +29,7 @@ waef_war_setup = {
     }
 
     waef_declare_scenario_war = {
-        icon = generic_war_with_comintern
+        icon = generic_operation
 
         allowed = {
             OR = { tag = WEF tag = EEF }
