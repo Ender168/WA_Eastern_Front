@@ -18,6 +18,10 @@ RAW = f"https://raw.githubusercontent.com/World-Ablaze/world-ablaze-beta/{WA_COM
 
 CUTOFF_YEAR = 1940
 
+# WAEF uses the neutral industry philosophy as the common 1940 baseline.
+# The two mutually exclusive specialisations remain unresearched.
+FORCE_EXCLUDE = {"concentrated_industry", "dispersed_industry"}
+
 SHARED_FILES = {
     "common/technologies/industry.txt",
     "common/technologies/electronic_mechanical_engineering.txt",
@@ -53,6 +57,7 @@ class Tech:
     doctrine: bool
     dependencies: tuple[str, ...]
     sub_technologies: tuple[str, ...]
+    leads_to: tuple[str, ...]
     requires_dlc: tuple[str, ...]
     forbids_dlc: tuple[str, ...]
 
@@ -209,6 +214,9 @@ def parse_tech(name: str, path: str, body: str) -> Tech:
         doctrine=doctrine,
         dependencies=token_list(body, "dependencies"),
         sub_technologies=token_list(body, "sub_technologies"),
+        leads_to=tuple(dict.fromkeys(re.findall(
+            r"\bleads_to_tech\s*=\s*([A-Za-z0-9_\.\-]+)", body
+        ))),
         requires_dlc=requires,
         forbids_dlc=forbids,
     )
@@ -267,7 +275,52 @@ def eligible_seed(path_set: set[str], techs: dict[str, Tech]) -> set[str]:
         and tech.has_folder
         and not tech.doctrine
         and tech.year <= CUTOFF_YEAR
+        and name not in FORCE_EXCLUDE
     }
+
+
+def effective_conditions(techs: dict[str, Tech]) -> dict[str, set[tuple[tuple[str, ...], tuple[str, ...]]]]:
+    parents: dict[str, set[str]] = defaultdict(set)
+    for parent_name, tech in techs.items():
+        for child in tech.leads_to:
+            if child in techs:
+                parents[child].add(parent_name)
+
+    unconditional = ((), ())
+    memo: dict[str, set[tuple[tuple[str, ...], tuple[str, ...]]]] = {}
+
+    def resolve(name: str, stack: set[str]) -> set[tuple[tuple[str, ...], tuple[str, ...]]]:
+        if name in memo:
+            return memo[name]
+        if name in stack:
+            return {unconditional}
+
+        tech = techs[name]
+        explicit = (tech.requires_dlc, tech.forbids_dlc)
+        if explicit != unconditional:
+            memo[name] = {explicit}
+            return memo[name]
+
+        parent_names = parents.get(name, set())
+        if not parent_names:
+            memo[name] = {unconditional}
+            return memo[name]
+
+        conditions: set[tuple[tuple[str, ...], tuple[str, ...]]] = set()
+        next_stack = set(stack)
+        next_stack.add(name)
+        for parent in parent_names:
+            conditions |= resolve(parent, next_stack)
+
+        # If any valid path is unconditional, the child is unconditional.
+        if unconditional in conditions:
+            conditions = {unconditional}
+        memo[name] = conditions or {unconditional}
+        return memo[name]
+
+    for name in techs:
+        resolve(name, set())
+    return memo
 
 
 def condition_key(tech: Tech) -> tuple[tuple[str, ...], tuple[str, ...]]:
@@ -283,14 +336,26 @@ def render_set(names: list[str], indent: str) -> list[str]:
     return lines
 
 
-def render_effect(effect_name: str, names: set[str], techs: dict[str, Tech]) -> str:
+def render_effect(
+    effect_name: str,
+    names: set[str],
+    techs: dict[str, Tech],
+    conditions: dict[str, set[tuple[tuple[str, ...], tuple[str, ...]]]],
+) -> str:
     grouped: dict[tuple[tuple[str, ...], tuple[str, ...]], list[str]] = defaultdict(list)
+    unconditional_key = ((), ())
+
     for name in sorted(names):
-        grouped[condition_key(techs[name])].append(name)
+        alternatives = conditions[name]
+        if unconditional_key in alternatives:
+            grouped[unconditional_key].append(name)
+            continue
+        for signature in alternatives:
+            grouped[signature].append(name)
 
     lines = [f"{effect_name} = {{"]
-    unconditional = grouped.pop(((), ()), [])
-    lines += render_set(unconditional, "    ")
+    unconditional = grouped.pop(unconditional_key, [])
+    lines += render_set(sorted(set(unconditional)), "    ")
 
     for (requires, forbids), group_names in sorted(grouped.items()):
         lines += ["", "    if = {", "        limit = {"]
@@ -299,7 +364,7 @@ def render_effect(effect_name: str, names: set[str], techs: dict[str, Tech]) -> 
         for dlc in forbids:
             lines.append(f'            NOT = {{ has_dlc = "{dlc}" }}')
         lines += ["        }"]
-        lines += render_set(group_names, "        ")
+        lines += render_set(sorted(set(group_names)), "        ")
         lines += ["    }"]
     lines += ["}", ""]
     return "\n".join(lines)
@@ -328,6 +393,7 @@ def main() -> None:
     if duplicates:
         raise RuntimeError("Duplicate technology IDs: " + repr(dict(duplicates)))
 
+    conditions = effective_conditions(all_techs)
     shared = closure(eligible_seed(SHARED_FILES, all_techs), all_techs)
 
     school_sets: dict[str, set[str]] = {}
@@ -344,13 +410,14 @@ def main() -> None:
         f"# Cutoff: start_year <= {CUTOFF_YEAR}.",
         "# Doctrine technologies are excluded; Grand Strategy is assigned by Assimilate.",
         "",
-        render_effect("waef_grant_shared_1940_technologies", shared, all_techs),
+        render_effect("waef_grant_shared_1940_technologies", shared, all_techs, conditions),
     ]
     for school in SCHOOLS:
         effects.append(render_effect(
             f"waef_grant_{school}_1940_technologies",
             school_sets[school],
             all_techs,
+            conditions,
         ))
     OUT_EFFECTS.parent.mkdir(parents=True, exist_ok=True)
     OUT_EFFECTS.write_text("\n".join(effects), encoding="utf-8")
@@ -367,7 +434,9 @@ def main() -> None:
         "- military seeds: only the selected national air/armor/artillery/infantry/naval files;",
         "- doctrine technologies are excluded;",
         "- dependencies and sub-technologies are included recursively only while they remain at or before the cutoff;",
-        "- DLC-gated branches retain their DLC conditions.",
+        "- DLC-gated branches inherit their DLC conditions through leads_to_tech chains;
+- standard_industry is granted as the neutral common industry philosophy;
+- concentrated_industry and dispersed_industry are intentionally excluded.",
         "",
         f"Shared technologies: **{len(shared)}**.",
         "",
