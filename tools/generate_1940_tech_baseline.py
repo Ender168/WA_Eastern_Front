@@ -434,9 +434,9 @@ def main() -> None:
         "- military seeds: only the selected national air/armor/artillery/infantry/naval files;",
         "- doctrine technologies are excluded;",
         "- dependencies and sub-technologies are included recursively only while they remain at or before the cutoff;",
-        "- DLC-gated branches inherit their DLC conditions through leads_to_tech chains;
-- standard_industry is granted as the neutral common industry philosophy;
-- concentrated_industry and dispersed_industry are intentionally excluded.",
+        "- DLC-gated branches inherit their DLC conditions through leads_to_tech chains;",
+        "- standard_industry is granted as the neutral common industry philosophy;",
+        "- concentrated_industry and dispersed_industry are intentionally excluded.",
         "",
         f"Shared technologies: **{len(shared)}**.",
         "",
