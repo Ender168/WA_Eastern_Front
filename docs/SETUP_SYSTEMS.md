@@ -80,3 +80,28 @@ All seven WA technology schools remain available. The original WA national
 technology flags and dated technology grants are preserved. WAEF does not add
 WA's `foreign_technologies` idea at all, so its -10% Major Technologies
 research-speed penalty never applies to WEF/EEF.
+
+
+## v0.18 — Eastern edge cleanup and heavier starting industry
+
+The detached EEF states 742, 732, 40 and 654 are removed from the playable
+theatre. They are replaced by 1027, 407, 1015, 1014 and 406, producing a more
+continuous eastern/rear boundary.
+
+Final ownership after this pass:
+- WEF: 141 states;
+- EEF: 142 states;
+- OBS: 824 states.
+
+Playable-state industry is increased to:
+- 2 civilian factories;
+- 5 military factories.
+
+The regional supply generator is rerun after ownership changes. Every newly
+added EEF state receives its own supply hub and is included in the automatic
+level-3 rail mesh between adjacent playable states.
+
+Technology baseline is intentionally not bundled into this map/industry pass.
+The planned implementation is a separate one-time 1940 baseline decision
+unlocked only after a technology school is assimilated. That keeps national
+tree selection and bulk tech granting independently testable.

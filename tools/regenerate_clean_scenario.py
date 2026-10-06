@@ -26,12 +26,13 @@ WEF_REMOVE = {
     1020, 1023, 1032, 1051,
 }
 EEF_REMOVE = {
-    402, 403, 404, 405, 406, 407, 408, 409, 516, 560, 561, 562,
-    563, 564, 565, 566, 567, 568, 569, 570, 571, 574, 575, 576,
-    577, 578, 579, 580, 584, 585, 586, 587, 588, 589, 590, 637,
-    644, 1014, 1015, 1027, 1074,
+    40, 402, 403, 404, 405, 408, 409, 516, 560, 561, 562, 563,
+    564, 565, 566, 567, 568, 569, 570, 571, 574, 575, 576, 577,
+    578, 579, 580, 584, 585, 586, 587, 588, 589, 590, 637, 644,
+    654, 732, 742, 1074,
 }
 WEF_ADD = {16, 28, 29}
+EEF_ADD = {1027, 407, 1015, 1014, 406}
 
 PLAYER_POPULATION_PER_STATE = 725_000
 OBS_POPULATION_PER_STATE = 550_000
@@ -100,6 +101,8 @@ def parse_state(path: Path) -> dict:
         owner = "OBS"
     if sid in WEF_ADD:
         owner = "WEF"
+    if sid in EEF_ADD:
+        owner = "EEF"
 
     return {
         "id": sid,
@@ -156,8 +159,8 @@ def render_state(s: dict) -> str:
     ]
     if player:
         lines += [
-            "\t\t\tindustrial_complex = 1",
-            "\t\t\tarms_factory = 1",
+            "\t\t\tindustrial_complex = 2",
+            "\t\t\tarms_factory = 5",
         ]
     lines += [
         "\t\t}",
@@ -352,13 +355,16 @@ def validate(states: list[dict]) -> None:
     by_id = {s["id"]: s for s in states}
     for s in states:
         counts[s["owner"]] += 1
-    expected = {"WEF": 141, "EEF": 141, "OBS": 825}
+    expected = {"WEF": 141, "EEF": 142, "OBS": 824}
     actual = {k: counts[k] for k in expected}
     if actual != expected:
         raise RuntimeError(f"Unexpected ownership counts: {actual}, expected {expected}")
     for sid in WEF_ADD:
         if by_id[sid]["owner"] != "WEF":
             raise RuntimeError(f"State {sid} was not moved to WEF")
+    for sid in EEF_ADD:
+        if by_id[sid]["owner"] != "EEF":
+            raise RuntimeError(f"State {sid} was not moved to EEF")
     for sid in WEF_REMOVE | EEF_REMOVE:
         if by_id[sid]["owner"] != "OBS":
             raise RuntimeError(f"State {sid} was not moved to OBS")
