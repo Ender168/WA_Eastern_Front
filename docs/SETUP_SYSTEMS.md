@@ -1,4 +1,4 @@
-# Competitive setup systems v0.17 — static clean map and regional supply mesh
+# Competitive setup systems v0.20 — static clean map and regional supply mesh
 
 ## Why v0.16 did not visibly change the country-selection map
 
