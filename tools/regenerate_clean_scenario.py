@@ -36,6 +36,13 @@ WEF_ADD = {16, 28, 29}
 PLAYER_POPULATION_PER_STATE = 725_000
 OBS_POPULATION_PER_STATE = 550_000
 
+# Physical map barriers from the pinned WA map. These are geography, not
+# gameplay modifiers, so the clean-state rebuild must preserve them.
+IMPASSABLE_IDS = {
+    101, 273, 495, 514, 515, 516, 552, 644, 674, 678, 756, 767, 775,
+    782, 786, 788, 792, 793, 794, 795, 902, 947, 1001, 1003, 1048,
+}
+
 CAPITAL_RESOURCES = {
     810: {
         "oil": 10,
@@ -115,8 +122,10 @@ def render_state(s: dict) -> str:
         f"\tid = {sid}",
         f"\tname = {s['name']}",
         f"\tmanpower = {population}",
-        "\tstate_category = city",
     ]
+    if sid in IMPASSABLE_IDS:
+        lines.append("\timpassable = yes")
+    lines.append("\tstate_category = city")
 
     resources = CAPITAL_RESOURCES.get(sid)
     if resources:
