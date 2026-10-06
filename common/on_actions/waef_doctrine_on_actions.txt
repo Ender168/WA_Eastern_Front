@@ -1,0 +1,31 @@
+on_actions = {
+    on_daily_WEF = {
+        effect = {
+            if = {
+                limit = {
+                    date > 1941.1.29
+                    has_idea = waef_initial_doctrine_window
+                }
+                swap_ideas = {
+                    remove_idea = waef_initial_doctrine_window
+                    add_idea = waef_naval_doctrine_lock
+                }
+            }
+        }
+    }
+
+    on_daily_EEF = {
+        effect = {
+            if = {
+                limit = {
+                    date > 1941.1.29
+                    has_idea = waef_initial_doctrine_window
+                }
+                swap_ideas = {
+                    remove_idea = waef_initial_doctrine_window
+                    add_idea = waef_naval_doctrine_lock
+                }
+            }
+        }
+    }
+}
