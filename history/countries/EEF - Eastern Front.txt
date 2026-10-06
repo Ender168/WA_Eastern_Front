@@ -3,12 +3,14 @@ capital = 219
 set_research_slots = 10
 set_stability = 0.75
 set_war_support = 0.50
-add_political_power = 200
+add_political_power = 800
 
 # Competitive doctrine setup.
 army_experience = 100
 air_experience = 100
 add_ideas = waef_initial_doctrine_window
+add_ideas = waef_reduced_fuel_capacity
+add_equipment_to_stockpile = { type = train_equipment_1 amount = 7000 producer = EEF }
 
 # Air doctrine is common to both sides. Great War / Tier 0 is therefore
 # preselected and fully mastered so players begin with the first real choice.
