@@ -1,4 +1,4 @@
-# Competitive setup systems v0.22 — static clean map and regional supply mesh
+# Competitive setup systems v0.23 — static clean map and regional supply mesh
 
 ## Why v0.16 did not visibly change the country-selection map
 
@@ -205,7 +205,7 @@ The decision then creates, for the country taking it:
 
 - 300 infantry divisions;
 - 30 medium tank divisions;
-- all with start experience, equipment and manpower factors set to 1;
+- all with start experience factor 0.45 (World Ablaze Regular), full equipment and full manpower;
 - WEF deployment prioritized to Berlin province 6521 in state 810;
 - EEF deployment prioritized to Moscow province 6380 in state 219;
 - 50 generic corps commanders at skill 1 with all four land skills at 1;
@@ -270,3 +270,61 @@ At scenario start both players receive `waef_initial_doctrine_window`:
 On 30 January 1941 the country-specific daily on-action swaps this idea to
 `waef_naval_doctrine_lock`, removing the Land/Air discounts while preserving
 the +1000% Naval Doctrine cost modifier.
+
+## v0.23 - scenario economy baseline
+
+### Starting country package
+
+Both WEF and EEF now start with:
+
+- 800 political power;
+- 7,000 regular trains (`train_equipment_1`);
+- the permanent `waef_reduced_fuel_capacity` spirit, reducing national fuel
+  storage capacity by 75%.
+
+When `waef_create_starting_forces` is taken, each side additionally receives:
+
+- 1,000 armored trains (`train_equipment_4`);
+- 1,000 trucks (`motorized_equipment_1`);
+- `waef_manpower_accounting` for exactly 700 days / 100 weeks.
+
+The manpower spirit removes 57,400 manpower per week. Over its full lifetime
+this repays 5,740,000 manpower to the scenario's bookkeeping. A triggered event
+explains the intentionally artificial mechanism to the player.
+
+### Symmetric state package
+
+At scenario startup every state controlled by WEF or EEF receives the same
+resource package:
+
+- oil 2;
+- bauxite 11;
+- rubber 3;
+- tungsten 2;
+- chromium 3;
+- coal 35;
+- iron 25.
+
+The old capital-only resource placeholder was removed from Berlin and Moscow
+and from the static-state generator, so these values are final rather than
+additive on top of the former 10-resource test block.
+
+Each controlled player state is also set to:
+
+- 1 fuel silo;
+- 15 hydro steel refineries;
+- 5 hydro aluminium refineries.
+
+No extra shared building slots are granted. The setup therefore does not
+quietly create additional factory construction capacity as a side effect.
+
+### Naval restriction
+
+Both `waef_initial_doctrine_window` and its post-30-January replacement
+`waef_naval_doctrine_lock` now apply:
+
+- Naval Doctrine cost: +1000%;
+- Dockyard construction speed: -1000%.
+
+The initial version still temporarily gives the existing -100% Land and Air
+Doctrine costs through 29 January 1941.
