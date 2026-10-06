@@ -80,3 +80,6 @@
  waef_choose_communism:0 "Adopt Communism"
  waef_choose_communism_desc:0 "Set communist support to 100% and make the communist party the permanent ruling party."
  waef_generic_tank_organization:0 "General Tank Design Bureau"
+
+ waef_create_starting_forces:0 "Deploy Starting Forces"
+ waef_create_starting_forces_desc:0 "After applying the 1940 technology baseline, create the standard suppression, infantry and medium tank templates; deploy 300 fully trained infantry divisions and 30 fully trained medium tank divisions in the capital; and commission 50 generals and 5 field marshals."
