@@ -82,8 +82,8 @@
  waef_generic_tank_organization:0 "General Tank Design Bureau"
 
  waef_create_starting_forces:0 "Deploy Starting Forces"
- waef_create_starting_forces_desc:0 "After applying the 1940 technology baseline, create the standard suppression, infantry and medium tank templates; deploy 300 fully trained infantry divisions and 30 fully trained medium tank divisions in the capital; and commission 50 generals and 5 field marshals."
- waef_create_starting_forces_tt:0 "Create the three scenario templates, deploy 300 infantry and 30 medium tank divisions at full manpower, equipment and training in the capital, and commission 50 generals plus 5 field marshals."
+ waef_create_starting_forces_desc:0 "After applying the 1940 technology baseline, create the standard suppression, infantry and medium tank templates; deploy 300 Regular infantry divisions and 30 Regular medium tank divisions in the capital; commission 50 generals and 5 field marshals; add 1,000 armored trains and 1,000 trucks; and begin the 100-week manpower accounting period."
+ waef_create_starting_forces_tt:0 "Create the three scenario templates, deploy 300 Regular infantry and 30 Regular tank divisions at full manpower and equipment, add 1,000 armored trains plus 1,000 trucks, commission 50 generals and 5 field marshals, and begin removing 57,400 manpower per week for 100 weeks."
 
  waef_initial_doctrine_window:0 "Initial Doctrine Preparation"
  waef_initial_doctrine_window_desc:0 "Until 30 January 1941, Land and Air Doctrines cost 100% less. Naval Doctrines cost 1000% more and Dockyard construction speed is reduced by 1000%. Apparently the Eastern Front planning staff has concluded that the ocean is not the immediate problem. A rare triumph of priorities."
