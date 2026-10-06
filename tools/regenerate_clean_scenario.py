@@ -32,6 +32,7 @@ EEF_REMOVE = {
     654, 732, 742, 1074,
 }
 WEF_ADD = {16, 28, 29}
+EEF_ADD = {1027, 407, 1015, 1014, 406}
 
 PLAYER_POPULATION_PER_STATE = 725_000
 OBS_POPULATION_PER_STATE = 550_000
@@ -100,6 +101,8 @@ def parse_state(path: Path) -> dict:
         owner = "OBS"
     if sid in WEF_ADD:
         owner = "WEF"
+    if sid in EEF_ADD:
+        owner = "EEF"
 
     return {
         "id": sid,
@@ -359,12 +362,12 @@ def validate(states: list[dict]) -> None:
     for sid in WEF_ADD:
         if by_id[sid]["owner"] != "WEF":
             raise RuntimeError(f"State {sid} was not moved to WEF")
+    for sid in EEF_ADD:
+        if by_id[sid]["owner"] != "EEF":
+            raise RuntimeError(f"State {sid} was not moved to EEF")
     for sid in WEF_REMOVE | EEF_REMOVE:
         if by_id[sid]["owner"] != "OBS":
             raise RuntimeError(f"State {sid} was not moved to OBS")
-    for sid in {1027, 407, 1015, 1014, 406}:
-        if by_id[sid]["owner"] != "EEF":
-            raise RuntimeError(f"Replacement state {sid} was not restored to EEF")
 
 
 def main() -> int:
