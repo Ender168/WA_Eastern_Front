@@ -1,0 +1,34 @@
+
+state = {
+	id = 11
+	name ="STATE_11"
+	manpower = 550000
+
+	state_category = town
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		victory_points = {
+			6296 10
+		}
+		victory_points = {
+			9357 10
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 5
+		}
+	}
+
+	provinces = {
+		327
+		6296
+		6360
+		9357
+		9404
+	}
+}

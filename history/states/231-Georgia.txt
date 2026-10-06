@@ -1,0 +1,57 @@
+state = {
+	id = 231
+	name ="STATE_231"
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		victory_points = {
+			1599 10
+		}
+		victory_points = {
+			3653 10
+		}
+		victory_points = {
+			11617 10
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			steel_refinery = 2
+			air_base = 5
+			3653 = {
+				naval_base = 5
+				coastal_bunker = 1
+
+			}
+
+		}
+		
+
+	}
+
+	provinces = {
+		654
+		672
+		772
+		1530
+		1599
+		3653
+		3656
+		3658
+		4534
+		4605
+		6436
+		6669
+		6671
+		9626
+		9702
+		11599
+		11617
+		12309
+	}
+	manpower = 550000
+	buildings_max_level_factor =1.000
+	state_category =town
+}

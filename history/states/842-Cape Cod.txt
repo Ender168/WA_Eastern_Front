@@ -1,0 +1,24 @@
+state = {
+	id = 842
+	name ="STATE_842"
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			industrial_complex = 8
+		}
+	}
+
+
+	provinces = {
+		905
+		3906
+	}
+	manpower = 550000
+	buildings_max_level_factor =1.000
+	state_category =town
+}

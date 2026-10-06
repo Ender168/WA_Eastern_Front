@@ -1,0 +1,41 @@
+
+state = {
+	id = 1073
+	name ="STATE_1073"
+	manpower = 550000
+
+	state_category = pastoral
+
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		victory_points = {
+			10648 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+		}
+	}
+
+	provinces = {
+		1704
+		1771
+		1841
+		4813
+		7778
+		10648
+		10716
+		10720
+		12696
+		14179
+		14187
+		14188
+		14189
+		14190
+		14191
+		14193
+	}
+}

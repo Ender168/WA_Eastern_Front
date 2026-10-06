@@ -1,21 +1,33 @@
 state = {
 	id = 810
 	name ="STATE_810"
-
-	manpower =2484000
+	manpower = 550000
 	buildings_max_level_factor =1.000
 	state_category =metropolis
 
-	history = {
+	
+	resources = {
+		oil = 10
+		rubber = 10
+		tungsten = 10
+		chromium = 10
+		coal = 10
+		bauxite = 10
+		iron = 10
+	}
+history = {
 		owner = WEF
+		controller = WEF
+		add_core_of = WEF
 		victory_points = {
-			6521 50
+			6521 10
 		}
 		victory_points = {
-			13246 1
+			13246 10
 		}
 		buildings = {
-			infrastructure = 10
+			air_base = 5
+			infrastructure = 7
 			arms_factory = 5
 			industrial_complex = 10
 			steel_refinery = 2
@@ -30,7 +42,6 @@ state = {
 			    }
 			}
 		}
-		add_core_of = WEF
 
 	}
 	provinces = {

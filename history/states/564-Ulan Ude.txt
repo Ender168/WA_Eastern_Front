@@ -1,0 +1,33 @@
+
+state = {
+	id = 564
+	name ="STATE_564" # Ulan Ude
+	manpower = 550000
+	state_category = pastoral
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+
+		}
+	}
+
+	provinces = {
+		1696
+		4705
+		4766
+		4837
+		7751
+		7816
+		7835
+		7860
+		10528
+		10658
+		12507
+		12644
+	}
+}

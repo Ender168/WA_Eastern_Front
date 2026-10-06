@@ -1,0 +1,33 @@
+state = {
+	id = 1015
+	name ="STATE_1015" #Atyrauskaya
+	manpower = 550000
+
+	state_category = pastoral
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		victory_points = {
+			3622 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+		}
+	}
+
+	provinces = {
+		464
+		477
+		615
+		3459
+		3622
+		6498
+		6514
+		6523
+		9469
+		11578
+	}
+}

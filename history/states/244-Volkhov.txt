@@ -1,0 +1,36 @@
+
+state = {
+	id = 244
+	name ="STATE_244" # Volkhov
+	manpower = 550000
+
+	state_category = rural
+
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			70 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			9197 10
+		}
+	}
+
+	provinces = {
+		70
+		3072
+		3110
+		6035
+		6095
+		9164
+		9197
+		11068
+		11174
+	}
+}

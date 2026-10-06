@@ -1,0 +1,48 @@
+
+state = {
+	id = 1041
+	name ="STATE_1041"
+	manpower = 550000
+
+	state_category = rural
+
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			2089 10
+		}
+		victory_points = {
+			10876 10
+		}
+		victory_points = {
+			7994 10
+		}
+		victory_points = {
+			12726 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			industrial_complex = 1
+			2089 = {
+				naval_base = 5
+			}
+		}
+	}
+
+	provinces = {
+		78
+		2004
+		2089
+		7977
+		7994
+		8001
+		10876
+		12726
+		12855
+		13967
+	}
+}

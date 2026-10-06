@@ -1,0 +1,32 @@
+
+state = {
+	id = 995
+	name ="STATE_995"
+	manpower = 550000
+
+	state_category = pastoral
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+		}
+	}
+
+	provinces = {
+		1891
+		1932
+		1969
+		2025
+		4938
+		4972
+		4997
+		5028
+		8021
+		8109
+		10820
+	}
+}

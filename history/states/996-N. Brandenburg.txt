@@ -1,0 +1,37 @@
+
+state = {
+	id = 996
+	name ="STATE_996"
+	manpower = 550000
+	state_category = city
+	buildings_max_level_factor =1.000
+
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = {
+			3499 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 4
+			synthetic_refinery = 1
+			aluminium_refinery = 2
+			anti_air_building = 1
+		}
+
+	}
+
+	provinces = {
+		375
+		3367
+		3499
+		9456
+		11219
+		11444
+	}
+}

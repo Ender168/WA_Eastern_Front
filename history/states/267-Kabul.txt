@@ -1,0 +1,33 @@
+
+state = {
+	id = 267
+	name ="STATE_267" # Kabul
+	manpower = 550000
+
+	state_category = town
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			10737 10
+		}
+	}
+
+	provinces = {
+		5082
+		10737
+		10826
+		12769
+		12831
+		13258
+		13532
+	}
+}

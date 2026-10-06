@@ -1,0 +1,59 @@
+state = {
+	id = 137
+	name = "STATE_137"
+	manpower = 550000
+	state_category = large_town
+	history = {
+		owner = EEF
+		controller = EEF
+		add_core_of = EEF
+		victory_points = {
+			3686 10
+		}
+		victory_points = {
+			9680 10
+		}
+		victory_points = {
+			6704 10
+		}
+		victory_points = {
+			705 10
+		}
+		buildings = {
+			infrastructure = 7
+			dockyard = 4
+			industrial_complex = 2
+			air_base = 5
+			3686 = {
+				naval_base = 5
+				coastal_bunker = 3
+			}
+			13826 = {
+				bunker = 4
+			}
+			13827 = {
+				bunker = 4
+			}
+			9680 = {
+				naval_base = 5
+				coastal_bunker = 1
+			}
+			6724 = {
+				supply_node = 1
+			}
+		}
+	}
+	provinces = {
+		705
+		3686
+		3722
+		6704
+		6724
+		9677
+		9680
+		9718
+		11649
+		13826
+		13827
+	}
+}

@@ -1,0 +1,31 @@
+state = {
+	id = 759
+	name ="STATE_759"
+	manpower = 550000
+	buildings_max_level_factor =1.000
+
+	state_category = wasteland
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+		}
+	}
+
+	provinces = {
+		1698
+		1943
+		2074
+		4947
+		5736
+		10315
+		14286
+		14287
+		14288
+	}
+}

@@ -1,0 +1,40 @@
+
+state = {
+	id = 875
+	name ="STATE_875"
+	manpower = 550000
+
+	state_category = rural
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = {
+			9612 10
+		}
+		victory_points = {
+			3796 10
+		}
+		victory_points = {
+			9771 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			industrial_complex = 2
+		}
+	}
+
+	provinces = {
+		793
+		3796
+		3819
+		3952
+		6842
+		9610
+		9612
+		9771
+		11754
+	}
+}

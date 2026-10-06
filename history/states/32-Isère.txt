@@ -1,0 +1,32 @@
+
+state = {
+	id = 32
+	name ="STATE_32"
+	manpower = 550000
+
+	state_category = town
+
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			industrial_complex = 5
+		}
+		victory_points = {
+			3768 10
+		}
+	}
+
+	provinces = {
+		762
+		780
+		3589
+		3768
+		6784
+		11713
+	}
+}

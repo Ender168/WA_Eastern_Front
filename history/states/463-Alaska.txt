@@ -1,0 +1,64 @@
+state = {
+	id = 463
+	name ="STATE_463"
+
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		buildings = {
+			infrastructure = 7
+			air_base = 5
+			13091 = {
+				naval_base = 5
+			}
+			14379 = {
+				naval_base = 5
+			}
+		}
+		#add_core_of = USA
+		victory_points = {
+			13090 10
+		}
+		victory_points = {
+			13091 10
+		}
+
+	}
+
+	provinces = {
+		1135
+		1830
+		4833
+		4848
+		7855
+		7884
+		10679
+		10694
+		10707
+		12661
+		13069
+		13090
+		13091
+		13202
+		13203
+		13488
+		13942
+		13943
+		14366
+		14370
+		14371
+		14372
+		14373
+		14374
+		14375
+		14376
+		14377
+		14378
+		14379
+	}
+	manpower = 550000
+	buildings_max_level_factor = 1
+	state_category = "rural"
+}

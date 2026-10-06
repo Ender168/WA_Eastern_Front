@@ -1,0 +1,31 @@
+
+state = {
+	id = 557
+	name ="STATE_557" # Mauritania
+	manpower = 550000
+
+
+	state_category = pastoral
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			5034 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+		}
+
+	}
+
+	provinces = {
+		5034
+		5077
+		7992
+		8058
+		10814
+	}
+}

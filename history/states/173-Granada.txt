@@ -1,0 +1,50 @@
+
+state = {
+	id = 173
+	name ="STATE_173" # Granada
+	manpower = 550000
+
+	state_category = city
+
+
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			9979 10
+		}
+		victory_points = {
+			12038 10
+		}
+		victory_points = {
+			1176 10
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 3
+			air_base = 5
+			9979 = {
+				naval_base = 5
+			}
+			12038 = {
+				naval_base = 5
+			}
+		}
+	}
+
+	provinces = {
+		747
+		1176
+		4065
+		7068
+		7153
+		7196
+		9979
+		10009
+		10063
+		11956
+		12038
+	}
+}

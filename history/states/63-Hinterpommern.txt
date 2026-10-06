@@ -1,0 +1,61 @@
+
+state = {
+	id = 63
+	name ="STATE_63"
+	manpower = 550000
+
+	state_category = large_town
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = {
+			6282 10
+		}
+		victory_points = {
+			11372 10
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 3
+			11372 = {
+				naval_base = 5
+			}
+			6282 = {
+				naval_base = 5
+			}
+			11343 = {
+				bunker = 3
+			}
+			11316 = {
+				bunker = 3
+			}
+			11288 = {
+				bunker = 3
+			}
+			11260 = {
+				bunker = 3
+			}
+			air_base = 5
+		}
+	}
+
+	provinces = {
+		6282
+		6309
+		6334
+		6390
+		9252
+		9277
+		9306
+		9334
+		9361
+		11260
+		11288
+		11316
+		11343
+		11372
+	}
+}

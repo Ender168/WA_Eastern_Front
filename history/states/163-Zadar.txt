@@ -1,0 +1,27 @@
+state = {
+	id = 163
+	name ="STATE_163"
+	manpower = 550000
+
+	state_category = enclave
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = {
+			3943 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			3943 = {
+				naval_base = 5
+			}
+		}
+	}
+	provinces = {
+		3943
+		13957
+	}
+}

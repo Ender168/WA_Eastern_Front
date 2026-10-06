@@ -1,0 +1,46 @@
+
+state = {
+	id = 50
+	name ="STATE_50"
+
+	history = {
+		owner = WEF
+		controller = WEF
+		add_core_of = WEF
+		victory_points = {
+			9517 10
+		}
+		victory_points = {
+			11499 10
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 8
+			aluminium_refinery = 1
+			air_base = 5
+
+		}
+
+
+	}
+
+	provinces = {
+		519
+		694
+		3679
+		3690
+		6555
+		6934
+		9517
+		9545
+		9655
+		11486
+		11499
+		13126
+		13230
+	}
+	manpower = 550000
+	buildings_max_level_factor =1.000
+	state_category =large_city
+}

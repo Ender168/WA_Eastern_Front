@@ -1,0 +1,34 @@
+
+state = {
+	id = 779
+	name ="STATE_779" # Ivory Coast
+	manpower = 550000
+
+	state_category = pastoral
+	history = {
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
+		victory_points = {
+			10803 10
+		}
+		buildings = {
+			air_base = 5
+			infrastructure = 7
+			10803 = {
+				naval_base = 5
+			}
+		}
+	}
+
+	provinces = {
+		5013
+		5070
+		8065
+		8122
+		10762
+		10803
+		14495
+		14507
+	}
+}
