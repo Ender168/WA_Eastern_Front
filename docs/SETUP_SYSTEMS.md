@@ -45,7 +45,7 @@ This deliberately removes all inherited:
 
 - every state category: city (15 shared slots);
 - infrastructure: 7 everywhere;
-- WEF/EEF: exactly 1 civilian factory + 1 military factory per state;
+- WEF/EEF: exactly 2 civilian factories + 5 military factories per state;
 - OBS: no civilian or military factories from WAEF state history;
 - WEF/EEF population: 725,000 per state = 102,225,000 per player.
 
@@ -136,3 +136,36 @@ Generation rules:
 - DLC-gated alternatives inherit their DLC conditions through the whole technology chain;
 - standard_industry is the neutral common industry philosophy;
 - concentrated_industry and dispersed_industry are not granted.
+
+
+## v0.20 — eastern cleanup, ideology choice and tank MIO fallback
+
+Five detached/remote EEF states are removed from the playable theatre:
+
+- 655 North Sakhalin;
+- 657 Birobidzhan;
+- 854 North Kamchatka;
+- 953 Chukotka;
+- 963 Pärnu.
+
+They are replaced by:
+
+- 146 Viipurin Karjala;
+- 419 Tibriz;
+- 420 Gilan;
+- 1044 Raja Karjala;
+- 1045 Terijoki.
+
+The exchange is exactly five-for-five, so ownership remains 141 WEF / 141 EEF /
+825 OBS. The clean-map generator rebuilds every state history, every playable
+supply hub and the complete deduplicated level-3 railway mesh after the change.
+
+WEF and EEF also receive a one-time political setup category. Each player may
+choose exactly one of democracy, fascism or communism. The selected ideology is
+set to 100% popularity, becomes the ruling party, elections remain disabled for
+scenario stability, and all three choices disappear after the selection.
+
+World Ablaze already contains a complete `generic_tank_organization` archetype,
+but deliberately marks the archetype itself as unavailable. WAEF now exposes
+one scenario-specific tank MIO for WEF and EEF by including that existing WA
+archetype instead of cloning a national German/Soviet organization.
