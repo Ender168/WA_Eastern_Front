@@ -2,7 +2,17 @@ state = {
 	id = 905
 	name = "STATE_905"
 	manpower = 725000
-	state_category = city
+	state_category = waef_scenario_state
+
+	resources = {
+		oil = 2
+		bauxite = 11
+		rubber = 3
+		tungsten = 2
+		chromium = 3
+		coal = 35
+		iron = 25
+	}
 
 	history = {
 		owner = WEF
@@ -12,6 +22,9 @@ state = {
 			infrastructure = 7
 			industrial_complex = 2
 			arms_factory = 5
+			fuel_silo = 1
+			hydro_steel_refinery = 15
+			hydro_aluminium_refinery = 5
 		}
 	}
 
