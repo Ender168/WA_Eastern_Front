@@ -1,0 +1,2728 @@
+division_template = {
+    name = "WAEF Heavy Infantry Division"
+
+    regiments = {
+        heavy_infantry = { x = 0 y = 0 }
+        heavy_infantry = { x = 0 y = 1 }
+        heavy_infantry = { x = 0 y = 2 }
+
+        heavy_infantry = { x = 1 y = 0 }
+        heavy_infantry = { x = 1 y = 1 }
+        heavy_infantry = { x = 1 y = 2 }
+
+        heavy_infantry = { x = 2 y = 0 }
+        heavy_infantry = { x = 2 y = 1 }
+        heavy_infantry = { x = 2 y = 2 }
+
+        artillery_brigade = { x = 3 y = 0 }
+        artillery_brigade = { x = 3 y = 1 }
+        artillery_brigade = { x = 3 y = 2 }
+
+        anti_tank_brigade = { x = 4 y = 0 }
+        anti_tank_brigade = { x = 4 y = 1 }
+        anti_tank_brigade = { x = 4 y = 2 }
+    }
+
+    regimental_support = {
+        regimental_artillery = { x = 0 y = 0 }
+        regimental_anti_tank = { x = 0 y = 1 }
+    }
+
+    support = {
+        normal_engineer = { x = 0 y = 0 }
+        horse_logistics_company = { x = 0 y = 1 }
+        horse_field_hospital = { x = 0 y = 2 }
+        horse_signal_company = { x = 0 y = 3 }
+        maintenance_company = { x = 0 y = 4 }
+
+        recon = { x = 1 y = 0 }
+        military_police = { x = 1 y = 1 }
+        artillery = { x = 1 y = 2 }
+        anti_air = { x = 1 y = 3 }
+    }
+}
+
+division_template = {
+    name = "WAEF Medium Tank Division"
+
+    regiments = {
+        medium_armor = { x = 0 y = 0 }
+        medium_armor = { x = 0 y = 1 }
+        medium_armor = { x = 0 y = 2 }
+        medium_armor = { x = 0 y = 3 }
+
+        medium_armor = { x = 1 y = 0 }
+        medium_armor = { x = 1 y = 1 }
+        medium_armor = { x = 1 y = 2 }
+
+        medium_armor = { x = 2 y = 0 }
+        medium_armor = { x = 2 y = 1 }
+        medium_armor = { x = 2 y = 2 }
+
+        mechanized = { x = 3 y = 0 }
+        mechanized = { x = 3 y = 1 }
+        mechanized = { x = 3 y = 2 }
+        mechanized = { x = 3 y = 3 }
+    }
+
+    regimental_support = {
+        regimental_motorized_artillery = { x = 0 y = 0 }
+        regimental_motorized_anti_tank = { x = 0 y = 1 }
+    }
+
+    support = {
+        engineer = { x = 0 y = 0 }
+        motorized_logistics_company = { x = 0 y = 1 }
+        field_hospital = { x = 0 y = 2 }
+        signal_company = { x = 0 y = 3 }
+        mot_maintenance_company = { x = 0 y = 4 }
+
+        mobile_recon = { x = 1 y = 0 }
+        motorized_military_police = { x = 1 y = 1 }
+        motorized_artillery = { x = 1 y = 2 }
+        motorized_anti_air = { x = 1 y = 3 }
+    }
+}
+
+units = {
+    division = {
+        name = "EEF Heavy Infantry Division 001"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 002"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 003"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 004"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 005"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 006"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 007"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 008"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 009"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 010"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 011"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 012"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 013"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 014"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 015"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 016"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 017"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 018"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 019"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 020"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 021"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 022"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 023"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 024"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 025"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 026"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 027"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 028"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 029"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 030"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 031"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 032"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 033"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 034"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 035"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 036"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 037"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 038"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 039"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 040"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 041"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 042"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 043"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 044"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 045"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 046"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 047"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 048"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 049"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 050"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 051"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 052"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 053"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 054"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 055"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 056"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 057"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 058"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 059"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 060"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 061"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 062"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 063"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 064"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 065"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 066"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 067"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 068"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 069"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 070"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 071"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 072"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 073"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 074"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 075"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 076"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 077"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 078"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 079"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 080"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 081"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 082"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 083"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 084"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 085"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 086"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 087"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 088"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 089"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 090"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 091"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 092"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 093"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 094"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 095"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 096"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 097"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 098"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 099"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 100"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 101"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 102"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 103"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 104"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 105"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 106"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 107"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 108"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 109"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 110"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 111"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 112"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 113"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 114"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 115"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 116"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 117"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 118"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 119"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 120"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 121"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 122"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 123"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 124"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 125"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 126"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 127"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 128"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 129"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 130"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 131"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 132"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 133"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 134"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 135"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 136"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 137"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 138"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 139"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 140"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 141"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 142"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 143"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 144"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 145"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 146"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 147"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 148"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 149"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 150"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 151"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 152"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 153"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 154"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 155"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 156"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 157"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 158"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 159"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 160"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 161"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 162"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 163"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 164"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 165"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 166"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 167"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 168"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 169"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 170"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 171"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 172"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 173"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 174"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 175"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 176"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 177"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 178"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 179"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 180"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 181"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 182"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 183"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 184"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 185"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 186"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 187"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 188"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 189"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 190"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 191"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 192"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 193"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 194"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 195"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 196"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 197"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 198"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 199"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 200"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 201"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 202"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 203"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 204"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 205"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 206"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 207"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 208"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 209"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 210"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 211"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 212"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 213"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 214"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 215"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 216"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 217"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 218"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 219"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 220"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 221"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 222"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 223"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 224"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 225"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 226"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 227"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 228"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 229"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 230"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 231"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 232"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 233"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 234"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 235"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 236"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 237"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 238"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 239"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 240"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 241"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 242"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 243"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 244"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 245"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 246"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 247"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 248"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 249"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 250"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 251"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 252"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 253"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 254"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 255"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 256"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 257"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 258"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 259"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 260"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 261"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 262"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 263"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 264"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 265"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 266"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 267"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 268"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 269"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 270"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 271"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 272"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 273"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 274"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 275"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 276"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 277"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 278"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 279"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 280"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 281"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 282"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 283"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 284"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 285"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 286"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 287"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 288"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 289"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 290"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 291"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 292"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 293"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 294"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 295"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 296"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 297"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 298"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 299"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Heavy Infantry Division 300"
+        location = 6380
+        division_template = "WAEF Heavy Infantry Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 001"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 002"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 003"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 004"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 005"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 006"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 007"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 008"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 009"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 010"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 011"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 012"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 013"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 014"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 015"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 016"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 017"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 018"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 019"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 020"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 021"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 022"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 023"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 024"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 025"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 026"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 027"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 028"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 029"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division = {
+        name = "EEF Medium Tank Division 030"
+        location = 6380
+        division_template = "WAEF Medium Tank Division"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+}
