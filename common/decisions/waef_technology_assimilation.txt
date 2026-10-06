@@ -1053,6 +1053,12 @@ waef_technology_assimilation = {
         complete_effect = {
             waef_grant_shared_1940_technologies = yes
 
+            # WA stores the -100% battalion design-cost modifiers in permanent
+            # spirits; the hidden technologies above are their unlock markers.
+            add_ideas = mobile_warfare_drive_spirit
+            add_ideas = firepower_induction_spirit
+            add_ideas = infantry_modernization_spirit
+
             if = {
                 limit = { has_country_flag = french_technologies_tree_flag }
                 waef_grant_french_1940_technologies = yes
