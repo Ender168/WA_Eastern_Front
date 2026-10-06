@@ -9,9 +9,11 @@ Rules:
 - military seeds: only the selected national air/armor/artillery/infantry/naval files;
 - doctrine technologies are excluded;
 - dependencies and sub-technologies are included recursively only while they remain at or before the cutoff;
-- DLC-gated branches retain their DLC conditions.
+- DLC-gated branches inherit their DLC conditions through leads_to_tech chains;
+- standard_industry is granted as the neutral common industry philosophy;
+- concentrated_industry and dispersed_industry are intentionally excluded.
 
-Shared technologies: **115**.
+Shared technologies: **113**.
 
 ## french
 
@@ -23,7 +25,7 @@ Source files:
 - `common/technologies/naval_fra.txt`
 
 National technologies: **204**.
-Total with shared: **319**.
+Total with shared: **317**.
 
 Technology IDs:
 
@@ -242,7 +244,7 @@ Source files:
 - `common/technologies/naval_ita.txt`
 
 National technologies: **162**.
-Total with shared: **277**.
+Total with shared: **275**.
 
 Technology IDs:
 
@@ -419,7 +421,7 @@ Source files:
 - `common/technologies/naval_jap.txt`
 
 National technologies: **181**.
-Total with shared: **296**.
+Total with shared: **294**.
 
 Technology IDs:
 
@@ -615,7 +617,7 @@ Source files:
 - `common/technologies/naval_ger.txt`
 
 National technologies: **171**.
-Total with shared: **286**.
+Total with shared: **284**.
 
 Technology IDs:
 
@@ -801,7 +803,7 @@ Source files:
 - `common/technologies/naval_sov.txt`
 
 National technologies: **152**.
-Total with shared: **267**.
+Total with shared: **265**.
 
 Technology IDs:
 
@@ -968,7 +970,7 @@ Source files:
 - `common/technologies/naval_eng.txt`
 
 National technologies: **193**.
-Total with shared: **308**.
+Total with shared: **306**.
 
 Technology IDs:
 
@@ -1176,7 +1178,7 @@ Source files:
 - `common/technologies/naval_usa.txt`
 
 National technologies: **137**.
-Total with shared: **252**.
+Total with shared: **250**.
 
 Technology IDs:
 
