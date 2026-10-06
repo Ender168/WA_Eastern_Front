@@ -2,6 +2,8 @@ on_actions = {
     on_startup = {
         effect = {
             WEF = {
+                activate_mission = waef_war_preparation_countdown
+
                 every_controlled_state = {
                     add_resource = { type = oil amount = 2 }
                     add_resource = { type = bauxite amount = 11 }
@@ -18,6 +20,8 @@ on_actions = {
             }
 
             EEF = {
+                activate_mission = waef_war_preparation_countdown
+
                 every_controlled_state = {
                     add_resource = { type = oil amount = 2 }
                     add_resource = { type = bauxite amount = 11 }
