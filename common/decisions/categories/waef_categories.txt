@@ -51,3 +51,17 @@ waef_air_doctrine_setup = {
         has_global_flag = waef_scenario_1941
     }
 }
+
+waef_war_setup = {
+    priority = 9960
+    icon = generic_prepare_for_war
+
+    allowed = {
+        OR = { tag = WEF tag = EEF }
+    }
+
+    visible = {
+        has_global_flag = waef_scenario_1941
+        has_war = no
+    }
+}
