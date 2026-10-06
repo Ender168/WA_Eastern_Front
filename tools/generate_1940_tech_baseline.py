@@ -238,9 +238,10 @@ def closure(seed: set[str], techs: dict[str, Tech]) -> set[str]:
             if child.doctrine:
                 continue
             if child.year > CUTOFF_YEAR:
-                raise RuntimeError(
-                    f"{name} depends on post-{CUTOFF_YEAR} technology {dep} ({child.year})"
-                )
+                # WA contains a few early technologies with later retrofitted
+                # dependencies. The scenario cutoff wins: grant the early
+                # technology directly, but never drag future tech backward.
+                continue
             chosen.add(dep)
             queue.append(dep)
 
@@ -365,7 +366,7 @@ def main() -> None:
         "- shared seeds: Industry, Electronics, Support;",
         "- military seeds: only the selected national air/armor/artillery/infantry/naval files;",
         "- doctrine technologies are excluded;",
-        "- dependencies and sub-technologies of selected technologies are included recursively;",
+        "- dependencies and sub-technologies are included recursively only while they remain at or before the cutoff;",
         "- DLC-gated branches retain their DLC conditions.",
         "",
         f"Shared technologies: **{len(shared)}**.",
