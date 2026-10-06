@@ -1,6 +1,6 @@
 waef_technology_assimilation = {
     priority = 10000
-    icon = GFX_decision_category_generic_research
+    icon = generic_research
 
     allowed = {
         OR = { tag = WEF tag = EEF }
