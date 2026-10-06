@@ -3,7 +3,7 @@ capital = 810
 set_research_slots = 10
 set_stability = 0.75
 set_war_support = 0.50
-add_political_power = 200
+add_political_power = 800
 
 # Competitive doctrine setup.
 army_experience = 100
