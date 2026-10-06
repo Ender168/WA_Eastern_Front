@@ -22,6 +22,15 @@ CUTOFF_YEAR = 1940
 # The two mutually exclusive specialisations remain unresearched.
 FORCE_EXCLUDE = {"concentrated_industry", "dispersed_industry"}
 
+# Hidden World Ablaze unlock technologies used by national focuses to make
+# division-template battalion categories free to add/remove. They have no
+# research-folder node, so the normal visible-tech scan would skip them.
+FORCED_SHARED_TECHS = {
+    "mobile_warfare_drive_tech",
+    "firepower_induction_tech",
+    "infantry_modernization_tech",
+}
+
 SHARED_FILES = {
     "common/technologies/industry.txt",
     "common/technologies/electronic_mechanical_engineering.txt",
@@ -394,7 +403,11 @@ def main() -> None:
         raise RuntimeError("Duplicate technology IDs: " + repr(dict(duplicates)))
 
     conditions = effective_conditions(all_techs)
+    missing_forced = FORCED_SHARED_TECHS - all_techs.keys()
+    if missing_forced:
+        raise RuntimeError(f"Missing forced shared technologies: {sorted(missing_forced)}")
     shared = closure(eligible_seed(SHARED_FILES, all_techs), all_techs)
+    shared |= FORCED_SHARED_TECHS
 
     school_sets: dict[str, set[str]] = {}
     school_files: dict[str, set[str]] = {}
@@ -437,6 +450,7 @@ def main() -> None:
         "- DLC-gated branches inherit their DLC conditions through leads_to_tech chains;",
         "- standard_industry is granted as the neutral common industry philosophy;",
         "- concentrated_industry and dispersed_industry are intentionally excluded.",
+        "- the three hidden WA division-design unlock technologies are forced into every national package.",
         "",
         f"Shared technologies: **{len(shared)}**.",
         "",
