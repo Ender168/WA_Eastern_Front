@@ -1,0 +1,233 @@
+waef_land_doctrine_setup = {
+
+    # Great War / Tier 0. Each track is optional and only grants mastery
+    # after the player has selected a subdoctrine in that exact track.
+    waef_land_gw_artillery_mastery = {
+        icon = generic_research
+        allowed = { OR = { tag = WEF tag = EEF } }
+        visible = {
+            has_country_flag = waef_technology_assimilated
+            NOT = { has_country_flag = waef_land_gw_artillery_mastery }
+        }
+        available = { has_subdoctrine_in_track = tier_0_artillery }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = { amount = 200 track = tier_0_artillery }
+            set_country_flag = waef_land_gw_artillery_mastery
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_gw_armour_mastery = {
+        icon = generic_research
+        allowed = { OR = { tag = WEF tag = EEF } }
+        visible = {
+            has_country_flag = waef_technology_assimilated
+            NOT = { has_country_flag = waef_land_gw_armour_mastery }
+        }
+        available = { has_subdoctrine_in_track = tier_0_armour }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = { amount = 200 track = tier_0_armour }
+            set_country_flag = waef_land_gw_armour_mastery
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_gw_infantry_mastery = {
+        icon = generic_research
+        allowed = { OR = { tag = WEF tag = EEF } }
+        visible = {
+            has_country_flag = waef_technology_assimilated
+            NOT = { has_country_flag = waef_land_gw_infantry_mastery }
+        }
+        available = { has_subdoctrine_in_track = tier_0_infantry }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = { amount = 200 track = tier_0_infantry }
+            set_country_flag = waef_land_gw_infantry_mastery
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    # Tier 1 appears only after all three Great War tracks were granted.
+    waef_land_t1_artillery_mastery = {
+        icon = generic_research
+        allowed = { OR = { tag = WEF tag = EEF } }
+        visible = {
+            has_country_flag = waef_land_gw_artillery_mastery
+            has_country_flag = waef_land_gw_armour_mastery
+            has_country_flag = waef_land_gw_infantry_mastery
+            NOT = { has_country_flag = waef_land_t1_artillery_mastery }
+        }
+        available = { has_subdoctrine_in_track = tier_1_artillery }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = { amount = 200 track = tier_1_artillery }
+            set_country_flag = waef_land_t1_artillery_mastery
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_t1_armour_mastery = {
+        icon = generic_research
+        allowed = { OR = { tag = WEF tag = EEF } }
+        visible = {
+            has_country_flag = waef_land_gw_artillery_mastery
+            has_country_flag = waef_land_gw_armour_mastery
+            has_country_flag = waef_land_gw_infantry_mastery
+            NOT = { has_country_flag = waef_land_t1_armour_mastery }
+        }
+        available = { has_subdoctrine_in_track = tier_1_armour }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = { amount = 200 track = tier_1_armour }
+            set_country_flag = waef_land_t1_armour_mastery
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_t1_infantry_mastery = {
+        icon = generic_research
+        allowed = { OR = { tag = WEF tag = EEF } }
+        visible = {
+            has_country_flag = waef_land_gw_artillery_mastery
+            has_country_flag = waef_land_gw_armour_mastery
+            has_country_flag = waef_land_gw_infantry_mastery
+            NOT = { has_country_flag = waef_land_t1_infantry_mastery }
+        }
+        available = { has_subdoctrine_in_track = tier_1_infantry }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = { amount = 200 track = tier_1_infantry }
+            set_country_flag = waef_land_t1_infantry_mastery
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    # Tier 2 is intentionally only 100 mastery.
+    waef_land_t2_artillery_mastery = {
+        icon = generic_research
+        allowed = { OR = { tag = WEF tag = EEF } }
+        visible = {
+            has_country_flag = waef_land_t1_artillery_mastery
+            has_country_flag = waef_land_t1_armour_mastery
+            has_country_flag = waef_land_t1_infantry_mastery
+            NOT = { has_country_flag = waef_land_t2_artillery_mastery }
+        }
+        available = { has_subdoctrine_in_track = tier_2_artillery }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = { amount = 100 track = tier_2_artillery }
+            set_country_flag = waef_land_t2_artillery_mastery
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_t2_armour_mastery = {
+        icon = generic_research
+        allowed = { OR = { tag = WEF tag = EEF } }
+        visible = {
+            has_country_flag = waef_land_t1_artillery_mastery
+            has_country_flag = waef_land_t1_armour_mastery
+            has_country_flag = waef_land_t1_infantry_mastery
+            NOT = { has_country_flag = waef_land_t2_armour_mastery }
+        }
+        available = { has_subdoctrine_in_track = tier_2_armour }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = { amount = 100 track = tier_2_armour }
+            set_country_flag = waef_land_t2_armour_mastery
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_t2_infantry_mastery = {
+        icon = generic_research
+        allowed = { OR = { tag = WEF tag = EEF } }
+        visible = {
+            has_country_flag = waef_land_t1_artillery_mastery
+            has_country_flag = waef_land_t1_armour_mastery
+            has_country_flag = waef_land_t1_infantry_mastery
+            NOT = { has_country_flag = waef_land_t2_infantry_mastery }
+        }
+        available = { has_subdoctrine_in_track = tier_2_infantry }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = { amount = 100 track = tier_2_infantry }
+            set_country_flag = waef_land_t2_infantry_mastery
+        }
+        ai_will_do = { base = 0 }
+    }
+}
+
+waef_air_doctrine_setup = {
+
+    # Great War / Tier 0 air doctrine is preselected and fully mastered
+    # in country history because it is identical for both players.
+    # These optional decisions only accelerate the player's chosen Tier 1 paths.
+    waef_air_t1_fighter_mastery = {
+        icon = generic_research
+        allowed = { OR = { tag = WEF tag = EEF } }
+        visible = { NOT = { has_country_flag = waef_air_t1_fighter_mastery } }
+        available = { has_subdoctrine_in_track = tier_1_fighter }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = { amount = 200 track = tier_1_fighter }
+            set_country_flag = waef_air_t1_fighter_mastery
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_air_t1_strike_mastery = {
+        icon = generic_research
+        allowed = { OR = { tag = WEF tag = EEF } }
+        visible = { NOT = { has_country_flag = waef_air_t1_strike_mastery } }
+        available = { has_subdoctrine_in_track = tier_1_strike }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = { amount = 200 track = tier_1_strike }
+            set_country_flag = waef_air_t1_strike_mastery
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_air_t1_naval_aviation_mastery = {
+        icon = generic_research
+        allowed = { OR = { tag = WEF tag = EEF } }
+        visible = { NOT = { has_country_flag = waef_air_t1_naval_aviation_mastery } }
+        available = { has_subdoctrine_in_track = tier_1_naval_aviation }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = { amount = 200 track = tier_1_naval_aviation }
+            set_country_flag = waef_air_t1_naval_aviation_mastery
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_air_t1_bomber_mastery = {
+        icon = generic_research
+        allowed = { OR = { tag = WEF tag = EEF } }
+        visible = { NOT = { has_country_flag = waef_air_t1_bomber_mastery } }
+        available = { has_subdoctrine_in_track = tier_1_bomber }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = { amount = 200 track = tier_1_bomber }
+            set_country_flag = waef_air_t1_bomber_mastery
+        }
+        ai_will_do = { base = 0 }
+    }
+}
