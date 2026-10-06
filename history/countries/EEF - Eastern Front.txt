@@ -5,6 +5,39 @@ set_stability = 0.75
 set_war_support = 0.50
 add_political_power = 200
 
+# Competitive doctrine setup.
+army_experience = 100
+air_experience = 100
+add_ideas = waef_initial_doctrine_window
+
+# Air doctrine is common to both sides. Great War / Tier 0 is therefore
+# preselected and fully mastered so players begin with the first real choice.
+set_grand_doctrine = air_operations
+
+set_sub_doctrine = dogfighting
+add_mastery = {
+    amount = 200
+    track = tier_0_fighter
+}
+
+set_sub_doctrine = target_acquisition
+add_mastery = {
+    amount = 200
+    track = tier_0_strike
+}
+
+set_sub_doctrine = search_patterns
+add_mastery = {
+    amount = 200
+    track = tier_0_naval_aviation
+}
+
+set_sub_doctrine = bomber_formations
+add_mastery = {
+    amount = 200
+    track = tier_0_bomber
+}
+
 set_politics = {
     ruling_party = neutrality
     last_election = "1940.1.1"
