@@ -115,3 +115,5 @@ with a 1940 cutoff and dependency closure.
 ## Dependency
 
 World Ablaze Workshop ID: `2149567872`
+- v0.23 scenario economy baseline: symmetric per-state resources/refineries, 800 starting PP, constrained fuel storage, train/truck stockpiles, Regular spawned divisions and 100-week manpower accounting.
+- v0.24 mobilization and war start: semiannual +0.5% conscription progression to a 5% cap, a 22 June 1941 war unlock, 90-day +10% opening attack bonus, and explicit unique creation of 50 generals plus 5 field marshals.

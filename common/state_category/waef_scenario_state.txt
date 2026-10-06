@@ -1,0 +1,6 @@
+state_categories = {
+	waef_scenario_state = {
+		local_building_slots = 40
+		color = { 0 180 0 }
+	}
+}

@@ -1,6 +1,7 @@
 on_actions = {
     on_daily_WEF = {
         effect = {
+            waef_apply_scheduled_mobilization = yes
             if = {
                 limit = {
                     date > 1941.1.29
@@ -16,6 +17,7 @@ on_actions = {
 
     on_daily_EEF = {
         effect = {
+            waef_apply_scheduled_mobilization = yes
             if = {
                 limit = {
                     date > 1941.1.29
