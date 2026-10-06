@@ -132,5 +132,7 @@ Generation rules:
 - shared Industry/Electronics/Support technologies;
 - only the selected national air/armor/artillery/infantry/naval files;
 - doctrine technologies excluded;
-- dependencies and sub-technologies included recursively;
-- DLC-gated alternatives preserve their DLC conditions.
+- dependencies and sub-technologies included recursively only within the 1940 cutoff;
+- DLC-gated alternatives inherit their DLC conditions through the whole technology chain;
+- standard_industry is the neutral common industry philosophy;
+- concentrated_industry and dispersed_industry are not granted.
