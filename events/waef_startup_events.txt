@@ -1,0 +1,17 @@
+add_namespace = waef_startup
+
+country_event = {
+    id = waef_startup.1
+    hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = { has_idea = waef_doctrine_preparation }
+            swap_ideas = {
+                remove_idea = waef_doctrine_preparation
+                add_idea = waef_naval_doctrine_lock
+            }
+        }
+    }
+}

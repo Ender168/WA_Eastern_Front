@@ -1,0 +1,298 @@
+waef_land_mastery = {
+
+    waef_land_mastery_t0_artillery = {
+        icon = generic_research
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_mastery_t0_artillery }
+        }
+        available = {
+            has_subdoctrine_in_track = tier_0_artillery
+        }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_0_artillery
+            }
+            set_country_flag = waef_mastery_t0_artillery
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_mastery_t0_armour = {
+        icon = generic_research
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_mastery_t0_armour }
+        }
+        available = {
+            has_subdoctrine_in_track = tier_0_armour
+        }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_0_armour
+            }
+            set_country_flag = waef_mastery_t0_armour
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_mastery_t0_infantry = {
+        icon = generic_research
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_mastery_t0_infantry }
+        }
+        available = {
+            has_subdoctrine_in_track = tier_0_infantry
+        }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_0_infantry
+            }
+            set_country_flag = waef_mastery_t0_infantry
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_mastery_t1_artillery = {
+        icon = generic_research
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_mastery_t0_artillery
+            has_country_flag = waef_mastery_t0_armour
+            has_country_flag = waef_mastery_t0_infantry
+            NOT = { has_country_flag = waef_mastery_t1_artillery }
+        }
+        available = {
+            has_subdoctrine_in_track = tier_1_artillery
+        }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_artillery
+            }
+            set_country_flag = waef_mastery_t1_artillery
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_mastery_t1_armour = {
+        icon = generic_research
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_mastery_t0_artillery
+            has_country_flag = waef_mastery_t0_armour
+            has_country_flag = waef_mastery_t0_infantry
+            NOT = { has_country_flag = waef_mastery_t1_armour }
+        }
+        available = {
+            has_subdoctrine_in_track = tier_1_armour
+        }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_armour
+            }
+            set_country_flag = waef_mastery_t1_armour
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_mastery_t1_infantry = {
+        icon = generic_research
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_mastery_t0_artillery
+            has_country_flag = waef_mastery_t0_armour
+            has_country_flag = waef_mastery_t0_infantry
+            NOT = { has_country_flag = waef_mastery_t1_infantry }
+        }
+        available = {
+            has_subdoctrine_in_track = tier_1_infantry
+        }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_infantry
+            }
+            set_country_flag = waef_mastery_t1_infantry
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_mastery_t2_artillery = {
+        icon = generic_research
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_mastery_t1_artillery
+            has_country_flag = waef_mastery_t1_armour
+            has_country_flag = waef_mastery_t1_infantry
+            NOT = { has_country_flag = waef_mastery_t2_artillery }
+        }
+        available = {
+            has_subdoctrine_in_track = tier_2_artillery
+        }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = {
+                amount = 100
+                track = tier_2_artillery
+            }
+            set_country_flag = waef_mastery_t2_artillery
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_mastery_t2_armour = {
+        icon = generic_research
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_mastery_t1_artillery
+            has_country_flag = waef_mastery_t1_armour
+            has_country_flag = waef_mastery_t1_infantry
+            NOT = { has_country_flag = waef_mastery_t2_armour }
+        }
+        available = {
+            has_subdoctrine_in_track = tier_2_armour
+        }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = {
+                amount = 100
+                track = tier_2_armour
+            }
+            set_country_flag = waef_mastery_t2_armour
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_mastery_t2_infantry = {
+        icon = generic_research
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_mastery_t1_artillery
+            has_country_flag = waef_mastery_t1_armour
+            has_country_flag = waef_mastery_t1_infantry
+            NOT = { has_country_flag = waef_mastery_t2_infantry }
+        }
+        available = {
+            has_subdoctrine_in_track = tier_2_infantry
+        }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = {
+                amount = 100
+                track = tier_2_infantry
+            }
+            set_country_flag = waef_mastery_t2_infantry
+        }
+        ai_will_do = { base = 0 }
+    }
+
+}
+
+waef_air_mastery = {
+
+    waef_air_mastery_fighter = {
+        icon = generic_research
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_air_mastery_fighter }
+        }
+        available = {
+            has_subdoctrine_in_track = tier_1_fighter
+        }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_fighter
+            }
+            set_country_flag = waef_air_mastery_fighter
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_air_mastery_strike = {
+        icon = generic_research
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_air_mastery_strike }
+        }
+        available = {
+            has_subdoctrine_in_track = tier_1_strike
+        }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_strike
+            }
+            set_country_flag = waef_air_mastery_strike
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_air_mastery_naval_aviation = {
+        icon = generic_research
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_air_mastery_naval_aviation }
+        }
+        available = {
+            has_subdoctrine_in_track = tier_1_naval_aviation
+        }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_naval_aviation
+            }
+            set_country_flag = waef_air_mastery_naval_aviation
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_air_mastery_bomber = {
+        icon = generic_research
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_air_mastery_bomber }
+        }
+        available = {
+            has_subdoctrine_in_track = tier_1_bomber
+        }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_bomber
+            }
+            set_country_flag = waef_air_mastery_bomber
+        }
+        ai_will_do = { base = 0 }
+    }
+
+}

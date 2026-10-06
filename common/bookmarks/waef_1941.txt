@@ -24,6 +24,8 @@ bookmarks = {
         effect = {
             randomize_weather = 12345
             set_global_flag = waef_scenario_1941
-}
+            WEF = { country_event = { id = waef_startup.1 days = 29 } }
+            EEF = { country_event = { id = waef_startup.1 days = 29 } }
+        }
     }
 }

@@ -1,0 +1,27 @@
+ideas = {
+    country = {
+        waef_doctrine_preparation = {
+            allowed = {
+                OR = { tag = WEF tag = EEF }
+            }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                land_doctrine_cost_factor = -1.0
+                air_doctrine_cost_factor = -1.0
+                naval_doctrine_cost_factor = 10.0
+            }
+        }
+
+        waef_naval_doctrine_lock = {
+            allowed = {
+                OR = { tag = WEF tag = EEF }
+            }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                naval_doctrine_cost_factor = 10.0
+            }
+        }
+    }
+}

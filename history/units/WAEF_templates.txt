@@ -1,0 +1,90 @@
+# Shared WAEF starting division templates.
+# Loaded independently by WEF and EEF.
+
+division_template = {
+    name = "WAEF Heavy Infantry Division"
+    priority = 1
+
+    regiments = {
+        heavy_infantry = { x = 0 y = 0 }
+        heavy_infantry = { x = 0 y = 1 }
+        heavy_infantry = { x = 0 y = 2 }
+
+        heavy_infantry = { x = 1 y = 0 }
+        heavy_infantry = { x = 1 y = 1 }
+        heavy_infantry = { x = 1 y = 2 }
+
+        heavy_infantry = { x = 2 y = 0 }
+        heavy_infantry = { x = 2 y = 1 }
+        heavy_infantry = { x = 2 y = 2 }
+
+        artillery_brigade = { x = 3 y = 0 }
+        artillery_brigade = { x = 3 y = 1 }
+        artillery_brigade = { x = 3 y = 2 }
+
+        anti_tank_brigade = { x = 4 y = 0 }
+        anti_tank_brigade = { x = 4 y = 1 }
+        anti_tank_brigade = { x = 4 y = 2 }
+    }
+
+    regimental_support = {
+        regimental_artillery = { x = 0 y = 0 }
+        regimental_anti_tank = { x = 0 y = 1 }
+    }
+
+    support = {
+        normal_engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        horse_field_hospital = { x = 0 y = 2 }
+        horse_logistics_company = { x = 0 y = 3 }
+        military_police = { x = 0 y = 4 }
+
+        maintenance_company = { x = 1 y = 0 }
+        horse_signal_company = { x = 1 y = 1 }
+        artillery = { x = 1 y = 2 }
+        anti_air = { x = 1 y = 3 }
+    }
+}
+
+division_template = {
+    name = "WAEF Medium Tank Division"
+    priority = 2
+
+    regiments = {
+        medium_armor = { x = 0 y = 0 }
+        medium_armor = { x = 0 y = 1 }
+        medium_armor = { x = 0 y = 2 }
+        medium_armor = { x = 0 y = 3 }
+
+        medium_armor = { x = 1 y = 0 }
+        medium_armor = { x = 1 y = 1 }
+        medium_armor = { x = 1 y = 2 }
+
+        medium_armor = { x = 2 y = 0 }
+        medium_armor = { x = 2 y = 1 }
+        medium_armor = { x = 2 y = 2 }
+
+        mechanized = { x = 3 y = 0 }
+        mechanized = { x = 3 y = 1 }
+        mechanized = { x = 3 y = 2 }
+        mechanized = { x = 3 y = 3 }
+    }
+
+    regimental_support = {
+        regimental_motorized_artillery = { x = 0 y = 0 }
+        regimental_motorized_anti_tank = { x = 0 y = 1 }
+    }
+
+    support = {
+        engineer = { x = 0 y = 0 }
+        mobile_recon = { x = 0 y = 1 }
+        field_hospital = { x = 0 y = 2 }
+        motorized_logistics_company = { x = 0 y = 3 }
+        motorized_military_police = { x = 0 y = 4 }
+
+        mot_maintenance_company = { x = 1 y = 0 }
+        signal_company = { x = 1 y = 1 }
+        motorized_artillery = { x = 1 y = 2 }
+        motorized_anti_air = { x = 1 y = 3 }
+    }
+}

@@ -1,0 +1,79 @@
+waef_political_alignment = {
+    waef_choose_democracy = {
+        icon = generic_political_reform
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_political_alignment_selected }
+        }
+        available = { NOT = { has_country_flag = waef_political_alignment_selected } }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            set_politics = {
+                ruling_party = democratic
+                elections_allowed = yes
+                election_frequency = 48
+            }
+            set_popularities = {
+                democratic = 100
+                fascism = 0
+                communism = 0
+                neutrality = 0
+            }
+            set_country_flag = waef_political_alignment_selected
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_choose_fascism = {
+        icon = generic_political_reform
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_political_alignment_selected }
+        }
+        available = { NOT = { has_country_flag = waef_political_alignment_selected } }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+                election_frequency = 48
+            }
+            set_popularities = {
+                democratic = 0
+                fascism = 100
+                communism = 0
+                neutrality = 0
+            }
+            set_country_flag = waef_political_alignment_selected
+        }
+        ai_will_do = { base = 0 }
+    }
+
+    waef_choose_communism = {
+        icon = generic_political_reform
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_political_alignment_selected }
+        }
+        available = { NOT = { has_country_flag = waef_political_alignment_selected } }
+        cost = 0
+        fire_only_once = yes
+        complete_effect = {
+            set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+                election_frequency = 48
+            }
+            set_popularities = {
+                democratic = 0
+                fascism = 0
+                communism = 100
+                neutrality = 0
+            }
+            set_country_flag = waef_political_alignment_selected
+        }
+        ai_will_do = { base = 0 }
+    }
+}
