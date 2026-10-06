@@ -41,3 +41,6 @@
  waef_assimilate_british_technologies_desc:0 "Навсегда принять британское технологическое дерево World Ablaze."
  waef_assimilate_unitedstates_technologies:0 "Ассимилировать американские технологии"
  waef_assimilate_unitedstates_technologies_desc:0 "Навсегда принять технологическое дерево США World Ablaze."
+
+ waef_apply_1940_technology_baseline:0 "Применить технологический базис 1940 года"
+ waef_apply_1940_technology_baseline_desc:0 "Исследовать все общие технологии и все технологии выбранной национальной школы с датой 1940 года или раньше. Доктринальные технологии не выдаются."

@@ -41,3 +41,6 @@
  waef_assimilate_british_technologies_desc:0 "Permanently adopt the British World Ablaze technology tree."
  waef_assimilate_unitedstates_technologies:0 "Assimilate United States Technologies"
  waef_assimilate_unitedstates_technologies_desc:0 "Permanently adopt the United States World Ablaze technology tree."
+
+ waef_apply_1940_technology_baseline:0 "Apply 1940 Technology Baseline"
+ waef_apply_1940_technology_baseline_desc:0 "Research every shared technology and every technology in the selected national school dated 1940 or earlier. Doctrine technologies are excluded."
