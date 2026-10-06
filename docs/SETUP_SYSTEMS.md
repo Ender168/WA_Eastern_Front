@@ -68,14 +68,15 @@ Iron and aluminium are absent, and every other state has no resource block.
 - hub position is the state's first victory-point province, falling back to the
   first province only when the state has no VP;
 - province adjacency is derived from World Ablaze's pinned provinces.bmp;
-- every pair of adjacent playable states gets a direct level-3 railway route
-  between their two regional supply hubs;
-- the route is calculated through adjacent land provinces rather than by
-  pretending the two capital provinces magically touch each other.
+- every pair of adjacent playable states gets an end-to-end level-3 railway
+  route between their two regional supply hubs;
+- routes are calculated through adjacent land provinces;
+- shared trunks are deduplicated into unique railway segments, so multiple
+  hub-to-hub routes can share the same physical track without duplicate edges.
 
 ## Technology assimilation
 
-All seven WA technology schools remain available. The original WA adoption
-flags and technology grants are preserved, but the foreign_technologies idea
-is removed at the end of adoption so its -10% Major Technologies research
-penalty does not remain on WEF/EEF.
+All seven WA technology schools remain available. The original WA national
+technology flags and dated technology grants are preserved. WAEF does not add
+WA's `foreign_technologies` idea at all, so its -10% Major Technologies
+research-speed penalty never applies to WEF/EEF.
