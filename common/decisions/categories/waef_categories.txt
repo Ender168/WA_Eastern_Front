@@ -1,16 +1,13 @@
-waef_industry_setup = {
+waef_technology_assimilation = {
     priority = 10000
-    icon = GFX_decision_category_generic_industry
+    icon = GFX_decision_category_generic_research
 
     allowed = {
-        OR = {
-            tag = WEF
-            tag = EEF
-        }
+        OR = { tag = WEF tag = EEF }
     }
 
     visible = {
         has_global_flag = waef_scenario_1941
-        has_country_flag = waef_industry_choice_pending
+        NOT = { has_country_flag = waef_technology_assimilated }
     }
 }

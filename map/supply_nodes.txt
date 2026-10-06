@@ -1,0 +1,2 @@
+# WAEF intentionally starts with no static supply nodes.
+# One hub per playable state is created by waef_normalize_player at scenario start.
