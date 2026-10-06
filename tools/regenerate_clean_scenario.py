@@ -264,9 +264,7 @@ def bfs_path(graph: dict[int, set[int]], start: int, goal: int, allowed: set[int
 def generate_supply_and_railways(states: list[dict]) -> None:
     active_states = [s for s in states if s["owner"] in {"WEF", "EEF"}]
     hub = {s["id"]: choose_hub(s) for s in active_states}
-    province_to_state = {prov: s["id"] for s in active_states for prov in s["provinces"]}
-    state_provinces = {s["id"]: set(s["provinces"]) for s in active_states}
-    active_provinces = set(province_to_state)
+    all_state_provinces = {s["id"]: set(s["provinces"]) for s in active_states}
 
     cache = ROOT / ".waef_cache"
     definition = cache / "definition.csv"
@@ -275,9 +273,25 @@ def generate_supply_and_railways(states: list[dict]) -> None:
     download(PROVINCES_URL, provinces_bmp)
 
     color_to_pid, land, max_pid = read_definition(definition)
-    non_land = active_provinces - land
-    if non_land:
-        raise RuntimeError(f"Playable state contains non-land provinces: {sorted(non_land)[:20]}")
+
+    # WA state files can include lake/sea province IDs. They stay in the state
+    # history, but railway topology must only use actual land provinces.
+    state_provinces = {
+        sid: {p for p in provinces if p in land}
+        for sid, provinces in all_state_provinces.items()
+    }
+    for sid, provinces in state_provinces.items():
+        if not provinces:
+            raise RuntimeError(f"Playable state {sid} has no land provinces")
+        if hub[sid] not in provinces:
+            hub[sid] = min(provinces)
+
+    province_to_state = {
+        prov: sid
+        for sid, provinces in state_provinces.items()
+        for prov in provinces
+    }
+    active_provinces = set(province_to_state)
 
     edges = province_edges_from_bitmap(provinces_bmp, color_to_pid, active_provinces, max_pid)
     graph = build_graph(edges)
