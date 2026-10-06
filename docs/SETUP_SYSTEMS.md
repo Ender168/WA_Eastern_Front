@@ -136,3 +136,63 @@ Generation rules:
 - DLC-gated alternatives inherit their DLC conditions through the whole technology chain;
 - standard_industry is the neutral common industry philosophy;
 - concentrated_industry and dispersed_industry are not granted.
+
+
+## v0.20 — starting armies, commanders, politics and doctrine setup
+
+### Map edge replacement
+EEF removes states 657, 655, 854, 953 and 963 and receives 1045, 146,
+1044, 419 and 420. State count remains 141 / 141. Supply hubs and the level-3
+rail mesh are regenerated after the swap.
+
+### Starting army
+Each player receives two editable templates and a full OOB in the capital:
+- 300 WAEF Heavy Infantry Divisions;
+- 30 WAEF Medium Tank Divisions;
+- start manpower/equipment/experience factors all 1.0.
+
+Heavy infantry template:
+- 9 heavy infantry;
+- 3 artillery brigades;
+- 3 anti-tank brigades;
+- regimental artillery + regimental anti-tank;
+- full non-motorized support suite plus support artillery and AA.
+
+Medium tank template:
+- 10 medium armour battalions arranged 4/3/3;
+- 4 mechanized battalions;
+- motorized regimental artillery + AT;
+- mobile/motorized support suite plus motorized artillery and AA.
+
+### Command staff
+Each player receives 50 generic skill-1 generals and 5 generic skill-1 field
+marshals. Attack, defence, planning and logistics are all explicitly set to 1.
+
+### Politics
+Three mutually exclusive zero-cost setup decisions allow one permanent switch
+to democracy, fascism or communism.
+
+### Doctrine preparation
+At scenario start each player gets 100 Army XP and 100 Air XP.
+Air Operations is enabled and the four common Great War air tracks are selected
+and granted 200 mastery each.
+
+A temporary 29-day national spirit gives -100% land and air doctrine cost.
+A permanent spirit gives +1000% naval doctrine cost. After 30 January only the
+naval penalty remains.
+
+Land decisions:
+- common Great War artillery/armour/infantry: 200 mastery each;
+- Tier 1 artillery/armour/infantry/operations: 200 mastery each;
+- Tier 2 artillery/armour/infantry/operations: 100 mastery each.
+
+Air decisions:
+- Tier 1 fighter/strike/naval aviation/bomber: 200 mastery each.
+
+Tier 1/2 decisions never choose a branch automatically. The player selects the
+subdoctrine first, then uses the setup decision for mastery.
+
+### Aces
+World Ablaze exposes `add_ace` for scripted ace creation, but no supported
+effect was found for assigning a specific ace to a specific air wing. Ace
+assignment therefore remains manual.

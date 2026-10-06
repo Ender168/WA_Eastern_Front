@@ -29,10 +29,10 @@ EEF_REMOVE = {
     40, 402, 403, 404, 405, 408, 409, 516, 560, 561, 562, 563,
     564, 565, 566, 567, 568, 569, 570, 571, 574, 575, 576, 577,
     578, 579, 580, 584, 585, 586, 587, 588, 589, 590, 637, 644,
-    583, 654, 732, 742, 1074,
+    583, 654, 655, 657, 732, 742, 854, 953, 963, 1074,
 }
 WEF_ADD = {16, 28, 29}
-EEF_ADD = {1027, 407, 1015, 1014, 406}
+EEF_ADD = {1027, 407, 1015, 1014, 406, 1045, 146, 1044, 419, 420}
 
 PLAYER_POPULATION_PER_STATE = 725_000
 OBS_POPULATION_PER_STATE = 550_000
@@ -179,8 +179,10 @@ def render_state(s: dict) -> str:
 
 
 def choose_hub(s: dict) -> int:
-    if s["vps"]:
-        return s["vps"][0][0]
+    province_set = set(s["provinces"])
+    for province, _value in s["vps"]:
+        if province in province_set:
+            return province
     return s["provinces"][0]
 
 

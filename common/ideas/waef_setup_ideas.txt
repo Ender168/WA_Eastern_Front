@@ -1,0 +1,32 @@
+ideas = {
+    country = {
+        waef_land_air_doctrine_setup = {
+            picture = generic_army_war_college
+
+            allowed = {
+                OR = { tag = WEF tag = EEF }
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                land_doctrine_cost_factor = -1
+                air_doctrine_cost_factor = -1
+            }
+        }
+
+        waef_naval_doctrine_lock = {
+            picture = generic_army_problems
+
+            allowed = {
+                OR = { tag = WEF tag = EEF }
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                naval_doctrine_cost_factor = 10
+            }
+        }
+    }
+}

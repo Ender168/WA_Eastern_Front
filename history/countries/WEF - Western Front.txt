@@ -18,3 +18,6 @@ set_popularities = {
 
 recruit_character = WEF_generic_leader
 set_country_flag = waef_player_country
+
+set_oob = "WAEF_WEF_1941"
+waef_apply_shared_startup = yes

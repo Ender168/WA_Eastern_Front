@@ -1,0 +1,427 @@
+waef_create_generic_command_staff = {
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_corps_commander = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_field_marshal = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_field_marshal = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_field_marshal = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_field_marshal = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+    create_field_marshal = {
+        skill = 1
+        attack_skill = 1
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+    }
+}
+
+waef_apply_shared_startup = {
+    army_experience = 100
+    air_experience = 100
+
+    # Shared air doctrine foundation.
+    set_grand_doctrine = air_operations
+
+    set_sub_doctrine = dogfighting
+    add_mastery = {
+        amount = 200
+        sub_doctrine = dogfighting
+    }
+
+    set_sub_doctrine = target_acquisition
+    add_mastery = {
+        amount = 200
+        sub_doctrine = target_acquisition
+    }
+
+    set_sub_doctrine = search_patterns
+    add_mastery = {
+        amount = 200
+        sub_doctrine = search_patterns
+    }
+
+    set_sub_doctrine = bomber_formations
+    add_mastery = {
+        amount = 200
+        sub_doctrine = bomber_formations
+    }
+
+    add_ideas = waef_naval_doctrine_lock
+    add_timed_idea = {
+        idea = waef_land_air_doctrine_setup
+        days = 29
+    }
+
+    waef_create_generic_command_staff = yes
+}

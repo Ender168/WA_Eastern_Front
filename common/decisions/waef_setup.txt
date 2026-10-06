@@ -1,0 +1,518 @@
+waef_political_setup = {
+
+    waef_choose_democracy = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_political_path_chosen }
+        }
+
+        available = {
+            NOT = { has_country_flag = waef_political_path_chosen }
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            set_politics = {
+                ruling_party = democratic
+                elections_allowed = no
+            }
+            set_popularities = { democratic = 100 fascism = 0 communism = 0 neutrality = 0 }
+            set_country_flag = waef_political_path_chosen
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+    waef_choose_fascism = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_political_path_chosen }
+        }
+
+        available = {
+            NOT = { has_country_flag = waef_political_path_chosen }
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            set_politics = {
+                ruling_party = fascism
+                elections_allowed = no
+            }
+            set_popularities = { democratic = 0 fascism = 100 communism = 0 neutrality = 0 }
+            set_country_flag = waef_political_path_chosen
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+    waef_choose_communism = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_political_path_chosen }
+        }
+
+        available = {
+            NOT = { has_country_flag = waef_political_path_chosen }
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            set_politics = {
+                ruling_party = communism
+                elections_allowed = no
+            }
+            set_popularities = { democratic = 0 fascism = 0 communism = 100 neutrality = 0 }
+            set_country_flag = waef_political_path_chosen
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+}
+
+waef_land_doctrine_preparation = {
+
+    waef_land_great_war_mastery = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_technology_assimilated
+            NOT = { has_country_flag = waef_land_great_war_mastery_taken }
+        }
+
+        available = {
+            has_country_flag = waef_technology_assimilated
+            NOT = { has_country_flag = waef_land_great_war_mastery_taken }
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            set_sub_doctrine = pre_assault_bombardment
+            add_mastery = { amount = 200 sub_doctrine = pre_assault_bombardment }
+            set_sub_doctrine = tank_warfare
+            add_mastery = { amount = 200 sub_doctrine = tank_warfare }
+            set_sub_doctrine = trench_warfare
+            add_mastery = { amount = 200 sub_doctrine = trench_warfare }
+            set_country_flag = waef_land_great_war_mastery_taken
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_tier1_artillery_mastery = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_land_great_war_mastery_taken
+            NOT = { has_country_flag = waef_land_tier1_artillery_mastery_taken }
+        }
+
+        available = {
+            has_country_flag = waef_land_great_war_mastery_taken
+            has_subdoctrine_in_track = tier_1_artillery
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_artillery
+            }
+            set_country_flag = waef_land_tier1_artillery_mastery_taken
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_tier1_armour_mastery = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_land_great_war_mastery_taken
+            NOT = { has_country_flag = waef_land_tier1_armour_mastery_taken }
+        }
+
+        available = {
+            has_country_flag = waef_land_great_war_mastery_taken
+            has_subdoctrine_in_track = tier_1_armour
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_armour
+            }
+            set_country_flag = waef_land_tier1_armour_mastery_taken
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_tier1_infantry_mastery = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_land_great_war_mastery_taken
+            NOT = { has_country_flag = waef_land_tier1_infantry_mastery_taken }
+        }
+
+        available = {
+            has_country_flag = waef_land_great_war_mastery_taken
+            has_subdoctrine_in_track = tier_1_infantry
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_infantry
+            }
+            set_country_flag = waef_land_tier1_infantry_mastery_taken
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_tier1_operations_mastery = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_land_great_war_mastery_taken
+            NOT = { has_country_flag = waef_land_tier1_operations_mastery_taken }
+        }
+
+        available = {
+            has_country_flag = waef_land_great_war_mastery_taken
+            has_subdoctrine_in_track = tier_1_operations
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_operations
+            }
+            set_country_flag = waef_land_tier1_operations_mastery_taken
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_tier2_artillery_mastery = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_land_tier1_artillery_mastery_taken
+            NOT = { has_country_flag = waef_land_tier2_artillery_mastery_taken }
+        }
+
+        available = {
+            has_country_flag = waef_land_tier1_artillery_mastery_taken
+            has_completed_track = tier_1_artillery
+            has_subdoctrine_in_track = tier_2_artillery
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            add_mastery = {
+                amount = 100
+                track = tier_2_artillery
+            }
+            set_country_flag = waef_land_tier2_artillery_mastery_taken
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_tier2_armour_mastery = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_land_tier1_armour_mastery_taken
+            NOT = { has_country_flag = waef_land_tier2_armour_mastery_taken }
+        }
+
+        available = {
+            has_country_flag = waef_land_tier1_armour_mastery_taken
+            has_completed_track = tier_1_armour
+            has_subdoctrine_in_track = tier_2_armour
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            add_mastery = {
+                amount = 100
+                track = tier_2_armour
+            }
+            set_country_flag = waef_land_tier2_armour_mastery_taken
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_tier2_infantry_mastery = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_land_tier1_infantry_mastery_taken
+            NOT = { has_country_flag = waef_land_tier2_infantry_mastery_taken }
+        }
+
+        available = {
+            has_country_flag = waef_land_tier1_infantry_mastery_taken
+            has_completed_track = tier_1_infantry
+            has_subdoctrine_in_track = tier_2_infantry
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            add_mastery = {
+                amount = 100
+                track = tier_2_infantry
+            }
+            set_country_flag = waef_land_tier2_infantry_mastery_taken
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+    waef_land_tier2_operations_mastery = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            has_country_flag = waef_land_tier1_operations_mastery_taken
+            NOT = { has_country_flag = waef_land_tier2_operations_mastery_taken }
+        }
+
+        available = {
+            has_country_flag = waef_land_tier1_operations_mastery_taken
+            has_completed_track = tier_1_operations
+            has_subdoctrine_in_track = tier_2_operations
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            add_mastery = {
+                amount = 100
+                track = tier_2_operations
+            }
+            set_country_flag = waef_land_tier2_operations_mastery_taken
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+}
+
+waef_air_doctrine_preparation = {
+
+    waef_air_tier1_fighter_mastery = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_air_tier1_fighter_mastery_taken }
+        }
+
+        available = {
+            has_subdoctrine_in_track = tier_1_fighter
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_fighter
+            }
+            set_country_flag = waef_air_tier1_fighter_mastery_taken
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+    waef_air_tier1_strike_mastery = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_air_tier1_strike_mastery_taken }
+        }
+
+        available = {
+            has_subdoctrine_in_track = tier_1_strike
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_strike
+            }
+            set_country_flag = waef_air_tier1_strike_mastery_taken
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+    waef_air_tier1_naval_aviation_mastery = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_air_tier1_naval_aviation_mastery_taken }
+        }
+
+        available = {
+            has_subdoctrine_in_track = tier_1_naval_aviation
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_naval_aviation
+            }
+            set_country_flag = waef_air_tier1_naval_aviation_mastery_taken
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+    waef_air_tier1_bomber_mastery = {
+        icon = generic_research
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_air_tier1_bomber_mastery_taken }
+        }
+
+        available = {
+            has_subdoctrine_in_track = tier_1_bomber
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            add_mastery = {
+                amount = 200
+                track = tier_1_bomber
+            }
+            set_country_flag = waef_air_tier1_bomber_mastery_taken
+        }
+
+        ai_will_do = { base = 0 }
+    }
+
+}

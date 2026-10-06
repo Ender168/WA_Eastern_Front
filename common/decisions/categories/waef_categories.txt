@@ -10,3 +10,27 @@ waef_technology_assimilation = {
         has_global_flag = waef_scenario_1941
     }
 }
+
+waef_political_setup = {
+    priority = 9900
+    icon = generic_research
+    allowed = { OR = { tag = WEF tag = EEF } }
+    visible = {
+        has_global_flag = waef_scenario_1941
+        NOT = { has_country_flag = waef_political_path_chosen }
+    }
+}
+
+waef_land_doctrine_preparation = {
+    priority = 9800
+    icon = generic_research
+    allowed = { OR = { tag = WEF tag = EEF } }
+    visible = { has_global_flag = waef_scenario_1941 }
+}
+
+waef_air_doctrine_preparation = {
+    priority = 9700
+    icon = generic_research
+    allowed = { OR = { tag = WEF tag = EEF } }
+    visible = { has_global_flag = waef_scenario_1941 }
+}

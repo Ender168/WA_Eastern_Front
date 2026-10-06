@@ -1,0 +1,51 @@
+name: Generate WAEF map and starting OOB
+
+on:
+  push:
+    branches:
+      - feature/starting-armies-politics-doctrines
+    paths:
+      - tools/regenerate_clean_scenario.py
+      - tools/generate_starting_oob.py
+      - .github/workflows/generate_starting_armies.yml
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.head_commit.message, '[generated-start]') }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: feature/starting-armies-politics-doctrines
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install map tooling
+        run: python -m pip install --disable-pip-version-check pillow numpy
+
+      - name: Regenerate map and supply
+        run: python tools/regenerate_clean_scenario.py
+
+      - name: Generate starting OOB
+        run: python tools/generate_starting_oob.py
+
+      - name: Commit generated assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add history/states map/railways.txt map/supply_nodes.txt history/units/WAEF_WEF_1941.txt history/units/WAEF_EEF_1941.txt
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git commit -m "[generated-start] Rebuild map supply and starting OOB"
+          git push origin HEAD:feature/starting-armies-politics-doctrines
