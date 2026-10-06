@@ -229,7 +229,9 @@ def closure(seed: set[str], techs: dict[str, Tech]) -> set[str]:
     while queue:
         name = queue.popleft()
         tech = techs[name]
-        for dep in tech.dependencies + tech.sub_technologies:
+
+        # Real prerequisites must not point beyond the requested cutoff.
+        for dep in tech.dependencies:
             if dep not in techs or dep in chosen:
                 continue
             child = techs[dep]
@@ -241,6 +243,18 @@ def closure(seed: set[str], techs: dict[str, Tech]) -> set[str]:
                 )
             chosen.add(dep)
             queue.append(dep)
+
+        # sub_technologies are variants unlocked by the parent, not
+        # prerequisites. Keep only variants that themselves fit the cutoff.
+        for sub in tech.sub_technologies:
+            if sub not in techs or sub in chosen:
+                continue
+            child = techs[sub]
+            if child.doctrine or child.year > CUTOFF_YEAR:
+                continue
+            chosen.add(sub)
+            queue.append(sub)
+
     return chosen
 
 
