@@ -12,8 +12,9 @@ Rules:
 - DLC-gated branches inherit their DLC conditions through leads_to_tech chains;
 - standard_industry is granted as the neutral common industry philosophy;
 - concentrated_industry and dispersed_industry are intentionally excluded.
+- the three hidden WA division-design unlock technologies are forced into every national package.
 
-Shared technologies: **113**.
+Shared technologies: **116**.
 
 ## french
 
@@ -25,7 +26,7 @@ Source files:
 - `common/technologies/naval_fra.txt`
 
 National technologies: **204**.
-Total with shared: **317**.
+Total with shared: **320**.
 
 Technology IDs:
 
@@ -244,7 +245,7 @@ Source files:
 - `common/technologies/naval_ita.txt`
 
 National technologies: **162**.
-Total with shared: **275**.
+Total with shared: **278**.
 
 Technology IDs:
 
@@ -421,7 +422,7 @@ Source files:
 - `common/technologies/naval_jap.txt`
 
 National technologies: **181**.
-Total with shared: **294**.
+Total with shared: **297**.
 
 Technology IDs:
 
@@ -617,7 +618,7 @@ Source files:
 - `common/technologies/naval_ger.txt`
 
 National technologies: **171**.
-Total with shared: **284**.
+Total with shared: **287**.
 
 Technology IDs:
 
@@ -803,7 +804,7 @@ Source files:
 - `common/technologies/naval_sov.txt`
 
 National technologies: **152**.
-Total with shared: **265**.
+Total with shared: **268**.
 
 Technology IDs:
 
@@ -970,7 +971,7 @@ Source files:
 - `common/technologies/naval_eng.txt`
 
 National technologies: **193**.
-Total with shared: **306**.
+Total with shared: **309**.
 
 Technology IDs:
 
@@ -1178,7 +1179,7 @@ Source files:
 - `common/technologies/naval_usa.txt`
 
 National technologies: **137**.
-Total with shared: **250**.
+Total with shared: **253**.
 
 Technology IDs:
 
