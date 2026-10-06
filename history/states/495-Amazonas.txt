@@ -2,6 +2,7 @@ state = {
 	id = 495
 	name = "STATE_495"
 	manpower = 550000
+	impassable = yes
 	state_category = city
 
 	history = {
