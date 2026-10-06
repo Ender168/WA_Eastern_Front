@@ -1,0 +1,1631 @@
+# Generated from World Ablaze technology definitions.
+# Pinned WA commit: 691c7085f3ec1333ac2a0742983da8a64011ca8b
+# Cutoff: start_year <= 1940.
+# Doctrine technologies are excluded; Grand Strategy is assigned by Assimilate.
+
+waef_grant_shared_1940_technologies = {
+    set_technology = {
+        advanced_fire_control_system = 1
+        advanced_machine_tools = 1
+        advanced_machine_tools_comp = 1
+        airsweep_mines = 1
+        airsweep_mines_bba = 1
+        atomic_research = 1
+        basic_fire_control_system = 1
+        basic_naval_mines = 1
+        basic_submarine_fuel_tank = 1
+        basic_submarine_snorkel = 1
+        basic_train = 1
+        centimetric_radar = 1
+        computing_machine = 1
+        concentrated_industry = 1
+        construction2 = 1
+        construction2_comp = 1
+        construction3 = 1
+        construction3_comp = 1
+        damage_control_1 = 1
+        damage_control_2 = 1
+        damage_control_3 = 1
+        decimetric_radar = 1
+        depth_charges = 1
+        dispersed_industry = 1
+        electric_torpedo = 1
+        electronic_mechanical_engineering = 1
+        excavation1 = 1
+        excavation1_comp = 1
+        excavation2 = 1
+        excavation2_comp = 1
+        excavation3 = 1
+        excavation3_comp = 1
+        expanded_industry1 = 1
+        expanded_industry1_comp = 1
+        expanded_industry2 = 1
+        expanded_industry2_comp = 1
+        expanded_industry3 = 1
+        expanded_industry3_comp = 1
+        fire_control_methods_1 = 1
+        fire_control_methods_2 = 1
+        fire_control_methods_3 = 1
+        fuel_refining = 1
+        fuel_refining2 = 1
+        fuel_refining3 = 1
+        fuel_silos = 1
+        hedgehog_depth_charge_mortar = 1
+        improved_airplane_launcher = 1
+        improved_computing_machine = 1
+        improved_decimetric_radar = 1
+        improved_fire_control_system = 1
+        improved_machine_tools = 1
+        improved_machine_tools_comp = 1
+        improved_naval_mines = 1
+        improved_oil_processing = 1
+        improved_rubber_processing = 1
+        improved_sonar = 1
+        improved_submarine_fuel_tank = 1
+        improved_submarine_mine_laying = 1
+        industry_infrastructure = 1
+        industry_infrastructure2 = 1
+        industry_infrastructure2_comp = 1
+        industry_infrastructure3 = 1
+        industry_infrastructure3_comp = 1
+        industry_infrastructure_comp = 1
+        industry_organization = 1
+        industry_organization2 = 1
+        industry_organization2_comp = 1
+        industry_organization3 = 1
+        industry_organization3_comp = 1
+        industry_organization_comp = 1
+        k_guns = 1
+        magnetic_detonator = 1
+        mechanical_computing = 1
+        mtg_landing_craft = 1
+        mtg_tank_water_sealants = 1
+        mtg_transport = 1
+        oil_processing = 1
+        radio = 1
+        radio_detection = 1
+        railway_gun = 1
+        rubber_processing = 1
+        simplified_train = 1
+        smoke_generator = 1
+        sonar = 1
+        standard_industry = 1
+        submarine_mine_laying = 1
+        synth_oil_experiments = 1
+        tech_battlefield_medicine_1 = 1
+        tech_engineers = 1
+        tech_engineers2 = 1
+        tech_field_hospital = 1
+        tech_field_hospital2 = 1
+        tech_logistics_company = 1
+        tech_logistics_company2 = 1
+        tech_maintenance_company = 1
+        tech_maintenance_company2 = 1
+        tech_military_police = 1
+        tech_military_police2 = 1
+        tech_recon = 1
+        tech_recon2 = 1
+        tech_signal_company = 1
+        tech_signal_company2 = 1
+        tech_support = 1
+        vehicle_winch = 1
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "Arms Against Tyranny" }
+        }
+        set_technology = {
+            basic_machine_tools_comp = 1
+            construction1_comp = 1
+        }
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "By Blood Alone" }
+        }
+        set_technology = {
+            airdrop_mines = 1
+        }
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "La Resistance" }
+        }
+        set_technology = {
+            basic_decryption = 1
+            basic_encryption = 1
+            improved_decryption = 1
+            improved_encryption = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "Arms Against Tyranny"
+        }
+        set_technology = {
+            basic_machine_tools = 1
+            construction1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "By Blood Alone"
+        }
+        set_technology = {
+            airdrop_mines_bba = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "No Step Back"
+        }
+        set_technology = {
+            armored_train = 1
+        }
+    }
+}
+
+waef_grant_french_1940_technologies = {
+    set_technology = {
+        fra_aa_tower_1 = 1
+        fra_advanced_special_forces = 1
+        fra_anti_air_1 = 1
+        fra_anti_air_2 = 1
+        fra_anti_air_upgrade_1 = 1
+        fra_anti_tank_1 = 1
+        fra_anti_tank_2 = 1
+        fra_anti_tank_3 = 1
+        fra_anti_tank_upgrade_1 = 1
+        fra_armoured_car_1 = 1
+        fra_artillery_1 = 1
+        fra_artillery_2 = 1
+        fra_artillery_upgrade_1 = 1
+        fra_artillery_upgrade_2 = 1
+        fra_assault_spg_2 = 1
+        fra_assault_tank_spg_1 = 1
+        fra_assault_tank_spg_2 = 1
+        fra_attacker_1 = 1
+        fra_attacker_2 = 1
+        fra_attacker_ad_tech_1 = 1
+        fra_attacker_ad_tech_2 = 1
+        fra_battle_cruiser_1 = 1
+        fra_battleship_1 = 1
+        fra_battleship_2 = 1
+        fra_battleship_3 = 1
+        fra_battleship_4 = 1
+        fra_carrier_1 = 1
+        fra_carrier_2 = 1
+        fra_cas_1 = 1
+        fra_cas_2 = 1
+        fra_cas_ad_tech_1 = 1
+        fra_cas_ad_tech_2 = 1
+        fra_cas_ad_tech_3 = 1
+        fra_combat_armoured_car_1 = 1
+        fra_cruiser_submarine_1 = 1
+        fra_cruiser_submarine_2 = 1
+        fra_cruiser_submarine_3 = 1
+        fra_cruiser_submarine_4 = 1
+        fra_cv_cas_2 = 1
+        fra_cv_cas_ad_tech_2 = 1
+        fra_cv_cas_ad_tech_2_2 = 1
+        fra_cv_fighter_1 = 1
+        fra_cv_fighter_2 = 1
+        fra_cv_fighter_ad_tech_1 = 1
+        fra_cv_fighter_ad_tech_2 = 1
+        fra_destroyer_1 = 1
+        fra_destroyer_2 = 1
+        fra_destroyer_3 = 1
+        fra_destroyer_4 = 1
+        fra_destroyer_5 = 1
+        fra_destroyer_6 = 1
+        fra_fast_bomber_ad_tech_1 = 1
+        fra_fast_bomber_ad_tech_1_2 = 1
+        fra_fast_bomber_ad_tech_2 = 1
+        fra_fighter_2 = 1
+        fra_fighter_3 = 1
+        fra_fighter_4 = 1
+        fra_fighter_ad_tech_2 = 1
+        fra_fighter_ad_tech_3 = 1
+        fra_fighter_ad_tech_4 = 1
+        fra_fighter_ad_tech_5 = 1
+        fra_fighter_multirole_ad_tech_1 = 1
+        fra_fighter_multirole_ad_tech_2 = 1
+        fra_fort_training = 1
+        fra_frigate_1 = 1
+        fra_frigate_2 = 1
+        fra_frigate_3 = 1
+        fra_frigate_4 = 1
+        fra_frigate_5 = 1
+        fra_frigate_6 = 1
+        fra_heavy_1 = 1
+        fra_heavy_2 = 1
+        fra_heavy_3 = 1
+        fra_heavy_anti_air_1 = 1
+        fra_heavy_anti_air_2 = 1
+        fra_heavy_anti_air_3 = 1
+        fra_heavy_artillery_0 = 1
+        fra_heavy_artillery_1 = 1
+        fra_heavy_artillery_2 = 1
+        fra_heavy_cruiser_1 = 1
+        fra_heavy_cruiser_2 = 1
+        fra_heavy_cruiser_3 = 1
+        fra_heavy_cruiser_4 = 1
+        fra_heavy_fighter_1 = 1
+        fra_heavy_fighter_2 = 1
+        fra_heavy_fighter_3 = 1
+        fra_heavy_fighter_ad_tech_1 = 1
+        fra_heavy_fighter_ad_tech_2 = 1
+        fra_heavy_fighter_ad_tech_3 = 1
+        fra_heavy_infantry_weapons_1 = 1
+        fra_heavy_infantry_weapons_2 = 1
+        fra_heavy_infantry_weapons_upgrade_1 = 1
+        fra_heavy_infantry_weapons_upgrade_2 = 1
+        fra_heavy_infantry_weapons_upgrade_3 = 1
+        fra_heavy_tank_chassis_1 = 1
+        fra_heavy_tank_chassis_2 = 1
+        fra_heavy_tank_chassis_3 = 1
+        fra_improved_special_forces = 1
+        fra_infantry_weapons_0 = 1
+        fra_infantry_weapons_1 = 1
+        fra_infantry_weapons_2 = 1
+        fra_infantry_weapons_3 = 1
+        fra_infantry_weapons_4 = 1
+        fra_infantry_weapons_upgrade_1 = 1
+        fra_infantry_weapons_upgrade_2 = 1
+        fra_interceptor_ad_tech_1 = 1
+        fra_interceptor_ad_tech_2 = 1
+        fra_interceptor_ad_tech_3 = 1
+        fra_interceptor_ad_tech_4 = 1
+        fra_light_1 = 1
+        fra_light_2 = 1
+        fra_light_3 = 1
+        fra_light_cruiser_1 = 1
+        fra_light_cruiser_2 = 1
+        fra_light_cruiser_3 = 1
+        fra_light_cruiser_4 = 1
+        fra_light_spg_1 = 1
+        fra_light_tank_chassis_1 = 1
+        fra_light_tank_chassis_2 = 1
+        fra_light_tank_chassis_3 = 1
+        fra_light_tank_spg_1 = 1
+        fra_light_td_1 = 1
+        fra_light_td_2 = 1
+        fra_marines = 1
+        fra_mechanized_infantry_1 = 1
+        fra_mechanized_infantry_2 = 1
+        fra_mechanized_infantry_3 = 1
+        fra_mechanized_td_1 = 1
+        fra_medium_1 = 1
+        fra_medium_2 = 1
+        fra_medium_3 = 1
+        fra_medium_tank_chassis_1 = 1
+        fra_medium_tank_chassis_2 = 1
+        fra_medium_tank_chassis_2_2 = 1
+        fra_medium_tank_td_3 = 1
+        fra_motorised_infantry = 1
+        fra_naval_bomber_2 = 1
+        fra_naval_bomber_3 = 1
+        fra_naval_bomber_ad_tech_2 = 1
+        fra_naval_bomber_ad_tech_3 = 1
+        fra_pack_artillery_1 = 1
+        fra_pack_artillery_2 = 1
+        fra_paratroopers = 1
+        fra_patrol_1 = 1
+        fra_patrol_2 = 1
+        fra_patrol_ad_tech_0 = 1
+        fra_patrol_ad_tech_1 = 1
+        fra_patrol_ad_tech_2 = 1
+        fra_scout_armoured_car_2 = 1
+        fra_scout_armoured_car_3 = 1
+        fra_scout_car_2 = 1
+        fra_scout_car_3 = 1
+        fra_scout_plane_2 = 1
+        fra_scout_plane_3 = 1
+        fra_scout_plane_ad_tech_2 = 1
+        fra_scout_plane_ad_tech_3 = 1
+        fra_strategic_bomber_2 = 1
+        fra_strategic_bomber_ad_tech_2 = 1
+        fra_strategic_bomber_ad_tech_3 = 1
+        fra_strike_bomber_ad_tech_1 = 1
+        fra_strike_bomber_ad_tech_2 = 1
+        fra_strike_bomber_ad_tech_3 = 1
+        fra_submarine_1 = 1
+        fra_submarine_2 = 1
+        fra_submarine_3 = 1
+        fra_submarine_4 = 1
+        fra_submarine_5 = 1
+        fra_submarine_6 = 1
+        fra_submarine_7 = 1
+        fra_submarine_8 = 1
+        fra_submarine_9 = 1
+        fra_super_heavy_2 = 1
+        fra_support_1 = 1
+        fra_support_2 = 1
+        fra_support_tank_chassis_1 = 1
+        fra_support_tank_chassis_1_2 = 1
+        fra_tactical_bomber_2 = 1
+        fra_tactical_bomber_ad_tech_1 = 1
+        fra_tactical_bomber_ad_tech_2 = 1
+        fra_tech_commandos = 1
+        fra_tech_mountaineers = 1
+        fra_tech_special_forces = 1
+        fra_transport_plane_1 = 1
+        fra_transport_plane_2 = 1
+        fra_transport_plane_3 = 1
+        fra_urban_training = 1
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "By Blood Alone" }
+        }
+        set_technology = {
+            fra_fighter_1 = 1
+            fra_naval_bomber_1 = 1
+            fra_scout_plane_1 = 1
+            fra_strategic_bomber_1 = 1
+            fra_tactical_bomber_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "No Step Back" }
+        }
+        set_technology = {
+            fra_interwar = 1
+            fra_medium_0 = 1
+            fra_scout_car_1 = 1
+            fra_super_heavy_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "By Blood Alone"
+        }
+        set_technology = {
+            fra_fighter_ad_tech_1 = 1
+            fra_naval_bomber_ad_tech_1 = 1
+            fra_scout_plane_ad_tech_1 = 1
+            fra_strategic_bomber_ad_tech_1 = 1
+            fra_tactical_bomber_ad_tech_0 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "No Step Back"
+        }
+        set_technology = {
+            fra_light_tank_chassis_0 = 1
+            fra_medium_tank_chassis_0 = 1
+            fra_scout_armoured_car_1 = 1
+            fra_super_heavy_tank_chassis_1 = 1
+        }
+    }
+}
+
+waef_grant_italian_1940_technologies = {
+    set_technology = {
+        ita_aa_tower_1 = 1
+        ita_aa_tower_2 = 1
+        ita_advanced_special_forces = 1
+        ita_anti_air_1 = 1
+        ita_anti_air_upgrade_1 = 1
+        ita_anti_tank_1 = 1
+        ita_anti_tank_upgrade_1 = 1
+        ita_anti_tank_upgrade_2 = 1
+        ita_artillery_1 = 1
+        ita_artillery_2 = 1
+        ita_artillery_upgrade_1 = 1
+        ita_artillery_upgrade_2 = 1
+        ita_attacker_1 = 1
+        ita_attacker_2 = 1
+        ita_attacker_ad_tech_1 = 1
+        ita_battleship_1 = 1
+        ita_battleship_2 = 1
+        ita_battleship_3 = 1
+        ita_battleship_4 = 1
+        ita_carrier_1 = 1
+        ita_carrier_2 = 1
+        ita_cas_2 = 1
+        ita_cas_3 = 1
+        ita_cas_ad_tech_2 = 1
+        ita_cas_ad_tech_3 = 1
+        ita_combat_armoured_car_1 = 1
+        ita_cruiser_submarine_1 = 1
+        ita_cruiser_submarine_2 = 1
+        ita_cruiser_submarine_3 = 1
+        ita_cruiser_submarine_4 = 1
+        ita_cruiser_submarine_5 = 1
+        ita_cruiser_submarine_6 = 1
+        ita_cv_cas_2 = 1
+        ita_cv_fighter_1 = 1
+        ita_cv_fighter_2 = 1
+        ita_cv_fighter_ad_tech_1 = 1
+        ita_destroyer_1 = 1
+        ita_destroyer_2 = 1
+        ita_destroyer_3 = 1
+        ita_destroyer_4 = 1
+        ita_destroyer_5 = 1
+        ita_destroyer_6 = 1
+        ita_destroyer_7 = 1
+        ita_destroyer_8 = 1
+        ita_destroyer_9 = 1
+        ita_fighter_2 = 1
+        ita_fighter_3 = 1
+        ita_fighter_ad_tech_1_2 = 1
+        ita_fighter_ad_tech_2 = 1
+        ita_fighter_ad_tech_2_2 = 1
+        ita_fighter_multirole_ad_tech_0 = 1
+        ita_fort_training = 1
+        ita_frigate_1 = 1
+        ita_frigate_2 = 1
+        ita_frigate_3 = 1
+        ita_frigate_4 = 1
+        ita_frigate_5 = 1
+        ita_frigate_6 = 1
+        ita_frigate_7 = 1
+        ita_heavy_anti_air_1 = 1
+        ita_heavy_anti_air_2 = 1
+        ita_heavy_artillery_1 = 1
+        ita_heavy_artillery_2 = 1
+        ita_heavy_cruiser_1 = 1
+        ita_heavy_cruiser_2 = 1
+        ita_heavy_cruiser_3 = 1
+        ita_heavy_cruiser_4 = 1
+        ita_heavy_cruiser_5 = 1
+        ita_heavy_fighter_1 = 1
+        ita_heavy_fighter_ad_tech_1 = 1
+        ita_heavy_infantry_weapons_1 = 1
+        ita_heavy_infantry_weapons_2 = 1
+        ita_heavy_infantry_weapons_3 = 1
+        ita_heavy_infantry_weapons_upgrade_1 = 1
+        ita_heavy_infantry_weapons_upgrade_2 = 1
+        ita_improved_special_forces = 1
+        ita_infantry_weapons_0 = 1
+        ita_infantry_weapons_1 = 1
+        ita_infantry_weapons_2 = 1
+        ita_infantry_weapons_3 = 1
+        ita_infantry_weapons_5 = 1
+        ita_infantry_weapons_upgrade_1 = 1
+        ita_infantry_weapons_upgrade_2 = 1
+        ita_interceptor_ad_tech_1 = 1
+        ita_light_1 = 1
+        ita_light_2 = 1
+        ita_light_3 = 1
+        ita_light_aa_1 = 1
+        ita_light_aa_3 = 1
+        ita_light_cruiser_1 = 1
+        ita_light_cruiser_2 = 1
+        ita_light_cruiser_3 = 1
+        ita_light_cruiser_4 = 1
+        ita_light_cruiser_5 = 1
+        ita_light_cruiser_6 = 1
+        ita_light_cruiser_7 = 1
+        ita_light_spg_2 = 1
+        ita_light_tank_aa_1 = 1
+        ita_light_tank_aa_3 = 1
+        ita_light_tank_chassis_1 = 1
+        ita_light_tank_chassis_2 = 1
+        ita_light_tank_chassis_3 = 1
+        ita_light_tank_spg_2 = 1
+        ita_light_tank_td_1 = 1
+        ita_light_tank_td_2 = 1
+        ita_light_td_1 = 1
+        ita_light_td_2 = 1
+        ita_marines = 1
+        ita_mechanized_infantry_1 = 1
+        ita_medium_1 = 1
+        ita_medium_2 = 1
+        ita_medium_tank_chassis_1 = 1
+        ita_medium_tank_chassis_2 = 1
+        ita_motorised_infantry = 1
+        ita_pack_artillery_1 = 1
+        ita_pack_artillery_2 = 1
+        ita_pack_artillery_3 = 1
+        ita_paratroopers = 1
+        ita_patrol_1 = 1
+        ita_patrol_ad_tech_1 = 1
+        ita_scout_armoured_car_2 = 1
+        ita_scout_car_2 = 1
+        ita_scout_plane_2 = 1
+        ita_scout_plane_ad_tech_2 = 1
+        ita_strategic_bomber_1 = 1
+        ita_strategic_bomber_ad_tech_1 = 1
+        ita_strategic_bomber_ad_tech_1_2 = 1
+        ita_strike_bomber_1 = 1
+        ita_strike_bomber_2 = 1
+        ita_strike_bomber_ad_tech_1 = 1
+        ita_strike_bomber_ad_tech_2 = 1
+        ita_submarine_1 = 1
+        ita_submarine_2 = 1
+        ita_submarine_3 = 1
+        ita_submarine_4 = 1
+        ita_submarine_5 = 1
+        ita_submarine_6 = 1
+        ita_submarine_7 = 1
+        ita_tactical_bomber_2 = 1
+        ita_tactical_bomber_3 = 1
+        ita_tactical_bomber_ad_tech_2 = 1
+        ita_tactical_bomber_ad_tech_3 = 1
+        ita_tech_commandos = 1
+        ita_tech_mountaineers = 1
+        ita_tech_special_forces = 1
+        ita_transport_plane_1 = 1
+        ita_transport_plane_2 = 1
+        ita_urban_training = 1
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "By Blood Alone" }
+        }
+        set_technology = {
+            ita_cas_1 = 1
+            ita_fighter_1 = 1
+            ita_naval_bomber_1 = 1
+            ita_scout_plane_1 = 1
+            ita_tactical_bomber_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "No Step Back" }
+        }
+        set_technology = {
+            ita_interwar = 1
+            ita_scout_car_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "By Blood Alone"
+        }
+        set_technology = {
+            ita_cas_ad_tech_1 = 1
+            ita_cv_naval_bomber_ad_tech_1 = 1
+            ita_fighter_ad_tech_1 = 1
+            ita_scout_plane_ad_tech_1 = 1
+            ita_tactical_bomber_ad_tech_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "No Step Back"
+        }
+        set_technology = {
+            ita_light_tank_chassis_0 = 1
+            ita_scout_armoured_car_1 = 1
+        }
+    }
+}
+
+waef_grant_japanese_1940_technologies = {
+    set_technology = {
+        jap_aa_tower_1 = 1
+        jap_aa_tower_2 = 1
+        jap_advanced_special_forces = 1
+        jap_anti_air_1 = 1
+        jap_anti_air_upgrade_1 = 1
+        jap_anti_tank_1 = 1
+        jap_anti_tank_2 = 1
+        jap_anti_tank_upgrade_1 = 1
+        jap_anti_tank_upgrade_2 = 1
+        jap_artillery_1 = 1
+        jap_artillery_2 = 1
+        jap_artillery_3 = 1
+        jap_artillery_upgrade_1 = 1
+        jap_artillery_upgrade_2 = 1
+        jap_battle_cruiser_1 = 1
+        jap_battle_cruiser_2 = 1
+        jap_battleship_2 = 1
+        jap_battleship_3 = 1
+        jap_battleship_4 = 1
+        jap_battleship_5 = 1
+        jap_carrier_1 = 1
+        jap_carrier_2 = 1
+        jap_carrier_3 = 1
+        jap_carrier_4 = 1
+        jap_carrier_5 = 1
+        jap_cas_1 = 1
+        jap_cas_2 = 1
+        jap_cas_3 = 1
+        jap_cas_ad_tech_1 = 1
+        jap_cas_ad_tech_2 = 1
+        jap_cas_ad_tech_3 = 1
+        jap_cruiser_submarine_1 = 1
+        jap_cruiser_submarine_2 = 1
+        jap_cruiser_submarine_3 = 1
+        jap_cruiser_submarine_4 = 1
+        jap_cruiser_submarine_5 = 1
+        jap_cv_cas_1 = 1
+        jap_cv_cas_2 = 1
+        jap_cv_cas_ad_tech_1 = 1
+        jap_cv_cas_ad_tech_2 = 1
+        jap_cv_fighter_0 = 1
+        jap_cv_fighter_1 = 1
+        jap_cv_fighter_2 = 1
+        jap_cv_fighter_ad_tech_0 = 1
+        jap_cv_fighter_ad_tech_1 = 1
+        jap_cv_fighter_ad_tech_2 = 1
+        jap_cv_naval_bomber_2 = 1
+        jap_cv_naval_bomber_3 = 1
+        jap_cv_naval_bomber_ad_tech_2 = 1
+        jap_destroyer_1 = 1
+        jap_destroyer_2 = 1
+        jap_destroyer_3 = 1
+        jap_destroyer_4 = 1
+        jap_destroyer_5 = 1
+        jap_destroyer_6 = 1
+        jap_destroyer_7 = 1
+        jap_destroyer_8 = 1
+        jap_destroyer_9 = 1
+        jap_fast_bomber_ad_tech_1 = 1
+        jap_fighter_ad_tech_2 = 1
+        jap_fighter_multirole_1 = 1
+        jap_fighter_multirole_2 = 1
+        jap_fort_training = 1
+        jap_frigate_1 = 1
+        jap_frigate_2 = 1
+        jap_frigate_3 = 1
+        jap_heavy_0 = 1
+        jap_heavy_1 = 1
+        jap_heavy_1_spg = 1
+        jap_heavy_2 = 1
+        jap_heavy_anti_air_1 = 1
+        jap_heavy_anti_air_2 = 1
+        jap_heavy_artillery_1 = 1
+        jap_heavy_artillery_2 = 1
+        jap_heavy_cruiser_1 = 1
+        jap_heavy_cruiser_2 = 1
+        jap_heavy_cruiser_3 = 1
+        jap_heavy_cruiser_4 = 1
+        jap_heavy_cruiser_5 = 1
+        jap_heavy_cruiser_6 = 1
+        jap_heavy_cruiser_7 = 1
+        jap_heavy_infantry_weapons_1 = 1
+        jap_heavy_infantry_weapons_2 = 1
+        jap_heavy_infantry_weapons_3 = 1
+        jap_heavy_infantry_weapons_5 = 1
+        jap_heavy_infantry_weapons_upgrade_1 = 1
+        jap_heavy_infantry_weapons_upgrade_2 = 1
+        jap_heavy_infantry_weapons_upgrade_3 = 1
+        jap_heavy_tank_chassis_0 = 1
+        jap_heavy_tank_chassis_1 = 1
+        jap_heavy_tank_chassis_2 = 1
+        jap_heavy_tank_chassis_spg_1 = 1
+        jap_heavy_tank_chassis_td_1 = 1
+        jap_improved_special_forces = 1
+        jap_infantry_support_1 = 1
+        jap_infantry_weapons_1 = 1
+        jap_infantry_weapons_2 = 1
+        jap_infantry_weapons_4 = 1
+        jap_infantry_weapons_upgrade_1 = 1
+        jap_infantry_weapons_upgrade_2 = 1
+        jap_light_1 = 1
+        jap_light_2 = 1
+        jap_light_3 = 1
+        jap_light_4 = 1
+        jap_light_aa_3 = 1
+        jap_light_carrier_1 = 1
+        jap_light_carrier_2 = 1
+        jap_light_carrier_3 = 1
+        jap_light_carrier_4 = 1
+        jap_light_carrier_5 = 1
+        jap_light_carrier_6 = 1
+        jap_light_cruiser_1 = 1
+        jap_light_cruiser_2 = 1
+        jap_light_cruiser_3 = 1
+        jap_light_cruiser_4 = 1
+        jap_light_cruiser_5 = 1
+        jap_light_spg_3 = 1
+        jap_light_tank_aa_3 = 1
+        jap_light_tank_chassis_1 = 1
+        jap_light_tank_chassis_2 = 1
+        jap_light_tank_chassis_3 = 1
+        jap_light_tank_chassis_4 = 1
+        jap_light_tank_td_3 = 1
+        jap_light_td_3 = 1
+        jap_marines = 1
+        jap_mechanized_infantry_1 = 1
+        jap_medium_2 = 1
+        jap_medium_3 = 1
+        jap_medium_tank_chassis_2 = 1
+        jap_medium_tank_chassis_3 = 1
+        jap_medium_tank_chassis_5 = 1
+        jap_motorised_infantry = 1
+        jap_pack_artillery_1 = 1
+        jap_pack_artillery_2 = 1
+        jap_paratroopers = 1
+        jap_patrol_2 = 1
+        jap_patrol_3 = 1
+        jap_patrol_ad_tech_2 = 1
+        jap_patrol_ad_tech_3 = 1
+        jap_scout_armoured_car_2 = 1
+        jap_scout_car_2 = 1
+        jap_scout_plane_2 = 1
+        jap_scout_plane_3 = 1
+        jap_scout_plane_ad_tech_2 = 1
+        jap_strategic_bomber_2 = 1
+        jap_strike_bomber_1 = 1
+        jap_strike_bomber_2 = 1
+        jap_strike_bomber_ad_tech_2 = 1
+        jap_submarine_1 = 1
+        jap_submarine_2 = 1
+        jap_submarine_3 = 1
+        jap_submarine_4 = 1
+        jap_super_battleship_1 = 1
+        jap_super_heavy_tank_chassis_0 = 1
+        jap_tactical_bomber_2 = 1
+        jap_tactical_bomber_ad_tech_1 = 1
+        jap_tactical_bomber_ad_tech_2 = 1
+        jap_tech_commandos = 1
+        jap_tech_mountaineers = 1
+        jap_tech_special_forces = 1
+        jap_transport_plane_1 = 1
+        jap_transport_plane_2 = 1
+        jap_urban_training = 1
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "By Blood Alone" }
+        }
+        set_technology = {
+            jap_cv_naval_bomber_1 = 1
+            jap_fighter_1 = 1
+            jap_patrol_1 = 1
+            jap_scout_plane_1 = 1
+            jap_strategic_bomber_1 = 1
+            jap_tactical_bomber_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "No Step Back" }
+        }
+        set_technology = {
+            jap_interwar = 1
+            jap_medium_1 = 1
+            jap_scout_car_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "By Blood Alone"
+        }
+        set_technology = {
+            jap_cv_naval_bomber_ad_tech_1 = 1
+            jap_fighter_ad_tech_1 = 1
+            jap_patrol_ad_tech_1 = 1
+            jap_scout_plane_ad_tech_1 = 1
+            jap_strategic_bomber_ad_tech_1 = 1
+            jap_strike_bomber_ad_tech_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "No Step Back"
+        }
+        set_technology = {
+            jap_light_tank_chassis_0 = 1
+            jap_medium_tank_chassis_1 = 1
+            jap_scout_armoured_car_1 = 1
+        }
+    }
+}
+
+waef_grant_german_1940_technologies = {
+    set_technology = {
+        ger_aa_tower_1 = 1
+        ger_aa_tower_2 = 1
+        ger_advanced_special_forces = 1
+        ger_amphibious_1 = 1
+        ger_anti_air_1 = 1
+        ger_anti_air_2 = 1
+        ger_anti_air_3 = 1
+        ger_anti_air_upgrade_1 = 1
+        ger_anti_tank_1 = 1
+        ger_anti_tank_2 = 1
+        ger_anti_tank_upgrade_1 = 1
+        ger_anti_tank_upgrade_2 = 1
+        ger_artillery_1 = 1
+        ger_artillery_upgrade_1 = 1
+        ger_artillery_upgrade_2 = 1
+        ger_assault_2_spg = 1
+        ger_assault_tank_2_spg = 1
+        ger_attacker_1 = 1
+        ger_attacker_2 = 1
+        ger_attacker_ad_tech_1 = 1
+        ger_attacker_ad_tech_2 = 1
+        ger_battle_cruiser_1 = 1
+        ger_battleship_1 = 1
+        ger_battleship_2 = 1
+        ger_battleship_3 = 1
+        ger_battleship_4 = 1
+        ger_battleship_5 = 1
+        ger_carrier_1 = 1
+        ger_carrier_2 = 1
+        ger_cas_1 = 1
+        ger_cas_2 = 1
+        ger_cas_3 = 1
+        ger_cas_ad_tech_1 = 1
+        ger_cas_ad_tech_2 = 1
+        ger_cas_ad_tech_3 = 1
+        ger_cruiser_submarine_1 = 1
+        ger_cruiser_submarine_2 = 1
+        ger_cruiser_submarine_3 = 1
+        ger_cv_cas_2 = 1
+        ger_cv_cas_ad_tech_2 = 1
+        ger_cv_cas_ad_tech_3 = 1
+        ger_cv_fighter_1 = 1
+        ger_cv_fighter_ad_tech__1 = 1
+        ger_destroyer_1 = 1
+        ger_destroyer_2 = 1
+        ger_destroyer_3 = 1
+        ger_destroyer_4 = 1
+        ger_fast_bomber_ad_tech_2 = 1
+        ger_fighter_2 = 1
+        ger_fighter_3 = 1
+        ger_fighter_4 = 1
+        ger_fighter_5 = 1
+        ger_fighter_ad_tech_2 = 1
+        ger_fighter_ad_tech_3 = 1
+        ger_fighter_ad_tech_4 = 1
+        ger_fighter_ad_tech_5 = 1
+        ger_fort_training = 1
+        ger_frigate_1 = 1
+        ger_frigate_2 = 1
+        ger_frigate_3 = 1
+        ger_frigate_4 = 1
+        ger_frigate_5 = 1
+        ger_frigate_6 = 1
+        ger_heavy_anti_air_1 = 1
+        ger_heavy_artillery_1 = 1
+        ger_heavy_artillery_2 = 1
+        ger_heavy_cruiser_1 = 1
+        ger_heavy_cruiser_2 = 1
+        ger_heavy_cruiser_3 = 1
+        ger_heavy_fighter_1 = 1
+        ger_heavy_fighter_ad_tech_conversion_1 = 1
+        ger_heavy_fighter_ad_tech_conversion_3 = 1
+        ger_heavy_infantry_weapons_1 = 1
+        ger_heavy_infantry_weapons_2 = 1
+        ger_heavy_infantry_weapons_3 = 1
+        ger_heavy_infantry_weapons_upgrade_1 = 1
+        ger_heavy_infantry_weapons_upgrade_2 = 1
+        ger_heavy_infantry_weapons_upgrade_3 = 1
+        ger_heavy_tank_chassis_0 = 1
+        ger_improved_special_forces = 1
+        ger_infantry_weapons_0 = 1
+        ger_infantry_weapons_1 = 1
+        ger_infantry_weapons_2 = 1
+        ger_infantry_weapons_3 = 1
+        ger_infantry_weapons_upgrade_1 = 1
+        ger_light_1 = 1
+        ger_light_1_aa = 1
+        ger_light_1_spg = 1
+        ger_light_1_td = 1
+        ger_light_2 = 1
+        ger_light_2_aa = 1
+        ger_light_2_spg = 1
+        ger_light_3_aa = 1
+        ger_light_carrier_1 = 1
+        ger_light_carrier_2 = 1
+        ger_light_cruiser_1 = 1
+        ger_light_cruiser_2 = 1
+        ger_light_cruiser_3 = 1
+        ger_light_cruiser_4 = 1
+        ger_light_cruiser_5 = 1
+        ger_light_tank_1_aa = 1
+        ger_light_tank_1_spg = 1
+        ger_light_tank_1_td = 1
+        ger_light_tank_2_aa = 1
+        ger_light_tank_2_spg = 1
+        ger_light_tank_chassis_2 = 1
+        ger_light_tank_chassis_2_2 = 1
+        ger_marines = 1
+        ger_mechanized_infantry_1 = 1
+        ger_mechanized_infantry_2 = 1
+        ger_mechanized_td_1 = 1
+        ger_mechanized_td_2 = 1
+        ger_medium_1 = 1
+        ger_medium_2 = 1
+        ger_medium_tank_chassis_2_2 = 1
+        ger_motorised_infantry = 1
+        ger_pack_artillery_1 = 1
+        ger_pack_artillery_2 = 1
+        ger_paratroopers = 1
+        ger_rocket_artillery_1 = 1
+        ger_scout_armoured_car_1 = 1
+        ger_scout_armoured_car_2_1 = 1
+        ger_scout_armoured_car_2_2 = 1
+        ger_scout_armoured_car_3 = 1
+        ger_scout_armoured_car_4 = 1
+        ger_scout_car_1 = 1
+        ger_scout_car_2 = 1
+        ger_scout_car_3 = 1
+        ger_scout_car_4 = 1
+        ger_scout_plane_2 = 1
+        ger_scout_plane_ad_tech_2 = 1
+        ger_strategic_bomber_ad_tech_0 = 1
+        ger_strike_bomber_2 = 1
+        ger_strike_bomber_ad_tech_2 = 1
+        ger_strike_bomber_ad_tech_2_2 = 1
+        ger_submarine_1 = 1
+        ger_submarine_2 = 1
+        ger_submarine_3 = 1
+        ger_support_1 = 1
+        ger_support_2 = 1
+        ger_support_tank_chassis_1_2 = 1
+        ger_tactical_bomber_2 = 1
+        ger_tactical_bomber_3 = 1
+        ger_tactical_bomber_ad_tech_1 = 1
+        ger_tactical_bomber_ad_tech_2 = 1
+        ger_tactical_bomber_ad_tech_3 = 1
+        ger_tech_commandos = 1
+        ger_tech_mountaineers = 1
+        ger_tech_special_forces = 1
+        ger_transport_plane_1 = 1
+        ger_transport_plane_2 = 1
+        ger_urban_training = 1
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "By Blood Alone" }
+        }
+        set_technology = {
+            ger_fighter_1 = 1
+            ger_naval_bomber_1 = 1
+            ger_patrol_1 = 1
+            ger_scout_plane_1 = 1
+            ger_strike_bomber_1 = 1
+            ger_tactical_bomber_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "No Step Back" }
+        }
+        set_technology = {
+            ger_light_0 = 1
+            ger_light_3 = 1
+            ger_medium_0 = 1
+            ger_scout_car_0 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "By Blood Alone"
+        }
+        set_technology = {
+            ger_fast_bomber_ad_tech_1 = 1
+            ger_fighter_ad_tech_1 = 1
+            ger_naval_bomber_ad_tech_1 = 1
+            ger_patrol_ad_tech_1 = 1
+            ger_scout_plane_ad_tech_1 = 1
+            ger_strike_bomber_ad_tech_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "No Step Back"
+        }
+        set_technology = {
+            ger_light_tank_chassis_1 = 1
+            ger_light_tank_chassis_3 = 1
+            ger_medium_tank_chassis_1 = 1
+        }
+    }
+}
+
+waef_grant_soviet_1940_technologies = {
+    set_technology = {
+        sov_aa_tower_1 = 1
+        sov_aa_tower_2 = 1
+        sov_advanced_special_forces = 1
+        sov_anti_air_1 = 1
+        sov_anti_air_2 = 1
+        sov_anti_air_upgrade_1 = 1
+        sov_anti_tank_1 = 1
+        sov_anti_tank_2 = 1
+        sov_anti_tank_upgrade_1 = 1
+        sov_anti_tank_upgrade_2 = 1
+        sov_armoured_car_1 = 1
+        sov_armoured_car_2 = 1
+        sov_artillery_1 = 1
+        sov_artillery_2 = 1
+        sov_artillery_upgrade_1 = 1
+        sov_artillery_upgrade_2 = 1
+        sov_battle_cruiser_1 = 1
+        sov_battleship_1 = 1
+        sov_battleship_2 = 1
+        sov_carrier_1 = 1
+        sov_cas_2 = 1
+        sov_cas_ad_tech_1 = 1
+        sov_cas_ad_tech_2 = 1
+        sov_combat_armoured_car_1 = 1
+        sov_combat_armoured_car_2 = 1
+        sov_cruiser_submarine_1 = 1
+        sov_cruiser_submarine_2 = 1
+        sov_cruiser_submarine_3 = 1
+        sov_cruiser_submarine_4 = 1
+        sov_cv_fighter_ad_tech_1 = 1
+        sov_cv_naval_bomber_ad_tech_2 = 1
+        sov_destroyer_1 = 1
+        sov_destroyer_2 = 1
+        sov_destroyer_3 = 1
+        sov_destroyer_4 = 1
+        sov_destroyer_5 = 1
+        sov_destroyer_6 = 1
+        sov_destroyer_7 = 1
+        sov_destroyer_8 = 1
+        sov_fighter_2 = 1
+        sov_fighter_ad_tech_1_1 = 1
+        sov_fighter_ad_tech_2 = 1
+        sov_fighter_multirole_1 = 1
+        sov_fighter_multirole_2 = 1
+        sov_fighter_multirole_3 = 1
+        sov_fighter_multirole_4 = 1
+        sov_fighter_multirole_ad_tech_1 = 1
+        sov_fighter_multirole_ad_tech_2 = 1
+        sov_fighter_multirole_ad_tech_3 = 1
+        sov_fighter_multirole_ad_tech_3_1 = 1
+        sov_fort_training = 1
+        sov_frigate_1 = 1
+        sov_frigate_2 = 1
+        sov_frigate_3 = 1
+        sov_heavy_2 = 1
+        sov_heavy_anti_air_1 = 1
+        sov_heavy_anti_air_2 = 1
+        sov_heavy_artillery_1 = 1
+        sov_heavy_artillery_2 = 1
+        sov_heavy_cruiser_1 = 1
+        sov_heavy_infantry_weapons_1 = 1
+        sov_heavy_infantry_weapons_3 = 1
+        sov_heavy_infantry_weapons_upgrade_1 = 1
+        sov_heavy_infantry_weapons_upgrade_2 = 1
+        sov_heavy_infantry_weapons_upgrade_3 = 1
+        sov_heavy_spg_2 = 1
+        sov_heavy_tank_chassis_2 = 1
+        sov_heavy_tank_spg_2 = 1
+        sov_improved_special_forces = 1
+        sov_infantry_weapons_1 = 1
+        sov_infantry_weapons_10 = 1
+        sov_infantry_weapons_2 = 1
+        sov_infantry_weapons_3 = 1
+        sov_infantry_weapons_4 = 1
+        sov_infantry_weapons_9 = 1
+        sov_infantry_weapons_upgrade_1 = 1
+        sov_infantry_weapons_upgrade_2 = 1
+        sov_infantry_weapons_upgrade_4 = 1
+        sov_interceptor_ad_tech_1 = 1
+        sov_light_2 = 1
+        sov_light_3 = 1
+        sov_light_assault_spg_1 = 1
+        sov_light_cruiser_1 = 1
+        sov_light_cruiser_2 = 1
+        sov_light_cruiser_3 = 1
+        sov_light_cruiser_4 = 1
+        sov_light_spg_1 = 1
+        sov_light_spg_2 = 1
+        sov_light_tank_chassis_1 = 1
+        sov_light_tank_chassis_2 = 1
+        sov_light_tank_chassis_2_2 = 1
+        sov_light_tank_spg_1 = 1
+        sov_light_tank_support_chassis_1_2 = 1
+        sov_light_tank_support_chassis_2 = 1
+        sov_marines = 1
+        sov_mechanized_aa_1 = 1
+        sov_mechanized_infantry_1 = 1
+        sov_mechanized_infantry_2 = 1
+        sov_mechanized_infantry_2_1 = 1
+        sov_medium_0 = 1
+        sov_medium_1 = 1
+        sov_medium_2 = 1
+        sov_medium_3 = 1
+        sov_medium_spg_2 = 1
+        sov_medium_tank_chassis_1 = 1
+        sov_medium_tank_chassis_1_2 = 1
+        sov_medium_tank_chassis_3 = 1
+        sov_motorised_infantry = 1
+        sov_pack_artillery_1 = 1
+        sov_pack_artillery_2 = 1
+        sov_paratroopers = 1
+        sov_scout_armoured_car_2 = 1
+        sov_scout_car_2 = 1
+        sov_scout_plane_ad_tech_1 = 1
+        sov_strategic_bomber_2 = 1
+        sov_strategic_bomber_ad_tech_2 = 1
+        sov_strike_bomber_2 = 1
+        sov_strike_bomber_ad_tech_1_1 = 1
+        sov_strike_bomber_ad_tech_2 = 1
+        sov_submarine_1 = 1
+        sov_submarine_2 = 1
+        sov_submarine_3 = 1
+        sov_tactical_bomber_1 = 1
+        sov_tactical_bomber_2 = 1
+        sov_tactical_bomber_ad_tech_1 = 1
+        sov_tactical_bomber_ad_tech_2 = 1
+        sov_tech_commandos = 1
+        sov_tech_mountaineers = 1
+        sov_tech_special_forces = 1
+        sov_transport_plane_1 = 1
+        sov_transport_plane_2 = 1
+        sov_urban_training = 1
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "By Blood Alone" }
+        }
+        set_technology = {
+            sov_cas_1 = 1
+            sov_fighter_1 = 1
+            sov_naval_bomber_1 = 1
+            sov_patrol_1 = 1
+            sov_scout_plane_1 = 1
+            sov_strategic_bomber_1 = 1
+            sov_strike_bomber_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "No Step Back" }
+        }
+        set_technology = {
+            sov_heavy_1 = 1
+            sov_light_1 = 1
+            sov_scout_car_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "By Blood Alone"
+        }
+        set_technology = {
+            sov_cas_ad_tech_0 = 1
+            sov_cv_naval_bomber_ad_tech_1 = 1
+            sov_fighter_ad_tech_1 = 1
+            sov_patrol_ad_tech_1 = 1
+            sov_scout_plane_ad_tech_0 = 1
+            sov_strategic_bomber_ad_tech_1 = 1
+            sov_strike_bomber_ad_tech_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "No Step Back"
+        }
+        set_technology = {
+            sov_heavy_tank_chassis_1 = 1
+            sov_light_tank_support_chassis_1 = 1
+            sov_scout_armoured_car_1 = 1
+        }
+    }
+}
+
+waef_grant_british_1940_technologies = {
+    set_technology = {
+        eng_aa_tower_1 = 1
+        eng_advanced_special_forces = 1
+        eng_anti_air_1 = 1
+        eng_anti_air_upgrade_1 = 1
+        eng_anti_air_upgrade_2 = 1
+        eng_anti_tank_1 = 1
+        eng_anti_tank_upgrade_1 = 1
+        eng_anti_tank_upgrade_2 = 1
+        eng_armoured_car_1 = 1
+        eng_artillery_1 = 1
+        eng_artillery_2 = 1
+        eng_artillery_3 = 1
+        eng_artillery_upgrade_1 = 1
+        eng_artillery_upgrade_2 = 1
+        eng_attacker_1 = 1
+        eng_attacker_ad_tech_1 = 1
+        eng_battle_cruiser_1 = 1
+        eng_battle_cruiser_2 = 1
+        eng_battle_cruiser_3 = 1
+        eng_battleship_2 = 1
+        eng_battleship_3 = 1
+        eng_battleship_4 = 1
+        eng_battleship_5 = 1
+        eng_battleship_6 = 1
+        eng_carrier_1 = 1
+        eng_carrier_2 = 1
+        eng_carrier_3 = 1
+        eng_carrier_4 = 1
+        eng_carrier_5 = 1
+        eng_cas_2 = 1
+        eng_cas_3 = 1
+        eng_cas_4 = 1
+        eng_cas_5 = 1
+        eng_cas_ad_tech_2 = 1
+        eng_cas_ad_tech_3 = 1
+        eng_cas_ad_tech_4 = 1
+        eng_cas_ad_tech_5 = 1
+        eng_combat_armoured_car_1 = 1
+        eng_cruiser_submarine_1 = 1
+        eng_cruiser_submarine_2 = 1
+        eng_cruiser_submarine_3 = 1
+        eng_cruiser_submarine_4 = 1
+        eng_cruiser_submarine_5 = 1
+        eng_cv_cas_1 = 1
+        eng_cv_cas_3 = 1
+        eng_cv_cas_ad_tech_1 = 1
+        eng_cv_fighter_1 = 1
+        eng_cv_fighter_2 = 1
+        eng_cv_fighter_3 = 1
+        eng_cv_fighter_ad_tech_1 = 1
+        eng_cv_fighter_ad_tech_2 = 1
+        eng_cv_fighter_ad_tech_3 = 1
+        eng_cv_naval_bomber_ad_tech_1 = 1
+        eng_cv_naval_bomber_ad_tech_2 = 1
+        eng_destroyer_1 = 1
+        eng_destroyer_2 = 1
+        eng_destroyer_3 = 1
+        eng_destroyer_4 = 1
+        eng_destroyer_5 = 1
+        eng_destroyer_6 = 1
+        eng_destroyer_7 = 1
+        eng_destroyer_8 = 1
+        eng_destroyer_9 = 1
+        eng_fighter_2 = 1
+        eng_fighter_3 = 1
+        eng_fighter_ad_tech_2 = 1
+        eng_fighter_ad_tech_3 = 1
+        eng_fighter_multirole_1 = 1
+        eng_fighter_multirole_2 = 1
+        eng_fighter_multirole_ad_tech_0 = 1
+        eng_fighter_multirole_ad_tech_1 = 1
+        eng_fighter_multirole_ad_tech_2 = 1
+        eng_fort_training = 1
+        eng_frigate_1 = 1
+        eng_frigate_2 = 1
+        eng_frigate_3 = 1
+        eng_frigate_4 = 1
+        eng_frigate_5 = 1
+        eng_frigate_6 = 1
+        eng_frigate_7 = 1
+        eng_frigate_8 = 1
+        eng_heavy_1 = 1
+        eng_heavy_2 = 1
+        eng_heavy_anti_air_1 = 1
+        eng_heavy_anti_air_2 = 1
+        eng_heavy_artillery_1 = 1
+        eng_heavy_artillery_2 = 1
+        eng_heavy_cruiser_1 = 1
+        eng_heavy_cruiser_2 = 1
+        eng_heavy_cruiser_3 = 1
+        eng_heavy_cruiser_4 = 1
+        eng_heavy_cruiser_5 = 1
+        eng_heavy_fighter_1 = 1
+        eng_heavy_fighter_ad_tech_1 = 1
+        eng_heavy_infantry_weapons_1 = 1
+        eng_heavy_infantry_weapons_2 = 1
+        eng_heavy_infantry_weapons_upgrade_1 = 1
+        eng_heavy_infantry_weapons_upgrade_2 = 1
+        eng_heavy_strategic_bomber_ad_tech_1 = 1
+        eng_heavy_strategic_bomber_ad_tech_2 = 1
+        eng_heavy_tank_chassis_0 = 1
+        eng_heavy_tank_chassis_1 = 1
+        eng_heavy_tank_chassis_2 = 1
+        eng_heavy_tank_spg_2 = 1
+        eng_improved_special_forces = 1
+        eng_infantry_weapons_1 = 1
+        eng_infantry_weapons_upgrade_1 = 1
+        eng_infantry_weapons_upgrade_2 = 1
+        eng_infantry_weapons_upgrade_3 = 1
+        eng_light_2 = 1
+        eng_light_carrier_1 = 1
+        eng_light_carrier_2 = 1
+        eng_light_carrier_3 = 1
+        eng_light_carrier_4 = 1
+        eng_light_cruiser_1 = 1
+        eng_light_cruiser_2 = 1
+        eng_light_cruiser_3 = 1
+        eng_light_cruiser_4 = 1
+        eng_light_cruiser_5 = 1
+        eng_light_cruiser_6 = 1
+        eng_light_cruiser_7 = 1
+        eng_light_cruiser_8 = 1
+        eng_light_tank_chassis_2 = 1
+        eng_marines = 1
+        eng_mechanized_infantry_1 = 1
+        eng_medium_1 = 1
+        eng_medium_2 = 1
+        eng_medium_3 = 1
+        eng_medium_4 = 1
+        eng_medium_spg_1 = 1
+        eng_medium_spg_3 = 1
+        eng_medium_tank_chassis_1 = 1
+        eng_medium_tank_chassis_1_2 = 1
+        eng_medium_tank_chassis_2 = 1
+        eng_medium_tank_chassis_3 = 1
+        eng_medium_tank_spg_1 = 1
+        eng_medium_tank_spg_2 = 1
+        eng_medium_tank_spg_4 = 1
+        eng_motorised_infantry = 1
+        eng_naval_bomber_2 = 1
+        eng_pack_artillery_1 = 1
+        eng_pack_artillery_2 = 1
+        eng_paratroopers = 1
+        eng_patrol_2 = 1
+        eng_patrol_ad_tech_2 = 1
+        eng_scout_armoured_car_2 = 1
+        eng_scout_car_1 = 1
+        eng_scout_plane_2 = 1
+        eng_scout_plane_ad_tech_2 = 1
+        eng_strategic_bomber_1 = 1
+        eng_strategic_bomber_ad_tech_1 = 1
+        eng_strategic_bomber_ad_tech_2 = 1
+        eng_strike_bomber_1 = 1
+        eng_strike_bomber_2 = 1
+        eng_strike_bomber_ad_tech_1 = 1
+        eng_strike_bomber_ad_tech_1_1 = 1
+        eng_strike_bomber_ad_tech_2 = 1
+        eng_submarine_1 = 1
+        eng_submarine_2 = 1
+        eng_submarine_3 = 1
+        eng_submarine_4 = 1
+        eng_submarine_5 = 1
+        eng_support_1 = 1
+        eng_support_2 = 1
+        eng_support_3 = 1
+        eng_support_tank_chassis_1 = 1
+        eng_support_tank_chassis_2 = 1
+        eng_support_tank_chassis_3 = 1
+        eng_tactical_bomber_2 = 1
+        eng_tactical_bomber_3 = 1
+        eng_tactical_bomber_ad_tech_2 = 1
+        eng_tactical_bomber_ad_tech_3 = 1
+        eng_tech_commandos = 1
+        eng_tech_mountaineers = 1
+        eng_tech_special_forces = 1
+        eng_transport_plane_1 = 1
+        eng_urban_training = 1
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "By Blood Alone" }
+        }
+        set_technology = {
+            eng_cas_1 = 1
+            eng_fighter_1 = 1
+            eng_naval_bomber_1 = 1
+            eng_patrol_1 = 1
+            eng_scout_plane_1 = 1
+            eng_tactical_bomber_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "No Step Back" }
+        }
+        set_technology = {
+            eng_light_1 = 1
+            eng_scout_car_0 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "By Blood Alone"
+        }
+        set_technology = {
+            eng_cas_ad_tech_1 = 1
+            eng_cv_naval_bomber_ad_tech_0 = 1
+            eng_fighter_ad_tech_1 = 1
+            eng_patrol_ad_tech_1 = 1
+            eng_scout_plane_ad_tech_1 = 1
+            eng_strategic_bomber_ad_tech_0 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "No Step Back"
+        }
+        set_technology = {
+            eng_light_tank_chassis_1 = 1
+            eng_scout_armoured_car_1 = 1
+        }
+    }
+}
+
+waef_grant_unitedstates_1940_technologies = {
+    set_technology = {
+        chi_fighter_multirole_ad_tech_0 = 1
+        usa_aa_tower_1 = 1
+        usa_advanced_special_forces = 1
+        usa_anti_air_1 = 1
+        usa_anti_air_upgrade_1 = 1
+        usa_anti_air_upgrade_2 = 1
+        usa_anti_tank_1 = 1
+        usa_anti_tank_upgrade_1 = 1
+        usa_artillery_1 = 1
+        usa_artillery_2 = 1
+        usa_artillery_upgrade_1 = 1
+        usa_artillery_upgrade_2 = 1
+        usa_battleship_1 = 1
+        usa_battleship_2 = 1
+        usa_battleship_3 = 1
+        usa_battleship_4 = 1
+        usa_battleship_5 = 1
+        usa_battleship_6 = 1
+        usa_battleship_7 = 1
+        usa_carrier_1 = 1
+        usa_carrier_2 = 1
+        usa_carrier_3 = 1
+        usa_carrier_4 = 1
+        usa_carrier_5 = 1
+        usa_cas_1 = 1
+        usa_cas_2 = 1
+        usa_cas_3 = 1
+        usa_cas_ad_tech_1 = 1
+        usa_cas_ad_tech_2 = 1
+        usa_cas_ad_tech_3 = 1
+        usa_cruiser_submarine_1 = 1
+        usa_cruiser_submarine_2 = 1
+        usa_cruiser_submarine_3 = 1
+        usa_cruiser_submarine_4 = 1
+        usa_cruiser_submarine_5 = 1
+        usa_cv_cas_1 = 1
+        usa_cv_cas_2 = 1
+        usa_cv_cas_3 = 1
+        usa_cv_cas_ad_tech_1 = 1
+        usa_cv_cas_ad_tech_2 = 1
+        usa_cv_cas_ad_tech_3 = 1
+        usa_cv_fighter_1 = 1
+        usa_cv_fighter_2 = 1
+        usa_cv_fighter_ad_tech_1 = 1
+        usa_cv_fighter_ad_tech_2 = 1
+        usa_cv_naval_bomber_ad_tech_1 = 1
+        usa_destroyer_1 = 1
+        usa_destroyer_2 = 1
+        usa_destroyer_3 = 1
+        usa_destroyer_4 = 1
+        usa_destroyer_5 = 1
+        usa_destroyer_6 = 1
+        usa_fighter_1 = 1
+        usa_fighter_2 = 1
+        usa_fighter_7 = 1
+        usa_fighter_ad_tech_1 = 1
+        usa_fighter_ad_tech_2 = 1
+        usa_fighter_multirole_1 = 1
+        usa_fighter_multirole_ad_tech_0 = 1
+        usa_fort_training = 1
+        usa_heavy_anti_air_1 = 1
+        usa_heavy_anti_air_2 = 1
+        usa_heavy_artillery_1 = 1
+        usa_heavy_cruiser_1 = 1
+        usa_heavy_cruiser_2 = 1
+        usa_heavy_cruiser_3 = 1
+        usa_heavy_cruiser_4 = 1
+        usa_heavy_infantry_weapons_1 = 1
+        usa_heavy_infantry_weapons_2 = 1
+        usa_heavy_infantry_weapons_3 = 1
+        usa_heavy_infantry_weapons_upgrade_1 = 1
+        usa_heavy_infantry_weapons_upgrade_2 = 1
+        usa_improved_special_forces = 1
+        usa_infantry_weapons_1 = 1
+        usa_infantry_weapons_2 = 1
+        usa_infantry_weapons_3 = 1
+        usa_infantry_weapons_upgrade_1 = 1
+        usa_infantry_weapons_upgrade_2 = 1
+        usa_interceptor_ad_tech_1 = 1
+        usa_light_carrier_1 = 1
+        usa_light_cruiser_1 = 1
+        usa_light_cruiser_2 = 1
+        usa_light_cruiser_3 = 1
+        usa_light_tank_chassis_1_1 = 1
+        usa_marines = 1
+        usa_mechanized_aa_1 = 1
+        usa_mechanized_artillery_1 = 1
+        usa_mechanized_infantry_1 = 1
+        usa_mechanized_td_1 = 1
+        usa_medium_1 = 1
+        usa_medium_tank_chassis_1 = 1
+        usa_motorised_infantry = 1
+        usa_pack_artillery_1 = 1
+        usa_paratroopers = 1
+        usa_patrol_1 = 1
+        usa_patrol_2 = 1
+        usa_patrol_ad_tech_1 = 1
+        usa_patrol_ad_tech_2 = 1
+        usa_scout_armoured_car_2 = 1
+        usa_scout_car_2 = 1
+        usa_strategic_bomber_1 = 1
+        usa_strategic_bomber_2 = 1
+        usa_strategic_bomber_2_ad_tech_1 = 1
+        usa_strategic_bomber_ad_tech_1 = 1
+        usa_strike_bomber_1 = 1
+        usa_strike_bomber_2 = 1
+        usa_strike_bomber_ad_tech_2 = 1
+        usa_strike_bomber_ad_tech_3 = 1
+        usa_submarine_1 = 1
+        usa_submarine_2 = 1
+        usa_submarine_3 = 1
+        usa_submarine_4 = 1
+        usa_submarine_5 = 1
+        usa_super_battleship_2 = 1
+        usa_tactical_bomber_2 = 1
+        usa_tactical_bomber_3 = 1
+        usa_tactical_bomber_4 = 1
+        usa_tactical_bomber_ad_tech_2 = 1
+        usa_tactical_bomber_ad_tech_3 = 1
+        usa_tactical_bomber_ad_tech_4 = 1
+        usa_tech_commandos = 1
+        usa_tech_mountaineers = 1
+        usa_tech_special_forces = 1
+        usa_transport_plane_2 = 1
+        usa_urban_training = 1
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "By Blood Alone" }
+        }
+        set_technology = {
+            usa_cv_naval_bomber_1 = 1
+            usa_fighter_0 = 1
+            usa_tactical_bomber_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            NOT = { has_dlc = "No Step Back" }
+        }
+        set_technology = {
+            usa_light_1 = 1
+            usa_scout_car_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "By Blood Alone"
+        }
+        set_technology = {
+            usa_cv_naval_bomber_ad_tech_0 = 1
+            usa_fighter_ad_tech_0 = 1
+            usa_scout_plane_ad_tech_1 = 1
+            usa_strike_bomber_ad_tech_1 = 1
+            usa_tactical_bomber_ad_tech_1 = 1
+        }
+    }
+
+    if = {
+        limit = {
+            has_dlc = "No Step Back"
+        }
+        set_technology = {
+            usa_light_tank_chassis_1 = 1
+            usa_scout_armoured_car_1 = 1
+        }
+    }
+}
