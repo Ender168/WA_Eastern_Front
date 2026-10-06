@@ -83,3 +83,4 @@
 
  waef_create_starting_forces:0 "Deploy Starting Forces"
  waef_create_starting_forces_desc:0 "After applying the 1940 technology baseline, create the standard suppression, infantry and medium tank templates; deploy 300 fully trained infantry divisions and 30 fully trained medium tank divisions in the capital; and commission 50 generals and 5 field marshals."
+ waef_create_starting_forces_tt:0 "Create the three scenario templates, deploy 300 infantry and 30 medium tank divisions at full manpower, equipment and training in the capital, and commission 50 generals plus 5 field marshals."
