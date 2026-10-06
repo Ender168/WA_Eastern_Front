@@ -1,4 +1,4 @@
-# Competitive setup systems v0.24 — static clean map and regional supply mesh
+# Competitive setup systems v0.23 — static clean map and regional supply mesh
 
 ## Why v0.16 did not visibly change the country-selection map
 
@@ -328,48 +328,3 @@ Both `waef_initial_doctrine_window` and its post-30-January replacement
 
 The initial version still temporarily gives the existing -100% Land and Air
 Doctrine costs through 29 January 1941.
-
-## v0.24 - mobilization and war start
-
-### Scheduled mobilization
-
-Both WEF and EEF use one cumulative mobilization spirit. It advances by
-0.5 percentage points of `conscription` on each 1 March and 1 September:
-
-- 1941-03-01: +0.5%;
-- 1941-09-01: +1.0%;
-- 1942-03-01: +1.5%;
-- 1942-09-01: +2.0%;
-- 1943-03-01: +2.5%;
-- 1943-09-01: +3.0%;
-- 1944-03-01: +3.5%;
-- 1944-09-01: +4.0%;
-- 1945-03-01: +4.5%;
-- 1945-09-01: +5.0% cap.
-
-The first wave triggers explanatory event `waef.2`; later stages replace the
-same national spirit automatically.
-
-### War countdown
-
-Both sides start with `waef_prewar_truce`, whose rule blocks manual war
-declarations, and with the non-selectable mission
-`waef_war_preparation_countdown`.
-
-The mission lasts 172 days from the 1 January 1941 scenario start and expires
-on 22 June 1941. On timeout it removes the no-war spirit and unlocks
-`waef_declare_scenario_war`.
-
-The first player to use the declaration decision declares an
-`annex_everything` war on the other playable tag and receives
-`waef_offensive_momentum` for 90 days:
-
-- Army Attack: +10%.
-
-### Scenario leaders
-
-The starting-force decision still creates 50 generals and 5 field marshals,
-but every generated leader now has a unique explicit name
-(`WAEF General 01` through `50`, and `WAEF Field Marshal 01` through
-`05`). This avoids the engine collapsing repeated anonymous leader creation
-effects into a single visible commander.
