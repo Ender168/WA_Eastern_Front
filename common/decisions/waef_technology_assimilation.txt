@@ -1253,42 +1253,36 @@ waef_technology_assimilation = {
 
                 810 = {
                     create_unit = {
-                        division = "division_template = \"WAEF Infantry Division\" start_experience_factor = 0.45 start_equipment_factor = 1 start_manpower_factor = 1"
+                        division = "division_template = \"WAEF Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
                         owner = WEF
                         prioritize_location = 6521
                         count = 300
                     }
                     create_unit = {
-                        division = "division_template = \"WAEF Medium Tank Division\" start_experience_factor = 0.45 start_equipment_factor = 1 start_manpower_factor = 1"
+                        division = "division_template = \"WAEF Medium Tank Division\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
                         owner = WEF
                         prioritize_location = 6521
                         count = 30
                     }
                 }
-
-                add_equipment_to_stockpile = { type = train_equipment_4 amount = 1000 producer = WEF }
-                add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1000 producer = WEF }
             }
             else_if = {
                 limit = { tag = EEF }
 
                 219 = {
                     create_unit = {
-                        division = "division_template = \"WAEF Infantry Division\" start_experience_factor = 0.45 start_equipment_factor = 1 start_manpower_factor = 1"
+                        division = "division_template = \"WAEF Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
                         owner = EEF
                         prioritize_location = 6380
                         count = 300
                     }
                     create_unit = {
-                        division = "division_template = \"WAEF Medium Tank Division\" start_experience_factor = 0.45 start_equipment_factor = 1 start_manpower_factor = 1"
+                        division = "division_template = \"WAEF Medium Tank Division\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
                         owner = EEF
                         prioritize_location = 6380
                         count = 30
                     }
                 }
-
-                add_equipment_to_stockpile = { type = train_equipment_4 amount = 1000 producer = EEF }
-                add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1000 producer = EEF }
             }
 
             create_corps_commander = {
@@ -1678,8 +1672,6 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
 
-            add_timed_idea = { idea = waef_manpower_accounting days = 700 }
-            country_event = { id = waef.1 }
             set_country_flag = waef_starting_forces_created
             }
         }

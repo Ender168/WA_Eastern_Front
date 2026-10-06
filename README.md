@@ -115,4 +115,3 @@ with a 1940 cutoff and dependency closure.
 ## Dependency
 
 World Ablaze Workshop ID: `2149567872`
-- v0.23 scenario economy baseline: symmetric per-state resources/refineries, 800 starting PP, constrained fuel storage, train/truck stockpiles, Regular spawned divisions and 100-week manpower accounting.

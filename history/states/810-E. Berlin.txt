@@ -4,6 +4,16 @@ state = {
 	manpower = 725000
 	state_category = city
 
+	resources = {
+		oil = 10
+		rubber = 10
+		tungsten = 10
+		chromium = 10
+		coal = 10
+		bauxite = 10
+		steel = 10
+	}
+
 	history = {
 		owner = WEF
 		controller = WEF

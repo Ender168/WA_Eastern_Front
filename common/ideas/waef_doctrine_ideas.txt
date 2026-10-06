@@ -17,7 +17,6 @@ ideas = {
                 land_doctrine_cost_factor = -1.0
                 air_doctrine_cost_factor = -1.0
                 naval_doctrine_cost_factor = 10.0
-                production_speed_dockyard_factor = -10.0
             }
         }
 
@@ -36,43 +35,6 @@ ideas = {
 
             modifier = {
                 naval_doctrine_cost_factor = 10.0
-                production_speed_dockyard_factor = -10.0
-            }
-        }
-
-        waef_reduced_fuel_capacity = {
-            picture = generic_supply_line
-
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-
-            removal_cost = -1
-
-            modifier = {
-                max_fuel_factor = -0.75
-            }
-        }
-
-        waef_manpower_accounting = {
-            picture = generic_army_problems
-
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-
-            removal_cost = -1
-
-            modifier = {
-                weekly_manpower = -57400
             }
         }
     }
