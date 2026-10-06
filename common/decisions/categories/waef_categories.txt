@@ -24,3 +24,30 @@ waef_political_alignment = {
         NOT = { has_country_flag = waef_ideology_selected }
     }
 }
+
+waef_land_doctrine_setup = {
+    priority = 9980
+    icon = generic_research
+
+    allowed = {
+        OR = { tag = WEF tag = EEF }
+    }
+
+    visible = {
+        has_global_flag = waef_scenario_1941
+        has_country_flag = waef_technology_assimilated
+    }
+}
+
+waef_air_doctrine_setup = {
+    priority = 9970
+    icon = generic_research
+
+    allowed = {
+        OR = { tag = WEF tag = EEF }
+    }
+
+    visible = {
+        has_global_flag = waef_scenario_1941
+    }
+}
