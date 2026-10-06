@@ -1,0 +1,41 @@
+ideas = {
+    country = {
+        waef_initial_doctrine_window = {
+            picture = generic_army_war_college
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                land_doctrine_cost_factor = -1.0
+                air_doctrine_cost_factor = -1.0
+                naval_doctrine_cost_factor = 10.0
+            }
+        }
+
+        waef_naval_doctrine_lock = {
+            picture = generic_army_war_college
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                naval_doctrine_cost_factor = 10.0
+            }
+        }
+    }
+}
