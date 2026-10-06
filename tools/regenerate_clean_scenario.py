@@ -68,20 +68,20 @@ def download(url: str, dst: Path) -> None:
 
 def parse_state(path: Path) -> dict:
     text = path.read_text(encoding="utf-8-sig")
-    mid = re.search(r"(?m)^\\s*id\\s*=\\s*(\\d+)", text)
-    mname = re.search(r'(?m)^\\s*name\\s*=\\s*("[^"]+"|[^\\r\\n#]+)', text)
-    mowner = re.search(r"(?m)^\\s*owner\\s*=\\s*([A-Z0-9]{3})", text)
+    mid = re.search(r"(?m)^\s*id\s*=\s*(\d+)", text)
+    mname = re.search(r'(?m)^\s*name\s*=\s*("[^"]+"|[^\r\n#]+)', text)
+    mowner = re.search(r"(?m)^\s*owner\s*=\s*([A-Z0-9]{3})", text)
     if not (mid and mname and mowner):
         raise RuntimeError(f"Could not parse id/name/owner from {path}")
 
     vps = [(int(a), int(b)) for a, b in re.findall(
-        r"victory_points\\s*=\\s*\\{\\s*(\\d+)\\s+(-?\\d+)\\s*\\}", text, flags=re.S
+        r"victory_points\s*=\s*\{\s*(\d+)\s+(-?\d+)\s*\}", text, flags=re.S
     )]
 
-    pblock = re.search(r"provinces\\s*=\\s*\\{([^{}]*)\\}", text, flags=re.S)
+    pblock = re.search(r"provinces\s*=\s*\{([^{}]*)\}", text, flags=re.S)
     if not pblock:
         raise RuntimeError(f"No provinces block in {path}")
-    provinces = [int(x) for x in re.findall(r"\\b\\d+\\b", pblock.group(1))]
+    provinces = [int(x) for x in re.findall(r"\b\d+\b", pblock.group(1))]
     if not provinces:
         raise RuntimeError(f"No provinces in {path}")
 
@@ -112,58 +112,58 @@ def render_state(s: dict) -> str:
 
     lines = [
         "state = {",
-        f"\\tid = {sid}",
-        f"\\tname = {s['name']}",
-        f"\\tmanpower = {population}",
-        "\\tstate_category = city",
+        f"\tid = {sid}",
+        f"\tname = {s['name']}",
+        f"\tmanpower = {population}",
+        "\tstate_category = city",
     ]
 
     resources = CAPITAL_RESOURCES.get(sid)
     if resources:
         lines.append("")
-        lines.append("\\tresources = {")
+        lines.append("\tresources = {")
         for key, value in resources.items():
-            lines.append(f"\\t\\t{key} = {value}")
-        lines.append("\\t}")
+            lines.append(f"\t\t{key} = {value}")
+        lines.append("\t}")
 
     lines += [
         "",
-        "\\thistory = {",
-        f"\\t\\towner = {owner}",
-        f"\\t\\tcontroller = {owner}",
-        f"\\t\\tadd_core_of = {owner}",
+        "\thistory = {",
+        f"\t\towner = {owner}",
+        f"\t\tcontroller = {owner}",
+        f"\t\tadd_core_of = {owner}",
     ]
 
     for prov, value in s["vps"]:
         lines += [
-            "\\t\\tvictory_points = {",
-            f"\\t\\t\\t{prov} {value}",
-            "\\t\\t}",
+            "\t\tvictory_points = {",
+            f"\t\t\t{prov} {value}",
+            "\t\t}",
         ]
 
     lines += [
-        "\\t\\tbuildings = {",
-        "\\t\\t\\tinfrastructure = 7",
+        "\t\tbuildings = {",
+        "\t\t\tinfrastructure = 7",
     ]
     if player:
         lines += [
-            "\\t\\t\\tindustrial_complex = 1",
-            "\\t\\t\\tarms_factory = 1",
+            "\t\t\tindustrial_complex = 1",
+            "\t\t\tarms_factory = 1",
         ]
     lines += [
-        "\\t\\t}",
-        "\\t}",
+        "\t\t}",
+        "\t}",
         "",
-        "\\tprovinces = {",
+        "\tprovinces = {",
     ]
     for prov in s["provinces"]:
-        lines.append(f"\\t\\t{prov}")
+        lines.append(f"\t\t{prov}")
     lines += [
-        "\\t}",
+        "\t}",
         "}",
         "",
     ]
-    return "\\n".join(lines)
+    return "\n".join(lines)
 
 
 def choose_hub(s: dict) -> int:
@@ -292,7 +292,7 @@ def generate_supply_and_railways(states: list[dict]) -> None:
 
     MAP_DIR.mkdir(parents=True, exist_ok=True)
     supply_lines = [f"1 {hub[sid]}" for sid in sorted(hub)]
-    (MAP_DIR / "supply_nodes.txt").write_text("\\n".join(supply_lines) + "\\n", encoding="utf-8")
+    (MAP_DIR / "supply_nodes.txt").write_text("\n".join(supply_lines) + "\n", encoding="utf-8")
 
     all_playable = set(active_provinces)
     rail_lines: list[str] = []
@@ -310,7 +310,7 @@ def generate_supply_and_railways(states: list[dict]) -> None:
     if missing:
         raise RuntimeError("Could not route railways for adjacent state pairs: " + ", ".join(f"{a}-{b}" for a, b in missing[:30]))
 
-    (MAP_DIR / "railways.txt").write_text("\\n".join(rail_lines) + "\\n", encoding="utf-8")
+    (MAP_DIR / "railways.txt").write_text("\n".join(rail_lines) + "\n", encoding="utf-8")
     print(f"Generated {len(supply_lines)} supply hubs and {len(rail_lines)} level-3 rail links.")
 
 
