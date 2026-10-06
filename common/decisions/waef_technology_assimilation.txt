@@ -139,6 +139,11 @@ waef_technology_assimilation = {
             					set_technology = { fra_submarine_5 = 1 }
             				}
             			}
+            # Keep the WA national technology flags and grants, but remove the
+
+            # foreign_technologies idea so its -10% major-tech research penalty does not apply.
+
+            remove_ideas = foreign_technologies
             set_country_flag = waef_technology_assimilated
         }
 
@@ -281,6 +286,11 @@ waef_technology_assimilation = {
             					set_technology = { ita_submarine_5 = 1 }
             				}
             			}
+            # Keep the WA national technology flags and grants, but remove the
+
+            # foreign_technologies idea so its -10% major-tech research penalty does not apply.
+
+            remove_ideas = foreign_technologies
             set_country_flag = waef_technology_assimilated
         }
 
@@ -435,6 +445,11 @@ waef_technology_assimilation = {
             					set_technology = { jap_submarine_1 = 1 }
             				}
             			}
+            # Keep the WA national technology flags and grants, but remove the
+
+            # foreign_technologies idea so its -10% major-tech research penalty does not apply.
+
+            remove_ideas = foreign_technologies
             set_country_flag = waef_technology_assimilated
         }
 
@@ -624,6 +639,11 @@ waef_technology_assimilation = {
             					}
             				}
             			}
+            # Keep the WA national technology flags and grants, but remove the
+
+            # foreign_technologies idea so its -10% major-tech research penalty does not apply.
+
+            remove_ideas = foreign_technologies
             set_country_flag = waef_technology_assimilated
         }
 
@@ -763,6 +783,11 @@ waef_technology_assimilation = {
             					set_technology = { sov_submarine_3 = 1 }
             				}
             			}
+            # Keep the WA national technology flags and grants, but remove the
+
+            # foreign_technologies idea so its -10% major-tech research penalty does not apply.
+
+            remove_ideas = foreign_technologies
             set_country_flag = waef_technology_assimilated
         }
 
@@ -910,6 +935,11 @@ waef_technology_assimilation = {
             					set_technology = { eng_submarine_5 = 1 }
             				}
             			}
+            # Keep the WA national technology flags and grants, but remove the
+
+            # foreign_technologies idea so its -10% major-tech research penalty does not apply.
+
+            remove_ideas = foreign_technologies
             set_country_flag = waef_technology_assimilated
         }
 
@@ -1050,6 +1080,11 @@ waef_technology_assimilation = {
             					set_technology = { usa_submarine_2 = 1 }
             				}
             			}
+            # Keep the WA national technology flags and grants, but remove the
+
+            # foreign_technologies idea so its -10% major-tech research penalty does not apply.
+
+            remove_ideas = foreign_technologies
             set_country_flag = waef_technology_assimilated
         }
 
