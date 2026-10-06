@@ -10,37 +10,47 @@ Competitive two-player Eastern Front scenario built on **World Ablaze (9.6)**.
   - `WEF` - Western Side;
   - `EEF` - Eastern Side;
 - `OBS` owns the rest of the world;
-- WEF and EEF have no ruler, advisors or inherited GER/SOV characters;
-- historical World Ablaze country histories and OOBs are replaced;
+- WEF and EEF have no inherited GER/SOV rulers, advisors or OOBs;
 - all 1107 states are statically assigned to WEF, EEF or OBS;
-- WEF and EEF now have the same number of states;
 - normal focus-tree progression is disabled;
-- both players begin with generic/minor World Ablaze technology access;
-- World Ablaze national technology packages remain available through adapted adoption decisions.
+- both players can choose one World Ablaze national technology school;
+- after the school choice, a separate one-time decision applies the 1940 technology baseline;
+- both players can make one permanent ideology choice: democratic, fascist or communist;
+- WEF and EEF have access to a shared generic tank MIO based on World Ablaze's own generic tank archetype.
 
 ## Static map
 
 Ownership totals:
 
-- WEF: **182 states**
-- EEF: **182 states**
-- OBS: **743 states**
+- WEF: **141 states**
+- EEF: **141 states**
+- OBS: **825 states**
 - Total: **1107 states**
 
-WEF was expanded by 76 former OBS states using geographically coherent European
-blocks: metropolitan France, Benelux, Switzerland, Denmark, Italy, Norway and Greece.
+The playable theatre is deliberately compact. Detached and remote states are
+removed from WEF/EEF and replaced by geographically more useful rear/border
+states while preserving exact state-count symmetry.
 
 ## State normalization
 
 Every state has:
 
-- manpower: **550,000**;
 - infrastructure: **7**;
-- air base: **5**;
-- every existing naval base: **5**;
-- every existing victory point: **10**.
+- state category: **city**.
 
-All state resource blocks are removed.
+Player states additionally have:
+
+- manpower: **725,000**;
+- **2 civilian factories**;
+- **5 military factories**.
+
+OBS states use **550,000** manpower and receive no WAEF civilian or military
+factories.
+
+Inherited forts, air bases, naval bases, dockyards, anti-air, refineries,
+special buildings and state modifiers are removed by the clean-map generator.
+
+## Resources
 
 Only the player-capital states receive resources:
 
@@ -55,9 +65,17 @@ Each capital receives **10** of:
 - chromium;
 - coal;
 - bauxite;
-- iron.
+- steel.
 
-Steel and aluminium remain at **0**.
+Iron and aluminium are absent.
+
+## Supply
+
+- one generated supply hub per WEF/EEF state;
+- hubs use the first VP province where possible;
+- adjacent playable states are connected by generated level-3 railways;
+- railway routing uses the pinned World Ablaze province bitmap;
+- shared railway segments are deduplicated.
 
 ## Replace paths
 
@@ -70,21 +88,27 @@ WAEF replaces:
 
 ## Technology
 
-WEF and EEF are new minor-style tags, so no `technology_tags` override is
-required. The retained compatibility copy is:
+Seven World Ablaze technology schools are available:
 
-- `common/decisions/_unique_technologies_adoption.txt`
+- France;
+- Italy;
+- Japan;
+- Germany;
+- Soviet Union;
+- Britain;
+- United States.
 
-It preserves World Ablaze's existing technology packages and backfill effects,
-while allowing WEF/EEF to use them without a donor faction relationship.
+Each school also assigns its matching World Ablaze Grand Strategy doctrine.
+The 1940 baseline is generated from the pinned World Ablaze technology files
+with a 1940 cutoff and dependency closure.
 
 ## Next systems
 
-1. Runtime validation of the normalized 1941 map.
-2. Starting armies, templates and equipment pools.
-3. Fixed war-start rules and preparation period.
-4. Industrial balancing.
-5. Strategic scoring and defensive-depth mechanics.
+1. Starting armies, templates and equipment pools.
+2. Fixed war-start rules and preparation period.
+3. Industrial balancing.
+4. Strategic scoring and defensive-depth mechanics.
+5. Runtime balance testing of technology schools and MIO progression.
 
 ## Dependency
 
