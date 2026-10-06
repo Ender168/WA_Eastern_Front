@@ -10,3 +10,17 @@ waef_technology_assimilation = {
         has_global_flag = waef_scenario_1941
     }
 }
+
+waef_political_alignment = {
+    priority = 9990
+    icon = generic_political_actions
+
+    allowed = {
+        OR = { tag = WEF tag = EEF }
+    }
+
+    visible = {
+        has_global_flag = waef_scenario_1941
+        NOT = { has_country_flag = waef_ideology_selected }
+    }
+}
