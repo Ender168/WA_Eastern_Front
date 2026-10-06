@@ -318,8 +318,9 @@ def generate_supply_and_railways(states: list[dict]) -> None:
     (MAP_DIR / "supply_nodes.txt").write_text("\n".join(supply_lines) + "\n", encoding="utf-8")
 
     all_playable = set(active_provinces)
-    rail_lines: list[str] = []
+    rail_edges: set[tuple[int, int]] = set()
     missing: list[tuple[int, int]] = []
+    routed_state_pairs = 0
     for sa, sb in sorted(state_edges):
         allowed = state_provinces[sa] | state_provinces[sb]
         path = bfs_path(graph, hub[sa], hub[sb], allowed)
@@ -328,13 +329,22 @@ def generate_supply_and_railways(states: list[dict]) -> None:
         if path is None or len(path) < 2:
             missing.append((sa, sb))
             continue
-        rail_lines.append(f"3 {len(path)} " + " ".join(map(str, path)))
+        routed_state_pairs += 1
+        for a, b in zip(path, path[1:]):
+            rail_edges.add((min(a, b), max(a, b)))
 
     if missing:
         raise RuntimeError("Could not route railways for adjacent state pairs: " + ", ".join(f"{a}-{b}" for a, b in missing[:30]))
 
+    # Serialize the union graph as unique two-province segments. This avoids
+    # duplicated railway edges when several hub-to-hub routes share a trunk.
+    rail_lines = [f"3 2 {a} {b}" for a, b in sorted(rail_edges)]
     (MAP_DIR / "railways.txt").write_text("\n".join(rail_lines) + "\n", encoding="utf-8")
-    print(f"Generated {len(supply_lines)} supply hubs and {len(rail_lines)} level-3 rail links.")
+    print(
+        f"Generated {len(supply_lines)} supply hubs, "
+        f"{routed_state_pairs} adjacent-state hub connections and "
+        f"{len(rail_lines)} unique level-3 railway segments."
+    )
 
 
 def validate(states: list[dict]) -> None:
