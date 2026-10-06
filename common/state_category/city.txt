@@ -1,6 +1,8 @@
-state_categories = {
-	waef_scenario_state = {
+state_categories= {
+	city = {
 		local_building_slots = 40
+
 		color = { 0 180 0 }
+
 	}
 }

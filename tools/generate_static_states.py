@@ -27,9 +27,10 @@ WEST_EXPANSION_IDS = {
     182, 184, 185, 47, 186, 187, 731,
 }
 
-# Resource policy: all static map resources are removed.
-# WAEF applies the symmetric per-state resource package at runtime from
-# common/on_actions/waef_scenario_on_actions.txt, after scenario control is known.
+# Resource policy: all map resources are removed. Only the two player-capital states
+# receive 10 units of each listed resource. Steel and aluminium intentionally stay at 0.
+PLAYER_CAPITAL_STATES = {810, 219}
+CAPITAL_RESOURCES = ("oil", "rubber", "tungsten", "chromium", "coal", "bauxite", "iron")
 
 POLITICAL_LINE = re.compile(
     r"^[ \t]*(owner|controller|add_core_of|remove_core_of|add_claim_by|remove_claim_by)"
@@ -148,6 +149,16 @@ def normalize_state_values(text: str, state_id: int) -> str:
 
     # Remove every state resource block first.
     text = remove_named_blocks(text, "resources")
+
+    # Only player capitals receive resources. Steel/aluminium remain absent (=0).
+    if state_id in PLAYER_CAPITAL_STATES:
+        resources = "\n\tresources = {\n" + "".join(
+            f"\t\t{resource} = 10\n" for resource in CAPITAL_RESOURCES
+        ) + "\t}\n"
+        history_match = re.search(r"\bhistory\s*=\s*\{", text)
+        if not history_match:
+            raise RuntimeError(f"Missing history block for state {state_id}")
+        text = text[:history_match.start()] + resources + text[history_match.start():]
 
     # Ensure every state has base infrastructure and an air base.
     text = ensure_base_buildings(text)
