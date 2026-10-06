@@ -42,7 +42,7 @@ waef_apply_scheduled_mobilization = {
         swap_ideas = { remove_idea = waef_mobilization_25 add_idea = waef_mobilization_30 }
     }
     if = {
-        limit = { date > 1944.2.29 has_idea = waef_mobilization_30 }
+        limit = { date > 1944.2.28 has_idea = waef_mobilization_30 }
         swap_ideas = { remove_idea = waef_mobilization_30 add_idea = waef_mobilization_35 }
     }
     if = {
