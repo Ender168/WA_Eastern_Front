@@ -124,3 +124,12 @@
  waef_air_t1_naval_aviation_mastery_desc:0 "После выбора поддоктрины морской авиации Tier 1 выдать этой ветке 200 Mastery."
  waef_air_t1_bomber_mastery:0 "Tier 1: Mastery бомбардировщиков"
  waef_air_t1_bomber_mastery_desc:0 "После выбора бомбардировочной поддоктрины Tier 1 выдать этой ветке 200 Mastery."
+
+ waef_reduced_fuel_capacity_civilian:0 "Ограниченная ёмкость топлива"
+ waef_reduced_fuel_capacity_civilian_desc:0 "Ёмкость топливных хранилищ настроена так, чтобы вместе с гражданской экономикой итоговое снижение максимального запаса топлива составляло 75%."
+ waef_reduced_fuel_capacity_early:0 "Ограниченная ёмкость топлива"
+ waef_reduced_fuel_capacity_early_desc:0 "Ёмкость топливных хранилищ настроена так, чтобы вместе с ранней мобилизацией итоговое снижение максимального запаса топлива составляло 75%."
+ waef_reduced_fuel_capacity_partial:0 "Ограниченная ёмкость топлива"
+ waef_reduced_fuel_capacity_partial_desc:0 "Ёмкость топливных хранилищ настроена так, чтобы вместе с частичной мобилизацией итоговое снижение максимального запаса топлива составляло 75%."
+ waef_reduced_fuel_capacity_full:0 "Ограниченная ёмкость топлива"
+ waef_reduced_fuel_capacity_full_desc:0 "При экономическом законе без собственного штрафа к ёмкости топлива максимальный запас топлива снижен на 75%."

@@ -1,0 +1,41 @@
+waef_sync_fuel_capacity_penalty = {
+    if = {
+        limit = {
+            has_idea = civilian_economy
+            NOT = { has_idea = waef_reduced_fuel_capacity_civilian }
+        }
+        remove_ideas = waef_reduced_fuel_capacity_early
+        remove_ideas = waef_reduced_fuel_capacity_partial
+        remove_ideas = waef_reduced_fuel_capacity_full
+        add_ideas = waef_reduced_fuel_capacity_civilian
+    }
+    else_if = {
+        limit = {
+            has_idea = low_economic_mobilisation
+            NOT = { has_idea = waef_reduced_fuel_capacity_early }
+        }
+        remove_ideas = waef_reduced_fuel_capacity_civilian
+        remove_ideas = waef_reduced_fuel_capacity_partial
+        remove_ideas = waef_reduced_fuel_capacity_full
+        add_ideas = waef_reduced_fuel_capacity_early
+    }
+    else_if = {
+        limit = {
+            has_idea = partial_economic_mobilisation
+            NOT = { has_idea = waef_reduced_fuel_capacity_partial }
+        }
+        remove_ideas = waef_reduced_fuel_capacity_civilian
+        remove_ideas = waef_reduced_fuel_capacity_early
+        remove_ideas = waef_reduced_fuel_capacity_full
+        add_ideas = waef_reduced_fuel_capacity_partial
+    }
+    else_if = {
+        limit = {
+            NOT = { has_idea = waef_reduced_fuel_capacity_full }
+        }
+        remove_ideas = waef_reduced_fuel_capacity_civilian
+        remove_ideas = waef_reduced_fuel_capacity_early
+        remove_ideas = waef_reduced_fuel_capacity_partial
+        add_ideas = waef_reduced_fuel_capacity_full
+    }
+}

@@ -18,8 +18,6 @@ ideas = {
                 air_doctrine_cost_factor = -1.0
                 naval_doctrine_cost_factor = 10.0
                 production_speed_dockyard_factor = -10.0
-                max_fuel_factor = -0.75
-                max_fuel_factor = -0.75
             }
         }
 
@@ -39,6 +37,78 @@ ideas = {
             modifier = {
                 naval_doctrine_cost_factor = 10.0
                 production_speed_dockyard_factor = -10.0
+            }
+        }
+
+        waef_reduced_fuel_capacity_civilian = {
+            picture = generic_supply_line
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                max_fuel_factor = -0.35
+            }
+        }
+
+        waef_reduced_fuel_capacity_early = {
+            picture = generic_supply_line
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                max_fuel_factor = -0.55
+            }
+        }
+
+        waef_reduced_fuel_capacity_partial = {
+            picture = generic_supply_line
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                max_fuel_factor = -0.65
+            }
+        }
+
+        waef_reduced_fuel_capacity_full = {
+            picture = generic_supply_line
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                max_fuel_factor = -0.75
             }
         }
 
