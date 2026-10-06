@@ -16,7 +16,8 @@ Competitive two-player Eastern Front scenario built on **World Ablaze (9.6)**.
 - both players can choose one World Ablaze national technology school;
 - after the school choice, a separate one-time decision applies the 1940 technology baseline;
 - both players can make one permanent ideology choice: democratic, fascist or communist;
-- WEF and EEF have access to a shared generic tank MIO based on World Ablaze's own generic tank archetype.
+- WEF and EEF have access to a shared generic tank MIO based on World Ablaze's own generic tank archetype;
+- after the 1940 baseline, a one-time force setup decision creates suppression, infantry and medium-tank templates, 300 fully trained infantry divisions, 30 fully trained tank divisions, 50 generals and 5 field marshals per player.
 
 ## Static map
 
