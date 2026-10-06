@@ -169,3 +169,53 @@ World Ablaze already contains a complete `generic_tank_organization` archetype,
 but deliberately marks the archetype itself as unavailable. WAEF now exposes
 one scenario-specific tank MIO for WEF and EEF by including that existing WA
 archetype instead of cloning a national German/Soviet organization.
+
+
+## v0.21 — post-1940 force package
+
+After `waef_apply_1940_technology_baseline` is completed, each player receives
+one additional zero-cost, one-time decision: `waef_create_starting_forces`.
+
+The decision creates templates in this order:
+
+1. `WAEF Suppression`
+   - 25 cavalry battalions, filling the full 5x5 regiment grid;
+   - military police as the only divisional support company;
+   - priority 0 and created first so it is the first occupation-garrison
+     candidate for the otherwise template-empty WEF/EEF tags.
+
+2. `WAEF Infantry Division`
+   - 9 heavy infantry battalions in three 3-battalion regiments;
+   - 3 artillery brigades;
+   - 3 anti-tank brigades;
+   - each heavy-infantry regiment receives regimental artillery and
+     regimental anti-tank;
+   - non-motorized engineer, logistics, maintenance, field hospital, signal,
+     recon, artillery, anti-air and military-police support.
+
+3. `WAEF Medium Tank Division`
+   - medium armor regiments sized 4 / 3 / 3, for 10 medium-tank battalions;
+   - 4 mechanized battalions;
+   - the mechanized regiment receives motorized regimental artillery and
+     motorized regimental anti-tank;
+   - motorized engineer, logistics, maintenance, field hospital, signal,
+     recon, artillery, anti-air and military-police support.
+
+The decision then creates, for the country taking it:
+
+- 300 infantry divisions;
+- 30 medium tank divisions;
+- all with start experience, equipment and manpower factors set to 1;
+- WEF deployment prioritized to Berlin province 6521 in state 810;
+- EEF deployment prioritized to Moscow province 6380 in state 219;
+- 50 generic corps commanders at skill 1 with all four land skills at 1;
+- 5 generic field marshals at skill 1 with all four land skills at 1.
+
+The decision is gated by `waef_1940_technology_baseline_applied` and is removed
+permanently after setting `waef_starting_forces_created`.
+
+HOI4 exposes no country effect for directly assigning a specific division
+template as the occupation-garrison template. WAEF therefore creates the
+Suppression template first and gives it the lowest template priority. This
+part requires an in-game validation pass; the template itself is deterministic,
+while the occupation UI's automatic initial selection is engine-controlled.
