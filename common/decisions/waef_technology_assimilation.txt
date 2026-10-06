@@ -1265,6 +1265,40 @@ waef_technology_assimilation = {
                         count = 30
                     }
                 }
+
+                # Scenario logistics reserve. Train technologies are already granted
+                # by the required 1940 technology baseline.
+                add_equipment_to_stockpile = { type = train_equipment_1 amount = 7000 producer = WEF }
+                add_equipment_to_stockpile = { type = train_equipment_4 amount = 500 producer = WEF }
+
+                if = {
+                    limit = { has_country_flag = french_technologies_tree_flag }
+                    add_equipment_to_stockpile = { type = fra_motorized_equipment_1 amount = 3000 producer = WEF }
+                }
+                else_if = {
+                    limit = { has_country_flag = italian_technologies_tree_flag }
+                    add_equipment_to_stockpile = { type = ita_motorized_equipment_1 amount = 3000 producer = WEF }
+                }
+                else_if = {
+                    limit = { has_country_flag = japanese_technologies_tree_flag }
+                    add_equipment_to_stockpile = { type = jap_motorized_equipment_1 amount = 3000 producer = WEF }
+                }
+                else_if = {
+                    limit = { has_country_flag = german_technologies_tree_flag }
+                    add_equipment_to_stockpile = { type = ger_motorized_equipment_1 amount = 3000 producer = WEF }
+                }
+                else_if = {
+                    limit = { has_country_flag = soviet_technologies_tree_flag }
+                    add_equipment_to_stockpile = { type = sov_motorized_equipment_1 amount = 3000 producer = WEF }
+                }
+                else_if = {
+                    limit = { has_country_flag = british_technologies_tree_flag }
+                    add_equipment_to_stockpile = { type = eng_motorized_equipment_1 amount = 3000 producer = WEF }
+                }
+                else_if = {
+                    limit = { has_country_flag = unitedstates_technologies_tree_flag }
+                    add_equipment_to_stockpile = { type = usa_motorized_equipment_1 amount = 3000 producer = WEF }
+                }
             }
             else_if = {
                 limit = { tag = EEF }
@@ -1282,6 +1316,40 @@ waef_technology_assimilation = {
                         prioritize_location = 6380
                         count = 30
                     }
+                }
+
+                # Scenario logistics reserve. Train technologies are already granted
+                # by the required 1940 technology baseline.
+                add_equipment_to_stockpile = { type = train_equipment_1 amount = 7000 producer = EEF }
+                add_equipment_to_stockpile = { type = train_equipment_4 amount = 500 producer = EEF }
+
+                if = {
+                    limit = { has_country_flag = french_technologies_tree_flag }
+                    add_equipment_to_stockpile = { type = fra_motorized_equipment_1 amount = 3000 producer = EEF }
+                }
+                else_if = {
+                    limit = { has_country_flag = italian_technologies_tree_flag }
+                    add_equipment_to_stockpile = { type = ita_motorized_equipment_1 amount = 3000 producer = EEF }
+                }
+                else_if = {
+                    limit = { has_country_flag = japanese_technologies_tree_flag }
+                    add_equipment_to_stockpile = { type = jap_motorized_equipment_1 amount = 3000 producer = EEF }
+                }
+                else_if = {
+                    limit = { has_country_flag = german_technologies_tree_flag }
+                    add_equipment_to_stockpile = { type = ger_motorized_equipment_1 amount = 3000 producer = EEF }
+                }
+                else_if = {
+                    limit = { has_country_flag = soviet_technologies_tree_flag }
+                    add_equipment_to_stockpile = { type = sov_motorized_equipment_1 amount = 3000 producer = EEF }
+                }
+                else_if = {
+                    limit = { has_country_flag = british_technologies_tree_flag }
+                    add_equipment_to_stockpile = { type = eng_motorized_equipment_1 amount = 3000 producer = EEF }
+                }
+                else_if = {
+                    limit = { has_country_flag = unitedstates_technologies_tree_flag }
+                    add_equipment_to_stockpile = { type = usa_motorized_equipment_1 amount = 3000 producer = EEF }
                 }
             }
 

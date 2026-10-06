@@ -82,8 +82,8 @@
  waef_generic_tank_organization:0 "General Tank Design Bureau"
 
  waef_create_starting_forces:0 "Deploy Starting Forces"
- waef_create_starting_forces_desc:0 "After applying the 1940 technology baseline, create the standard suppression, infantry and medium tank templates; deploy 300 fully trained infantry divisions and 30 fully trained medium tank divisions in the capital; and commission 50 generals and 5 field marshals."
- waef_create_starting_forces_tt:0 "Create the three scenario templates, deploy 300 infantry and 30 medium tank divisions at full manpower, equipment and training in the capital, and commission 50 generals plus 5 field marshals."
+ waef_create_starting_forces_desc:0 "After applying the 1940 technology baseline, create the standard suppression, infantry and medium tank templates; deploy 300 fully trained infantry divisions and 30 fully trained medium tank divisions in the capital; add 7,000 regular trains, 500 armored trains and 3,000 trucks; and commission 50 generals and 5 field marshals."
+ waef_create_starting_forces_tt:0 "Create the three scenario templates, deploy 300 infantry and 30 medium tank divisions at full manpower, equipment and training, add 7,000 regular trains, 500 armored trains and 3,000 trucks, and commission 50 generals plus 5 field marshals."
 
  waef_initial_doctrine_window:0 "Initial Doctrine Preparation"
  waef_initial_doctrine_window_desc:0 "Until 30 January 1941, Land and Air Doctrines cost 100% less while Naval Doctrines cost 1000% more. After that date, only the Naval Doctrine penalty remains."
