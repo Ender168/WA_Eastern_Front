@@ -1,4 +1,4 @@
-# Competitive setup systems v0.21 — static clean map and regional supply mesh
+# Competitive setup systems v0.22 — static clean map and regional supply mesh
 
 ## Why v0.16 did not visibly change the country-selection map
 
@@ -219,3 +219,54 @@ template as the occupation-garrison template. WAEF therefore creates the
 Suppression template first and gives it the lowest template priority. This
 part requires an in-game validation pass; the template itself is deterministic,
 while the occupation UI's automatic initial selection is engine-controlled.
+
+
+## v0.22 — doctrine setup
+
+Both WEF and EEF start with 100 Army Experience and 100 Air Experience.
+
+### Air baseline
+
+Air doctrine is deliberately symmetrical at scenario start:
+
+- grand doctrine: `air_operations`;
+- Great War fighter: `dogfighting`, 200 Mastery;
+- Great War strike: `target_acquisition`, 200 Mastery;
+- Great War naval aviation: `search_patterns`, 200 Mastery;
+- Great War bomber: `bomber_formations`, 200 Mastery.
+
+This completes the common Great War air layer and leaves the first meaningful
+air-doctrine choice to Tier 1.
+
+### Optional land mastery decisions
+
+The `waef_land_doctrine_setup` category is an optional startup accelerator.
+The player must first select a subdoctrine in the relevant track.
+
+- Great War / Tier 0: Artillery, Armour and Infantry each receive 200 Mastery.
+- Tier 1 decisions appear after all three Great War grants are taken and give
+  200 Mastery to Artillery, Armour and Infantry.
+- Tier 2 decisions appear after all three Tier 1 grants are taken and give
+  100 Mastery to Artillery, Armour and Infantry.
+- Operations tracks are intentionally excluded. Despite their internal
+  `tier_1_operations` / `tier_2_operations` names, World Ablaze gates them
+  behind completed Tier 3 Armour or Infantry tracks.
+
+### Optional air mastery decisions
+
+The `waef_air_doctrine_setup` category grants 200 Mastery to the selected
+Tier 1 Fighter, Strike, Naval Aviation and Bomber tracks. Great War air tracks
+are not represented here because they are already selected and mastered in
+country history.
+
+### Doctrine cost window
+
+At scenario start both players receive `waef_initial_doctrine_window`:
+
+- Land Doctrine cost: -100%;
+- Air Doctrine cost: -100%;
+- Naval Doctrine cost: +1000%.
+
+On 30 January 1941 the country-specific daily on-action swaps this idea to
+`waef_naval_doctrine_lock`, removing the Land/Air discounts while preserving
+the +1000% Naval Doctrine cost modifier.
