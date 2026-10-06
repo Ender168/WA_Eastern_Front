@@ -1,16 +1,14 @@
 state = {
 	id = 775
-	name ="STATE_775" # BET - Borkou-Ennedi-Tibesti region
-
-	state_category = wasteland_impassable
-	impassable = yes
+	name = "STATE_775"
+	manpower = 550000
+	state_category = city
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
 		buildings = {
-			air_base = 5
 			infrastructure = 7
 		}
 	}
@@ -20,6 +18,4 @@ state = {
 		5136
 		10893
 	}
-	manpower = 550000
-	buildings_max_level_factor =1.000
 }

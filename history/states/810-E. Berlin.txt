@@ -1,11 +1,9 @@
 state = {
 	id = 810
-	name ="STATE_810"
-	manpower = 550000
-	buildings_max_level_factor =1.000
-	state_category =metropolis
+	name = "STATE_810"
+	manpower = 725000
+	state_category = city
 
-	
 	resources = {
 		oil = 10
 		rubber = 10
@@ -15,7 +13,8 @@ state = {
 		bauxite = 10
 		steel = 10
 	}
-history = {
+
+	history = {
 		owner = WEF
 		controller = WEF
 		add_core_of = WEF
@@ -26,24 +25,12 @@ history = {
 			13246 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-			arms_factory = 5
-			industrial_complex = 10
-			steel_refinery = 2
-			anti_air_building = 1
-
-			6521 = {
-			    landmark_berlin_reichstag = {
-			        allowed = {
-			            has_dlc = "Gotterdammerung"
-			        }
-			        level = 1
-			    }
-			}
+			industrial_complex = 1
+			arms_factory = 1
 		}
-
 	}
+
 	provinces = {
 		6521
 		13244

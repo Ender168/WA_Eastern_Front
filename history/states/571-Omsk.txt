@@ -1,23 +1,19 @@
-
 state = {
 	id = 571
-	name ="STATE_571" # Omsk
+	name = "STATE_571"
 	manpower = 550000
+	state_category = city
 
-	state_category = town
 	history = {
-		owner = EEF
-		controller = EEF
-		add_core_of = EEF
-		buildings = {
-			air_base = 5
-			infrastructure = 7
-			arms_factory = 1
-		}
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
 		victory_points = {
 			10696 10
 		}
-		
+		buildings = {
+			infrastructure = 7
+		}
 	}
 
 	provinces = {

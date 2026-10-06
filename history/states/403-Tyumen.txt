@@ -1,15 +1,13 @@
-
 state = {
 	id = 403
-	name ="STATE_403" # Tyumen
+	name = "STATE_403"
 	manpower = 550000
-
-	state_category = rural
+	state_category = city
 
 	history = {
-		owner = EEF
-		controller = EEF
-		add_core_of = EEF
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
 		victory_points = {
 			4824 10
 		}
@@ -17,9 +15,7 @@ state = {
 			4659 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-			industrial_complex = 1
 		}
 	}
 

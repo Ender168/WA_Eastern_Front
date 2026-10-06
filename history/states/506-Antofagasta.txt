@@ -1,31 +1,19 @@
-
 state = {
 	id = 506
-	name ="STATE_506" # Antofagasta
+	name = "STATE_506"
 	manpower = 550000
-
-	state_category = rural
-
+	state_category = city
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
-		buildings = {
-			infrastructure = 7
-			industrial_complex = 4
-			air_base = 5
-			12994 = {
-				naval_base = 5
-			}
-			5228 = {
-				naval_base = 5
-			}
-		}
 		victory_points = {
 			12994 10
 		}
-
+		buildings = {
+			infrastructure = 7
+		}
 	}
 
 	provinces = {

@@ -1,27 +1,13 @@
-
 state = {
 	id = 282
-	name ="STATE_282" # Kanto
+	name = "STATE_282"
 	manpower = 550000
-
-	state_category = megalopolis
-
+	state_category = city
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
-		buildings = {
-			infrastructure = 7
-			air_base = 5
-			industrial_complex = 10
-			steel_refinery = 3
-			arms_factory = 11
-			dockyard = 4
-			9998 = {
-				naval_base = 5
-			}
-		}
 		victory_points = {
 			1182 10
 		}
@@ -31,7 +17,9 @@ state = {
 		victory_points = {
 			13023 10
 		}
-
+		buildings = {
+			infrastructure = 7
+		}
 	}
 
 	provinces = {

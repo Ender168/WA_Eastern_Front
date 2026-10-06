@@ -1,25 +1,19 @@
-
 state = {
 	id = 570
-	name ="STATE_570" # Novosibirsk
+	name = "STATE_570"
 	manpower = 550000
-
-	state_category = town
-
+	state_category = city
 
 	history = {
-		owner = EEF
-		controller = EEF
-		add_core_of = EEF
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
 		victory_points = {
 			7274 10
 		}
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 2
-			air_base = 5
 		}
-		
 	}
 
 	provinces = {

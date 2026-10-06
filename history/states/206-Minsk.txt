@@ -1,9 +1,7 @@
-
 state = {
 	id = 206
-	name ="STATE_206"
-	manpower = 550000
-
+	name = "STATE_206"
+	manpower = 725000
 	state_category = city
 
 	history = {
@@ -18,20 +16,9 @@ state = {
 		}
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 10
-			air_base = 5
-			arms_factory = 5
-			3267 = {
-				bunker = 2
-			}
-			11370 = {
-				bunker = 2
-			}
-			11216 = {
-				bunker = 2
-			}
+			industrial_complex = 1
+			arms_factory = 1
 		}
-		
 	}
 
 	provinces = {

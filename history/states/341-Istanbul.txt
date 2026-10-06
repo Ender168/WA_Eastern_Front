@@ -1,8 +1,7 @@
 state = {
 	id = 341
-	name ="STATE_341"
+	name = "STATE_341"
 	manpower = 550000
-
 	state_category = city
 
 	history = {
@@ -14,20 +13,9 @@ state = {
 		}
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 4
-			steel_refinery = 1
-			dockyard = 3
-			arms_factory = 2
-			air_base = 5
-			9833 = {
-				naval_base = 5
-			}
-		}
-		if = {
-			limit = { has_dlc = "Battle for the Bosporus"}
-			set_demilitarized_zone = yes
 		}
 	}
+
 	provinces = {
 		9833
 		11829

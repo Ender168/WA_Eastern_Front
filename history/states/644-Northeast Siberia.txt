@@ -1,20 +1,16 @@
 state = {
 	id = 644
-	name ="STATE_644"
+	name = "STATE_644"
 	manpower = 550000
-	buildings_max_level_factor =1
-	state_category ="wasteland"
-	impassable = yes
+	state_category = city
 
 	history = {
-		owner = EEF
-		controller = EEF
-		add_core_of = EEF
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
 		buildings = {
-			air_base = 5
 			infrastructure = 7
 		}
-
 	}
 
 	provinces = {

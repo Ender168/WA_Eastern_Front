@@ -1,18 +1,17 @@
-
 state = {
 	id = 654
-	name ="STATE_654" # Gorno-Altaysk
-	manpower = 550000
-
-	state_category = pastoral
+	name = "STATE_654"
+	manpower = 725000
+	state_category = city
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			air_base = 5
 			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

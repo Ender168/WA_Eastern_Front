@@ -1,24 +1,18 @@
 state = {
 	id = 588
-	name ="STATE_588"
-
-	state_category = rural
-
+	name = "STATE_588"
+	manpower = 550000
+	state_category = city
 
 	history = {
-		owner = EEF
-		controller = EEF
-		add_core_of = EEF
-		buildings = {
-			air_base = 5
-			infrastructure = 7
-			industrial_complex = 2
-			12594 = {
-				supply_node = 1
-			}
-		}
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
 		victory_points = {
 			12594 10
+		}
+		buildings = {
+			infrastructure = 7
 		}
 	}
 
@@ -53,6 +47,4 @@ state = {
 		12635
 		13151
 	}
-	manpower = 550000
-	buildings_max_level_factor =1.000
 }

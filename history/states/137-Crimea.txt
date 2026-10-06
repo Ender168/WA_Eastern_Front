@@ -1,8 +1,9 @@
 state = {
 	id = 137
 	name = "STATE_137"
-	manpower = 550000
-	state_category = large_town
+	manpower = 725000
+	state_category = city
+
 	history = {
 		owner = EEF
 		controller = EEF
@@ -21,28 +22,11 @@ state = {
 		}
 		buildings = {
 			infrastructure = 7
-			dockyard = 4
-			industrial_complex = 2
-			air_base = 5
-			3686 = {
-				naval_base = 5
-				coastal_bunker = 3
-			}
-			13826 = {
-				bunker = 4
-			}
-			13827 = {
-				bunker = 4
-			}
-			9680 = {
-				naval_base = 5
-				coastal_bunker = 1
-			}
-			6724 = {
-				supply_node = 1
-			}
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
+
 	provinces = {
 		705
 		3686

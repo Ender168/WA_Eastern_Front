@@ -1,9 +1,9 @@
-
 state = {
 	id = 963
-	name ="STATE_963"
-	manpower = 550000
-	state_category = rural
+	name = "STATE_963"
+	manpower = 725000
+	state_category = city
+
 	history = {
 		owner = EEF
 		controller = EEF
@@ -12,11 +12,9 @@ state = {
 			3174 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-			3174 = {
-				naval_base = 5
-			}
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

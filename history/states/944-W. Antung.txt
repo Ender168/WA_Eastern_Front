@@ -1,22 +1,16 @@
-
 state = {
 	id = 944
-	name ="STATE_944" # S Antung
+	name = "STATE_944"
 	manpower = 550000
-
-	state_category = rural
-
+	state_category = city
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
-		#
 		buildings = {
-			air_base = 5
 			infrastructure = 7
 		}
-
 	}
 
 	provinces = {

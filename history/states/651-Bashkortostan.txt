@@ -1,26 +1,23 @@
-
 state = {
 	id = 651
-	name ="STATE_651" # Ufa
-	manpower = 550000
-
-	state_category = town
+	name = "STATE_651"
+	manpower = 725000
+	state_category = city
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
-		buildings = {
-			air_base = 5
-			infrastructure = 7
-			industrial_complex = 2
-			fuel_silo = 1
-		}
 		victory_points = {
 			1278 10
 		}
 		victory_points = {
 			4354 10
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

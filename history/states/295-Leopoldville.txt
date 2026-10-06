@@ -1,28 +1,21 @@
-
 state = {
 	id = 295
-	name ="STATE_295" # Leopoldville
+	name = "STATE_295"
 	manpower = 550000
-
-	state_category = rural
+	state_category = city
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
-		buildings = {
-			air_base = 5
-			infrastructure = 7
-			industrial_complex = 1
-			10968 = {
-				naval_base = 5
-			}
-		}
 		victory_points = {
 			191 10
 		}
 		victory_points = {
 			5117 10
+		}
+		buildings = {
+			infrastructure = 7
 		}
 	}
 

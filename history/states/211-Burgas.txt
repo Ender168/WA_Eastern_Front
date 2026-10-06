@@ -1,11 +1,8 @@
-
 state = {
 	id = 211
-	name ="STATE_211"
-	manpower = 550000
-
-
-	state_category = town
+	name = "STATE_211"
+	manpower = 725000
+	state_category = city
 
 	history = {
 		owner = WEF
@@ -27,15 +24,9 @@ state = {
 			9888 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-			industrial_complex = 4
-			9783 = {
-				naval_base = 5
-			}
-			9902 = {
-				naval_base = 5
-			}
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

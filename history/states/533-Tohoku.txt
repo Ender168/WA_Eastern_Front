@@ -1,29 +1,18 @@
-
 state = {
 	id = 533
-	name ="STATE_533" # Tohoku
+	name = "STATE_533"
 	manpower = 550000
-	buildings_max_level_factor = 1.000
-
-	state_category = metropolis
-
+	state_category = city
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
-		buildings = {
-			arms_factory = 2
-			industrial_complex = 3
-			fuel_silo = 1
-			infrastructure = 7
-			air_base = 5
-			7169 = {
-				naval_base = 5
-			}
-		}
 		victory_points = {
 			7169 10
+		}
+		buildings = {
+			infrastructure = 7
 		}
 	}
 

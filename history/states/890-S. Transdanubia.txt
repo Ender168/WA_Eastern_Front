@@ -1,10 +1,9 @@
-
 state = {
 	id = 890
-	name ="STATE_890" # Transdanubia
-	manpower = 550000
+	name = "STATE_890"
+	manpower = 725000
+	state_category = city
 
-	state_category = town
 	history = {
 		owner = WEF
 		controller = WEF
@@ -13,9 +12,8 @@ state = {
 			11610 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-			industrial_complex = 2
+			industrial_complex = 1
 			arms_factory = 1
 		}
 	}

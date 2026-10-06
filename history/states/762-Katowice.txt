@@ -1,8 +1,9 @@
 state = {
 	id = 762
-	name ="STATE_762"
-	manpower = 550000
-	state_category = town
+	name = "STATE_762"
+	manpower = 725000
+	state_category = city
+
 	history = {
 		owner = WEF
 		controller = WEF
@@ -11,13 +12,12 @@ state = {
 			6464 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
+			industrial_complex = 1
 			arms_factory = 1
-			industrial_complex = 3
-			steel_refinery = 2
 		}
 	}
+
 	provinces = {
 		506
 		6464

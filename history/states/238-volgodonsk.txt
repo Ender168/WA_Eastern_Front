@@ -1,21 +1,17 @@
-
 state = {
 	id = 238
-	name ="STATE_238"
-	manpower = 550000
-
-	state_category = rural
+	name = "STATE_238"
+	manpower = 725000
+	state_category = city
 
 	history = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-		}
-		victory_points = {
-			775 10 # City of Volgodonsk only founded in 1950 to service the new reservoir
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

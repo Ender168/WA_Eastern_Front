@@ -1,10 +1,8 @@
-
 state = {
 	id = 58
-	name ="STATE_58"
-	manpower = 550000
-	buildings_max_level_factor =1.000
-	state_category =large_city
+	name = "STATE_58"
+	manpower = 725000
+	state_category = city
 
 	history = {
 		owner = WEF
@@ -16,22 +14,10 @@ state = {
 		victory_points = {
 			13518 10
 		}
-
 		buildings = {
 			infrastructure = 7
-			arms_factory = 2
-			industrial_complex = 5
-			dockyard = 3
-			air_base = 5
-			6389 = {
-				naval_base = 5
-				naval_headquarters = { # Kiel - baltic fleet HQ
-					level = 1
-					allowed = {
-						has_dlc = "No Compromise, No Surrender"
-					}
-				}
-			}
+			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 

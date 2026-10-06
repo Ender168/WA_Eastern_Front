@@ -1,16 +1,13 @@
-
 state = {
 	id = 1027
-	name ="STATE_1027" # Pechora
+	name = "STATE_1027"
 	manpower = 550000
-
-	state_category = pastoral
-
+	state_category = city
 
 	history = {
-		owner = EEF
-		controller = EEF
-		add_core_of = EEF
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
 		victory_points = {
 			10723 10
 		}
@@ -21,7 +18,6 @@ state = {
 			105 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
 		}
 	}

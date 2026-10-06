@@ -1,9 +1,8 @@
-
 state = {
 	id = 635
-	name ="STATE_635"
-
-	state_category = small_island
+	name = "STATE_635"
+	manpower = 550000
+	state_category = city
 
 	history = {
 		owner = OBS
@@ -13,21 +12,8 @@ state = {
 			4268 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-			4268 = {
-				naval_base = 5
-
-			}
-			1237 = {
-				naval_base = 5
-
-			}
-			4247 = {
-				naval_base = 5
-			}
 		}
-
 	}
 
 	provinces = {
@@ -41,6 +27,4 @@ state = {
 		12120
 		12132
 	}
-	manpower = 550000
-	buildings_max_level_factor =1.000
 }

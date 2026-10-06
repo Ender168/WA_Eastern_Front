@@ -1,24 +1,18 @@
-
 state = {
 	id = 22
-	name ="STATE_22" # Languedoc
+	name = "STATE_22"
 	manpower = 550000
-
-
-	state_category = town
-
+	state_category = city
 
 	history = {
-		owner = WEF
-		controller = WEF
-		add_core_of = WEF
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
 		victory_points = {
 			9898 10
 		}
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 5
-			air_base = 5
 		}
 	}
 

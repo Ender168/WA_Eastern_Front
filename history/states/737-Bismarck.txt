@@ -1,40 +1,18 @@
 state = {
 	id = 737
-	name ="STATE_737"
+	name = "STATE_737"
+	manpower = 550000
+	state_category = city
 
 	history = {
 		owner = OBS
 		controller = OBS
 		add_core_of = OBS
-		buildings = {
-			infrastructure = 7
-			air_base = 5
-			7251 = {
-				naval_base = 5
-
-			}
-			4352 = {
-				naval_base = 5
-
-			}
-			7339 = {
-				naval_base = 5
-
-			}
-
-		}
-
 		victory_points = {
 			7251 10
 		}
-		strategic_province_location = {
-			defensive_chokepoint = 7251
-		}
-		strategic_province_location = {
-			natural_harbor = 7251
-		}
-		strategic_state_location = {
-			favorable_approach = 10206
+		buildings = {
+			infrastructure = 7
 		}
 	}
 
@@ -56,7 +34,4 @@ state = {
 		10206
 		12222
 	}
-	manpower = 550000
-	buildings_max_level_factor =1
-	state_category ="rural"
 }

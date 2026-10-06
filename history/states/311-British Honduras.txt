@@ -1,9 +1,9 @@
 state = {
 	id = 311
-	name ="STATE_311"
+	name = "STATE_311"
 	manpower = 550000
+	state_category = city
 
-	state_category = pastoral
 	history = {
 		owner = OBS
 		controller = OBS
@@ -12,13 +12,10 @@ state = {
 			2077 10
 		}
 		buildings = {
-			air_base = 5
 			infrastructure = 7
-			2077 = {
-				naval_base = 5
-			}
 		}
 	}
+
 	provinces = {
 		2077
 	}

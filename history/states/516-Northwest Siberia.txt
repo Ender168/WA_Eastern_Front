@@ -1,18 +1,14 @@
-
 state = {
 	id = 516
-	name ="STATE_516" # Northwestern Siberia
+	name = "STATE_516"
 	manpower = 550000
-
-	state_category = wasteland
-	impassable = yes
+	state_category = city
 
 	history = {
-		owner = EEF
-		controller = EEF
-		add_core_of = EEF
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
 		buildings = {
-			air_base = 5
 			infrastructure = 7
 		}
 	}

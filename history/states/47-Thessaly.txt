@@ -1,15 +1,13 @@
-
 state = {
 	id = 47
-	name ="STATE_47" # Thessaly
+	name = "STATE_47"
 	manpower = 550000
-
 	state_category = city
 
 	history = {
-		owner = WEF
-		controller = WEF
-		add_core_of = WEF
+		owner = OBS
+		controller = OBS
+		add_core_of = OBS
 		victory_points = {
 			4109 10
 		}
@@ -21,20 +19,6 @@ state = {
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 3
-			industrial_complex = 8
-			dockyard = 1
-			air_base = 5
-			4109 = {
-				naval_base = 5
-				naval_headquarters = { # Salamis - royal hellenic navy main base
-					level = 1
-					allowed = {
-						has_dlc = "No Compromise, No Surrender"
-					}
-				}
-			}
-
 		}
 	}
 
