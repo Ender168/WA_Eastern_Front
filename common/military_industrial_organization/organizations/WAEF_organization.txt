@@ -1,0 +1,11 @@
+waef_generic_tank_organization = {
+    include = generic_tank_organization
+    icon = GFX_idea_generic_tank_manufacturer_1
+
+    allowed = {
+        OR = {
+            tag = WEF
+            tag = EEF
+        }
+    }
+}
