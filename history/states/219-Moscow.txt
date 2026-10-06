@@ -14,7 +14,7 @@ state = {
 		chromium = 10
 		coal = 10
 		bauxite = 10
-		iron = 10
+		steel = 10
 	}
 history = {
 		owner = EEF

@@ -1,0 +1,269 @@
+# WA Eastern Front core scenario normalization.
+# Final active map: WEF 141 states, EEF 141 states, OBS 825 states.
+# Every player state ends at 725,000 civilian population:
+# 141 * 725,000 = 102,225,000 per player.
+
+waef_apply_scenario_map = {
+    # Cut WEF's peripheral naval / remote territory and compact the western rear.
+    OBS = {
+        transfer_state = 1
+        transfer_state = 14
+        transfer_state = 15
+        transfer_state = 19
+        transfer_state = 20
+        transfer_state = 21
+        transfer_state = 22
+        transfer_state = 23
+        transfer_state = 24
+        transfer_state = 25
+        transfer_state = 26
+        transfer_state = 30
+        transfer_state = 31
+        transfer_state = 32
+        transfer_state = 33
+        transfer_state = 37
+        transfer_state = 47
+        transfer_state = 110
+        transfer_state = 114
+        transfer_state = 115
+        transfer_state = 117
+        transfer_state = 142
+        transfer_state = 143
+        transfer_state = 144
+        transfer_state = 156
+        transfer_state = 164
+        transfer_state = 182
+        transfer_state = 184
+        transfer_state = 185
+        transfer_state = 186
+        transfer_state = 187
+        transfer_state = 731
+        transfer_state = 735
+        transfer_state = 878
+        transfer_state = 957
+        transfer_state = 986
+        transfer_state = 1016
+        transfer_state = 1017
+        transfer_state = 1018
+        transfer_state = 1019
+        transfer_state = 1020
+        transfer_state = 1023
+        transfer_state = 1032
+        transfer_state = 1051
+    }
+    1 = { remove_core_of = WEF add_core_of = OBS }
+    14 = { remove_core_of = WEF add_core_of = OBS }
+    15 = { remove_core_of = WEF add_core_of = OBS }
+    19 = { remove_core_of = WEF add_core_of = OBS }
+    20 = { remove_core_of = WEF add_core_of = OBS }
+    21 = { remove_core_of = WEF add_core_of = OBS }
+    22 = { remove_core_of = WEF add_core_of = OBS }
+    23 = { remove_core_of = WEF add_core_of = OBS }
+    24 = { remove_core_of = WEF add_core_of = OBS }
+    25 = { remove_core_of = WEF add_core_of = OBS }
+    26 = { remove_core_of = WEF add_core_of = OBS }
+    30 = { remove_core_of = WEF add_core_of = OBS }
+    31 = { remove_core_of = WEF add_core_of = OBS }
+    32 = { remove_core_of = WEF add_core_of = OBS }
+    33 = { remove_core_of = WEF add_core_of = OBS }
+    37 = { remove_core_of = WEF add_core_of = OBS }
+    47 = { remove_core_of = WEF add_core_of = OBS }
+    110 = { remove_core_of = WEF add_core_of = OBS }
+    114 = { remove_core_of = WEF add_core_of = OBS }
+    115 = { remove_core_of = WEF add_core_of = OBS }
+    117 = { remove_core_of = WEF add_core_of = OBS }
+    142 = { remove_core_of = WEF add_core_of = OBS }
+    143 = { remove_core_of = WEF add_core_of = OBS }
+    144 = { remove_core_of = WEF add_core_of = OBS }
+    156 = { remove_core_of = WEF add_core_of = OBS }
+    164 = { remove_core_of = WEF add_core_of = OBS }
+    182 = { remove_core_of = WEF add_core_of = OBS }
+    184 = { remove_core_of = WEF add_core_of = OBS }
+    185 = { remove_core_of = WEF add_core_of = OBS }
+    186 = { remove_core_of = WEF add_core_of = OBS }
+    187 = { remove_core_of = WEF add_core_of = OBS }
+    731 = { remove_core_of = WEF add_core_of = OBS }
+    735 = { remove_core_of = WEF add_core_of = OBS }
+    878 = { remove_core_of = WEF add_core_of = OBS }
+    957 = { remove_core_of = WEF add_core_of = OBS }
+    986 = { remove_core_of = WEF add_core_of = OBS }
+    1016 = { remove_core_of = WEF add_core_of = OBS }
+    1017 = { remove_core_of = WEF add_core_of = OBS }
+    1018 = { remove_core_of = WEF add_core_of = OBS }
+    1019 = { remove_core_of = WEF add_core_of = OBS }
+    1020 = { remove_core_of = WEF add_core_of = OBS }
+    1023 = { remove_core_of = WEF add_core_of = OBS }
+    1032 = { remove_core_of = WEF add_core_of = OBS }
+    1051 = { remove_core_of = WEF add_core_of = OBS }
+
+    # End the eastern playable theatre at the Urals; Siberia/Central Asia become OBS.
+    OBS = {
+        transfer_state = 403
+        transfer_state = 408
+        transfer_state = 409
+        transfer_state = 516
+        transfer_state = 560
+        transfer_state = 561
+        transfer_state = 562
+        transfer_state = 563
+        transfer_state = 564
+        transfer_state = 565
+        transfer_state = 566
+        transfer_state = 567
+        transfer_state = 568
+        transfer_state = 569
+        transfer_state = 570
+        transfer_state = 571
+        transfer_state = 574
+        transfer_state = 575
+        transfer_state = 576
+        transfer_state = 577
+        transfer_state = 578
+        transfer_state = 579
+        transfer_state = 580
+        transfer_state = 1027
+        transfer_state = 1074
+        transfer_state = 402
+        transfer_state = 404
+        transfer_state = 405
+        transfer_state = 406
+        transfer_state = 407
+        transfer_state = 584
+        transfer_state = 585
+        transfer_state = 586
+        transfer_state = 587
+        transfer_state = 588
+        transfer_state = 589
+        transfer_state = 590
+        transfer_state = 1014
+        transfer_state = 1015
+        transfer_state = 637
+        transfer_state = 644
+    }
+    403 = { remove_core_of = EEF add_core_of = OBS }
+    408 = { remove_core_of = EEF add_core_of = OBS }
+    409 = { remove_core_of = EEF add_core_of = OBS }
+    516 = { remove_core_of = EEF add_core_of = OBS }
+    560 = { remove_core_of = EEF add_core_of = OBS }
+    561 = { remove_core_of = EEF add_core_of = OBS }
+    562 = { remove_core_of = EEF add_core_of = OBS }
+    563 = { remove_core_of = EEF add_core_of = OBS }
+    564 = { remove_core_of = EEF add_core_of = OBS }
+    565 = { remove_core_of = EEF add_core_of = OBS }
+    566 = { remove_core_of = EEF add_core_of = OBS }
+    567 = { remove_core_of = EEF add_core_of = OBS }
+    568 = { remove_core_of = EEF add_core_of = OBS }
+    569 = { remove_core_of = EEF add_core_of = OBS }
+    570 = { remove_core_of = EEF add_core_of = OBS }
+    571 = { remove_core_of = EEF add_core_of = OBS }
+    574 = { remove_core_of = EEF add_core_of = OBS }
+    575 = { remove_core_of = EEF add_core_of = OBS }
+    576 = { remove_core_of = EEF add_core_of = OBS }
+    577 = { remove_core_of = EEF add_core_of = OBS }
+    578 = { remove_core_of = EEF add_core_of = OBS }
+    579 = { remove_core_of = EEF add_core_of = OBS }
+    580 = { remove_core_of = EEF add_core_of = OBS }
+    1027 = { remove_core_of = EEF add_core_of = OBS }
+    1074 = { remove_core_of = EEF add_core_of = OBS }
+    402 = { remove_core_of = EEF add_core_of = OBS }
+    404 = { remove_core_of = EEF add_core_of = OBS }
+    405 = { remove_core_of = EEF add_core_of = OBS }
+    406 = { remove_core_of = EEF add_core_of = OBS }
+    407 = { remove_core_of = EEF add_core_of = OBS }
+    584 = { remove_core_of = EEF add_core_of = OBS }
+    585 = { remove_core_of = EEF add_core_of = OBS }
+    586 = { remove_core_of = EEF add_core_of = OBS }
+    587 = { remove_core_of = EEF add_core_of = OBS }
+    588 = { remove_core_of = EEF add_core_of = OBS }
+    589 = { remove_core_of = EEF add_core_of = OBS }
+    590 = { remove_core_of = EEF add_core_of = OBS }
+    1014 = { remove_core_of = EEF add_core_of = OBS }
+    1015 = { remove_core_of = EEF add_core_of = OBS }
+    637 = { remove_core_of = EEF add_core_of = OBS }
+    644 = { remove_core_of = EEF add_core_of = OBS }
+
+    # Fill the former OBS holes in the retained north-eastern French belt.
+    WEF = {
+        transfer_state = 16
+        transfer_state = 28
+        transfer_state = 29
+    }
+    16 = { remove_core_of = OBS add_core_of = WEF }
+    28 = { remove_core_of = OBS add_core_of = WEF }
+    29 = { remove_core_of = OBS add_core_of = WEF }
+}
+
+waef_clear_world_map = {
+    every_state = {
+        # Uniform map construction baseline.
+        set_state_category = city
+        set_building_level = { type = infrastructure level = 7 instant_build = yes }
+
+        # No inherited industry outside the two player countries.
+        set_building_level = { type = industrial_complex level = 0 instant_build = yes }
+        set_building_level = { type = arms_factory level = 0 instant_build = yes }
+
+        # Entire scenario is land-focused.
+        set_building_level = { type = dockyard level = 0 instant_build = yes }
+        set_building_level = {
+            type = bunker
+            level = 0
+            province = { all_provinces = yes }
+        }
+        set_building_level = {
+            type = coastal_bunker
+            level = 0
+            province = { all_provinces = yes }
+        }
+        set_building_level = { type = stronghold_network level = 0 instant_build = yes }
+
+        # Remove every inherited supply hub before player hubs are rebuilt.
+        set_building_level = {
+            type = supply_node
+            level = 0
+            province = { all_provinces = yes }
+        }
+    }
+
+    # WA state history gives these two Belgian states +2 slots.
+    # Neutralize that so city = exactly 15 shared slots.
+    6 = { add_extra_state_shared_building_slots = -2 }
+    979 = { add_extra_state_shared_building_slots = -2 }
+}
+
+waef_normalize_player = {
+    every_owned_state = {
+        # Exactly one civilian and one military factory per playable state.
+        set_building_level = { type = industrial_complex level = 1 instant_build = yes }
+        set_building_level = { type = arms_factory level = 1 instant_build = yes }
+
+        # Static state files are 550k; +175k gives 725k per state.
+        add_manpower = 175000
+
+        # One regional supply hub. The first VP in WA state history is the
+        # regional capital/main city. If a state has no VP, fall back to one
+        # random province so no playable state is left without a hub.
+        add_building_construction = {
+            type = supply_node
+            level = 1
+            instant_build = yes
+            province = {
+                all_provinces = yes
+                limit_to_victory_point > 0
+                first = yes
+            }
+        }
+        if = {
+            limit = {
+                NOT = {
+                    any_province_building_level = {
+                        province = { all_provinces = yes }
+                        building = supply_node
+                        level > 0
+                    }
+                }
+            }
+            construct_building_in_random_province = { supply_node = 1 }
+        }
+    }
+}

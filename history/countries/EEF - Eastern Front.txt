@@ -1,6 +1,6 @@
 capital = 219
 
-set_research_slots = 5
+set_research_slots = 10
 set_stability = 0.75
 set_war_support = 0.50
 add_political_power = 200
@@ -17,5 +17,4 @@ set_popularities = {
 }
 
 recruit_character = EEF_generic_leader
-
 set_country_flag = waef_player_country

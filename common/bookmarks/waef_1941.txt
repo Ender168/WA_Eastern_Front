@@ -24,6 +24,12 @@ bookmarks = {
         effect = {
             randomize_weather = 12345
             set_global_flag = waef_scenario_1941
+
+            waef_apply_scenario_map = yes
+            waef_clear_world_map = yes
+
+            WEF = { waef_normalize_player = yes }
+            EEF = { waef_normalize_player = yes }
         }
     }
 }

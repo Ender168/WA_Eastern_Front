@@ -1,4 +1,4 @@
-version="0.1.0"
+version="0.2.0"
 tags={
     "Gameplay"
     "Historical"
@@ -10,3 +10,7 @@ dependencies={
     "World Ablaze (9.6)"
 }
 replace_path="common/bookmarks"
+replace_path="history/countries"
+replace_path="history/units"
+replace_path="common/decisions"
+replace_path="common/decisions/categories"
