@@ -86,9 +86,9 @@
  waef_create_starting_forces_tt:0 "Create the three scenario templates, deploy 300 infantry and 30 medium tank divisions at full manpower, equipment and training in the capital, and commission 50 generals plus 5 field marshals."
 
  waef_initial_doctrine_window:0 "Initial Doctrine Preparation"
- waef_initial_doctrine_window_desc:0 "Until 30 January 1941, Land and Air Doctrines cost 100% less while Naval Doctrines cost 1000% more. After that date, only the Naval Doctrine penalty remains."
+ waef_initial_doctrine_window_desc:0 "Until 30 January 1941, Land and Air Doctrines cost 100% less. Naval Doctrines cost 1000% more and Dockyard construction speed is reduced by 1000%. Apparently the Eastern Front planning staff has concluded that the ocean is not the immediate problem. A rare triumph of priorities."
  waef_naval_doctrine_lock:0 "Naval Doctrine Restriction"
- waef_naval_doctrine_lock_desc:0 "Naval Doctrines cost 1000% more. The scenario is intended to focus doctrine investment on the land and air war."
+ waef_naval_doctrine_lock_desc:0 "Naval Doctrines cost 1000% more and Dockyard construction speed is reduced by 1000%. This is a land-and-air scenario pretending just hard enough to be an economy, not an invitation to rebuild the High Seas Fleet."
 
  waef_land_doctrine_setup:0 "Optional Land Doctrine Setup"
  waef_land_doctrine_setup_desc:0 "Optional startup tools for rapidly preparing the land doctrines needed for the scenario. First choose a subdoctrine in the relevant track, then take its mastery decision. Great War and Tier 1 tracks receive 200 Mastery; Tier 2 tracks receive 100 Mastery."
@@ -124,3 +124,12 @@
  waef_air_t1_naval_aviation_mastery_desc:0 "After selecting a Tier 1 naval aviation subdoctrine, grant its track 200 Mastery."
  waef_air_t1_bomber_mastery:0 "Tier 1 Bomber Mastery"
  waef_air_t1_bomber_mastery_desc:0 "After selecting a Tier 1 bomber subdoctrine, grant its track 200 Mastery."
+
+ waef_reduced_fuel_capacity:0 "Finite Fuel Storage"
+ waef_reduced_fuel_capacity_desc:0 "National fuel capacity is reduced by 75%. We could blame storage infrastructure, logistics and wartime bottlenecks. The less ceremonial explanation is that this scenario expects fuel to matter instead of existing as a decorative number."
+ waef_manpower_accounting:0 "Retroactive Mobilization Accounting"
+ waef_manpower_accounting_desc:0 "The starting army has already appeared fully manned, which is convenient but not especially compatible with the concept of population. For 100 weeks, 57,400 manpower is removed every week while the ledger catches up with the soldiers already standing on the map. Total charge: 5,740,000 people. Historical simulation, naturally."
+
+ waef.1.t:0 "The Soldiers Did Not Come From Thin Air"
+ waef.1.d:0 "Several hundred fully manned divisions have just materialized on the map with admirable administrative efficiency. Since we are still making a token effort to resemble a war economy, the manpower pool will now pay for them retroactively: 57,400 men per week for 100 weeks, or 5,740,000 in total. The troops arrived first. The paperwork will spend the next 700 days discovering where they came from."
+ waef.1.a:0 "Historical plausibility restored. More or less."
