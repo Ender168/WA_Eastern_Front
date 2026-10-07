@@ -24037,57 +24037,7 @@ economy_decisions = {
         cost = 0
         ai_will_do = { base = 0 }
     }
-    economy_fatigue_USA_selective_service_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_all_adults_serve_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
     economy_fatigue_chinese_opium_trade_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_civilian_economy_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_closed_economy_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_collectivization_mission = {
         icon = generic_political_discourse
         allowed = { always = no }
         visible = { always = no }
@@ -24105,16 +24055,6 @@ economy_decisions = {
         cost = 0
         ai_will_do = { base = 0 }
     }
-    economy_fatigue_disarmed_nation_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
     economy_fatigue_economic_healer_mission = {
         icon = generic_political_discourse
         allowed = { always = no }
@@ -24125,57 +24065,7 @@ economy_decisions = {
         activation = { always = no }
         ai_will_do = { base = 0 }
     }
-    economy_fatigue_embargoed_economy_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
     economy_fatigue_empire_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_exiled_economy_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_export_focus_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_extensive_conscription_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_free_trade_mission = {
         icon = generic_political_discourse
         allowed = { always = no }
         visible = { always = no }
@@ -24203,62 +24093,12 @@ economy_decisions = {
         activation = { always = no }
         ai_will_do = { base = 0 }
     }
-    economy_fatigue_limited_conscription_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_limited_exports_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_low_economic_mobilisation_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
     economy_fatigue_minor_demilitarization = {
         icon = generic_political_discourse
         allowed = { always = no }
         visible = { always = no }
         available = { always = no }
         cost = 0
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_over_mobilisation_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_partial_economic_mobilisation_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
         ai_will_do = { base = 0 }
     }
     economy_fatigue_protectionist_policies_mission = {
@@ -24301,56 +24141,6 @@ economy_decisions = {
         visible = { always = no }
         available = { always = no }
         cost = 0
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_scraping_the_barrel_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_service_by_requirement_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_tot_economic_mobilisation_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_volunteer_only_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
-        ai_will_do = { base = 0 }
-    }
-    economy_fatigue_war_economy_mission = {
-        icon = generic_political_discourse
-        allowed = { always = no }
-        visible = { always = no }
-        available = { always = no }
-        cost = 0
-        days_mission_timeout = 1
-        activation = { always = no }
         ai_will_do = { base = 0 }
     }
     economy_industrialize_state = {

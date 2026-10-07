@@ -1844,9 +1844,10 @@ democratic_on_the_rise = {
 }
 
 economy_decisions = {
-    icon = generic_political_actions
-    allowed = { always = no }
-    visible = { always = no }
+    icon = generic_economy
+    priority = 65
+    allowed = { OR = { tag = WEF tag = EEF } }
+    visible = { OR = { tag = WEF tag = EEF } }
 }
 
 equipment_missions = {

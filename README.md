@@ -118,6 +118,22 @@ with a 1940 cutoff and dependency closure.
 
 World Ablaze Workshop ID: `2149567872`
 
+## World Ablaze economic fatigue
+
+All 21 World Ablaze law-based recurring economic-fatigue missions are restored
+for WEF and EEF under the Economy decisions category: seven economy-law missions,
+six trade-law missions and eight conscription-law missions. Starting fatigue is
+0 for both countries. Three original starting missions track Civilian Economy,
+Free Trade and Volunteer Only; on law change the original complete effects
+switch to the appropriate next-law mission. The original WA timeouts are kept.
+
+Because this scenario disables national focuses, the eleven harmful-law
+fatigue increases that WA normally conditions on `continuous_fatigue_handling`
+are unconditional; WA's fatigue-lowering timed effects remain unchanged.
+The existing WA scripted effects implement 0–100 fatigue and spirit updates.
+OBS never receives these missions. Other country-specific economy decisions
+remain dormant. No extra daily polling is introduced.
+
 ## Crash-safety and regeneration
 
 Daily fuel synchronization chooses the economic-law branch before testing the

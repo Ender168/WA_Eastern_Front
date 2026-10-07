@@ -8,6 +8,31 @@ from pathlib import Path
 from collections import defaultdict
 
 ROOT = Path(__file__).resolve().parents[1]
+# Existing WA law missions restored in WAEF. Never re-create dormant duplicates.
+RESTORED_FATIGUE_LAW_MISSIONS = {
+    "economy_fatigue_exiled_economy_mission",
+    "economy_fatigue_civilian_economy_mission",
+    "economy_fatigue_low_economic_mobilisation_mission",
+    "economy_fatigue_partial_economic_mobilisation_mission",
+    "economy_fatigue_war_economy_mission",
+    "economy_fatigue_tot_economic_mobilisation_mission",
+    "economy_fatigue_over_mobilisation_mission",
+    "economy_fatigue_free_trade_mission",
+    "economy_fatigue_export_focus_mission",
+    "economy_fatigue_limited_exports_mission",
+    "economy_fatigue_closed_economy_mission",
+    "economy_fatigue_embargoed_economy_mission",
+    "economy_fatigue_collectivization_mission",
+    "economy_fatigue_disarmed_nation_mission",
+    "economy_fatigue_USA_selective_service_mission",
+    "economy_fatigue_volunteer_only_mission",
+    "economy_fatigue_limited_conscription_mission",
+    "economy_fatigue_extensive_conscription_mission",
+    "economy_fatigue_service_by_requirement_mission",
+    "economy_fatigue_all_adults_serve_mission",
+    "economy_fatigue_scraping_the_barrel_mission",
+}
+
 WA_COMMIT = "691c7085f3ec1333ac2a0742983da8a64011ca8b"
 
 @dataclass
@@ -119,9 +144,14 @@ def decision_compatibility(wa_root: Path) -> None:
     header = f'# Generated dormant compatibility definitions from WA {WA_COMMIT}.\n# IDs remain resolvable; historical decisions are unavailable in this scenario.\n\n'
     cat = header
     for name in sorted(categories):
-        cat += f'{name} = {{\n    icon = generic_political_actions\n    allowed = {{ always = no }}\n    visible = {{ always = no }}\n}}\n\n'
+        cat += (f'{name} = {{\n    icon = generic_economy\n    priority = 65\n    allowed = {{ OR = {{ tag = WEF tag = EEF }} }}\n    visible = {{ OR = {{ tag = WEF tag = EEF }} }}\n}}\n\n'\n                if name == 'economy_decisions' else\n                f'{name} = {{\n    icon = generic_political_actions\n    allowed = {{ always = no }}\n    visible = {{ always = no }}\n}}\n\n')
     grouped = defaultdict(list)
-    for name, category in decisions.items(): grouped[category].append(name)
+    for name, category in decisions.items():
+        if name in RESTORED_FATIGUE_LAW_MISSIONS:
+            if category != 'economy_decisions':
+                raise RuntimeError(f'Unexpected restored mission category: {name}: {category}')
+            continue
+        grouped[category].append(name)
     out = header
     for category in sorted(grouped):
         out += f'{category} = {{\n'
