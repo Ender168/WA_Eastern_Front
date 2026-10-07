@@ -53,24 +53,23 @@ factories.
 Inherited forts, air bases, naval bases, dockyards, anti-air, refineries,
 special buildings and state modifiers are removed by the clean-map generator.
 
-## Resources
+## Resources and starter industry
 
-Only the player-capital states receive resources:
+Every WEF and EEF state has the same **static**, history-defined resource package:
+oil 2, bauxite 11, rubber 3, tungsten 2, chromium 3, coal 35, iron 25.
+Natural steel and aluminium resources are absent: those are produced by the
+hydro refineries.
 
-- WEF capital state 810;
-- EEF capital state 219.
+Each player state additionally has one fuel silo, 15 hydro steel refineries,
+and five hydro aluminium refineries, alongside the existing two civilian
+factories and five military factories. The existing `city` state category
+provides **40 building slots**: 28 are used by this package, leaving 12 free.
+Existing infrastructure and province naval bases are preserved.
 
-Each capital receives **10** of:
-
-- oil;
-- rubber;
-- tungsten;
-- chromium;
-- coal;
-- bauxite;
-- steel.
-
-Iron and aluminium are absent.
+OBS states do not get any of the package. Resource and building grants are
+written directly into `history/states`, not via runtime `on_startup`.
+The authoritative `tools/regenerate_clean_scenario.py` regenerates all
+these static values; capitals 810 and 219 have no legacy +10 placeholders.
 
 ## Supply
 

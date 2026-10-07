@@ -48,25 +48,20 @@ IMPASSABLE_IDS = {
     782, 786, 788, 792, 793, 794, 795, 902, 947, 1001, 1003, 1048,
 }
 
-CAPITAL_RESOURCES = {
-    810: {
-        "oil": 10,
-        "rubber": 10,
-        "tungsten": 10,
-        "chromium": 10,
-        "coal": 10,
-        "bauxite": 10,
-        "steel": 10,
-    },
-    219: {
-        "oil": 10,
-        "rubber": 10,
-        "tungsten": 10,
-        "chromium": 10,
-        "coal": 10,
-        "bauxite": 10,
-        "steel": 10,
-    },
+PLAYER_RESOURCE_PACKAGE = {
+    "oil": 2,
+    "bauxite": 11,
+    "rubber": 3,
+    "tungsten": 2,
+    "chromium": 3,
+    "coal": 35,
+    "iron": 25,
+}
+
+PLAYER_BUILDING_PACKAGE = {
+    "fuel_silo": 1,
+    "hydro_steel_refinery": 15,
+    "hydro_aluminium_refinery": 5,
 }
 
 
@@ -134,7 +129,7 @@ def render_state(s: dict) -> str:
         lines.append("\timpassable = yes")
     lines.append("\tstate_category = city")
 
-    resources = CAPITAL_RESOURCES.get(sid)
+    resources = PLAYER_RESOURCE_PACKAGE if player else None
     if resources:
         lines.append("")
         lines.append("\tresources = {")
@@ -166,6 +161,7 @@ def render_state(s: dict) -> str:
             "\t\t\tindustrial_complex = 2",
             "\t\t\tarms_factory = 5",
         ]
+        lines += [f"\t\t\t{key} = {value}" for key, value in PLAYER_BUILDING_PACKAGE.items()]
     if sid in SUPPLY_PORTS:
         lines += [f"\t\t\t{SUPPLY_PORTS[sid]} = {{", "\t\t\t\tnaval_base = 1", "\t\t\t}"]
     lines += [
@@ -439,8 +435,6 @@ def main() -> int:
         "dockyard",
         "air_base",
         "anti_air_building",
-        "_refinery",
-        "fuel_silo",
         "rocket_site",
         "nuclear_reactor",
     )
@@ -452,8 +446,15 @@ def main() -> int:
         sid = int(re.search(r"\bid\s*=\s*(\d+)", text).group(1))
         if "naval_base" in text and sid not in SUPPLY_PORTS:
             raise RuntimeError(f"Unexpected naval base in {p}")
-        if "resources = {" in text and not any(f"id = {sid}" in text for sid in CAPITAL_RESOURCES):
-            raise RuntimeError(f"Unexpected resources block survived in {p}")
+        is_player = bool(re.search(r"(?m)^\\s*owner\\s*=\\s*(?:WEF|EEF)\\s*$", text))
+        if ("resources = {" in text) != is_player:
+            raise RuntimeError(f"Resource block mismatch for player/observer state {p}")
+        for building, level in PLAYER_BUILDING_PACKAGE.items():
+            signature = f"\\t\\t\\t{building} = {level}"
+            if (signature in text) != is_player:
+                raise RuntimeError(f"Static building {building} mismatch in {p}")
+        if re.search(r"(?m)^\\s*(?:synthetic_refinery|steel_refinery|aluminium_refinery|hydro_steel_refinery_inactive|hydro_aluminium_refinery_inactive)\\s*=", text):
+            raise RuntimeError(f"Unexpected additional refinery in {p}")
 
     print("Static scenario map regenerated successfully.")
     return 0
