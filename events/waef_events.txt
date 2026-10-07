@@ -12,3 +12,15 @@ country_event = {
         name = waef.1.a
     }
 }
+country_event = {
+    id = waef.2
+    title = waef.2.t
+    desc = waef.2.d
+    picture = GFX_report_event_generic_military_parade
+
+    is_triggered_only = yes
+
+    option = {
+        name = waef.2.a
+    }
+}
