@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+import json
 import re
 import sys
 import urllib.request
@@ -412,6 +413,20 @@ def normalize_victory_points(states: list[dict]) -> None:
         s["vps"] = [(province, values[province]) for province in ordered[s["id"]]]
 
 
+def apply_strategic_victory_point_values(states: list[dict]) -> None:
+    """Keep existing VP locations/order; objectives are worth 10, all others 1."""
+    objectives = json.loads((ROOT / "tools/waef_strategic_cities.json").read_text(encoding="utf-8"))["objectives"]
+    targets = {city["province"]: city["state"] for city in objectives}
+    if len(targets) != len(objectives):
+        raise RuntimeError("Duplicate strategic VP province")
+    vp_states = {province: s["id"] for s in states for province, _ in s["vps"]}
+    for province, sid in targets.items():
+        if vp_states.get(province) != sid:
+            raise RuntimeError(f"Missing or misplaced strategic VP {province} in state {sid}")
+    for s in states:
+        s["vps"] = [(province, 10 if province in targets else 1) for province, _ in s["vps"]]
+
+
 def main() -> int:
     state_paths = sorted(STATES_DIR.glob("*.txt"))
     if len(state_paths) != 1107:
@@ -419,6 +434,7 @@ def main() -> int:
 
     states = [parse_state(p) for p in state_paths]
     normalize_victory_points(states)
+    apply_strategic_victory_point_values(states)
     validate(states)
 
     for s in states:
