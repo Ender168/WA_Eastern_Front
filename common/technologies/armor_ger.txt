@@ -310,7 +310,7 @@ technologies = {
 	}
 
 	ger_scout_car_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Sd.Kfz. 234
 
 		enable_equipments = {
@@ -360,7 +360,7 @@ technologies = {
 	}
 
 	ger_armoured_car_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Sd.Kfz. 234/2 Puma
 
 		enable_equipments = {
@@ -396,7 +396,7 @@ technologies = {
 	}
 
 	ger_armoured_car_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Sd.Kfz. 234/4 Pak-Wagen
 
 		enable_equipments = {
@@ -432,7 +432,7 @@ technologies = {
 	}
 
 	ger_scout_car_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Schützenpanzer Kurz
 
 		enable_equipments = {
@@ -477,7 +477,7 @@ technologies = {
 	}
 
 	ger_scout_car_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Spähpanzer Luchs
 
 		enable_equipments = {
@@ -672,7 +672,7 @@ technologies = {
 	}
 
 	ger_mechanized_infantry_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -708,7 +708,7 @@ technologies = {
 	}
 
 	ger_mechanized_td_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -744,7 +744,7 @@ technologies = {
 	}
 
 	ger_mechanized_aa_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -862,7 +862,7 @@ technologies = {
 	}
 
 	ger_mechanized_artillery_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -934,7 +934,7 @@ technologies = {
 	}
 
 	ger_mechanized_infantry_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -968,7 +968,7 @@ technologies = {
 
 
 	ger_mechanized_artillery_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -990,7 +990,7 @@ technologies = {
 	}
 
 	ger_mechanized_infantry_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -1041,7 +1041,7 @@ technologies = {
 		}
 	}
 	ger_mechanized_artillery_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -1063,7 +1063,7 @@ technologies = {
 	}
 
 	ger_mechanized_aa_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -1099,7 +1099,7 @@ technologies = {
 	}
 
 	ger_mechanized_infantry_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -1149,7 +1149,7 @@ technologies = {
 		}
 	}
 	ger_mechanized_td_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -1185,7 +1185,7 @@ technologies = {
 	}
 
 	ger_mechanized_artillery_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -1227,7 +1227,7 @@ technologies = {
 	}
 
 	ger_mechanized_aa_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -1263,7 +1263,7 @@ technologies = {
 	}
 
 	ger_amphibious_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -1310,7 +1310,7 @@ technologies = {
 	}
 
 	ger_mechanized_infantry_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -1356,7 +1356,7 @@ technologies = {
 	}
 
 	ger_amphibious_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -1398,7 +1398,7 @@ technologies = {
 	}
 
 	ger_mechanized_infantry_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -1449,7 +1449,7 @@ technologies = {
 	}
 
 	ger_mechanized_artillery_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -1524,7 +1524,7 @@ technologies = {
 #	}
 
 	ger_mechanized_infantry_9 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_M1 } } } }
 
 
 		enable_equipments = {
@@ -1821,7 +1821,7 @@ technologies = {
 	}
 
 	ger_light_2_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Marder II
 
 		enable_equipments = {
@@ -1952,7 +1952,7 @@ technologies = {
 	}
 
 	ger_light_3_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Hetzer
 
 		enable_equipments = {
@@ -1988,7 +1988,7 @@ technologies = {
 	}
 
 	ger_light_3_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Grille
 
 		enable_equipments = {
@@ -2058,7 +2058,7 @@ technologies = {
 	}
 
 	ger_light_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Panzer II Luchs
 		enable_equipments = {
 			ger_light_equipment_4
@@ -2108,7 +2108,7 @@ technologies = {
 	}
 
 	ger_light_4_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #MarderIII
 
 		enable_equipments = {
@@ -2144,7 +2144,7 @@ technologies = {
 	}
 
 	ger_light_4_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Wespe
 
 		enable_equipments = {
@@ -2180,7 +2180,7 @@ technologies = {
 	}
 
 	ger_light_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Leopard
 		enable_equipments = {
 			ger_light_equipment_5
@@ -2231,7 +2231,7 @@ technologies = {
 	}
 
 	ger_light_5_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Stug Leopard
 
 		enable_equipments = {
@@ -2252,7 +2252,7 @@ technologies = {
 	}
 
 	ger_light_5_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Kafer
 
 		enable_equipments = {
@@ -2273,7 +2273,7 @@ technologies = {
 	}
 
 	ger_light_5_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Gepard
 
 		enable_equipments = {
@@ -2309,7 +2309,7 @@ technologies = {
 	}
 
 	ger_light_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #E 25
 		enable_equipments = {
 			ger_light_equipment_6
@@ -2358,7 +2358,7 @@ technologies = {
 	}
 
 	ger_light_6_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Jagdpanzer E 25
 
 		enable_equipments = {
@@ -2394,7 +2394,7 @@ technologies = {
 	}
 
 	ger_light_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #E 30
 		enable_equipments = {
 			ger_light_equipment_7
@@ -4907,7 +4907,7 @@ technologies = {
 	}
 
 	ger_scout_armoured_car_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Sd.Kfz. 234
 
 		enable_equipments = {
@@ -4962,7 +4962,7 @@ technologies = {
 	}
 
 	ger_combat_armoured_car_5_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Sd.Kfz. 234/2 Puma
 
 		enable_equipments = {
@@ -5002,7 +5002,7 @@ technologies = {
 	}
 
 	ger_combat_armoured_car_5_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Sd.Kfz. 234/4 Pak-Wagen
 
 		enable_equipments = {
@@ -5042,7 +5042,7 @@ technologies = {
 	}
 
 	ger_scout_armoured_car_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Schützenpanzer Kurz
 
 		enable_equipments = {
@@ -5092,7 +5092,7 @@ technologies = {
 	}
 
 	ger_scout_armoured_car_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Spähpanzer Luchs
 
 		enable_equipments = {
@@ -5456,7 +5456,7 @@ technologies = {
 	}
 
 	ger_light_tank_2_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Marder II
 
 		enable_equipments = {
@@ -5664,7 +5664,7 @@ technologies = {
 	}
 
 	ger_light_tank_4_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Marder III H
 
 		enable_equipments = {
@@ -5705,7 +5705,7 @@ technologies = {
 	}
 
 	ger_light_tank_3_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Grille
 
 		enable_equipments = {
@@ -5747,7 +5747,7 @@ technologies = {
 	}
 
 	ger_light_tank_3_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Flakpanzer 38t
 
 		enable_equipments = {
@@ -5809,7 +5809,7 @@ technologies = {
 		start_year = 1941
 
 		allow = {
-        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } }
+        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } }
 
 			OR = {
 				has_full_control_of_state = 9
@@ -5856,7 +5856,7 @@ technologies = {
 		}
 	}
 	ger_light_tank_4_1_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Marder III M
 
 		enable_equipments = {
@@ -5896,7 +5896,7 @@ technologies = {
 		}
 	}
 	ger_light_tank_3_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Hetzer
 
 		enable_equipments = {
@@ -5938,7 +5938,7 @@ technologies = {
 	}
 
 	ger_light_tank_chassis_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Panzer II Luchs
 		enable_equipments = {
 			tank_ger_light_chassis_4
@@ -5993,7 +5993,7 @@ technologies = {
 
 
 	ger_light_tank_4_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Wespe
 
 		enable_equipments = {
@@ -6034,7 +6034,7 @@ technologies = {
 	}
 
 	ger_light_tank_chassis_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Leopard
 		enable_equipments = {
 			tank_ger_light_chassis_5
@@ -6090,7 +6090,7 @@ technologies = {
 	}
 
 	ger_light_tank_5_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Jagdpanzer Leopard
 
 		enable_equipments = {
@@ -6116,7 +6116,7 @@ technologies = {
 	}
 
 	ger_light_tank_5_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Waffenträger auf Leopard Käfer
 
 		enable_equipments = {
@@ -6142,7 +6142,7 @@ technologies = {
 	}
 
 	ger_light_tank_5_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Flakpanzer Leopard
 
 		enable_equipments = {
@@ -6183,7 +6183,7 @@ technologies = {
 	}
 
 	ger_light_tank_chassis_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #E 25
 		enable_equipments = {
 			tank_ger_light_chassis_6
@@ -6232,7 +6232,7 @@ technologies = {
 	}
 
 	ger_light_tank_6_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #Jagdpanzer E 25
 
 		enable_equipments = {
@@ -6273,7 +6273,7 @@ technologies = {
 	}
 
 	ger_light_tank_chassis_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 has_completed_focus = WAEF_GER_H1 } } } }
  #E 30
 		enable_equipments = {
 			tank_ger_light_chassis_7

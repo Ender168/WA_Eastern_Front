@@ -43,9 +43,9 @@ class NationalFocusTests(unittest.TestCase):
    for k,v in baseline.technology_blocks(p.read_text()).items():cls.techs[k]=baseline.parse_tech(k,str(p),v)
  def test_all_seven_schools_and_real_rewards(self):
   self.assertEqual(set(self.m['schools']),{'GER','SOV','USA','ENG','FRA','ITA','JAP'})
-  self.assertEqual(len(self.nodes),265)
+  self.assertEqual(len(self.nodes),269)
   for code,rows in self.m['schools'].items():
-   self.assertEqual(len(rows),49 if code=='GER' else 36)
+   self.assertEqual(len(rows),53 if code=='GER' else 36)
    for row in rows:
     node=self.nodes[row['id']];self.assertEqual(int(get(node,'cost'))*7,row['days'])
     self.assertTrue(get(node,'completion_reward'))
@@ -54,8 +54,8 @@ class NationalFocusTests(unittest.TestCase):
  def test_no_future_technology_in_any_focus_reward(self):
   for rows in self.m['schools'].values():
    for row in rows:
-    self.assertTrue(eval_gate(get(self.nodes[row['id']],'available'),date=row['year']*10000+101))
-    self.assertTrue(eval_gate(get(self.nodes[row['id']],'available'),date=19360101))
+    self.assertTrue(eval_gate(get(self.nodes[row['id']],'available'),done=row.get('availability_requires',[]),date=row['year']*10000+101))
+    self.assertTrue(eval_gate(get(self.nodes[row['id']],'available'),done=row.get('availability_requires',[]),date=19360101))
     self.assertNotIn('date',[n.key for n in walk(get(self.nodes[row['id']],'available'))])
     for tech in row['technologies']:
      self.assertIn(tech,self.techs)
@@ -83,7 +83,7 @@ class NationalFocusTests(unittest.TestCase):
    for r in rows:
     if r['code'] in reference:
      a=reference[r['code']]
-     self.assertEqual((r['year'],r['days'],r['technologies'],r['effects']),(a['year'],a['days'],a['technologies'],a['effects']))
+     self.assertEqual((r['year'],r['days'],r['technologies'],[e for e in r['effects'] if e!='waef_grant_german_jet_aircraft = yes']),(a['year'],a['days'],a['technologies'],[e for e in a['effects'] if e!='waef_grant_german_jet_aircraft = yes']))
  def test_all_seven_assimilations_switch_and_grant_baseline(self):
   src=read('common/decisions/waef_technology_assimilation.txt')
   from generate_national_focus_trees import SCHOOLS,START_EXCEPTIONS
@@ -126,7 +126,7 @@ class NationalFocusTests(unittest.TestCase):
    ours=[Node('OR',next(n.value for n in allow if n.key=='OR' and any(c.key=='NOT' and 'tag' in str(c.value) for c in n.value)),'=')]
    self.assertFalse(eval_gate(ours,date=19550101),name)
    options=gate['requires_focus'] if isinstance(gate['requires_focus'],list) else [gate['requires_focus']]
-   for choice in options:self.assertTrue(eval_gate(ours,done=[choice],date=19360101),name)
+   for choice in options:self.assertTrue(eval_gate(ours,done=[choice]+gate.get('requires_all_focus',[]),date=19360101),name)
    self.assertNotIn('date',[n.key for n in walk(ours)])
    self.assertTrue(eval_gate(ours,tag='GER',date=19360101),name)
  def test_localisation_covers_all_new_visible_keys(self):

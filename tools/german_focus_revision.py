@@ -1,88 +1,174 @@
-"""German tree revision requested after the first in-game test, 7 October 2026."""
+"""German playtest revision, 8 October 2026; source years define packages only."""
 import re
 
+LEVELS = (1941, 1943, 1945)
+STRIKE = ('S', 'B', 'R')
+JET_EFFECT = 'waef_grant_german_jet_aircraft'
+JET_COMPLETIONS = ('C25', 'A3', 'W3', 'S3', 'B3', 'R3', 'U3')
+
+
 def records(common):
-    common=[list(r) for r in common]
-    for r in common:
-        for old,new in [('1941','I'),('1943','II'),('1945','III')]:r[1]=r[1].replace(old,new)
-    common += [
-        ['P1','Концентрированная промышленность','1941 / 21','Выбор школы','Заменяет стандартную промышленность на концентрированную'],
-        ['P2','Рассредоточенная промышленность','1941 / 21','Выбор школы','Заменяет стандартную промышленность на рассредоточенную'],
+    out = [list(r) for r in common]
+    for r in out:
+        for old, new in [('1941', 'I'), ('1943', 'II'), ('1945', 'III')]:
+            r[1] = r[1].replace(old, new)
+    out += [
+        ['P1', 'Концентрированная промышленность', '1941 / 21', 'Выбор школы', 'Заменяет стандартную промышленность на концентрированную'],
+        ['P2', 'Рассредоточенная промышленность', '1941 / 21', 'Выбор школы', 'Заменяет стандартную промышленность на рассредоточенную'],
     ]
-    out=common
-    def row(code,name,yr,pre,desc,days=91):out.append([code,name,f'{yr} / {days}',pre,desc])
-    for prefix,title,desc in [('I','Пехотное вооружение','Пехота и обучение'),('G','Огневая поддержка','Артиллерия, ПТО и ПВО')]:
-        for level,yr in enumerate([1941,1943,1945],1):row(prefix+str(level),title+' '+['I','II','III'][level-1],yr,'C00' if level==1 else prefix+str(level-1),desc)
-    for prefix,title,desc in [
-        ('L','Разведывательная и лёгкая бронетехника','Scout/combat car, лёгкие танки и их варианты'),
-        ('T','Средние танки','Средние танки, Panther и профильные САУ'),
-        ('H','Тяжёлые танки','Тяжёлые танки и профильные САУ'),
-        ('A','Истребительная авиация','Bf 109, Fw 190 и другие истребители'),
-        ('S','Штурмовая авиация','Штурмовики и истребители-штурмовики'),
-        ('B','Фронтовые бомбардировщики','Тактические, скоростные, ударные и морские бомбардировщики'),
-        ('R','Стратегическая авиация','Стратегические бомбардировщики; базовые пакеты двух других ударных направлений'),
-    ]:
-        for level,yr in enumerate([1941,1943,1945],1):
-            pre=('L1' if prefix in ('T','H') else 'A1' if prefix in ('S','B','R') else 'C00') if level==1 else prefix+str(level-1)
-            row(prefix+str(level),title+' '+['I','II','III'][level-1],yr,pre,desc)
-    row('M2','Моторизованные соединения',1942,'I1','Моторизация и механизация')
-    row('M4','Механизированные соединения',1945,'M2','Поздняя механизация и вспомогательные машины')
-    row('O2','Штаб наступательных операций',1942,'C70 и I1','Подготовка региональной операции: 7 дней',70)
+    branches = [
+        ('I', 'Пехотное вооружение', 'Пехота и обучение'),
+        ('G', 'Огневая поддержка', 'Артиллерия, ПТО и ПВО'),
+        ('M', 'Моторизация и механизация', 'Моторизованная и механизированная техника отдельной ветви'),
+        ('T', 'Средние танки', 'Средние танки, профильные САУ, лёгкие танки и разведывательные/боевые бронеавтомобили'),
+        ('H', 'Тяжёлые танки', 'Тяжёлые танки, профильные САУ, лёгкие танки и разведывательные/боевые бронеавтомобили'),
+        ('A', 'Messerschmitt', 'Развитие истребителей Bf 109'),
+        ('W', 'Focke-Wulf', 'Развитие истребителей Fw 190 и Ta 152; исключает тяжёлые танки'),
+        ('U', 'Вспомогательная авиация', 'Разведчики, транспортная авиация и тяжёлые перехватчики'),
+        ('S', 'Штурмовая авиация', 'Штурмовики и истребители-штурмовики'),
+        ('B', 'Фронтовые бомбардировщики', 'Тактические, скоростные, ударные и морские бомбардировщики'),
+        ('R', 'Стратегическая авиация', 'Стратегические бомбардировщики'),
+    ]
+    for prefix, title, desc in branches:
+        for level, yr in enumerate(LEVELS, 1):
+            if prefix=='R' and level==1:yr=1942  # He 177 designer technology in BBA.
+            pre = 'C00' if level == 1 else prefix + str(level - 1)
+            out.append([prefix + str(level), title + ' ' + ['I', 'II', 'III'][level - 1], f'{yr} / 91', pre, desc])
+    out.append(['O2', 'Штаб наступательных операций', '1942 / 70', 'C70 и I1', 'Подготовка региональной операции: 7 дней'])
     return out
 
-EN={
- 'P1':'Concentrated Industry','P2':'Dispersed Industry',
- **{prefix+str(level):title+' '+['I','II','III'][level-1] for prefix,title in [('I','Infantry Armament'),('G','Fire Support'),('L','Reconnaissance and Light Armour'),('T','Medium Tanks'),('H','Heavy Tanks'),('A','Fighter Aviation'),('S','Ground Attack Aviation'),('B','Frontline Bombers'),('R','Strategic Aviation')] for level in [1,2,3]},
-}
-COORDS={
- 'C00':(12,0),'P1':(0,0),'P2':(2,0),
- 'C11':(1,2),'C13':(1,4),'C15':(1,6),'C41':(0,8),'C42':(2,8),
- 'C21':(5,2),'C23':(5,4),'C25':(5,6),'C51':(4,8),'C52':(6,8),
- 'C31':(9,2),'C33':(9,4),'C35':(9,6),'C61':(8,8),'C62':(10,8),
- 'C70':(13,10),'O2':(13,12),
- 'I1':(13,2),'I2':(13,4),'I3':(13,6),'G1':(17,2),'G2':(17,4),'G3':(17,6),
- 'L1':(21,2),'L2':(21,4),'L3':(21,6),'M2':(17,10),'M4':(17,12),
- 'T1':(20,10),'T2':(20,12),'T3':(20,14),'H1':(24,10),'H2':(24,12),'H3':(24,14),
- 'A1':(4,10),'A2':(12,14),'A3':(12,16),
- 'S1':(0,12),'S2':(0,14),'S3':(0,16),'B1':(4,12),'B2':(4,14),'B3':(4,16),'R1':(8,12),'R2':(8,14),'R3':(8,16),
+
+EN = {
+    'P1': 'Concentrated Industry', 'P2': 'Dispersed Industry',
+    **{prefix + str(level): title + ' ' + ['I', 'II', 'III'][level - 1]
+       for prefix, title in [('I', 'Infantry Armament'), ('G', 'Fire Support'),
+                            ('M', 'Motorisation and Mechanisation'), ('T', 'Medium Tanks'),
+                            ('H', 'Heavy Tanks'), ('A', 'Messerschmitt'), ('W', 'Focke-Wulf'),
+                            ('U', 'Auxiliary Aviation'), ('S', 'Ground Attack Aviation'),
+                            ('B', 'Frontline Bombers'), ('R', 'Strategic Aviation')]
+       for level in [1, 2, 3]},
 }
 
+# The previous Support Companies I position (x=9) is the new left boundary.
+# Two horizontal units keep neighbouring focus labels apart. A single vertical
+# unit is the standard HOI4 row spacing, replacing the previous double spacing.
+COORDS = {'C00': (18, 0), 'P1': (9, 0), 'P2': (11, 0),
+          'C41': (13, 4), 'C42': (15, 4), 'C51': (17, 4), 'C52': (19, 4),
+          'C61': (9, 4), 'C62': (11, 4), 'C70': (26, 4), 'O2': (26, 5)}
+for prefix, x in [('C3', 10), ('C1', 14), ('C2', 18)]:
+    for suffix, y in zip(['1', '3', '5'], [1, 2, 3]):
+        COORDS[prefix + suffix] = (x, y)
+for prefix, x in [('U', 20), ('I', 22), ('G', 24), ('M', 26)]:
+    for level in [1, 2, 3]:
+        COORDS[prefix + str(level)] = (x, level)
+for prefix, x in [('T', 9), ('H', 11), ('A', 13), ('W', 15),
+                  ('S', 19), ('B', 21), ('R', 23)]:
+    for level in [1, 2, 3]:
+        COORDS[prefix + str(level)] = (x, level + 4)
+
+
 def route(t):
-    name=t.name[4:];file=t.path.split('/')[-1]
-    if file=='armor_ger.txt':
-        if any(x in name for x in ['scout','combat_car','armoured_car','light']):return 'L'
-        if any(x in name for x in ['motorised','motorized','mechanized','amphibious']):return 'M'
-        if 'heavy' in name or 'landkruiser' in name:return 'H'
+    name = t.name[4:]
+    file = t.path.split('/')[-1]
+    if file == 'armor_ger.txt':
+        if any(x in name for x in ['scout', 'combat_car', 'armoured_car', 'light']):
+            return 'L'
+        if any(x in name for x in ['motorised', 'motorized', 'mechanized', 'amphibious']):
+            return 'M'
+        if 'heavy' in name or 'landkruiser' in name:
+            return 'H'
         return 'T'
-    if file=='air_techs_ger.txt':
-        if 'strategic' in name:return 'R'
-        if any(x in name for x in ['cas','attacker']):return 'S'
-        if any(x in name for x in ['bomber','patrol']):return 'B'
+    if file == 'air_techs_ger.txt':
+        if 'strategic' in name:
+            return 'R'
+        if any(x in name for x in ['cas', 'attacker']):
+            return 'S'
+        if any(x in name for x in ['bomber', 'patrol']):
+            return 'B'
+        if any(x in name for x in ['scout', 'transport', 'heavy_fighter', 'air_upgrade']):
+            return 'U'
+        if 'jet' in name:
+            if re.search(r'GER_ta_183', t.body) or name in ['jet_fighter_2','jet_fighter_3','jet_cv_fighter_2','jet_cv_fighter_3']:
+                return 'W'
+            if re.search(r'GER_(?:he_162|ho229)', t.body) or name=='jet_fighter_1':
+                return 'U'
+        # Both equipment modes: the classic carrier Fw 190 has no "multirole"
+        # in its technology ID, so inspect the enabled airframes as well.
+        if 'jet' not in name and ('multirole' in name or name in ['cv_fighter_3', 'cv_fighter_5']
+                                 or re.search(r'GER_(?:fw_190|ta_152)', t.body)):
+            return 'W'
         return 'A'
     return None
 
-def packages(techs,records):
-    by={r[0]:r for r in records};out={r[0]:set() for r in records};gates={}
-    def assign(t,options):
-        choices=sorted((int(by[c][2].split('/')[0]),c) for c in options if int(by[c][2].split('/')[0])>=t.year)
-        if choices:out[choices[0][1]].add(t.name)
-    for name,t in techs.items():
-        if not t.path.endswith(('_ger.txt','/industry.txt','/electronic_mechanical_engineering.txt','/support.txt')) or t.doctrine or t.year<=1940:continue
-        if not t.has_folder and 'enable_equipments' not in t.body:continue
-        family=route(t)
-        if family:
-            options=['M2','M4'] if family=='M' else [family+str(i) for i in [1,2,3]]
-            assign(t,options)
-            gate=[f'WAEF_GER_{family}1'] if family in ['T','H','S','B','R'] else []
-            if family in ['S','B'] and t.year<=1941:gate.append('WAEF_GER_R1')
-            gates[name]=gate
-        elif t.path.endswith('/infantry_ger.txt'):assign(t,['I1','I2','I3']);gates[name]=[]
-        elif t.path.endswith('/artillery_ger.txt'):assign(t,['G1','G2','G3']);gates[name]=[]
-    # The strategic route repeatedly includes precisely the first packages of the
-    # two unselected strike routes, never their later upgrades.
-    for node in ['R1','R2','R3']:out[node]|=out['S1']|out['B1']
-    for node,name in [('P1','concentrated_industry'),('P2','dispersed_industry')]:out[node].add(name)
-    return out,gates
 
-EXCLUDES={'P1':['P2'],'P2':['P1'],'T1':['H1'],'H1':['T1'],
- 'S1':['B1','R1'],'B1':['S1','R1'],'R1':['S1','B1']}
+def is_jet(t):
+    return t.path.endswith('/air_techs_ger.txt') and 'jet' in t.name
+
+
+def packages(techs, records):
+    by = {r[0]: r for r in records}
+    out = {r[0]: set() for r in records}
+    gates = {}
+    jet_ids = {p: set() for p in ['A', 'W', 'S', 'B', 'R', 'U']}
+    hidden = {child for t in techs.values() for child in t.sub_technologies}
+
+    def assign(t, prefix):
+        choices = sorted((int(by[c][2].split('/')[0]), c)
+                         for c in [prefix + str(i) for i in [1, 2, 3]]
+                         if int(by[c][2].split('/')[0]) >= t.year)
+        if choices:
+            out[choices[0][1]].add(t.name)
+
+    for name, t in techs.items():
+        if not t.path.endswith(('_ger.txt', '/industry.txt', '/electronic_mechanical_engineering.txt', '/support.txt')):
+            continue
+        if t.doctrine or t.year <= 1940 or (not t.has_folder and 'enable_equipments' not in t.body and name not in hidden):
+            continue
+        family = route(t)
+        if is_jet(t):
+            options = [family + '1']
+            gates[name] = {'any': ['WAEF_GER_' + c for c in options], 'all': ['WAEF_GER_C25']}
+            if t.year <= 1945:
+                jet_ids[family].add(name)
+        elif family:
+            if family == 'L':
+                for prefix in ['T', 'H']:
+                    assign(t, prefix)
+                gates[name] = ['WAEF_GER_T1', 'WAEF_GER_H1']
+            else:
+                assign(t, family)
+                options = ['WAEF_GER_' + family + '1']
+                # Only the third stage of a different strike route unlocks the
+                # first-stage package, for focus grants and normal research.
+                if family in STRIKE and t.year <= int(by[family+'1'][2].split('/')[0]):
+                    options += ['WAEF_GER_' + p + '3' for p in STRIKE if p != family]
+                gates[name] = options
+        elif t.path.endswith('/infantry_ger.txt'):
+            assign(t, 'I')
+            gates[name] = []
+        elif t.path.endswith('/artillery_ger.txt'):
+            assign(t, 'G')
+            gates[name] = []
+    for node, name in [('P1', 'concentrated_industry'), ('P2', 'dispersed_industry')]:
+        out[node].add(name)
+    jet_rewards = [{'requires_all': ['WAEF_GER_C25'],
+                    'requires_any': ['WAEF_GER_' + c for c in [p + '3']],
+                    'technologies': sorted(ids)} for p, ids in jet_ids.items() if ids]
+    return out, gates, jet_rewards
+
+
+def finish_packages(packages):
+    """Share closed first-stage packages only after hidden-tech closure is complete."""
+    basics = {p: set(packages[p + '1']) for p in STRIKE}
+    for p in STRIKE:
+        packages[p + '3'] |= set().union(*(basics[q] for q in STRIKE if q != p))
+
+
+EXCLUDES = {'P1': ['P2'], 'P2': ['P1'], 'T1': ['H1'], 'H1': ['T1', 'W1'],
+            'A1': ['W1'], 'W1': ['A1', 'H1'],
+            'S1': ['B1', 'R1'], 'B1': ['S1', 'R1'], 'R1': ['S1', 'B1']}
+
+# Preserve requirements through availability without drawing diagonal links
+# across the upper blocks. Dependencies and focus durations are unchanged.
+HIDDEN_LINKS = {p+'1': ['C00'] for p in ['T','H','A','W','S','B','R']}
+HIDDEN_LINKS.update({'C70': ['C00'], 'O2': ['I1']})

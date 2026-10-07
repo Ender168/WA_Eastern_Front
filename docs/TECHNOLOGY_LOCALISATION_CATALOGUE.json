@@ -5286,5 +5286,13 @@
   "wartime_train": {
     "english": "War Austerity Train",
     "russian": "Военная технология: War Austerity Train"
+  },
+  "ger_cas_ad_tech_7_1": {
+    "english": "Hs 129 B-3 upgrade",
+    "russian": "Модернизация Hs 129 B-3"
+  },
+  "ger_air_upgrade_1": {
+    "english": "Fw 189 aircraft modules",
+    "russian": "Модули самолёта Fw 189"
   }
 }
