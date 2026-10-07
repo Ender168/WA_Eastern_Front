@@ -1,3 +1,7 @@
+# WA Eastern Front - German assimilated technology focus tree
+# Technology IDs are aligned to World Ablaze 9.6 source layout.
+# Major development packages use cost = 13 (91 days); the entry focus uses 10 (70 days).
+
 focus_tree = {
     id = WAEF_GER_TECH_DOCTRINE
 
@@ -19,103 +23,821 @@ focus_tree = {
     focus = {
         id = WAEF_GER_TECH_ROOT
         icon = GFX_goal_generic_scientific_exchange
-        x = 5
+        x = 18
         y = 0
         cost = 10
+
         completion_reward = {
             set_country_flag = WAEF_GER_TECH_TREE_ACTIVE
+            set_technology = {
+                camo1 = 1
+                tech_headquarters1 = 1
+                wartime_train = 1
+            }
         }
     }
 
+    # Infantry and special forces
     focus = {
-        id = WAEF_GER_ARMY_REFORM
-        icon = GFX_goal_generic_army_doctrine
+        id = WAEF_GER_INFANTRY_41
+        icon = GFX_goal_generic_infantry
         x = 0
-        y = 1
-        cost = 10
+        y = 2
+        cost = 13
         prerequisite = { focus = WAEF_GER_TECH_ROOT }
+
         completion_reward = {
-            unlock_technology = infantry_weapons3
-            unlock_technology = support_weapons3
-            unlock_technology = artillery2
+            set_technology = {
+                ger_infantry_weapons_4 = 1
+                ger_paratroopers2 = 1
+                ger_extreme_environment_training = 1
+                ger_survival_training = 1
+            }
         }
     }
 
     focus = {
-        id = WAEF_GER_MOBILE_ARMOUR
-        icon = GFX_goal_generic_army_motorized
-        x = 2
-        y = 2
-        cost = 10
-        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+        id = WAEF_GER_INFANTRY_43
+        icon = GFX_goal_generic_infantry
+        x = 0
+        y = 3
+        cost = 13
+        prerequisite = { focus = WAEF_GER_INFANTRY_41 }
+
         completion_reward = {
-            set_country_flag = WAEF_GER_MOBILE_ARMOUR
-            unlock_technology = medium_tank_chassis
+            set_technology = {
+                ger_infantry_weapons_upgrade_2 = 1
+                ger_infantry_weapons_5 = 1
+                ger_infantry_weapons_6 = 1
+                ger_heavy_infantry_weapons_4 = 1
+                ger_heavy_infantry_weapons_5 = 1
+                ger_recon_training = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_INFANTRY_45
+        icon = GFX_goal_generic_infantry
+        x = 0
+        y = 4
+        cost = 13
+        prerequisite = { focus = WAEF_GER_INFANTRY_43 }
+
+        completion_reward = {
+            set_technology = {
+                ger_infantry_weapons_upgrade_3 = 1
+                ger_infantry_weapons_7 = 1
+                ger_heavy_infantry_weapons_6 = 1
+                ger_heavy_infantry_weapons_7 = 1
+                ger_night_vision_1 = 1
+                ger_elite_forces = 1
+            }
+        }
+    }
+
+    # Support companies
+    focus = {
+        id = WAEF_GER_SUPPORT_41
+        icon = GFX_goal_generic_army_doctrine
+        x = 4
+        y = 2
+        cost = 13
+        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+
+        completion_reward = {
+            set_technology = {
+                tech_engineers3 = 1
+                tech_recon3 = 1
+                tech_maintenance_company3 = 1
+                tech_field_hospital3 = 1
+                tech_logistics_company3 = 1
+                tech_signal_company3 = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_SUPPORT_43
+        icon = GFX_goal_generic_army_doctrine
+        x = 4
+        y = 3
+        cost = 13
+        prerequisite = { focus = WAEF_GER_SUPPORT_41 }
+
+        completion_reward = {
+            set_technology = {
+                tech_engineers4 = 1
+                tech_recon4 = 1
+                tech_maintenance_company4 = 1
+                tech_logistics_company4 = 1
+                tech_signal_company4 = 1
+                tech_headquarters2 = 1
+                tech_battlefield_medicine_2 = 1
+                camo2 = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_SUPPORT_45
+        icon = GFX_goal_generic_army_doctrine
+        x = 4
+        y = 4
+        cost = 13
+        prerequisite = { focus = WAEF_GER_SUPPORT_43 }
+
+        completion_reward = {
+            set_technology = {
+                tech_engineers5 = 1
+                tech_recon5 = 1
+                tech_maintenance_company5 = 1
+                tech_logistics_company5 = 1
+                tech_signal_company5 = 1
+                tech_headquarters3 = 1
+                tech_battlefield_medicine_3 = 1
+                camo3 = 1
+                camo4 = 1
+            }
+        }
+    }
+
+    # Artillery, anti-tank and anti-air
+    focus = {
+        id = WAEF_GER_FIREPOWER_41
+        icon = GFX_goal_generic_army_doctrine
+        x = 8
+        y = 2
+        cost = 13
+        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+
+        completion_reward = {
+            set_technology = {
+                ger_artillery_2 = 1
+                ger_heavy_artillery_3 = 1
+                ger_anti_tank_2 = 1
+                ger_anti_air_3 = 1
+                ger_heavy_anti_air_2 = 1
+                ger_rocket_upgrade_1 = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_FIREPOWER_43
+        icon = GFX_goal_generic_army_doctrine
+        x = 8
+        y = 3
+        cost = 13
+        prerequisite = { focus = WAEF_GER_FIREPOWER_41 }
+
+        completion_reward = {
+            set_technology = {
+                ger_artillery_upgrade_3 = 1
+                ger_artillery_3 = 1
+                ger_anti_tank_3 = 1
+                ger_anti_air_4 = 1
+                ger_anti_air_upgrade_3 = 1
+                ger_rocket_artillery_2 = 1
+                ger_pack_artillery_3 = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_FIREPOWER_45
+        icon = GFX_goal_generic_army_doctrine
+        x = 8
+        y = 4
+        cost = 13
+        prerequisite = { focus = WAEF_GER_FIREPOWER_43 }
+
+        completion_reward = {
+            set_technology = {
+                ger_anti_tank_upgrade_3 = 1
+                ger_anti_tank_4 = 1
+                ger_heavy_anti_tank_1 = 1
+                ger_heavy_anti_tank_2 = 1
+                ger_anti_air_5 = 1
+                ger_rocket_artillery_3 = 1
+                ger_rocket_upgrade_2 = 1
+                ger_artillery_upgrade_4 = 1
+            }
+        }
+    }
+
+    # Motorisation and mechanisation
+    focus = {
+        id = WAEF_GER_MECH_41
+        icon = GFX_goal_generic_army_motorized
+        x = 12
+        y = 2
+        cost = 13
+        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+
+        completion_reward = {
+            set_technology = {
+                ger_mechanized_infantry_2 = 1
+                ger_mechanized_td_2 = 1
+                ger_mechanized_artillery_2 = 1
+                ger_mechanized_aa_1 = 1
+                ger_amphibious_1 = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_MECH_43
+        icon = GFX_goal_generic_army_motorized
+        x = 12
+        y = 3
+        cost = 13
+        prerequisite = { focus = WAEF_GER_MECH_41 }
+
+        completion_reward = {
+            set_technology = {
+                ger_mechanized_infantry_3 = 1
+                ger_mechanized_infantry_4 = 1
+                ger_mechanized_td_3 = 1
+                ger_mechanized_artillery_3 = 1
+                ger_mechanized_aa_2 = 1
+                ger_amphibious_2 = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_MECH_45
+        icon = GFX_goal_generic_army_motorized
+        x = 12
+        y = 4
+        cost = 13
+        prerequisite = { focus = WAEF_GER_MECH_43 }
+
+        completion_reward = {
+            set_technology = {
+                ger_mechanized_infantry_5 = 1
+                ger_mechanized_aa_3 = 1
+                ger_amphibious_3 = 1
+                ger_scout_armoured_car_5 = 1
+                ger_combat_armoured_car_5_2 = 1
+            }
+        }
+    }
+
+    # Armour
+    focus = {
+        id = WAEF_GER_PANZER_41
+        icon = GFX_goal_generic_army_motorized
+        x = 16
+        y = 2
+        cost = 13
+        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+
+        completion_reward = {
+            set_technology = {
+                ger_medium_tank_chassis_2_3 = 1
+                ger_medium_tank_chassis_2_4 = 1
+                ger_assault_tank_3_spg = 1
+                ger_support_tank_chassis_1_3 = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_PANTHER_PROGRAM
+        icon = GFX_goal_generic_army_motorized
+        x = 15
+        y = 3
+        cost = 13
+        prerequisite = { focus = WAEF_GER_PANZER_41 }
+
+        completion_reward = {
+            set_technology = {
+                ger_medium_tank_chassis_2_6 = 1
+                ger_modern_tank_chassis_1 = 1
+                ger_medium_tank_6_td = 1
+                ger_assault_tank_6_spg = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_PANTHER_REFINEMENT
+        icon = GFX_goal_generic_army_motorized
+        x = 15
+        y = 4
+        cost = 13
+        prerequisite = { focus = WAEF_GER_PANTHER_PROGRAM }
+
+        completion_reward = {
+            set_technology = {
+                ger_modern_tank_chassis_1_2 = 1
+                ger_modern_tank_chassis_1_3 = 1
+                ger_modern_tank_1_td = 1
+                ger_modern_tank_1_spg = 1
+                ger_modern_tank_1_aa = 1
+            }
         }
     }
 
     focus = {
         id = WAEF_GER_HEAVY_ARMOUR
-        icon = GFX_goal_generic_army_doctrine
-        x = 4
-        y = 2
-        cost = 10
-        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+        icon = GFX_goal_generic_army_motorized
+        x = 17
+        y = 3
+        cost = 13
+        prerequisite = { focus = WAEF_GER_PANZER_41 }
+        mutually_exclusive = { focus = WAEF_GER_FOCKE_WULF }
+
         completion_reward = {
             set_country_flag = WAEF_GER_HEAVY_ARMOUR
-            unlock_technology = heavy_tank_chassis
+            set_technology = {
+                ger_heavy_tank_chassis_1 = 1
+                ger_heavy_tank_chassis_2 = 1
+                ger_heavy_tank_chassis_3 = 1
+                ger_heavy_tank_1_spg = 1
+            }
         }
     }
 
     focus = {
-        id = WAEF_GER_FIGHTER_SCHOOL
+        id = WAEF_GER_TIGER_II
+        icon = GFX_goal_generic_army_motorized
+        x = 17
+        y = 4
+        cost = 13
+        prerequisite = { focus = WAEF_GER_HEAVY_ARMOUR }
+
+        completion_reward = {
+            set_technology = {
+                ger_heavy_tank_chassis_4 = 1
+                ger_heavy_tank_4_td = 1
+                ger_heavy_assault_tank_4_spg = 1
+                ger_heavy_tank_4_spg = 1
+            }
+        }
+    }
+
+    # Luftwaffe
+    focus = {
+        id = WAEF_GER_LUFTWAFFE_41
         icon = GFX_goal_generic_air_fighter
-        x = 6
+        x = 22
         y = 2
-        cost = 10
+        cost = 13
         prerequisite = { focus = WAEF_GER_TECH_ROOT }
+
         completion_reward = {
-            set_country_flag = WAEF_GER_FIGHTER_SCHOOL
-            unlock_technology = fighter2
-            unlock_technology = fighter3
+            if = {
+                limit = { has_dlc = "By Blood Alone" }
+                set_technology = {
+                    ger_fighter_ad_tech_6 = 1
+                    ger_cas_ad_tech_4 = 1
+                    ger_tactical_bomber_ad_tech_4 = 1
+                    ger_strike_bomber_ad_tech_3 = 1
+                    ger_scout_plane_ad_tech_3 = 1
+                    ger_patrol_ad_tech_2 = 1
+                }
+            }
+            else = {
+                set_technology = {
+                    ger_fighter_6 = 1
+                    ger_cas_4 = 1
+                    ger_tactical_bomber_4 = 1
+                    ger_strike_bomber_3 = 1
+                    ger_scout_plane_3 = 1
+                    ger_patrol_2 = 1
+                }
+            }
         }
     }
 
     focus = {
-        id = WAEF_GER_TACTICAL_AIR
+        id = WAEF_GER_MESSERSCHMITT
+        icon = GFX_goal_generic_air_fighter
+        x = 19
+        y = 3
+        cost = 13
+        prerequisite = { focus = WAEF_GER_LUFTWAFFE_41 }
+
+        completion_reward = {
+            if = {
+                limit = { has_dlc = "By Blood Alone" }
+                set_technology = {
+                    ger_fighter_ad_tech_7 = 1
+                    ger_fighter_ad_tech_8 = 1
+                }
+            }
+            else = {
+                set_technology = {
+                    ger_fighter_7 = 1
+                    ger_fighter_8 = 1
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_FOCKE_WULF
+        icon = GFX_goal_generic_air_fighter
+        x = 21
+        y = 3
+        cost = 13
+        prerequisite = { focus = WAEF_GER_LUFTWAFFE_41 }
+        mutually_exclusive = { focus = WAEF_GER_HEAVY_ARMOUR }
+
+        completion_reward = {
+            set_country_flag = WAEF_GER_FOCKE_WULF
+            if = {
+                limit = { has_dlc = "By Blood Alone" }
+                set_technology = {
+                    ger_fighter_multirole_ad_tech_1 = 1
+                    ger_fighter_multirole_ad_tech_2 = 1
+                }
+            }
+            else = {
+                set_technology = {
+                    ger_fighter_multirole_1 = 1
+                    ger_fighter_multirole_2 = 1
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_FOCKE_WULF_LATE
+        icon = GFX_goal_generic_air_fighter
+        x = 21
+        y = 4
+        cost = 13
+        prerequisite = { focus = WAEF_GER_FOCKE_WULF }
+
+        completion_reward = {
+            if = {
+                limit = { has_dlc = "By Blood Alone" }
+                set_technology = {
+                    ger_fighter_multirole_ad_tech_3 = 1
+                    ger_fighter_multirole_ad_tech_4 = 1
+                    ger_fighter_multirole_ad_tech_5 = 1
+                }
+            }
+            else = {
+                set_technology = {
+                    ger_fighter_multirole_3 = 1
+                    ger_fighter_multirole_4 = 1
+                    ger_fighter_multirole_5 = 1
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_GROUND_ATTACK_43
         icon = GFX_goal_generic_air_bomber
-        x = 8
-        y = 2
-        cost = 10
-        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+        x = 23
+        y = 3
+        cost = 13
+        prerequisite = { focus = WAEF_GER_LUFTWAFFE_41 }
+
         completion_reward = {
-            set_country_flag = WAEF_GER_TACTICAL_AIR
-            unlock_technology = CAS2
-            unlock_technology = tactical_bomber2
+            if = {
+                limit = { has_dlc = "By Blood Alone" }
+                set_technology = {
+                    ger_attacker_ad_tech_3 = 1
+                    ger_cas_ad_tech_7 = 1
+                    ger_cas_ad_tech_5 = 1
+                }
+            }
+            else = {
+                set_technology = {
+                    ger_attacker_3 = 1
+                    ger_cas_5 = 1
+                    ger_strike_bomber_4 = 1
+                }
+            }
         }
     }
 
     focus = {
-        id = WAEF_GER_MASS_PRODUCTION
+        id = WAEF_GER_GROUND_ATTACK_45
+        icon = GFX_goal_generic_air_bomber
+        x = 23
+        y = 4
+        cost = 13
+        prerequisite = { focus = WAEF_GER_GROUND_ATTACK_43 }
+
+        completion_reward = {
+            if = {
+                limit = { has_dlc = "By Blood Alone" }
+                set_technology = {
+                    ger_attacker_ad_tech_4 = 1
+                    ger_cas_ad_tech_6 = 1
+                }
+            }
+            else = {
+                set_technology = {
+                    ger_attacker_4 = 1
+                    ger_cas_6 = 1
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_BOMBER_43
+        icon = GFX_goal_generic_air_bomber
+        x = 25
+        y = 3
+        cost = 13
+        prerequisite = { focus = WAEF_GER_LUFTWAFFE_41 }
+
+        completion_reward = {
+            if = {
+                limit = { has_dlc = "By Blood Alone" }
+                set_technology = {
+                    ger_tactical_bomber_ad_tech_4_2 = 1
+                    ger_fast_bomber_ad_tech_3 = 1
+                    ger_strike_bomber_ad_tech_3_2 = 1
+                    ger_strategic_bomber_ad_tech_0 = 1
+                    ger_strategic_bomber_ad_tech_1 = 1
+                }
+            }
+            else = {
+                set_technology = {
+                    ger_tactical_bomber_4 = 1
+                    ger_tactical_bomber_5 = 1
+                    ger_strike_bomber_4 = 1
+                    ger_strategic_bomber_2 = 1
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_BOMBER_45
+        icon = GFX_goal_generic_air_bomber
+        x = 25
+        y = 4
+        cost = 13
+        prerequisite = { focus = WAEF_GER_BOMBER_43 }
+
+        completion_reward = {
+            if = {
+                limit = { has_dlc = "By Blood Alone" }
+                set_technology = {
+                    ger_tactical_bomber_ad_tech_4_3 = 1
+                    ger_fast_bomber_ad_tech_4 = 1
+                    ger_strategic_bomber_ad_tech_2 = 1
+                    ger_heavy_strategic_bomber_ad_tech_1 = 1
+                }
+            }
+            else = {
+                set_technology = {
+                    ger_strike_bomber_5 = 1
+                    ger_strategic_bomber_2 = 1
+                    ger_strategic_bomber_3 = 1
+                }
+            }
+        }
+    }
+
+    # Industry
+    focus = {
+        id = WAEF_GER_INDUSTRY_41
         icon = GFX_goal_generic_production
-        x = 3
-        y = 4
-        cost = 10
+        x = 29
+        y = 2
+        cost = 13
         prerequisite = { focus = WAEF_GER_TECH_ROOT }
+
         completion_reward = {
-            set_country_flag = WAEF_GER_MASS_PRODUCTION
+            set_technology = {
+                assembly_line_production = 1
+                expanded_industry4 = 1
+                industry_organization4 = 1
+                construction4 = 1
+                excavation4 = 1
+                fuel_refining4 = 1
+                advanced_oil_processing = 1
+            }
         }
     }
 
     focus = {
-        id = WAEF_GER_QUALITY_PRODUCTION
-        icon = GFX_goal_generic_construct_civ_factory
-        x = 5
-        y = 4
-        cost = 10
-        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+        id = WAEF_GER_INDUSTRY_43
+        icon = GFX_goal_generic_production
+        x = 29
+        y = 3
+        cost = 13
+        prerequisite = { focus = WAEF_GER_INDUSTRY_41 }
+
         completion_reward = {
-            set_country_flag = WAEF_GER_QUALITY_PRODUCTION
+            set_technology = {
+                assembly_cranes = 1
+                expanded_industry5 = 1
+                industry_organization5 = 1
+                construction5 = 1
+                excavation5 = 1
+                fuel_refining5 = 1
+                superior_oil_processing = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_STREAMLINED
+        icon = GFX_goal_generic_production
+        x = 28
+        y = 4
+        cost = 13
+        prerequisite = { focus = WAEF_GER_INDUSTRY_43 }
+        mutually_exclusive = { focus = WAEF_GER_FLEXIBLE }
+
+        completion_reward = {
+            set_technology = {
+                streamlined_line = 1
+                expanded_industry6 = 1
+                industry_organization6 = 1
+                fuel_refining6 = 1
+                modern_oil_processing = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_FLEXIBLE
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 30
+        y = 4
+        cost = 13
+        prerequisite = { focus = WAEF_GER_INDUSTRY_43 }
+        mutually_exclusive = { focus = WAEF_GER_STREAMLINED }
+
+        completion_reward = {
+            set_technology = {
+                flexible_line = 1
+                construction6 = 1
+                excavation6 = 1
+                airbase6 = 1
+                modern_rubber_processing = 1
+            }
+        }
+    }
+
+    # Electronics and advanced research
+    focus = {
+        id = WAEF_GER_ELECTRONICS_41
+        icon = GFX_goal_generic_scientific_exchange
+        x = 33
+        y = 2
+        cost = 13
+        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+
+        completion_reward = {
+            set_technology = {
+                improved_centimetric_radar = 1
+                advanced_centimetric_radar = 1
+                advanced_computing_machine = 1
+                advanced_encryption = 1
+                advanced_decryption = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_ADVANCED_RESEARCH
+        icon = GFX_goal_generic_scientific_exchange
+        x = 33
+        y = 3
+        cost = 13
+        prerequisite = { focus = WAEF_GER_ELECTRONICS_41 }
+
+        completion_reward = {
+            set_technology = {
+                superior_computing_machine = 1
+                superior_encryption = 1
+                superior_decryption = 1
+                experimental_rockets = 1
+                jet_engines = 1
+                atomic_research = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_ROCKET_AGE
+        icon = GFX_goal_generic_scientific_exchange
+        x = 33
+        y = 4
+        cost = 13
+        prerequisite = { focus = WAEF_GER_ADVANCED_RESEARCH }
+
+        completion_reward = {
+            set_technology = {
+                rocket_engines = 1
+                improved_rocket_engines = 1
+                nuclear_reactor = 1
+            }
+        }
+    }
+
+    # Kriegsmarine
+    focus = {
+        id = WAEF_GER_NAVY_41
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 37
+        y = 2
+        cost = 13
+        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+
+        completion_reward = {
+            set_technology = {
+                ger_frigate_6 = 1
+                ger_destroyer_5 = 1
+                ger_heavy_cruiser_3 = 1
+                ger_battleship_5 = 1
+                ger_carrier_2 = 1
+                ger_light_carrier_2 = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_UBOAT_43
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 36
+        y = 3
+        cost = 13
+        prerequisite = { focus = WAEF_GER_NAVY_41 }
+        mutually_exclusive = { focus = WAEF_GER_SURFACE_43 }
+
+        completion_reward = {
+            set_technology = {
+                ger_submarine_4 = 1
+                ger_cruiser_submarine_3 = 1
+                basic_submarine_snorkel = 1
+                homing_torpedo = 1
+                improved_submarine_mine_laying = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_UBOAT_45
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 36
+        y = 4
+        cost = 13
+        prerequisite = { focus = WAEF_GER_UBOAT_43 }
+
+        completion_reward = {
+            set_technology = {
+                ger_submarine_5 = 1
+                ger_cruiser_submarine_4 = 1
+                improved_submarine_snorkel = 1
+                modern_naval_mines = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_SURFACE_43
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 38
+        y = 3
+        cost = 13
+        prerequisite = { focus = WAEF_GER_NAVY_41 }
+        mutually_exclusive = { focus = WAEF_GER_UBOAT_43 }
+
+        completion_reward = {
+            set_technology = {
+                ger_frigate_7 = 1
+                ger_destroyer_6 = 1
+                ger_light_cruiser_6 = 1
+                ger_light_carrier_3 = 1
+                ger_super_battleship_1 = 1
+            }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_SURFACE_45
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 38
+        y = 4
+        cost = 13
+        prerequisite = { focus = WAEF_GER_SURFACE_43 }
+
+        completion_reward = {
+            set_technology = {
+                ger_frigate_8 = 1
+                ger_frigate_9 = 1
+                ger_destroyer_7 = 1
+                ger_destroyer_8 = 1
+                ger_heavy_cruiser_4 = 1
+                ger_carrier_3 = 1
+            }
         }
     }
 }
