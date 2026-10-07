@@ -5,6 +5,7 @@ tags={
     "Map"
 }
 name="WA Eastern Front"
+picture="thumbnail.png"
 supported_version="1.19.*"
 dependencies={
     "World Ablaze (9.6)"
