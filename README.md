@@ -129,7 +129,7 @@ switch to the appropriate next-law mission. The original WA timeouts are kept.
 
 Because this scenario disables national focuses, the eleven harmful-law
 fatigue increases that WA normally conditions on `continuous_fatigue_handling`
-are unconditional; WA's fatigue-lowering timed effects remain unchanged.
+are unconditional. Collectivization's fatigue-reducing tick also runs without the disabled focus check.
 The existing WA scripted effects implement 0–100 fatigue and spirit updates.
 OBS never receives these missions. Other country-specific economy decisions
 remain dormant. No extra daily polling is introduced.

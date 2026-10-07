@@ -24,7 +24,7 @@ TRADE = {
     "export_focus": 70,
     "limited_exports": 70,
     "closed_economy": 112,
-    "embargoed_economy": 112,
+    "embargoed_economy": 56,
     "collectivization": 112,
 }
 CONSCRIPTION = {

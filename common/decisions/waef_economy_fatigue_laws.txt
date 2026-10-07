@@ -826,15 +826,7 @@ economy_decisions = {
 		is_good = yes
 
 		timeout_effect = {
-			if = {
-				limit = {
-					focus_progress = {
-						focus = continuous_fatigue_handling
-						progress < 1
-					}
-				}
-				economy_fatigue_level_down_1 = yes
-			}
+			economy_fatigue_level_down_1 = yes
 			hidden_effect = {
 				activate_mission = economy_fatigue_collectivization_mission
 			}
