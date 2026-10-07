@@ -9,7 +9,7 @@
         "id": "WAEF_GER_C00",
         "code": "C00",
         "year": 1941,
-        "days": 70,
+        "days": 14,
         "prerequisites": [],
         "display_prerequisites": [],
         "availability_requires": [],
@@ -914,9 +914,7 @@
           "ger_super_heavy_1",
           "ger_super_heavy_tank_chassis_1"
         ],
-        "effects": [
-          "add_ideas = waef_ger_h3_programme"
-        ]
+        "effects": []
       },
       {
         "id": "WAEF_GER_A1",
@@ -1317,7 +1315,7 @@
       {
         "id": "WAEF_GER_R2",
         "code": "R2",
-        "year": 1943,
+        "year": 1945,
         "days": 91,
         "prerequisites": [
           "WAEF_GER_R1"
@@ -1328,14 +1326,18 @@
         "availability_requires": [],
         "exclusive": [],
         "technologies": [
-          "ger_strategic_bomber_2"
+          "ger_heavy_strategic_bomber_ad_tech_1",
+          "ger_heavy_strategic_bomber_ad_tech_2",
+          "ger_strategic_bomber_2",
+          "ger_strategic_bomber_3",
+          "ger_strategic_bomber_ad_tech_2"
         ],
         "effects": []
       },
       {
         "id": "WAEF_GER_R3",
         "code": "R3",
-        "year": 1945,
+        "year": 1947,
         "days": 91,
         "prerequisites": [
           "WAEF_GER_R2"
@@ -1351,14 +1353,11 @@
           "ger_cv_cas_3",
           "ger_cv_cas_ad_tech_5",
           "ger_fast_bomber_ad_tech_3",
-          "ger_heavy_strategic_bomber_ad_tech_1",
-          "ger_heavy_strategic_bomber_ad_tech_2",
           "ger_naval_bomber_2",
           "ger_naval_bomber_ad_tech_2",
           "ger_patrol_2",
           "ger_patrol_ad_tech_2",
-          "ger_strategic_bomber_3",
-          "ger_strategic_bomber_ad_tech_2",
+          "ger_strategic_bomber_ad_tech_3",
           "ger_strike_bomber_3",
           "ger_strike_bomber_ad_tech_3",
           "ger_tactical_bomber_ad_tech_4"
@@ -1793,10 +1792,10 @@
         "prerequisites": [
           "WAEF_SOV_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_SOV_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [],
         "effects": [
@@ -1952,10 +1951,10 @@
         "prerequisites": [
           "WAEF_SOV_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_SOV_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "sov_light_4",
@@ -2111,10 +2110,10 @@
         "prerequisites": [
           "WAEF_SOV_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_SOV_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "sov_cv_fighter_3",
@@ -2262,10 +2261,10 @@
         "prerequisites": [
           "WAEF_SOV_I1"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_SOV_I1"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "sov_armoured_car_3",
@@ -2308,10 +2307,11 @@
           "WAEF_SOV_I1"
         ],
         "display_prerequisites": [
-          "WAEF_SOV_C70",
+          "WAEF_SOV_C70"
+        ],
+        "availability_requires": [
           "WAEF_SOV_I1"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [],
         "effects": [
@@ -2723,10 +2723,10 @@
         "prerequisites": [
           "WAEF_USA_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_USA_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [],
         "effects": [
@@ -2887,10 +2887,10 @@
         "prerequisites": [
           "WAEF_USA_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_USA_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "lend_lease_truck",
@@ -3035,10 +3035,10 @@
         "prerequisites": [
           "WAEF_USA_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_USA_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "usa_fighter_ad_tech_3"
@@ -3193,10 +3193,10 @@
         "prerequisites": [
           "WAEF_USA_I1"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_USA_I1"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "usa_amphibious_1",
@@ -3248,10 +3248,11 @@
           "WAEF_USA_I1"
         ],
         "display_prerequisites": [
-          "WAEF_USA_C70",
+          "WAEF_USA_C70"
+        ],
+        "availability_requires": [
           "WAEF_USA_I1"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [],
         "effects": [
@@ -3663,10 +3664,10 @@
         "prerequisites": [
           "WAEF_ENG_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_ENG_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [],
         "effects": [
@@ -3823,10 +3824,10 @@
         "prerequisites": [
           "WAEF_ENG_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_ENG_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "eng_light_3",
@@ -3967,10 +3968,10 @@
         "prerequisites": [
           "WAEF_ENG_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_ENG_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "eng_fighter_4",
@@ -4113,10 +4114,10 @@
         "prerequisites": [
           "WAEF_ENG_I1"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_ENG_I1"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "eng_armoured_car_2",
@@ -4160,10 +4161,11 @@
           "WAEF_ENG_I1"
         ],
         "display_prerequisites": [
-          "WAEF_ENG_C70",
+          "WAEF_ENG_C70"
+        ],
+        "availability_requires": [
           "WAEF_ENG_I1"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [],
         "effects": [
@@ -4575,10 +4577,10 @@
         "prerequisites": [
           "WAEF_FRA_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_FRA_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [],
         "effects": [
@@ -4728,10 +4730,10 @@
         "prerequisites": [
           "WAEF_FRA_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_FRA_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "fra_assault_spg_4",
@@ -4850,10 +4852,10 @@
         "prerequisites": [
           "WAEF_FRA_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_FRA_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "fra_fighter_5",
@@ -4990,10 +4992,10 @@
         "prerequisites": [
           "WAEF_FRA_I1"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_FRA_I1"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "fra_amphibious_mechanized_infantry_1",
@@ -5031,10 +5033,11 @@
           "WAEF_FRA_I1"
         ],
         "display_prerequisites": [
-          "WAEF_FRA_C70",
+          "WAEF_FRA_C70"
+        ],
+        "availability_requires": [
           "WAEF_FRA_I1"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [],
         "effects": [
@@ -5446,10 +5449,10 @@
         "prerequisites": [
           "WAEF_ITA_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_ITA_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [],
         "effects": [
@@ -5599,10 +5602,10 @@
         "prerequisites": [
           "WAEF_ITA_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_ITA_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "ita_assault_3",
@@ -5745,10 +5748,10 @@
         "prerequisites": [
           "WAEF_ITA_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_ITA_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "ita_fighter_multirole_1",
@@ -5897,10 +5900,10 @@
         "prerequisites": [
           "WAEF_ITA_I1"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_ITA_I1"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "ita_armoured_car_2",
@@ -5944,10 +5947,11 @@
           "WAEF_ITA_I1"
         ],
         "display_prerequisites": [
-          "WAEF_ITA_C70",
+          "WAEF_ITA_C70"
+        ],
+        "availability_requires": [
           "WAEF_ITA_I1"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [],
         "effects": [
@@ -6359,10 +6363,10 @@
         "prerequisites": [
           "WAEF_JAP_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_JAP_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [],
         "effects": [
@@ -6519,10 +6523,10 @@
         "prerequisites": [
           "WAEF_JAP_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_JAP_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "jap_infantry_support_tank_chassis_1",
@@ -6661,10 +6665,10 @@
         "prerequisites": [
           "WAEF_JAP_C00"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_JAP_C00"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "jap_fighter_3",
@@ -6822,10 +6826,10 @@
         "prerequisites": [
           "WAEF_JAP_I1"
         ],
-        "display_prerequisites": [
+        "display_prerequisites": [],
+        "availability_requires": [
           "WAEF_JAP_I1"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [
           "jap_amphibious_1",
@@ -6861,10 +6865,11 @@
           "WAEF_JAP_I1"
         ],
         "display_prerequisites": [
-          "WAEF_JAP_C70",
+          "WAEF_JAP_C70"
+        ],
+        "availability_requires": [
           "WAEF_JAP_I1"
         ],
-        "availability_requires": [],
         "exclusive": [],
         "technologies": [],
         "effects": [
@@ -19592,6 +19597,18 @@
         "ger_jet_fast_bomber_ad_tech_2",
         "ger_jet_tactical_bomber_1",
         "ger_jet_tactical_bomber_2"
+      ]
+    },
+    {
+      "requires_all": [
+        "WAEF_GER_C25"
+      ],
+      "requires_any": [
+        "WAEF_GER_R3"
+      ],
+      "technologies": [
+        "ger_jet_heavy_strategic_bomber_ad_tech_1",
+        "ger_jet_strategic_bomber_1"
       ]
     },
     {

@@ -8,7 +8,7 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_C00
         icon = GFX_goal_generic_scientific_exchange
-        x = 16
+        x = 18
         y = 0
         cost = 10
         available = { always = yes }
@@ -23,8 +23,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_C11
         icon = GFX_goal_generic_construct_civ_factory
-        x = 0
-        y = 2
+        x = 14
+        y = 1
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -41,8 +41,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_C13
         icon = GFX_goal_generic_construct_civ_factory
-        x = 0
-        y = 4
+        x = 14
+        y = 2
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -59,8 +59,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_C15
         icon = GFX_goal_generic_construct_civ_factory
-        x = 0
-        y = 6
+        x = 14
+        y = 3
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -77,8 +77,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_C21
         icon = GFX_goal_generic_scientific_exchange
-        x = 5
-        y = 2
+        x = 18
+        y = 1
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -93,8 +93,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_C23
         icon = GFX_goal_generic_scientific_exchange
-        x = 5
-        y = 4
+        x = 18
+        y = 2
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -110,8 +110,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_C25
         icon = GFX_goal_generic_scientific_exchange
-        x = 5
-        y = 6
+        x = 18
+        y = 3
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -128,7 +128,7 @@ focus_tree = {
         id = WAEF_FRA_C31
         icon = GFX_goal_generic_army_doctrine
         x = 10
-        y = 2
+        y = 1
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -144,7 +144,7 @@ focus_tree = {
         id = WAEF_FRA_C33
         icon = GFX_goal_generic_army_doctrine
         x = 10
-        y = 4
+        y = 2
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -160,7 +160,7 @@ focus_tree = {
         id = WAEF_FRA_C35
         icon = GFX_goal_generic_army_doctrine
         x = 10
-        y = 6
+        y = 3
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -175,8 +175,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_C41
         icon = GFX_goal_generic_construct_civ_factory
-        x = 0
-        y = 7
+        x = 13
+        y = 4
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -191,8 +191,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_C42
         icon = GFX_goal_generic_construct_civ_factory
-        x = 2
-        y = 7
+        x = 15
+        y = 4
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -207,8 +207,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_C51
         icon = GFX_goal_generic_scientific_exchange
-        x = 5
-        y = 7
+        x = 17
+        y = 4
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -223,8 +223,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_C52
         icon = GFX_goal_generic_scientific_exchange
-        x = 7
-        y = 7
+        x = 19
+        y = 4
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -239,8 +239,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_C61
         icon = GFX_goal_generic_army_doctrine
-        x = 10
-        y = 7
+        x = 9
+        y = 4
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -255,8 +255,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_C62
         icon = GFX_goal_generic_army_doctrine
-        x = 12
-        y = 7
+        x = 11
+        y = 4
         cost = 10
         available = { always = yes }
         cancel_if_invalid = yes
@@ -271,13 +271,12 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_C70
         icon = GFX_goal_generic_army_doctrine
-        x = 15
-        y = 2
+        x = 26
+        y = 4
         cost = 10
-        available = { always = yes }
+        available = { has_completed_focus = WAEF_FRA_C00 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_FRA_C00 }
         completion_reward = {
             set_country_flag = waef_operations_unlocked
         }
@@ -286,8 +285,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_I1
         icon = GFX_goal_generic_army_doctrine
-        x = 20
-        y = 2
+        x = 22
+        y = 1
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
@@ -302,8 +301,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_I3
         icon = GFX_goal_generic_army_doctrine
-        x = 20
-        y = 6
+        x = 22
+        y = 2
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
@@ -318,8 +317,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_I5
         icon = GFX_goal_generic_army_doctrine
-        x = 20
-        y = 10
+        x = 22
+        y = 3
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
@@ -334,8 +333,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_G1
         icon = GFX_goal_generic_army_doctrine
-        x = 25
-        y = 2
+        x = 24
+        y = 1
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
@@ -350,8 +349,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_G3
         icon = GFX_goal_generic_army_doctrine
-        x = 25
-        y = 6
+        x = 24
+        y = 2
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
@@ -366,8 +365,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_G5
         icon = GFX_goal_generic_army_doctrine
-        x = 25
-        y = 10
+        x = 24
+        y = 3
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
@@ -382,13 +381,12 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_T1
         icon = GFX_goal_generic_army_tanks
-        x = 35
-        y = 2
+        x = 10
+        y = 5
         cost = 13
-        available = { always = yes }
+        available = { has_completed_focus = WAEF_FRA_C00 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_FRA_C00 }
         completion_reward = {
 
             if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { fra_assault_spg_4 = 1 fra_medium_4 = 1 fra_support_3 = 1 } }
@@ -399,8 +397,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_TA2
         icon = GFX_goal_generic_army_tanks
-        x = 34
-        y = 5
+        x = 9
+        y = 6
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
@@ -417,7 +415,7 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_TA3
         icon = GFX_goal_generic_army_tanks
-        x = 34
+        x = 9
         y = 7
         cost = 13
         available = { always = yes }
@@ -434,8 +432,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_TB2
         icon = GFX_goal_generic_army_tanks
-        x = 37
-        y = 5
+        x = 11
+        y = 6
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
@@ -452,8 +450,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_TB4
         icon = GFX_goal_generic_army_tanks
-        x = 37
-        y = 9
+        x = 11
+        y = 7
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
@@ -470,13 +468,12 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_A1
         icon = GFX_goal_generic_air_fighter
-        x = 45
-        y = 2
+        x = 14
+        y = 5
         cost = 13
-        available = { always = yes }
+        available = { has_completed_focus = WAEF_FRA_C00 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_FRA_C00 }
         completion_reward = {
             air_experience = 10
             if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_fighter_5 = 1 } }
@@ -487,8 +484,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_AA3
         icon = GFX_goal_generic_air_fighter
-        x = 44
-        y = 7
+        x = 13
+        y = 6
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
@@ -505,8 +502,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_AA4
         icon = GFX_goal_generic_air_fighter
-        x = 44
-        y = 9
+        x = 13
+        y = 7
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
@@ -522,8 +519,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_AB3
         icon = GFX_goal_generic_air_fighter
-        x = 47
-        y = 7
+        x = 15
+        y = 6
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
@@ -540,8 +537,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_AB4
         icon = GFX_goal_generic_air_fighter
-        x = 47
-        y = 9
+        x = 15
+        y = 7
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
@@ -557,13 +554,12 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_M2
         icon = GFX_goal_generic_army_doctrine
-        x = 30
-        y = 4
+        x = 26
+        y = 1
         cost = 13
-        available = { always = yes }
+        available = { has_completed_focus = WAEF_FRA_I1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_FRA_I1 }
         completion_reward = {
 
             set_technology = { fra_amphibious_mechanized_infantry_1 = 1 fra_mechanized_infantry_4 = 1 }
@@ -573,8 +569,8 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_M4
         icon = GFX_goal_generic_army_doctrine
-        x = 30
-        y = 8
+        x = 26
+        y = 2
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
@@ -589,14 +585,13 @@ focus_tree = {
     focus = {
         id = WAEF_FRA_O2
         icon = GFX_goal_generic_army_doctrine
-        x = 15
-        y = 4
+        x = 26
+        y = 5
         cost = 10
-        available = { always = yes }
+        available = { has_completed_focus = WAEF_FRA_I1 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_FRA_C70 }
-        prerequisite = { focus = WAEF_FRA_I1 }
         completion_reward = {
             set_country_flag = waef_fra_operations_specialisation
         }

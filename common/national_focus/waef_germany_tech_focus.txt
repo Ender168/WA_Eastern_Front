@@ -10,7 +10,7 @@ focus_tree = {
         icon = GFX_goal_generic_scientific_exchange
         x = 18
         y = 0
-        cost = 10
+        cost = 2
         available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -558,7 +558,7 @@ focus_tree = {
         continue_if_invalid = no
         prerequisite = { focus = WAEF_GER_H2 }
         completion_reward = {
-            add_ideas = waef_ger_h3_programme
+
             set_technology = { ger_combat_armoured_car_5_2 = 1 ger_heavy_assault_tank_4_spg = 1 ger_heavy_tank_4_spg = 1 ger_heavy_tank_4_td = 1 ger_heavy_tank_chassis_4 = 1 ger_heavy_tank_chassis_5 = 1 ger_super_heavy_tank_chassis_1 = 1 }
             if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_armoured_car_6 = 1 ger_heavy_4 = 1 ger_heavy_4_spg = 1 ger_heavy_4_td = 1 ger_light_3_td = 1 ger_light_5 = 1 ger_light_5_aa = 1 ger_light_5_spg = 1 ger_light_5_td = 1 ger_super_heavy_1 = 1 } }
             if = { limit = { has_dlc = "No Step Back" } set_technology = { ger_light_tank_3_td = 1 ger_light_tank_5_aa = 1 ger_light_tank_5_spg = 1 ger_light_tank_5_td = 1 ger_light_tank_chassis_5 = 1 } }
@@ -568,7 +568,7 @@ focus_tree = {
     focus = {
         id = WAEF_GER_A1
         icon = GFX_goal_generic_air_fighter
-        x = 13
+        x = 15
         y = 5
         cost = 13
         available = { has_completed_focus = WAEF_GER_C00 }
@@ -585,7 +585,7 @@ focus_tree = {
     focus = {
         id = WAEF_GER_A2
         icon = GFX_goal_generic_air_fighter
-        x = 13
+        x = 15
         y = 6
         cost = 13
         available = { always = yes }
@@ -602,7 +602,7 @@ focus_tree = {
     focus = {
         id = WAEF_GER_A3
         icon = GFX_goal_generic_air_fighter
-        x = 13
+        x = 15
         y = 7
         cost = 13
         available = { always = yes }
@@ -619,7 +619,7 @@ focus_tree = {
     focus = {
         id = WAEF_GER_W1
         icon = GFX_goal_generic_air_fighter
-        x = 15
+        x = 13
         y = 5
         cost = 13
         available = { has_completed_focus = WAEF_GER_C00 }
@@ -636,7 +636,7 @@ focus_tree = {
     focus = {
         id = WAEF_GER_W2
         icon = GFX_goal_generic_air_fighter
-        x = 15
+        x = 13
         y = 6
         cost = 13
         available = { always = yes }
@@ -653,7 +653,7 @@ focus_tree = {
     focus = {
         id = WAEF_GER_W3
         icon = GFX_goal_generic_air_fighter
-        x = 15
+        x = 13
         y = 7
         cost = 13
         available = { always = yes }
@@ -851,7 +851,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_GER_R1 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_strategic_bomber_2 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_strategic_bomber_2 = 1 ger_strategic_bomber_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_heavy_strategic_bomber_ad_tech_1 = 1 ger_heavy_strategic_bomber_ad_tech_2 = 1 ger_strategic_bomber_ad_tech_2 = 1 } }
         }
     }
 
@@ -867,8 +868,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_GER_R2 }
         completion_reward = {
             waef_grant_german_jet_aircraft = yes
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cas_4 = 1 ger_cv_cas_3 = 1 ger_naval_bomber_2 = 1 ger_patrol_2 = 1 ger_strategic_bomber_3 = 1 ger_strike_bomber_3 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_cas_ad_tech_4 = 1 ger_cv_cas_ad_tech_5 = 1 ger_fast_bomber_ad_tech_3 = 1 ger_heavy_strategic_bomber_ad_tech_1 = 1 ger_heavy_strategic_bomber_ad_tech_2 = 1 ger_naval_bomber_ad_tech_2 = 1 ger_patrol_ad_tech_2 = 1 ger_strategic_bomber_ad_tech_2 = 1 ger_strike_bomber_ad_tech_3 = 1 ger_tactical_bomber_ad_tech_4 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cas_4 = 1 ger_cv_cas_3 = 1 ger_naval_bomber_2 = 1 ger_patrol_2 = 1 ger_strike_bomber_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_cas_ad_tech_4 = 1 ger_cv_cas_ad_tech_5 = 1 ger_fast_bomber_ad_tech_3 = 1 ger_naval_bomber_ad_tech_2 = 1 ger_patrol_ad_tech_2 = 1 ger_strategic_bomber_ad_tech_3 = 1 ger_strike_bomber_ad_tech_3 = 1 ger_tactical_bomber_ad_tech_4 = 1 } }
         }
     }
 

@@ -10,6 +10,7 @@ import argparse, json, re
 from collections import defaultdict
 import generate_1940_tech_baseline as baseline
 import german_focus_revision as german
+import national_focus_layout as layout
 ROOT = Path(__file__).resolve().parents[1]
 SCHOOLS = {'GER':'german','SOV':'soviet','USA':'unitedstates','ENG':'british','FRA':'french','ITA':'italian','JAP':'japanese'}
 FILENAMES = {'GER':'germany','SOV':'soviet','USA':'unitedstates','ENG':'british','FRA':'french','ITA':'italian','JAP':'japanese'}
@@ -73,18 +74,6 @@ def air_route(code,name):
     if code=='ITA':return 'AA' if ('interceptor' in name or ('fighter' in name and 'multirole' not in name and 'heavy' not in name and 'cv_' not in name)) else 'AB'
     if code=='JAP':return 'AB' if 'cv_fighter' in name else 'AA'
 
-def coord(node):
-    # Independent columns; no overlap even in the cross-section German choice.
-    if node=='C00':return 16,0
-    columns={'C1':0,'C2':5,'C3':10,'C4':0,'C5':5,'C6':10,'C7':15,'I':20,'G':25,'M':30,'T':35,'H':40,'A':45,'W':50,'S':55,'O':15}
-    if node.startswith(('C4','C5','C6')):return columns[node[:2]]+(2 if node.endswith('2') else 0),7
-    if node.startswith('C7'):return 15,2
-    if node.startswith('C'):return columns[node[:2]],2+int(node[-1])//2*2
-    if node.startswith('O'):return 15,4
-    if node.startswith(('TA','TB','AA','AB')):
-        return columns[node[0]]+(2 if node[1]=='B' else -1),5+(int(node[-1])-2)*2
-    if node=='T1' or node=='A1':return columns[node[0]],2
-    return columns[node[0]],2+(int(node[-1])-1)*2
 
 def icon(node):
     if node=='C00':return 'GFX_goal_generic_scientific_exchange'
@@ -140,6 +129,7 @@ def main():
         records=german.records(spec['common']) if code=='GER' else spec['common']+nation['records']
         if code=='JAP':records=[(r[0],r[1],'1945 / 91',r[3],'Механизация 1945') if r[0]=='M4' else r for r in records]
         by_code={r[0]:r for r in records}
+        coordinates=layout.coordinates(records,code)
         packages={r[0]:set() for r in records};route_roots={}
         for node in by_code:
             if re.fullmatch(r'(TA|TB|AA|AB|H|W|S)[2-5]',node):route_roots.setdefault(re.sub(r'\d$','',node),node)
@@ -216,7 +206,7 @@ def main():
         chunks=[f'# Generated from docs/FOCUS_PLAN_v1_1.json; WA {baseline.WA_COMMIT}.\nfocus_tree = {{\n    id = {tree}\n    country = {{ factor = 0 modifier = {{ add = 200000 has_country_flag = {school}_technologies_tree_flag OR = {{ tag = WEF tag = EEF }} }} }}\n    default = no\n    reset_on_civilwar = no']
         nation_manifest=[]
         for node,title,when,pre,desc in records:
-            yr,days=map(int,when.split('/'));fid=f'WAEF_{code}_{node}';x,y=german.COORDS[node] if code=='GER' else coord(node)
+            yr,days=map(int,when.split('/'));fid=f'WAEF_{code}_{node}';x,y=coordinates[node]
             deps=[] if node in ('C00','P1','P2') else pre.split(' и ')
             reward=[];ru_effect=[];en_effect=[]
             if node=='A1' or (code=='GER' and node=='W1'):reward.append('air_experience = 10');ru_effect.append('+10 опыта авиации.');en_effect.append('+10 air experience.')
@@ -232,12 +222,16 @@ def main():
                 reward.append(german.JET_EFFECT+' = yes')
                 ru_effect.append('Реактивная техника выдаётся после электроники III и этапа III соответствующей авиационной ветви, в любом порядке завершения.')
                 en_effect.append('Jet aircraft are granted after Electronics III and stage III of their aviation route, completed in either order.')
+            if code=='GER' and node=='R3':
+                en_effect.append('Grants He 277 A-1 (BBA). Ju 132 requires Electronics III; compatible equipment mode is selected automatically.')
+            if code=='GER' and node=='R2':
+                en_effect.append('Grants the He 177 A-5, Me 264 and Ta 400 strategic package.')
             if code=='GER' and node in ['S3','B3','R3']:
                 ru_effect.append('Также выдаёт базовые технологии этапа I двух других ударных авиационных направлений.')
                 en_effect.append('Also grants the stage I technologies of the other two strike aviation routes.')
             # Specific family bonuses, scoped to equipment granted by the selected route.
             bonus=None
-            if (code,node) in [('GER','H3'),('SOV','TB4'),('FRA','TB4')]:bonus=('breakthrough',.05)
+            if (code,node) in [('SOV','TB4'),('FRA','TB4')]:bonus=('breakthrough',.05)
             if (code,node) in [('USA','TA4'),('FRA','TA3'),('JAP','TA4')]:bonus=('build_cost_ic',-.05)
             if (code,node)==('ITA','TA4'):bonus=('build_cost_ic',-.08)
             if (code,node)==('ITA','TB5'):bonus=('reliability',.05)
@@ -245,7 +239,6 @@ def main():
             if (code,node)==('JAP','I3'):bonus=('build_cost_ic',-.05)
             if bonus:
                 family=[n for n in by_code if n.startswith(re.sub(r'\d$','',node))];ids=set().union(*(packages[n] for n in family));equipment=set()
-                if code=='GER' and node=='H3':ids={t for t in ids if german.route(techs[t])=='H'}
                 for tname in ids:
                     for inner in baseline.named_blocks(techs[tname].body,'enable_equipments'):
                         equipment.update(re.findall(r'\b[A-Za-z][A-Za-z0-9_]*\b',inner))
@@ -260,7 +253,7 @@ def main():
             if (code,node)==('SOV','TA4'):
                 ident='waef_sov_serial_armour';ideas.append(f'    {ident} = {{ picture = generic_research allowed = {{ always = no }} removal_cost = -1 modifier = {{ production_factory_efficiency_gain_factor = 0.10 }} }}');reward.append('add_ideas = '+ident);loc(ident,'Серийная бронетанковая программа','Serial Armour Programme');loc(ident+'_desc','+10% прироста производственной эффективности.','+10% production efficiency growth.');ru_effect.append('+10% прироста эффективности.');en_effect.append('+10% efficiency growth.')
             grants=grant(packages[node]);rewards='\n'.join('            '+r for r in reward)+ ('\n'+grants if grants else '')
-            hidden_links=german.HIDDEN_LINKS.get(node,[]) if code=='GER' else []
+            hidden_links=layout.hidden_links(node,code)
             visible_deps=[dep for dep in deps if dep not in hidden_links]
             availability=' '.join('has_completed_focus = WAEF_'+code+'_'+dep for dep in hidden_links) or 'always = yes'
             rows=[f'    focus = {{\n        id = {fid}\n        icon = {icon(node)}\n        x = {x}\n        y = {y}\n        cost = {days//7}','        available = { '+availability+' }','        cancel_if_invalid = yes','        continue_if_invalid = no']

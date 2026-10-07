@@ -12,6 +12,7 @@ def records(common):
     for r in out:
         for old, new in [('1941', 'I'), ('1943', 'II'), ('1945', 'III')]:
             r[1] = r[1].replace(old, new)
+    next(r for r in out if r[0]=='C00')[2]='1941 / 14'
     out += [
         ['P1', 'Концентрированная промышленность', '1941 / 21', 'Выбор школы', 'Заменяет стандартную промышленность на концентрированную'],
         ['P2', 'Рассредоточенная промышленность', '1941 / 21', 'Выбор школы', 'Заменяет стандартную промышленность на рассредоточенную'],
@@ -31,7 +32,9 @@ def records(common):
     ]
     for prefix, title, desc in branches:
         for level, yr in enumerate(LEVELS, 1):
-            if prefix=='R' and level==1:yr=1942  # He 177 designer technology in BBA.
+            if prefix=='R':yr={1:1942,2:1945,3:1947}[level]  # Explicit postwar strategic package requested in playtest.
+            if prefix=='R' and level==2:desc='He 177 A-5, Me 264 и Ta 400'
+            if prefix=='R' and level==3:desc='He 277 A-1 и Ju 132; для реактивного Ju 132 требуется электроника III'
             pre = 'C00' if level == 1 else prefix + str(level - 1)
             out.append([prefix + str(level), title + ' ' + ['I', 'II', 'III'][level - 1], f'{yr} / 91', pre, desc])
     out.append(['O2', 'Штаб наступательных операций', '1942 / 70', 'C70 и I1', 'Подготовка региональной операции: 7 дней'])
@@ -61,7 +64,7 @@ for prefix, x in [('C3', 10), ('C1', 14), ('C2', 18)]:
 for prefix, x in [('U', 20), ('I', 22), ('G', 24), ('M', 26)]:
     for level in [1, 2, 3]:
         COORDS[prefix + str(level)] = (x, level)
-for prefix, x in [('T', 9), ('H', 11), ('A', 13), ('W', 15),
+for prefix, x in [('T', 9), ('H', 11), ('A', 15), ('W', 13),
                   ('S', 19), ('B', 21), ('R', 23)]:
     for level in [1, 2, 3]:
         COORDS[prefix + str(level)] = (x, level + 4)
@@ -128,7 +131,7 @@ def packages(techs, records):
         if is_jet(t):
             options = [family + '1']
             gates[name] = {'any': ['WAEF_GER_' + c for c in options], 'all': ['WAEF_GER_C25']}
-            if t.year <= 1945:
+            if t.year <= 1945 or name in ['ger_jet_heavy_strategic_bomber_ad_tech_1','ger_jet_strategic_bomber_1']:
                 jet_ids[family].add(name)
         elif family:
             if family == 'L':

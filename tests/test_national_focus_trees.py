@@ -83,7 +83,7 @@ class NationalFocusTests(unittest.TestCase):
    for r in rows:
     if r['code'] in reference:
      a=reference[r['code']]
-     self.assertEqual((r['year'],r['days'],r['technologies'],[e for e in r['effects'] if e!='waef_grant_german_jet_aircraft = yes']),(a['year'],a['days'],a['technologies'],[e for e in a['effects'] if e!='waef_grant_german_jet_aircraft = yes']))
+     self.assertEqual((r['year'],None if r['code']=='C00' else r['days'],r['technologies'],[e for e in r['effects'] if e!='waef_grant_german_jet_aircraft = yes']),(a['year'],None if a['code']=='C00' else a['days'],a['technologies'],[e for e in a['effects'] if e!='waef_grant_german_jet_aircraft = yes']))
  def test_all_seven_assimilations_switch_and_grant_baseline(self):
   src=read('common/decisions/waef_technology_assimilation.txt')
   from generate_national_focus_trees import SCHOOLS,START_EXCEPTIONS

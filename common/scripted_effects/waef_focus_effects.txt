@@ -16,6 +16,10 @@ waef_grant_german_jet_aircraft = {
         if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_jet_tactical_bomber_1 = 1 ger_jet_tactical_bomber_2 = 1 } }
         if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_jet_fast_bomber_ad_tech_1 = 1 ger_jet_fast_bomber_ad_tech_2 = 1 } }
     }
+    if = { limit = { has_completed_focus = WAEF_GER_C25 OR = { has_completed_focus = WAEF_GER_R3 } }
+        if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_jet_strategic_bomber_1 = 1 } }
+        if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_jet_heavy_strategic_bomber_ad_tech_1 = 1 } }
+    }
     if = { limit = { has_completed_focus = WAEF_GER_C25 OR = { has_completed_focus = WAEF_GER_U3 } }
         if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_jet_scout_plane_1 = 1 } }
         if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_jet_fighter_ad_tech_1 = 1 ger_jet_scout_plane_ad_tech_1 = 1 } }

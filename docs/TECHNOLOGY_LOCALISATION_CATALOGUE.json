@@ -5294,5 +5294,17 @@
   "ger_air_upgrade_1": {
     "english": "Fw 189 aircraft modules",
     "russian": "Модули самолёта Fw 189"
+  },
+  "ger_strategic_bomber_ad_tech_3": {
+    "english": "Heinkel He 277 A-1",
+    "russian": "Heinkel He 277 A-1"
+  },
+  "ger_jet_heavy_strategic_bomber_ad_tech_1": {
+    "english": "Junkers Ju 132",
+    "russian": "Junkers Ju 132"
+  },
+  "ger_jet_strategic_bomber_1": {
+    "english": "Junkers Ju 132",
+    "russian": "Junkers Ju 132"
   }
 }

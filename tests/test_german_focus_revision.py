@@ -127,7 +127,7 @@ class GermanRevisionTests(unittest.TestCase):
         for r in self.rows.values():self.assertFalse(any('_jet_' in t for t in r['technologies']))
         for dlcs in [set(),{'By Blood Alone'}, {'By Blood Alone','No Step Back'}]:
             designer='By Blood Alone' in dlcs
-            for route in ['A3','B3','U3']:
+            for route in ['A3','B3','R3','U3']:
                 aircraft=set().union(*(set(e['technologies']) for e in self.manifest['german_jet_rewards'] if 'WAEF_GER_'+route in e['requires_any']))
                 expected={t for t in aircraft if ('_ad_tech_' in t)==designer}
                 self.assertTrue(expected)
@@ -142,7 +142,8 @@ class GermanRevisionTests(unittest.TestCase):
             self.assertFalse(grants(self.jet_effect,{'WAEF_GER_C25','WAEF_GER_W3'},dlcs))
             # Finishing a strike alternative never awards the closed bomber jets.
             self.assertFalse(grants(self.jet_effect,{'WAEF_GER_C25','WAEF_GER_S3'},dlcs))
-            self.assertFalse(grants(self.jet_effect,{'WAEF_GER_C25','WAEF_GER_R3'},dlcs))
+            strategic=grants(self.jet_effect,{'WAEF_GER_C25','WAEF_GER_R3'},dlcs)
+            self.assertEqual(strategic,{'ger_jet_heavy_strategic_bomber_ad_tech_1'} if designer else {'ger_jet_strategic_bomber_1'})
 
     def test_all_jet_research_including_postwar_models_requires_finished_electronics(self):
         checked=[]
@@ -162,6 +163,18 @@ class GermanRevisionTests(unittest.TestCase):
             self.assertEqual(self.manifest['research_gates'][name]['requires_focus'],['WAEF_GER_A1'])
         for name in ['ger_jet_fighter_2','ger_jet_fighter_ad_tech_3']:
             self.assertEqual(self.manifest['research_gates'][name]['requires_focus'],['WAEF_GER_W1'])
+
+    def test_strategic_reallocation_fighter_swap_and_no_heavy_bonus(self):
+        old_third={'ger_heavy_strategic_bomber_ad_tech_1','ger_heavy_strategic_bomber_ad_tech_2','ger_strategic_bomber_3','ger_strategic_bomber_ad_tech_2'}
+        self.assertTrue(old_third<=set(self.rows['R2']['technologies']))
+        self.assertFalse(old_third&set(self.rows['R3']['technologies']))
+        self.assertIn('ger_strategic_bomber_ad_tech_3',self.rows['R3']['technologies'])
+        self.assertEqual(self.rows['C00']['days'],14)
+        for i in [1,2,3]:
+            self.assertEqual(get(self.nodes['WAEF_GER_W'+str(i)],'x'),'13')
+            self.assertEqual(get(self.nodes['WAEF_GER_A'+str(i)],'x'),'15')
+        self.assertNotIn('add_ideas = waef_ger_h3_programme',self.rows['H3']['effects'])
+        self.assertNotIn('waef_ger_h3_programme',(ROOT/'common/ideas/waef_focus_programmes.txt').read_text())
 
     def test_all_reward_technology_names_and_screenshot_keys_are_localized(self):
         required={t for rs in self.manifest['schools'].values() for r in rs for t in r['technologies']}

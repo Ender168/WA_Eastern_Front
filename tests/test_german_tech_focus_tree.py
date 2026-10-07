@@ -67,7 +67,8 @@ class GermanTechFocusTreeTests(unittest.TestCase):
             cost = re.search(r"\bcost\s*=\s*([0-9]+)", block)
             self.assertIsNotNone(focus_id)
             self.assertIsNotNone(cost, focus_id.group(1))
-            if focus_id.group(1).endswith(('_P1','_P2')):self.assertEqual(int(cost.group(1)),3)
+            if focus_id.group(1)=='WAEF_GER_C00':self.assertEqual(int(cost.group(1)),2)
+            elif focus_id.group(1).endswith(('_P1','_P2')):self.assertEqual(int(cost.group(1)),3)
             else:self.assertGreaterEqual(int(cost.group(1)), 10, focus_id.group(1))
             self.assertIn("completion_reward = {", block, focus_id.group(1))
 
