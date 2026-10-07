@@ -451,6 +451,12 @@ waef_technology_assimilation = {
         complete_effect = {
             custom_effect_tooltip = GER_unlock_technologies
             			set_country_flag = german_technologies_tree_flag
+                        # Runtime tree switch, matching World Ablaze's own load_focus_tree pattern.
+                        load_focus_tree = {
+                            tree = WAEF_GER_TECH_DOCTRINE
+                            keep_completed = no
+                        }
+                        mark_focus_tree_layout_dirty = yes
             			if = {
             				limit = {
             					has_idea = improvised_weapons
