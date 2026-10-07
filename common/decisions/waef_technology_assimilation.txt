@@ -1795,8 +1795,6 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
 
-            add_timed_idea = { idea = waef_manpower_accounting days = 700 }
-            country_event = { id = waef.1 }
             set_country_flag = waef_starting_forces_created
             }
         }
