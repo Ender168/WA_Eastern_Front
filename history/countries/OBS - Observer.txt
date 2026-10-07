@@ -16,3 +16,12 @@ set_popularities = {
 }
 
 set_country_flag = waef_observer_country
+
+# Passive map holder, excluded from WAEF/Expert AI economic processing.
+set_rule = {
+    can_access_market = no
+    can_create_factions = no
+    can_join_factions = no
+    can_not_build_buildings = yes
+    can_not_declare_war = yes
+}

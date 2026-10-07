@@ -9,10 +9,11 @@ Rules:
 - military seeds: only the selected national air/armor/artillery/infantry/naval files;
 - doctrine technologies are excluded;
 - dependencies and sub-technologies are included recursively only while they remain at or before the cutoff;
-- DLC-gated branches inherit their DLC conditions through leads_to_tech chains;
+- DLC-gated branches inherit their DLC conditions through leads_to_tech and sub_technologies chains;
 - standard_industry is granted as the neutral common industry philosophy;
 - concentrated_industry and dispersed_industry are intentionally excluded.
 - the three hidden WA division-design unlock technologies are forced into every national package.
+- French upgrades requiring inherited equipment variants are excluded: fra_fast_bomber_ad_tech_1_2 and fra_cv_cas_ad_tech_2_2.
 
 Shared technologies: **116**.
 
@@ -25,8 +26,8 @@ Source files:
 - `common/technologies/infantry_fra.txt`
 - `common/technologies/naval_fra.txt`
 
-National technologies: **204**.
-Total with shared: **320**.
+National technologies: **202**.
+Total with shared: **318**.
 
 Technology IDs:
 
@@ -70,7 +71,6 @@ Technology IDs:
 - `fra_cruiser_submarine_4` (1940)
 - `fra_cv_cas_2` (1939)
 - `fra_cv_cas_ad_tech_2` (1939)
-- `fra_cv_cas_ad_tech_2_2` (1940)
 - `fra_cv_fighter_1` (1934)
 - `fra_cv_fighter_2` (1940)
 - `fra_cv_fighter_ad_tech_1` (1934)
@@ -82,7 +82,6 @@ Technology IDs:
 - `fra_destroyer_5` (1934)
 - `fra_destroyer_6` (1936)
 - `fra_fast_bomber_ad_tech_1` (1938)
-- `fra_fast_bomber_ad_tech_1_2` (1940)
 - `fra_fast_bomber_ad_tech_2` (1940)
 - `fra_fighter_1` (1934)
 - `fra_fighter_2` (1936)

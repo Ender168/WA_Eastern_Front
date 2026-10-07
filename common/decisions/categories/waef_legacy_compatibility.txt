@@ -1,0 +1,2198 @@
+# Generated dormant compatibility definitions from WA 691c7085f3ec1333ac2a0742983da8a64011ca8b.
+# IDs remain resolvable; historical decisions are unavailable in this scenario.
+
+AC_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+AC_target_country_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ASG_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+AST_build_up_coastal_defences_fake_decisions_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+AST_emergency_fortifications_fake_decisions_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+AST_emergency_measures_decisions_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+AUS_antischluss_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+AUS_becoming_grossosterreich_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+AUS_danubian_communism_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+AUS_reintegrating_the_empire_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+AUS_subjugating_the_lands_of_old_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+AUS_supporting_italy_in_ethiopia_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+AUS_the_danubian_federation_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BALTIC_entente = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BALTIC_forest_brother_resistance_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BUL_align_bulgaria = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BUL_balkan_confederation = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BUL_bulgarian_administration_of_the_balkans = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BUL_foreign_agreements = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BUL_internal_factions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BUL_macedonian_revolutionary_organizations = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BUL_macedonian_revolutionary_organizations_foreign = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BUL_negotiate_claims_in_the_balkans = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BUL_plot_against_boris_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BUL_purchase_equipment = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BUL_rearmament = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BUL_the_balkan_federation_dream = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BUL_the_fate_of_the_balkans_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+BUL_the_fatherland_front_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+CHI_anti_imperialism = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+CHI_army_reform = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+CHI_border_clashes = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+CHI_communist_infiltration = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+CHI_integrate_the_warlords = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+CHI_peoples_power_struggle = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+CHI_political_power_struggle = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+CHI_seek_japanese_support = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+CHI_war_of_resistance = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+CHI_warlord_in_opposition = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+CHI_xian_incident = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_balance_of_power_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_danish_faction_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_danish_security_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_demand_territory_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_development_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_fortification_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_influence_countries_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_integration_puppets_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_integration_territories_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_military_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_nordic_security_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_occupation_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_offer_protection_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_overlord_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_pan_scandinavianism_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_resistance_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_return_occupied_territory_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_swedish_steel_production_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+DEN_trade_deal_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_config_target_africa_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_config_target_asia_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_config_target_europe_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_config_target_majors_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_config_target_middle_east_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_config_target_modified_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_config_target_north_america_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_config_target_oceania_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_config_target_south_america_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_construction_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_diplomacy_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_diplomacy_army_priorities_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_diplomacy_lend_lease_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_diplomacy_naval_invasion_DECISIONS = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EAI_historical_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ENG_BEF_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ENG_appeal_to_imperial_loyalists = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ENG_concessions_to_the_trade_unions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ENG_enforce_the_naval_treaties = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ENG_imperial_conference_decision = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ENG_internal_factions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ENG_league_of_nations = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ENG_move_to_secure_the_dominions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ENG_organize_the_blackshirts = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ENG_parliament = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EST_convert_FIN_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EST_fight_vaps_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+EST_vaps_revolt_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ETH_defeat_italy_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ETH_second_italo_ethiopian_war_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FIN_coup_preparations = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FIN_finno_soviet_kinship_war = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FIN_foreign_aid = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FIN_foreign_politics_decision_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FIN_gather_local_support = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FIN_internal_factions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FIN_motti_tactics_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FIN_national_defense_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FIN_winter_war_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FRA_civil_war_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FRA_communist_support_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FRA_decolonization = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FRA_export_equipment_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FRA_imperial_actions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FRA_industry_relocation = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FRA_internal_factions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FRA_procure_allied_equipment_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FRA_spanish_intervention_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FRA_the_french_army_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FRA_vichy_france = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+FRA_weapons_purchases_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GER_aid_hun_rom_democratic_civil_war = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GER_austro_hungarian_empire = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GER_case_anton_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GER_festungs_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GER_industry_reform = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GER_internal_factions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GER_mefo_bills_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GER_military_buildup = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GER_operation_valkyire = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GER_opposition_to_hitler = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GER_reichskommissariats = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GRE_equipment_purchases = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GRE_faction_management_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GRE_hellenic_academy_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GRE_investment_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+GRE_pay_back_debt_to_the_ifc_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+HOL_bernhard = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+HOL_gateway_to_europe_eng_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+HOL_gateway_to_europe_ger_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+HOL_gateway_to_europe_hol_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+HOL_obtain_foreign_colonial_investments = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+HOL_prepare_the_inundation_lines = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+HOL_request_allied_favors = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+HOL_secret_staff_talks = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+HOL_war_on_pacifism = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+HUN_change_sides = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+HUN_regency_powers = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+IRQ_equipment_purchases = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+IRQ_internal_factions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ITA_colonial_management_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ITA_internal_factions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ITA_military_reform = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ITA_missiolinis = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ITA_the_communist_uprising = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ITA_the_inevitable_civil_war = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ITA_war_plans = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+JAP_colonial_independence = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+JAP_internal_factions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+JAP_interservice_rivalry = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+JAP_intervene_in_china = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+JAP_pacific_guardian = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+JAP_southern_expansion = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+LAT_delay_perkonkrust_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+LAT_perkonkrust_revolt_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+LIT_iron_wolf_appeasement = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+LIT_iron_wolf_coup = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+MAN_banditry_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+MAN_legitimacy_struggle = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+MAN_manchu_soviet_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+MAN_war_preparations = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+MEN_border_clashes = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+MEX_category_church_power = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+MEX_category_hispanic_solidarity = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+MEX_category_military_issues = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+MEX_category_territorial_integration = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+MTG_naval_treaties = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+NORDIC_cooperation_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+NORDIC_debug_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+NOR_allied_democratic_deploy_prep_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+NOR_allied_democratic_preparation_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+NOR_communist_preparation_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+NOR_convert_merchant_ships_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+NOR_debug_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+NOR_democratic_preparation_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+NOR_exile_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+NOR_fascist_deploy_prep_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+NOR_fascist_preparation_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+NOR_historical_deploy_prep_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+NOR_mobile_government_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+NOR_monarchist_preparation_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POL_anti_capitalist_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POL_anti_fascist_revolution_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POL_cossack_republic_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POL_danzig_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POL_defensive_plans = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POL_fight_against_monarchy_in_LIT_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POL_miedzymorze_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POL_organize_the_peasants_strike = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POL_peasant_strike_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POL_promote_falangism_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POL_reopen_the_maritime_and_colonial_league = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POL_sanacja_falanga_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POL_sanation_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POL_support_monarchy_in_LIT_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POR_arms_purchases = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POR_iberian_summit = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POR_monarchist_cause = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POR_naval_blockade = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POR_overseas_provinces = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POR_prospect_for_resources = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+POR_the_spanish_civil_war = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+PRC_anti_japanese_expedition = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+PRC_border_clashes = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+PRC_counter_guerilla_warfare = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+PRC_guerilla_warfare = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+PRC_infiltrate_nationalist_areas = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+PRC_peoples_power_struggle = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+PRC_provoke_japan = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+Political_actions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+RAJ_the_british_raj = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ROM_change_sides = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ROM_civil_war_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+ROM_dividing_yugo = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SAF_anti_colonialist_crusade = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOUTH_AMERICA_foreign_policy = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOUTH_AMERICA_investment = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_aid_china = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_comecon_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_diplomacy_asia_decision_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_diplomacy_balkan_decision_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_diplomacy_baltic_decision_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_diplomacy_middle_east_decision_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_diplomacy_nordic_decision_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_great_patriotic_war = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_industry_relocation = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_infiltrate_foreign_atomic_programs_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_internal_factions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_kill_trotsky_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_merge_designers_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_military_buildup = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_military_reform = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_national_academy_of_sciences_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_new_ssr_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_panslavic_nationalism = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_paranoia_system = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_permanent_revolution_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_soviet_aid_decision_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_soviet_aid_to_poum_decision_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SOV_soviet_civil_war_dec_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SPA_preparing_the_carlist_insurrection = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SPA_reassert_american_dominance = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SPR_anti_fascist_unity = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SPR_civil_war_offensives = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SPR_expand_resource_extraction = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SPR_foreign_arms_purchases = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SPR_opposition_civil_war_preparations = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SPR_recovering_from_civil_war = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SPR_the_inevitable_civil_war = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SPR_the_seeds_of_revolution = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+STRATEGIC_REGION_eastern_front = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+STRATEGIC_REGION_mediterranean = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+STRATEGIC_REGION_pacific = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_appeal_for_support_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_ball_bearings_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_coalition_war_cabinet_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_coax_nordic_defense_council_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_communist_foreign_influence = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_ebba_palmstierna_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_fascism_buildup = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_hungershield_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_military_matters = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_mines = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_politics = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_rationing_policies = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_rearnament_system = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_royalist_buildup = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWE_train_the_sheltered_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWI_absolute_neutrality_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWI_centralization_power_balance_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWI_debug_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWI_federal_council_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+SWI_military_readiness_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+TUR_fundamentalist_state_management_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+TUR_industrial_projects_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+TUR_kemalist_state_management_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+TUR_kurdish_state_management_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+TUR_reforming_our_armed_forces_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+TUR_the_constitutional_arrows_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+TUR_the_enemy_within = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+TUR_the_fading_father_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+USA_aid_britain = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+USA_aid_china = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+USA_aid_soviet_union = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+USA_congress = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+USA_industry_relocation = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+USA_internal_factions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+USA_intervention_mandate = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+USA_war_measures = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+USA_war_plans = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+VIC_concessions_to_the_germans = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+WA_AI = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+YUG_crush_ustasa = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+YUG_delay_ustasa_uprising = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+YUG_partisan_detachments = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+YUG_peasant_uprisings = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+YUG_progress_crushing_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+YUG_yugoslav_partisan_activity = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+category_exile_forces = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+category_faction_debug_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+category_test_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+colonial_managment = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+communism_on_the_rise = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+convert_neighbours_baltic_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+crisis = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+debug_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+demobilization = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+democratic_on_the_rise = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+economy_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+equipment_missions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+fascism_on_the_rise = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+foreign_influence = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+foreign_mio_decisions_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+foreign_politics = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+foreign_support = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_andalusia_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_arabia_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_assyrian_empire_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_austria_hungary_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_baltic_federation_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_byzantine_empire_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_commonwealth_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_european_union_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_gran_colombia_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_greater_german_reich_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_greater_greece_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_hre_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_idel_ural_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_macedonian_empire_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_majapahit_empire_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_mountainous_republic_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_mutapa_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_nordic_league_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_ottoman_empire_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_persian_empire_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_polynesia_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_rattanakosin_kingdom_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_roman_empire_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_scandinavia_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_siberia_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_thiois_empire_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_transcaucasus_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_turan_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_turkestan_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_united_central_america_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+form_united_netherlands_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+generic_purchase_old_ships_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+generic_refit_civilian_ships_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+governments_in_exile = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+greater_italy_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+industrial_development = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+infiltrate_belarus_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+lar_local_recruitment = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+march_through_estonia = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+nato_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+operations = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+political_actions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+prestigious_projects = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+promote_baltic_fascism_cat = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+propaganda_efforts = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+prospect_for_resources = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+reserve_divisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+sample_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+special_projects = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+support_polish_falange_decisions = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+toolpack_category = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}
+
+war_measures = {
+    icon = generic_political_actions
+    allowed = { always = no }
+    visible = { always = no }
+}

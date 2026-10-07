@@ -32,6 +32,9 @@ jobs:
       - name: Regenerate static map and regional supply mesh
         run: python tools/regenerate_clean_scenario.py
 
+      - name: Validate scenario before publishing generated assets
+        run: python -m unittest discover -s tests -v
+
       - name: Commit generated map assets
         shell: bash
         run: |

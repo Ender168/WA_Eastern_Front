@@ -8,12 +8,6 @@ state = {
 		owner = EEF
 		controller = EEF
 		add_core_of = EEF
-		victory_points = {
-			9206 10
-		}
-		victory_points = {
-			13290 10
-		}
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 2

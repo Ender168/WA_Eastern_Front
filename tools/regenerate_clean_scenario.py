@@ -18,6 +18,10 @@ MAP_DIR = ROOT / "map"
 WA_COMMIT = "691c7085f3ec1333ac2a0742983da8a64011ca8b"
 DEFINITION_URL = f"https://raw.githubusercontent.com/World-Ablaze/world-ablaze-beta/{WA_COMMIT}/map/definition.csv"
 PROVINCES_URL = f"https://raw.githubusercontent.com/World-Ablaze/world-ablaze-beta/{WA_COMMIT}/map/provinces.bmp"
+ADJACENCIES_URL = f"https://raw.githubusercontent.com/World-Ablaze/world-ablaze-beta/{WA_COMMIT}/map/adjacencies.csv"
+
+# Retain the island theatre without leaving Yuzhny cut off from capital supply.
+SUPPLY_PORTS = {213: 3134, 1028: 11047}
 
 WEF_REMOVE = {
     1, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26, 30, 31, 32, 33,
@@ -162,6 +166,8 @@ def render_state(s: dict) -> str:
             "\t\t\tindustrial_complex = 2",
             "\t\t\tarms_factory = 5",
         ]
+    if sid in SUPPLY_PORTS:
+        lines += [f"\t\t\t{SUPPLY_PORTS[sid]} = {{", "\t\t\t\tnaval_base = 1", "\t\t\t}"]
     lines += [
         "\t\t}",
         "\t}",
@@ -259,7 +265,7 @@ def bfs_path(graph: dict[int, set[int]], start: int, goal: int, allowed: set[int
     prev: dict[int, int | None] = {start: None}
     while q:
         cur = q.popleft()
-        for nxt in graph.get(cur, ()):
+        for nxt in sorted(graph.get(cur, ())):
             if nxt not in allowed or nxt in prev:
                 continue
             prev[nxt] = cur
@@ -281,8 +287,10 @@ def generate_supply_and_railways(states: list[dict]) -> None:
     cache = ROOT / ".waef_cache"
     definition = cache / "definition.csv"
     provinces_bmp = cache / "provinces.bmp"
+    adjacencies = cache / "adjacencies.csv"
     download(DEFINITION_URL, definition)
     download(PROVINCES_URL, provinces_bmp)
+    download(ADJACENCIES_URL, adjacencies)
 
     color_to_pid, land, max_pid = read_definition(definition)
 
@@ -306,6 +314,14 @@ def generate_supply_and_railways(states: list[dict]) -> None:
     active_provinces = set(province_to_state)
 
     edges = province_edges_from_bitmap(provinces_bmp, color_to_pid, active_provinces, max_pid)
+    # Pixel contact is not sufficient: WA closes mountain passes explicitly.
+    blocked = set()
+    with adjacencies.open(encoding="utf-8-sig", newline="") as f:
+        for row in csv.reader(f, delimiter=";"):
+            if len(row) > 2 and row[2].strip() == "impassable":
+                a, b = int(row[0]), int(row[1])
+                blocked.add((min(a, b), max(a, b)))
+    edges -= blocked
     graph = build_graph(edges)
 
     state_edges: set[tuple[int, int]] = set()
@@ -368,6 +384,36 @@ def validate(states: list[dict]) -> None:
     for sid in WEF_REMOVE | EEF_REMOVE:
         if by_id[sid]["owner"] != "OBS":
             raise RuntimeError(f"State {sid} was not moved to OBS")
+    for sid, province in SUPPLY_PORTS.items():
+        if by_id[sid]["owner"] != "EEF" or province not in by_id[sid]["provinces"]:
+            raise RuntimeError(f"Invalid supply port {sid}/{province}")
+
+
+def normalize_victory_points(states: list[dict]) -> None:
+    """Relocate inherited misplaced VPs, keeping one value per province."""
+    province_state = {}
+    for s in states:
+        for province in s["provinces"]:
+            if province in province_state:
+                raise RuntimeError(f"Duplicate province {province}")
+            province_state[province] = s
+    values = {}
+    ordered = {s["id"]: [] for s in states}
+    for s in states:
+        for province, value in s["vps"]:
+            if province not in province_state:
+                raise RuntimeError(f"Undefined VP province {province}")
+            values[province] = max(value, values.get(province, value))
+            if province_state[province]["id"] == s["id"] and province not in ordered[s["id"]]:
+                ordered[s["id"]].append(province)
+    # Preserve existing valid VP order, including each state's supply-hub choice.
+    for s in states:
+        for province, _ in s["vps"]:
+            sid = province_state[province]["id"]
+            if province not in ordered[sid]:
+                ordered[sid].append(province)
+    for s in states:
+        s["vps"] = [(province, values[province]) for province in ordered[s["id"]]]
 
 
 def main() -> int:
@@ -376,6 +422,7 @@ def main() -> int:
         raise RuntimeError(f"Expected 1107 state files, found {len(state_paths)}")
 
     states = [parse_state(p) for p in state_paths]
+    normalize_victory_points(states)
     validate(states)
 
     for s in states:
@@ -390,7 +437,6 @@ def main() -> int:
         "bunker =",
         "coastal_bunker",
         "dockyard",
-        "naval_base",
         "air_base",
         "anti_air_building",
         "_refinery",
@@ -403,6 +449,9 @@ def main() -> int:
         for token in forbidden:
             if token in text:
                 raise RuntimeError(f"Forbidden token {token!r} survived in {p}")
+        sid = int(re.search(r"\bid\s*=\s*(\d+)", text).group(1))
+        if "naval_base" in text and sid not in SUPPLY_PORTS:
+            raise RuntimeError(f"Unexpected naval base in {p}")
         if "resources = {" in text and not any(f"id = {sid}" in text for sid in CAPITAL_RESOURCES):
             raise RuntimeError(f"Unexpected resources block survived in {p}")
 

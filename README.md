@@ -12,13 +12,14 @@ Competitive two-player Eastern Front scenario built on **World Ablaze (9.6)**.
 - `OBS` owns the rest of the world;
 - WEF and EEF have no inherited GER/SOV rulers, advisors or OOBs;
 - all 1107 states are statically assigned to WEF, EEF or OBS;
+- OBS is a passive map holder excluded from the scenario economy and Expert AI initialization;
 - normal focus-tree progression is disabled;
 - both players can choose one World Ablaze national technology school;
 - after the school choice, a separate one-time decision applies the 1940 technology baseline;
 - both players can make one permanent ideology choice: democratic, fascist or communist;
 - WEF and EEF have access to a shared generic tank MIO based on World Ablaze's own generic tank archetype;
 - both sides start with a shared Great War air-doctrine baseline, 100 Army XP and 100 Air XP, plus optional startup doctrine mastery decisions and a temporary Land/Air doctrine cost waiver through 29 January 1941;
-- after the 1940 baseline, a one-time force setup decision creates suppression, infantry and medium-tank templates, 300 fully trained infantry divisions, 30 fully trained tank divisions, 50 generals and 5 field marshals per player.
+- after the 1940 baseline, a one-time force setup decision creates suppression, infantry and medium-tank templates, 300 regular infantry divisions, 30 regular tank divisions, 50 distinctly named generals and 5 field marshals per player.
 
 ## Static map
 
@@ -76,7 +77,9 @@ Iron and aluminium are absent.
 - one generated supply hub per WEF/EEF state;
 - hubs use the first VP province where possible;
 - adjacent playable states are connected by generated level-3 railways;
-- railway routing uses the pinned World Ablaze province bitmap;
+- railway routing uses the pinned World Ablaze province bitmap and impassable adjacency overrides;
+- two level-1 supply ports in Murmanskaya and Yuzhny connect the retained EEF island;
+- both starting-force packages include 50 logistics convoys;
 - shared railway segments are deduplicated.
 
 ## Replace paths
@@ -115,3 +118,33 @@ with a 1940 cutoff and dependency closure.
 ## Dependency
 
 World Ablaze Workshop ID: `2149567872`
+
+## Crash-safety and regeneration
+
+Daily fuel synchronization chooses the economic-law branch before testing the
+current spirit. Repeated calls preserve the intended combined -75% capacity
+modifier instead of falling through to the full penalty under civilian economy.
+
+Dormant historical decision/category definitions retain IDs referenced by WA
+while preventing these decisions from appearing or executing in this scenario.
+Pinned WA safety overlays exclude OBS from economic/Expert AI startup and
+periodic handlers and guard factory-ratio divisions against zero denominators.
+
+Regenerate from a checkout of WA commit
+`691c7085f3ec1333ac2a0742983da8a64011ca8b`:
+
+```bash
+python tools/generate_1940_tech_baseline.py --wa-root /path/to/world-ablaze
+python tools/generate_wa_compatibility.py /path/to/world-ablaze
+python tools/regenerate_clean_scenario.py
+python -m unittest discover -s tests -v
+```
+
+The French MB.134 and LN.402 upgrade grants are excluded because they require
+national equipment-variant history absent from WEF/EEF. The exclusions apply
+through recursive dependency/subtechnology traversal. DLC conditions propagate
+through both technology links and subtechnologies.
+
+Manpower accounting remains disabled during crash diagnosis. The previously
+planned conscription schedule and war-preparation systems are not implemented
+by this corrective pass.

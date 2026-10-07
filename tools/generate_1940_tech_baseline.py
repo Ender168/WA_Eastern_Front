@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import urllib.request
@@ -20,7 +21,12 @@ CUTOFF_YEAR = 1940
 
 # WAEF uses the neutral industry philosophy as the common 1940 baseline.
 # The two mutually exclusive specialisations remain unresearched.
-FORCE_EXCLUDE = {"concentrated_industry", "dispersed_industry"}
+FORCE_EXCLUDE = {
+    "concentrated_industry", "dispersed_industry",
+    # These upgrades require a pre-existing national equipment variant.
+    # WEF/EEF have no inherited French equipment-variant history.
+    "fra_fast_bomber_ad_tech_1_2", "fra_cv_cas_ad_tech_2_2",
+}
 
 # Hidden World Ablaze unlock technologies used by national focuses to make
 # division-template battalion categories free to add/remove. They have no
@@ -241,15 +247,15 @@ def selected_national_files(all_paths: set[str], suffix: str) -> set[str]:
 
 
 def closure(seed: set[str], techs: dict[str, Tech]) -> set[str]:
-    chosen = set(seed)
-    queue = deque(seed)
+    chosen = set(seed) - FORCE_EXCLUDE
+    queue = deque(sorted(chosen))
     while queue:
         name = queue.popleft()
         tech = techs[name]
 
         # Real prerequisites must not point beyond the requested cutoff.
         for dep in tech.dependencies:
-            if dep not in techs or dep in chosen:
+            if dep not in techs or dep in chosen or dep in FORCE_EXCLUDE:
                 continue
             child = techs[dep]
             if child.doctrine:
@@ -265,7 +271,7 @@ def closure(seed: set[str], techs: dict[str, Tech]) -> set[str]:
         # sub_technologies are variants unlocked by the parent, not
         # prerequisites. Keep only variants that themselves fit the cutoff.
         for sub in tech.sub_technologies:
-            if sub not in techs or sub in chosen:
+            if sub not in techs or sub in chosen or sub in FORCE_EXCLUDE:
                 continue
             child = techs[sub]
             if child.doctrine or child.year > CUTOFF_YEAR:
@@ -291,7 +297,7 @@ def eligible_seed(path_set: set[str], techs: dict[str, Tech]) -> set[str]:
 def effective_conditions(techs: dict[str, Tech]) -> dict[str, set[tuple[tuple[str, ...], tuple[str, ...]]]]:
     parents: dict[str, set[str]] = defaultdict(set)
     for parent_name, tech in techs.items():
-        for child in tech.leads_to:
+        for child in (*tech.leads_to, *tech.sub_technologies):
             if child in techs:
                 parents[child].add(parent_name)
 
@@ -302,7 +308,8 @@ def effective_conditions(techs: dict[str, Tech]) -> dict[str, set[tuple[tuple[st
         if name in memo:
             return memo[name]
         if name in stack:
-            return {unconditional}
+            # A cycle is not an unconditional path through a DLC gate.
+            return set()
 
         tech = techs[name]
         explicit = (tech.requires_dlc, tech.forbids_dlc)
@@ -380,19 +387,26 @@ def render_effect(
 
 
 def main() -> None:
-    tree = json.loads(fetch_text(TREE_URL))
-    paths = {
-        item["path"]
-        for item in tree["tree"]
-        if item.get("type") == "blob"
-        and item["path"].startswith("common/technologies/")
-        and item["path"].endswith(".txt")
-    }
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--wa-root", type=Path, help="Local checkout of pinned World Ablaze")
+    args = parser.parse_args()
+    if args.wa_root:
+        paths = {str(p.relative_to(args.wa_root)) for p in
+                 (args.wa_root / "common/technologies").glob("*.txt")}
+    else:
+        tree = json.loads(fetch_text(TREE_URL))
+        paths = {
+            item["path"] for item in tree["tree"]
+            if item.get("type") == "blob"
+            and item["path"].startswith("common/technologies/")
+            and item["path"].endswith(".txt")
+        }
 
     all_techs: dict[str, Tech] = {}
     duplicates: dict[str, list[str]] = defaultdict(list)
     for path in sorted(paths):
-        text = fetch_text(RAW + path)
+        text = ((args.wa_root / path).read_text(encoding="utf-8-sig")
+                if args.wa_root else fetch_text(RAW + path))
         for name, body in technology_blocks(text).items():
             tech = parse_tech(name, path, body)
             if name in all_techs:
@@ -416,6 +430,8 @@ def main() -> None:
         school_files[school] = files
         national = closure(eligible_seed(files, all_techs), all_techs)
         school_sets[school] = national - shared
+    if FORCE_EXCLUDE & (shared | set().union(*school_sets.values())):
+        raise RuntimeError("An excluded technology survived generation")
 
     effects = [
         "# Generated from World Ablaze technology definitions.",
@@ -447,10 +463,11 @@ def main() -> None:
         "- military seeds: only the selected national air/armor/artillery/infantry/naval files;",
         "- doctrine technologies are excluded;",
         "- dependencies and sub-technologies are included recursively only while they remain at or before the cutoff;",
-        "- DLC-gated branches inherit their DLC conditions through leads_to_tech chains;",
+        "- DLC-gated branches inherit their DLC conditions through leads_to_tech and sub_technologies chains;",
         "- standard_industry is granted as the neutral common industry philosophy;",
         "- concentrated_industry and dispersed_industry are intentionally excluded.",
         "- the three hidden WA division-design unlock technologies are forced into every national package.",
+        "- French upgrades requiring inherited equipment variants are excluded: fra_fast_bomber_ad_tech_1_2 and fra_cv_cas_ad_tech_2_2.",
         "",
         f"Shared technologies: **{len(shared)}**.",
         "",
