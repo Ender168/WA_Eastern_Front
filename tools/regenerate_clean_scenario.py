@@ -446,14 +446,14 @@ def main() -> int:
         sid = int(re.search(r"\bid\s*=\s*(\d+)", text).group(1))
         if "naval_base" in text and sid not in SUPPLY_PORTS:
             raise RuntimeError(f"Unexpected naval base in {p}")
-        is_player = bool(re.search(r"(?m)^\\s*owner\\s*=\\s*(?:WEF|EEF)\\s*$", text))
+        is_player = bool(re.search(r"(?m)^\s*owner\s*=\s*(?:WEF|EEF)\s*$", text))
         if ("resources = {" in text) != is_player:
             raise RuntimeError(f"Resource block mismatch for player/observer state {p}")
         for building, level in PLAYER_BUILDING_PACKAGE.items():
-            signature = f"\\t\\t\\t{building} = {level}"
+            signature = f"\t\t\t{building} = {level}"
             if (signature in text) != is_player:
                 raise RuntimeError(f"Static building {building} mismatch in {p}")
-        if re.search(r"(?m)^\\s*(?:synthetic_refinery|steel_refinery|aluminium_refinery|hydro_steel_refinery_inactive|hydro_aluminium_refinery_inactive)\\s*=", text):
+        if re.search(r"(?m)^\s*(?:synthetic_refinery|steel_refinery|aluminium_refinery|hydro_steel_refinery_inactive|hydro_aluminium_refinery_inactive)\s*=", text):
             raise RuntimeError(f"Unexpected additional refinery in {p}")
 
     print("Static scenario map regenerated successfully.")
