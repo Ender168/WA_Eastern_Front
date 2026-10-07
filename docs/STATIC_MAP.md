@@ -48,7 +48,9 @@ WEF/EEF states receive:
 
 - manpower = **725000**;
 - civilian factories = **2**;
-- military factories = **5**.
+- military factories = **5**;
+- iron = **25**;
+- hydro steel refinery = **1**.
 
 OBS states receive:
 
