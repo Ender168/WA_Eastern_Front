@@ -55,12 +55,12 @@ PLAYER_RESOURCE_PACKAGE = {
     "tungsten": 2,
     "chromium": 3,
     "coal": 35,
-    "iron": 25,
+    "iron": 120,
 }
 
 PLAYER_BUILDING_PACKAGE = {
     "fuel_silo": 1,
-    "hydro_steel_refinery": 15,
+    "hydro_steel_refinery": 12,
     "hydro_aluminium_refinery": 5,
 }
 

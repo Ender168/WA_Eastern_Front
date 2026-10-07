@@ -13,13 +13,13 @@ class StateEconomyTests(unittest.TestCase):
         "tungsten": 2,
         "chromium": 3,
         "coal": 35,
-        "iron": 25,
+        "iron": 120,
     }
     BUILDINGS = {
         "industrial_complex": 2,
         "arms_factory": 5,
         "fuel_silo": 1,
-        "hydro_steel_refinery": 15,
+        "hydro_steel_refinery": 12,
         "hydro_aluminium_refinery": 5,
     }
 
@@ -30,7 +30,7 @@ class StateEconomyTests(unittest.TestCase):
                           ("fuel_silo", "hydro_steel_refinery", "hydro_aluminium_refinery")})
         city = get(get(parse((ROOT / "common/state_category/city.txt").read_text()), "state_categories"), "city")
         self.assertEqual(int(get(city, "local_building_slots")), 40)
-        self.assertEqual(sum(self.BUILDINGS.values()), 28)
+        self.assertEqual(sum(self.BUILDINGS.values()), 25)
 
     def test_player_regions_and_observer(self):
         counts = {"WEF": 0, "EEF": 0, "OBS": 0}

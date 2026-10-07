@@ -56,14 +56,14 @@ special buildings and state modifiers are removed by the clean-map generator.
 ## Resources and starter industry
 
 Every WEF and EEF state has the same **static**, history-defined resource package:
-oil 2, bauxite 11, rubber 3, tungsten 2, chromium 3, coal 35, iron 25.
+oil 2, bauxite 11, rubber 3, tungsten 2, chromium 3, coal 35, iron 120.
 Natural steel and aluminium resources are absent: those are produced by the
 hydro refineries.
 
-Each player state additionally has one fuel silo, 15 hydro steel refineries,
+Each player state additionally has one fuel silo, 12 hydro steel refineries,
 and five hydro aluminium refineries, alongside the existing two civilian
 factories and five military factories. The existing `city` state category
-provides **40 building slots**: 28 are used by this package, leaving 12 free.
+provides **40 building slots**: 25 are used by this package, leaving 15 free.
 Existing infrastructure and province naval bases are preserved.
 
 OBS states do not get any of the package. Resource and building grants are
