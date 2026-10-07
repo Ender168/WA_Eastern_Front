@@ -61,16 +61,6 @@ ideas = {
             modifier = { conscription = 0.050 }
         }
 
-        waef_prewar_truce = {
-            picture = generic_army_problems
-            allowed = { always = no }
-            removal_cost = -1
-
-            rule = {
-                can_not_declare_war = yes
-            }
-        }
-
         waef_offensive_momentum = {
             picture = generic_army_problems
             allowed = { always = no }

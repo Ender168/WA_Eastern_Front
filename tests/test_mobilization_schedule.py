@@ -107,7 +107,7 @@ class SemiannualMobilizationTests(unittest.TestCase):
         defs = get(get(read("common/ideas/waef_scenario_ideas.txt"), "ideas"), "country")
         names = [n.key for n in defs if re.fullmatch(r"waef_mobilization_\d{2}", n.key)]
         self.assertEqual(len(names), 10)
-        self.assertIsNotNone(get(defs, "waef_prewar_truce"))
+        self.assertIsNone(get(defs, "waef_prewar_truce"))
         self.assertIsNotNone(get(defs, "waef_offensive_momentum"))
         events = [get(e.value, "id") for e in read("events/waef_events.txt") if e.key == "country_event"]
         self.assertEqual(events.count("waef.2"), 1)

@@ -150,5 +150,6 @@ The starting-force decision activates 700 days of manpower accounting:
 The semiannual mobilization schedule adds 0.5 percentage points of conscription
 on each March 1 and September 1 starting in 1941, reaching +5% on
 September 1, 1945. The first wave triggers the waef.2 explanation event.
-Prewar truce and offensive-momentum spirits are defined but not yet activated;
-war-preparation decisions remain for a later implementation stage.
+The offensive-momentum (+10% division attack) spirit is defined but not yet
+activated; war-preparation decisions remain for a later implementation stage.
+No additional prewar ban on declarations of war is imposed by this scenario.

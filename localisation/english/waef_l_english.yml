@@ -159,8 +159,6 @@
  waef_mobilization_45_desc:0 "Semiannual mobilization waves increase recruitable population by 0.5 percentage points each March 1 and September 1, from 1941 through September 1945. Current bonus: +4.5 percentage points. Maximum bonus: +5 percentage points."
  waef_mobilization_50:0 "Scheduled Mobilization (+5.0%)"
  waef_mobilization_50_desc:0 "Semiannual mobilization waves increase recruitable population by 0.5 percentage points each March 1 and September 1, from 1941 through September 1945. Current bonus: +5.0 percentage points. Maximum bonus: +5 percentage points."
- waef_prewar_truce:0 "Prewar Truce"
- waef_prewar_truce_desc:0 "War declarations are prohibited while the scenario truce is active."
  waef_offensive_momentum:0 "Offensive Momentum"
  waef_offensive_momentum_desc:0 "Land divisions receive a 10% attack bonus while this temporary spirit is active."
  waef.2.t:0 "Scheduled Mobilization Begins"
