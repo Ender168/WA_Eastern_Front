@@ -1,0 +1,79 @@
+waef_war_setup = {
+    waef_war_preparation_countdown = {
+        icon = generic_prepare_civil_war
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        # Explicitly activated in both country histories at scenario start.
+        # This is an informational timed mission, not a second war restriction.
+        activation = { always = no }
+        available = { always = no }
+        visible = {
+            has_global_flag = waef_scenario_1941
+            NOT = { has_country_flag = waef_war_unlocked }
+            has_war = no
+        }
+
+        selectable_mission = no
+        fire_only_once = yes
+        is_good = no
+        days_mission_timeout = 172
+
+        timeout_effect = {
+            set_country_flag = waef_war_unlocked
+        }
+    }
+
+    waef_declare_scenario_war = {
+        icon = generic_operation
+
+        allowed = {
+            OR = { tag = WEF tag = EEF }
+        }
+
+        visible = {
+            has_global_flag = waef_scenario_1941
+            OR = {
+                has_country_flag = waef_war_unlocked
+                date > 1941.6.21
+            }
+            NOT = { has_country_flag = waef_scenario_war_declared }
+            has_war = no
+        }
+
+        available = {
+            OR = {
+                has_country_flag = waef_war_unlocked
+                date > 1941.6.21
+            }
+            has_war = no
+        }
+
+        cost = 0
+        fire_only_once = yes
+
+        complete_effect = {
+            if = {
+                limit = { tag = WEF }
+                declare_war_on = {
+                    target = EEF
+                    type = annex_everything
+                }
+            }
+            else_if = {
+                limit = { tag = EEF }
+                declare_war_on = {
+                    target = WEF
+                    type = annex_everything
+                }
+            }
+
+            add_timed_idea = { idea = waef_offensive_momentum days = 90 }
+            set_country_flag = waef_scenario_war_declared
+        }
+
+        ai_will_do = { base = 0 }
+    }
+}
