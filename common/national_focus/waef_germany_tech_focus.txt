@@ -1,0 +1,103 @@
+focus_tree = {
+    id = WAEF_GER_TECH_DOCTRINE
+
+    default = no
+
+    focus = {
+        id = WAEF_GER_TECH_ROOT
+        icon = GFX_goal_generic_scientific_exchange
+        x = 5
+        y = 0
+        cost = 10
+        completion_reward = {
+            set_country_flag = WAEF_GER_TECH_TREE_ACTIVE
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_ARMY_REFORM
+        icon = GFX_goal_generic_army_doctrine
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+        completion_reward = {
+            unlock_technology = infantry_weapons3
+            unlock_technology = support_weapons3
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_MOBILE_ARMOUR
+        icon = GFX_goal_generic_army_doctrine
+        x = 2
+        y = 2
+        cost = 10
+        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+        completion_reward = {
+            set_country_flag = WAEF_GER_MOBILE_ARMOUR
+            unlock_technology = medium_tank_chassis
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_HEAVY_ARMOUR
+        icon = GFX_goal_generic_army_doctrine
+        x = 4
+        y = 2
+        cost = 10
+        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+        completion_reward = {
+            set_country_flag = WAEF_GER_HEAVY_ARMOUR
+            unlock_technology = heavy_tank_chassis
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_FIGHTER_SCHOOL
+        icon = GFX_goal_generic_air_fighter
+        x = 6
+        y = 2
+        cost = 10
+        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+        completion_reward = {
+            set_country_flag = WAEF_GER_FIGHTER_SCHOOL
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_TACTICAL_AIR
+        icon = GFX_goal_generic_air_bomber
+        x = 8
+        y = 2
+        cost = 10
+        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+        completion_reward = {
+            set_country_flag = WAEF_GER_TACTICAL_AIR
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_MASS_PRODUCTION
+        icon = GFX_goal_generic_production
+        x = 3
+        y = 4
+        cost = 10
+        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+        completion_reward = {
+            set_country_flag = WAEF_GER_MASS_PRODUCTION
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_QUALITY_PRODUCTION
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 5
+        y = 4
+        cost = 10
+        prerequisite = { focus = WAEF_GER_TECH_ROOT }
+        completion_reward = {
+            set_country_flag = WAEF_GER_QUALITY_PRODUCTION
+        }
+    }
+}
