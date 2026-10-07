@@ -1,0 +1,17 @@
+# First-stage visual experiment: one state, an existing WA sprite, no effects.
+# The state anchor is supplied by the engine; it is not a province coordinate.
+scripted_gui = {
+    waef_strategic_mapicon_test = {
+        context_type = state_mapicon
+        window_name = "waef_strategic_mapicon_test_window"
+
+        mapicon_targets = {
+            target_trigger = { state = 810 }
+        }
+        visible = {
+            has_global_flag = waef_scenario_1941
+            state = 810
+        }
+        ai_enabled = { always = no }
+    }
+}
