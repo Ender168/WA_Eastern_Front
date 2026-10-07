@@ -1,0 +1,4 @@
+waef_wef_offensive_local_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans army_attack_factor = 0.05 }
+waef_eef_offensive_local_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans army_attack_factor = 0.05 }
+waef_wef_offensive_regional_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans army_attack_factor = 0.05 local_org_regain = 0.10 }
+waef_eef_offensive_regional_modifier = { enable = { always = yes } icon = GFX_modifiers_generic_military_plans army_attack_factor = 0.05 local_org_regain = 0.10 }

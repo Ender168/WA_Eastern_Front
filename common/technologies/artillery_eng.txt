@@ -1,0 +1,2204 @@
+#!gfx:interface\afo_technologies_artillery.gfx
+technologies = {
+
+	eng_artillery_1 = {
+
+		enable_equipments = {
+			eng_art_1
+		}
+
+		research_cost = 2
+
+		start_year = 1934
+
+		path = {
+			leads_to_tech = eng_artillery_upgrade_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = eng_pack_artillery_1
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 0 y = 0 }
+		}
+
+		categories = {
+			major_technologies
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+		}
+	}
+
+	eng_artillery_upgrade_1 = {
+
+		category_artillery = {
+			soft_attack = 0.1
+			defense = 0.1
+		}
+
+		path = {
+			leads_to_tech = eng_artillery_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1936
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			major_technologies
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+		}
+	}
+
+	eng_artillery_2 = {
+
+		enable_equipments = {
+			eng_art_2
+		}
+
+		research_cost = 2
+
+		start_year = 1937
+
+		path = {
+			leads_to_tech = eng_artillery_upgrade_2
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 0 y = 4 }
+		}
+
+		categories = {
+			major_technologies
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 1000
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1000
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	eng_artillery_upgrade_2 = {
+
+		category_artillery = {
+			soft_attack = 0.1
+			breakthrough = 0.1
+			defense = 0.1
+		}
+
+		path = {
+			leads_to_tech = eng_artillery_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1939
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 0 y = 8 }
+		}
+
+		categories = {
+			major_technologies
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 1000
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1941.1.1"
+			}
+		}
+	}
+
+	eng_artillery_3 = {
+
+		enable_equipments = {
+			eng_art_3
+		}
+
+		research_cost = 2
+
+		start_year = 1940
+
+		path = {
+			leads_to_tech = eng_artillery_upgrade_3
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 0 y = 10 }
+		}
+
+		categories = {
+			major_technologies
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 1000
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 1000
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	eng_artillery_upgrade_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+
+
+		category_artillery = {
+			soft_attack = 0.1
+			defense = 0.1
+		}
+
+		path = {
+			leads_to_tech = eng_artillery_upgrade_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1942
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 0 y = 14 }
+		}
+
+		categories = {
+			major_technologies
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	eng_artillery_upgrade_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+
+
+		category_artillery = {
+            soft_attack = 0.2
+		}
+
+		path = {
+			leads_to_tech = eng_artillery_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1945
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 0 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	eng_artillery_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 } } }
+
+
+		enable_equipments = {
+			eng_art_4
+		}
+
+		research_cost = 2
+
+		start_year = 1947
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 0 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1948.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1949.1.1"
+			}
+		}
+	}
+
+	eng_pack_artillery_1 = {
+
+		enable_equipments = {
+			eng_p_art_1
+		}
+
+		research_cost = 2
+
+		start_year = 1934
+
+		path = {
+			leads_to_tech = eng_pack_artillery_2
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -3  y = 0 }
+		}
+
+		categories = {
+			major_technologies
+			artillery
+			pack_artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+		}
+	}
+	eng_pack_artillery_2 = {
+
+		enable_equipments = {
+			eng_p_art_2
+		}
+
+		research_cost = 2
+
+		start_year = 1937
+
+		path = {
+			leads_to_tech = eng_pack_artillery_3
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -3  y = 4 }
+		}
+
+		categories = {
+			major_technologies
+			artillery
+			pack_artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+		}
+	}
+	eng_pack_artillery_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+
+
+		enable_equipments = {
+			eng_p_art_3
+		}
+
+		research_cost = 2
+
+		start_year = 1943
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -3  y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			artillery
+			pack_artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+		}
+	}
+
+	eng_heavy_artillery_1 = {
+
+		enable_equipments = {
+			eng_hv_art_1
+		}
+
+		research_cost = 2
+
+		start_year = 1934
+
+		path = {
+			leads_to_tech = eng_heavy_artillery_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = eng_anti_tank_1
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 3 y = 0 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_artillery
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+		}
+	}
+
+	eng_heavy_artillery_2 = {
+
+		enable_equipments = {
+			eng_hv_art_2
+		}
+
+		research_cost = 2
+
+		start_year = 1938
+
+		path = {
+			leads_to_tech = eng_heavy_artillery_3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = eng_rocket_upgrade_1
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 3 y = 6 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_artillery
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				tag = AST
+			}
+			modifier = {
+				factor = 0
+				tag = CAN
+			}
+			modifier = {
+				factor = 0
+				tag = NZL
+			}
+			modifier = {
+				factor = 0
+				tag = SAF
+			}
+		}
+	}
+
+	eng_heavy_artillery_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+
+
+		enable_equipments = {
+			eng_hv_art_3
+		}
+
+		path = {
+			leads_to_tech = eng_heavy_artillery_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1941
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 3 y = 12 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_artillery
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1943.1.1"
+			}
+		}
+	}
+
+	eng_heavy_artillery_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+
+
+		enable_equipments = {
+			eng_hv_art_4
+		}
+
+		research_cost = 2
+
+		start_year = 1945
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 3 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_artillery
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	eng_rocket_upgrade_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+
+
+		rocket_artillery = {
+			soft_attack = 0.1
+			breakthrough = 0.05
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.1
+			breakthrough = 0.05
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.1
+			breakthrough = 0.05
+		}
+		armoured_rocket_brigade = {
+			soft_attack = 0.1
+			breakthrough = 0.05
+		}
+		armoured_rocket = {
+			soft_attack = 0.1
+			breakthrough = 0.05
+		}
+
+		path = {
+			leads_to_tech = eng_rocket_upgrade_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1941
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 6 y = 12 }
+		}
+
+		categories = {
+			major_technologies
+			rocket_artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1943.1.1"
+			}
+		}
+	}
+
+	eng_rocket_upgrade_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+
+
+		rocket_artillery = {
+			soft_attack = 0.15
+			defense = 0.1
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.15
+			defense = 0.1
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.15
+			defense = 0.1
+		}
+		armoured_rocket_brigade = {
+			soft_attack = 0.15
+			defense = 0.1
+		}
+		armoured_rocket = {
+			soft_attack = 0.15
+			defense = 0.1
+		}
+
+		path = {
+			leads_to_tech = eng_rocket_artillery_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1943
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 6 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			rocket_artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	eng_rocket_artillery_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+
+
+		enable_equipments = {
+			eng_r_art_1
+		}
+
+		path = {
+			leads_to_tech = eng_rocket_upgrade_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1944
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 6 y = 18 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1946.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			rocket_artillery
+		}
+	}
+
+	eng_rocket_upgrade_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+
+
+		rocket_artillery = {
+			soft_attack = 0.25
+			breakthrough = 0.05
+			defense = 0.2
+		}
+		rocket_artillery_brigade = {
+			soft_attack = 0.25
+			breakthrough = 0.05
+			defense = 0.2
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.25
+			breakthrough = 0.05
+			defense = 0.2
+		}
+		armoured_rocket_brigade = {
+			soft_attack = 0.25
+			breakthrough = 0.05
+			defense = 0.2
+		}
+		armoured_rocket = {
+			soft_attack = 0.25
+			breakthrough = 0.05
+			defense = 0.2
+		}
+
+		research_cost = 1.5
+
+		start_year = 1946
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 6 y = 22 }
+		}
+
+		categories = {
+			major_technologies
+			rocket_artillery
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	eng_anti_tank_1 = {
+
+		enable_equipments = {
+			eng_at_1
+		}
+
+		path = {
+			leads_to_tech = eng_anti_tank_upgrade_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1936
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 9 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 4000
+				tag = CAN
+				date > "1938.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_tank
+		}
+	}
+
+	eng_anti_tank_upgrade_1 = {
+
+		category_anti_tank = {
+			defense = 0.5
+		}
+
+		path = {
+			leads_to_tech = eng_anti_tank_upgrade_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1938
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 9 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1940.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_tank
+		}
+	}
+
+	eng_anti_tank_upgrade_2 = {
+
+		category_anti_tank = {
+			hard_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = eng_anti_tank_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = eng_heavy_anti_tank_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1940
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 9 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1942.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_tank
+		}
+	}
+
+	eng_anti_tank_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+
+
+		enable_equipments = {
+			eng_at_2
+		}
+
+		path = {
+			leads_to_tech = eng_anti_tank_upgrade_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1941
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 9 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1943.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_tank
+		}
+	}
+
+	eng_anti_tank_upgrade_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+
+
+		category_anti_tank = {
+			hard_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = eng_anti_tank_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1942
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 9 y = 14 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1944.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_tank
+		}
+	}
+
+	eng_anti_tank_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+
+
+		enable_equipments = {
+			eng_at_3
+		}
+
+		path = {
+			leads_to_tech = eng_anti_tank_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1943
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 9 y = 16 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1945.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_tank
+		}
+	}
+
+	eng_anti_tank_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+
+
+		enable_equipments = {
+			eng_at_4
+		}
+
+		path = {
+			leads_to_tech = eng_anti_tank_upgrade_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1945
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 9 y = 20 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1947.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_tank
+		}
+	}
+
+	eng_anti_tank_upgrade_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+
+
+		category_anti_tank = {
+			hard_attack = 0.1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1946
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 9 y = 22 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1948.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_tank
+		}
+	}
+
+	eng_heavy_anti_tank_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+
+
+		enable_equipments = {
+			eng_hv_at_1
+		}
+
+		path = {
+			leads_to_tech = eng_heavy_anti_tank_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1943
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 12 y = 16 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 4000
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				tag = AST
+			}
+			modifier = {
+				factor = 0
+				tag = CAN
+			}
+			modifier = {
+				factor = 0
+				tag = NZL
+			}
+			modifier = {
+				factor = 0
+				tag = RAJ
+			}
+			modifier = {
+				factor = 0
+				tag = SAF
+			}
+
+		}
+
+		categories = {
+			major_technologies
+			heavy_anti_tank
+			cat_anti_tank
+		}
+	}
+
+	eng_heavy_anti_tank_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+
+
+		enable_equipments = {
+			eng_hv_at_2
+		}
+
+		research_cost = 1.5
+
+		start_year = 1945
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = 12 y = 20 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1947.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			heavy_anti_tank
+			cat_anti_tank
+		}
+	}
+
+	eng_anti_air_1 = {
+
+		enable_equipments = {
+			eng_aa_1
+		}
+
+		path = {
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = eng_anti_air_upgrade_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1937
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -9 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				tag = AST
+			}
+			modifier = {
+				factor = 0
+				tag = CAN
+			}
+			modifier = {
+				factor = 0
+				tag = NZL
+			}
+			modifier = {
+				factor = 0
+				tag = SAF
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_air
+		}
+	}
+
+	eng_anti_air_upgrade_1 = {
+
+		category_anti_air = {
+			air_attack = 0.08
+		}
+		navy_anti_air_attack_factor = 0.1
+
+		path = {
+			leads_to_tech = eng_anti_air_upgrade_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1938
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -9 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1940.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_air
+		}
+	}
+
+	eng_anti_air_upgrade_2 = {
+
+		category_anti_air = {
+			air_attack = 0.08
+		}
+		navy_anti_air_attack_factor = 0.1
+
+		path = {
+			leads_to_tech = eng_anti_air_upgrade_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1940
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -9 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1942.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_air
+		}
+	}
+
+	eng_anti_air_upgrade_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+
+
+		category_anti_air = {
+			soft_attack = 0.08
+		}
+
+		path = {
+			leads_to_tech = eng_anti_air_upgrade_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1941
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -9 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1943.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_air
+		}
+	}
+
+	eng_anti_air_upgrade_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+
+
+		category_anti_air = {
+			air_attack = 0.08
+		}
+		navy_anti_air_attack_factor = 0.1
+
+		path = {
+			leads_to_tech = eng_anti_air_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1943
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -9 y = 16 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1945.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_air
+		}
+	}
+
+	eng_anti_air_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+
+
+		enable_equipments = {
+			eng_aa_2
+		}
+
+		path = {
+			leads_to_tech = eng_anti_air_upgrade_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1944
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -9 y = 18 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1946.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_air
+		}
+	}
+
+	eng_anti_air_upgrade_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+
+
+		category_anti_air = {
+			air_attack = 0.08
+		}
+		navy_anti_air_attack_factor = 0.1
+
+		path = {
+			leads_to_tech = eng_anti_air_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1946
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -9 y = 22 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1948.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_air
+		}
+	}
+
+	eng_anti_air_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 } } }
+
+
+		enable_equipments = {
+			eng_aa_3
+		}
+
+		research_cost = 2
+
+		start_year = 1948
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -9 y = 26 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1948.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1950.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			cat_anti_air
+		}
+	}
+
+	eng_heavy_anti_air_1 = {
+
+		enable_equipments = {
+			eng_hv_aa_1
+		}
+
+		path = {
+			leads_to_tech = eng_aa_tower_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1934
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -6 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				tag = AST
+			}
+			modifier = {
+				factor = 0
+				tag = CAN
+			}
+			modifier = {
+				factor = 0
+				tag = NZL
+			}
+			modifier = {
+				factor = 0
+				tag = RAJ
+			}
+			modifier = {
+				factor = 0
+				tag = SAF
+			}
+		}
+
+		categories = {
+			major_technologies
+			heavy_anti_air
+			cat_anti_air
+		}
+	}
+
+	eng_aa_tower_1 = {
+
+		enable_building = {
+			building = anti_air_building
+			level = 4
+		}
+		on_research_complete = {
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_subject_of = ROOT
+						OR = {
+							tag = UKE
+							AND = {
+								NOT = { has_autonomy_state = autonomy_dominion }
+								NOT = { has_autonomy_state = autonomy_colony }
+								NOT = { has_autonomy_state = autonomy_wtt_imperial_subject }
+								NOT = { has_autonomy_state = autonomy_wtt_imperial_associate }
+							}
+						}
+					}
+					set_technology = {
+						eng_aa_tower_1 = 1
+					}
+				}
+			}
+		}
+
+		#static_anti_air_damage_factor = 0.1
+
+		path = {
+			leads_to_tech = eng_heavy_anti_air_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1936
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -6 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			heavy_anti_air
+			cat_anti_air
+		}
+	}
+
+	eng_heavy_anti_air_2 = {
+
+		enable_equipments = {
+			eng_hv_aa_2
+		}
+
+		path = {
+			leads_to_tech = eng_aa_tower_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+
+		start_year = 1937
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -6 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			heavy_anti_air
+			cat_anti_air
+		}
+	}
+
+	eng_aa_tower_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+
+
+		enable_building = {
+			building = anti_air_building
+			level = 7
+		}
+		on_research_complete = {
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_subject_of = ROOT
+						OR = {
+							tag = UKE
+							AND = {
+								NOT = { has_autonomy_state = autonomy_dominion }
+								NOT = { has_autonomy_state = autonomy_colony }
+								NOT = { has_autonomy_state = autonomy_wtt_imperial_subject }
+								NOT = { has_autonomy_state = autonomy_wtt_imperial_associate }
+							}
+						}
+					}
+					set_technology = {
+						eng_aa_tower_2 = 1
+					}
+				}
+			}
+		}
+
+		#static_anti_air_damage_factor = 0.1
+
+		path = {
+			leads_to_tech = eng_aa_tower_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1941
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -6 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1943.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			heavy_anti_air
+			cat_anti_air
+		}
+	}
+
+	eng_aa_tower_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+
+
+		enable_building = {
+			building = anti_air_building
+			level = 10
+		}
+		on_research_complete = {
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_subject_of = ROOT
+						OR = {
+							tag = UKE
+							AND = {
+								NOT = { has_autonomy_state = autonomy_dominion }
+								NOT = { has_autonomy_state = autonomy_colony }
+								NOT = { has_autonomy_state = autonomy_wtt_imperial_subject }
+								NOT = { has_autonomy_state = autonomy_wtt_imperial_associate }
+							}
+						}
+					}
+					set_technology = {
+						eng_aa_tower_3 = 1
+					}
+				}
+			}
+		}
+
+		path = {
+			leads_to_tech = eng_heavy_anti_air_3
+			research_cost_coeff = 1
+		}
+
+		#static_anti_air_damage_factor = 0.1
+
+		research_cost = 1.5
+
+		start_year = 1943
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -6 y = 16 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1945.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			heavy_anti_air
+			cat_anti_air
+		}
+	}
+
+	eng_heavy_anti_air_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+
+
+		enable_equipments = {
+			eng_hv_aa_3
+		}
+
+		research_cost = 2
+
+		start_year = 1944
+
+		folder = {
+			name = eng_artillery_folder
+			position = { x = -6 y = 18 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 30
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 30
+				date > "1946.1.1"
+			}
+		}
+
+		categories = {
+			major_technologies
+			heavy_anti_air
+			cat_anti_air
+		}
+	}
+}

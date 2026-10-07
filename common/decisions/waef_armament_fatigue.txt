@@ -1,0 +1,19 @@
+economy_fatigue = {
+    waef_armament_fatigue = {
+        icon = economy_fatigue
+        allowed = { OR = { tag = WEF tag = EEF } }
+        activation = { has_country_flag = waef_expensive_armament_programme }
+        visible = { has_country_flag = waef_expensive_armament_programme }
+        available = { always = no }
+        selectable_mission = no
+        days_mission_timeout = 70
+        is_good = no
+        timeout_effect = {
+            economy_fatigue_level_up_1 = yes
+            if = {
+                limit = { has_country_flag = waef_expensive_armament_programme }
+                activate_mission = waef_armament_fatigue
+            }
+        }
+    }
+}

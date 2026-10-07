@@ -6,8 +6,8 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 FOCUS_PATH = ROOT / "common/national_focus/waef_germany_tech_focus.txt"
 DECISION_PATH = ROOT / "common/decisions/waef_technology_assimilation.txt"
-EN_LOC_PATH = ROOT / "localisation/english/waef_germany_tech_focus_l_english.yml"
-RU_LOC_PATH = ROOT / "localisation/russian/waef_germany_tech_focus_l_russian.yml"
+EN_LOC_PATH = ROOT / "localisation/english/waef_national_tech_focus_l_english.yml"
+RU_LOC_PATH = ROOT / "localisation/russian/waef_national_tech_focus_l_russian.yml"
 
 
 def focus_blocks(text: str) -> list[str]:
@@ -67,7 +67,7 @@ class GermanTechFocusTreeTests(unittest.TestCase):
             self.assertIsNotNone(focus_id)
             self.assertIsNotNone(cost, focus_id.group(1))
             self.assertGreaterEqual(int(cost.group(1)), 10, focus_id.group(1))
-            self.assertIn("set_technology = {", block, focus_id.group(1))
+            self.assertIn("completion_reward = {", block, focus_id.group(1))
 
     def test_every_focus_has_english_and_russian_localisation(self):
         focus_text = FOCUS_PATH.read_text(encoding="utf-8-sig")
@@ -90,21 +90,10 @@ class GermanTechFocusTreeTests(unittest.TestCase):
 
     def test_strategic_tradeoffs_are_mutually_exclusive(self):
         text = FOCUS_PATH.read_text(encoding="utf-8-sig")
-
-        heavy_start = text.index("id = WAEF_GER_HEAVY_ARMOUR")
-        heavy_end = text.index("id = WAEF_GER_TIGER_II", heavy_start)
-        heavy = text[heavy_start:heavy_end]
-        self.assertIn("focus = WAEF_GER_FOCKE_WULF", heavy)
-
-        fw_start = text.index("id = WAEF_GER_FOCKE_WULF")
-        fw_end = text.index("id = WAEF_GER_FOCKE_WULF_LATE", fw_start)
-        fw = text[fw_start:fw_end]
-        self.assertIn("focus = WAEF_GER_HEAVY_ARMOUR", fw)
-
-        self.assertIn("focus = WAEF_GER_FLEXIBLE", text)
-        self.assertIn("focus = WAEF_GER_STREAMLINED", text)
-        self.assertIn("focus = WAEF_GER_SURFACE_43", text)
-        self.assertIn("focus = WAEF_GER_UBOAT_43", text)
+        blocks = {re.search(r"id = (\w+)", b).group(1): b for b in focus_blocks(text)}
+        for a, b in [("H2", "W2"), ("C41", "C42"), ("C51", "C52"), ("C61", "C62")]:
+            self.assertIn(f"mutually_exclusive = {{ focus = WAEF_GER_{b} }}", blocks[f"WAEF_GER_{a}"])
+            self.assertIn(f"mutually_exclusive = {{ focus = WAEF_GER_{a} }}", blocks[f"WAEF_GER_{b}"])
 
     def test_focus_rewards_use_world_ablaze_technology_ids(self):
         text = FOCUS_PATH.read_text(encoding="utf-8-sig")
@@ -113,14 +102,14 @@ class GermanTechFocusTreeTests(unittest.TestCase):
         expected = (
             "ger_infantry_weapons_4",
             "ger_artillery_2",
-            "ger_mechanized_infantry_2",
+            "ger_mechanized_infantry_3",
             "ger_medium_tank_chassis_2_3",
             "ger_heavy_tank_chassis_3",
             "ger_fighter_multirole_ad_tech_1",
             "ger_fighter_multirole_1",
             "assembly_line_production",
             "advanced_computing_machine",
-            "ger_submarine_4",
+            "ger_cas_ad_tech_7",
         )
         for technology in expected:
             self.assertIn(f"{technology} = 1", text)

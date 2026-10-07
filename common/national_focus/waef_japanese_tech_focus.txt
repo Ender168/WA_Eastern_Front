@@ -1,12 +1,12 @@
 # Generated from docs/FOCUS_PLAN_v1_1.json; WA 691c7085f3ec1333ac2a0742983da8a64011ca8b.
 focus_tree = {
-    id = WAEF_GER_TECH_DOCTRINE
-    country = { factor = 0 modifier = { add = 200000 has_country_flag = german_technologies_tree_flag OR = { tag = WEF tag = EEF } } }
+    id = WAEF_JAP_TECH_DOCTRINE
+    country = { factor = 0 modifier = { add = 200000 has_country_flag = japanese_technologies_tree_flag OR = { tag = WEF tag = EEF } } }
     default = no
     reset_on_civilwar = no
 
     focus = {
-        id = WAEF_GER_C00
+        id = WAEF_JAP_C00
         icon = GFX_goal_generic_scientific_exchange
         x = 16
         y = 0
@@ -21,7 +21,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_GER_C11
+        id = WAEF_JAP_C11
         icon = GFX_goal_generic_construct_civ_factory
         x = 0
         y = 2
@@ -29,7 +29,7 @@ focus_tree = {
         available = { date > 1940.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C00 }
+        prerequisite = { focus = WAEF_JAP_C00 }
         completion_reward = {
 
             set_technology = { advanced_oil_processing = 1 advanced_rubber_processing = 1 fuel_refining4 = 1 }
@@ -39,7 +39,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_GER_C13
+        id = WAEF_JAP_C13
         icon = GFX_goal_generic_construct_civ_factory
         x = 0
         y = 4
@@ -47,7 +47,7 @@ focus_tree = {
         available = { date > 1942.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C11 }
+        prerequisite = { focus = WAEF_JAP_C11 }
         completion_reward = {
 
             set_technology = { fuel_refining5 = 1 superior_oil_processing = 1 superior_rubber_processing = 1 }
@@ -57,7 +57,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_GER_C15
+        id = WAEF_JAP_C15
         icon = GFX_goal_generic_construct_civ_factory
         x = 0
         y = 6
@@ -65,7 +65,7 @@ focus_tree = {
         available = { date > 1944.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C13 }
+        prerequisite = { focus = WAEF_JAP_C13 }
         completion_reward = {
 
             set_technology = { fuel_refining6 = 1 modern_oil_processing = 1 modern_rubber_processing = 1 }
@@ -75,7 +75,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_GER_C21
+        id = WAEF_JAP_C21
         icon = GFX_goal_generic_scientific_exchange
         x = 5
         y = 2
@@ -83,7 +83,7 @@ focus_tree = {
         available = { date > 1940.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C00 }
+        prerequisite = { focus = WAEF_JAP_C00 }
         completion_reward = {
 
             set_technology = { improved_centimetric_radar = 1 mtg_tank_snorkals = 1 }
@@ -91,7 +91,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_GER_C23
+        id = WAEF_JAP_C23
         icon = GFX_goal_generic_scientific_exchange
         x = 5
         y = 4
@@ -99,7 +99,7 @@ focus_tree = {
         available = { date > 1942.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C21 }
+        prerequisite = { focus = WAEF_JAP_C21 }
         completion_reward = {
 
             set_technology = { advanced_centimetric_radar = 1 advanced_computing_machine = 1 advanced_naval_mines = 1 degaussing = 1 experimental_rockets = 1 homing_torpedo = 1 mtg_amphibious_assault_ships = 1 }
@@ -108,7 +108,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_GER_C25
+        id = WAEF_JAP_C25
         icon = GFX_goal_generic_scientific_exchange
         x = 5
         y = 6
@@ -116,7 +116,7 @@ focus_tree = {
         available = { date > 1944.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C23 }
+        prerequisite = { focus = WAEF_JAP_C23 }
         completion_reward = {
 
             set_technology = { advanced_sonar = 1 improved_rocket_engines = 1 improved_submarine_snorkel = 1 jet_engines = 1 long_lance = 1 modern_naval_mines = 1 mtg_large_landing_craft = 1 mtg_tank_floats = 1 rocket_engines = 1 squid_depth_charge_mortar = 1 superior_computing_machine = 1 }
@@ -125,7 +125,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_GER_C31
+        id = WAEF_JAP_C31
         icon = GFX_goal_generic_army_doctrine
         x = 10
         y = 2
@@ -133,7 +133,7 @@ focus_tree = {
         available = { date > 1940.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C00 }
+        prerequisite = { focus = WAEF_JAP_C00 }
         completion_reward = {
 
             set_technology = { camo1 = 1 tech_engineers3 = 1 tech_field_hospital3 = 1 tech_headquarters1 = 1 tech_logistics_company3 = 1 tech_maintenance_company3 = 1 tech_military_police3 = 1 tech_recon3 = 1 tech_signal_company3 = 1 }
@@ -141,7 +141,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_GER_C33
+        id = WAEF_JAP_C33
         icon = GFX_goal_generic_army_doctrine
         x = 10
         y = 4
@@ -149,7 +149,7 @@ focus_tree = {
         available = { date > 1942.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C31 }
+        prerequisite = { focus = WAEF_JAP_C31 }
         completion_reward = {
 
             set_technology = { camo2 = 1 false_emplacements = 1 tech_battlefield_medicine_2 = 1 tech_engineers4 = 1 tech_field_hospital4 = 1 tech_headquarters2 = 1 tech_logistics_company4 = 1 tech_maintenance_company4 = 1 tech_military_police4 = 1 tech_recon4 = 1 tech_signal_company4 = 1 wartime_train = 1 }
@@ -157,7 +157,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_GER_C35
+        id = WAEF_JAP_C35
         icon = GFX_goal_generic_army_doctrine
         x = 10
         y = 6
@@ -165,7 +165,7 @@ focus_tree = {
         available = { date > 1944.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C33 }
+        prerequisite = { focus = WAEF_JAP_C33 }
         completion_reward = {
 
             set_technology = { camo3 = 1 camo4 = 1 tech_battlefield_medicine_3 = 1 tech_engineers5 = 1 tech_field_hospital5 = 1 tech_headquarters3 = 1 tech_logistics_company5 = 1 tech_maintenance_company5 = 1 tech_military_police5 = 1 tech_recon5 = 1 tech_signal_company5 = 1 }
@@ -173,7 +173,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_GER_C41
+        id = WAEF_JAP_C41
         icon = GFX_goal_generic_construct_civ_factory
         x = 0
         y = 7
@@ -181,15 +181,15 @@ focus_tree = {
         available = { date > 1940.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C11 }
-        mutually_exclusive = { focus = WAEF_GER_C42 }
+        prerequisite = { focus = WAEF_JAP_C11 }
+        mutually_exclusive = { focus = WAEF_JAP_C42 }
         completion_reward = {
             add_ideas = waef_serial_production
         }
     }
 
     focus = {
-        id = WAEF_GER_C42
+        id = WAEF_JAP_C42
         icon = GFX_goal_generic_construct_civ_factory
         x = 2
         y = 7
@@ -197,15 +197,15 @@ focus_tree = {
         available = { date > 1940.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C11 }
-        mutually_exclusive = { focus = WAEF_GER_C41 }
+        prerequisite = { focus = WAEF_JAP_C11 }
+        mutually_exclusive = { focus = WAEF_JAP_C41 }
         completion_reward = {
             add_ideas = waef_flexible_production
         }
     }
 
     focus = {
-        id = WAEF_GER_C51
+        id = WAEF_JAP_C51
         icon = GFX_goal_generic_scientific_exchange
         x = 5
         y = 7
@@ -213,15 +213,15 @@ focus_tree = {
         available = { date > 1940.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C21 }
-        mutually_exclusive = { focus = WAEF_GER_C52 }
+        prerequisite = { focus = WAEF_JAP_C21 }
+        mutually_exclusive = { focus = WAEF_JAP_C52 }
         completion_reward = {
             add_ideas = waef_air_reconnaissance
         }
     }
 
     focus = {
-        id = WAEF_GER_C52
+        id = WAEF_JAP_C52
         icon = GFX_goal_generic_scientific_exchange
         x = 7
         y = 7
@@ -229,15 +229,15 @@ focus_tree = {
         available = { date > 1940.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C21 }
-        mutually_exclusive = { focus = WAEF_GER_C51 }
+        prerequisite = { focus = WAEF_JAP_C21 }
+        mutually_exclusive = { focus = WAEF_JAP_C51 }
         completion_reward = {
             add_ideas = waef_army_command
         }
     }
 
     focus = {
-        id = WAEF_GER_C61
+        id = WAEF_JAP_C61
         icon = GFX_goal_generic_army_doctrine
         x = 10
         y = 7
@@ -245,15 +245,15 @@ focus_tree = {
         available = { date > 1940.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C31 }
-        mutually_exclusive = { focus = WAEF_GER_C62 }
+        prerequisite = { focus = WAEF_JAP_C31 }
+        mutually_exclusive = { focus = WAEF_JAP_C62 }
         completion_reward = {
             add_ideas = waef_assault_support
         }
     }
 
     focus = {
-        id = WAEF_GER_C62
+        id = WAEF_JAP_C62
         icon = GFX_goal_generic_army_doctrine
         x = 12
         y = 7
@@ -261,15 +261,15 @@ focus_tree = {
         available = { date > 1940.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C31 }
-        mutually_exclusive = { focus = WAEF_GER_C61 }
+        prerequisite = { focus = WAEF_JAP_C31 }
+        mutually_exclusive = { focus = WAEF_JAP_C61 }
         completion_reward = {
             add_ideas = waef_army_logistics
         }
     }
 
     focus = {
-        id = WAEF_GER_C70
+        id = WAEF_JAP_C70
         icon = GFX_goal_generic_army_doctrine
         x = 15
         y = 2
@@ -277,14 +277,14 @@ focus_tree = {
         available = { date > 1940.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C00 }
+        prerequisite = { focus = WAEF_JAP_C00 }
         completion_reward = {
             set_country_flag = waef_operations_unlocked
         }
     }
 
     focus = {
-        id = WAEF_GER_I1
+        id = WAEF_JAP_I1
         icon = GFX_goal_generic_army_doctrine
         x = 20
         y = 2
@@ -292,15 +292,15 @@ focus_tree = {
         available = { date > 1940.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C00 }
+        prerequisite = { focus = WAEF_JAP_C00 }
         completion_reward = {
 
-            set_technology = { ger_extreme_environment_training = 1 ger_infantry_weapons_4 = 1 ger_marines2 = 1 ger_paratroopers2 = 1 ger_survival_training = 1 ger_tech_mountaineers2 = 1 }
+            set_technology = { jap_extreme_environment_training = 1 jap_marines2 = 1 jap_paratroopers2 = 1 jap_survival_training = 1 jap_tech_mountaineers2 = 1 }
         }
     }
 
     focus = {
-        id = WAEF_GER_I3
+        id = WAEF_JAP_I3
         icon = GFX_goal_generic_army_doctrine
         x = 20
         y = 6
@@ -308,15 +308,15 @@ focus_tree = {
         available = { date > 1942.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_I1 }
+        prerequisite = { focus = WAEF_JAP_I1 }
         completion_reward = {
 
-            set_technology = { ger_heavy_infantry_weapons_4 = 1 ger_heavy_infantry_weapons_5 = 1 ger_heavy_infantry_weapons_upgrade_4 = 1 ger_infantry_weapons_5 = 1 ger_infantry_weapons_6 = 1 ger_infantry_weapons_upgrade_2 = 1 ger_marines3 = 1 ger_paratroopers3 = 1 ger_recon_training = 1 ger_tank_training = 1 ger_tech_mountaineers3 = 1 }
+            set_technology = { jap_heavy_infantry_weapons_4 = 1 jap_heavy_infantry_weapons_6 = 1 jap_infantry_weapons_3 = 1 jap_infantry_weapons_5 = 1 jap_infantry_weapons_upgrade_3 = 1 jap_marines3 = 1 jap_paratroopers3 = 1 jap_recon_training = 1 jap_tank_training = 1 jap_tech_mountaineers3 = 1 }
         }
     }
 
     focus = {
-        id = WAEF_GER_I5
+        id = WAEF_JAP_I5
         icon = GFX_goal_generic_army_doctrine
         x = 20
         y = 10
@@ -324,15 +324,15 @@ focus_tree = {
         available = { date > 1944.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_I3 }
+        prerequisite = { focus = WAEF_JAP_I3 }
         completion_reward = {
 
-            set_technology = { ger_elite_forces = 1 ger_heavy_infantry_weapons_6 = 1 ger_heavy_infantry_weapons_7 = 1 ger_infantry_weapons_7 = 1 ger_infantry_weapons_upgrade_3 = 1 ger_jungle_training = 1 ger_night_vision_1 = 1 ger_water_training = 1 }
+            set_technology = { jap_elite_forces = 1 jap_heavy_infantry_weapons_7 = 1 jap_infantry_weapons_6 = 1 jap_jungle_training = 1 jap_night_vision_1 = 1 jap_water_training = 1 }
         }
     }
 
     focus = {
-        id = WAEF_GER_G1
+        id = WAEF_JAP_G1
         icon = GFX_goal_generic_army_doctrine
         x = 25
         y = 2
@@ -340,15 +340,15 @@ focus_tree = {
         available = { date > 1940.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C00 }
+        prerequisite = { focus = WAEF_JAP_C00 }
         completion_reward = {
 
-            set_technology = { ger_anti_air_upgrade_2 = 1 ger_artillery_2 = 1 ger_heavy_anti_air_2 = 1 ger_heavy_artillery_3 = 1 ger_rocket_upgrade_1 = 1 }
+            set_technology = { jap_anti_air_upgrade_2 = 1 jap_anti_tank_upgrade_3 = 1 }
         }
     }
 
     focus = {
-        id = WAEF_GER_G3
+        id = WAEF_JAP_G3
         icon = GFX_goal_generic_army_doctrine
         x = 25
         y = 6
@@ -356,15 +356,15 @@ focus_tree = {
         available = { date > 1942.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_G1 }
+        prerequisite = { focus = WAEF_JAP_G1 }
         completion_reward = {
 
-            set_technology = { ger_aa_tower_3 = 1 ger_anti_air_4 = 1 ger_anti_air_upgrade_3 = 1 ger_anti_tank_3 = 1 ger_anti_tank_upgrade_3 = 1 ger_artillery_3 = 1 ger_artillery_upgrade_3 = 1 ger_heavy_anti_air_3 = 1 ger_heavy_anti_tank_1 = 1 ger_pack_artillery_3 = 1 ger_rocket_artillery_2 = 1 ger_rocket_artillery_3 = 1 }
+            set_technology = { jap_aa_tower_3 = 1 jap_anti_air_2 = 1 jap_anti_tank_3 = 1 jap_artillery_upgrade_3 = 1 jap_heavy_anti_air_3 = 1 jap_pack_artillery_3 = 1 jap_rocket_artillery_1 = 1 }
         }
     }
 
     focus = {
-        id = WAEF_GER_G5
+        id = WAEF_JAP_G5
         icon = GFX_goal_generic_army_doctrine
         x = 25
         y = 10
@@ -372,15 +372,15 @@ focus_tree = {
         available = { date > 1944.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_G3 }
+        prerequisite = { focus = WAEF_JAP_G3 }
         completion_reward = {
 
-            set_technology = { ger_anti_air_5 = 1 ger_anti_air_upgrade_4 = 1 ger_anti_tank_4 = 1 ger_artillery_upgrade_4 = 1 ger_heavy_anti_tank_2 = 1 ger_rocket_upgrade_2 = 1 }
+            set_technology = { jap_anti_air_3 = 1 jap_anti_air_upgrade_3 = 1 jap_anti_tank_4 = 1 jap_artillery_4 = 1 jap_heavy_anti_air_4 = 1 jap_heavy_anti_air_5 = 1 jap_heavy_anti_tank_1 = 1 jap_pack_artillery_4 = 1 jap_rocket_artillery_2 = 1 jap_rocket_upgrade_1 = 1 }
         }
     }
 
     focus = {
-        id = WAEF_GER_T1
+        id = WAEF_JAP_T1
         icon = GFX_goal_generic_army_tanks
         x = 35
         y = 2
@@ -388,86 +388,88 @@ focus_tree = {
         available = { date > 1940.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C00 }
+        prerequisite = { focus = WAEF_JAP_C00 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_assault_3_spg = 1 ger_light_2_td = 1 ger_medium_3 = 1 ger_support_3 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { ger_assault_tank_3_spg = 1 ger_light_tank_chassis_3_1 = 1 ger_medium_tank_chassis_2_3 = 1 ger_support_tank_chassis_1_3 = 1 } }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_medium_4 = 1 jap_medium_5 = 1 jap_medium_spg_4 = 1 jap_medium_td_4 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_infantry_support_tank_chassis_1 = 1 jap_light_tank_spg_3 = 1 jap_medium_tank_chassis_4 = 1 jap_medium_tank_spg_4 = 1 jap_medium_tank_td_4 = 1 } }
         }
     }
 
     focus = {
-        id = WAEF_GER_T2
+        id = WAEF_JAP_TA3
         icon = GFX_goal_generic_army_tanks
-        x = 35
-        y = 4
-        cost = 13
-        available = { date > 1941.12.31 }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_T1 }
-        completion_reward = {
-
-            set_technology = { ger_medium_tank_chassis_2_5 = 1 }
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_assault_4_spg = 1 ger_light_3_spg = 1 ger_light_4 = 1 ger_light_4_td = 1 ger_medium_3_td = 1 ger_medium_4 = 1 ger_medium_4_aa = 1 ger_support_4 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { ger_light_tank_2_td = 1 ger_light_tank_3_aa = 1 ger_light_tank_4_td = 1 ger_light_tank_chassis_4 = 1 ger_medium_tank_4_td = 1 ger_medium_tank_5_aa = 1 ger_medium_tank_chassis_2_4 = 1 ger_support_tank_chassis_1_4 = 1 } }
-        }
-    }
-
-    focus = {
-        id = WAEF_GER_T3
-        icon = GFX_goal_generic_army_tanks
-        x = 35
-        y = 6
+        x = 34
+        y = 7
         cost = 13
         available = { date > 1942.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_T2 }
+        prerequisite = { focus = WAEF_JAP_T1 }
+        mutually_exclusive = { focus = WAEF_JAP_TB3 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_assault_5_spg = 1 ger_light_4_spg = 1 ger_medium_4_spg = 1 ger_medium_4_td = 1 ger_medium_5 = 1 ger_medium_5_td = 1 ger_modern_1 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { ger_assault_tank_4_spg = 1 ger_assault_tank_6_spg = 1 ger_light_tank_3_spg = 1 ger_light_tank_4_1_td = 1 ger_light_tank_4_spg = 1 ger_medium_tank_5_spg = 1 ger_medium_tank_5_td = 1 ger_medium_tank_6_td = 1 ger_medium_tank_chassis_2_6 = 1 ger_modern_tank_chassis_1 = 1 } }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_infantry_support_2 = 1 jap_light_5 = 1 jap_light_aa_5 = 1 jap_medium_6 = 1 jap_medium_td_6 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_infantry_support_tank_chassis_2 = 1 jap_light_tank_aa_5 = 1 jap_light_tank_chassis_5 = 1 jap_medium_tank_chassis_6 = 1 jap_medium_tank_td_6 = 1 } }
         }
     }
 
     focus = {
-        id = WAEF_GER_H2
+        id = WAEF_JAP_TA4
         icon = GFX_goal_generic_army_tanks
-        x = 40
-        y = 4
+        x = 34
+        y = 9
         cost = 13
-        available = { date > 1941.12.31 }
+        available = { date > 1943.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_T1 }
-        mutually_exclusive = { focus = WAEF_GER_W2 }
+        prerequisite = { focus = WAEF_JAP_TA3 }
+        completion_reward = {
+            add_ideas = waef_jap_ta4_programme
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_light_6 = 1 jap_light_aa_6 = 1 jap_light_spg_6 = 1 jap_light_td_6 = 1 jap_medium_8 = 1 jap_medium_aa_8 = 1 jap_medium_spg_8 = 1 jap_medium_td_8 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_light_tank_aa_6 = 1 jap_light_tank_chassis_6 = 1 jap_light_tank_spg_6 = 1 jap_light_tank_td_6 = 1 jap_medium_tank_aa_8 = 1 jap_medium_tank_chassis_8 = 1 jap_medium_tank_spg_8 = 1 jap_medium_tank_td_8 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_TB3
+        icon = GFX_goal_generic_army_tanks
+        x = 37
+        y = 7
+        cost = 13
+        available = { date > 1942.12.31 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_T1 }
+        mutually_exclusive = { focus = WAEF_JAP_TA3 }
+        completion_reward = {
+
+            set_technology = { jap_super_heavy_tank_chassis_1 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_medium_7 = 1 jap_medium_td_7 = 1 jap_super_heavy_1 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_medium_tank_chassis_7 = 1 jap_medium_tank_td_7 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_TB5
+        icon = GFX_goal_generic_army_tanks
+        x = 37
+        y = 11
+        cost = 13
+        available = { date > 1944.12.31 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_TB3 }
         completion_reward = {
             waef_start_armament_fatigue = yes
-            set_technology = { ger_heavy_tank_1_spg = 1 ger_heavy_tank_chassis_1 = 1 ger_heavy_tank_chassis_2 = 1 ger_heavy_tank_chassis_3 = 1 }
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_heavy_1_td = 1 ger_heavy_2 = 1 ger_heavy_3 = 1 } }
+            set_technology = { jap_super_heavy_tank_chassis_2 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_medium_9 = 1 jap_medium_spg_9 = 1 jap_medium_td_9 = 1 jap_super_heavy_2 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_medium_tank_chassis_9 = 1 jap_medium_tank_spg_9 = 1 jap_medium_tank_td_9 = 1 } }
         }
     }
 
     focus = {
-        id = WAEF_GER_H4
-        icon = GFX_goal_generic_army_tanks
-        x = 40
-        y = 8
-        cost = 13
-        available = { date > 1943.12.31 }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_H2 }
-        completion_reward = {
-            add_ideas = waef_ger_h4_programme
-            set_technology = { ger_heavy_assault_tank_3_spg = 1 ger_heavy_assault_tank_4_spg = 1 ger_heavy_tank_1_td = 1 ger_heavy_tank_2_td = 1 ger_heavy_tank_4_spg = 1 ger_heavy_tank_4_td = 1 ger_heavy_tank_chassis_4 = 1 ger_landkruiser_tank_chassis_1 = 1 ger_super_heavy_tank_chassis_1 = 1 }
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_heavy_2_td = 1 ger_heavy_4 = 1 ger_heavy_4_spg = 1 ger_heavy_4_td = 1 ger_heavy_assault_3_spg = 1 ger_landkruiser_1 = 1 ger_super_heavy_1 = 1 } }
-        }
-    }
-
-    focus = {
-        id = WAEF_GER_A1
+        id = WAEF_JAP_A1
         icon = GFX_goal_generic_air_fighter
         x = 45
         y = 2
@@ -475,121 +477,86 @@ focus_tree = {
         available = { date > 1940.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C00 }
+        prerequisite = { focus = WAEF_JAP_C00 }
         completion_reward = {
             air_experience = 10
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cv_fighter_2 = 1 ger_fighter_6 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_cv_fighter_ad_tech__2 = 1 ger_fighter_ad_tech_6 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_fighter_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_fighter_ad_tech_3 = 1 jap_interceptor_ad_tech_1 = 1 } }
         }
     }
 
     focus = {
-        id = WAEF_GER_A3
+        id = WAEF_JAP_AA2
         icon = GFX_goal_generic_air_fighter
-        x = 45
-        y = 6
+        x = 44
+        y = 5
+        cost = 13
+        available = { date > 1941.12.31 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_A1 }
+        mutually_exclusive = { focus = WAEF_JAP_AB2 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cas_4 = 1 jap_cv_cas_3 = 1 jap_cv_naval_bomber_4 = 1 jap_fighter_4 = 1 jap_fighter_multirole_3 = 1 jap_fighter_multirole_4 = 1 jap_heavy_fighter_1 = 1 jap_heavy_fighter_2 = 1 jap_patrol_4 = 1 jap_scout_plane_4 = 1 jap_strategic_bomber_3 = 1 jap_strike_bomber_3 = 1 jap_tactical_bomber_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_attacker_ad_tech_0 = 1 jap_cas_ad_tech_4 = 1 jap_cv_cas_ad_tech_3 = 1 jap_fast_bomber_ad_tech_2 = 1 jap_fighter_ad_tech_4 = 1 jap_fighter_multirole_ad_tech_1 = 1 jap_heavy_fighter_ad_tech_2 = 1 jap_interceptor_ad_tech_2 = 1 jap_patrol_ad_tech_4 = 1 jap_scout_plane_ad_tech_3 = 1 jap_strategic_bomber_ad_tech_2 = 1 jap_strike_bomber_ad_tech_3 = 1 jap_strike_bomber_ad_tech_3_1 = 1 jap_tactical_bomber_ad_tech_3 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_AA4
+        icon = GFX_goal_generic_air_fighter
+        x = 44
+        y = 9
+        cost = 13
+        available = { date > 1943.12.31 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_AA2 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_attacker_1 = 1 jap_cas_5 = 1 jap_cv_cas_4 = 1 jap_cv_naval_bomber_5 = 1 jap_fighter_3_1 = 1 jap_fighter_5 = 1 jap_fighter_multirole_5 = 1 jap_fighter_multirole_6 = 1 jap_fighter_multirole_7 = 1 jap_heavy_fighter_3 = 1 jap_patrol_5 = 1 jap_scout_plane_5 = 1 jap_strategic_bomber_4 = 1 jap_strike_bomber_4 = 1 jap_tactical_bomber_4 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_attacker_ad_tech_1 = 1 jap_attacker_ad_tech_2 = 1 jap_cas_ad_tech_5 = 1 jap_cv_cas_ad_tech_4 = 1 jap_cv_naval_bomber_ad_tech_3 = 1 jap_cv_naval_bomber_ad_tech_4 = 1 jap_fast_bomber_ad_tech_3 = 1 jap_fighter_ad_tech_5 = 1 jap_fighter_ad_tech_6 = 1 jap_fighter_multirole_ad_tech_2 = 1 jap_fighter_multirole_ad_tech_3 = 1 jap_heavy_fighter_ad_tech_3 = 1 jap_interceptor_ad_tech_3 = 1 jap_interceptor_ad_tech_3_1 = 1 jap_interceptor_ad_tech_4 = 1 jap_patrol_ad_tech_5 = 1 jap_scout_plane_ad_tech_4 = 1 jap_strategic_bomber_ad_tech_3 = 1 jap_strike_bomber_ad_tech_4 = 1 jap_strike_bomber_ad_tech_4_1 = 1 jap_tactical_bomber_ad_tech_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_AB2
+        icon = GFX_goal_generic_air_fighter
+        x = 47
+        y = 5
+        cost = 13
+        available = { date > 1941.12.31 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_A1 }
+        mutually_exclusive = { focus = WAEF_JAP_AA2 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cv_fighter_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_cv_fighter_ad_tech_3 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_AB3
+        icon = GFX_goal_generic_air_fighter
+        x = 47
+        y = 7
         cost = 13
         available = { date > 1942.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_A1 }
+        prerequisite = { focus = WAEF_JAP_AB2 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cv_fighter_3 = 1 ger_fighter_7 = 1 ger_heavy_fighter_2 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_fighter_ad_tech_7 = 1 ger_heavy_fighter_ad_tech_2 = 1 ger_heavy_fighter_ad_tech_conversion_2 = 1 ger_heavy_fighter_ad_tech_conversion_2_2 = 1 ger_heavy_fighter_ad_tech_conversion_3_2 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cv_fighter_4 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_cv_fighter_ad_tech_4 = 1 } }
         }
     }
 
     focus = {
-        id = WAEF_GER_A4
-        icon = GFX_goal_generic_air_fighter
-        x = 45
-        y = 8
-        cost = 13
-        available = { date > 1943.12.31 }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_A3 }
-        completion_reward = {
-
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cv_fighter_4 = 1 ger_cv_fighter_5 = 1 ger_fighter_8 = 1 ger_heavy_fighter_3 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_cv_fighter_ad_tech__4 = 1 ger_fighter_ad_tech_8 = 1 ger_heavy_fighter_ad_tech_2_2 = 1 ger_heavy_fighter_ad_tech_3 = 1 ger_heavy_fighter_ad_tech_conversion_4 = 1 } }
-        }
-    }
-
-    focus = {
-        id = WAEF_GER_W2
-        icon = GFX_goal_generic_air_fighter
-        x = 50
-        y = 4
-        cost = 13
-        available = { date > 1941.12.31 }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_A1 }
-        mutually_exclusive = { focus = WAEF_GER_H2 }
-        completion_reward = {
-
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_fighter_multirole_1 = 1 ger_fighter_multirole_2 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_fighter_multirole_ad_tech_1 = 1 ger_fighter_multirole_ad_tech_2 = 1 } }
-        }
-    }
-
-    focus = {
-        id = WAEF_GER_W4
-        icon = GFX_goal_generic_air_fighter
-        x = 50
-        y = 8
-        cost = 13
-        available = { date > 1943.12.31 }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_W2 }
-        completion_reward = {
-            add_ideas = waef_ger_w4_programme
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_fighter_multirole_3 = 1 ger_fighter_multirole_4 = 1 ger_jet_cv_fighter_1 = 1 ger_jet_fighter_multirole_1 = 1 ger_jet_tactical_bomber_1 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_fighter_multirole_ad_tech_3 = 1 ger_fighter_multirole_ad_tech_4 = 1 ger_jet_cv_fighter_ad_tech_1 = 1 ger_jet_fast_bomber_ad_tech_1 = 1 ger_jet_fighter_multirole_ad_tech_1 = 1 } }
-        }
-    }
-
-    focus = {
-        id = WAEF_GER_S2
-        icon = GFX_goal_generic_air_fighter
-        x = 55
-        y = 4
-        cost = 13
-        available = { date > 1941.12.31 }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_A1 }
-        completion_reward = {
-
-            set_technology = { ger_transport_plane_3 = 1 }
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_attacker_3 = 1 ger_cas_4 = 1 ger_cv_cas_3 = 1 ger_naval_bomber_2 = 1 ger_patrol_2 = 1 ger_scout_plane_3 = 1 ger_strategic_bomber_1 = 1 ger_strike_bomber_3 = 1 ger_tactical_bomber_4 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_air_upgrade_1 = 1 ger_attacker_ad_tech_3 = 1 ger_cas_ad_tech_4 = 1 ger_cas_ad_tech_7 = 1 ger_cv_cas_ad_tech_5 = 1 ger_fast_bomber_ad_tech_3 = 1 ger_naval_bomber_ad_tech_2 = 1 ger_patrol_ad_tech_2 = 1 ger_patrol_ad_tech_3 = 1 ger_scout_plane_ad_tech_3 = 1 ger_strategic_bomber_ad_tech_1 = 1 ger_strike_bomber_ad_tech_3 = 1 ger_tactical_bomber_ad_tech_4 = 1 ger_tactical_bomber_ad_tech_4_2 = 1 } }
-        }
-    }
-
-    focus = {
-        id = WAEF_GER_S4
-        icon = GFX_goal_generic_air_fighter
-        x = 55
-        y = 8
-        cost = 13
-        available = { date > 1943.12.31 }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_S2 }
-        completion_reward = {
-
-            set_technology = { ger_transport_plane_4 = 1 }
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_attacker_4 = 1 ger_cas_5 = 1 ger_cas_6 = 1 ger_cv_cas_5 = 1 ger_cv_cas_6 = 1 ger_naval_bomber_3 = 1 ger_strategic_bomber_2 = 1 ger_strategic_bomber_3 = 1 ger_strike_bomber_4 = 1 ger_tactical_bomber_5 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_attacker_ad_tech_4 = 1 ger_cas_ad_tech_5 = 1 ger_cas_ad_tech_6 = 1 ger_cv_cas_ad_tech_6 = 1 ger_fast_bomber_ad_tech_4 = 1 ger_heavy_strategic_bomber_ad_tech_1 = 1 ger_naval_bomber_ad_tech_3 = 1 ger_strategic_bomber_ad_tech_2 = 1 ger_strike_bomber_ad_tech_3_2 = 1 ger_strike_bomber_ad_tech_3_3 = 1 ger_tactical_bomber_ad_tech_4_3 = 1 } }
-        }
-    }
-
-    focus = {
-        id = WAEF_GER_M2
+        id = WAEF_JAP_M2
         icon = GFX_goal_generic_army_doctrine
         x = 30
         y = 4
@@ -597,32 +564,31 @@ focus_tree = {
         available = { date > 1941.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_I1 }
+        prerequisite = { focus = WAEF_JAP_I1 }
         completion_reward = {
 
-            set_technology = { ger_amphibious_2 = 1 ger_mechanized_aa_1 = 1 ger_mechanized_aa_2 = 1 ger_mechanized_artillery_2 = 1 ger_mechanized_artillery_5 = 1 ger_mechanized_infantry_3 = 1 ger_mechanized_infantry_6 = 1 ger_mechanized_td_4 = 1 }
+            set_technology = { jap_amphibious_1 = 1 jap_mechanized_infantry_2 = 1 }
         }
     }
 
     focus = {
-        id = WAEF_GER_M4
+        id = WAEF_JAP_M4
         icon = GFX_goal_generic_army_doctrine
         x = 30
         y = 8
         cost = 13
-        available = { date > 1943.12.31 }
+        available = { date > 1944.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_M2 }
+        prerequisite = { focus = WAEF_JAP_M2 }
         completion_reward = {
 
-            set_technology = { ger_combat_armoured_car_5_1 = 1 ger_combat_armoured_car_5_2 = 1 ger_mechanized_aa_3 = 1 ger_mechanized_artillery_3 = 1 ger_mechanized_artillery_6 = 1 ger_mechanized_infantry_4 = 1 ger_mechanized_infantry_5 = 1 ger_mechanized_infantry_7 = 1 ger_mechanized_td_3 = 1 ger_scout_armoured_car_5 = 1 }
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_armoured_car_5 = 1 ger_armoured_car_6 = 1 ger_scout_car_5 = 1 } }
+            set_technology = { jap_mechanized_infantry_3 = 1 }
         }
     }
 
     focus = {
-        id = WAEF_GER_O2
+        id = WAEF_JAP_O2
         icon = GFX_goal_generic_army_doctrine
         x = 15
         y = 4
@@ -630,10 +596,10 @@ focus_tree = {
         available = { date > 1941.12.31 }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C70 }
-        prerequisite = { focus = WAEF_GER_I1 }
+        prerequisite = { focus = WAEF_JAP_C70 }
+        prerequisite = { focus = WAEF_JAP_I1 }
         completion_reward = {
-            set_country_flag = waef_ger_operations_specialisation
+            set_country_flag = waef_jap_operations_specialisation
         }
     }
 

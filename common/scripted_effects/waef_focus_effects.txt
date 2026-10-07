@@ -1,0 +1,7 @@
+waef_start_armament_fatigue = {
+    set_country_flag = waef_expensive_armament_programme
+    if = {
+        limit = { NOT = { has_active_mission = waef_armament_fatigue } }
+        activate_mission = waef_armament_fatigue
+    }
+}

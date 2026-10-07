@@ -1,0 +1,9325 @@
+#!gfx:interface\afo_technologies_air.gfx
+#!gfx:interface\afo_technologies_old_air.gfx
+technologies = {
+
+	############################### Fighter Interceptor
+
+	jap_fighter_1 = {	# Ki-10
+
+		allow_branch = {
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+
+		enable_equipments = {
+			jap_fighter_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_multirole_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_cv_fighter_0
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_cas_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1934
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1938.1.1"
+			}
+		}
+	}
+
+	jap_fighter_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+ # Ki-44 I Shoki
+
+		enable_equipments = {
+			jap_fighter_equipment_3
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_5
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1941
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 0 y = 14 }
+		}
+
+		sub_technologies = {
+			jap_fighter_3_1
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+		}
+	}
+
+	jap_fighter_3_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ # Ki-44 II Hei Shoki
+
+		enable_equipments = {
+			jap_fighter_equipment_3_1
+		}
+
+		research_cost = 1.5
+		start_year = 1943
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_fighter_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ # J2M2 Raiden
+
+		enable_equipments = {
+			jap_fighter_equipment_4
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1942
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 0 y = 16 }
+		}
+
+		sub_technologies = {
+			jap_fighter_4_1
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_fighter_4_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ # J2M5 Raiden
+
+		enable_equipments = {
+			jap_fighter_equipment_4_1
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	jap_fighter_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-84
+
+		enable_equipments = {
+			jap_fighter_equipment_5
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_8
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_jet_fighter_multirole_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1944
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 0 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_fighter_8 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# J7W1
+
+		enable_equipments = {
+			jap_fighter_equipment_8
+		}
+
+		path = {
+			leads_to_tech = jap_jet_fighter_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1945
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 0 y = 22 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	jap_jet_fighter_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# J7W2
+
+		enable_equipments = {
+			jap_jet_fighter_equipment_2
+		}
+
+		path = {
+			leads_to_tech = jap_jet_fighter_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1946
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 0 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	jap_jet_fighter_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-287
+
+		enable_equipments = {
+			jap_jet_fighter_equipment_3
+		}
+
+		research_cost = 3
+		start_year = 1949
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 0 y = 30 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1951.1.1"
+			}
+		}
+	}
+
+	# jap_fighter_6 = {	# Ki-87	redundant prototype tech that is worse than the stuff and doesnt have a slot
+
+	# 	enable_equipments = {
+	# 		jap_fighter_equipment_6
+	# 	}
+
+	# 	path = {
+	# 		leads_to_tech = jap_fighter_7
+	# 		research_cost_coeff = 1
+	# 	}
+
+	# 	research_cost = 2.5
+	# 	start_year = 1945
+
+	# 	folder = {
+	# 		name = jap_air_techs_folder
+	# 		position = { x = 0 y = 22 }
+	# 	}
+
+	# 	categories = {
+	# 		major_technologies
+	# 		light_air
+	# 		cat_fighter
+	# 		air_equipment
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 4
+
+	# 		modifier = {
+	# 			factor = 40
+	# 			date > "1944.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 40
+	# 			date > "1945.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 40
+	# 			date > "1946.1.1"
+	# 		}
+	# 	}
+	# }
+
+	# jap_fighter_7 = {	# Ki-94
+
+	# 	enable_equipments = {
+	# 		jap_fighter_equipment_7
+	# 	}
+
+	# 	research_cost = 2.5
+	# 	start_year = 1946
+
+	# 	folder = {
+	# 		name = jap_air_techs_folder
+	# 		position = { x = 0 y = 24 }
+	# 	}
+
+	# 	categories = {
+	# 		major_technologies
+	# 		light_air
+	# 		cat_fighter
+	# 		air_equipment
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 4
+
+	# 		modifier = {
+	# 			factor = 40
+	# 			date > "1946.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 40
+	# 			date > "1947.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 40
+	# 			date > "1948.1.1"
+	# 		}
+	# 	}
+	# }
+
+	# jap_fighter_multirole_1 = {	# Ki-30	fake redundant
+
+	# 	enable_equipments = {
+	# 		jap_fighter_multirole_equipment_1
+	# 	}
+
+	# 	research_cost = 1.5
+	# 	start_year = 1936
+
+	# 	folder = {
+	# 		name = jap_air_techs_folder
+	# 		position = { x = -3 y = 4 }
+	# 	}
+
+	# 	categories = {
+	# 		major_technologies
+	# 		light_air
+	# 		cat_fighter
+	# 		air_equipment
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 4
+
+	# 		modifier = {
+	# 			factor = 40
+	# 			date > "1939.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 40
+	# 			date > "1940.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 40
+	# 			date > "1941.1.1"
+	# 		}
+	# 	}
+	# }
+
+ ############################### Fighter Multirole
+
+
+	jap_fighter_multirole_1 = {	# Ki-27 Otsu
+
+		enable_equipments = {
+			jap_fighter_multirole_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_multirole_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1937
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -3 y = 6 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1939.1.1"
+			}
+		}
+	}
+	jap_fighter_multirole_2 = {	# Ki-43 Hayabusa
+
+		enable_equipments = {
+			jap_fighter_multirole_equipment_2
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_multirole_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1939
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -3 y = 10 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1941.1.1"
+			}
+		}
+	}
+
+	jap_fighter_multirole_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-43 Hei
+
+		enable_equipments = {
+			jap_fighter_multirole_equipment_3
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_multirole_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1941
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -3 y = 14 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+		}
+	}
+
+	jap_fighter_multirole_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-61-I Otsu `Hien`
+
+		enable_equipments = {
+			jap_fighter_multirole_equipment_4
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_multirole_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1942
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -3 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_fighter_multirole_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-61-I Tei `Hien`
+
+		enable_equipments = {
+			jap_fighter_multirole_equipment_5
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_multirole_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1943
+
+		sub_technologies = {
+			jap_fighter_multirole_6
+		}
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -3 y = 18 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	jap_fighter_multirole_6 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-61-II Kai `Hien`
+
+		enable_equipments = {
+			jap_fighter_multirole_equipment_6
+		}
+
+		research_cost = 1.5
+		start_year = 1944
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_fighter_multirole_7 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# N1K2
+
+		enable_equipments = {
+			jap_fighter_multirole_equipment_7
+		}
+
+		path = {
+			leads_to_tech = jap_jet_fighter_multirole_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1944
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -3 y = 20 }
+		}
+
+		sub_technologies = {
+			jap_fighter_multirole_8
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	jap_fighter_multirole_8 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# N1k6
+
+		enable_equipments = {
+			jap_fighter_multirole_equipment_7_2
+		}
+
+		research_cost = 2.0
+		start_year = 1945
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	jap_jet_fighter_multirole_1 = {	# Kikka
+
+		enable_equipments = {
+			jap_jet_fighter_multirole_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_jet_fighter_multirole_2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		research_cost = 3
+		start_year = 1945
+
+		allow = {
+        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AA2 } }
+
+			OR = {
+				JAP = {
+					has_completed_focus = JAP_jet_prototypes
+				}
+				GER = {
+					has_completed_focus = GER_naval_cooperation_with_japan
+				}
+				GER = {
+					OR = {
+						is_in_faction_with = JAP
+						is_puppet_of = JAP
+					}
+				}
+			}
+		}
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -3 y = 22 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	jap_jet_fighter_multirole_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-201
+
+		enable_equipments = {
+			jap_jet_fighter_multirole_equipment_2
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		research_cost = 2
+		start_year = 1946
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -3 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1948.1.1"
+			}
+		}
+	}
+
+ ############################### Naval Fighter
+
+	jap_cv_fighter_0 = {	# A4N
+
+		enable_equipments = {
+			jap_cv_fighter_equipment_0
+		}
+
+		path = {
+			leads_to_tech = jap_cv_fighter_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 6 y = 4 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1938.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_1 = {	# A5M4
+
+		enable_equipments = {
+			jap_cv_fighter_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_cv_fighter_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1938
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 6 y = 8 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			naval_air
+			naval_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1940.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_2 = {	# A6M2
+
+		enable_equipments = {
+			jap_cv_fighter_equipment_2
+		}
+
+		path = {
+			leads_to_tech = jap_cv_fighter_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1940
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 6 y = 12 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_JAP_AB2 } } }
+	# A6M3
+
+		enable_equipments = {
+			jap_cv_fighter_equipment_3
+		}
+
+		path = {
+			leads_to_tech = jap_cv_fighter_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1941
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 6 y = 14 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_JAP_AB2 } } }
+	# A6M5
+
+		enable_equipments = {
+			jap_cv_fighter_equipment_4
+		}
+
+		path = {
+			leads_to_tech = jap_cv_fighter_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1943
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 6 y = 18 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AB2 } } }
+	# A7M2
+
+		enable_equipments = {
+			jap_cv_fighter_equipment_5
+		}
+
+		# path = {
+		# 	leads_to_tech = jap_jet_cv_fighter_1
+		# 	research_cost_coeff = 1
+		# }
+
+		path = {
+			leads_to_tech = jap_jet_cv_fighter_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 6 y = 22 }
+		}
+
+		sub_technologies = {
+			jap_cv_fighter_6
+			jap_cv_fighter_7
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_6 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AB2 } } }
+	# A7M3
+
+		enable_equipments = {
+			jap_cv_fighter_equipment_6
+		}
+
+		path = {
+			leads_to_tech = jap_cv_fighter_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_7 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AB2 } } }
+	# A7M3-J
+
+		enable_equipments = {
+			jap_cv_fighter_equipment_7
+		}
+
+		# path = {
+		# 	leads_to_tech = jap_jet_cv_fighter_1
+		# 	research_cost_coeff = 1
+		# }
+
+		research_cost = 1
+		start_year = 1946
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	# jap_jet_cv_fighter_1 = {	# A8W4
+
+	# 	enable_equipments = {
+	# 		jap_jet_cv_fighter_equipment_1
+	# 	}
+
+	# 	path = {
+	# 		leads_to_tech = jap_jet_cv_fighter_3
+	# 		research_cost_coeff = 1
+	# 	}
+
+	# 	dependencies = {
+	# 		jet_engines = 1
+	# 	}
+
+	# 	research_cost = 1.5
+	# 	start_year = 1947
+
+	# 	folder = {
+	# 		name = jap_air_techs_folder
+	# 		position = { x = 6 y = 26 }
+	# 	}
+
+	# 	categories = {
+	# 		major_technologies
+	# 		naval_air
+	# 		cat_jet_planes
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 4
+
+	# 		modifier = {
+	# 			factor = 40
+	# 			date > "1946.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 40
+	# 			date > "1947.1.1"
+	# 		}
+
+	# 		modifier = {
+	# 			factor = 40
+	# 			date > "1948.1.1"
+	# 		}
+	# 	}
+	# }
+
+	jap_jet_cv_fighter_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_JAP_AB2 } } }
+	# A8W7
+
+		enable_equipments = {
+			jap_jet_cv_fighter_equipment_3
+		}
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 6 y = 28 }
+		}
+
+		research_cost = 1.5
+		start_year = 1948
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_fighter
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1948.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1950.1.1"
+			}
+		}
+	}
+
+ ############################### Heavy Fighter
+
+	jap_heavy_fighter_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		allow_branch = {
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+
+		enable_equipments = {
+			jap_heavy_fighter_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_heavy_fighter_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1941
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 15 y = 14 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_heavy_fighter
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_heavy_fighter_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_heavy_fighter_equipment_2
+		}
+
+		path = {
+			leads_to_tech = jap_heavy_fighter_3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_attacker_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1942
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 15 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_heavy_fighter
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_heavy_fighter_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_heavy_fighter_equipment_3
+		}
+
+		path = {
+			leads_to_tech = jap_heavy_fighter_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1944
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 15 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_heavy_fighter
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_heavy_fighter_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_heavy_fighter_equipment_4
+		}
+
+		research_cost = 2.5
+		start_year = 1946
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 15 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_heavy_fighter
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_attacker_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_attacker_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_attacker_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1944
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 18 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_heavy_fighter
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_attacker_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_attacker_equipment_2
+		}
+
+		research_cost = 2.5
+		start_year = 1946
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 18 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_attacker
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+ ############################### CAS Close Air Support
+
+	jap_cas_1 = { #Ki 3 Kawasaki
+
+		enable_equipments = {
+			jap_cas_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_cas_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1934
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 2 }
+		}
+
+		sub_technologies = {
+			jap_cv_cas_1
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				tag = MAN
+			}
+
+			modifier = {
+				factor = 0
+				tag = MEN
+			}
+		}
+	}
+
+	jap_cv_cas_1 = { # D1A
+
+		enable_equipments = {
+			jap_cv_cas_equipment_1
+		}
+
+		research_cost = 1
+		start_year = 1934
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_cas
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_cas_2 = { #Ki 32 Kawasaki
+
+		enable_equipments = {
+			jap_cas_equipment_2
+		}
+
+		path = {
+			leads_to_tech = jap_cas_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1938
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 8 }
+		}
+
+		sub_technologies = {
+			jap_cv_cas_2
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1940.1.1"
+			}
+		}
+	}
+
+	jap_cv_cas_2 = { # D3A
+
+		enable_equipments = {
+			jap_cv_cas_equipment_2
+		}
+
+		research_cost = 1
+		start_year = 1940
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_cas
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_cas_3 = { # Ki-51 Mitsubishi
+
+		enable_equipments = {
+			jap_cas_equipment_3
+		}
+
+		path = {
+			leads_to_tech = jap_cas_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1940
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 12 }
+		}
+
+		sub_technologies = {
+			jap_cv_cas_3
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	jap_cv_cas_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ # D4Y1
+
+		enable_equipments = {
+			jap_cv_cas_equipment_3
+		}
+
+		research_cost = 1
+		start_year = 1941
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_cas
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_cas_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-71 Kai Mansyu
+
+		enable_equipments = {
+			jap_cas_equipment_4
+		}
+
+		path = {
+			leads_to_tech = jap_cas_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1942
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_cas_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# D4Y3 Suisei
+
+		enable_equipments = {
+			jap_cas_equipment_5
+		}
+
+		path = {
+			leads_to_tech = jap_jet_cas_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1943
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 18 }
+		}
+
+		sub_technologies = {
+			jap_cv_cas_4
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	jap_cv_cas_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ # D4Y4 Suisei
+
+		enable_equipments = {
+			jap_cv_cas_equipment_4
+		}
+
+		research_cost = 1
+		start_year = 1944
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_cas
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_jet_cas_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# R2Y2
+
+		enable_equipments = {
+			jap_jet_cas_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_jet_cas_2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		research_cost = 3
+		start_year = 1946
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	jap_jet_cas_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# R2Y3
+
+		enable_equipments = {
+			jap_jet_cas_equipment_2
+		}
+
+		path = {
+			leads_to_tech = jap_jet_cas_3
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		research_cost = 3
+		start_year = 1947
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 26 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1948.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1949.1.1"
+			}
+		}
+	}
+
+	jap_jet_cas_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# J10Y
+
+		enable_equipments = {
+			jap_jet_cas_equipment_3
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		research_cost = 3
+		start_year = 1949
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 30 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1951.1.1"
+			}
+		}
+	}
+
+ ############################### Naval Bomber
+
+	jap_cv_naval_bomber_1 = {	# B4Y1
+
+		allow_branch = {
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+
+		enable_equipments = {
+			jap_cv_nav_bomber_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_cv_naval_bomber_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1934
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 9 y = 2 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				tag = MAN
+			}
+
+			modifier = {
+				factor = 0
+				tag = MEN
+			}
+		}
+	}
+
+	jap_cv_naval_bomber_2 = {
+
+		enable_equipments = {
+			jap_cv_nav_bomber_equipment_2
+		}
+
+		path = {
+			leads_to_tech = jap_cv_naval_bomber_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1938
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 9 y = 8 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 400
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 400
+				date > "1940.1.1"
+			}
+		}
+	}
+
+	jap_cv_naval_bomber_3 = {
+
+		enable_equipments = {
+			jap_cv_nav_bomber_equipment_3
+		}
+
+		path = {
+			leads_to_tech = jap_cv_naval_bomber_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1940
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 9 y = 12 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	jap_cv_naval_bomber_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_cv_nav_bomber_equipment_4
+		}
+
+		path = {
+			leads_to_tech = jap_cv_naval_bomber_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1942
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 9 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_cv_naval_bomber_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_cv_nav_bomber_equipment_5
+		}
+
+		path = {
+			leads_to_tech = jap_jet_cv_naval_bomber_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1944
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 9 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_jet_cv_naval_bomber_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_jet_cv_nav_bomber_equipment_1
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		path = {
+			leads_to_tech = jap_jet_cv_naval_bomber_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1947
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 9 y = 26 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1948.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1949.1.1"
+			}
+		}
+	}
+
+	jap_jet_cv_naval_bomber_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_jet_cv_nav_bomber_equipment_2
+		}
+
+		research_cost = 3
+		start_year = 1949
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 9 y = 30 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1951.1.1"
+			}
+		}
+	}
+
+ ############################### Patrol
+
+	jap_patrol_1 = {
+
+		allow_branch = {
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+
+		enable_equipments = {
+			jap_patrol_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_patrol_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1934
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 12 y = 2 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			patrol_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_patrol_2 = {
+
+		enable_equipments = {
+			jap_patrol_equipment_2
+		}
+
+		path = {
+			leads_to_tech = jap_patrol_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1936
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 12 y = 4 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			patrol_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_patrol_3 = {
+
+		enable_equipments = {
+			jap_patrol_equipment_3
+		}
+
+		path = {
+			leads_to_tech = jap_patrol_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1939
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 12 y = 10 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_patrol_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_patrol_equipment_4
+		}
+
+		path = {
+			leads_to_tech = jap_patrol_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1942
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 12 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_patrol_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_patrol_equipment_5
+		}
+
+		path = {
+			leads_to_tech = jap_patrol_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1944
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 12 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_patrol_6 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_patrol_equipment_6
+		}
+
+		research_cost = 2.5
+		start_year = 1947
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 12 y = 26 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+ ############################### Tactical Bomber
+
+	jap_tactical_bomber_1 = {
+
+		allow_branch = {
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+
+		enable_equipments = {
+			jap_tac_bomber_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_strike_bomber_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_tactical_bomber_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1934
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 27 y = 2 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				tag = MAN
+			}
+
+			modifier = {
+				factor = 0
+				tag = MEN
+			}
+		}
+	}
+
+	jap_tactical_bomber_2 = {
+
+		enable_equipments = {
+			jap_tac_bomber_equipment_2
+		}
+
+		path = {
+			leads_to_tech = jap_tactical_bomber_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1940
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 27 y = 12 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	jap_tactical_bomber_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_tac_bomber_equipment_3
+		}
+
+		path = {
+			leads_to_tech = jap_tactical_bomber_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1942
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 27 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_tactical_bomber_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_tac_bomber_equipment_4
+		}
+
+		path = {
+			leads_to_tech = jap_tactical_bomber_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1944
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 27 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_tactical_bomber_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_tac_bomber_equipment_5
+		}
+
+		path = {
+			leads_to_tech = jap_jet_tactical_bomber_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1946
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 27 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	jap_jet_tactical_bomber_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_jet_tac_bomber_equipment_1
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		research_cost = 3
+		start_year = 1949
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 27 y = 30 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			cat_jet_planes
+			tactical_bomber
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1951.1.1"
+			}
+		}
+	}
+
+ ############################### Strike Bomber
+	jap_strike_bomber_1 = {
+
+		enable_equipments = {
+			jap_strike_bomber_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_strike_bomber_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1937
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 22 y = 6 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_strike_bomber_2 = {	# Ki-49
+
+		enable_equipments = {
+			jap_strike_bomber_equipment_2
+		}
+
+		path = {
+			leads_to_tech = jap_strike_bomber_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1939
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 22 y = 10 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1941.1.1"
+			}
+		}
+	}
+
+	jap_strike_bomber_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ # Ki-66 Kawasaki
+
+		enable_equipments = {
+			jap_strike_bomber_equipment_3
+		}
+
+		path = {
+			leads_to_tech = jap_strike_bomber_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1942
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 22 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_strike_bomber_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-67 Hiryu
+
+		enable_equipments = {
+			jap_strike_bomber_equipment_4
+		}
+
+		path = {
+			leads_to_tech = jap_strike_bomber_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1943
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 22 y = 18 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	jap_strike_bomber_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_strike_bomber_equipment_5
+		}
+
+		path = {
+			leads_to_tech = jap_jet_tactical_bomber_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1946
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 22 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1948.1.1"
+			}
+		}
+	}
+
+ ############################### Strategic Bomber
+
+	jap_strategic_bomber_1 = {
+
+		allow_branch = {
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+
+		enable_equipments = {
+			jap_strat_bomber_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_strategic_bomber_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1934
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 30 y = 2 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_strategic_bomber_2 = {
+
+		enable_equipments = {
+			jap_strat_bomber_equipment_2
+		}
+
+		path = {
+			leads_to_tech = jap_strategic_bomber_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1937
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 30 y = 6 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_strategic_bomber_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_strat_bomber_equipment_3
+		}
+
+		path = {
+			leads_to_tech = jap_strategic_bomber_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1941
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 30 y = 14 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_strategic_bomber_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_strat_bomber_equipment_4
+		}
+
+		path = {
+			leads_to_tech = jap_strategic_bomber_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1944
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 30 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_strategic_bomber_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_strat_bomber_equipment_5
+		}
+
+		path = {
+			leads_to_tech = jap_jet_strategic_bomber_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1947
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 30 y = 26 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_jet_strategic_bomber_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_jet_strat_bomber_equipment_1
+		}
+
+		research_cost = 3
+		start_year = 1950
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 30 y = 32 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_air
+			cat_jet_planes
+			cat_strategic_bomber
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+ ############################### Recon
+
+	jap_scout_plane_1 = {
+
+		allow_branch = {
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+
+		enable_equipments = {
+			jap_scout_plane_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_scout_plane_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1934
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 36 y = 2 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_scout_plane
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1936.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1937.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1938.7.1"
+			}
+		}
+	}
+
+	jap_scout_plane_2 = {
+
+		enable_equipments = {
+			jap_scout_plane_equipment_2
+		}
+
+		path = {
+			leads_to_tech = jap_scout_plane_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1937
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 36 y = 6 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_scout_plane
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1937.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1938.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1939.7.1"
+			}
+		}
+	}
+
+	jap_scout_plane_3 = {
+
+		enable_equipments = {
+			jap_scout_plane_equipment_3
+		}
+
+		path = {
+			leads_to_tech = jap_scout_plane_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1940
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 36 y = 12 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_scout_plane
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1940.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1941.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1942.7.1"
+			}
+		}
+	}
+
+	jap_scout_plane_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_scout_plane_equipment_4
+		}
+
+		path = {
+			leads_to_tech = jap_scout_plane_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 36 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_scout_plane
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1942.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.7.1"
+			}
+		}
+	}
+
+	jap_scout_plane_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_scout_plane_equipment_5
+		}
+
+		path = {
+			leads_to_tech = jap_scout_plane_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1944
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 36 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_scout_plane
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1944.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1945.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.7.1"
+			}
+		}
+	}
+
+	jap_scout_plane_6 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_scout_plane_equipment_6
+		}
+
+		research_cost = 1.5
+		start_year = 1947
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 36 y = 26 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_scout_plane
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1947.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1948.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1949.7.1"
+			}
+		}
+	}
+
+	############################### Transport
+
+	jap_transport_plane_1 = {
+
+		enable_equipments = {
+			jap_transport_plane_equipment_1
+		}
+
+		path = {
+			leads_to_tech = jap_transport_plane_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1937
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 33 y = 6 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1937.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1938.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1939.7.1"
+			}
+		}
+	}
+
+	jap_transport_plane_2 = {
+
+		enable_equipments = {
+			jap_transport_plane_equipment_2
+		}
+
+		path = {
+			leads_to_tech = jap_transport_plane_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 33 y = 12 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1940.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1941.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1942.7.1"
+			}
+		}
+	}
+
+	jap_transport_plane_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+
+
+		enable_equipments = {
+			jap_transport_plane_equipment_3
+		}
+
+		research_cost = 2
+		start_year = 1945
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 33 y = 22 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1945.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1947.7.1"
+			}
+		}
+	}
+
+   ########  ##          ###    ##    ## ########    ########  ########  ######  ####  ######   ##    ## ######## ########
+   ##     ## ##         ## ##   ###   ## ##          ##     ## ##       ##    ##  ##  ##    ##  ###   ## ##       ##     ##
+   ##     ## ##        ##   ##  ####  ## ##          ##     ## ##       ##        ##  ##        ####  ## ##       ##     ##
+   ########  ##       ##     ## ## ## ## ######      ##     ## ######    ######   ##  ##   #### ## ## ## ######   ########
+   ##        ##       ######### ##  #### ##          ##     ## ##             ##  ##  ##    ##  ##  #### ##       ##   ##
+   ##        ##       ##     ## ##   ### ##          ##     ## ##       ##    ##  ##  ##    ##  ##   ### ##       ##    ##
+   ##        ######## ##     ## ##    ## ########    ########  ########  ######  ####  ######   ##    ## ######## ##     ##
+
+ ############################### Fighter
+
+	jap_fighter_ad_tech_1 = {	# Kawasaki Ki-10
+
+		allow_branch = {
+			has_dlc = "By Blood Alone"
+		}
+
+		enable_equipments = {
+			JAP_ki_10_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_kawasaki_ha_9_iia_b_1x
+			JAP_machinegun_77mm_type_89_1x_nose_prop
+			JAP_machinegun_77mm_type_89_2x_nose_prop
+			fuel_tanks_large
+			fuel_tanks_medium
+			fuel_tanks_small
+			metal_construction
+			mixed_construction
+			non_strategic_materials
+			armour_light_none
+			drop_tanks
+			drop_tanks_medium
+			drop_tanks_large
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_cv_fighter_ad_tech_0
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_cas_ad_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1935
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1938.1.1"
+			}
+		}
+	}
+
+	jap_fighter_ad_tech_2 = {	# Nakajima Ki-27
+
+		enable_equipments = {
+			JAP_ki_27_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_kotobuki_41_1x
+			drop_tanks_large_2x
+			drop_tanks_medium_2x
+			drop_tanks_2x
+			drop_tanks_very_small_2x
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_interceptor_ad_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1937
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	jap_fighter_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+	# Nakajima Ki-43-I `Hayabusa`
+
+		enable_equipments = {
+			JAP_ki_43_i_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_sakae_ha_25_12_1x
+			JAP_machinegun_127mm_ho_103_1x_nose_prop
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_multirole_ad_tech_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_ad_tech_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1941
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 0 y = 14 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1940.9.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	jap_fighter_ad_tech_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Nakajima Ki-43-II `Hayabusa`
+
+		enable_equipments = {
+			JAP_ki_43_ii_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_sakae_ha_105_1x
+			armour_light_seat
+			self_sealing_fuel_tanks
+			self_sealing_fuel_tanks_small
+			self_sealing_fuel_tanks_medium
+			self_sealing_fuel_tanks_large
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_ad_tech_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 0 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_fighter_ad_tech_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Kawanishi N1K1-J Shiden
+
+		enable_equipments = {
+			JAP_n1k1_j_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_homare_21_1x
+			JAP_machinegun_77mm_type_97_2x_nose_prop
+			JAP_cannon_20mm_type_99_2_2x_wing
+			armoured_glass_light
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_ad_tech_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1943
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 0 y = 18 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	jap_fighter_ad_tech_6 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Kawanishi N1K2-J Shiden Kai
+
+		enable_equipments = {
+			JAP_n1k2_j_airframe
+		}
+		enable_equipment_modules = {
+			fire_suppression
+			JAP_machinegun_132mm_type_3_2x_nose_prop
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_ad_tech_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1944
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 0 y = 20 }
+		}
+
+		sub_technologies = {
+			jap_cv_fighter_ad_tech_7
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_ad_tech_7 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AB2 } } }
+	# Kawanishi N1K3-A Shiden Kai
+
+		enable_equipments = {
+			JAP_n1k3_a_airframe
+		}
+
+		research_cost = 1.5
+		start_year = 1944
+
+		categories = {
+			major_technologies
+			naval_air
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_fighter_ad_tech_7 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Kawanishi J6K Jinpu
+
+		enable_equipments = {
+			JAP_j6k_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_homare_42_1x
+			JAP_machinegun_132mm_type_3_2x_nose_prop
+			JAP_cannon_20mm_type_99_2_4x_wing
+		}
+
+		path = {
+			leads_to_tech = jap_jet_fighter_multirole_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1945
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 0 y = 22 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+		}
+	}
+
+ ############################### Fighter Interceptor
+
+	jap_interceptor_ad_tech_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+ 	# Nakajima Ki-44 I Shoki
+
+		enable_equipments = {
+			JAP_ki_44_i_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_ha_41_1x
+			JAP_machinegun_77mm_type_89_2x_nose_prop
+			JAP_machinegun_127mm_ho_103_2x_wing
+		}
+
+		path = {
+			leads_to_tech = jap_interceptor_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1941
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 3 y = 14 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_interceptor
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+		}
+	}
+
+	jap_interceptor_ad_tech_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ # Nakajima Ki-44-II `Shōki`
+
+		enable_equipments = {
+			JAP_ki_44_ii_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_ha_109_1x
+			JAP_machinegun_127mm_ho_103_2x_nose_prop
+			armour_light_seat
+			self_sealing_fuel_tanks
+			self_sealing_fuel_tanks_large
+			self_sealing_fuel_tanks_medium
+			self_sealing_fuel_tanks_small
+		}
+
+		path = {
+			leads_to_tech = jap_interceptor_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 3 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_interceptor
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_interceptor_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ 	# Mitsubishi J2M3 `Raiden`
+
+		enable_equipments = {
+			JAP_j2m3_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kasei_21_22_23_1x
+			JAP_cannon_20mm_type_99_1_2x_wing
+			JAP_cannon_20mm_type_99_2_2x_wing
+		}
+
+		path = {
+			leads_to_tech = jap_interceptor_ad_tech_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1943
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 3 y = 18 }
+		}
+
+		sub_technologies = {
+			jap_interceptor_ad_tech_3_1
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_interceptor
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	jap_interceptor_ad_tech_3_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ # Mitsubishi J2M5 `Raiden`
+
+		enable_equipments = {
+			JAP_j2m5_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kasei_26_1x
+			JAP_cannon_20mm_type_99_1_1x_upwards
+			JAP_cannon_20mm_type_99_1_2x_upwards
+		}
+
+		sub_tech_index = 2
+		research_cost = 1.5
+		start_year = 1944
+
+		categories = {
+			major_technologies
+			light_air
+			cat_interceptor
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_interceptor_ad_tech_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Nakajima Ki-84-I `Hayate`
+
+		enable_equipments = {
+			JAP_ki_84_i_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_homare_21_1x
+			JAP_cannon_20mm_ho_5_2x_nose_prop
+			JAP_cannon_20mm_ho_5_2x_wing
+			fire_suppression
+		}
+
+		path = {
+			leads_to_tech = jap_interceptor_ad_tech_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1944
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 3 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_interceptor
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_interceptor_ad_tech_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Nakajima Ki-117 `Hayate`
+
+		enable_equipments = {
+			JAP_ki_117_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_ha_219_ru_1x
+			JAP_cannon_30mm_ho_155_2x_wing
+			pressurized_cockpit
+		}
+
+		path = {
+			leads_to_tech = jap_jet_interceptor_ad_tech_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_jet_fighter_multirole_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1945
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 3 y = 22 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_interceptor
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	jap_jet_interceptor_ad_tech_1 = {	# Kayaba Katsuodori Kai
+
+		enable_equipments = {
+			JAP_katsudori_kai_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_kayaba_model_2_1x
+			JAP_cannon_30mm_ho_156_2x_nose
+			JAP_cannon_40mm_ho_301_2x_pod
+		}
+		allow = {
+        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_JAP_AA2 } }
+
+			OR = {
+				JAP = {
+					has_completed_focus = JAP_jet_prototypes
+				}
+				GER = {
+					has_completed_focus = GER_naval_cooperation_with_japan
+				}
+				GER = {
+					OR = {
+						is_in_faction_with = JAP
+						is_puppet_of = JAP
+					}
+				}
+			}
+		}
+
+		path = {
+			leads_to_tech = jap_jet_interceptor_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1947
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 3 y = 26 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_interceptor
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1948.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1949.1.1"
+			}
+		}
+	}
+
+	jap_jet_interceptor_ad_tech_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Nakajima T-1 `Kōryū`
+
+		enable_equipments = {
+			JAP_t_1_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ne_340_1x
+			JAP_cannon_20mm_type_8_ii_4x_nose
+			JAP_cannon_20mm_type_8_ii_2x_nose
+			JAP_cannon_20mm_type_8_ii_2x_pod
+			g_suit
+			air_air_radar_2
+		}
+
+		research_cost = 3
+		start_year = 1950
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 3 y = 32 }
+		}
+
+		dependencies = {
+			advanced_centimetric_radar = 1
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_interceptor
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1951.1.1"
+			}
+		}
+	}
+
+ ############################### Fighter Multirole
+
+	jap_fighter_multirole_ad_tech_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Kawasaki Ki-61-I Otsu `Hien`
+
+		enable_equipments = {
+			JAP_ki_61_i_otsu_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_kawasaki_ha_40_atsuta_21_1x
+			JAP_machinegun_127mm_ho_103_2x_nose_prop
+			JAP_machinegun_127mm_ho_103_2x_wing
+			oxygen_masks
+			armour_light_seat
+			self_sealing_fuel_tanks
+			self_sealing_fuel_tanks_small
+			self_sealing_fuel_tanks_medium
+			self_sealing_fuel_tanks_large
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_multirole_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -3 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_multirole
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_fighter_multirole_ad_tech_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Kawasaki Ki-61-I Tei `Hien`
+
+		enable_equipments = {
+			JAP_ki_61_i_tei_airframe
+		}
+		enable_equipment_modules = {
+			JAP_cannon_20mm_ho_5_1x_nose_prop
+			JAP_cannon_20mm_ho_5_2x_nose_prop
+			JAP_cannon_20mm_ho_5_2x_wing
+			armour_light_seat_fuel
+		}
+
+		path = {
+			leads_to_tech = jap_fighter_multirole_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1943
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -3 y = 18 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_multirole
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	jap_fighter_multirole_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Kawasaki Ki-61-II Kai `Hien`
+
+		enable_equipments = {
+			JAP_ki_61_ii_kai_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_kawasaki_ha_140_1x
+		}
+
+		path = {
+			leads_to_tech = jap_jet_fighter_multirole_ad_tech_1
+			research_cost_coeff = 1
+		}
+
+		sub_technologies = {
+			jap_fighter_multirole_ad_tech_3_1
+		}
+
+		research_cost = 1.5
+		start_year = 1944
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -3 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_multirole
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_fighter_multirole_ad_tech_3_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Kawasaki Ki-100 `Goshikisen`
+
+		enable_equipments = {
+			JAP_ki_100_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kinsei_ha_112_62_1x
+		}
+
+		sub_tech_index = 2
+		research_cost = 1.5
+		start_year = 1945
+
+		categories = {
+			major_technologies
+			light_air
+			cat_multirole
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	jap_jet_fighter_multirole_ad_tech_1 = {	# Nakajima J9N Kikka
+
+		enable_equipments = {
+			JAP_j9n_kikka_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_kugisho_ne_20_kai_2x
+			JAP_cannon_30mm_type_5_2x_nose
+		}
+
+		path = {
+			leads_to_tech = jap_jet_fighter_multirole_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		research_cost = 3
+		start_year = 1945
+
+		allow = {
+        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AA2 } }
+
+			OR = {
+				JAP = {
+					has_completed_focus = JAP_jet_prototypes
+				}
+				GER = {
+					has_completed_focus = GER_naval_cooperation_with_japan
+				}
+				GER = {
+					OR = {
+						is_in_faction_with = JAP
+						is_puppet_of = JAP
+					}
+				}
+			}
+		}
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -3 y = 22 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_multirole
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	jap_jet_fighter_multirole_ad_tech_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Nakajima Ki-201 Karyū
+
+		enable_equipments = {
+			JAP_ki_201_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_ne_230_2x
+			JAP_cannon_20mm_ho_5_2x_nose
+			air_air_radar_1
+			JAP_rockets_type_5_no1_mod9_2x
+			JAP_rockets_type_5_no1_mod9_6x
+			JAP_rockets_type_5_no1_mod9_10x
+		}
+
+		path = {
+			leads_to_tech = jap_jet_fighter_multirole_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1946
+
+		dependencies = {
+			advanced_centimetric_radar = 1
+		}
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -3 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_multirole
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	jap_jet_fighter_multirole_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Mizuno J10Y `Shinryū`
+
+		enable_equipments = {
+			JAP_j10y_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ne_340_2x
+			JAP_cannon_30mm_ho_156_2x_nose
+			pressurized_cockpit
+			g_suit
+			JAP_rockets_type_10_no1_mk3_mod_1_2x
+			JAP_rockets_type_10_no1_mk3_mod_1_4x
+		}
+
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -3 y = 32 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cat_multirole
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1951.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1952.1.1"
+			}
+		}
+	}
+
+ ############################### Naval Fighter
+
+	jap_cv_fighter_ad_tech_0 = {	# Nakajima A4N
+
+
+		enable_equipments = {
+			JAP_a4n_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_hikari_ha_8_1x
+			JAP_machinegun_77mm_type_97_2x_nose_prop
+		}
+
+		path = {
+			leads_to_tech = jap_cv_fighter_ad_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 6 y = 4 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			light_air
+			naval_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1938.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_ad_tech_1 = {	# Mitsubishi A5M4
+
+		enable_equipments = {
+			JAP_a5m_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_kotobuki_41_1x
+			fire_suppression
+		}
+
+		path = {
+			leads_to_tech = jap_cv_fighter_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1938
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 6 y = 8 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			light_air
+			naval_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1940.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_ad_tech_2 = {	# Mitsubishi A6M2
+
+		enable_equipments = {
+			JAP_a6m2_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_sakae_ha_25_12_1x
+			JAP_cannon_20mm_type_99_1_2x_wing
+			floats
+		}
+
+		path = {
+			leads_to_tech = jap_cv_fighter_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1940
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 6 y = 12 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			light_air
+			cat_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_JAP_AB2 } } }
+	# Mitsubishi A6M3
+
+		enable_equipments = {
+			JAP_a6m3_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_sakae_21_1x
+			JAP_cannon_20mm_type_99_2_2x_wing
+			oxygen_masks
+		}
+
+		path = {
+			leads_to_tech = jap_cv_fighter_ad_tech_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1941
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 6 y = 14 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			light_air
+			naval_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_ad_tech_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_JAP_AB2 } } }
+	# Mitsubishi A6M5
+
+		enable_equipments = {
+			JAP_a6m5_airframe
+		}
+		enable_equipment_modules = {
+			oxygen_masks
+			armoured_glass_light
+			armour_light_seat
+			JAP_machinegun_132mm_type_3_1x_nose_prop
+			JAP_machinegun_132mm_type_3_2x_nose_prop
+			JAP_machinegun_132mm_type_3_2x_wing
+			JAP_cannon_20mm_type_99_1_1x_upwards
+			self_sealing_fuel_tanks
+			self_sealing_fuel_tanks_large
+			self_sealing_fuel_tanks_medium
+			self_sealing_fuel_tanks_small
+		}
+
+		path = {
+			leads_to_tech = jap_cv_fighter_ad_tech_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1943
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 6 y = 18 }
+		}
+
+		sub_technologies = {
+			jap_cv_fighter_ad_tech_4_2
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			light_air
+			naval_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_ad_tech_4_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AB2 } } }
+	# Mitsubishi A6M8
+
+		enable_equipments = {
+			JAP_a6m8_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kinsei_ha_112_62_1x
+			JAP_rockets_type_3_no6_mod27_6x
+			JAP_rockets_type_5_no1_mod9_6x
+			JAP_rockets_type_5_no1_mod9_10x
+		}
+
+		sub_tech_index = 0
+		research_cost = 1.5
+		start_year = 1945
+
+		categories = {
+			major_technologies
+			naval_air
+			light_air
+			naval_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_ad_tech_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AB2 } } }
+	# Mitsubishi A7M2 `Reppū`
+
+		enable_equipments = {
+			JAP_a7m2_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ha_211_1x
+			JAP_machinegun_132mm_type_3_2x_wing
+			JAP_machinegun_132mm_type_3_4x_wing
+			JAP_cannon_20mm_type_99_1_2x_upwards
+		}
+
+		path = {
+			leads_to_tech = jap_jet_cv_fighter_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 6 y = 22 }
+		}
+
+		sub_technologies = {
+			jap_cv_fighter_ad_tech_6
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			light_air
+			naval_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1944.10.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_cv_fighter_ad_tech_6 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AB2 } } }
+	# Mitsubishi A7M3 `Reppū Kai`
+
+		enable_equipments = {
+			JAP_a7m3_airframe
+		}
+		enable_equipment_modules = {
+			JAP_cannon_30mm_type_5_2x_wing
+			JAP_cannon_30mm_type_5_2x_upwards
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		categories = {
+			major_technologies
+			naval_air
+			light_air
+			naval_fighter
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	jap_jet_cv_fighter_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_JAP_AB2 } } }
+	# Nakajima A8W7	(related to Ki 201)
+
+		enable_equipments = {
+			JAP_a8w7_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_ne_230_kai_2x
+			pressurized_cockpit
+			JAP_cannon_20mm_type_8_ii_2x_nose
+		}
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 6 y = 28 }
+		}
+
+		research_cost = 1.5
+		start_year = 1948
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_fighter
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1948.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1950.1.1"
+			}
+		}
+	}
+
+ ############################### Attacker
+
+	jap_attacker_ad_tech_0 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-45 Toryu
+
+		allow_branch = {
+			has_dlc = "By Blood Alone"
+		}
+
+		enable_equipments = {
+			JAP_ki_45_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_zuisei_ha_102_21_2x
+			JAP_cannon_37mm_ho_203_1x_nose
+			JAP_machinegun_127mm_ho_103_2x_nose
+			JAP_cannon_20mm_ho_3_1x_nose
+			JAP_tank_buster_37mm_ho_204_1x_pod_fuselage
+			JAP_machinegun_792mm_type_98_1x_mounted_rear
+			self_sealing_fuel_tanks
+			self_sealing_fuel_tanks_large
+			self_sealing_fuel_tanks_medium
+		}
+
+		path = {
+			leads_to_tech = jap_attacker_ad_tech_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_heavy_fighter_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1941
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 18 y = 14 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_attacker
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 40
+				date > "1941.8.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+		}
+	}
+
+	jap_attacker_ad_tech_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-96
+
+		enable_equipments = {
+			JAP_ki_96_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kinsei_ha_112_62_2x
+			JAP_cannon_37mm_ho_203_1x_nose
+			JAP_cannon_20mm_ho_5_2x_nose
+		}
+
+		path = {
+			leads_to_tech = jap_attacker_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1943
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 18 y = 18 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_attacker
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+		}
+	}
+	jap_attacker_ad_tech_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-102
+
+		enable_equipments = {
+			JAP_ki_102_airframe
+		}
+		enable_equipment_modules = {
+			JAP_tank_buster_37mm_ho_204_1x_pod_fuselage
+			JAP_tank_buster_57mm_ho_401_1x_pod_fuselage
+		}
+
+		path = {
+			leads_to_tech = jap_attacker_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1944
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 18 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_attacker
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_attacker_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Rikugen Ki-93
+
+		enable_equipments = {
+			JAP_ki_93_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ha_214_2x
+			JAP_tank_buster_75mm_ho_501_ii_1x_pod_fuselage
+			pressurized_cockpit
+		}
+
+		path = {
+			leads_to_tech = jap_attacker_ad_tech_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1945
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 18 y = 22 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_attacker
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	jap_attacker_ad_tech_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Aichi S1A `Denko`
+
+		enable_equipments = {
+			JAP_s1a_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_homare_24_2x
+			air_air_radar_1
+			JAP_cannon_30mm_type_5_2x_nose
+			JAP_cannon_20mm_type_99_2_2x_nose
+			JAP_cannon_20mm_type_99_2_2x_remote_ball_rear
+		}
+
+		research_cost = 2
+		start_year = 1945
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 18 y = 24 }
+		}
+
+		dependencies = {
+			advanced_centimetric_radar = 1
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_attacker
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	############################### Heavy Fighter
+	jap_heavy_fighter_ad_tech_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Nakajima J1N `Gekkō`
+
+		enable_equipments = {
+			JAP_j1n_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_sakae_21_2x
+			JAP_cannon_20mm_type_99_2_1x_nose
+			JAP_machinegun_77mm_type_97_2x_nose
+			JAP_machinegun_77mm_type_97_2x_remote_ball_rear
+		}
+
+		path = {
+			leads_to_tech = jap_heavy_fighter_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1942
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 15 y = 16 }
+		}
+
+		sub_technologies = {
+			jap_heavy_fighter_ad_tech_2_2
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_heavy_fighter
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_heavy_fighter_ad_tech_2_2 = {	# Nakajima J5N1
+
+		enable_equipment_modules = {
+			JAP_engine_nakajima_homare_21_2x
+			JAP_cannon_30mm_type_5_2x_nose
+			JAP_cannon_20mm_type_99_2_2x_nose
+			JAP_cannon_20mm_type_99_1_1x_upwards
+			JAP_cannon_20mm_type_99_1_2x_upwards
+			armoured_glass_medium
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+				name = "J5N1 `Tenrai`"
+				type = JAP_j1n_airframe
+				parent_version = 1
+				mark_older_equipment_obsolete = yes
+				icon = GFX_jap_heavy_fighter_ad_tech_2_medium
+				modules = {
+					chin_slot_1 = JAP_cannon_30mm_type_5_2x_nose
+					nose_slot_1 = JAP_cannon_20mm_type_99_2_2x_nose
+					defensive_armament_slot_1 = empty
+					defensive_armament_slot_2 = empty
+					fuselage_mount_slot_1 = empty
+					wing_mount_slot_1 = empty
+					fixed_construction_slot = metal_construction
+					fixed_engine_type_slot = JAP_engine_nakajima_homare_21_2x
+					fixed_armour_slot = armour_medium_seat
+					fixed_protection_slot_1 = self_sealing_fuel_tanks
+					fixed_protection_slot_2 = armoured_glass_medium
+					fixed_ammo_slot = empty
+					fixed_crew_slot_1 = oxygen_masks
+				}
+			}
+		}
+
+		sub_tech_index = 2
+		research_cost = 2
+		start_year = 1944
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_heavy_fighter
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_heavy_fighter_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Mitsubishi Ki-83
+
+		enable_equipments = {
+			JAP_ki_83_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ha_211_2x
+			fire_suppression
+			armoured_glass_medium
+			JAP_cannon_30mm_ho_155_2x_nose
+			JAP_cannon_20mm_ho_5_2x_nose
+		}
+
+		path = {
+			leads_to_tech = jap_heavy_fighter_ad_tech_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1944
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 15 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_heavy_fighter
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_heavy_fighter_ad_tech_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Kyūshū J7W1 Shinden
+
+		enable_equipments = {
+			JAP_j7w1_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ha_43_42_1x
+		}
+
+		path = {
+			leads_to_tech = jap_heavy_fighter_ad_tech_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1945
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 15 y = 22 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_heavy_fighter
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	jap_heavy_fighter_ad_tech_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# J7W2 Shinden Kai
+
+		enable_equipments = {
+			JAP_j7w2_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_ist_ne_201_1x
+		}
+
+		research_cost = 2.5
+		start_year = 1946
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 15 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			cat_jet_planes
+			medium_air
+			cat_heavy_fighter
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1948.1.1"
+			}
+		}
+	}
+
+ ############################### CAS Close Air Support
+
+	jap_cas_ad_tech_1 = {	# Kawasaki Ki-3
+
+		enable_equipments = {
+			JAP_ki_3_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_kawasaki_ha_9_ii_1x
+			JAP_machinegun_77mm_type_89_1x_mounted
+			JAP_machinegun_77mm_type_89_1x_mounted_rear
+			JAP_machinegun_77mm_type_89_2x_mounted
+			JAP_machinegun_77mm_type_89_2x_mounted_rear
+		}
+
+		path = {
+			leads_to_tech = jap_cas_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1934
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 2 }
+		}
+
+		sub_technologies = {
+			jap_cv_cas_ad_tech_1
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				tag = MAN
+			}
+
+			modifier = {
+				factor = 0
+				tag = MEN
+			}
+		}
+	}
+
+	jap_cv_cas_ad_tech_1 = { # Aichi D1A
+
+		enable_equipments = {
+			JAP_d1a_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_hikari_ha_8_1x
+			JAP_machinegun_77mm_type_89_2x_nose_prop
+			JAP_machinegun_77mm_type_92_1x_mounted_rear
+		}
+
+		research_cost = 1
+		start_year = 1934
+
+		categories = {
+			major_technologies
+			naval_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_cas_ad_tech_2 = { # Kawasaki Ki-32
+
+		enable_equipments = {
+			JAP_ki_32_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_kawasaki_ha_9_iia_b_1x
+		}
+
+		path = {
+			leads_to_tech = jap_cas_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1938
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 8 }
+		}
+
+		sub_technologies = {
+			jap_cv_cas_ad_tech_2
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1940.1.1"
+			}
+		}
+	}
+
+	jap_cv_cas_ad_tech_2 = { # Aichi D3A1 `Kanbaku`
+
+		enable_equipments = {
+			JAP_d3a1_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kinsei_43_44_1x
+			dive_brakes_small
+		}
+
+		research_cost = 1
+		start_year = 1940
+
+		categories = {
+			major_technologies
+			naval_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_cas_ad_tech_3 = { # Mitsubishi Ki-51
+
+		enable_equipments = {
+			JAP_ki_51_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_zuisei_ha_26_15_1x
+			armour_light_cockpit_engine
+			armour_light_cockpit
+			armoured_glass_light
+			self_sealing_fuel_tanks
+			JAP_machinegun_77mm_type_89_2x_wing
+			JAP_machinegun_77mm_type_92_1x_mounted_rear
+		}
+
+		path = {
+			leads_to_tech = jap_cas_ad_tech_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1940
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 12 }
+		}
+
+		sub_technologies = {
+			jap_cv_cas_ad_tech_3
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	jap_cv_cas_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ # D4Y1
+
+		enable_equipments = {
+			JAP_d4y1_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_kawasaki_ha_40_atsuta_21_1x
+			dive_brakes_small
+			JAP_engine_mitsubishi_kinsei_54_1x
+		}
+
+		research_cost = 1
+		start_year = 1941
+
+		categories = {
+			major_technologies
+			naval_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_cas_ad_tech_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-71 Kai Mansyu
+
+		enable_equipments = {
+			JAP_ki_71_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kinsei_ha_112_62_1x
+			dive_brakes_small
+			JAP_machinegun_127mm_ho_103_2x_wing
+		}
+
+		path = {
+			leads_to_tech = jap_cas_ad_tech_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1942
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_cas_ad_tech_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Yokosuka D4Y3 `Suisei`
+
+		enable_equipments = {
+			JAP_d4y3_airframe
+		}
+		enable_equipment_modules = {
+			JAP_machinegun_77mm_type_97_2x_nose_prop
+			JAP_machinegun_132mm_type_3_1x_mounted_rear
+		}
+
+		path = {
+			leads_to_tech = jap_cas_ad_tech_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1943
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 18 }
+		}
+
+		sub_technologies = {
+			jap_cv_cas_ad_tech_4
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+		}
+	}
+
+	jap_cv_cas_ad_tech_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ # D4Y4 Suisei
+
+		enable_equipments = {
+			JAP_d4y4_airframe
+		}
+
+		research_cost = 1
+		start_year = 1944
+
+		categories = {
+			major_technologies
+			naval_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_cas_ad_tech_6 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Mansyū Ki-98
+
+		enable_equipments = {
+			JAP_ki_98_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ha_211_1x
+			JAP_tank_buster_37mm_ho_204_1x_pod_fuselage
+			JAP_cannon_20mm_ho_5_2x_nose
+			JAP_rockets_type_5_no1_mod9_10x
+		}
+
+		path = {
+			leads_to_tech = jap_jet_cas_ad_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1945
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 22 }
+		}
+
+		sub_technologies = {
+			jap_cas_ad_tech_6_1
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+		}
+	}
+
+	jap_cas_ad_tech_6_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ # Mansyū Ki-98 Kai
+
+		enable_equipments = {
+			JAP_ki_98_kai_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_kugisho_ne_30_kai_1x
+			pressurized_cockpit
+			JAP_tank_buster_57mm_ho_401_1x_pod_fuselage
+			JAP_cannon_30mm_ho_155_2x_nose
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		sub_tech_index = 2
+		research_cost = 1
+		start_year = 1946
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			air_equipment
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	jap_jet_cas_ad_tech_1 = {	# R2Y2-G `Keiun-Kai`
+
+		enable_equipments = {
+			JAP_r2y2_g_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ne_330_2x
+			bomb_sights_3
+			JAP_cannon_30mm_type_5_2x_nose
+		}
+		allow = {
+        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } }
+
+			OR = {
+				JAP = {
+					has_completed_focus = JAP_jet_prototypes
+				}
+				GER = {
+					has_completed_focus = GER_naval_cooperation_with_japan
+				}
+				GER = {
+					OR = {
+						is_in_faction_with = JAP
+						is_puppet_of = JAP
+					}
+				}
+			}
+		}
+
+		path = {
+			leads_to_tech = jap_jet_cas_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		research_cost = 2
+		start_year = 1946
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 40
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 40
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	jap_jet_cas_ad_tech_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# R2Y3-G `Keiun-Kai`
+
+		enable_equipments = {
+			JAP_r2y3_g_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ne_331_2x
+			armour_light_seat_fuel
+			JAP_rockets_type_9_no4_mk1_mod2_4x
+			JAP_cannon_30mm_ho_156_2x_nose
+		}
+
+		research_cost = 2
+		start_year = 1948
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = -6 y = 28 }
+		}
+
+		sub_technologies = {
+			jap_jet_cv_cas_ad_tech_2
+		}
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1948.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1950.1.1"
+			}
+		}
+	}
+
+	jap_jet_cv_cas_ad_tech_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# R2Y3-A `Keiun-Kai`
+
+		enable_equipments = {
+			JAP_r2y3_a_airframe
+		}
+		enable_equipment_modules = {
+			JAP_guided_bomb_ke_go_1x
+		}
+
+		research_cost = 1.5
+		start_year = 1948
+
+		categories = {
+			major_technologies
+			light_air
+			cas_bomber
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1951.1.1"
+			}
+		}
+	}
+
+ ############################### Naval Bomber
+
+	jap_cv_naval_bomber_ad_tech_1 = {	# Yokosuka B4Y1
+
+		allow_branch = {
+			has_dlc = "By Blood Alone"
+		}
+
+		enable_equipments = {
+			JAP_b4y_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_hikari_ha_8_1x
+			JAP_machinegun_77mm_type_92_1x_mounted_rear
+			JAP_torpedo_mounting_45cm_type_91_mod_1_1x
+		}
+
+		path = {
+			leads_to_tech = jap_cv_naval_bomber_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1936
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 9 y = 4 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				tag = MAN
+			}
+
+			modifier = {
+				factor = 0
+				tag = MEN
+			}
+		}
+	}
+
+	jap_cv_naval_bomber_ad_tech_2 = {	# Nakajima B5N
+
+		enable_equipments = {
+			JAP_b5n_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_sakae_ha_25_11_1x
+			JAP_machinegun_77mm_type_97_2x_wing
+		}
+
+		path = {
+			leads_to_tech = jap_cv_naval_bomber_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1938
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 9 y = 8 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 400
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 400
+				date > "1940.1.1"
+			}
+		}
+	}
+
+	jap_cv_naval_bomber_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Nakajima B6N2
+
+		enable_equipments = {
+			JAP_b6n_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kasei_25_1x
+			air_ground_radar_1
+			JAP_torpedo_mounting_45cm_type_91_mod_3_1x
+		}
+
+		path = {
+			leads_to_tech = jap_cv_naval_bomber_ad_tech_4
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			advanced_centimetric_radar = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1943
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 9 y = 18 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1942.8.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_cv_naval_bomber_ad_tech_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Aichi B7A2
+
+		enable_equipments = {
+			JAP_b7n_airframe
+		}
+		enable_equipment_modules = {
+			dive_brakes_small
+			JAP_engine_nakajima_homare_12_1x
+			JAP_machinegun_132mm_type_3_1x_mounted_rear
+			JAP_cannon_20mm_type_99_2_2x_wing
+			JAP_guided_bomb_ki_148_i_go_1x
+		}
+
+		path = {
+			leads_to_tech = jap_cv_naval_bomber_ad_tech_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1944
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 9 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_cv_naval_bomber_ad_tech_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Aichi B8A
+
+		enable_equipments = {
+			JAP_b8n_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ha_211_1x
+			JAP_torpedo_mounting_45cm_type_91_mod_5_1x
+			JAP_cannon_30mm_type_5_2x_wing
+			self_sealing_fuel_tanks_small
+		}
+
+		path = {
+			leads_to_tech = jap_jet_cv_naval_bomber_ad_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1946
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 9 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	jap_jet_cv_naval_bomber_ad_tech_1 = {	# Yokosuka P2Y Tenga
+
+		enable_equipments = {
+			JAP_p2y_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_kugisho_ne_30_kai_2x
+			JAP_guided_bomb_ke_go_1x
+			fire_suppression
+			JAP_cannon_20mm_type_99_2_1x_mounted
+			JAP_cannon_20mm_type_99_2_1x_mounted_rear
+			JAP_torpedo_mounting_45cm_type_4_mk_4_1x
+		}
+		allow = {
+        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_JAP_AA2 } }
+
+			OR = {
+				JAP = {
+					has_completed_focus = JAP_jet_prototypes
+				}
+				GER = {
+					has_completed_focus = GER_naval_cooperation_with_japan
+				}
+				GER = {
+					OR = {
+						is_in_faction_with = JAP
+						is_puppet_of = JAP
+					}
+				}
+			}
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		path = {
+			leads_to_tech = jap_jet_cv_naval_bomber_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1947
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 9 y = 26 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1948.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1949.1.1"
+			}
+		}
+	}
+
+	jap_jet_cv_naval_bomber_ad_tech_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Yokosuka P3Y Taiho
+
+		enable_equipments = {
+			JAP_p3y_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ne_331_2x
+			JAP_cannon_20mm_type_8_ii_2x_nose
+			pressurized_cockpit
+			JAP_torpedo_mounting_45cm_type_4_mk_4_2x
+		}
+
+		research_cost = 3
+		start_year = 1949
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 9 y = 30 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			naval_bomber
+			cat_jet_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1951.1.1"
+			}
+		}
+	}
+
+ ############################### Patrol
+
+	jap_patrol_ad_tech_1 = {	# Hiro H4H2
+
+		allow_branch = {
+			has_dlc = "By Blood Alone"
+		}
+
+		enable_equipments = {
+			JAP_h4h2_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_myojo_2_2x
+			air_ground_radar_0
+			flying_boat_large
+			JAP_machinegun_77mm_type_92_1x_mounted
+			JAP_machinegun_77mm_type_92_1x_mounted_rear
+			JAP_machinegun_77mm_type_92_2x_mounted_rear
+			armour_heavy_none
+		}
+
+		path = {
+			leads_to_tech = jap_patrol_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1933
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 12 y = 2 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			patrol_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				tag = MAN
+			}
+
+			modifier = {
+				factor = 0
+				tag = MEN
+			}
+		}
+	}
+
+	jap_patrol_ad_tech_2 = {	# Kawanishi H6K2
+
+		enable_equipments = {
+			JAP_h6k2_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kinsei_43_44_4x
+			JAP_torpedo_mounting_45cm_type_91_mod_1_2x
+		}
+
+		path = {
+			leads_to_tech = jap_patrol_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1938
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 12 y = 8 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			patrol_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 400
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 400
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				tag = MAN
+			}
+
+			modifier = {
+				factor = 0
+				tag = MEN
+			}
+		}
+	}
+
+	jap_patrol_ad_tech_3 = {	# Kawanishi H6K4
+
+		enable_equipments = {
+			JAP_h6k4_airframe
+		}
+		enable_equipment_modules = {
+			fuel_tanks_large
+			JAP_cannon_20mm_type_99_1_1x_mounted
+			JAP_cannon_20mm_type_99_1_1x_mounted_rear
+		}
+
+		path = {
+			leads_to_tech = jap_patrol_ad_tech_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1940
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 12 y = 12 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			patrol_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	jap_patrol_ad_tech_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Kawanishi H8K2
+
+		enable_equipments = {
+			JAP_h8k2_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kasei_21_22_23_4x
+			armour_heavy_seat
+			JAP_torpedo_mounting_45cm_type_91_mod_3_2x
+			JAP_cannon_20mm_type_99_1_1x_ball_rear
+			JAP_cannon_20mm_type_99_1_2x_mounted
+			JAP_machinegun_77mm_type_92_4x_mounted
+			self_sealing_fuel_tanks
+			self_sealing_fuel_tanks_large
+		}
+
+		path = {
+			leads_to_tech = jap_patrol_ad_tech_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1942
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 12 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			patrol_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_patrol_ad_tech_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Kawanishi H8K3
+
+		enable_equipments = {
+			JAP_h8k3_airframe
+		}
+		enable_equipment_modules = {
+			air_ground_radar_1
+		}
+
+		path = {
+			leads_to_tech = jap_patrol_ad_tech_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1944
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 12 y = 20 }
+		}
+
+		dependencies = {
+			advanced_centimetric_radar = 1
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			patrol_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_patrol_ad_tech_6 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Kawanishi H11K1 Soku
+
+		enable_equipments = {
+			JAP_h11k1_airframe
+		}
+		enable_equipment_modules = {
+			air_ground_radar_2
+			JAP_machinegun_132mm_type_3_1x_ball
+			JAP_machinegun_132mm_type_3_1x_ball_rear
+			JAP_machinegun_132mm_type_3_2x_mounted
+			JAP_torpedo_mounting_533cm_type_6_2x
+		}
+
+		path = {
+			leads_to_tech = jap_patrol_ad_tech_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1946
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 12 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			patrol_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_patrol_ad_tech_7 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Kawanishi H14K1 (KX-03)
+
+		enable_equipments = {
+			JAP_h14k1_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ne_330_6x
+			JAP_engine_ist_gtpr_ii_auxiliary_6x
+			fire_suppression
+			JAP_torpedo_mounting_533cm_type_6_2x
+			JAP_cannon_20mm_type_99_2_1x_ball_rear
+			JAP_cannon_20mm_type_99_2_2x_ball_rear
+			JAP_machinegun_132mm_type_3_2x_ball_rear
+			JAP_machinegun_132mm_type_3_4x_ball_rear
+		}
+
+		research_cost = 2.5
+		start_year = 1949
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 12 y = 30 }
+		}
+
+		categories = {
+			major_technologies
+			naval_air
+			patrol_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	############################### Fast bombers
+
+	jap_fast_bomber_ad_tech_1 = {	# Ki-48-I
+
+		enable_equipments = {
+			JAP_ki_48_i_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_sakae_ha_25_11_2x
+			bomb_sights_1
+			armour_medium_seat_fuel
+			self_sealing_fuel_tanks
+		}
+
+		path = {
+			leads_to_tech = jap_fast_bomber_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1940
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 21 y = 12 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			fast_bomber
+			air_equipment
+			cat_yokosuka_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+		}
+	}
+	jap_fast_bomber_ad_tech_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ # Ki-48-II
+
+		enable_equipments = {
+			JAP_ki_48_ii_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_sakae_ha_105_2x
+			JAP_torpedo_mounting_45cm_type_91_mod_3_1x
+			armour_medium_cockpit
+			self_sealing_fuel_tanks_small
+			self_sealing_fuel_tanks_medium
+			self_sealing_fuel_tanks_large
+		}
+
+		path = {
+			leads_to_tech = jap_fast_bomber_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 21 y = 16 }
+		}
+
+		sub_technologies = {
+			jap_fast_bomber_ad_tech_2_1
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			fast_bomber
+			air_equipment
+			cat_yokosuka_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+		}
+	}
+	jap_fast_bomber_ad_tech_2_1 = { # Ki-66
+
+		enable_equipment_modules = {
+			dive_brakes_medium
+			JAP_machinegun_127mm_ho_103_2x_mounted
+			JAP_machinegun_127mm_ho_103_2x_nose
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+				name = "Ki-66"
+				type = JAP_ki_48_ii_airframe
+				parent_version = 1
+				mark_older_equipment_obsolete = yes
+				icon = GFX_jap_fast_bomber_ad_tech_2_medium
+				modules = {
+					chin_slot_1 = bomb_sights_1
+					nose_slot_1 = JAP_machinegun_127mm_ho_103_2x_mounted
+					defensive_armament_slot_1 = JAP_machinegun_77mm_type_97_1x_mounted_rear
+					fuselage_mount_slot_1 = bomb_400kg_bomb_bay_general_purpose
+					fuselage_mount_slot_2 = bomb_400kg_bomb_bay_general_purpose
+					fuselage_mount_slot_3 = empty
+					wing_mount_slot_1 = dive_brakes_medium
+					internal_slot_1 = JAP_machinegun_77mm_type_89_1x_mounted_rear
+					internal_slot_2 = self_sealing_fuel_tanks_medium
+					fixed_construction_slot = metal_construction
+					fixed_engine_type_slot = JAP_engine_nakajima_sakae_ha_115_31_2x
+					fixed_armour_slot = armour_medium_cockpit
+					fixed_protection_slot_1 = self_sealing_fuel_tanks
+					fixed_crew_slot_1 = empty
+				}
+			}
+		}
+
+		sub_tech_index = 2
+		research_cost = 1.5
+		start_year = 1943
+
+		categories = {
+			major_technologies
+			medium_air
+			fast_bomber
+			air_equipment
+			cat_yokosuka_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+		}
+	}
+	jap_fast_bomber_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# P1Y1 Ginga
+
+		enable_equipments = {
+			JAP_p1y1_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_homare_12_2x
+			JAP_torpedo_mounting_45cm_type_91_mod_5_1x
+			JAP_cannon_20mm_type_99_1_1x_mounted
+			JAP_cannon_20mm_type_99_1_1x_mounted_rear
+			JAP_cannon_20mm_type_99_1_2x_upwards
+			fire_suppression
+		}
+
+		path = {
+			leads_to_tech = jap_strike_bomber_ad_tech_5
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_fast_bomber_ad_tech_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1944
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 21 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			fast_bomber
+			air_equipment
+			cat_yokosuka_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+		}
+	}
+	jap_fast_bomber_ad_tech_4 = {	# P1Y7 Ginga
+
+		enable_equipments = {
+			JAP_p1y7_airframe
+		}
+
+		enable_equipment_modules = {
+			JAP_engine_kugisho_ne_30_kai_2x
+			JAP_guided_bomb_ke_go_1x
+			pressurized_cockpit
+		}
+		allow = {
+        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } }
+
+			OR = {
+				JAP = {
+					has_completed_focus = JAP_jet_prototypes
+				}
+				GER = {
+					has_completed_focus = GER_naval_cooperation_with_japan
+				}
+				GER = {
+					OR = {
+						is_in_faction_with = JAP
+						is_puppet_of = JAP
+					}
+				}
+			}
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		research_cost = 2
+		start_year = 1946
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 21 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			fast_bomber
+			air_equipment
+			cat_yokosuka_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1948.1.1"
+			}
+		}
+	}
+
+ ############################### Strike Bomber
+
+	jap_strike_bomber_ad_tech_1 = {	# Ki-1
+
+		allow_branch = {
+			has_dlc = "By Blood Alone"
+		}
+
+		enable_equipments = {
+			JAP_ki_1_airframe
+		}
+		enable_equipment_modules = {
+			bomb_sights_0
+			ENG_engine_rolls_royce_buzzard_2x
+			JAP_machinegun_77mm_type_89_1x_mounted
+			JAP_machinegun_77mm_type_89_1x_mounted_rear
+			armour_medium_none
+		}
+
+		path = {
+			leads_to_tech = jap_strike_bomber_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_tactical_bomber_ad_tech_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = jap_fast_bomber_ad_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1934
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 24 y = 2 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			strike_bomber
+			cat_nakajima_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				tag = MAN
+			}
+
+			modifier = {
+				factor = 0
+				tag = MEN
+			}
+		}
+	}
+
+	jap_strike_bomber_ad_tech_2 = {	# Ki-21-I
+
+		enable_equipments = {
+			JAP_ki_21_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_ha_5_kai_2x
+			JAP_machinegun_77mm_type_89_1x_remote_ball_rear
+			JAP_machinegun_77mm_type_89_4x_mounted
+			JAP_machinegun_77mm_type_89_3x_mounted
+			self_sealing_fuel_tanks
+		}
+
+		path = {
+			leads_to_tech = jap_strike_bomber_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1938
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 24 y = 8 }
+		}
+
+		sub_technologies = {
+			jap_strike_bomber_ad_tech_2_1
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			strike_bomber
+			air_equipment
+			cat_nakajima_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 400
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 400
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				tag = MAN
+			}
+
+			modifier = {
+				factor = 0
+				tag = MEN
+			}
+		}
+	}
+	jap_strike_bomber_ad_tech_2_1 = { # Ki-21-II
+
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kasei_11_12_15_2x
+			self_sealing_fuel_tanks_large
+			self_sealing_fuel_tanks_medium
+			self_sealing_fuel_tanks_small
+			armoured_glass_medium
+			fire_suppression
+			armour_medium_seat_fuel
+			JAP_machinegun_127mm_ho_103_1x_ball_rear
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+				name = "Ki-21-II"
+				type = JAP_ki_21_airframe
+				parent_version = 1
+				mark_older_equipment_obsolete = yes
+				icon = GFX_jap_strike_bomber_ad_tech_2_medium
+				modules = {
+					chin_slot_1 = bomb_sights_0
+					nose_slot_1 = JAP_machinegun_77mm_type_89_1x_mounted
+					defensive_armament_slot_1 = JAP_machinegun_127mm_ho_103_1x_ball_rear
+					defensive_armament_slot_2 = JAP_machinegun_77mm_type_89_1x_mounted_rear
+					defensive_armament_slot_3 = JAP_machinegun_77mm_type_89_1x_remote_ball_rear
+					fuselage_mount_slot_1 = bomb_500kg_bomb_bay_general_purpose
+					fuselage_mount_slot_2 = self_sealing_fuel_tanks_large
+					wing_mount_slot_1 = bomb_200kg_locks_general_purpose
+					internal_slot_1 = JAP_machinegun_77mm_type_89_1x_mounted
+					fixed_construction_slot = metal_construction
+					fixed_engine_type_slot = JAP_engine_mitsubishi_kasei_11_12_15_2x
+					fixed_armour_slot = armour_medium_seat_fuel
+					fixed_protection_slot_1 = self_sealing_fuel_tanks
+					fixed_protection_slot_2 = armoured_glass_medium
+					fixed_protection_slot_3 = fire_suppression
+					fixed_crew_slot_1 = empty
+				}
+			}
+		}
+
+		sub_tech_index = 2
+		research_cost = 1.5
+		start_year = 1941
+
+		categories = {
+			major_technologies
+			medium_air
+			strike_bomber
+			air_equipment
+			cat_nakajima_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+		}
+	}
+
+	jap_strike_bomber_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-49-I
+
+		enable_equipments = {
+			JAP_ki_49_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_ha_41_2x
+			armour_medium_seat
+			armoured_glass_medium
+			bomb_sights_1
+			JAP_cannon_20mm_type_99_1_1x_mounted_rear
+			JAP_machinegun_77mm_type_92_1x_mounted
+			JAP_machinegun_77mm_type_92_2x_mounted
+			JAP_machinegun_77mm_type_92_1x_mounted_rear
+			JAP_machinegun_77mm_type_92_2x_mounted_rear
+		}
+
+		path = {
+			leads_to_tech = jap_strike_bomber_ad_tech_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1941
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 24 y = 14 }
+		}
+
+		sub_technologies = {
+			jap_strike_bomber_ad_tech_3_1
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			strike_bomber
+			air_equipment
+			cat_nakajima_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1941.1.1"
+			}
+		}
+	}
+	jap_strike_bomber_ad_tech_3_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ # Ki-49-II
+
+		enable_equipment_modules = {
+			JAP_engine_nakajima_ha_109_2x
+			armour_medium_cockpit
+			JAP_machinegun_127mm_ho_103_1x_mounted
+			JAP_machinegun_127mm_ho_103_2x_mounted
+			JAP_machinegun_127mm_ho_103_1x_mounted_rear
+			JAP_machinegun_127mm_ho_103_2x_mounted_rear
+		}
+		on_research_complete = {
+			create_equipment_variant = {
+				name = "Ki-49-II"
+				type = JAP_ki_49_airframe
+				parent_version = 1
+				mark_older_equipment_obsolete = yes
+				icon = GFX_jap_strike_bomber_ad_tech_3_medium
+				modules = {
+					chin_slot_1 = bomb_sights_1
+					nose_slot_1 = JAP_machinegun_127mm_ho_103_1x_mounted
+					defensive_armament_slot_1 = JAP_cannon_20mm_type_99_1_1x_mounted_rear
+					defensive_armament_slot_2 = JAP_machinegun_127mm_ho_103_2x_mounted_rear
+					fuselage_mount_slot_1 = bomb_500kg_bomb_bay_general_purpose
+					fuselage_mount_slot_2 = bomb_500kg_bomb_bay_general_purpose
+					internal_slot_1 = JAP_machinegun_127mm_ho_103_2x_mounted
+					internal_slot_2 = self_sealing_fuel_tanks_medium
+					fixed_construction_slot = metal_construction
+					fixed_engine_type_slot = JAP_engine_nakajima_ha_109_2x
+					fixed_armour_slot = armour_medium_cockpit
+					fixed_protection_slot_1 = self_sealing_fuel_tanks
+					fixed_protection_slot_2 = armoured_glass_medium
+					fixed_crew_slot_1 = empty
+				}
+			}
+		}
+
+		sub_tech_index = 2
+		research_cost = 1
+		start_year = 1942
+
+		categories = {
+			major_technologies
+			medium_air
+			strike_bomber
+			air_equipment
+			cat_nakajima_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_strike_bomber_ad_tech_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-67 Hiryu
+
+		enable_equipments = {
+			JAP_ki_67_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ha_104_2x
+			JAP_torpedo_mounting_45cm_type_91_mod_3_1x
+			self_sealing_fuel_tanks
+			JAP_cannon_20mm_ho_5_1x_ball_rear
+			JAP_machinegun_127mm_ho_103_1x_ball_rear
+			JAP_machinegun_127mm_ho_103_2x_ball_rear
+			JAP_machinegun_127mm_ho_103_1x_ball
+			JAP_machinegun_127mm_ho_103_1x_mounted
+			JAP_machinegun_127mm_ho_103_2x_mounted
+			JAP_machinegun_127mm_ho_103_1x_mounted_rear
+			JAP_machinegun_127mm_ho_103_2x_mounted_rear
+		}
+
+		path = {
+			leads_to_tech = jap_strike_bomber_ad_tech_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1943
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 24 y = 18 }
+		}
+
+		sub_technologies = {
+			jap_strike_bomber_ad_tech_4_1
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			strike_bomber
+			air_equipment
+			cat_nakajima_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+		}
+	}
+	jap_strike_bomber_ad_tech_4_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+ # Ki-109
+
+		enable_equipments = {
+			JAP_ki_109_airframe
+		}
+
+		enable_equipment_modules = {
+			JAP_tank_buster_75mm_type_88_1x_pod_fuselage
+		}
+		# on_research_complete = {
+		# 	create_equipment_variant = {
+		# 		name = "Ki-109"
+		# 		type = JAP_ki_109_airframe
+		# 		parent_version = 1
+		# 		mark_older_equipment_obsolete = no
+		# 		icon = GFX_jap_strike_bomber_ad_tech_4_medium
+		# 		modules = {
+		# 			chin_slot_1 = JAP_tank_buster_75mm_type_88_1x_pod_fuselage
+		# 			nose_slot_1 = empty
+		# 			defensive_armament_slot_1 = empty
+		# 			defensive_armament_slot_2 = JAP_machinegun_127mm_ho_103_1x_ball_rear
+		# 			fuselage_mount_slot_1 = empty
+		# 			fuselage_mount_slot_2 = empty
+		# 			fuselage_mount_slot_3 = empty
+		# 			internal_slot_1 = empty
+		# 			internal_slot_2 = empty
+		# 			fixed_construction_slot = metal_construction
+		# 			fixed_engine_type_slot = JAP_engine_mitsubishi_ha_104_2x
+		# 			fixed_armour_slot = armour_medium_cockpit
+		# 			fixed_protection_slot_1 = self_sealing_fuel_tanks
+		# 			fixed_protection_slot_2 = armoured_glass_medium
+		# 			fixed_ammo_slot = empty
+		# 			fixed_crew_slot_1 = empty
+		# 		}
+		# 	}
+		# }
+
+		sub_tech_index = 1
+		research_cost = 1.5
+		start_year = 1944
+
+		categories = {
+			major_technologies
+			medium_air
+			strike_bomber
+			air_equipment
+			cat_nakajima_planes
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_strike_bomber_ad_tech_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-74
+
+		enable_equipments = {
+			JAP_ki_74_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ha_211_2x
+			pressurized_cockpit
+			JAP_guided_bomb_ke_go_1x
+			JAP_machinegun_127mm_ho_103_1x_remote_ball_rear
+			JAP_machinegun_127mm_ho_103_2x_remote_ball_rear
+		}
+
+		path = {
+			leads_to_tech = jap_jet_tactical_bomber_ad_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1945
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 24 y = 22 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+			cat_nakajima_planes
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+		}
+	}
+
+ ############################### Tactical Bomber
+
+	jap_tactical_bomber_ad_tech_1 = {	# G3M
+
+		enable_equipments = {
+			JAP_g3m_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kinsei_3_2x
+			bomb_sights_hi_alt_0
+			JAP_machinegun_77mm_type_92_1x_ball
+			JAP_machinegun_77mm_type_92_1x_ball_rear
+			JAP_machinegun_77mm_type_92_1x_mounted
+			JAP_machinegun_77mm_type_92_1x_mounted_rear
+			JAP_torpedo_mounting_45cm_type_91_mod_1_1x
+		}
+
+		path = {
+			leads_to_tech = jap_tactical_bomber_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1935
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 27 y = 2 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1936.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				tag = MAN
+			}
+
+			modifier = {
+				factor = 0
+				tag = MEN
+			}
+		}
+	}
+
+	jap_tactical_bomber_ad_tech_2 = {	# G4M1
+
+		enable_equipments = {
+			JAP_g4m1_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kasei_11_12_15_2x
+			bomb_sights_hi_alt_1
+			JAP_cannon_20mm_type_99_1_1x_mounted_rear
+			JAP_machinegun_77mm_type_92_3x_mounted
+		}
+
+		path = {
+			leads_to_tech = jap_tactical_bomber_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1940
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 27 y = 12 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+		}
+	}
+
+	jap_tactical_bomber_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# G4M2
+
+		enable_equipments = {
+			JAP_g4m2_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kasei_21_22_23_2x
+			JAP_torpedo_mounting_45cm_type_91_mod_3_1x
+			fire_suppression
+			self_sealing_fuel_tanks
+			self_sealing_fuel_tanks_large
+			self_sealing_fuel_tanks_medium
+			self_sealing_fuel_tanks_small
+			armour_medium_seat
+		}
+
+		path = {
+			leads_to_tech = jap_tactical_bomber_ad_tech_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1942
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 27 y = 16 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+		}
+	}
+
+	jap_tactical_bomber_ad_tech_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# G4M3
+
+		enable_equipments = {
+			JAP_g4m3_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kasei_25_2x
+			armour_medium_seat_fuel
+			bomb_sights_hi_alt_2
+			JAP_torpedo_mounting_45cm_type_91_mod_5_1x
+			JAP_machinegun_13mm_type_2_1x_mounted
+		}
+
+		path = {
+			leads_to_tech = jap_tactical_bomber_ad_tech_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1944
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 27 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	jap_tactical_bomber_ad_tech_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# G7M
+
+		enable_equipments = {
+			JAP_g7m_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_ha_214_2x
+			bomb_sights_hi_alt_2
+			radio_navigation_1
+			JAP_machinegun_132mm_type_3_1x_mounted
+			JAP_machinegun_132mm_type_3_2x_ball_rear
+			JAP_cannon_20mm_ho_5_1x_mounted
+			JAP_cannon_20mm_ho_5_1x_ball_rear
+			JAP_torpedo_mounting_45cm_type_4_mk_4_1x
+		}
+
+		path = {
+			leads_to_tech = jap_jet_tactical_bomber_ad_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1946
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 27 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	jap_jet_tactical_bomber_ad_tech_1 = {	# Ki-210
+
+		enable_equipments = {
+			JAP_ki_210_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_ne_281_2x
+			JAP_torpedo_mounting_533cm_type_6_2x
+			pressurized_cockpit
+		}
+		allow = {
+        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_JAP_AA2 } }
+
+			OR = {
+				JAP = {
+					has_completed_focus = JAP_jet_prototypes
+				}
+				GER = {
+					has_completed_focus = GER_naval_cooperation_with_japan
+				}
+				GER = {
+					OR = {
+						is_in_faction_with = JAP
+						is_puppet_of = JAP
+					}
+				}
+			}
+		}
+
+		dependencies = {
+			jet_engines = 1
+		}
+
+		research_cost = 3
+		start_year = 1949
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 27 y = 30 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			cat_jet_planes
+			tactical_bomber
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1951.1.1"
+			}
+		}
+	}
+
+ ############################### Strategic Bomber
+
+	jap_strategic_bomber_ad_tech_1 = {	# Ki-20
+
+		allow_branch = {
+			has_dlc = "By Blood Alone"
+		}
+
+		enable_equipments = {
+			JAP_ki_20_airframe
+		}
+		enable_equipment_modules = {
+			bomb_sights_hi_alt_0
+			JAP_engine_kawasaki_ha_9_iia_b_4x
+			armour_heavy_none
+			armour_heavy_seat
+			JAP_machinegun_77mm_type_89_2x_mounted_rear
+			JAP_machinegun_77mm_type_89_1x_ball_rear
+			JAP_machinegun_77mm_type_89_1x_mounted
+		}
+
+		path = {
+			leads_to_tech = jap_strategic_bomber_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1932
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 30 y = 2 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_strategic_bomber_ad_tech_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# G5N1
+
+		enable_equipments = {
+			JAP_g5n_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kasei_11_12_15_4x
+			bomb_sights_hi_alt_1
+			oxygen_masks
+			self_sealing_fuel_tanks
+			self_sealing_fuel_tanks_small
+			JAP_torpedo_mounting_45cm_type_91_mod_1_2x
+			JAP_torpedo_mounting_45cm_type_91_mod_3_2x
+			JAP_machinegun_77mm_type_97_1x_mounted
+			JAP_machinegun_77mm_type_97_2x_mounted
+			JAP_machinegun_77mm_type_97_3x_mounted
+			JAP_machinegun_77mm_type_97_1x_mounted_rear
+			JAP_cannon_20mm_type_99_1_1x_ball_rear
+		}
+
+		path = {
+			leads_to_tech = jap_strategic_bomber_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1941
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 30 y = 14 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_strategic_bomber_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# G8N1
+
+		enable_equipments = {
+			JAP_g8n_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_homare_24_4x
+			bomb_sights_hi_alt_2
+			armour_heavy_seat_fuel
+			JAP_torpedo_mounting_45cm_type_91_mod_5_2x
+			JAP_machinegun_13mm_type_2_2x_mounted
+			JAP_cannon_20mm_type_99_1_2x_ball_rear
+			JAP_cannon_20mm_type_99_1_2x_mounted_rear
+		}
+
+		path = {
+			leads_to_tech = jap_strategic_bomber_ad_tech_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1944
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 30 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_strategic_bomber_ad_tech_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# G10N
+
+		enable_equipments = {
+			JAP_g10n_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_ha_219_ru_6x
+			radio_navigation_1
+			pressurized_cockpit
+			JAP_cannon_20mm_ho_5_1x_mounted
+			JAP_cannon_20mm_ho_5_1x_ball_rear
+			JAP_cannon_20mm_ho_5_2x_ball_rear
+		}
+
+		dependencies = {
+			advanced_centimetric_radar = 1
+		}
+
+		path = {
+			leads_to_tech = jap_strategic_bomber_ad_tech_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1947
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 30 y = 26 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jap_strategic_bomber_ad_tech_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	#G12N
+
+		enable_equipments = {
+			JAP_g12n_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_nakajima_ha_54_6x
+			radio_navigation_2
+			JAP_cannon_20mm_type_8_ii_2x_mounted
+			JAP_cannon_20mm_type_8_ii_2x_ball_rear
+			JAP_cannon_20mm_type_8_ii_4x_remote_ball_rear
+		}
+
+		research_cost = 2.5
+		start_year = 1949
+
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 30 y = 30 }
+		}
+
+		categories = {
+			major_technologies
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+ ############################### Recon
+
+	jap_scout_plane_ad_tech_1 = {	# Ki-4
+
+		allow_branch = {
+			has_dlc = "By Blood Alone"
+		}
+
+		enable_equipments = {
+			JAP_ki_4_airframe
+		}
+		enable_equipment_modules = {
+			recon_camera
+			JAP_engine_nakajima_hikari_ha_8_1x
+		}
+
+		path = {
+			leads_to_tech = jap_scout_plane_ad_tech_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1934
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 36 y = 2 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_scout_plane
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1936.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1937.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1938.7.1"
+			}
+		}
+	}
+
+	jap_scout_plane_ad_tech_2 = {	#Ki-15
+
+		enable_equipments = {
+			JAP_ki_15_airframe
+		}
+
+		path = {
+			leads_to_tech = jap_scout_plane_ad_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1937
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 36 y = 6 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_scout_plane
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1937.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1938.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1939.7.1"
+			}
+		}
+	}
+
+	jap_scout_plane_ad_tech_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	#Ki-46-II
+
+		enable_equipments = {
+			JAP_ki_46_ii_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_zuisei_ha_102_21_2x
+		}
+
+		path = {
+			leads_to_tech = jap_scout_plane_ad_tech_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1941
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 36 y = 14 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_scout_plane
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1943.1.1"
+			}
+		}
+	}
+
+	jap_scout_plane_ad_tech_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Ki-46-III
+
+		enable_equipments = {
+			JAP_ki_46_iii_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_mitsubishi_kinsei_ha_112_62_2x
+			JAP_cannon_37mm_ho_203_1x_upwards
+			JAP_cannon_20mm_ho_5_2x_nose
+			self_sealing_fuel_tanks
+			self_sealing_fuel_tanks_small
+			fire_suppression
+			armour_light_seat
+		}
+
+		path = {
+			leads_to_tech = jap_scout_plane_ad_tech_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1944
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 36 y = 20 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_scout_plane
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1943.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1944.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1945.7.1"
+			}
+		}
+	}
+
+	jap_scout_plane_ad_tech_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_JAP_AA2 } } }
+	# Yokosuka R2Y1 Keiun
+
+		enable_equipments = {
+			JAP_r2y1_airframe
+		}
+		enable_equipment_modules = {
+			JAP_engine_aichi_ha_70_1x
+			JAP_cannon_30mm_type_5_2x_nose_prop
+			JAP_cannon_30mm_type_5_2x_wing
+		}
+
+		research_cost = 1.5
+		start_year = 1946
+
+		folder = {
+			name = jap_air_techs_folder
+			position = { x = 36 y = 24 }
+		}
+
+		categories = {
+			major_technologies
+			medium_air
+			air_equipment
+			cat_scout_plane
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 35
+				date > "1946.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1947.7.1"
+			}
+
+			modifier = {
+				factor = 35
+				date > "1948.7.1"
+			}
+		}
+	}
+}

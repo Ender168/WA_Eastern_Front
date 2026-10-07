@@ -1,0 +1,10 @@
+waef_operation_full_control = {
+    check_variable = { waef_operation_states^num > 0 }
+    all_of_scopes = {
+        array = waef_operation_states
+        OR = {
+            is_fully_controlled_by = ROOT
+            AND = { is_fully_controlled_by = controller controller = { is_in_faction_with = ROOT } }
+        }
+    }
+}
