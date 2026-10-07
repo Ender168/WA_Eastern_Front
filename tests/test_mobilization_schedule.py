@@ -105,7 +105,7 @@ class SemiannualMobilizationTests(unittest.TestCase):
 
     def test_spirits_and_explanation_event_only_once(self):
         defs = get(get(read("common/ideas/waef_scenario_ideas.txt"), "ideas"), "country")
-        names = [n.key for n in defs if re.fullmatch(r"waef_mobilization_\\d{2}", n.key)]
+        names = [n.key for n in defs if re.fullmatch(r"waef_mobilization_\d{2}", n.key)]
         self.assertEqual(len(names), 10)
         self.assertIsNotNone(get(defs, "waef_prewar_truce"))
         self.assertIsNotNone(get(defs, "waef_offensive_momentum"))
