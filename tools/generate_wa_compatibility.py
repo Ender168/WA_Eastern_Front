@@ -144,7 +144,17 @@ def decision_compatibility(wa_root: Path) -> None:
     header = f'# Generated dormant compatibility definitions from WA {WA_COMMIT}.\n# IDs remain resolvable; historical decisions are unavailable in this scenario.\n\n'
     cat = header
     for name in sorted(categories):
-        cat += (f'{name} = {{\n    icon = generic_economy\n    priority = 65\n    allowed = {{ OR = {{ tag = WEF tag = EEF }} }}\n    visible = {{ OR = {{ tag = WEF tag = EEF }} }}\n}}\n\n'\n                if name == 'economy_decisions' else\n                f'{name} = {{\n    icon = generic_political_actions\n    allowed = {{ always = no }}\n    visible = {{ always = no }}\n}}\n\n')
+        if name == 'economy_decisions':
+            cat += (
+                f'{name} = {{\n'
+                '    icon = generic_economy\n'
+                '    priority = 65\n'
+                '    allowed = { OR = { tag = WEF tag = EEF } }\n'
+                '    visible = { OR = { tag = WEF tag = EEF } }\n'
+                '}\n\n'
+            )
+        else:
+            cat += f'{name} = {{\n    icon = generic_political_actions\n    allowed = {{ always = no }}\n    visible = {{ always = no }}\n}}\n\n'
     grouped = defaultdict(list)
     for name, category in decisions.items():
         if name in RESTORED_FATIGUE_LAW_MISSIONS:
