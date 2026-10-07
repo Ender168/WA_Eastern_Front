@@ -16,7 +16,7 @@ guiTypes = {
             name = "objective_label"
             position = { x = 0 y = 24 }
             font = "hoi_16mbs"
-            text = "waef_mapicon_test_berlin"
+            text = "waef_mapicon_test_warsaw"
             maxWidth = 180
             maxHeight = 20
             format = center

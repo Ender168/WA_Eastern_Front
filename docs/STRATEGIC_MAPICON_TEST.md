@@ -3,10 +3,10 @@
 Branch: `test/strategic-state-mapicon`.
 Baseline: `a6ddd79b4ae18417f8c7a1053f6719989e86a386`.
 
-This build adds one passive scripted GUI marker anchored to Berlin's state
-(810), using `context_type = state_mapicon`. It reuses World Ablaze's
-`GFX_victory_points` sprite and displays a gold OBJECTIVE: BERLIN label.
-The engine chooses the state anchor; exact placement over province 6521
+This build adds one passive scripted GUI marker anchored to Warsaw's state
+(10), using `context_type = state_mapicon`. It reuses World Ablaze's
+`GFX_victory_points` sprite and displays a gold OBJECTIVE: WARSAW label.
+The engine chooses the state anchor; exact placement over province 3544
 is not promised. Both WEF and EEF should see the same marker.
 
 There are no new textures, entities, history effects, map highlights or GUI
@@ -25,7 +25,7 @@ The mod name and descriptor are unchanged in this test branch.
 ## In-game checks
 
 1. Start a new 1941 scenario as WEF. Close the decisions and state panels.
-2. Find Berlin. Look for the enlarged VP symbol and gold OBJECTIVE: BERLIN
+2. Find Warsaw. Look for the enlarged VP symbol and gold OBJECTIVE: WARSAW
    label above the state anchor. No decision needs to be activated.
 3. Zoom in/out and pan. Check whether the marker follows the map and whether
    the label remains readable at a useful campaign zoom level.
@@ -35,7 +35,7 @@ The mod name and descriptor are unchanged in this test branch.
 
 Please report separately: whether loading succeeds, whether the marker is
 visible, its position/zoom behaviour, and whether saving/loading succeeds.
-A screenshot of Berlin is useful even when the game launches normally.
+A screenshot of Warsaw is useful even when the game launches normally.
 If it crashes, keep the new error.log and the latest crash folder, especially
 exception.txt and meta.yml where present.
 
