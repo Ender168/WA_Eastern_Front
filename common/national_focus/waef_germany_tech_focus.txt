@@ -40,7 +40,7 @@ focus_tree = {
     # Infantry and special forces
     focus = {
         id = WAEF_GER_INFANTRY_41
-        icon = GFX_goal_generic_infantry
+        icon = GFX_goal_generic_army_doctrine
         x = 0
         y = 2
         cost = 13
@@ -58,7 +58,7 @@ focus_tree = {
 
     focus = {
         id = WAEF_GER_INFANTRY_43
-        icon = GFX_goal_generic_infantry
+        icon = GFX_goal_generic_army_doctrine
         x = 0
         y = 3
         cost = 13
@@ -78,7 +78,7 @@ focus_tree = {
 
     focus = {
         id = WAEF_GER_INFANTRY_45
-        icon = GFX_goal_generic_infantry
+        icon = GFX_goal_generic_army_doctrine
         x = 0
         y = 4
         cost = 13
