@@ -5,13 +5,13 @@ state = {
 	state_category = city
 
 	resources = {
-		oil = 10
-		rubber = 10
-		tungsten = 10
-		chromium = 10
-		coal = 10
-		bauxite = 10
-		steel = 10
+		oil = 2
+		bauxite = 11
+		rubber = 3
+		tungsten = 2
+		chromium = 3
+		coal = 35
+		iron = 25
 	}
 
 	history = {
@@ -34,6 +34,9 @@ state = {
 			infrastructure = 7
 			industrial_complex = 2
 			arms_factory = 5
+			fuel_silo = 1
+			hydro_steel_refinery = 15
+			hydro_aluminium_refinery = 5
 		}
 	}
 
