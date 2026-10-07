@@ -1,0 +1,3722 @@
+# WAEF strategic objectives: 20 WEF + 20 EEF. Only VP province control matters.
+# Generated from the canonical city manifest (tools/waef_strategic_cities.json).
+waef_strategic_front = {
+
+    # Danzig: native WEF; state 85; city VP province 362.
+    waef_strategic_capture_danzig = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 362
+            NOT = { has_country_flag = waef_strategic_holds_danzig }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 362 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 362
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_danzig }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_danzig
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_danzig = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 362
+            EEF = { has_country_flag = waef_strategic_holds_danzig }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 362 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 362
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_danzig }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_danzig
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_danzig = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_danzig }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_danzig = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_danzig } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Warsaw: native WEF; state 10; city VP province 3544.
+    waef_strategic_capture_warsaw = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 3544
+            NOT = { has_country_flag = waef_strategic_holds_warsaw }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3544 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3544
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_warsaw }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_warsaw
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_warsaw = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 3544
+            EEF = { has_country_flag = waef_strategic_holds_warsaw }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3544 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3544
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_warsaw }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_warsaw
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_warsaw = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_warsaw }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_warsaw = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_warsaw } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Krakow: native WEF; state 88; city VP province 9427.
+    waef_strategic_capture_krakow = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 9427
+            NOT = { has_country_flag = waef_strategic_holds_krakow }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9427 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9427
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_krakow }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_krakow
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_krakow = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 9427
+            EEF = { has_country_flag = waef_strategic_holds_krakow }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9427 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9427
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_krakow }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_krakow
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_krakow = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_krakow }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_krakow = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_krakow } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Cluj: native WEF; state 76; city VP province 6711.
+    waef_strategic_capture_cluj = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 6711
+            NOT = { has_country_flag = waef_strategic_holds_cluj }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 6711 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 6711
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_cluj }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_cluj
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_cluj = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 6711
+            EEF = { has_country_flag = waef_strategic_holds_cluj }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 6711 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 6711
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_cluj }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_cluj
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_cluj = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_cluj }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_cluj = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_cluj } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Bucharest: native WEF; state 46; city VP province 9617.
+    waef_strategic_capture_bucharest = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 9617
+            NOT = { has_country_flag = waef_strategic_holds_bucharest }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9617 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9617
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_bucharest }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_bucharest
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_bucharest = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 9617
+            EEF = { has_country_flag = waef_strategic_holds_bucharest }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9617 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9617
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_bucharest }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_bucharest
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_bucharest = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_bucharest }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_bucharest = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_bucharest } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Breslau: native WEF; state 66; city VP province 9570.
+    waef_strategic_capture_breslau = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 9570
+            NOT = { has_country_flag = waef_strategic_holds_breslau }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9570 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9570
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_breslau }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_breslau
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_breslau = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 9570
+            EEF = { has_country_flag = waef_strategic_holds_breslau }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9570 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9570
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_breslau }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_breslau
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_breslau = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_breslau }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_breslau = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_breslau } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Prague: native WEF; state 9; city VP province 11542.
+    waef_strategic_capture_prague = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 11542
+            NOT = { has_country_flag = waef_strategic_holds_prague }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11542 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11542
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_prague }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_prague
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_prague = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 11542
+            EEF = { has_country_flag = waef_strategic_holds_prague }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11542 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11542
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_prague }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_prague
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_prague = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_prague }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_prague = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_prague } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Budapest: native WEF; state 889; city VP province 9660.
+    waef_strategic_capture_budapest = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 9660
+            NOT = { has_country_flag = waef_strategic_holds_budapest }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9660 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9660
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_budapest }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_budapest
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_budapest = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 9660
+            EEF = { has_country_flag = waef_strategic_holds_budapest }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9660 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9660
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_budapest }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_budapest
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_budapest = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_budapest }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_budapest = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_budapest } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Belgrade: native WEF; state 107; city VP province 11586.
+    waef_strategic_capture_belgrade = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 11586
+            NOT = { has_country_flag = waef_strategic_holds_belgrade }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11586 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11586
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_belgrade }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_belgrade
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_belgrade = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 11586
+            EEF = { has_country_flag = waef_strategic_holds_belgrade }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11586 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11586
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_belgrade }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_belgrade
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_belgrade = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_belgrade }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_belgrade = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_belgrade } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Sofia: native WEF; state 48; city VP province 949.
+    waef_strategic_capture_sofia = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 949
+            NOT = { has_country_flag = waef_strategic_holds_sofia }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 949 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 949
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_sofia }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_sofia
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_sofia = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 949
+            EEF = { has_country_flag = waef_strategic_holds_sofia }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 949 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 949
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_sofia }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_sofia
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_sofia = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_sofia }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_sofia = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_sofia } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Dresden: native WEF; state 65; city VP province 514.
+    waef_strategic_capture_dresden = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 514
+            NOT = { has_country_flag = waef_strategic_holds_dresden }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 514 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 514
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_dresden }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_dresden
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_dresden = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 514
+            EEF = { has_country_flag = waef_strategic_holds_dresden }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 514 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 514
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_dresden }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_dresden
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_dresden = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_dresden }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_dresden = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_dresden } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Leipzig: native WEF; state 65; city VP province 3535.
+    waef_strategic_capture_leipzig = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 3535
+            NOT = { has_country_flag = waef_strategic_holds_leipzig }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3535 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3535
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_leipzig }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_leipzig
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_leipzig = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 3535
+            EEF = { has_country_flag = waef_strategic_holds_leipzig }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3535 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3535
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_leipzig }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_leipzig
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_leipzig = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_leipzig }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_leipzig = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_leipzig } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Bratislava: native WEF; state 70; city VP province 9692.
+    waef_strategic_capture_bratislava = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 9692
+            NOT = { has_country_flag = waef_strategic_holds_bratislava }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9692 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9692
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_bratislava }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_bratislava
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_bratislava = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 9692
+            EEF = { has_country_flag = waef_strategic_holds_bratislava }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9692 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9692
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_bratislava }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_bratislava
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_bratislava = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_bratislava }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_bratislava = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_bratislava } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Zagreb: native WEF; state 109; city VP province 11581.
+    waef_strategic_capture_zagreb = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 11581
+            NOT = { has_country_flag = waef_strategic_holds_zagreb }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11581 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11581
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_zagreb }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_zagreb
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_zagreb = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 11581
+            EEF = { has_country_flag = waef_strategic_holds_zagreb }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11581 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11581
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_zagreb }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_zagreb
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_zagreb = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_zagreb }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_zagreb = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_zagreb } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Plovdiv: native WEF; state 212; city VP province 6923.
+    waef_strategic_capture_plovdiv = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 6923
+            NOT = { has_country_flag = waef_strategic_holds_plovdiv }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 6923 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 6923
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_plovdiv }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_plovdiv
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_plovdiv = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 6923
+            EEF = { has_country_flag = waef_strategic_holds_plovdiv }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 6923 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 6923
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_plovdiv }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_plovdiv
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_plovdiv = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_plovdiv }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_plovdiv = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_plovdiv } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Berlin: native WEF; state 810; city VP province 6521.
+    waef_strategic_capture_berlin = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 6521
+            NOT = { has_country_flag = waef_strategic_holds_berlin }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 6521 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 6521
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_berlin }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_berlin
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_berlin = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 6521
+            EEF = { has_country_flag = waef_strategic_holds_berlin }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 6521 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 6521
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_berlin }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_berlin
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_berlin = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_berlin }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_berlin = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_berlin } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Vienna: native WEF; state 882; city VP province 11666.
+    waef_strategic_capture_vienna = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 11666
+            NOT = { has_country_flag = waef_strategic_holds_vienna }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11666 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11666
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_vienna }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_vienna
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_vienna = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 11666
+            EEF = { has_country_flag = waef_strategic_holds_vienna }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11666 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11666
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_vienna }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_vienna
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_vienna = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_vienna }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_vienna = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_vienna } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Linz: native WEF; state 152; city VP province 732.
+    waef_strategic_capture_linz = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 732
+            NOT = { has_country_flag = waef_strategic_holds_linz }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 732 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 732
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_linz }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_linz
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_linz = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 732
+            EEF = { has_country_flag = waef_strategic_holds_linz }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 732 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 732
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_linz }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_linz
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_linz = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_linz }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_linz = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_linz } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Brno: native WEF; state 75; city VP province 3569.
+    waef_strategic_capture_brno = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 3569
+            NOT = { has_country_flag = waef_strategic_holds_brno }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3569 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3569
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_brno }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_brno
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_brno = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 3569
+            EEF = { has_country_flag = waef_strategic_holds_brno }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3569 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3569
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_brno }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_brno
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_brno = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_brno }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_brno = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_brno } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Sarajevo: native WEF; state 104; city VP province 11899.
+    waef_strategic_capture_sarajevo = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 11899
+            NOT = { has_country_flag = waef_strategic_holds_sarajevo }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11899 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11899
+                    has_war_with = WEF
+                    NOT = { has_country_flag = waef_strategic_holds_sarajevo }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_sarajevo
+                add_to_variable = { waef_strategic_captured = 1 }
+                WEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_sarajevo = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 11899
+            EEF = { has_country_flag = waef_strategic_holds_sarajevo }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11899 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11899
+                    has_war_with = EEF
+                    EEF = { has_country_flag = waef_strategic_holds_sarajevo }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                EEF = {
+                    clr_country_flag = waef_strategic_holds_sarajevo
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_sarajevo = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { has_country_flag = waef_strategic_holds_sarajevo }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_sarajevo = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { EEF = { has_country_flag = waef_strategic_holds_sarajevo } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Kaunas: native EEF; state 11; city VP province 6296.
+    waef_strategic_capture_kaunas = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 6296
+            NOT = { has_country_flag = waef_strategic_holds_kaunas }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 6296 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 6296
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_kaunas }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_kaunas
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_kaunas = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 6296
+            WEF = { has_country_flag = waef_strategic_holds_kaunas }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 6296 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 6296
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_kaunas }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_kaunas
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_kaunas = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_kaunas }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_kaunas = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_kaunas } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Vilnius: native EEF; state 784; city VP province 3320.
+    waef_strategic_capture_vilnius = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 3320
+            NOT = { has_country_flag = waef_strategic_holds_vilnius }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3320 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3320
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_vilnius }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_vilnius
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_vilnius = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 3320
+            WEF = { has_country_flag = waef_strategic_holds_vilnius }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3320 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3320
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_vilnius }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_vilnius
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_vilnius = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_vilnius }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_vilnius = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_vilnius } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Lviv: native EEF; state 91; city VP province 11479.
+    waef_strategic_capture_lviv = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 11479
+            NOT = { has_country_flag = waef_strategic_holds_lviv }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11479 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11479
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_lviv }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_lviv
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_lviv = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 11479
+            WEF = { has_country_flag = waef_strategic_holds_lviv }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11479 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11479
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_lviv }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_lviv
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_lviv = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_lviv }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_lviv = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_lviv } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Minsk: native EEF; state 206; city VP province 11370.
+    waef_strategic_capture_minsk = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 11370
+            NOT = { has_country_flag = waef_strategic_holds_minsk }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11370 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11370
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_minsk }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_minsk
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_minsk = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 11370
+            WEF = { has_country_flag = waef_strategic_holds_minsk }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11370 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11370
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_minsk }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_minsk
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_minsk = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_minsk }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_minsk = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_minsk } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Riga: native EEF; state 966; city VP province 9340.
+    waef_strategic_capture_riga = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 9340
+            NOT = { has_country_flag = waef_strategic_holds_riga }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9340 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9340
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_riga }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_riga
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_riga = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 9340
+            WEF = { has_country_flag = waef_strategic_holds_riga }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9340 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9340
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_riga }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_riga
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_riga = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_riga }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_riga = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_riga } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Pskov: native EEF; state 209; city VP province 11202.
+    waef_strategic_capture_pskov = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 11202
+            NOT = { has_country_flag = waef_strategic_holds_pskov }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11202 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11202
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_pskov }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_pskov
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_pskov = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 11202
+            WEF = { has_country_flag = waef_strategic_holds_pskov }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11202 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11202
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_pskov }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_pskov
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_pskov = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_pskov }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_pskov = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_pskov } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Kyiv: native EEF; state 202; city VP province 525.
+    waef_strategic_capture_kyiv = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 525
+            NOT = { has_country_flag = waef_strategic_holds_kyiv }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 525 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 525
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_kyiv }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_kyiv
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_kyiv = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 525
+            WEF = { has_country_flag = waef_strategic_holds_kyiv }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 525 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 525
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_kyiv }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_kyiv
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_kyiv = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_kyiv }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_kyiv = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_kyiv } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Gomel: native EEF; state 241; city VP province 9288.
+    waef_strategic_capture_gomel = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 9288
+            NOT = { has_country_flag = waef_strategic_holds_gomel }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9288 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9288
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_gomel }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_gomel
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_gomel = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 9288
+            WEF = { has_country_flag = waef_strategic_holds_gomel }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9288 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9288
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_gomel }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_gomel
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_gomel = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_gomel }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_gomel = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_gomel } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Smolensk: native EEF; state 242; city VP province 306.
+    waef_strategic_capture_smolensk = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 306
+            NOT = { has_country_flag = waef_strategic_holds_smolensk }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 306 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 306
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_smolensk }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_smolensk
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_smolensk = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 306
+            WEF = { has_country_flag = waef_strategic_holds_smolensk }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 306 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 306
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_smolensk }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_smolensk
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_smolensk = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_smolensk }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_smolensk = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_smolensk } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Odesa: native EEF; state 192; city VP province 11670.
+    waef_strategic_capture_odesa = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 11670
+            NOT = { has_country_flag = waef_strategic_holds_odesa }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11670 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11670
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_odesa }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_odesa
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_odesa = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 11670
+            WEF = { has_country_flag = waef_strategic_holds_odesa }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11670 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11670
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_odesa }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_odesa
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_odesa = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_odesa }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_odesa = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_odesa } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Leningrad: native EEF; state 195; city VP province 3151.
+    waef_strategic_capture_leningrad = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 3151
+            NOT = { has_country_flag = waef_strategic_holds_leningrad }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3151 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3151
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_leningrad }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_leningrad
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_leningrad = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 3151
+            WEF = { has_country_flag = waef_strategic_holds_leningrad }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3151 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3151
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_leningrad }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_leningrad
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_leningrad = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_leningrad }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_leningrad = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_leningrad } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Bryansk: native EEF; state 224; city VP province 3335.
+    waef_strategic_capture_bryansk = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 3335
+            NOT = { has_country_flag = waef_strategic_holds_bryansk }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3335 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3335
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_bryansk }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_bryansk
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_bryansk = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 3335
+            WEF = { has_country_flag = waef_strategic_holds_bryansk }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3335 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3335
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_bryansk }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_bryansk
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_bryansk = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_bryansk }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_bryansk = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_bryansk } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Kursk: native EEF; state 220; city VP province 3580.
+    waef_strategic_capture_kursk = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 3580
+            NOT = { has_country_flag = waef_strategic_holds_kursk }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3580 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3580
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_kursk }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_kursk
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_kursk = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 3580
+            WEF = { has_country_flag = waef_strategic_holds_kursk }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3580 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3580
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_kursk }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_kursk
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_kursk = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_kursk }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_kursk = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_kursk } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Kharkov: native EEF; state 221; city VP province 418.
+    waef_strategic_capture_kharkov = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 418
+            NOT = { has_country_flag = waef_strategic_holds_kharkov }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 418 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 418
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_kharkov }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_kharkov
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_kharkov = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 418
+            WEF = { has_country_flag = waef_strategic_holds_kharkov }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 418 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 418
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_kharkov }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_kharkov
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_kharkov = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_kharkov }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_kharkov = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_kharkov } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Moscow: native EEF; state 219; city VP province 6380.
+    waef_strategic_capture_moscow = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 6380
+            NOT = { has_country_flag = waef_strategic_holds_moscow }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 6380 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 6380
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_moscow }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_moscow
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_moscow = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 6380
+            WEF = { has_country_flag = waef_strategic_holds_moscow }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 6380 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 6380
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_moscow }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_moscow
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_moscow = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_moscow }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_moscow = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_moscow } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Voronezh: native EEF; state 260; city VP province 413.
+    waef_strategic_capture_voronezh = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 413
+            NOT = { has_country_flag = waef_strategic_holds_voronezh }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 413 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 413
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_voronezh }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_voronezh
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_voronezh = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 413
+            WEF = { has_country_flag = waef_strategic_holds_voronezh }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 413 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 413
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_voronezh }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_voronezh
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_voronezh = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_voronezh }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_voronezh = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_voronezh } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Rostov: native EEF; state 218; city VP province 9417.
+    waef_strategic_capture_rostov = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 9417
+            NOT = { has_country_flag = waef_strategic_holds_rostov }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9417 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9417
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_rostov }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_rostov
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_rostov = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 9417
+            WEF = { has_country_flag = waef_strategic_holds_rostov }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 9417 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 9417
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_rostov }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_rostov
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_rostov = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_rostov }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_rostov = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_rostov } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Dnipropetrovsk: native EEF; state 226; city VP province 11437.
+    waef_strategic_capture_dnipro = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 11437
+            NOT = { has_country_flag = waef_strategic_holds_dnipro }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11437 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11437
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_dnipro }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_dnipro
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_dnipro = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 11437
+            WEF = { has_country_flag = waef_strategic_holds_dnipro }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11437 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11437
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_dnipro }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_dnipro
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_dnipro = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_dnipro }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_dnipro = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_dnipro } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Stalingrad: native EEF; state 217; city VP province 3529.
+    waef_strategic_capture_stalingrad = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 3529
+            NOT = { has_country_flag = waef_strategic_holds_stalingrad }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3529 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3529
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_stalingrad }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_stalingrad
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_stalingrad = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 3529
+            WEF = { has_country_flag = waef_strategic_holds_stalingrad }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 3529 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 3529
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_stalingrad }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_stalingrad
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_stalingrad = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_stalingrad }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_stalingrad = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_stalingrad } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    # Gorky: native EEF; state 252; city VP province 11375.
+    waef_strategic_capture_gorky = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            controls_province = 11375
+            NOT = { has_country_flag = waef_strategic_holds_gorky }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11375 }
+                NOT = { has_war_with = EEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11375
+                    has_war_with = EEF
+                    NOT = { has_country_flag = waef_strategic_holds_gorky }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_country_flag = waef_strategic_holds_gorky
+                add_to_variable = { waef_strategic_captured = 1 }
+                EEF = { add_to_variable = { waef_strategic_lost = 1 } }
+            }
+        }
+    }
+    waef_strategic_liberate_gorky = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            controls_province = 11375
+            WEF = { has_country_flag = waef_strategic_holds_gorky }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 14
+        cancel_trigger = {
+            OR = {
+                NOT = { controls_province = 11375 }
+                NOT = { has_war_with = WEF }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    controls_province = 11375
+                    has_war_with = WEF
+                    WEF = { has_country_flag = waef_strategic_holds_gorky }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                WEF = {
+                    clr_country_flag = waef_strategic_holds_gorky
+                    subtract_from_variable = { waef_strategic_captured = 1 }
+                }
+                subtract_from_variable = { waef_strategic_lost = 1 }
+            }
+        }
+    }
+    # Informational rows shown only after a confirmed conquest.
+    waef_strategic_captured_gorky = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        visible = { has_country_flag = waef_strategic_holds_gorky }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+    waef_strategic_lost_gorky = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        visible = { WEF = { has_country_flag = waef_strategic_holds_gorky } }
+        available = { always = no }
+        cost = 0
+        ai_will_do = { base = 0 }
+    }
+
+    waef_strategic_collapse_wef = {
+        icon = generic_operation
+        allowed = { tag = WEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = EEF
+            check_variable = { var = waef_strategic_captured value = 16 compare = greater_than_or_equals }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 30
+        cancel_trigger = {
+            OR = {
+                NOT = { has_war_with = EEF }
+                NOT = { check_variable = { var = waef_strategic_captured value = 16 compare = greater_than_or_equals } }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    has_war_with = EEF
+                    check_variable = { var = waef_strategic_captured value = 16 compare = greater_than_or_equals }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_global_flag = waef_strategic_finished
+                set_country_flag = waef_strategic_winner
+                EEF = {
+                    set_country_flag = waef_strategic_loser
+                    country_event = { id = waef_strategic.2 }
+                }
+                country_event = { id = waef_strategic.1 }
+                white_peace = EEF
+            }
+        }
+    }
+
+    waef_strategic_collapse_eef = {
+        icon = generic_operation
+        allowed = { tag = EEF }
+        activation = {
+            has_global_flag = waef_scenario_1941
+            has_war_with = WEF
+            check_variable = { var = waef_strategic_captured value = 16 compare = greater_than_or_equals }
+            NOT = { has_global_flag = waef_strategic_finished }
+        }
+        selectable_mission = no
+        available = { always = no }
+        is_good = yes
+        days_mission_timeout = 30
+        cancel_trigger = {
+            OR = {
+                NOT = { has_war_with = WEF }
+                NOT = { check_variable = { var = waef_strategic_captured value = 16 compare = greater_than_or_equals } }
+                has_global_flag = waef_strategic_finished
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    has_war_with = WEF
+                    check_variable = { var = waef_strategic_captured value = 16 compare = greater_than_or_equals }
+                    NOT = { has_global_flag = waef_strategic_finished }
+                }
+                set_global_flag = waef_strategic_finished
+                set_country_flag = waef_strategic_winner
+                WEF = {
+                    set_country_flag = waef_strategic_loser
+                    country_event = { id = waef_strategic.2 }
+                }
+                country_event = { id = waef_strategic.1 }
+                white_peace = WEF
+            }
+        }
+    }
+}

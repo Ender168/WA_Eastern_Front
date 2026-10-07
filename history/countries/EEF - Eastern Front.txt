@@ -15,6 +15,10 @@ add_ideas = waef_reduced_fuel_capacity_civilian
 add_ideas = economy_fatigue_0
 set_variable = { economic_fatigue = 0 }
 
+# Confirmed strategic-city captures and losses (integer counts).
+set_variable = { waef_strategic_captured = 0 }
+set_variable = { waef_strategic_lost = 0 }
+
 # Original WA law missions: when a law changes, its mission starts the next one.
 activate_mission = economy_fatigue_civilian_economy_mission
 activate_mission = economy_fatigue_free_trade_mission

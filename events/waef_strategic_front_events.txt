@@ -1,0 +1,17 @@
+add_namespace = waef_strategic
+country_event = {
+    id = waef_strategic.1
+    title = waef_strategic.1.t
+    desc = waef_strategic.1.d
+    picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes
+    option = { name = waef_strategic.1.a }
+}
+country_event = {
+    id = waef_strategic.2
+    title = waef_strategic.2.t
+    desc = waef_strategic.2.d
+    picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes
+    option = { name = waef_strategic.2.a }
+}

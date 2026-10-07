@@ -1,0 +1,327 @@
+{
+  "capture_days": 14,
+  "collapse_threshold": 16,
+  "collapse_days": 30,
+  "objectives": [
+    {
+      "owner": "WEF",
+      "slug": "danzig",
+      "ru": "Данциг",
+      "en": "Danzig",
+      "state": 85,
+      "province": 362
+    },
+    {
+      "owner": "WEF",
+      "slug": "warsaw",
+      "ru": "Варшава",
+      "en": "Warsaw",
+      "state": 10,
+      "province": 3544
+    },
+    {
+      "owner": "WEF",
+      "slug": "krakow",
+      "ru": "Краков",
+      "en": "Krakow",
+      "state": 88,
+      "province": 9427
+    },
+    {
+      "owner": "WEF",
+      "slug": "cluj",
+      "ru": "Клуж",
+      "en": "Cluj",
+      "state": 76,
+      "province": 6711
+    },
+    {
+      "owner": "WEF",
+      "slug": "bucharest",
+      "ru": "Бухарест",
+      "en": "Bucharest",
+      "state": 46,
+      "province": 9617
+    },
+    {
+      "owner": "WEF",
+      "slug": "breslau",
+      "ru": "Бреслау",
+      "en": "Breslau",
+      "state": 66,
+      "province": 9570
+    },
+    {
+      "owner": "WEF",
+      "slug": "prague",
+      "ru": "Прага",
+      "en": "Prague",
+      "state": 9,
+      "province": 11542
+    },
+    {
+      "owner": "WEF",
+      "slug": "budapest",
+      "ru": "Будапешт",
+      "en": "Budapest",
+      "state": 889,
+      "province": 9660
+    },
+    {
+      "owner": "WEF",
+      "slug": "belgrade",
+      "ru": "Белград",
+      "en": "Belgrade",
+      "state": 107,
+      "province": 11586
+    },
+    {
+      "owner": "WEF",
+      "slug": "sofia",
+      "ru": "София",
+      "en": "Sofia",
+      "state": 48,
+      "province": 949
+    },
+    {
+      "owner": "WEF",
+      "slug": "dresden",
+      "ru": "Дрезден",
+      "en": "Dresden",
+      "state": 65,
+      "province": 514
+    },
+    {
+      "owner": "WEF",
+      "slug": "leipzig",
+      "ru": "Лейпциг",
+      "en": "Leipzig",
+      "state": 65,
+      "province": 3535
+    },
+    {
+      "owner": "WEF",
+      "slug": "bratislava",
+      "ru": "Братислава",
+      "en": "Bratislava",
+      "state": 70,
+      "province": 9692
+    },
+    {
+      "owner": "WEF",
+      "slug": "zagreb",
+      "ru": "Загреб",
+      "en": "Zagreb",
+      "state": 109,
+      "province": 11581
+    },
+    {
+      "owner": "WEF",
+      "slug": "plovdiv",
+      "ru": "Пловдив",
+      "en": "Plovdiv",
+      "state": 212,
+      "province": 6923
+    },
+    {
+      "owner": "WEF",
+      "slug": "berlin",
+      "ru": "Берлин",
+      "en": "Berlin",
+      "state": 810,
+      "province": 6521
+    },
+    {
+      "owner": "WEF",
+      "slug": "vienna",
+      "ru": "Вена",
+      "en": "Vienna",
+      "state": 882,
+      "province": 11666
+    },
+    {
+      "owner": "WEF",
+      "slug": "linz",
+      "ru": "Линц",
+      "en": "Linz",
+      "state": 152,
+      "province": 732
+    },
+    {
+      "owner": "WEF",
+      "slug": "brno",
+      "ru": "Брно",
+      "en": "Brno",
+      "state": 75,
+      "province": 3569
+    },
+    {
+      "owner": "WEF",
+      "slug": "sarajevo",
+      "ru": "Сараево",
+      "en": "Sarajevo",
+      "state": 104,
+      "province": 11899
+    },
+    {
+      "owner": "EEF",
+      "slug": "kaunas",
+      "ru": "Каунас",
+      "en": "Kaunas",
+      "state": 11,
+      "province": 6296
+    },
+    {
+      "owner": "EEF",
+      "slug": "vilnius",
+      "ru": "Вильнюс",
+      "en": "Vilnius",
+      "state": 784,
+      "province": 3320
+    },
+    {
+      "owner": "EEF",
+      "slug": "lviv",
+      "ru": "Львов",
+      "en": "Lviv",
+      "state": 91,
+      "province": 11479
+    },
+    {
+      "owner": "EEF",
+      "slug": "minsk",
+      "ru": "Минск",
+      "en": "Minsk",
+      "state": 206,
+      "province": 11370
+    },
+    {
+      "owner": "EEF",
+      "slug": "riga",
+      "ru": "Рига",
+      "en": "Riga",
+      "state": 966,
+      "province": 9340
+    },
+    {
+      "owner": "EEF",
+      "slug": "pskov",
+      "ru": "Псков",
+      "en": "Pskov",
+      "state": 209,
+      "province": 11202
+    },
+    {
+      "owner": "EEF",
+      "slug": "kyiv",
+      "ru": "Киев",
+      "en": "Kyiv",
+      "state": 202,
+      "province": 525
+    },
+    {
+      "owner": "EEF",
+      "slug": "gomel",
+      "ru": "Гомель",
+      "en": "Gomel",
+      "state": 241,
+      "province": 9288
+    },
+    {
+      "owner": "EEF",
+      "slug": "smolensk",
+      "ru": "Смоленск",
+      "en": "Smolensk",
+      "state": 242,
+      "province": 306
+    },
+    {
+      "owner": "EEF",
+      "slug": "odesa",
+      "ru": "Одесса",
+      "en": "Odesa",
+      "state": 192,
+      "province": 11670
+    },
+    {
+      "owner": "EEF",
+      "slug": "leningrad",
+      "ru": "Ленинград",
+      "en": "Leningrad",
+      "state": 195,
+      "province": 3151
+    },
+    {
+      "owner": "EEF",
+      "slug": "bryansk",
+      "ru": "Брянск",
+      "en": "Bryansk",
+      "state": 224,
+      "province": 3335
+    },
+    {
+      "owner": "EEF",
+      "slug": "kursk",
+      "ru": "Курск",
+      "en": "Kursk",
+      "state": 220,
+      "province": 3580
+    },
+    {
+      "owner": "EEF",
+      "slug": "kharkov",
+      "ru": "Харьков",
+      "en": "Kharkov",
+      "state": 221,
+      "province": 418
+    },
+    {
+      "owner": "EEF",
+      "slug": "moscow",
+      "ru": "Москва",
+      "en": "Moscow",
+      "state": 219,
+      "province": 6380
+    },
+    {
+      "owner": "EEF",
+      "slug": "voronezh",
+      "ru": "Воронеж",
+      "en": "Voronezh",
+      "state": 260,
+      "province": 413
+    },
+    {
+      "owner": "EEF",
+      "slug": "rostov",
+      "ru": "Ростов",
+      "en": "Rostov",
+      "state": 218,
+      "province": 9417
+    },
+    {
+      "owner": "EEF",
+      "slug": "dnipro",
+      "ru": "Днепропетровск",
+      "en": "Dnipropetrovsk",
+      "state": 226,
+      "province": 11437
+    },
+    {
+      "owner": "EEF",
+      "slug": "stalingrad",
+      "ru": "Сталинград",
+      "en": "Stalingrad",
+      "state": 217,
+      "province": 3529
+    },
+    {
+      "owner": "EEF",
+      "slug": "gorky",
+      "ru": "Горький",
+      "en": "Gorky",
+      "state": 252,
+      "province": 11375
+    }
+  ]
+}
