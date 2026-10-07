@@ -65,19 +65,17 @@ Physical World Ablaze impassable geography is preserved.
 
 ## Resources
 
-Every non-capital resource block is removed.
+Every WEF/EEF state receives the same resource package:
 
-WEF capital state 810 and EEF capital state 219 each receive:
+- oil = 2
+- bauxite = 11
+- rubber = 3
+- tungsten = 2
+- chromium = 3
+- coal = 35
+- iron = 25
 
-- oil = 10
-- rubber = 10
-- tungsten = 10
-- chromium = 10
-- coal = 10
-- bauxite = 10
-- steel = 10
-
-Iron and aluminium are intentionally absent.
+Every OBS state has no WAEF resource package.
 
 ## Supply and railways
 
