@@ -98,3 +98,7 @@ The scenario replaces:
 - `history/states`;
 - `history/countries`;
 - `history/units`.
+
+## WEF state exchange: 99 -> 886
+
+The current western ownership set removes state 99 (Jutland) from WEF and assigns it to OBS, while state 886 (Primorska) is assigned to WEF. This is a one-for-one exchange, so WEF remains at 141 states. Because the exchange lives in `WEF_REMOVE` / `WEF_ADD`, the normal generator pipeline gives state 886 the complete player-state package and removes it from state 99, then regenerates supply hubs and the level-3 railway mesh.
