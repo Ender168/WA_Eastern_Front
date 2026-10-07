@@ -1,7 +1,20 @@
 focus_tree = {
     id = WAEF_GER_TECH_DOCTRINE
 
+    country = {
+        factor = 0
+        modifier = {
+            add = 200000
+            has_country_flag = german_technologies_tree_flag
+            OR = {
+                tag = WEF
+                tag = EEF
+            }
+        }
+    }
+
     default = no
+    reset_on_civilwar = no
 
     focus = {
         id = WAEF_GER_TECH_ROOT
