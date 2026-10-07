@@ -1253,13 +1253,13 @@ waef_technology_assimilation = {
 
                 810 = {
                     create_unit = {
-                        division = "division_template = \"WAEF Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                        division = "division_template = \"WAEF Infantry Division\" start_experience_factor = 0.45 start_equipment_factor = 1 start_manpower_factor = 1"
                         owner = WEF
                         prioritize_location = 6521
                         count = 300
                     }
                     create_unit = {
-                        division = "division_template = \"WAEF Medium Tank Division\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                        division = "division_template = \"WAEF Medium Tank Division\" start_experience_factor = 0.45 start_equipment_factor = 1 start_manpower_factor = 1"
                         owner = WEF
                         prioritize_location = 6521
                         count = 30
@@ -1305,13 +1305,13 @@ waef_technology_assimilation = {
 
                 219 = {
                     create_unit = {
-                        division = "division_template = \"WAEF Infantry Division\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                        division = "division_template = \"WAEF Infantry Division\" start_experience_factor = 0.45 start_equipment_factor = 1 start_manpower_factor = 1"
                         owner = EEF
                         prioritize_location = 6380
                         count = 300
                     }
                     create_unit = {
-                        division = "division_template = \"WAEF Medium Tank Division\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                        division = "division_template = \"WAEF Medium Tank Division\" start_experience_factor = 0.45 start_equipment_factor = 1 start_manpower_factor = 1"
                         owner = EEF
                         prioritize_location = 6380
                         count = 30
@@ -1354,6 +1354,7 @@ waef_technology_assimilation = {
             }
 
             create_corps_commander = {
+                name = "WAEF General 01"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1361,6 +1362,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 02"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1368,6 +1370,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 03"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1375,6 +1378,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 04"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1382,6 +1386,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 05"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1389,6 +1394,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 06"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1396,6 +1402,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 07"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1403,6 +1410,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 08"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1410,6 +1418,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 09"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1417,6 +1426,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 10"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1424,6 +1434,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 11"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1431,6 +1442,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 12"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1438,6 +1450,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 13"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1445,6 +1458,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 14"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1452,6 +1466,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 15"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1459,6 +1474,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 16"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1466,6 +1482,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 17"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1473,6 +1490,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 18"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1480,6 +1498,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 19"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1487,6 +1506,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 20"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1494,6 +1514,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 21"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1501,6 +1522,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 22"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1508,6 +1530,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 23"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1515,6 +1538,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 24"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1522,6 +1546,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 25"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1529,6 +1554,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 26"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1536,6 +1562,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 27"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1543,6 +1570,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 28"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1550,6 +1578,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 29"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1557,6 +1586,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 30"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1564,6 +1594,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 31"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1571,6 +1602,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 32"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1578,6 +1610,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 33"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1585,6 +1618,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 34"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1592,6 +1626,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 35"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1599,6 +1634,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 36"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1606,6 +1642,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 37"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1613,6 +1650,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 38"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1620,6 +1658,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 39"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1627,6 +1666,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 40"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1634,6 +1674,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 41"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1641,6 +1682,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 42"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1648,6 +1690,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 43"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1655,6 +1698,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 44"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1662,6 +1706,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 45"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1669,6 +1714,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 46"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1676,6 +1722,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 47"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1683,6 +1730,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 48"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1690,6 +1738,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 49"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1697,6 +1746,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_corps_commander = {
+                name = "WAEF General 50"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1705,6 +1755,7 @@ waef_technology_assimilation = {
             }
 
             create_field_marshal = {
+                name = "WAEF Field Marshal 01"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1712,6 +1763,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_field_marshal = {
+                name = "WAEF Field Marshal 02"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1719,6 +1771,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_field_marshal = {
+                name = "WAEF Field Marshal 03"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1726,6 +1779,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_field_marshal = {
+                name = "WAEF Field Marshal 04"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1733,6 +1787,7 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
             create_field_marshal = {
+                name = "WAEF Field Marshal 05"
                 skill = 1
                 attack_skill = 1
                 defense_skill = 1
@@ -1740,6 +1795,8 @@ waef_technology_assimilation = {
                 logistics_skill = 1
             }
 
+            add_timed_idea = { idea = waef_manpower_accounting days = 700 }
+            country_event = { id = waef.1 }
             set_country_flag = waef_starting_forces_created
             }
         }
