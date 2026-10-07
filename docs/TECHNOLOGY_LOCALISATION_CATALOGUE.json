@@ -1,0 +1,5290 @@
+{
+  "advanced_centimetric_radar": {
+    "english": "Advanced Centimetric Radar",
+    "russian": "Радар (1942)"
+  },
+  "advanced_computing_machine": {
+    "english": "Advanced Computing Machine (component production)",
+    "russian": "Вычислительные машины (1942) (производство компонентов)"
+  },
+  "advanced_decryption": {
+    "english": "Decryption - Automated Deduction",
+    "russian": "Дешифрование (1942)"
+  },
+  "advanced_encryption": {
+    "english": "Encryption - Pulse-code Modulation",
+    "russian": "Шифрование (1942)"
+  },
+  "advanced_naval_mines": {
+    "english": "Acoustic Mine",
+    "russian": "Морские мины (1942)"
+  },
+  "advanced_oil_processing": {
+    "english": "Advanced Oil Processing",
+    "russian": "Переработка нефти (1941)"
+  },
+  "advanced_rubber_processing": {
+    "english": "Advanced Rubber Processing",
+    "russian": "Переработка каучука (1941)"
+  },
+  "advanced_sonar": {
+    "english": "Sonar (1945)",
+    "russian": "Сонар (1945)"
+  },
+  "airbase4": {
+    "english": "Improved Airbases",
+    "russian": "Строительство авиабаз 4 (1941)"
+  },
+  "airbase4_comp": {
+    "english": "Improved Airbases (component production)",
+    "russian": "Строительство авиабаз (1941) (производство компонентов)"
+  },
+  "airbase5": {
+    "english": "Advanced Airbases",
+    "russian": "Строительство авиабаз 5 (1943)"
+  },
+  "airbase5_comp": {
+    "english": "Advanced Airbases (component production)",
+    "russian": "Строительство авиабаз (1943) (производство компонентов)"
+  },
+  "airbase6": {
+    "english": "Modern Airbases",
+    "russian": "Строительство авиабаз 6 (1945)"
+  },
+  "airbase6_comp": {
+    "english": "Modern Airbases (component production)",
+    "russian": "Строительство авиабаз (1945) (производство компонентов)"
+  },
+  "assembly_cranes": {
+    "english": "Assembly Cranes",
+    "russian": "Сборочные краны (1943)"
+  },
+  "assembly_cranes_comp": {
+    "english": "Assembly Cranes (component production)",
+    "russian": "Сборочные краны (1943) (производство компонентов)"
+  },
+  "assembly_line_production": {
+    "english": "Assembly Line Production",
+    "russian": "Конвейерное производство (1941)"
+  },
+  "assembly_line_production_comp": {
+    "english": "Assembly Line Production (component production)",
+    "russian": "Конвейерное производство (1941) (производство компонентов)"
+  },
+  "camo1": {
+    "english": "Two Tone Camouflage",
+    "russian": "Камуфляж 1 (1941)"
+  },
+  "camo2": {
+    "english": "Three Tone Camouflage",
+    "russian": "Камуфляж 2 (1943)"
+  },
+  "camo3": {
+    "english": "Four Tone Camouflage",
+    "russian": "Камуфляж 3 (1944)"
+  },
+  "camo4": {
+    "english": "Five Tone Camouflage",
+    "russian": "Камуфляж 4 (1945)"
+  },
+  "concentrated_industry": {
+    "english": "Concentrated Industry",
+    "russian": "Концентрированная промышленность (1936)"
+  },
+  "construction4": {
+    "english": "Construction IV",
+    "russian": "Строительство 4 (1941)"
+  },
+  "construction4_comp": {
+    "english": "Construction IV (component production)",
+    "russian": "Строительство (1941) (производство компонентов)"
+  },
+  "construction5": {
+    "english": "Construction V",
+    "russian": "Строительство 5 (1943)"
+  },
+  "construction5_comp": {
+    "english": "Construction V (component production)",
+    "russian": "Строительство (1943) (производство компонентов)"
+  },
+  "construction6": {
+    "english": "Construction VI",
+    "russian": "Строительство 6 (1945)"
+  },
+  "construction6_comp": {
+    "english": "Construction VI (component production)",
+    "russian": "Строительство (1945) (производство компонентов)"
+  },
+  "degaussing": {
+    "english": "Degaussing",
+    "russian": "Размагничивание (1942)"
+  },
+  "dispersed_industry": {
+    "english": "Dispersed Industry",
+    "russian": "Рассредоточенная промышленность (1936)"
+  },
+  "eng_aa_tower_2": {
+    "english": "AA Towers",
+    "russian": "Зенитная башня 2 (1941)"
+  },
+  "eng_aa_tower_3": {
+    "english": "Large AA Towers",
+    "russian": "Зенитная башня 3 (1943)"
+  },
+  "eng_amphibious_1": {
+    "english": "Terrapin",
+    "russian": "Амфибийные машины: Terrapin"
+  },
+  "eng_anti_air_2": {
+    "english": "Anti-Air Weapons (1944)",
+    "russian": "Зенитное вооружение 2 (1944)"
+  },
+  "eng_anti_air_upgrade_3": {
+    "english": "Increased Gun Depression",
+    "russian": "Зенитное вооружение 3 (1941)"
+  },
+  "eng_anti_air_upgrade_4": {
+    "english": "Water Coolers",
+    "russian": "Зенитное вооружение 4 (1943)"
+  },
+  "eng_anti_tank_2": {
+    "english": "Anti-Tank Weapons (1941)",
+    "russian": "Противотанковое вооружение 2 (1941)"
+  },
+  "eng_anti_tank_3": {
+    "english": "Anti-Tank Weapons (1943)",
+    "russian": "Противотанковое вооружение 3 (1943)"
+  },
+  "eng_anti_tank_4": {
+    "english": "Anti-Tank Weapons (1945)",
+    "russian": "Противотанковое вооружение 4 (1945)"
+  },
+  "eng_anti_tank_upgrade_3": {
+    "english": "Improved Gun Sights",
+    "russian": "Противотанковое вооружение 3 (1942)"
+  },
+  "eng_armoured_car_2": {
+    "english": "AEC Mk II",
+    "russian": "Бронеавтомобиль: AEC Mk II"
+  },
+  "eng_artillery_upgrade_3": {
+    "english": "Faster Reciever",
+    "russian": "Артиллерия 3 (1942)"
+  },
+  "eng_artillery_upgrade_4": {
+    "english": "Improved Breech Ring",
+    "russian": "Артиллерия 4 (1945)"
+  },
+  "eng_attacker_2": {
+    "english": "Beaufighter Mk VI",
+    "russian": "Самолёт-штурмовик: Beaufighter Mk VI"
+  },
+  "eng_attacker_3": {
+    "english": "Brigand",
+    "russian": "Самолёт-штурмовик: Brigand"
+  },
+  "eng_attacker_ad_tech_2": {
+    "english": "Bristol Beaufighter Mk VI",
+    "russian": "Самолёт-штурмовик: Bristol Beaufighter Mk VI"
+  },
+  "eng_attacker_ad_tech_3": {
+    "english": "Bristol Brigand B1",
+    "russian": "Самолёт-штурмовик: Bristol Brigand B1"
+  },
+  "eng_cas_6": {
+    "english": "Henley Mk V",
+    "russian": "Штурмовик: Henley Mk V"
+  },
+  "eng_cas_7": {
+    "english": "Henley Mk X",
+    "russian": "Штурмовик: Henley Mk X"
+  },
+  "eng_cas_ad_tech_6": {
+    "english": "Hawker Henley Mk V",
+    "russian": "Штурмовик: Hawker Henley Mk V"
+  },
+  "eng_cas_ad_tech_7": {
+    "english": "Blackburn Firebrand Mk III",
+    "russian": "Штурмовик: Blackburn Firebrand Mk III"
+  },
+  "eng_combat_armoured_car_2": {
+    "english": "AEC AC Mk II",
+    "russian": "Бронеавтомобиль: AEC AC Mk II"
+  },
+  "eng_combat_armoured_car_3": {
+    "english": "Coventry AC",
+    "russian": "Бронеавтомобиль: Coventry AC"
+  },
+  "eng_cv_cas_5": {
+    "english": "Fairey Firefly",
+    "russian": "Штурмовик: Fairey Firefly"
+  },
+  "eng_cv_cas_ad_tech_2": {
+    "english": "Fairey Fulmar Mk I",
+    "russian": "Штурмовик: Fairey Fulmar Mk I"
+  },
+  "eng_cv_cas_ad_tech_5": {
+    "english": "Fairey Firefly Mk IV",
+    "russian": "Штурмовик: Fairey Firefly Mk IV"
+  },
+  "eng_cv_fighter_4": {
+    "english": "Seafire Mk III",
+    "russian": "Истребитель: Seafire Mk III"
+  },
+  "eng_cv_fighter_5": {
+    "english": "Seafire Mk XVII",
+    "russian": "Истребитель: Seafire Mk XVII"
+  },
+  "eng_cv_fighter_ad_tech_4": {
+    "english": "Supermarine Seafire LF Mk III",
+    "russian": "Истребитель: Supermarine Seafire LF Mk III"
+  },
+  "eng_cv_fighter_ad_tech_5": {
+    "english": "Supermarine Seafire F Mk XVII",
+    "russian": "Истребитель: Supermarine Seafire F Mk XVII"
+  },
+  "eng_cv_naval_bomber_ad_tech_3": {
+    "english": "Fairey Barracuda",
+    "russian": "Военная технология: Fairey Barracuda"
+  },
+  "eng_elite_forces": {
+    "english": "Elite Forces",
+    "russian": "Элитные войска (1945)"
+  },
+  "eng_extreme_environment_training": {
+    "english": "Extreme Environment Training",
+    "russian": "Подготовка к экстремальным условиям (1941)"
+  },
+  "eng_fighter_4": {
+    "english": "Spitfire Mk V",
+    "russian": "Истребитель: Spitfire Mk V"
+  },
+  "eng_fighter_5": {
+    "english": "Spitfire Mk IX",
+    "russian": "Истребитель: Spitfire Mk IX"
+  },
+  "eng_fighter_6": {
+    "english": "Spitfire Mk XIV",
+    "russian": "Истребитель: Spitfire Mk XIV"
+  },
+  "eng_fighter_ad_tech_4": {
+    "english": "Supermarine Spitfire Mk V",
+    "russian": "Истребитель: Supermarine Spitfire Mk V"
+  },
+  "eng_fighter_ad_tech_5": {
+    "english": "Supermarine Spitfire F Mk IX",
+    "russian": "Истребитель: Supermarine Spitfire F Mk IX"
+  },
+  "eng_fighter_ad_tech_6": {
+    "english": "Supermarine Spitfire F Mk XIV",
+    "russian": "Истребитель: Supermarine Spitfire F Mk XIV"
+  },
+  "eng_fighter_multirole_3": {
+    "english": "Typhoon Mk I",
+    "russian": "Истребитель: Typhoon Mk I"
+  },
+  "eng_fighter_multirole_4": {
+    "english": "Typhoon Mk II",
+    "russian": "Истребитель: Typhoon Mk II"
+  },
+  "eng_fighter_multirole_5": {
+    "english": "Tempest",
+    "russian": "Истребитель: Tempest"
+  },
+  "eng_fighter_multirole_ad_tech_3": {
+    "english": "Hawker Typhoon Mk IA",
+    "russian": "Истребитель: Hawker Typhoon Mk IA"
+  },
+  "eng_fighter_multirole_ad_tech_4": {
+    "english": "Hawker Typhoon Mk IB",
+    "russian": "Истребитель: Hawker Typhoon Mk IB"
+  },
+  "eng_fighter_multirole_ad_tech_5": {
+    "english": "Hawker Tempest Mk V",
+    "russian": "Истребитель: Hawker Tempest Mk V"
+  },
+  "eng_heavy_1_spg": {
+    "english": "Bishop",
+    "russian": "Тяжёлая бронетехника: Bishop"
+  },
+  "eng_heavy_4": {
+    "english": "Churchill Mk I",
+    "russian": "Тяжёлая бронетехника: Churchill Mk I"
+  },
+  "eng_heavy_5": {
+    "english": "Churchill Mk III",
+    "russian": "Тяжёлая бронетехника: Churchill Mk III"
+  },
+  "eng_heavy_5_spg": {
+    "english": "Churchill AVRE",
+    "russian": "Тяжёлая бронетехника: Churchill AVRE"
+  },
+  "eng_heavy_6": {
+    "english": "Churchill Mk VII",
+    "russian": "Тяжёлая бронетехника: Churchill Mk VII"
+  },
+  "eng_heavy_anti_air_3": {
+    "english": "Anti-Air Weapons (1944)",
+    "russian": "Зенитное вооружение 3 (1944)"
+  },
+  "eng_heavy_anti_tank_1": {
+    "english": "Anti-Tank Weapons (1943)",
+    "russian": "Противотанковое вооружение 1 (1943)"
+  },
+  "eng_heavy_anti_tank_2": {
+    "english": "Anti-Tank Weapons (1945)",
+    "russian": "Противотанковое вооружение 2 (1945)"
+  },
+  "eng_heavy_artillery_3": {
+    "english": "Artillery (1941)",
+    "russian": "Артиллерия 3 (1941)"
+  },
+  "eng_heavy_artillery_4": {
+    "english": "Artillery (1945)",
+    "russian": "Артиллерия 4 (1945)"
+  },
+  "eng_heavy_fighter_2": {
+    "english": "Mosquito Mk II",
+    "russian": "Истребитель: Mosquito Mk II"
+  },
+  "eng_heavy_fighter_3": {
+    "english": "Mosquito Mk XV",
+    "russian": "Истребитель: Mosquito Mk XV"
+  },
+  "eng_heavy_fighter_ad_tech_2": {
+    "english": "De Havilland Mosquito F Mk II",
+    "russian": "Истребитель: De Havilland Mosquito F Mk II"
+  },
+  "eng_heavy_fighter_ad_tech_3": {
+    "english": "De Havilland Mosquito F Mk XVI",
+    "russian": "Истребитель: De Havilland Mosquito F Mk XVI"
+  },
+  "eng_heavy_infantry_weapons_3": {
+    "english": "Vickers + Bren MkII + PIAT",
+    "russian": "Пехотное вооружение: Vickers + Bren MkII + PIAT"
+  },
+  "eng_heavy_infantry_weapons_upgrade_3": {
+    "english": "10.7cm Mortar",
+    "russian": "Пехотное вооружение 3 (1942)"
+  },
+  "eng_heavy_strategic_bomber_ad_tech_3": {
+    "english": "Avro Lancaster",
+    "russian": "Стратегический бомбардировщик: Avro Lancaster"
+  },
+  "eng_heavy_tank_chassis_3": {
+    "english": "Churchill Mk I",
+    "russian": "Тяжёлый танк: Churchill Mk I"
+  },
+  "eng_heavy_tank_chassis_3_2": {
+    "english": "Churchill Mk III",
+    "russian": "Тяжёлый танк: Churchill Mk III"
+  },
+  "eng_heavy_tank_chassis_3_3": {
+    "english": "Churchill Mk VII",
+    "russian": "Тяжёлый танк: Churchill Mk VII"
+  },
+  "eng_heavy_tank_spg_1": {
+    "english": "Bishop",
+    "russian": "Тяжёлый танк: Bishop"
+  },
+  "eng_heavy_tank_spg_5": {
+    "english": "Churchill AVRE",
+    "russian": "Тяжёлый танк: Churchill AVRE"
+  },
+  "eng_heavy_tank_td_3": {
+    "english": "Valentine AT",
+    "russian": "Тяжёлый танк: Valentine AT"
+  },
+  "eng_heavy_tank_td_4": {
+    "english": "Archer",
+    "russian": "Тяжёлый танк: Archer"
+  },
+  "eng_heavy_tank_td_8": {
+    "english": "Tortoise",
+    "russian": "Тяжёлый танк: Tortoise"
+  },
+  "eng_heavy_td_3": {
+    "english": "Valentine AT",
+    "russian": "Тяжёлая бронетехника: Valentine AT"
+  },
+  "eng_heavy_td_7": {
+    "english": "Archer",
+    "russian": "Тяжёлая бронетехника: Archer"
+  },
+  "eng_heavy_td_8": {
+    "english": "Tortoise",
+    "russian": "Тяжёлая бронетехника: Tortoise"
+  },
+  "eng_infantry_weapons_2": {
+    "english": "Lee-Enfield + Sten SMG",
+    "russian": "Пехотное вооружение: Lee-Enfield + Sten SMG"
+  },
+  "eng_infantry_weapons_3": {
+    "english": "Lee-Enfield + Sterling SMG",
+    "russian": "Пехотное вооружение: Lee-Enfield + Sterling SMG"
+  },
+  "eng_infantry_weapons_upgrade_4": {
+    "english": "No. 76 Incendiary Grenade",
+    "russian": "Пехотное вооружение 4 (1941)"
+  },
+  "eng_infantry_weapons_upgrade_5": {
+    "english": "Gammon Bomb",
+    "russian": "Пехотное вооружение 5 (1943)"
+  },
+  "eng_jet_fighter_1": {
+    "english": "Meteor F1",
+    "russian": "Истребитель: Meteor F1"
+  },
+  "eng_jet_fighter_ad_tech_1": {
+    "english": "Gloster Meteor F Mk 3",
+    "russian": "Истребитель: Gloster Meteor F Mk 3"
+  },
+  "eng_jungle_training": {
+    "english": "Jungle Training",
+    "russian": "Подготовка к бою в джунглях (1944)"
+  },
+  "eng_light_3": {
+    "english": "Hopkins A25",
+    "russian": "Лёгкая бронетехника: Hopkins A25"
+  },
+  "eng_light_4": {
+    "english": "M22 Locust",
+    "russian": "Лёгкая бронетехника: M22 Locust"
+  },
+  "eng_light_spg_2": {
+    "english": "Alecto",
+    "russian": "Лёгкая бронетехника: Alecto"
+  },
+  "eng_light_tank_chassis_3": {
+    "english": "Hopkins",
+    "russian": "Лёгкий танк: Hopkins"
+  },
+  "eng_light_tank_spg_3": {
+    "english": "Alecto",
+    "russian": "Лёгкий танк: Alecto"
+  },
+  "eng_marines2": {
+    "english": "Marines II",
+    "russian": "Морская пехота 2 (1941)"
+  },
+  "eng_marines3": {
+    "english": "Marines III",
+    "russian": "Морская пехота 3 (1943)"
+  },
+  "eng_mechanized_artillery_1": {
+    "english": "Loyd Gun Carrier 18pdr",
+    "russian": "Механизированная пехота: Loyd Gun Carrier 18pdr"
+  },
+  "eng_mechanized_artillery_2": {
+    "english": "Oxford Gun Carrier 25pdr",
+    "russian": "Механизированная пехота: Oxford Gun Carrier 25pdr"
+  },
+  "eng_mechanized_infantry_2": {
+    "english": "Windsor Carrier",
+    "russian": "Механизированная пехота: Windsor Carrier"
+  },
+  "eng_mechanized_infantry_3": {
+    "english": "Oxford Carrier",
+    "russian": "Механизированная пехота: Oxford Carrier"
+  },
+  "eng_medium_5": {
+    "english": "Crusader Mk III",
+    "russian": "Средняя бронетехника: Crusader Mk III"
+  },
+  "eng_medium_6": {
+    "english": "Cavalier",
+    "russian": "Средняя бронетехника: Cavalier"
+  },
+  "eng_medium_7": {
+    "english": "Cromwell",
+    "russian": "Средняя бронетехника: Cromwell"
+  },
+  "eng_medium_8": {
+    "english": "Comet",
+    "russian": "Средняя бронетехника: Comet"
+  },
+  "eng_medium_9": {
+    "english": "Sherman III",
+    "russian": "Средняя бронетехника: Sherman III"
+  },
+  "eng_medium_aa_4": {
+    "english": "Crusader AA Mk I",
+    "russian": "Средняя бронетехника: Crusader AA Mk I"
+  },
+  "eng_medium_aa_5": {
+    "english": "Crusader AA Mk II",
+    "russian": "Средняя бронетехника: Crusader AA Mk II"
+  },
+  "eng_medium_aa_7": {
+    "english": "Centaur AA",
+    "russian": "Средняя бронетехника: Centaur AA"
+  },
+  "eng_medium_spg_4": {
+    "english": "Crusader CS",
+    "russian": "Средняя бронетехника: Crusader CS"
+  },
+  "eng_medium_spg_6": {
+    "english": "Cromwell CS",
+    "russian": "Средняя бронетехника: Cromwell CS"
+  },
+  "eng_medium_spg_8": {
+    "english": "Comet GC",
+    "russian": "Средняя бронетехника: Comet GC"
+  },
+  "eng_medium_spg_9": {
+    "english": "Sexton",
+    "russian": "Средняя бронетехника: Sexton"
+  },
+  "eng_medium_tank_aa_4": {
+    "english": "Crusader AA Mk I",
+    "russian": "Средний танк: Crusader AA Mk I"
+  },
+  "eng_medium_tank_aa_5": {
+    "english": "Crusader AA Mk II",
+    "russian": "Средний танк: Crusader AA Mk II"
+  },
+  "eng_medium_tank_aa_7": {
+    "english": "Centaur AA",
+    "russian": "Средний танк: Centaur AA"
+  },
+  "eng_medium_tank_chassis_3_2": {
+    "english": "Crusader Mk III",
+    "russian": "Средний танк: Crusader Mk III"
+  },
+  "eng_medium_tank_chassis_4": {
+    "english": "Cavalier",
+    "russian": "Средний танк: Cavalier"
+  },
+  "eng_medium_tank_chassis_4_2": {
+    "english": "Cromwell",
+    "russian": "Средний танк: Cromwell"
+  },
+  "eng_medium_tank_chassis_5": {
+    "english": "Comet",
+    "russian": "Средний танк: Comet"
+  },
+  "eng_medium_tank_spg_6": {
+    "english": "Cromwell CS",
+    "russian": "Средний танк: Cromwell CS"
+  },
+  "eng_medium_tank_spg_7": {
+    "english": "Cromwell GC",
+    "russian": "Средний танк: Cromwell GC"
+  },
+  "eng_medium_tank_spg_8": {
+    "english": "Comet GC",
+    "russian": "Средний танк: Comet GC"
+  },
+  "eng_medium_tank_td_6": {
+    "english": "Avenger",
+    "russian": "Средний танк: Avenger"
+  },
+  "eng_medium_tank_td_7": {
+    "english": "Challenger",
+    "russian": "Средний танк: Challenger"
+  },
+  "eng_medium_td_6": {
+    "english": "Avenger",
+    "russian": "Средняя бронетехника: Avenger"
+  },
+  "eng_medium_td_7": {
+    "english": "Challenger",
+    "russian": "Средняя бронетехника: Challenger"
+  },
+  "eng_medium_td_9": {
+    "english": "Sherman Firefly",
+    "russian": "Средняя бронетехника: Sherman Firefly"
+  },
+  "eng_naval_bomber_3": {
+    "english": "Barracuda Mk II",
+    "russian": "Военная технология: Barracuda Mk II"
+  },
+  "eng_night_vision_1": {
+    "english": "Night Vision I",
+    "russian": "Ночное видение 1 (1944)"
+  },
+  "eng_pack_artillery_3": {
+    "english": "Artillery (1943)",
+    "russian": "Артиллерия 3 (1943)"
+  },
+  "eng_paratroopers2": {
+    "english": "Paratroopers II",
+    "russian": "Воздушный десант 2 (1941)"
+  },
+  "eng_paratroopers3": {
+    "english": "Paratroopers III",
+    "russian": "Воздушный десант 3 (1943)"
+  },
+  "eng_patrol_3": {
+    "english": "Sunderland Mk III",
+    "russian": "Патрульный самолёт: Sunderland Mk III"
+  },
+  "eng_patrol_4": {
+    "english": "Seaford Mk V",
+    "russian": "Патрульный самолёт: Seaford Mk V"
+  },
+  "eng_patrol_ad_tech_3": {
+    "english": "Short Sunderland Mk III",
+    "russian": "Патрульный самолёт: Short Sunderland Mk III"
+  },
+  "eng_patrol_ad_tech_4": {
+    "english": "Short Seaford MR Mk I",
+    "russian": "Патрульный самолёт: Short Seaford MR Mk I"
+  },
+  "eng_recon_training": {
+    "english": "Recon Training",
+    "russian": "Разведывательная рота (1943)"
+  },
+  "eng_rocket_artillery_1": {
+    "english": "Artillery (1944)",
+    "russian": "Артиллерия 1 (1944)"
+  },
+  "eng_rocket_upgrade_1": {
+    "english": "Fixed Rail System",
+    "russian": "Ракетное вооружение 1 (1941)"
+  },
+  "eng_rocket_upgrade_2": {
+    "english": "Packed Explosives",
+    "russian": "Ракетное вооружение 2 (1943)"
+  },
+  "eng_scout_armoured_car_3": {
+    "english": "Humber AC MK III",
+    "russian": "Разведывательный бронеавтомобиль: Humber AC MK III"
+  },
+  "eng_scout_car_2": {
+    "english": "Humber AC MK IV",
+    "russian": "Разведывательный бронеавтомобиль: Humber AC MK IV"
+  },
+  "eng_scout_car_3": {
+    "english": "Coventry",
+    "russian": "Разведывательный бронеавтомобиль: Coventry"
+  },
+  "eng_scout_plane_3": {
+    "english": "PR Mosquito",
+    "russian": "Разведывательный самолёт: PR Mosquito"
+  },
+  "eng_scout_plane_ad_tech_3": {
+    "english": "De Havilland Mosquito PR Mk I",
+    "russian": "Разведывательный самолёт: De Havilland Mosquito PR Mk I"
+  },
+  "eng_strategic_bomber_2": {
+    "english": "Halifax",
+    "russian": "Стратегический бомбардировщик: Halifax"
+  },
+  "eng_strategic_bomber_3": {
+    "english": "Lancaster",
+    "russian": "Стратегический бомбардировщик: Lancaster"
+  },
+  "eng_strategic_bomber_ad_tech_1_1": {
+    "english": "Handley Page Hampden TB",
+    "russian": "Стратегический бомбардировщик: Handley Page Hampden TB"
+  },
+  "eng_strategic_bomber_ad_tech_3": {
+    "english": "Handley Page H.P.59 Halifax",
+    "russian": "Стратегический бомбардировщик: Handley Page H.P.59 Halifax"
+  },
+  "eng_strategic_bomber_ad_tech_4": {
+    "english": "Handley Page H.P.61 Halifax",
+    "russian": "Стратегический бомбардировщик: Handley Page H.P.61 Halifax"
+  },
+  "eng_strike_bomber_3": {
+    "english": "Buckingham",
+    "russian": "Ударный бомбардировщик: Buckingham"
+  },
+  "eng_strike_bomber_ad_tech_3": {
+    "english": "Bristol Buckingham B Mk I",
+    "russian": "Ударный бомбардировщик: Bristol Buckingham B Mk I"
+  },
+  "eng_super_heavy_1": {
+    "english": "TOG II",
+    "russian": "Тяжёлая бронетехника: TOG II"
+  },
+  "eng_super_heavy_tank_chassis_1": {
+    "english": "TOG II",
+    "russian": "Тяжёлый танк: TOG II"
+  },
+  "eng_support_4": {
+    "english": "Valentine Mk X",
+    "russian": "Оснащение поддержки: Valentine Mk X"
+  },
+  "eng_support_5": {
+    "english": "Valentine Mk XI",
+    "russian": "Оснащение поддержки: Valentine Mk XI"
+  },
+  "eng_support_tank_chassis_3_2": {
+    "english": "Valentine Mk X",
+    "russian": "Оснащение поддержки: Valentine Mk X"
+  },
+  "eng_support_tank_chassis_3_3": {
+    "english": "Valentine Mk XI",
+    "russian": "Оснащение поддержки: Valentine Mk XI"
+  },
+  "eng_survival_training": {
+    "english": "Survival Training",
+    "russian": "Подготовка к выживанию (1941)"
+  },
+  "eng_tactical_bomber_4": {
+    "english": "Wellington Mk III",
+    "russian": "Тактический бомбардировщик: Wellington Mk III"
+  },
+  "eng_tactical_bomber_5": {
+    "english": "Wellington Mk X",
+    "russian": "Тактический бомбардировщик: Wellington Mk X"
+  },
+  "eng_tactical_bomber_6": {
+    "english": "Warwick",
+    "russian": "Тактический бомбардировщик: Warwick"
+  },
+  "eng_tactical_bomber_ad_tech_4": {
+    "english": "Vickers Wellington Mk III",
+    "russian": "Тактический бомбардировщик: Vickers Wellington Mk III"
+  },
+  "eng_tactical_bomber_ad_tech_5": {
+    "english": "Vickers Wellington Mk X",
+    "russian": "Тактический бомбардировщик: Vickers Wellington Mk X"
+  },
+  "eng_tactical_bomber_ad_tech_6": {
+    "english": "Vickers Warwick Mk II",
+    "russian": "Тактический бомбардировщик: Vickers Warwick Mk II"
+  },
+  "eng_tank_training": {
+    "english": "Anti-Tank Training",
+    "russian": "Противотанковая подготовка (1943)"
+  },
+  "eng_tech_mountaineers2": {
+    "english": "Mountain Infantry II",
+    "russian": "Горная пехота 2 (1941)"
+  },
+  "eng_tech_mountaineers3": {
+    "english": "Mountain Infantry III",
+    "russian": "Горная пехота 3 (1943)"
+  },
+  "eng_water_training": {
+    "english": "Water Training",
+    "russian": "Водная подготовка (1944)"
+  },
+  "excavation4": {
+    "english": "Excavation IV",
+    "russian": "Добыча ресурсов 4 (1941)"
+  },
+  "excavation4_comp": {
+    "english": "Excavation IV (component production)",
+    "russian": "Добыча ресурсов (1941) (производство компонентов)"
+  },
+  "excavation5": {
+    "english": "Excavation V",
+    "russian": "Добыча ресурсов 5 (1943)"
+  },
+  "excavation5_comp": {
+    "english": "Excavation V (component production)",
+    "russian": "Добыча ресурсов (1943) (производство компонентов)"
+  },
+  "excavation6": {
+    "english": "Excavation VI",
+    "russian": "Добыча ресурсов 6 (1945)"
+  },
+  "excavation6_comp": {
+    "english": "Excavation VI (component production)",
+    "russian": "Добыча ресурсов (1945) (производство компонентов)"
+  },
+  "expanded_industry4": {
+    "english": "Advanced Industry",
+    "russian": "Расширение промышленности 4 (1941)"
+  },
+  "expanded_industry4_comp": {
+    "english": "Advanced Industry (component production)",
+    "russian": "Расширение промышленности (1941) (производство компонентов)"
+  },
+  "expanded_industry5": {
+    "english": "Superior Industry",
+    "russian": "Расширение промышленности 5 (1943)"
+  },
+  "expanded_industry5_comp": {
+    "english": "Superior Industry (component production)",
+    "russian": "Расширение промышленности (1943) (производство компонентов)"
+  },
+  "expanded_industry6": {
+    "english": "Modern Industry",
+    "russian": "Расширение промышленности 6 (1945)"
+  },
+  "expanded_industry6_comp": {
+    "english": "Modern Industry (component production)",
+    "russian": "Расширение промышленности (1945) (производство компонентов)"
+  },
+  "experimental_rockets": {
+    "english": "Experimental Rockets",
+    "russian": "Ракетное вооружение (1943)"
+  },
+  "false_emplacements": {
+    "english": "False Construction",
+    "russian": "Ложные позиции (1942)"
+  },
+  "flexible_line_comp": {
+    "english": "Flexible Line (component production)",
+    "russian": "Гибкая производственная линия (1945) (производство компонентов)"
+  },
+  "fra_aa_tower_2": {
+    "english": "AA Towers",
+    "russian": "Зенитная башня 2 (1941)"
+  },
+  "fra_aa_tower_3": {
+    "english": "Large AA Towers",
+    "russian": "Зенитная башня 3 (1943)"
+  },
+  "fra_amphibious_mechanized_infantry_1": {
+    "english": "Char De Bataille SRB",
+    "russian": "Механизированная пехота: Char De Bataille SRB"
+  },
+  "fra_anti_air_upgrade_2": {
+    "english": "Increase Propellant",
+    "russian": "Зенитное вооружение 2 (1941)"
+  },
+  "fra_anti_air_upgrade_3": {
+    "english": "Increased Gun Depression",
+    "russian": "Зенитное вооружение 3 (1943)"
+  },
+  "fra_anti_air_upgrade_4": {
+    "english": "Water Coolers",
+    "russian": "Зенитное вооружение 4 (1945)"
+  },
+  "fra_anti_tank_4": {
+    "english": "Anti-Tank Weapons (1943)",
+    "russian": "Противотанковое вооружение 4 (1943)"
+  },
+  "fra_anti_tank_upgrade_2": {
+    "english": "Enhanced Gun Rammer",
+    "russian": "Противотанковое вооружение 2 (1941)"
+  },
+  "fra_anti_tank_upgrade_3": {
+    "english": "Improved Gun Sights",
+    "russian": "Противотанковое вооружение 3 (1944)"
+  },
+  "fra_armoured_car_2": {
+    "english": "Panhard EBR 10",
+    "russian": "Бронеавтомобиль: Panhard EBR 10"
+  },
+  "fra_artillery_3": {
+    "english": "Artillery (1942)",
+    "russian": "Артиллерия 3 (1942)"
+  },
+  "fra_artillery_4": {
+    "english": "Artillery (1945)",
+    "russian": "Артиллерия 4 (1945)"
+  },
+  "fra_artillery_upgrade_3": {
+    "english": "Faster Reciever",
+    "russian": "Артиллерия 3 (1943)"
+  },
+  "fra_assault_spg_4": {
+    "english": "SAu 40 bis (105)",
+    "russian": "Штурмовое орудие: SAu 40 bis (105)"
+  },
+  "fra_assault_spg_5": {
+    "english": "ARL V39",
+    "russian": "Штурмовое орудие: ARL V39"
+  },
+  "fra_assault_tank_spg_4": {
+    "english": "SAu 40 bis (105)",
+    "russian": "Штурмовое орудие: SAu 40 bis (105)"
+  },
+  "fra_assault_tank_spg_5": {
+    "english": "ARL V43",
+    "russian": "Штурмовое орудие: ARL V43"
+  },
+  "fra_attacker_3": {
+    "english": "C.A.P.R.A R40",
+    "russian": "Самолёт-штурмовик: C.A.P.R.A R40"
+  },
+  "fra_attacker_4": {
+    "english": "C.A.P.R.A R41",
+    "russian": "Самолёт-штурмовик: C.A.P.R.A R41"
+  },
+  "fra_attacker_ad_tech_3": {
+    "english": "Breguet Br.700",
+    "russian": "Самолёт-штурмовик: Breguet Br.700"
+  },
+  "fra_attacker_ad_tech_4": {
+    "english": "CAPRA R.40",
+    "russian": "Самолёт-штурмовик: CAPRA R.40"
+  },
+  "fra_attacker_ad_tech_5": {
+    "english": "CAPRA R.41",
+    "russian": "Самолёт-штурмовик: CAPRA R.41"
+  },
+  "fra_cas_3": {
+    "english": "LN 42",
+    "russian": "Штурмовик: LN 42"
+  },
+  "fra_cas_4": {
+    "english": "LN 43",
+    "russian": "Штурмовик: LN 43"
+  },
+  "fra_cas_ad_tech_4": {
+    "english": "Loire-Nieuport LN.412",
+    "russian": "Штурмовик: Loire-Nieuport LN.412"
+  },
+  "fra_cas_ad_tech_5": {
+    "english": "Loire-Nieuport LN.560",
+    "russian": "Штурмовик: Loire-Nieuport LN.560"
+  },
+  "fra_cas_ad_tech_6": {
+    "english": "Potez Po.632",
+    "russian": "Штурмовик: Potez Po.632"
+  },
+  "fra_cas_ad_tech_7": {
+    "english": "SNCAO CAO.810",
+    "russian": "Штурмовик: SNCAO CAO.810"
+  },
+  "fra_combat_armoured_car_2": {
+    "english": "Panhard EBR 10",
+    "russian": "Бронеавтомобиль: Panhard EBR 10"
+  },
+  "fra_cv_cas_3": {
+    "english": "LN 402",
+    "russian": "Штурмовик: LN 402"
+  },
+  "fra_cv_cas_4": {
+    "english": "LN 403",
+    "russian": "Штурмовик: LN 403"
+  },
+  "fra_cv_cas_5": {
+    "english": "LN 501",
+    "russian": "Штурмовик: LN 501"
+  },
+  "fra_cv_cas_ad_tech_3": {
+    "english": "Loire-Nieuport LN.42",
+    "russian": "Штурмовик: Loire-Nieuport LN.42"
+  },
+  "fra_cv_cas_ad_tech_4": {
+    "english": "Loire-Nieuport LN.561",
+    "russian": "Штурмовик: Loire-Nieuport LN.561"
+  },
+  "fra_cv_fighter_3": {
+    "english": "VG 40",
+    "russian": "Истребитель: VG 40"
+  },
+  "fra_cv_fighter_4": {
+    "english": "VB 15",
+    "russian": "Истребитель: VB 15"
+  },
+  "fra_elite_forces": {
+    "english": "Elite Forces",
+    "russian": "Элитные войска (1945)"
+  },
+  "fra_extreme_environment_training": {
+    "english": "Extreme Environment Training",
+    "russian": "Подготовка к экстремальным условиям (1941)"
+  },
+  "fra_fast_bomber_ad_tech_3": {
+    "english": "Bloch MB.178",
+    "russian": "Скоростной бомбардировщик: Bloch MB.178"
+  },
+  "fra_fast_bomber_ad_tech_4": {
+    "english": "SNCAC NC.152",
+    "russian": "Скоростной бомбардировщик: SNCAC NC.152"
+  },
+  "fra_fighter_5": {
+    "english": "D 550",
+    "russian": "Истребитель: D 550"
+  },
+  "fra_fighter_6": {
+    "english": "VG 50",
+    "russian": "Истребитель: VG 50"
+  },
+  "fra_fighter_7": {
+    "english": "SE 580",
+    "russian": "Истребитель: SE 580"
+  },
+  "fra_fighter_ad_tech_6": {
+    "english": "Arsenal VG.36",
+    "russian": "Истребитель: Arsenal VG.36"
+  },
+  "fra_fighter_ad_tech_7": {
+    "english": "Arsenal VG.39",
+    "russian": "Истребитель: Arsenal VG.39"
+  },
+  "fra_fighter_ad_tech_8": {
+    "english": "Arsenal VG.60",
+    "russian": "Истребитель: Arsenal VG.60"
+  },
+  "fra_fighter_multirole_ad_tech_3": {
+    "english": "Dewoitine D.524",
+    "russian": "Истребитель: Dewoitine D.524"
+  },
+  "fra_fighter_multirole_ad_tech_4": {
+    "english": "SNCASE SE.520Z",
+    "russian": "Истребитель: SNCASE SE.520Z"
+  },
+  "fra_fighter_multirole_ad_tech_5": {
+    "english": "SNCASE SE.552",
+    "russian": "Истребитель: SNCASE SE.552"
+  },
+  "fra_heavy_4": {
+    "english": "BDR G1",
+    "russian": "Тяжёлая бронетехника: BDR G1"
+  },
+  "fra_heavy_5": {
+    "english": "ARL 43",
+    "russian": "Тяжёлая бронетехника: ARL 43"
+  },
+  "fra_heavy_6": {
+    "english": "ARL 44",
+    "russian": "Тяжёлая бронетехника: ARL 44"
+  },
+  "fra_heavy_anti_air_4": {
+    "english": "Anti-Air Weapons (1945)",
+    "russian": "Зенитное вооружение 4 (1945)"
+  },
+  "fra_heavy_anti_tank_1": {
+    "english": "Anti-Tank Weapons (1943)",
+    "russian": "Противотанковое вооружение 1 (1943)"
+  },
+  "fra_heavy_artillery_3": {
+    "english": "Artillery (1944)",
+    "russian": "Артиллерия 3 (1944)"
+  },
+  "fra_heavy_fighter_6": {
+    "english": "VB 10-1",
+    "russian": "Истребитель: VB 10-1"
+  },
+  "fra_heavy_fighter_ad_tech_4": {
+    "english": "SNCASE SE.100",
+    "russian": "Истребитель: SNCASE SE.100"
+  },
+  "fra_heavy_fighter_ad_tech_5": {
+    "english": "SNCASE SE.105",
+    "russian": "Истребитель: SNCASE SE.105"
+  },
+  "fra_heavy_infantry_weapons_3": {
+    "english": "Hotchkiss Mle 1914 + FM 24/41 + FAT (anti-tank rifle)",
+    "russian": "Пехотное вооружение: Hotchkiss Mle 1914 + FM 24/41 + FAT (anti-tank rifle)"
+  },
+  "fra_heavy_infantry_weapons_4": {
+    "english": "AA-52 + RF Mle 44",
+    "russian": "Пехотное вооружение: AA-52 + RF Mle 44"
+  },
+  "fra_heavy_infantry_weapons_upgrade_4": {
+    "english": "Mortier 120mm F1",
+    "russian": "Пехотное вооружение 4 (1942)"
+  },
+  "fra_heavy_tank_chassis_4": {
+    "english": "BDR G1",
+    "russian": "Тяжёлый танк: BDR G1"
+  },
+  "fra_heavy_tank_chassis_5": {
+    "english": "ARL 43",
+    "russian": "Тяжёлый танк: ARL 43"
+  },
+  "fra_heavy_tank_chassis_6": {
+    "english": "ARL 44",
+    "russian": "Тяжёлый танк: ARL 44"
+  },
+  "fra_infantry_weapons_5": {
+    "english": "MAS-44 + MAS-38",
+    "russian": "Пехотное вооружение: MAS-44 + MAS-38"
+  },
+  "fra_interceptor_ad_tech_5": {
+    "english": "Bloch MB.157",
+    "russian": "Перехватчик: Bloch MB.157"
+  },
+  "fra_jungle_training": {
+    "english": "Jungle Training",
+    "russian": "Подготовка к бою в джунглях (1944)"
+  },
+  "fra_marines2": {
+    "english": "Marines II",
+    "russian": "Морская пехота 2 (1941)"
+  },
+  "fra_marines3": {
+    "english": "Marines III",
+    "russian": "Морская пехота 3 (1943)"
+  },
+  "fra_mechanized_infantry_4": {
+    "english": "Lorraine 41L",
+    "russian": "Механизированная пехота: Lorraine 41L"
+  },
+  "fra_mechanized_infantry_5": {
+    "english": "EBR VTT",
+    "russian": "Механизированная пехота: EBR VTT"
+  },
+  "fra_medium_4": {
+    "english": "Somua S40 bis",
+    "russian": "Средняя бронетехника: Somua S40 bis"
+  },
+  "fra_medium_5": {
+    "english": "SARL 42",
+    "russian": "Средняя бронетехника: SARL 42"
+  },
+  "fra_medium_6": {
+    "english": "Char G1",
+    "russian": "Средняя бронетехника: Char G1"
+  },
+  "fra_medium_7": {
+    "english": "FCM G2",
+    "russian": "Средняя бронетехника: FCM G2"
+  },
+  "fra_medium_tank_aa_4": {
+    "english": "SOMUA S40 DCA",
+    "russian": "Средний танк: SOMUA S40 DCA"
+  },
+  "fra_medium_tank_aa_7": {
+    "english": "FCM G2 DCA",
+    "russian": "Средний танк: FCM G2 DCA"
+  },
+  "fra_medium_tank_chassis_2_3": {
+    "english": "SOMUA S40 bis",
+    "russian": "Средний танк: SOMUA S40 bis"
+  },
+  "fra_medium_tank_chassis_3": {
+    "english": "SARL 42",
+    "russian": "Средний танк: SARL 42"
+  },
+  "fra_medium_tank_chassis_4": {
+    "english": "Char G1",
+    "russian": "Средний танк: Char G1"
+  },
+  "fra_medium_tank_chassis_5": {
+    "english": "FCM G2",
+    "russian": "Средний танк: FCM G2"
+  },
+  "fra_medium_tank_spg_7": {
+    "english": "FCM 105 43",
+    "russian": "Средний танк: FCM 105 43"
+  },
+  "fra_medium_tank_td_2": {
+    "english": "SOMUA S35 CA",
+    "russian": "Средний танк: SOMUA S35 CA"
+  },
+  "fra_medium_tank_td_4": {
+    "english": "SAu 40 bis (75)",
+    "russian": "Средний танк: SAu 40 bis (75)"
+  },
+  "fra_medium_tank_td_7": {
+    "english": "FAu G2",
+    "russian": "Средний танк: FAu G2"
+  },
+  "fra_medium_td_2": {
+    "english": "SAu 40 (75)",
+    "russian": "Средняя бронетехника: SAu 40 (75)"
+  },
+  "fra_naval_bomber_4": {
+    "english": "Late 310",
+    "russian": "Военная технология: Late 310"
+  },
+  "fra_naval_bomber_ad_tech_4": {
+    "english": "Dewoitine D.750",
+    "russian": "Военная технология: Dewoitine D.750"
+  },
+  "fra_naval_bomber_ad_tech_5": {
+    "english": "SNCAO CAO.600",
+    "russian": "Военная технология: SNCAO CAO.600"
+  },
+  "fra_night_vision_1": {
+    "english": "Night Vision I",
+    "russian": "Ночное видение 1 (1944)"
+  },
+  "fra_pack_artillery_3": {
+    "english": "Artillery (1941)",
+    "russian": "Артиллерия 3 (1941)"
+  },
+  "fra_paratroopers2": {
+    "english": "Paratroopers II",
+    "russian": "Воздушный десант 2 (1941)"
+  },
+  "fra_paratroopers3": {
+    "english": "Paratroopers III",
+    "russian": "Воздушный десант 3 (1943)"
+  },
+  "fra_patrol_3": {
+    "english": "Late 631",
+    "russian": "Патрульный самолёт: Late 631"
+  },
+  "fra_patrol_ad_tech_3": {
+    "english": "Latécoère Laté.631 `Rigel`",
+    "russian": "Патрульный самолёт: Latécoère Laté.631 `Rigel`"
+  },
+  "fra_recon_training": {
+    "english": "Recon Training",
+    "russian": "Разведывательная рота (1943)"
+  },
+  "fra_scout_plane_ad_tech_4": {
+    "english": "Bloch MB.174Z",
+    "russian": "Разведывательный самолёт: Bloch MB.174Z"
+  },
+  "fra_strategic_bomber_3": {
+    "english": "Bloch MB.162",
+    "russian": "Стратегический бомбардировщик: Bloch MB.162"
+  },
+  "fra_strategic_bomber_4": {
+    "english": "Breguet Br. 482",
+    "russian": "Стратегический бомбардировщик: Breguet Br. 482"
+  },
+  "fra_strategic_bomber_ad_tech_4": {
+    "english": "Bloch MB.162",
+    "russian": "Стратегический бомбардировщик: Bloch MB.162"
+  },
+  "fra_strategic_bomber_ad_tech_5": {
+    "english": "Breguet Br.482",
+    "russian": "Стратегический бомбардировщик: Breguet Br.482"
+  },
+  "fra_strategic_bomber_ad_tech_7": {
+    "english": "Amiot 380",
+    "russian": "Стратегический бомбардировщик: Amiot 380"
+  },
+  "fra_strike_bomber_ad_tech_4": {
+    "english": "Amiot 357",
+    "russian": "Ударный бомбардировщик: Amiot 357"
+  },
+  "fra_strike_bomber_ad_tech_5": {
+    "english": "Amiot 400",
+    "russian": "Ударный бомбардировщик: Amiot 400"
+  },
+  "fra_super_heavy_tank_chassis_2": {
+    "english": "FCM F1",
+    "russian": "Тяжёлый танк: FCM F1"
+  },
+  "fra_support_3": {
+    "english": "AMX 40",
+    "russian": "Оснащение поддержки: AMX 40"
+  },
+  "fra_support_tank_chassis_2": {
+    "english": "AMX-40",
+    "russian": "Оснащение поддержки: AMX-40"
+  },
+  "fra_survival_training": {
+    "english": "Survival Training",
+    "russian": "Подготовка к выживанию (1941)"
+  },
+  "fra_tactical_bomber_3": {
+    "english": "Amiot 354",
+    "russian": "Тактический бомбардировщик: Amiot 354"
+  },
+  "fra_tactical_bomber_4": {
+    "english": "Amiot 360",
+    "russian": "Тактический бомбардировщик: Amiot 360"
+  },
+  "fra_tactical_bomber_ad_tech_2_2": {
+    "english": "Lioré et Olivier LeO 455",
+    "russian": "Тактический бомбардировщик: Lioré et Olivier LeO 455"
+  },
+  "fra_tank_training": {
+    "english": "Anti-Tank Training",
+    "russian": "Противотанковая подготовка (1943)"
+  },
+  "fra_tech_mountaineers2": {
+    "english": "Mountain Infantry II",
+    "russian": "Горная пехота 2 (1941)"
+  },
+  "fra_tech_mountaineers3": {
+    "english": "Mountain Infantry III",
+    "russian": "Горная пехота 3 (1943)"
+  },
+  "fra_water_training": {
+    "english": "Water Training",
+    "russian": "Водная подготовка (1944)"
+  },
+  "fuel_refining4": {
+    "english": "Fuel Refining IV",
+    "russian": "Переработка топлива 4 (1941)"
+  },
+  "fuel_refining5": {
+    "english": "Fuel Refining V",
+    "russian": "Переработка топлива 5 (1943)"
+  },
+  "fuel_refining6": {
+    "english": "Fuel Refining VI",
+    "russian": "Переработка топлива 6 (1945)"
+  },
+  "ger_aa_tower_3": {
+    "english": "Large AA Towers",
+    "russian": "Зенитная башня 3 (1943)"
+  },
+  "ger_amphibious_2": {
+    "english": "LWS 2",
+    "russian": "Амфибийные машины: LWS 2"
+  },
+  "ger_amphibious_3": {
+    "english": "LWS 3",
+    "russian": "Амфибийные машины: LWS 3"
+  },
+  "ger_anti_air_4": {
+    "english": "Anti-Air Weapons (1942)",
+    "russian": "Зенитное вооружение 4 (1942)"
+  },
+  "ger_anti_air_5": {
+    "english": "Anti-Air Weapons (1944)",
+    "russian": "Зенитное вооружение 5 (1944)"
+  },
+  "ger_anti_air_upgrade_2": {
+    "english": "Increase Propellant",
+    "russian": "Зенитное вооружение 2 (1941)"
+  },
+  "ger_anti_air_upgrade_3": {
+    "english": "Increased Gun Depression",
+    "russian": "Зенитное вооружение 3 (1943)"
+  },
+  "ger_anti_air_upgrade_4": {
+    "english": "Water Coolers",
+    "russian": "Зенитное вооружение 4 (1945)"
+  },
+  "ger_anti_tank_3": {
+    "english": "Anti-Tank Weapons (1942)",
+    "russian": "Противотанковое вооружение 3 (1942)"
+  },
+  "ger_anti_tank_4": {
+    "english": "Anti-Tank Weapons (1944)",
+    "russian": "Противотанковое вооружение 4 (1944)"
+  },
+  "ger_anti_tank_upgrade_3": {
+    "english": "Improved Gun Sights",
+    "russian": "Противотанковое вооружение 3 (1943)"
+  },
+  "ger_armoured_car_5": {
+    "english": "Sd.Kfz. 234/2 Puma",
+    "russian": "Бронеавтомобиль: Sd.Kfz. 234/2 Puma"
+  },
+  "ger_armoured_car_6": {
+    "english": "Sd.Kfz. 234/4 Pak-Wagen",
+    "russian": "Бронеавтомобиль: Sd.Kfz. 234/4 Pak-Wagen"
+  },
+  "ger_artillery_2": {
+    "english": "Artillery (1941)",
+    "russian": "Артиллерия 2 (1941)"
+  },
+  "ger_artillery_3": {
+    "english": "Artillery (1943)",
+    "russian": "Артиллерия 3 (1943)"
+  },
+  "ger_artillery_upgrade_3": {
+    "english": "Faster Reciever",
+    "russian": "Артиллерия 3 (1942)"
+  },
+  "ger_artillery_upgrade_4": {
+    "english": "Improved Breech Ring",
+    "russian": "Артиллерия 4 (1945)"
+  },
+  "ger_assault_3_spg": {
+    "english": "StuG III E",
+    "russian": "Штурмовое орудие: StuG III E"
+  },
+  "ger_assault_4_spg": {
+    "english": "StuH 42 G",
+    "russian": "Штурмовое орудие: StuH 42 G"
+  },
+  "ger_assault_5_spg": {
+    "english": "Brummbär",
+    "russian": "Штурмовое орудие: Brummbär"
+  },
+  "ger_assault_tank_3_spg": {
+    "english": "Sturmgeschütz III Ausf.E",
+    "russian": "Штурмовое орудие: Sturmgeschütz III Ausf.E"
+  },
+  "ger_assault_tank_4_spg": {
+    "english": "Sturmhaubitze 42",
+    "russian": "Штурмовое орудие: Sturmhaubitze 42"
+  },
+  "ger_assault_tank_6_spg": {
+    "english": "Sturmpanzer IV 'Brummbär'",
+    "russian": "Штурмовое орудие: Sturmpanzer IV 'Brummbär'"
+  },
+  "ger_attacker_3": {
+    "english": "Bf 110 F-2 `Zerstörer`",
+    "russian": "Самолёт-штурмовик: Bf 110 F-2 `Zerstörer`"
+  },
+  "ger_attacker_4": {
+    "english": "Me 410 \"Hornisse\"",
+    "russian": "Самолёт-штурмовик: Me 410 \"Hornisse\""
+  },
+  "ger_attacker_ad_tech_3": {
+    "english": "Messerschmitt Bf 110 F-2 `Zerstörer`",
+    "russian": "Самолёт-штурмовик: Messerschmitt Bf 110 F-2 `Zerstörer`"
+  },
+  "ger_attacker_ad_tech_4": {
+    "english": "Messerschmitt Bf 110 G-2 `Zerstörer`",
+    "russian": "Самолёт-штурмовик: Messerschmitt Bf 110 G-2 `Zerstörer`"
+  },
+  "ger_cas_4": {
+    "english": "Ju 87 D-1 `Stuka`",
+    "russian": "Штурмовик: Ju 87 D-1 `Stuka`"
+  },
+  "ger_cas_5": {
+    "english": "Ju 87 D-5 `Stuka`",
+    "russian": "Штурмовик: Ju 87 D-5 `Stuka`"
+  },
+  "ger_cas_6": {
+    "english": "Ju 187",
+    "russian": "Штурмовик: Ju 187"
+  },
+  "ger_cas_ad_tech_4": {
+    "english": "Junkers Ju 87 D-1 `Stuka`",
+    "russian": "Штурмовик: Junkers Ju 87 D-1 `Stuka`"
+  },
+  "ger_cas_ad_tech_5": {
+    "english": "Junkers Ju 87 D-5 `Stuka`",
+    "russian": "Штурмовик: Junkers Ju 87 D-5 `Stuka`"
+  },
+  "ger_cas_ad_tech_6": {
+    "english": "Junkers Ju 187 `Stuka`",
+    "russian": "Штурмовик: Junkers Ju 187 `Stuka`"
+  },
+  "ger_cas_ad_tech_7": {
+    "english": "Henschel Hs 129",
+    "russian": "Штурмовик: Henschel Hs 129"
+  },
+  "ger_combat_armoured_car_5_1": {
+    "english": "Sd.Kfz. 234/2 Puma",
+    "russian": "Бронеавтомобиль: Sd.Kfz. 234/2 Puma"
+  },
+  "ger_combat_armoured_car_5_2": {
+    "english": "Sd.Kfz. 234/4 Pak-Wagen",
+    "russian": "Бронеавтомобиль: Sd.Kfz. 234/4 Pak-Wagen"
+  },
+  "ger_cv_cas_3": {
+    "english": "Ju 87 C-2",
+    "russian": "Штурмовик: Ju 87 C-2"
+  },
+  "ger_cv_cas_5": {
+    "english": "Ju 87 C-3",
+    "russian": "Штурмовик: Ju 87 C-3"
+  },
+  "ger_cv_cas_6": {
+    "english": "Ju 187 C-5",
+    "russian": "Штурмовик: Ju 187 C-5"
+  },
+  "ger_cv_cas_ad_tech_5": {
+    "english": "Junkers Ju 87 R-4 `Stuka`",
+    "russian": "Штурмовик: Junkers Ju 87 R-4 `Stuka`"
+  },
+  "ger_cv_cas_ad_tech_6": {
+    "english": "Junkers Ju 187 C-1 `Stuka`",
+    "russian": "Штурмовик: Junkers Ju 187 C-1 `Stuka`"
+  },
+  "ger_cv_fighter_2": {
+    "english": "Bf 109 T-1",
+    "russian": "Истребитель: Bf 109 T-1"
+  },
+  "ger_cv_fighter_3": {
+    "english": "Fw 190 T-1",
+    "russian": "Истребитель: Fw 190 T-1"
+  },
+  "ger_cv_fighter_4": {
+    "english": "Bf 109 T-2",
+    "russian": "Истребитель: Bf 109 T-2"
+  },
+  "ger_cv_fighter_5": {
+    "english": "Fw 190 T-2",
+    "russian": "Истребитель: Fw 190 T-2"
+  },
+  "ger_cv_fighter_ad_tech__2": {
+    "english": "Messerschmitt Bf 109 T-2",
+    "russian": "Истребитель: Messerschmitt Bf 109 T-2"
+  },
+  "ger_cv_fighter_ad_tech__4": {
+    "english": "Messerschmitt Bf 109 T-4",
+    "russian": "Истребитель: Messerschmitt Bf 109 T-4"
+  },
+  "ger_elite_forces": {
+    "english": "Elite Forces",
+    "russian": "Элитные войска (1945)"
+  },
+  "ger_extreme_environment_training": {
+    "english": "Extreme Environment Training",
+    "russian": "Подготовка к экстремальным условиям (1941)"
+  },
+  "ger_fast_bomber_ad_tech_3": {
+    "english": "Junkers Ju 88 A-4 `Dreifinger`",
+    "russian": "Скоростной бомбардировщик: Junkers Ju 88 A-4 `Dreifinger`"
+  },
+  "ger_fast_bomber_ad_tech_4": {
+    "english": "Junkers Ju 188 A-2 `Rächer`",
+    "russian": "Скоростной бомбардировщик: Junkers Ju 188 A-2 `Rächer`"
+  },
+  "ger_fighter_6": {
+    "english": "Bf 109 F-4 `Friedrich`",
+    "russian": "Истребитель: Bf 109 F-4 `Friedrich`"
+  },
+  "ger_fighter_7": {
+    "english": "Bf 109 G-6 `Gustav`",
+    "russian": "Истребитель: Bf 109 G-6 `Gustav`"
+  },
+  "ger_fighter_8": {
+    "english": "Bf 109 K-4 `Kurfürst`",
+    "russian": "Истребитель: Bf 109 K-4 `Kurfürst`"
+  },
+  "ger_fighter_ad_tech_6": {
+    "english": "Messerschmitt Bf 109 F-4 `Friedrich`",
+    "russian": "Истребитель: Messerschmitt Bf 109 F-4 `Friedrich`"
+  },
+  "ger_fighter_ad_tech_7": {
+    "english": "Messerschmitt Bf 109 G-6 `Gustav`",
+    "russian": "Истребитель: Messerschmitt Bf 109 G-6 `Gustav`"
+  },
+  "ger_fighter_ad_tech_8": {
+    "english": "Messerschmitt Bf 109 K-4 `Kurfürst`",
+    "russian": "Истребитель: Messerschmitt Bf 109 K-4 `Kurfürst`"
+  },
+  "ger_fighter_multirole_1": {
+    "english": "Fw 190 A-2 `Würger`",
+    "russian": "Истребитель: Fw 190 A-2 `Würger`"
+  },
+  "ger_fighter_multirole_2": {
+    "english": "Fw 190 A-4 `Würger`",
+    "russian": "Истребитель: Fw 190 A-4 `Würger`"
+  },
+  "ger_fighter_multirole_3": {
+    "english": "Fw 190 A-6 `Würger`",
+    "russian": "Истребитель: Fw 190 A-6 `Würger`"
+  },
+  "ger_fighter_multirole_4": {
+    "english": "Fw 190 D-9 `Dora`",
+    "russian": "Истребитель: Fw 190 D-9 `Dora`"
+  },
+  "ger_fighter_multirole_5": {
+    "english": "Ta 152 C-3 `Würger`",
+    "russian": "Истребитель: Ta 152 C-3 `Würger`"
+  },
+  "ger_fighter_multirole_ad_tech_1": {
+    "english": "Focke-Wulf Fw 190 A-2 `Würger`",
+    "russian": "Истребитель: Focke-Wulf Fw 190 A-2 `Würger`"
+  },
+  "ger_fighter_multirole_ad_tech_2": {
+    "english": "Focke-Wulf Fw 190 A-4 `Würger`",
+    "russian": "Истребитель: Focke-Wulf Fw 190 A-4 `Würger`"
+  },
+  "ger_fighter_multirole_ad_tech_3": {
+    "english": "Focke-Wulf Fw 190 A-6 `Würger`",
+    "russian": "Истребитель: Focke-Wulf Fw 190 A-6 `Würger`"
+  },
+  "ger_fighter_multirole_ad_tech_4": {
+    "english": "Focke-Wulf Fw 190 D-9 `Dora`",
+    "russian": "Истребитель: Focke-Wulf Fw 190 D-9 `Dora`"
+  },
+  "ger_fighter_multirole_ad_tech_5": {
+    "english": "Focke-Wulf Ta 152 H-1 `Würger`",
+    "russian": "Истребитель: Focke-Wulf Ta 152 H-1 `Würger`"
+  },
+  "ger_heavy_1_td": {
+    "english": "Sturer Emil",
+    "russian": "Тяжёлая бронетехника: Sturer Emil"
+  },
+  "ger_heavy_2": {
+    "english": "Tiger P",
+    "russian": "Тяжёлая бронетехника: Tiger P"
+  },
+  "ger_heavy_2_td": {
+    "english": "Ferdinand",
+    "russian": "Тяжёлая бронетехника: Ferdinand"
+  },
+  "ger_heavy_3": {
+    "english": "Tiger I",
+    "russian": "Тяжёлая бронетехника: Tiger I"
+  },
+  "ger_heavy_4": {
+    "english": "Tiger II",
+    "russian": "Тяжёлая бронетехника: Tiger II"
+  },
+  "ger_heavy_4_spg": {
+    "english": "GW Tiger",
+    "russian": "Тяжёлая бронетехника: GW Tiger"
+  },
+  "ger_heavy_4_td": {
+    "english": "Jagdtiger",
+    "russian": "Тяжёлая бронетехника: Jagdtiger"
+  },
+  "ger_heavy_anti_air_2": {
+    "english": "Anti-Air Weapons (1941)",
+    "russian": "Зенитное вооружение 2 (1941)"
+  },
+  "ger_heavy_anti_air_3": {
+    "english": "Anti-Air Weapons (1942)",
+    "russian": "Зенитное вооружение 3 (1942)"
+  },
+  "ger_heavy_anti_tank_1": {
+    "english": "Anti-Tank Weapons (1943)",
+    "russian": "Противотанковое вооружение 1 (1943)"
+  },
+  "ger_heavy_anti_tank_2": {
+    "english": "Anti-Tank Weapons (1944)",
+    "russian": "Противотанковое вооружение 2 (1944)"
+  },
+  "ger_heavy_artillery_3": {
+    "english": "Artillery (1941)",
+    "russian": "Артиллерия 3 (1941)"
+  },
+  "ger_heavy_assault_3_spg": {
+    "english": "Sturmtiger",
+    "russian": "Тяжёлая бронетехника: Sturmtiger"
+  },
+  "ger_heavy_assault_tank_3_spg": {
+    "english": "Sturmtiger",
+    "russian": "Тяжёлая бронетехника: Sturmtiger"
+  },
+  "ger_heavy_assault_tank_4_spg": {
+    "english": "Sturmtiger Bär",
+    "russian": "Тяжёлая бронетехника: Sturmtiger Bär"
+  },
+  "ger_heavy_fighter_2": {
+    "english": "Do 217 J-2",
+    "russian": "Истребитель: Do 217 J-2"
+  },
+  "ger_heavy_fighter_3": {
+    "english": "He 219",
+    "russian": "Истребитель: He 219"
+  },
+  "ger_heavy_fighter_4": {
+    "english": "Do 335 \"Pfeil\"",
+    "russian": "Истребитель: Do 335 \"Pfeil\""
+  },
+  "ger_heavy_fighter_ad_tech_2": {
+    "english": "Messerschmitt Me 410 A-1/U2 `Hornisse`",
+    "russian": "Истребитель: Messerschmitt Me 410 A-1/U2 `Hornisse`"
+  },
+  "ger_heavy_fighter_ad_tech_2_2": {
+    "english": "Messerschmitt Me 410 B-1/U2 `Hornisse`",
+    "russian": "Истребитель: Messerschmitt Me 410 B-1/U2 `Hornisse`"
+  },
+  "ger_heavy_fighter_ad_tech_3": {
+    "english": "Heinkel He 219 A-2 `Uhu`",
+    "russian": "Истребитель: Heinkel He 219 A-2 `Uhu`"
+  },
+  "ger_heavy_fighter_ad_tech_4": {
+    "english": "Dornier Do 335 B-2 `Pfeil`",
+    "russian": "Истребитель: Dornier Do 335 B-2 `Pfeil`"
+  },
+  "ger_heavy_fighter_ad_tech_conversion_2": {
+    "english": "Dornier Do 217 J-2",
+    "russian": "Истребитель: Dornier Do 217 J-2"
+  },
+  "ger_heavy_fighter_ad_tech_conversion_2_2": {
+    "english": "Dornier Do 217 N-2",
+    "russian": "Истребитель: Dornier Do 217 N-2"
+  },
+  "ger_heavy_fighter_ad_tech_conversion_3_2": {
+    "english": "Junkers Ju 88 C-6",
+    "russian": "Истребитель: Junkers Ju 88 C-6"
+  },
+  "ger_heavy_fighter_ad_tech_conversion_4": {
+    "english": "Junkers Ju 388 J-1 `Störtebeker`",
+    "russian": "Истребитель: Junkers Ju 388 J-1 `Störtebeker`"
+  },
+  "ger_heavy_infantry_weapons_4": {
+    "english": "MG 42 + Granatbüchse 39",
+    "russian": "Пехотное вооружение: MG 42 + Granatbüchse 39"
+  },
+  "ger_heavy_infantry_weapons_5": {
+    "english": "MG 42 + Panzerfaust",
+    "russian": "Пехотное вооружение: MG 42 + Panzerfaust"
+  },
+  "ger_heavy_infantry_weapons_6": {
+    "english": "MG 42 + Panzerschreck 44",
+    "russian": "Пехотное вооружение: MG 42 + Panzerschreck 44"
+  },
+  "ger_heavy_infantry_weapons_7": {
+    "english": "MG 45 + Panzerschreck 44",
+    "russian": "Пехотное вооружение: MG 45 + Panzerschreck 44"
+  },
+  "ger_heavy_infantry_weapons_upgrade_4": {
+    "english": "12 cm Granatwerfer 42",
+    "russian": "Пехотное вооружение 4 (1942)"
+  },
+  "ger_heavy_strategic_bomber_ad_tech_1": {
+    "english": "Messerschmitt Me 264 `Amerikabomber`",
+    "russian": "Стратегический бомбардировщик: Messerschmitt Me 264 `Amerikabomber`"
+  },
+  "ger_heavy_strategic_bomber_ad_tech_2": {
+    "english": "Focke-Wulf Ta 400 `Amerikabomber`",
+    "russian": "Стратегический бомбардировщик: Focke-Wulf Ta 400 `Amerikabomber`"
+  },
+  "ger_heavy_tank_1_spg": {
+    "english": "Vk 36.01 B",
+    "russian": "Тяжёлый танк: Vk 36.01 B"
+  },
+  "ger_heavy_tank_1_td": {
+    "english": "Sturer Emil",
+    "russian": "Тяжёлый танк: Sturer Emil"
+  },
+  "ger_heavy_tank_2_td": {
+    "english": "Ferdinand",
+    "russian": "Тяжёлый танк: Ferdinand"
+  },
+  "ger_heavy_tank_4_spg": {
+    "english": "GW Tiger",
+    "russian": "Тяжёлый танк: GW Tiger"
+  },
+  "ger_heavy_tank_4_td": {
+    "english": "Jagdtiger",
+    "russian": "Тяжёлый танк: Jagdtiger"
+  },
+  "ger_heavy_tank_chassis_1": {
+    "english": "VK 36.01",
+    "russian": "Тяжёлый танк: VK 36.01"
+  },
+  "ger_heavy_tank_chassis_2": {
+    "english": "Tiger I P",
+    "russian": "Тяжёлый танк: Tiger I P"
+  },
+  "ger_heavy_tank_chassis_3": {
+    "english": "Tiger I",
+    "russian": "Тяжёлый танк: Tiger I"
+  },
+  "ger_heavy_tank_chassis_4": {
+    "english": "Tiger II",
+    "russian": "Тяжёлый танк: Tiger II"
+  },
+  "ger_heavy_tank_chassis_5": {
+    "english": "Löwe",
+    "russian": "Тяжёлый танк: Löwe"
+  },
+  "ger_infantry_weapons_4": {
+    "english": "Gewehr 41 + MP 40",
+    "russian": "Пехотное вооружение: Gewehr 41 + MP 40"
+  },
+  "ger_infantry_weapons_5": {
+    "english": "Gewehr 43 + MP 40",
+    "russian": "Пехотное вооружение: Gewehr 43 + MP 40"
+  },
+  "ger_infantry_weapons_6": {
+    "english": "StG 44",
+    "russian": "Пехотное вооружение: StG 44"
+  },
+  "ger_infantry_weapons_7": {
+    "english": "StG 45",
+    "russian": "Пехотное вооружение: StG 45"
+  },
+  "ger_infantry_weapons_upgrade_2": {
+    "english": "Schiessbecher",
+    "russian": "Пехотное вооружение 2 (1942)"
+  },
+  "ger_infantry_weapons_upgrade_3": {
+    "english": "Gewehr-Panzergranate",
+    "russian": "Пехотное вооружение 3 (1944)"
+  },
+  "ger_jet_cv_fighter_1": {
+    "english": "Me 262 T",
+    "russian": "Истребитель: Me 262 T"
+  },
+  "ger_jet_cv_fighter_ad_tech_1": {
+    "english": "Messerschmitt Me 262 T `Schwalbe`",
+    "russian": "Истребитель: Messerschmitt Me 262 T `Schwalbe`"
+  },
+  "ger_jet_fast_bomber_ad_tech_1": {
+    "english": "Arado Ar 234 B-2 `Blitz`",
+    "russian": "Скоростной бомбардировщик: Arado Ar 234 B-2 `Blitz`"
+  },
+  "ger_jet_fast_bomber_ad_tech_2": {
+    "english": "Arado Ar 234 C-3 `Blitz`",
+    "russian": "Скоростной бомбардировщик: Arado Ar 234 C-3 `Blitz`"
+  },
+  "ger_jet_fighter_ad_tech_1": {
+    "english": "Heinkel He 162 `Spatz`",
+    "russian": "Истребитель: Heinkel He 162 `Spatz`"
+  },
+  "ger_jet_fighter_multirole_1": {
+    "english": "Me 262 `Schwalbe`",
+    "russian": "Истребитель: Me 262 `Schwalbe`"
+  },
+  "ger_jet_fighter_multirole_ad_tech_1": {
+    "english": "Messerschmitt Me 262 A-1a `Schwalbe`",
+    "russian": "Истребитель: Messerschmitt Me 262 A-1a `Schwalbe`"
+  },
+  "ger_jet_fighter_multirole_ad_tech_1_2": {
+    "english": "Messerschmitt Me 262 A-1a/U4 `Narwal`",
+    "russian": "Истребитель: Messerschmitt Me 262 A-1a/U4 `Narwal`"
+  },
+  "ger_jet_scout_plane_1": {
+    "english": "Me 462",
+    "russian": "Разведывательный самолёт: Me 462"
+  },
+  "ger_jet_scout_plane_ad_tech_1": {
+    "english": "Arado Ar 234 C-4 `Blitz`",
+    "russian": "Разведывательный самолёт: Arado Ar 234 C-4 `Blitz`"
+  },
+  "ger_jet_tactical_bomber_1": {
+    "english": "Ar 234 B-2 \"Hecht\"",
+    "russian": "Тактический бомбардировщик: Ar 234 B-2 \"Hecht\""
+  },
+  "ger_jet_tactical_bomber_2": {
+    "english": "Ar 234 C-3 \"Hecht\"",
+    "russian": "Тактический бомбардировщик: Ar 234 C-3 \"Hecht\""
+  },
+  "ger_jungle_training": {
+    "english": "Jungle Training",
+    "russian": "Подготовка к бою в джунглях (1944)"
+  },
+  "ger_landkruiser_1": {
+    "english": "P 1000 Ratte",
+    "russian": "Сухопутный крейсер: P 1000 Ratte"
+  },
+  "ger_landkruiser_tank_chassis_1": {
+    "english": "Ratte",
+    "russian": "Сухопутный крейсер: Ratte"
+  },
+  "ger_light_2_td": {
+    "english": "Marder II",
+    "russian": "Лёгкая бронетехника: Marder II"
+  },
+  "ger_light_3_spg": {
+    "english": "Grille",
+    "russian": "Лёгкая бронетехника: Grille"
+  },
+  "ger_light_3_td": {
+    "english": "Hetzer",
+    "russian": "Лёгкая бронетехника: Hetzer"
+  },
+  "ger_light_4": {
+    "english": "Panzer II Luchs",
+    "russian": "Лёгкая бронетехника: Panzer II Luchs"
+  },
+  "ger_light_4_spg": {
+    "english": "Wespe",
+    "russian": "Лёгкая бронетехника: Wespe"
+  },
+  "ger_light_4_td": {
+    "english": "Marder III",
+    "russian": "Лёгкая бронетехника: Marder III"
+  },
+  "ger_light_5": {
+    "english": "Leopard",
+    "russian": "Лёгкая бронетехника: Leopard"
+  },
+  "ger_light_5_aa": {
+    "english": "Gepard",
+    "russian": "Лёгкая бронетехника: Gepard"
+  },
+  "ger_light_5_spg": {
+    "english": "Käfer",
+    "russian": "Лёгкая бронетехника: Käfer"
+  },
+  "ger_light_5_td": {
+    "english": "Jagdpanzer Leopard",
+    "russian": "Лёгкая бронетехника: Jagdpanzer Leopard"
+  },
+  "ger_light_tank_2_td": {
+    "english": "Marder II",
+    "russian": "Лёгкий танк: Marder II"
+  },
+  "ger_light_tank_3_aa": {
+    "english": "Flakpanzer 38(t)",
+    "russian": "Лёгкий танк: Flakpanzer 38(t)"
+  },
+  "ger_light_tank_3_spg": {
+    "english": "Grille",
+    "russian": "Лёгкий танк: Grille"
+  },
+  "ger_light_tank_3_td": {
+    "english": "Hetzer",
+    "russian": "Лёгкий танк: Hetzer"
+  },
+  "ger_light_tank_4_1_td": {
+    "english": "Marder III Ausf.M",
+    "russian": "Лёгкий танк: Marder III Ausf.M"
+  },
+  "ger_light_tank_4_spg": {
+    "english": "Panzerhaubitze Wespe",
+    "russian": "Лёгкий танк: Panzerhaubitze Wespe"
+  },
+  "ger_light_tank_4_td": {
+    "english": "Marder III Ausf.H",
+    "russian": "Лёгкий танк: Marder III Ausf.H"
+  },
+  "ger_light_tank_5_aa": {
+    "english": "Flakpanzer Leopard",
+    "russian": "Лёгкий танк: Flakpanzer Leopard"
+  },
+  "ger_light_tank_5_spg": {
+    "english": "Waffenträger auf Leopard 'Käfer'",
+    "russian": "Лёгкий танк: Waffenträger auf Leopard 'Käfer'"
+  },
+  "ger_light_tank_5_td": {
+    "english": "Jagdpanzer Leopard",
+    "russian": "Лёгкий танк: Jagdpanzer Leopard"
+  },
+  "ger_light_tank_chassis_3_1": {
+    "english": "Panzer 38(t) Ausf.G",
+    "russian": "Лёгкий танк: Panzer 38(t) Ausf.G"
+  },
+  "ger_light_tank_chassis_4": {
+    "english": "Panzer II Ausf. L 'Luchs'",
+    "russian": "Лёгкий танк: Panzer II Ausf. L 'Luchs'"
+  },
+  "ger_light_tank_chassis_5": {
+    "english": "Leopard",
+    "russian": "Лёгкий танк: Leopard"
+  },
+  "ger_marines2": {
+    "english": "Marines II",
+    "russian": "Морская пехота 2 (1941)"
+  },
+  "ger_marines3": {
+    "english": "Marines III",
+    "russian": "Морская пехота 3 (1943)"
+  },
+  "ger_mechanized_aa_1": {
+    "english": "Sd.kfz. 250/9",
+    "russian": "Механизированная пехота: Sd.kfz. 250/9"
+  },
+  "ger_mechanized_aa_2": {
+    "english": "Sd.kfz. 251/17 Flak",
+    "russian": "Механизированная пехота: Sd.kfz. 251/17 Flak"
+  },
+  "ger_mechanized_aa_3": {
+    "english": "s.W.S. Flak",
+    "russian": "Механизированная пехота: s.W.S. Flak"
+  },
+  "ger_mechanized_artillery_2": {
+    "english": "Sd.kfz. 251/1 Stuka zu Fuss",
+    "russian": "Механизированная пехота: Sd.kfz. 251/1 Stuka zu Fuss"
+  },
+  "ger_mechanized_artillery_3": {
+    "english": "s.W.S. Panzerwerfer 43",
+    "russian": "Механизированная пехота: s.W.S. Panzerwerfer 43"
+  },
+  "ger_mechanized_artillery_5": {
+    "english": "Sd.Kfz. 251/9 7.5cm Stummel",
+    "russian": "Механизированная пехота: Sd.Kfz. 251/9 7.5cm Stummel"
+  },
+  "ger_mechanized_artillery_6": {
+    "english": "Sd.Kfz. 250/8 7.5cm",
+    "russian": "Механизированная пехота: Sd.Kfz. 250/8 7.5cm"
+  },
+  "ger_mechanized_infantry_3": {
+    "english": "Sd.kfz. 251 Ausf.C",
+    "russian": "Механизированная пехота: Sd.kfz. 251 Ausf.C"
+  },
+  "ger_mechanized_infantry_4": {
+    "english": "Sd.kfz. 251 Ausf.D",
+    "russian": "Механизированная пехота: Sd.kfz. 251 Ausf.D"
+  },
+  "ger_mechanized_infantry_5": {
+    "english": "Kätzchen",
+    "russian": "Механизированная пехота: Kätzchen"
+  },
+  "ger_mechanized_infantry_6": {
+    "english": "Sd.kfz. 250",
+    "russian": "Механизированная пехота: Sd.kfz. 250"
+  },
+  "ger_mechanized_infantry_7": {
+    "english": "Sd.kfz. 250 Neue Art",
+    "russian": "Механизированная пехота: Sd.kfz. 250 Neue Art"
+  },
+  "ger_mechanized_td_3": {
+    "english": "Sd.Kfz. 251/22 Pak 40",
+    "russian": "Механизированная пехота: Sd.Kfz. 251/22 Pak 40"
+  },
+  "ger_mechanized_td_4": {
+    "english": "Sd.Kfz. 250/10 Pak 36",
+    "russian": "Механизированная пехота: Sd.Kfz. 250/10 Pak 36"
+  },
+  "ger_medium_3": {
+    "english": "PzKpfw III Ausf. L",
+    "russian": "Средняя бронетехника: PzKpfw III Ausf. L"
+  },
+  "ger_medium_3_td": {
+    "english": "StuG III G",
+    "russian": "Средняя бронетехника: StuG III G"
+  },
+  "ger_medium_4": {
+    "english": "PzKpfw IV Ausf. G",
+    "russian": "Средняя бронетехника: PzKpfw IV Ausf. G"
+  },
+  "ger_medium_4_aa": {
+    "english": "Wirbelwind",
+    "russian": "Средняя бронетехника: Wirbelwind"
+  },
+  "ger_medium_4_spg": {
+    "english": "Hummel",
+    "russian": "Средняя бронетехника: Hummel"
+  },
+  "ger_medium_4_td": {
+    "english": "Nashorn",
+    "russian": "Средняя бронетехника: Nashorn"
+  },
+  "ger_medium_5": {
+    "english": "PzKpfw IV Ausf. H",
+    "russian": "Средняя бронетехника: PzKpfw IV Ausf. H"
+  },
+  "ger_medium_5_aa": {
+    "english": "Ostwind",
+    "russian": "Средняя бронетехника: Ostwind"
+  },
+  "ger_medium_5_td": {
+    "english": "StuG IV",
+    "russian": "Средняя бронетехника: StuG IV"
+  },
+  "ger_medium_6": {
+    "english": "PzKpfw IV Ausf. J",
+    "russian": "Средняя бронетехника: PzKpfw IV Ausf. J"
+  },
+  "ger_medium_6_aa": {
+    "english": "Kugelblitz",
+    "russian": "Средняя бронетехника: Kugelblitz"
+  },
+  "ger_medium_6_td": {
+    "english": "Jagdpanzer IV",
+    "russian": "Средняя бронетехника: Jagdpanzer IV"
+  },
+  "ger_medium_tank_4_td": {
+    "english": "Sturmgeschütz III Ausf.F",
+    "russian": "Средний танк: Sturmgeschütz III Ausf.F"
+  },
+  "ger_medium_tank_5_aa": {
+    "english": "Wirbelwind",
+    "russian": "Средний танк: Wirbelwind"
+  },
+  "ger_medium_tank_5_spg": {
+    "english": "Panzerhaubitze Hummel",
+    "russian": "Средний танк: Panzerhaubitze Hummel"
+  },
+  "ger_medium_tank_5_td": {
+    "english": "Nashorn",
+    "russian": "Средний танк: Nashorn"
+  },
+  "ger_medium_tank_6_aa": {
+    "english": "Ostwind",
+    "russian": "Средний танк: Ostwind"
+  },
+  "ger_medium_tank_6_td": {
+    "english": "Sturmgeschütz IV",
+    "russian": "Средний танк: Sturmgeschütz IV"
+  },
+  "ger_medium_tank_7_aa": {
+    "english": "Kugelblitz",
+    "russian": "Средний танк: Kugelblitz"
+  },
+  "ger_medium_tank_7_td": {
+    "english": "Jagdpanzer IV",
+    "russian": "Средний танк: Jagdpanzer IV"
+  },
+  "ger_medium_tank_chassis_2_3": {
+    "english": "Panzer III Ausf. L",
+    "russian": "Средний танк: Panzer III Ausf. L"
+  },
+  "ger_medium_tank_chassis_2_4": {
+    "english": "Panzer IV Ausf. F2",
+    "russian": "Средний танк: Panzer IV Ausf. F2"
+  },
+  "ger_medium_tank_chassis_2_5": {
+    "english": "Panzer IV Ausf. G",
+    "russian": "Средний танк: Panzer IV Ausf. G"
+  },
+  "ger_medium_tank_chassis_2_6": {
+    "english": "Panzer IV Ausf. H",
+    "russian": "Средний танк: Panzer IV Ausf. H"
+  },
+  "ger_modern_1": {
+    "english": "Panther Ausf. D",
+    "russian": "Современная бронетехника: Panther Ausf. D"
+  },
+  "ger_modern_2": {
+    "english": "Panther Ausf. G",
+    "russian": "Современная бронетехника: Panther Ausf. G"
+  },
+  "ger_modern_2_aa": {
+    "english": "Coelian",
+    "russian": "Современная бронетехника: Coelian"
+  },
+  "ger_modern_2_spg": {
+    "english": "GW Panther",
+    "russian": "Современная бронетехника: GW Panther"
+  },
+  "ger_modern_2_td": {
+    "english": "Jagdpanther",
+    "russian": "Современная бронетехника: Jagdpanther"
+  },
+  "ger_modern_3": {
+    "english": "Panther Ausf. F",
+    "russian": "Современная бронетехника: Panther Ausf. F"
+  },
+  "ger_modern_3_spg": {
+    "english": "RB Panther",
+    "russian": "Современная бронетехника: RB Panther"
+  },
+  "ger_modern_3_td": {
+    "english": "Skorpion",
+    "russian": "Современная бронетехника: Skorpion"
+  },
+  "ger_modern_4": {
+    "english": "Panther II",
+    "russian": "Современная бронетехника: Panther II"
+  },
+  "ger_modern_tank_1_2_spg": {
+    "english": "RB Panther",
+    "russian": "Современная бронетехника: RB Panther"
+  },
+  "ger_modern_tank_1_2_td": {
+    "english": "Skorpion",
+    "russian": "Современная бронетехника: Skorpion"
+  },
+  "ger_modern_tank_1_aa": {
+    "english": "Coelian",
+    "russian": "Современная бронетехника: Coelian"
+  },
+  "ger_modern_tank_1_spg": {
+    "english": "GW Panther",
+    "russian": "Современная бронетехника: GW Panther"
+  },
+  "ger_modern_tank_1_td": {
+    "english": "Jagdpanther",
+    "russian": "Современная бронетехника: Jagdpanther"
+  },
+  "ger_modern_tank_chassis_1": {
+    "english": "Panther Ausf. D",
+    "russian": "Современная бронетехника: Panther Ausf. D"
+  },
+  "ger_modern_tank_chassis_1_2": {
+    "english": "Panther Ausf. G",
+    "russian": "Современная бронетехника: Panther Ausf. G"
+  },
+  "ger_modern_tank_chassis_1_3": {
+    "english": "Panther Ausf. F",
+    "russian": "Современная бронетехника: Panther Ausf. F"
+  },
+  "ger_modern_tank_chassis_2": {
+    "english": "Panther II",
+    "russian": "Современная бронетехника: Panther II"
+  },
+  "ger_naval_bomber_2": {
+    "english": "Ju 87 V-25",
+    "russian": "Военная технология: Ju 87 V-25"
+  },
+  "ger_naval_bomber_3": {
+    "english": "Ju 187 V-30",
+    "russian": "Военная технология: Ju 187 V-30"
+  },
+  "ger_naval_bomber_ad_tech_2": {
+    "english": "Junkers Ju 87 D-4 `Stuka`",
+    "russian": "Военная технология: Junkers Ju 87 D-4 `Stuka`"
+  },
+  "ger_naval_bomber_ad_tech_3": {
+    "english": "Junkers Ju 187 C-2 `Stuka`",
+    "russian": "Военная технология: Junkers Ju 187 C-2 `Stuka`"
+  },
+  "ger_night_vision_1": {
+    "english": "Night Vision I",
+    "russian": "Ночное видение 1 (1944)"
+  },
+  "ger_pack_artillery_3": {
+    "english": "Artillery (1942)",
+    "russian": "Артиллерия 3 (1942)"
+  },
+  "ger_paratroopers2": {
+    "english": "Paratroopers II",
+    "russian": "Воздушный десант 2 (1941)"
+  },
+  "ger_paratroopers3": {
+    "english": "Paratroopers III",
+    "russian": "Воздушный десант 3 (1943)"
+  },
+  "ger_patrol_2": {
+    "english": "Fw 200 Condor-4",
+    "russian": "Патрульный самолёт: Fw 200 Condor-4"
+  },
+  "ger_patrol_3": {
+    "english": "Blohm & Voss 238",
+    "russian": "Патрульный самолёт: Blohm & Voss 238"
+  },
+  "ger_patrol_ad_tech_2": {
+    "english": "Focke-Wulf Fw 200 C-3 `Condor`",
+    "russian": "Патрульный самолёт: Focke-Wulf Fw 200 C-3 `Condor`"
+  },
+  "ger_patrol_ad_tech_3": {
+    "english": "Focke-Wulf Fw 200 C-4 `Condor`",
+    "russian": "Патрульный самолёт: Focke-Wulf Fw 200 C-4 `Condor`"
+  },
+  "ger_patrol_ad_tech_4": {
+    "english": "Blohm & Voss BV 238",
+    "russian": "Патрульный самолёт: Blohm & Voss BV 238"
+  },
+  "ger_recon_training": {
+    "english": "Recon Training",
+    "russian": "Разведывательная рота (1943)"
+  },
+  "ger_rocket_artillery_2": {
+    "english": "Artillery (1942)",
+    "russian": "Артиллерия 2 (1942)"
+  },
+  "ger_rocket_artillery_3": {
+    "english": "Artillery (1943)",
+    "russian": "Артиллерия 3 (1943)"
+  },
+  "ger_rocket_upgrade_1": {
+    "english": "Fixed Rail System",
+    "russian": "Ракетное вооружение 1 (1941)"
+  },
+  "ger_rocket_upgrade_2": {
+    "english": "Packed Explosives",
+    "russian": "Ракетное вооружение 2 (1944)"
+  },
+  "ger_scout_armoured_car_5": {
+    "english": "Sd.Kfz. 234",
+    "russian": "Разведывательный бронеавтомобиль: Sd.Kfz. 234"
+  },
+  "ger_scout_car_5": {
+    "english": "Sd.Kfz. 234",
+    "russian": "Разведывательный бронеавтомобиль: Sd.Kfz. 234"
+  },
+  "ger_scout_plane_3": {
+    "english": "Fw 189",
+    "russian": "Разведывательный самолёт: Fw 189"
+  },
+  "ger_scout_plane_ad_tech_3": {
+    "english": "Focke-Wulf Fw 189 `Uhu`",
+    "russian": "Разведывательный самолёт: Focke-Wulf Fw 189 `Uhu`"
+  },
+  "ger_strategic_bomber_1": {
+    "english": "He 177 `Greif`",
+    "russian": "Стратегический бомбардировщик: He 177 `Greif`"
+  },
+  "ger_strategic_bomber_2": {
+    "english": "Me 264",
+    "russian": "Стратегический бомбардировщик: Me 264"
+  },
+  "ger_strategic_bomber_3": {
+    "english": "Ta 400 \"Amerikabomber\"",
+    "russian": "Стратегический бомбардировщик: Ta 400 \"Amerikabomber\""
+  },
+  "ger_strategic_bomber_ad_tech_1": {
+    "english": "Heinkel He 177 A-1 `Greif`",
+    "russian": "Стратегический бомбардировщик: Heinkel He 177 A-1 `Greif`"
+  },
+  "ger_strategic_bomber_ad_tech_2": {
+    "english": "Heinkel He 177 A-5 `Greif`",
+    "russian": "Стратегический бомбардировщик: Heinkel He 177 A-5 `Greif`"
+  },
+  "ger_strike_bomber_3": {
+    "english": "Ju 88 A-4 \"Dreifinger\"",
+    "russian": "Ударный бомбардировщик: Ju 88 A-4 \"Dreifinger\""
+  },
+  "ger_strike_bomber_4": {
+    "english": "Ju 188 \"Rächer\"",
+    "russian": "Ударный бомбардировщик: Ju 188 \"Rächer\""
+  },
+  "ger_strike_bomber_5": {
+    "english": "Ju 288",
+    "russian": "Ударный бомбардировщик: Ju 288"
+  },
+  "ger_strike_bomber_ad_tech_3": {
+    "english": "Dornier Do 217 E-2",
+    "russian": "Ударный бомбардировщик: Dornier Do 217 E-2"
+  },
+  "ger_strike_bomber_ad_tech_3_2": {
+    "english": "Dornier Do 217 K-2",
+    "russian": "Ударный бомбардировщик: Dornier Do 217 K-2"
+  },
+  "ger_strike_bomber_ad_tech_3_3": {
+    "english": "Dornier Do 217 M-11",
+    "russian": "Ударный бомбардировщик: Dornier Do 217 M-11"
+  },
+  "ger_super_heavy_1": {
+    "english": "Maus",
+    "russian": "Тяжёлая бронетехника: Maus"
+  },
+  "ger_super_heavy_tank_chassis_1": {
+    "english": "Maus",
+    "russian": "Тяжёлый танк: Maus"
+  },
+  "ger_support_3": {
+    "english": "PzKpfw IV Ausf. F",
+    "russian": "Оснащение поддержки: PzKpfw IV Ausf. F"
+  },
+  "ger_support_4": {
+    "english": "PzKpfw III Ausf. N",
+    "russian": "Оснащение поддержки: PzKpfw III Ausf. N"
+  },
+  "ger_support_tank_chassis_1_3": {
+    "english": "Panzer IV Ausf.F",
+    "russian": "Оснащение поддержки: Panzer IV Ausf.F"
+  },
+  "ger_support_tank_chassis_1_4": {
+    "english": "Panzer III Ausf.N",
+    "russian": "Оснащение поддержки: Panzer III Ausf.N"
+  },
+  "ger_survival_training": {
+    "english": "Survival Training",
+    "russian": "Подготовка к выживанию (1941)"
+  },
+  "ger_tactical_bomber_4": {
+    "english": "He 111 H-16",
+    "russian": "Тактический бомбардировщик: He 111 H-16"
+  },
+  "ger_tactical_bomber_5": {
+    "english": "Do 217 K-2",
+    "russian": "Тактический бомбардировщик: Do 217 K-2"
+  },
+  "ger_tactical_bomber_ad_tech_4": {
+    "english": "Heinkel He 111 H-6",
+    "russian": "Тактический бомбардировщик: Heinkel He 111 H-6"
+  },
+  "ger_tactical_bomber_ad_tech_4_2": {
+    "english": "Heinkel He 111 H-16",
+    "russian": "Тактический бомбардировщик: Heinkel He 111 H-16"
+  },
+  "ger_tactical_bomber_ad_tech_4_3": {
+    "english": "Heinkel He 111 H-21",
+    "russian": "Тактический бомбардировщик: Heinkel He 111 H-21"
+  },
+  "ger_tactical_bomber_ad_tech_5": {
+    "english": "Junkers Ju 288 C",
+    "russian": "Тактический бомбардировщик: Junkers Ju 288 C"
+  },
+  "ger_tank_training": {
+    "english": "Anti-Tank Training",
+    "russian": "Противотанковая подготовка (1943)"
+  },
+  "ger_tech_mountaineers2": {
+    "english": "Mountain Infantry II",
+    "russian": "Горная пехота 2 (1941)"
+  },
+  "ger_tech_mountaineers3": {
+    "english": "Mountain Infantry III",
+    "russian": "Горная пехота 3 (1943)"
+  },
+  "ger_transport_plane_3": {
+    "english": "Ju-252",
+    "russian": "Транспортный самолёт: Ju-252"
+  },
+  "ger_transport_plane_4": {
+    "english": "He 111 G-3",
+    "russian": "Транспортный самолёт: He 111 G-3"
+  },
+  "ger_water_training": {
+    "english": "Water Training",
+    "russian": "Водная подготовка (1944)"
+  },
+  "homing_torpedo": {
+    "english": "Homing Torpedo",
+    "russian": "Самонаводящаяся торпеда (1942)"
+  },
+  "improved_centimetric_radar": {
+    "english": "Improved Centimetric Radar",
+    "russian": "Радар (1941)"
+  },
+  "improved_rocket_engines": {
+    "english": "Improved Guided Missile",
+    "russian": "Ракетное вооружение: Improved Guided Missile"
+  },
+  "improved_submarine_snorkel": {
+    "english": "Improved Submarine Snorkel",
+    "russian": "Шноркель подводной лодки (1944)"
+  },
+  "industry_infrastructure4": {
+    "english": "Advanced Infrastructure",
+    "russian": "Промышленная инфраструктура 4 (1941)"
+  },
+  "industry_infrastructure4_comp": {
+    "english": "Advanced Infrastructure (component production)",
+    "russian": "Промышленная инфраструктура (1941) (производство компонентов)"
+  },
+  "industry_infrastructure5": {
+    "english": "Superior Infrastructure",
+    "russian": "Промышленная инфраструктура 5 (1943)"
+  },
+  "industry_infrastructure5_comp": {
+    "english": "Superior Infrastructure (component production)",
+    "russian": "Промышленная инфраструктура (1943) (производство компонентов)"
+  },
+  "industry_infrastructure6": {
+    "english": "Modern Infrastructure",
+    "russian": "Промышленная инфраструктура 6 (1945)"
+  },
+  "industry_infrastructure6_comp": {
+    "english": "Modern Infrastructure (component production)",
+    "russian": "Промышленная инфраструктура (1945) (производство компонентов)"
+  },
+  "industry_organization4": {
+    "english": "Advanced Organization",
+    "russian": "Организация промышленности 4 (1941)"
+  },
+  "industry_organization4_comp": {
+    "english": "Advanced Organization (component production)",
+    "russian": "Организация промышленности (1941) (производство компонентов)"
+  },
+  "industry_organization5": {
+    "english": "Underground factories",
+    "russian": "Организация промышленности 5 (1943)"
+  },
+  "industry_organization5_comp": {
+    "english": "Underground factories (component production)",
+    "russian": "Организация промышленности (1943) (производство компонентов)"
+  },
+  "industry_organization6": {
+    "english": "Modern Organization",
+    "russian": "Организация промышленности 6 (1945)"
+  },
+  "industry_organization6_comp": {
+    "english": "Modern Organization (component production)",
+    "russian": "Организация промышленности (1945) (производство компонентов)"
+  },
+  "ita_aa_tower_3": {
+    "english": "Large AA Towers",
+    "russian": "Зенитная башня 3 (1943)"
+  },
+  "ita_anti_air_2": {
+    "english": "Anti-Air Weapons (1944)",
+    "russian": "Зенитное вооружение 2 (1944)"
+  },
+  "ita_anti_air_upgrade_2": {
+    "english": "Increase Propellant",
+    "russian": "Зенитное вооружение 2 (1941)"
+  },
+  "ita_anti_air_upgrade_3": {
+    "english": "Increased Gun Depression",
+    "russian": "Зенитное вооружение 3 (1943)"
+  },
+  "ita_anti_air_upgrade_4": {
+    "english": "Water Coolers",
+    "russian": "Зенитное вооружение 4 (1945)"
+  },
+  "ita_anti_tank_2": {
+    "english": "Anti-Tank Weapons (1941)",
+    "russian": "Противотанковое вооружение 2 (1941)"
+  },
+  "ita_anti_tank_3": {
+    "english": "Anti-Tank Weapons (1945)",
+    "russian": "Противотанковое вооружение 3 (1945)"
+  },
+  "ita_anti_tank_upgrade_3": {
+    "english": "Improved Gun Sights",
+    "russian": "Противотанковое вооружение 3 (1943)"
+  },
+  "ita_armoured_car_2": {
+    "english": "AB 41",
+    "russian": "Бронеавтомобиль: AB 41"
+  },
+  "ita_armoured_car_3": {
+    "english": "AB 43",
+    "russian": "Бронеавтомобиль: AB 43"
+  },
+  "ita_artillery_3": {
+    "english": "Artillery (1943)",
+    "russian": "Артиллерия 3 (1943)"
+  },
+  "ita_artillery_upgrade_3": {
+    "english": "Faster Reciever",
+    "russian": "Артиллерия 3 (1942)"
+  },
+  "ita_artillery_upgrade_4": {
+    "english": "Improved Breech Ring",
+    "russian": "Артиллерия 4 (1945)"
+  },
+  "ita_assault_3": {
+    "english": "Semovente da 75 18",
+    "russian": "Штурмовое орудие: Semovente da 75 18"
+  },
+  "ita_assault_4": {
+    "english": "Semovente da 105 25",
+    "russian": "Штурмовое орудие: Semovente da 105 25"
+  },
+  "ita_assault_tank_spg_2": {
+    "english": "Semovente da 75 18",
+    "russian": "Штурмовое орудие: Semovente da 75 18"
+  },
+  "ita_assault_tank_spg_4": {
+    "english": "Semovente da 105 25",
+    "russian": "Штурмовое орудие: Semovente da 105 25"
+  },
+  "ita_attacker_3": {
+    "english": "Ca 331 Caproni CN",
+    "russian": "Самолёт-штурмовик: Ca 331 Caproni CN"
+  },
+  "ita_attacker_4": {
+    "english": "SM 91 Savoia-Marchetti",
+    "russian": "Самолёт-штурмовик: SM 91 Savoia-Marchetti"
+  },
+  "ita_attacker_ad_tech_2": {
+    "english": "Caproni Ca.331 `Raffica`",
+    "russian": "Самолёт-штурмовик: Caproni Ca.331 `Raffica`"
+  },
+  "ita_attacker_ad_tech_2_2": {
+    "english": "Ground Attack Aircraft (1943)",
+    "russian": "Самолёт-штурмовик 2.2 (1943)"
+  },
+  "ita_attacker_ad_tech_3": {
+    "english": "Fiat FC.20Bis",
+    "russian": "Самолёт-штурмовик: Fiat FC.20Bis"
+  },
+  "ita_attacker_ad_tech_4": {
+    "english": "Savoia-Marchetti SM.91",
+    "russian": "Самолёт-штурмовик: Savoia-Marchetti SM.91"
+  },
+  "ita_cas_4": {
+    "english": "Ba 201 Breda",
+    "russian": "Штурмовик: Ba 201 Breda"
+  },
+  "ita_cas_5": {
+    "english": "CR.44 Fiat",
+    "russian": "Штурмовик: CR.44 Fiat"
+  },
+  "ita_cas_ad_tech_4": {
+    "english": "Breda Ba.201",
+    "russian": "Штурмовик: Breda Ba.201"
+  },
+  "ita_cas_ad_tech_5": {
+    "english": "Savoia-Marchetti SM.93",
+    "russian": "Штурмовик: Savoia-Marchetti SM.93"
+  },
+  "ita_combat_armoured_car_2": {
+    "english": "AB 41",
+    "russian": "Бронеавтомобиль: AB 41"
+  },
+  "ita_combat_armoured_car_2_2": {
+    "english": "AB 43",
+    "russian": "Бронеавтомобиль: AB 43"
+  },
+  "ita_cv_cas_3": {
+    "english": "Ba 75 G Breda",
+    "russian": "Штурмовик: Ba 75 G Breda"
+  },
+  "ita_cv_cas_4": {
+    "english": "Ba 201 G Breda",
+    "russian": "Штурмовик: Ba 201 G Breda"
+  },
+  "ita_cv_cas_5": {
+    "english": "CR.44 G Fiat",
+    "russian": "Штурмовик: CR.44 G Fiat"
+  },
+  "ita_cv_cas_ad_tech_2": {
+    "english": "Reggiane Re.2001 GV `Falco II`",
+    "russian": "Штурмовик: Reggiane Re.2001 GV `Falco II`"
+  },
+  "ita_cv_cas_ad_tech_3": {
+    "english": "Reggiane Re.2002 `Ariete`",
+    "russian": "Штурмовик: Reggiane Re.2002 `Ariete`"
+  },
+  "ita_cv_cas_ad_tech_4": {
+    "english": "Breda Ba.201G",
+    "russian": "Штурмовик: Breda Ba.201G"
+  },
+  "ita_cv_fighter_4": {
+    "english": "MC 202 Naval Folgore",
+    "russian": "Истребитель: MC 202 Naval Folgore"
+  },
+  "ita_cv_fighter_6": {
+    "english": "G 57 Naval Centauro",
+    "russian": "Истребитель: G 57 Naval Centauro"
+  },
+  "ita_cv_fighter_7": {
+    "english": "G 58 Naval Centauro",
+    "russian": "Истребитель: G 58 Naval Centauro"
+  },
+  "ita_cv_fighter_ad_tech_2": {
+    "english": "Fiat G.50 A/N `Naval Freccia`",
+    "russian": "Истребитель: Fiat G.50 A/N `Naval Freccia`"
+  },
+  "ita_cv_fighter_ad_tech_6": {
+    "english": "Fiat G.57 `Centauro`",
+    "russian": "Истребитель: Fiat G.57 `Centauro`"
+  },
+  "ita_cv_fighter_multirole_ad_tech_0": {
+    "english": "Reggiane Re.2000 Cat. `Ochetta`",
+    "russian": "Истребитель: Reggiane Re.2000 Cat. `Ochetta`"
+  },
+  "ita_cv_fighter_multirole_ad_tech_1": {
+    "english": "Reggiane Re.2001 OR `Falco II`",
+    "russian": "Истребитель: Reggiane Re.2001 OR `Falco II`"
+  },
+  "ita_cv_fighter_multirole_ad_tech_2": {
+    "english": "Reggiane Re.2005 OR `Naval`",
+    "russian": "Истребитель: Reggiane Re.2005 OR `Naval`"
+  },
+  "ita_cv_naval_bomber_ad_tech_2": {
+    "english": "Reggiane Re.2001 G `Falco II`",
+    "russian": "Военная технология: Reggiane Re.2001 G `Falco II`"
+  },
+  "ita_cv_naval_bomber_ad_tech_3": {
+    "english": "Fiat G.57S `Centauro`",
+    "russian": "Военная технология: Fiat G.57S `Centauro`"
+  },
+  "ita_elite_forces": {
+    "english": "Elite Forces",
+    "russian": "Элитные войска (1945)"
+  },
+  "ita_extreme_environment_training": {
+    "english": "Extreme Environment Training",
+    "russian": "Подготовка к экстремальным условиям (1941)"
+  },
+  "ita_fighter_5": {
+    "english": "MC 205 Veltro",
+    "russian": "Истребитель: MC 205 Veltro"
+  },
+  "ita_fighter_6": {
+    "english": "G 55 Centauro",
+    "russian": "Истребитель: G 55 Centauro"
+  },
+  "ita_fighter_7": {
+    "english": "G 56 Centauro",
+    "russian": "Истребитель: G 56 Centauro"
+  },
+  "ita_fighter_ad_tech_3": {
+    "english": "Fiat G.55 `Centauro`",
+    "russian": "Истребитель: Fiat G.55 `Centauro`"
+  },
+  "ita_fighter_ad_tech_4": {
+    "english": "Fiat G.56 `Centauro`",
+    "russian": "Истребитель: Fiat G.56 `Centauro`"
+  },
+  "ita_fighter_multirole_1": {
+    "english": "Re 2001 Sagittario",
+    "russian": "Истребитель: Re 2001 Sagittario"
+  },
+  "ita_fighter_multirole_2": {
+    "english": "Re 2005 Sagittario",
+    "russian": "Истребитель: Re 2005 Sagittario"
+  },
+  "ita_fighter_multirole_3": {
+    "english": "Re 2006 Sagittario",
+    "russian": "Истребитель: Re 2006 Sagittario"
+  },
+  "ita_fighter_multirole_ad_tech_1": {
+    "english": "Reggiane Re.2001 `Falco II`",
+    "russian": "Истребитель: Reggiane Re.2001 `Falco II`"
+  },
+  "ita_fighter_multirole_ad_tech_2": {
+    "english": "Reggiane Re.2005 `Sagittario I`",
+    "russian": "Истребитель: Reggiane Re.2005 `Sagittario I`"
+  },
+  "ita_fighter_multirole_ad_tech_3": {
+    "english": "Reggiane Re.2006 `Sagittario II`",
+    "russian": "Истребитель: Reggiane Re.2006 `Sagittario II`"
+  },
+  "ita_heavy_1": {
+    "english": "Carro Armato C45",
+    "russian": "Тяжёлая бронетехника: Carro Armato C45"
+  },
+  "ita_heavy_2": {
+    "english": "Carro Armato C50",
+    "russian": "Тяжёлая бронетехника: Carro Armato C50"
+  },
+  "ita_heavy_anti_tank_1": {
+    "english": "Anti-Tank Weapons (1942)",
+    "russian": "Противотанковое вооружение 1 (1942)"
+  },
+  "ita_heavy_artillery_3": {
+    "english": "Artillery (1945)",
+    "russian": "Артиллерия 3 (1945)"
+  },
+  "ita_heavy_fighter_2": {
+    "english": "Ro 58 IMAM",
+    "russian": "Истребитель: Ro 58 IMAM"
+  },
+  "ita_heavy_fighter_3": {
+    "english": "SM 92 Savoia-Marchetti",
+    "russian": "Истребитель: SM 92 Savoia-Marchetti"
+  },
+  "ita_heavy_fighter_ad_tech_2": {
+    "english": "IMAM Ro.58",
+    "russian": "Истребитель: IMAM Ro.58"
+  },
+  "ita_heavy_fighter_conversion_ad_tech_2": {
+    "english": "Savoia-Marchetti SM.89",
+    "russian": "Истребитель: Savoia-Marchetti SM.89"
+  },
+  "ita_heavy_infantry_weapons_4": {
+    "english": "Breda M37 + Breda 30 + LC AT",
+    "russian": "Пехотное вооружение: Breda M37 + Breda 30 + LC AT"
+  },
+  "ita_heavy_infantry_weapons_5": {
+    "english": "Breda M45 + 45mm M45",
+    "russian": "Пехотное вооружение: Breda M45 + 45mm M45"
+  },
+  "ita_heavy_infantry_weapons_upgrade_3": {
+    "english": "81/14 Model 35 Mortar",
+    "russian": "Пехотное вооружение 3 (1941)"
+  },
+  "ita_heavy_tank_chassis_1": {
+    "english": "C45",
+    "russian": "Тяжёлый танк: C45"
+  },
+  "ita_heavy_tank_chassis_2": {
+    "english": "C50",
+    "russian": "Тяжёлый танк: C50"
+  },
+  "ita_heavy_tank_chassis_assault_1": {
+    "english": "Semovente da 105 35",
+    "russian": "Тяжёлый танк: Semovente da 105 35"
+  },
+  "ita_heavy_tank_td_1": {
+    "english": "Semovente da 90 60",
+    "russian": "Тяжёлый танк: Semovente da 90 60"
+  },
+  "ita_heavy_td_1": {
+    "english": "Semovente da 90 60",
+    "russian": "Тяжёлая бронетехника: Semovente da 90 60"
+  },
+  "ita_infantry_weapons_4": {
+    "english": "Armaguerra 39 + FNAB-43",
+    "russian": "Пехотное вооружение: Armaguerra 39 + FNAB-43"
+  },
+  "ita_infantry_weapons_6": {
+    "english": "Breda M1935 PG + FNAB-43",
+    "russian": "Пехотное вооружение: Breda M1935 PG + FNAB-43"
+  },
+  "ita_infantry_weapons_upgrade_3": {
+    "english": "Type L",
+    "russian": "Пехотное вооружение 3 (1942)"
+  },
+  "ita_interceptor_ad_tech_3": {
+    "english": "Macchi C.205 `Veltro`",
+    "russian": "Перехватчик: Macchi C.205 `Veltro`"
+  },
+  "ita_jungle_training": {
+    "english": "Jungle Training",
+    "russian": "Подготовка к бою в джунглях (1944)"
+  },
+  "ita_light_4": {
+    "english": "L8",
+    "russian": "Лёгкая бронетехника: L8"
+  },
+  "ita_light_5": {
+    "english": "Carro Celere M16",
+    "russian": "Лёгкая бронетехника: Carro Celere M16"
+  },
+  "ita_light_aa_4": {
+    "english": "Anti aria da duello 20",
+    "russian": "Лёгкая бронетехника: Anti aria da duello 20"
+  },
+  "ita_light_aa_5": {
+    "english": "Anti aria da quad 20",
+    "russian": "Лёгкая бронетехника: Anti aria da quad 20"
+  },
+  "ita_light_spg_4": {
+    "english": "Semovente da 65 40",
+    "russian": "Лёгкая бронетехника: Semovente da 65 40"
+  },
+  "ita_light_tank_aa_4": {
+    "english": "Anti aria da duello 20",
+    "russian": "Лёгкий танк: Anti aria da duello 20"
+  },
+  "ita_light_tank_aa_5": {
+    "english": "Anti aria da quad 20",
+    "russian": "Лёгкий танк: Anti aria da quad 20"
+  },
+  "ita_light_tank_chassis_4": {
+    "english": "L8",
+    "russian": "Лёгкий танк: L8"
+  },
+  "ita_light_tank_chassis_5": {
+    "english": "M16",
+    "russian": "Лёгкий танк: M16"
+  },
+  "ita_light_tank_spg_4": {
+    "english": "Semovente da 65 40",
+    "russian": "Лёгкий танк: Semovente da 65 40"
+  },
+  "ita_light_tank_td_4": {
+    "english": "Semovente da 66 43",
+    "russian": "Лёгкий танк: Semovente da 66 43"
+  },
+  "ita_light_td_4": {
+    "english": "Semovente da 66 43",
+    "russian": "Лёгкая бронетехника: Semovente da 66 43"
+  },
+  "ita_marines2": {
+    "english": "Marines II",
+    "russian": "Морская пехота 2 (1941)"
+  },
+  "ita_marines3": {
+    "english": "Marines III",
+    "russian": "Морская пехота 3 (1943)"
+  },
+  "ita_mechanized_artillery_1": {
+    "english": "Lancia 3Ro 100/17",
+    "russian": "Механизированная пехота: Lancia 3Ro 100/17"
+  },
+  "ita_mechanized_infantry_2": {
+    "english": "Fiat 665NM",
+    "russian": "Механизированная пехота: Fiat 665NM"
+  },
+  "ita_mechanized_infantry_3": {
+    "english": "SPA Dovunque 35",
+    "russian": "Механизированная пехота: SPA Dovunque 35"
+  },
+  "ita_medium_3": {
+    "english": "Carro Armato M15",
+    "russian": "Средняя бронетехника: Carro Armato M15"
+  },
+  "ita_medium_4": {
+    "english": "Carro Armato P26",
+    "russian": "Средняя бронетехника: Carro Armato P26"
+  },
+  "ita_medium_5": {
+    "english": "Carro Armato P43",
+    "russian": "Средняя бронетехника: Carro Armato P43"
+  },
+  "ita_medium_6": {
+    "english": "Carro Armato P47",
+    "russian": "Средняя бронетехника: Carro Armato P47"
+  },
+  "ita_medium_aa_3": {
+    "english": "Semovente da 20/70 quadruplo",
+    "russian": "Средняя бронетехника: Semovente da 20/70 quadruplo"
+  },
+  "ita_medium_aa_5": {
+    "english": "Anti aria da 37",
+    "russian": "Средняя бронетехника: Anti aria da 37"
+  },
+  "ita_medium_spg_4": {
+    "english": "Semovente da 149 16",
+    "russian": "Средняя бронетехника: Semovente da 149 16"
+  },
+  "ita_medium_spg_5": {
+    "english": "Semovente da 149 40",
+    "russian": "Средняя бронетехника: Semovente da 149 40"
+  },
+  "ita_medium_tank_aa_3": {
+    "english": "Semovente da 20/70 quadruplo",
+    "russian": "Средний танк: Semovente da 20/70 quadruplo"
+  },
+  "ita_medium_tank_aa_5": {
+    "english": "Anti aria da 37",
+    "russian": "Средний танк: Anti aria da 37"
+  },
+  "ita_medium_tank_chassis_3": {
+    "english": "M15",
+    "russian": "Средний танк: M15"
+  },
+  "ita_medium_tank_chassis_4": {
+    "english": "P26",
+    "russian": "Средний танк: P26"
+  },
+  "ita_medium_tank_chassis_5": {
+    "english": "P43",
+    "russian": "Средний танк: P43"
+  },
+  "ita_medium_tank_chassis_6": {
+    "english": "P43 bis",
+    "russian": "Средний танк: P43 bis"
+  },
+  "ita_medium_tank_spg_3": {
+    "english": "Semovente da 100 17",
+    "russian": "Средний танк: Semovente da 100 17"
+  },
+  "ita_medium_tank_spg_4": {
+    "english": "Semovente da 149 16",
+    "russian": "Средний танк: Semovente da 149 16"
+  },
+  "ita_medium_tank_spg_5": {
+    "english": "Semovente da 149 40",
+    "russian": "Средний танк: Semovente da 149 40"
+  },
+  "ita_medium_tank_td_2": {
+    "english": "Semovente da 75 34",
+    "russian": "Средний танк: Semovente da 75 34"
+  },
+  "ita_medium_tank_td_3": {
+    "english": "Semovente da 90 53",
+    "russian": "Средний танк: Semovente da 90 53"
+  },
+  "ita_medium_tank_td_4": {
+    "english": "Semovente da 75 46",
+    "russian": "Средний танк: Semovente da 75 46"
+  },
+  "ita_medium_tank_td_5": {
+    "english": "Semovente da 90 63",
+    "russian": "Средний танк: Semovente da 90 63"
+  },
+  "ita_medium_td_2": {
+    "english": "Semovente da 75 34",
+    "russian": "Средняя бронетехника: Semovente da 75 34"
+  },
+  "ita_medium_td_3": {
+    "english": "Semovente da 90 53",
+    "russian": "Средняя бронетехника: Semovente da 90 53"
+  },
+  "ita_medium_td_4": {
+    "english": "Semovente da 75 46",
+    "russian": "Средняя бронетехника: Semovente da 75 46"
+  },
+  "ita_medium_td_5": {
+    "english": "Semovente da 90 63",
+    "russian": "Средняя бронетехника: Semovente da 90 63"
+  },
+  "ita_modern_1": {
+    "english": "P44 Pantera",
+    "russian": "Современная бронетехника: P44 Pantera"
+  },
+  "ita_modern_2": {
+    "english": "P48 Pantera",
+    "russian": "Современная бронетехника: P48 Pantera"
+  },
+  "ita_modern_tank_chassis_1": {
+    "english": "P44",
+    "russian": "Современная бронетехника: P44"
+  },
+  "ita_modern_tank_chassis_2": {
+    "english": "P48",
+    "russian": "Современная бронетехника: P48"
+  },
+  "ita_naval_bomber_2": {
+    "english": "Re 2001 Silurante",
+    "russian": "Военная технология: Re 2001 Silurante"
+  },
+  "ita_naval_bomber_3": {
+    "english": "Re 2005 Silurante",
+    "russian": "Военная технология: Re 2005 Silurante"
+  },
+  "ita_naval_bomber_4": {
+    "english": "Re 2006 Silurante",
+    "russian": "Военная технология: Re 2006 Silurante"
+  },
+  "ita_night_vision_1": {
+    "english": "Night Vision I",
+    "russian": "Ночное видение 1 (1944)"
+  },
+  "ita_paratroopers2": {
+    "english": "Paratroopers II",
+    "russian": "Воздушный десант 2 (1941)"
+  },
+  "ita_paratroopers3": {
+    "english": "Paratroopers III",
+    "russian": "Воздушный десант 3 (1943)"
+  },
+  "ita_patrol_2": {
+    "english": "RS 14",
+    "russian": "Патрульный самолёт: RS 14"
+  },
+  "ita_patrol_ad_tech_2": {
+    "english": "Fiat RS.14",
+    "russian": "Патрульный самолёт: Fiat RS.14"
+  },
+  "ita_patrol_ad_tech_3": {
+    "english": "Caproni Ca.314",
+    "russian": "Патрульный самолёт: Caproni Ca.314"
+  },
+  "ita_patrol_ad_tech_4": {
+    "english": "CANT Z.511 `Idrogigante`",
+    "russian": "Патрульный самолёт: CANT Z.511 `Idrogigante`"
+  },
+  "ita_recon_training": {
+    "english": "Recon Training",
+    "russian": "Разведывательная рота (1943)"
+  },
+  "ita_scout_armoured_car_3": {
+    "english": "AS 42",
+    "russian": "Разведывательный бронеавтомобиль: AS 42"
+  },
+  "ita_scout_armoured_car_4": {
+    "english": "AS 43",
+    "russian": "Разведывательный бронеавтомобиль: AS 43"
+  },
+  "ita_scout_car_3": {
+    "english": "AS 42",
+    "russian": "Разведывательный бронеавтомобиль: AS 42"
+  },
+  "ita_scout_car_4": {
+    "english": "AS 43",
+    "russian": "Разведывательный бронеавтомобиль: AS 43"
+  },
+  "ita_scout_plane_3": {
+    "english": "Ca 313",
+    "russian": "Разведывательный самолёт: Ca 313"
+  },
+  "ita_scout_plane_ad_tech_3": {
+    "english": "Caproni Ca.313 `Libeccio`",
+    "russian": "Разведывательный самолёт: Caproni Ca.313 `Libeccio`"
+  },
+  "ita_strategic_bomber_2": {
+    "english": "P 108 Piaggio",
+    "russian": "Стратегический бомбардировщик: P 108 Piaggio"
+  },
+  "ita_strategic_bomber_3": {
+    "english": "P 133 Piaggio",
+    "russian": "Стратегический бомбардировщик: P 133 Piaggio"
+  },
+  "ita_strategic_bomber_ad_tech_2": {
+    "english": "Piaggio P.108 `Bombardiere`",
+    "russian": "Стратегический бомбардировщик: Piaggio P.108 `Bombardiere`"
+  },
+  "ita_strategic_bomber_ad_tech_2_2": {
+    "english": "Piaggio P.108A Serie 2 `Artigliere`",
+    "russian": "Стратегический бомбардировщик: Piaggio P.108A Serie 2 `Artigliere`"
+  },
+  "ita_strategic_bomber_ad_tech_3": {
+    "english": "Piaggio P.133 `Bombardiere`",
+    "russian": "Стратегический бомбардировщик: Piaggio P.133 `Bombardiere`"
+  },
+  "ita_strategic_bomber_ad_tech_3_2": {
+    "english": "Piaggio P.133A Serie 2 `Artigliere`",
+    "russian": "Стратегический бомбардировщик: Piaggio P.133A Serie 2 `Artigliere`"
+  },
+  "ita_strike_bomber_ad_tech_3": {
+    "english": "Savoia-Marchetti SM.79Bis `Sparviero`",
+    "russian": "Ударный бомбардировщик: Savoia-Marchetti SM.79Bis `Sparviero`"
+  },
+  "ita_survival_training": {
+    "english": "Survival Training",
+    "russian": "Подготовка к выживанию (1941)"
+  },
+  "ita_tactical_bomber_4": {
+    "english": "Z 1018 Alcione",
+    "russian": "Тактический бомбардировщик: Z 1018 Alcione"
+  },
+  "ita_tactical_bomber_ad_tech_4": {
+    "english": "CANT Z.1018 `Leone`",
+    "russian": "Тактический бомбардировщик: CANT Z.1018 `Leone`"
+  },
+  "ita_tank_training": {
+    "english": "Anti-Tank Training",
+    "russian": "Противотанковая подготовка (1943)"
+  },
+  "ita_tech_mountaineers2": {
+    "english": "Mountain Infantry II",
+    "russian": "Горная пехота 2 (1941)"
+  },
+  "ita_tech_mountaineers3": {
+    "english": "Mountain Infantry III",
+    "russian": "Горная пехота 3 (1943)"
+  },
+  "ita_transport_plane_3": {
+    "english": "SM.90 Savoia-Marchetti",
+    "russian": "Транспортный самолёт: SM.90 Savoia-Marchetti"
+  },
+  "ita_water_training": {
+    "english": "Water Training",
+    "russian": "Водная подготовка (1944)"
+  },
+  "jap_aa_tower_3": {
+    "english": "Large AA Towers",
+    "russian": "Зенитная башня 3 (1942)"
+  },
+  "jap_amphibious_1": {
+    "english": "Ka-Tsu",
+    "russian": "Амфибийные машины: Ka-Tsu"
+  },
+  "jap_anti_air_2": {
+    "english": "Anti-Air Weapons (1942)",
+    "russian": "Зенитное вооружение 2 (1942)"
+  },
+  "jap_anti_air_3": {
+    "english": "Anti-Air Weapons (1944)",
+    "russian": "Зенитное вооружение 3 (1944)"
+  },
+  "jap_anti_air_upgrade_2": {
+    "english": "Increase Propellant",
+    "russian": "Зенитное вооружение 2 (1941)"
+  },
+  "jap_anti_air_upgrade_3": {
+    "english": "Increased Gun Depression",
+    "russian": "Зенитное вооружение 3 (1945)"
+  },
+  "jap_anti_tank_3": {
+    "english": "Anti-Tank Weapons (1942)",
+    "russian": "Противотанковое вооружение 3 (1942)"
+  },
+  "jap_anti_tank_4": {
+    "english": "Anti-Tank Weapons (1945)",
+    "russian": "Противотанковое вооружение 4 (1945)"
+  },
+  "jap_anti_tank_upgrade_3": {
+    "english": "Improved Gun Sights",
+    "russian": "Противотанковое вооружение 3 (1941)"
+  },
+  "jap_artillery_4": {
+    "english": "Artillery (1944)",
+    "russian": "Артиллерия 4 (1944)"
+  },
+  "jap_artillery_upgrade_3": {
+    "english": "Faster Reciever",
+    "russian": "Артиллерия 3 (1942)"
+  },
+  "jap_attacker_1": {
+    "english": "Ki-102 Kawasaki",
+    "russian": "Самолёт-штурмовик: Ki-102 Kawasaki"
+  },
+  "jap_attacker_ad_tech_0": {
+    "english": "Kawasaki Ki-45 `Toryū`",
+    "russian": "Самолёт-штурмовик: Kawasaki Ki-45 `Toryū`"
+  },
+  "jap_attacker_ad_tech_1": {
+    "english": "Kawasaki Ki-96",
+    "russian": "Самолёт-штурмовик: Kawasaki Ki-96"
+  },
+  "jap_attacker_ad_tech_2": {
+    "english": "Kawasaki Ki-102",
+    "russian": "Самолёт-штурмовик: Kawasaki Ki-102"
+  },
+  "jap_cas_4": {
+    "english": "Ki-71 Mitsubishi",
+    "russian": "Штурмовик: Ki-71 Mitsubishi"
+  },
+  "jap_cas_5": {
+    "english": "D4Y3 Suisei",
+    "russian": "Штурмовик: D4Y3 Suisei"
+  },
+  "jap_cas_ad_tech_4": {
+    "english": "Mitsubishi Ki-71 `Mansyū`",
+    "russian": "Штурмовик: Mitsubishi Ki-71 `Mansyū`"
+  },
+  "jap_cas_ad_tech_5": {
+    "english": "Yokosuka D4Y3 `Suisei`",
+    "russian": "Штурмовик: Yokosuka D4Y3 `Suisei`"
+  },
+  "jap_cv_cas_3": {
+    "english": "D4Y1",
+    "russian": "Штурмовик: D4Y1"
+  },
+  "jap_cv_cas_4": {
+    "english": "D4Y4",
+    "russian": "Штурмовик: D4Y4"
+  },
+  "jap_cv_cas_ad_tech_3": {
+    "english": "Yokosuka D4Y1 `Suisei`",
+    "russian": "Штурмовик: Yokosuka D4Y1 `Suisei`"
+  },
+  "jap_cv_cas_ad_tech_4": {
+    "english": "Yokosuka D4Y4 `Suisei`",
+    "russian": "Штурмовик: Yokosuka D4Y4 `Suisei`"
+  },
+  "jap_cv_fighter_3": {
+    "english": "A6M3 Reisen",
+    "russian": "Истребитель: A6M3 Reisen"
+  },
+  "jap_cv_fighter_4": {
+    "english": "A6M5 Reisen",
+    "russian": "Истребитель: A6M5 Reisen"
+  },
+  "jap_cv_fighter_ad_tech_3": {
+    "english": "Mitsubishi A6M3 `Reisen`",
+    "russian": "Истребитель: Mitsubishi A6M3 `Reisen`"
+  },
+  "jap_cv_fighter_ad_tech_4": {
+    "english": "Mitsubishi A6M5 `Reisen`",
+    "russian": "Истребитель: Mitsubishi A6M5 `Reisen`"
+  },
+  "jap_cv_naval_bomber_4": {
+    "english": "B7A2 Ryusei",
+    "russian": "Военная технология: B7A2 Ryusei"
+  },
+  "jap_cv_naval_bomber_5": {
+    "english": "B8A2 Ginga",
+    "russian": "Военная технология: B8A2 Ginga"
+  },
+  "jap_cv_naval_bomber_ad_tech_3": {
+    "english": "Nakajima B6N `Tenzan`",
+    "russian": "Военная технология: Nakajima B6N `Tenzan`"
+  },
+  "jap_cv_naval_bomber_ad_tech_4": {
+    "english": "Aichi B7A `Ryūsei`",
+    "russian": "Военная технология: Aichi B7A `Ryūsei`"
+  },
+  "jap_elite_forces": {
+    "english": "Elite Forces",
+    "russian": "Элитные войска (1945)"
+  },
+  "jap_extreme_environment_training": {
+    "english": "Extreme Environment Training",
+    "russian": "Подготовка к экстремальным условиям (1941)"
+  },
+  "jap_fast_bomber_ad_tech_2": {
+    "english": "Kawasaki Ki-48-II `Sokei`",
+    "russian": "Скоростной бомбардировщик: Kawasaki Ki-48-II `Sokei`"
+  },
+  "jap_fast_bomber_ad_tech_3": {
+    "english": "Yokosuka P1Y1 `Ginga`",
+    "russian": "Скоростной бомбардировщик: Yokosuka P1Y1 `Ginga`"
+  },
+  "jap_fighter_3": {
+    "english": "Ki-44 Shoki",
+    "russian": "Истребитель: Ki-44 Shoki"
+  },
+  "jap_fighter_3_1": {
+    "english": "Ki-44 Hei Shoki",
+    "russian": "Истребитель: Ki-44 Hei Shoki"
+  },
+  "jap_fighter_4": {
+    "english": "Mitsubishi J2M2 Raiden",
+    "russian": "Истребитель: Mitsubishi J2M2 Raiden"
+  },
+  "jap_fighter_5": {
+    "english": "Ki-84 Otsu",
+    "russian": "Истребитель: Ki-84 Otsu"
+  },
+  "jap_fighter_ad_tech_3": {
+    "english": "Nakajima Ki-43-I `Hayabusa`",
+    "russian": "Истребитель: Nakajima Ki-43-I `Hayabusa`"
+  },
+  "jap_fighter_ad_tech_4": {
+    "english": "Nakajima Ki-43-II `Hayabusa`",
+    "russian": "Истребитель: Nakajima Ki-43-II `Hayabusa`"
+  },
+  "jap_fighter_ad_tech_5": {
+    "english": "Kawanishi N1K1-J Shiden",
+    "russian": "Истребитель: Kawanishi N1K1-J Shiden"
+  },
+  "jap_fighter_ad_tech_6": {
+    "english": "Kawanishi N1K2-J Shiden Kai",
+    "russian": "Истребитель: Kawanishi N1K2-J Shiden Kai"
+  },
+  "jap_fighter_multirole_3": {
+    "english": "Ki-43 Hei Hayabusa",
+    "russian": "Истребитель: Ki-43 Hei Hayabusa"
+  },
+  "jap_fighter_multirole_4": {
+    "english": "Ki-61 Otsu Hien",
+    "russian": "Истребитель: Ki-61 Otsu Hien"
+  },
+  "jap_fighter_multirole_5": {
+    "english": "Ki-61 Tei Hien",
+    "russian": "Истребитель: Ki-61 Tei Hien"
+  },
+  "jap_fighter_multirole_6": {
+    "english": "Ki-61 Kai Hien",
+    "russian": "Истребитель: Ki-61 Kai Hien"
+  },
+  "jap_fighter_multirole_7": {
+    "english": "N1K1 Shiden",
+    "russian": "Истребитель: N1K1 Shiden"
+  },
+  "jap_fighter_multirole_ad_tech_1": {
+    "english": "Kawasaki Ki-61-I Otsu `Hien`",
+    "russian": "Истребитель: Kawasaki Ki-61-I Otsu `Hien`"
+  },
+  "jap_fighter_multirole_ad_tech_2": {
+    "english": "Kawasaki Ki-61-I Tei `Hien`",
+    "russian": "Истребитель: Kawasaki Ki-61-I Tei `Hien`"
+  },
+  "jap_fighter_multirole_ad_tech_3": {
+    "english": "Kawasaki Ki-61-II Kai `Hien`",
+    "russian": "Истребитель: Kawasaki Ki-61-II Kai `Hien`"
+  },
+  "jap_heavy_anti_air_3": {
+    "english": "Anti-Air Weapons (1943)",
+    "russian": "Зенитное вооружение 3 (1943)"
+  },
+  "jap_heavy_anti_air_4": {
+    "english": "Anti-Air Weapons (1944)",
+    "russian": "Зенитное вооружение 4 (1944)"
+  },
+  "jap_heavy_anti_air_5": {
+    "english": "Anti-Air Weapons (1945)",
+    "russian": "Зенитное вооружение 5 (1945)"
+  },
+  "jap_heavy_anti_tank_1": {
+    "english": "Anti-Tank Weapons (1944)",
+    "russian": "Противотанковое вооружение 1 (1944)"
+  },
+  "jap_heavy_fighter_1": {
+    "english": "Ki-45 Toryu",
+    "russian": "Истребитель: Ki-45 Toryu"
+  },
+  "jap_heavy_fighter_2": {
+    "english": "Ki-96 Kawasaki",
+    "russian": "Истребитель: Ki-96 Kawasaki"
+  },
+  "jap_heavy_fighter_3": {
+    "english": "Ki-83 Mitsubishi",
+    "russian": "Истребитель: Ki-83 Mitsubishi"
+  },
+  "jap_heavy_fighter_ad_tech_2": {
+    "english": "Nakajima J1N `Gekkō`",
+    "russian": "Истребитель: Nakajima J1N `Gekkō`"
+  },
+  "jap_heavy_fighter_ad_tech_3": {
+    "english": "Mitsubishi Ki-83",
+    "russian": "Истребитель: Mitsubishi Ki-83"
+  },
+  "jap_heavy_infantry_weapons_4": {
+    "english": "Type 1 + Type 99 + Type 97 AT",
+    "russian": "Пехотное вооружение: Type 1 + Type 99 + Type 97 AT"
+  },
+  "jap_heavy_infantry_weapons_6": {
+    "english": "Type 98 + Type 1 + Type 97 AT",
+    "russian": "Пехотное вооружение: Type 98 + Type 1 + Type 97 AT"
+  },
+  "jap_heavy_infantry_weapons_7": {
+    "english": "Type 3 + Type 4 AT",
+    "russian": "Пехотное вооружение: Type 3 + Type 4 AT"
+  },
+  "jap_infantry_support_2": {
+    "english": "Chi-Ha 120",
+    "russian": "Подготовка пехоты: Chi-Ha 120"
+  },
+  "jap_infantry_support_tank_chassis_1": {
+    "english": "Chi-Ha 120",
+    "russian": "Подготовка пехоты: Chi-Ha 120"
+  },
+  "jap_infantry_support_tank_chassis_2": {
+    "english": "Ho-I",
+    "russian": "Подготовка пехоты: Ho-I"
+  },
+  "jap_infantry_weapons_3": {
+    "english": "Type 99 + Type 100 SMG",
+    "russian": "Пехотное вооружение: Type 99 + Type 100 SMG"
+  },
+  "jap_infantry_weapons_5": {
+    "english": "Type Hei Rifle + Type 2A SMG",
+    "russian": "Пехотное вооружение: Type Hei Rifle + Type 2A SMG"
+  },
+  "jap_infantry_weapons_6": {
+    "english": "Type 5 + Type 100-44 SMG",
+    "russian": "Пехотное вооружение: Type 5 + Type 100-44 SMG"
+  },
+  "jap_infantry_weapons_upgrade_3": {
+    "english": "Type 2 Grenade Launcher",
+    "russian": "Пехотное вооружение 3 (1942)"
+  },
+  "jap_interceptor_ad_tech_1": {
+    "english": "Nakajima Ki-44-I `Shōki`",
+    "russian": "Перехватчик: Nakajima Ki-44-I `Shōki`"
+  },
+  "jap_interceptor_ad_tech_2": {
+    "english": "Nakajima Ki-44-II `Shōki`",
+    "russian": "Перехватчик: Nakajima Ki-44-II `Shōki`"
+  },
+  "jap_interceptor_ad_tech_3": {
+    "english": "Mitsubishi J2M3 `Raiden`",
+    "russian": "Перехватчик: Mitsubishi J2M3 `Raiden`"
+  },
+  "jap_interceptor_ad_tech_3_1": {
+    "english": "Mitsubishi J2M5 `Raiden`",
+    "russian": "Перехватчик: Mitsubishi J2M5 `Raiden`"
+  },
+  "jap_interceptor_ad_tech_4": {
+    "english": "Nakajima Ki-84-I `Hayate`",
+    "russian": "Перехватчик: Nakajima Ki-84-I `Hayate`"
+  },
+  "jap_jungle_training": {
+    "english": "Jungle Training",
+    "russian": "Подготовка к бою в джунглях (1944)"
+  },
+  "jap_light_5": {
+    "english": "Type 2 Ke-To",
+    "russian": "Лёгкая бронетехника: Type 2 Ke-To"
+  },
+  "jap_light_6": {
+    "english": "Type 5 Ke-Ho",
+    "russian": "Лёгкая бронетехника: Type 5 Ke-Ho"
+  },
+  "jap_light_aa_5": {
+    "english": "Type 98 Ta-Se",
+    "russian": "Лёгкая бронетехника: Type 98 Ta-Se"
+  },
+  "jap_light_aa_6": {
+    "english": "Type 98 Ta-Se AAG",
+    "russian": "Лёгкая бронетехника: Type 98 Ta-Se AAG"
+  },
+  "jap_light_spg_6": {
+    "english": "Ku-Se",
+    "russian": "Лёгкая бронетехника: Ku-Se"
+  },
+  "jap_light_tank_aa_5": {
+    "english": "Ta-Se",
+    "russian": "Лёгкий танк: Ta-Se"
+  },
+  "jap_light_tank_aa_6": {
+    "english": "Ta-Se AAG",
+    "russian": "Лёгкий танк: Ta-Se AAG"
+  },
+  "jap_light_tank_chassis_5": {
+    "english": "Ke-To",
+    "russian": "Лёгкий танк: Ke-To"
+  },
+  "jap_light_tank_chassis_6": {
+    "english": "Ke-Ho",
+    "russian": "Лёгкий танк: Ke-Ho"
+  },
+  "jap_light_tank_spg_3": {
+    "english": "Ho-To",
+    "russian": "Лёгкий танк: Ho-To"
+  },
+  "jap_light_tank_spg_6": {
+    "english": "Ku-Se",
+    "russian": "Лёгкий танк: Ku-Se"
+  },
+  "jap_light_tank_td_6": {
+    "english": "Ho-He",
+    "russian": "Лёгкий танк: Ho-He"
+  },
+  "jap_light_td_6": {
+    "english": "Ho-Haa",
+    "russian": "Лёгкая бронетехника: Ho-Haa"
+  },
+  "jap_marines2": {
+    "english": "Marines II",
+    "russian": "Морская пехота 2 (1941)"
+  },
+  "jap_marines3": {
+    "english": "Marines III",
+    "russian": "Морская пехота 3 (1943)"
+  },
+  "jap_mechanized_infantry_2": {
+    "english": "Ho-Ha",
+    "russian": "Механизированная пехота: Ho-Ha"
+  },
+  "jap_mechanized_infantry_3": {
+    "english": "Chi-So",
+    "russian": "Механизированная пехота: Chi-So"
+  },
+  "jap_medium_4": {
+    "english": "Type 97 Chi-Ha Kai",
+    "russian": "Средняя бронетехника: Type 97 Chi-Ha Kai"
+  },
+  "jap_medium_5": {
+    "english": "Type 98 Chi-Ho",
+    "russian": "Средняя бронетехника: Type 98 Chi-Ho"
+  },
+  "jap_medium_6": {
+    "english": "Type 1 Chi-He",
+    "russian": "Средняя бронетехника: Type 1 Chi-He"
+  },
+  "jap_medium_7": {
+    "english": "Type 4 Chi-To",
+    "russian": "Средняя бронетехника: Type 4 Chi-To"
+  },
+  "jap_medium_8": {
+    "english": "Type 3 Chi-Nu",
+    "russian": "Средняя бронетехника: Type 3 Chi-Nu"
+  },
+  "jap_medium_9": {
+    "english": "Type 5 Chi-Ri",
+    "russian": "Средняя бронетехника: Type 5 Chi-Ri"
+  },
+  "jap_medium_aa_8": {
+    "english": "Ta-Ha",
+    "russian": "Средняя бронетехника: Ta-Ha"
+  },
+  "jap_medium_spg_4": {
+    "english": "Ho-Ni",
+    "russian": "Средняя бронетехника: Ho-Ni"
+  },
+  "jap_medium_spg_8": {
+    "english": "Ho-Ro",
+    "russian": "Средняя бронетехника: Ho-Ro"
+  },
+  "jap_medium_spg_9": {
+    "english": "Ho-Chi",
+    "russian": "Средняя бронетехника: Ho-Chi"
+  },
+  "jap_medium_tank_aa_8": {
+    "english": "Ta-Ha",
+    "russian": "Средний танк: Ta-Ha"
+  },
+  "jap_medium_tank_chassis_4": {
+    "english": "Chi-Ha Kai",
+    "russian": "Средний танк: Chi-Ha Kai"
+  },
+  "jap_medium_tank_chassis_6": {
+    "english": "Chi-He",
+    "russian": "Средний танк: Chi-He"
+  },
+  "jap_medium_tank_chassis_7": {
+    "english": "Chi-To",
+    "russian": "Средний танк: Chi-To"
+  },
+  "jap_medium_tank_chassis_8": {
+    "english": "Chi-Nu",
+    "russian": "Средний танк: Chi-Nu"
+  },
+  "jap_medium_tank_chassis_9": {
+    "english": "Chi-Ri",
+    "russian": "Средний танк: Chi-Ri"
+  },
+  "jap_medium_tank_spg_4": {
+    "english": "Ho-Ni",
+    "russian": "Средний танк: Ho-Ni"
+  },
+  "jap_medium_tank_spg_8": {
+    "english": "Ho-Ro",
+    "russian": "Средний танк: Ho-Ro"
+  },
+  "jap_medium_tank_spg_9": {
+    "english": "Ho-Chi",
+    "russian": "Средний танк: Ho-Chi"
+  },
+  "jap_medium_tank_td_4": {
+    "english": "Ho-Ni TD",
+    "russian": "Средний танк: Ho-Ni TD"
+  },
+  "jap_medium_tank_td_6": {
+    "english": "Ho-Nu",
+    "russian": "Средний танк: Ho-Nu"
+  },
+  "jap_medium_tank_td_7": {
+    "english": "Ka-To",
+    "russian": "Средний танк: Ka-To"
+  },
+  "jap_medium_tank_td_8": {
+    "english": "Chi-Ha 120mm TD",
+    "russian": "Средний танк: Chi-Ha 120mm TD"
+  },
+  "jap_medium_tank_td_9": {
+    "english": "Ho-Ri",
+    "russian": "Средний танк: Ho-Ri"
+  },
+  "jap_medium_td_4": {
+    "english": "Ho-Ni TD",
+    "russian": "Средняя бронетехника: Ho-Ni TD"
+  },
+  "jap_medium_td_6": {
+    "english": "Ho-Nu",
+    "russian": "Средняя бронетехника: Ho-Nu"
+  },
+  "jap_medium_td_7": {
+    "english": "Type 5 Ka-To",
+    "russian": "Средняя бронетехника: Type 5 Ka-To"
+  },
+  "jap_medium_td_8": {
+    "english": "Na-To",
+    "russian": "Средняя бронетехника: Na-To"
+  },
+  "jap_medium_td_9": {
+    "english": "Ho-Ri",
+    "russian": "Средняя бронетехника: Ho-Ri"
+  },
+  "jap_night_vision_1": {
+    "english": "Night Vision I",
+    "russian": "Ночное видение 1 (1944)"
+  },
+  "jap_pack_artillery_3": {
+    "english": "Artillery (1942)",
+    "russian": "Артиллерия 3 (1942)"
+  },
+  "jap_pack_artillery_4": {
+    "english": "Artillery (1944)",
+    "russian": "Артиллерия 4 (1944)"
+  },
+  "jap_paratroopers2": {
+    "english": "Paratroopers II",
+    "russian": "Воздушный десант 2 (1941)"
+  },
+  "jap_paratroopers3": {
+    "english": "Paratroopers III",
+    "russian": "Воздушный десант 3 (1943)"
+  },
+  "jap_patrol_4": {
+    "english": "H8K2",
+    "russian": "Патрульный самолёт: H8K2"
+  },
+  "jap_patrol_5": {
+    "english": "H8K3",
+    "russian": "Патрульный самолёт: H8K3"
+  },
+  "jap_patrol_ad_tech_4": {
+    "english": "Kawanishi H8K2",
+    "russian": "Патрульный самолёт: Kawanishi H8K2"
+  },
+  "jap_patrol_ad_tech_5": {
+    "english": "Kawanishi H8K3",
+    "russian": "Патрульный самолёт: Kawanishi H8K3"
+  },
+  "jap_recon_training": {
+    "english": "Recon Training",
+    "russian": "Разведывательная рота (1943)"
+  },
+  "jap_rocket_artillery_1": {
+    "english": "Artillery (1943)",
+    "russian": "Артиллерия 1 (1943)"
+  },
+  "jap_rocket_artillery_2": {
+    "english": "Artillery (1945)",
+    "russian": "Артиллерия 2 (1945)"
+  },
+  "jap_rocket_upgrade_1": {
+    "english": "Fixed Rail System",
+    "russian": "Ракетное вооружение 1 (1944)"
+  },
+  "jap_scout_plane_4": {
+    "english": "Ki-46-III",
+    "russian": "Разведывательный самолёт: Ki-46-III"
+  },
+  "jap_scout_plane_5": {
+    "english": "C6N",
+    "russian": "Разведывательный самолёт: C6N"
+  },
+  "jap_scout_plane_ad_tech_3": {
+    "english": "Mitsubishi Ki-46-II `Dinah`",
+    "russian": "Разведывательный самолёт: Mitsubishi Ki-46-II `Dinah`"
+  },
+  "jap_scout_plane_ad_tech_4": {
+    "english": "Mitsubishi Ki-46-III `Dinah`",
+    "russian": "Разведывательный самолёт: Mitsubishi Ki-46-III `Dinah`"
+  },
+  "jap_strategic_bomber_3": {
+    "english": "G5N1 Shinzan",
+    "russian": "Стратегический бомбардировщик: G5N1 Shinzan"
+  },
+  "jap_strategic_bomber_4": {
+    "english": "G8N1 Renzan",
+    "russian": "Стратегический бомбардировщик: G8N1 Renzan"
+  },
+  "jap_strategic_bomber_ad_tech_2": {
+    "english": "Nakajima G5N `Shinzan`",
+    "russian": "Стратегический бомбардировщик: Nakajima G5N `Shinzan`"
+  },
+  "jap_strategic_bomber_ad_tech_3": {
+    "english": "Nakajima G8N `Renzan`",
+    "russian": "Стратегический бомбардировщик: Nakajima G8N `Renzan`"
+  },
+  "jap_strike_bomber_3": {
+    "english": "Ki-66 Kawasaki",
+    "russian": "Ударный бомбардировщик: Ki-66 Kawasaki"
+  },
+  "jap_strike_bomber_4": {
+    "english": "Ki-67 Hiryu",
+    "russian": "Ударный бомбардировщик: Ki-67 Hiryu"
+  },
+  "jap_strike_bomber_ad_tech_3": {
+    "english": "Nakajima Ki-49 `Donryu`",
+    "russian": "Ударный бомбардировщик: Nakajima Ki-49 `Donryu`"
+  },
+  "jap_strike_bomber_ad_tech_3_1": {
+    "english": "Ki-49-II upgrade",
+    "russian": "Ударный бомбардировщик: Ki-49-II (модернизация)"
+  },
+  "jap_strike_bomber_ad_tech_4": {
+    "english": "Mitsubishi Ki-67 `Hiryū`",
+    "russian": "Ударный бомбардировщик: Mitsubishi Ki-67 `Hiryū`"
+  },
+  "jap_strike_bomber_ad_tech_4_1": {
+    "english": "Mitsubishi Ki-109 `Hiryū`",
+    "russian": "Ударный бомбардировщик: Mitsubishi Ki-109 `Hiryū`"
+  },
+  "jap_super_heavy_1": {
+    "english": "O-I",
+    "russian": "Тяжёлая бронетехника: O-I"
+  },
+  "jap_super_heavy_2": {
+    "english": "Type 5 O-Ro",
+    "russian": "Тяжёлая бронетехника: Type 5 O-Ro"
+  },
+  "jap_super_heavy_tank_chassis_1": {
+    "english": "O-I",
+    "russian": "Тяжёлый танк: O-I"
+  },
+  "jap_super_heavy_tank_chassis_2": {
+    "english": "O-Ro",
+    "russian": "Тяжёлый танк: O-Ro"
+  },
+  "jap_survival_training": {
+    "english": "Survival Training",
+    "russian": "Подготовка к выживанию (1941)"
+  },
+  "jap_tactical_bomber_3": {
+    "english": "G4M2",
+    "russian": "Тактический бомбардировщик: G4M2"
+  },
+  "jap_tactical_bomber_4": {
+    "english": "G4M3",
+    "russian": "Тактический бомбардировщик: G4M3"
+  },
+  "jap_tactical_bomber_ad_tech_3": {
+    "english": "Mitsubishi G4M2 `Hamaki`",
+    "russian": "Тактический бомбардировщик: Mitsubishi G4M2 `Hamaki`"
+  },
+  "jap_tactical_bomber_ad_tech_4": {
+    "english": "Mitsubishi G4M3 `Hamaki`",
+    "russian": "Тактический бомбардировщик: Mitsubishi G4M3 `Hamaki`"
+  },
+  "jap_tank_training": {
+    "english": "Anti-Tank Training",
+    "russian": "Противотанковая подготовка (1943)"
+  },
+  "jap_tech_mountaineers2": {
+    "english": "Mountain Infantry II",
+    "russian": "Горная пехота 2 (1941)"
+  },
+  "jap_tech_mountaineers3": {
+    "english": "Mountain Infantry III",
+    "russian": "Горная пехота 3 (1943)"
+  },
+  "jap_water_training": {
+    "english": "Water Training",
+    "russian": "Водная подготовка (1944)"
+  },
+  "jet_engines": {
+    "english": "Jet Engines",
+    "russian": "Реактивный самолёт (1944)"
+  },
+  "lend_lease_truck": {
+    "english": "Studebaker US6",
+    "russian": "Грузовики по ленд-лизу: Studebaker US6"
+  },
+  "long_lance": {
+    "english": "Long Lance Torpedoes (1945)",
+    "russian": "Торпеды Long Lance (1945)"
+  },
+  "modern_naval_mines": {
+    "english": "Pressure Mine",
+    "russian": "Современная бронетехника (1944)"
+  },
+  "modern_oil_processing": {
+    "english": "Modern Oil Processing",
+    "russian": "Переработка нефти (1945)"
+  },
+  "modern_rubber_processing": {
+    "english": "Modern Rubber Processing",
+    "russian": "Переработка каучука (1945)"
+  },
+  "mtg_amphibious_assault_ships": {
+    "english": "Amphibious Assault Ships (1942)",
+    "russian": "Десантные корабли (1942)"
+  },
+  "mtg_large_landing_craft": {
+    "english": "Floating Harbor",
+    "russian": "Военная технология: Floating Harbor"
+  },
+  "mtg_tank_floats": {
+    "english": "Tank Floats (1944)",
+    "russian": "Понтоны для танков (1944)"
+  },
+  "mtg_tank_snorkals": {
+    "english": "Tank Snorkels (1941)",
+    "russian": "Подводное оборудование танков (1941)"
+  },
+  "rocket_engines": {
+    "english": "Basic Guided Missile",
+    "russian": "Ракетное вооружение: Basic Guided Missile"
+  },
+  "sov_aa_tower_3": {
+    "english": "Large AA Towers",
+    "russian": "Зенитная башня 3 (1943)"
+  },
+  "sov_anti_air_upgrade_2": {
+    "english": "Increase Propellant",
+    "russian": "Зенитное вооружение 2 (1941)"
+  },
+  "sov_anti_air_upgrade_3": {
+    "english": "Increased Gun Depression",
+    "russian": "Зенитное вооружение 3 (1943)"
+  },
+  "sov_anti_air_upgrade_4": {
+    "english": "Water Coolers",
+    "russian": "Зенитное вооружение 4 (1945)"
+  },
+  "sov_anti_tank_3": {
+    "english": "Anti-Tank Weapons (1941)",
+    "russian": "Противотанковое вооружение 3 (1941)"
+  },
+  "sov_anti_tank_4": {
+    "english": "Anti-Tank Weapons (1943)",
+    "russian": "Противотанковое вооружение 4 (1943)"
+  },
+  "sov_anti_tank_5": {
+    "english": "Anti-Tank Weapons (1944)",
+    "russian": "Противотанковое вооружение 5 (1944)"
+  },
+  "sov_anti_tank_upgrade_3": {
+    "english": "Improved Gun Sights",
+    "russian": "Противотанковое вооружение 3 (1942)"
+  },
+  "sov_armoured_car_3": {
+    "english": "BA-11",
+    "russian": "Бронеавтомобиль: BA-11"
+  },
+  "sov_artillery_3": {
+    "english": "Artillery (1941)",
+    "russian": "Артиллерия 3 (1941)"
+  },
+  "sov_artillery_4": {
+    "english": "Artillery (1944)",
+    "russian": "Артиллерия 4 (1944)"
+  },
+  "sov_artillery_upgrade_3": {
+    "english": "Faster Reciever",
+    "russian": "Артиллерия 3 (1942)"
+  },
+  "sov_artillery_upgrade_4": {
+    "english": "Improved Breech Ring",
+    "russian": "Артиллерия 4 (1945)"
+  },
+  "sov_attacker_1": {
+    "english": "Pe-3 `Peshka`",
+    "russian": "Самолёт-штурмовик: Pe-3 `Peshka`"
+  },
+  "sov_attacker_2": {
+    "english": "Pe-3bis `Peshka`",
+    "russian": "Самолёт-штурмовик: Pe-3bis `Peshka`"
+  },
+  "sov_attacker_3": {
+    "english": "Gr-1",
+    "russian": "Самолёт-штурмовик: Gr-1"
+  },
+  "sov_attacker_ad_tech_1": {
+    "english": "Petlyakov Pe-3 `Peshka`",
+    "russian": "Самолёт-штурмовик: Petlyakov Pe-3 `Peshka`"
+  },
+  "sov_attacker_ad_tech_2": {
+    "english": "Petlyakov Pe-3bis `Peshka`",
+    "russian": "Самолёт-штурмовик: Petlyakov Pe-3bis `Peshka`"
+  },
+  "sov_cas_3": {
+    "english": "Il-2",
+    "russian": "Штурмовик: Il-2"
+  },
+  "sov_cas_4": {
+    "english": "Il-2M",
+    "russian": "Штурмовик: Il-2M"
+  },
+  "sov_cas_5": {
+    "english": "Il-10",
+    "russian": "Штурмовик: Il-10"
+  },
+  "sov_cas_ad_tech_3": {
+    "english": "Ilyushin Il-2 `Ilyusha`",
+    "russian": "Штурмовик: Ilyushin Il-2 `Ilyusha`"
+  },
+  "sov_cas_ad_tech_4": {
+    "english": "Ilyushin Il-2M `Ilyusha`",
+    "russian": "Штурмовик: Ilyushin Il-2M `Ilyusha`"
+  },
+  "sov_cas_ad_tech_5": {
+    "english": "Ilyushin Il-10",
+    "russian": "Штурмовик: Ilyushin Il-10"
+  },
+  "sov_combat_armoured_car_3": {
+    "english": "BA-11",
+    "russian": "Бронеавтомобиль: BA-11"
+  },
+  "sov_cv_cas_2": {
+    "english": "SU-6",
+    "russian": "Штурмовик: SU-6"
+  },
+  "sov_cv_cas_ad_tech_2": {
+    "english": "Sukhoi Su-4",
+    "russian": "Штурмовик: Sukhoi Su-4"
+  },
+  "sov_cv_fighter_3": {
+    "english": "Yak-1C",
+    "russian": "Истребитель: Yak-1C"
+  },
+  "sov_cv_fighter_7": {
+    "english": "Yak-9C",
+    "russian": "Истребитель: Yak-9C"
+  },
+  "sov_cv_fighter_ad_tech_3": {
+    "english": "Yakovlev Yak-1C",
+    "russian": "Истребитель: Yakovlev Yak-1C"
+  },
+  "sov_cv_fighter_ad_tech_6": {
+    "english": "Yakovlev Yak-9C",
+    "russian": "Истребитель: Yakovlev Yak-9C"
+  },
+  "sov_cv_naval_bomber_2": {
+    "english": "R-10",
+    "russian": "Военная технология: R-10"
+  },
+  "sov_cv_naval_bomber_3": {
+    "english": "R-12",
+    "russian": "Военная технология: R-12"
+  },
+  "sov_cv_naval_bomber_ad_tech_3": {
+    "english": "Polikarpov SPB-2",
+    "russian": "Военная технология: Polikarpov SPB-2"
+  },
+  "sov_cv_naval_bomber_ad_tech_4": {
+    "english": "Chetverikov Che-4",
+    "russian": "Военная технология: Chetverikov Che-4"
+  },
+  "sov_elite_forces": {
+    "english": "Elite Forces",
+    "russian": "Элитные войска (1945)"
+  },
+  "sov_extreme_environment_training": {
+    "english": "Extreme Environment Training",
+    "russian": "Подготовка к экстремальным условиям (1941)"
+  },
+  "sov_fighter_3": {
+    "english": "Yak-1",
+    "russian": "Истребитель: Yak-1"
+  },
+  "sov_fighter_4": {
+    "english": "Yak-7B",
+    "russian": "Истребитель: Yak-7B"
+  },
+  "sov_fighter_5": {
+    "english": "Yak-9D",
+    "russian": "Истребитель: Yak-9D"
+  },
+  "sov_fighter_6": {
+    "english": "Yak-9U (VK105)",
+    "russian": "Истребитель: Yak-9U (VK105)"
+  },
+  "sov_fighter_ad_tech_3": {
+    "english": "Yakovlev Yak-1",
+    "russian": "Истребитель: Yakovlev Yak-1"
+  },
+  "sov_fighter_ad_tech_4": {
+    "english": "Yakovlev Yak-7B",
+    "russian": "Истребитель: Yakovlev Yak-7B"
+  },
+  "sov_fighter_ad_tech_5": {
+    "english": "Yakovlev Yak-9D",
+    "russian": "Истребитель: Yakovlev Yak-9D"
+  },
+  "sov_fighter_ad_tech_5_1": {
+    "english": "Yakovlev Yak-9U",
+    "russian": "Истребитель: Yakovlev Yak-9U"
+  },
+  "sov_fighter_ad_tech_6": {
+    "english": "Yakovlev Yak-3",
+    "russian": "Истребитель: Yakovlev Yak-3"
+  },
+  "sov_fighter_multirole_5": {
+    "english": "LaGG-3",
+    "russian": "Истребитель: LaGG-3"
+  },
+  "sov_fighter_multirole_6": {
+    "english": "La-5",
+    "russian": "Истребитель: La-5"
+  },
+  "sov_fighter_multirole_7": {
+    "english": "La-5FN",
+    "russian": "Истребитель: La-5FN"
+  },
+  "sov_fighter_multirole_8": {
+    "english": "La-7",
+    "russian": "Истребитель: La-7"
+  },
+  "sov_fighter_multirole_ad_tech_5": {
+    "english": "Lavochkin LaGG-3",
+    "russian": "Истребитель: Lavochkin LaGG-3"
+  },
+  "sov_fighter_multirole_ad_tech_5_1": {
+    "english": "Lavochkin LaGG-3-35 upgrade",
+    "russian": "Истребитель: Lavochkin LaGG-3-35 (модернизация)"
+  },
+  "sov_fighter_multirole_ad_tech_6": {
+    "english": "Lavochkin La-5 `Lavka`",
+    "russian": "Истребитель: Lavochkin La-5 `Lavka`"
+  },
+  "sov_fighter_multirole_ad_tech_7": {
+    "english": "Lavochkin La-5FN `Lavka`",
+    "russian": "Истребитель: Lavochkin La-5FN `Lavka`"
+  },
+  "sov_fighter_multirole_ad_tech_8": {
+    "english": "Lavochkin La-7 `Lavka`",
+    "russian": "Истребитель: Lavochkin La-7 `Lavka`"
+  },
+  "sov_heavy_3": {
+    "english": "KV-1 76 (41)",
+    "russian": "Тяжёлая бронетехника: KV-1 76 (41)"
+  },
+  "sov_heavy_4": {
+    "english": "KV-1S",
+    "russian": "Тяжёлая бронетехника: KV-1S"
+  },
+  "sov_heavy_5": {
+    "english": "KV-85",
+    "russian": "Тяжёлая бронетехника: KV-85"
+  },
+  "sov_heavy_6": {
+    "english": "IS-1",
+    "russian": "Тяжёлая бронетехника: IS-1"
+  },
+  "sov_heavy_7": {
+    "english": "IS-2 (43)",
+    "russian": "Тяжёлая бронетехника: IS-2 (43)"
+  },
+  "sov_heavy_8": {
+    "english": "IS-2 (44)",
+    "russian": "Тяжёлая бронетехника: IS-2 (44)"
+  },
+  "sov_heavy_anti_tank_1": {
+    "english": "Anti-Tank Weapons (1943)",
+    "russian": "Противотанковое вооружение 1 (1943)"
+  },
+  "sov_heavy_artillery_3": {
+    "english": "Artillery (1943)",
+    "russian": "Артиллерия 3 (1943)"
+  },
+  "sov_heavy_infantry_weapons_2": {
+    "english": "Maxim MG + DP-27 + PTRD-41",
+    "russian": "Пехотное вооружение: Maxim MG + DP-27 + PTRD-41"
+  },
+  "sov_heavy_infantry_weapons_4": {
+    "english": "DS-39 + DP-27 + PTRD-41",
+    "russian": "Пехотное вооружение: DS-39 + DP-27 + PTRD-41"
+  },
+  "sov_heavy_infantry_weapons_5": {
+    "english": "SG-43 + DPM + PTRD-41",
+    "russian": "Пехотное вооружение: SG-43 + DPM + PTRD-41"
+  },
+  "sov_heavy_spg_3": {
+    "english": "212A",
+    "russian": "Тяжёлая бронетехника: 212A"
+  },
+  "sov_heavy_spg_4": {
+    "english": "S 51",
+    "russian": "Тяжёлая бронетехника: S 51"
+  },
+  "sov_heavy_spg_6": {
+    "english": "SU-152",
+    "russian": "Тяжёлая бронетехника: SU-152"
+  },
+  "sov_heavy_spg_7": {
+    "english": "ISU-152",
+    "russian": "Тяжёлая бронетехника: ISU-152"
+  },
+  "sov_heavy_spg_9": {
+    "english": "Object-704",
+    "russian": "Тяжёлая бронетехника: Object-704"
+  },
+  "sov_heavy_tank_chassis_2_2": {
+    "english": "KV-1 (41)",
+    "russian": "Тяжёлый танк: KV-1 (41)"
+  },
+  "sov_heavy_tank_chassis_2_3": {
+    "english": "KV-1 (42)",
+    "russian": "Тяжёлый танк: KV-1 (42)"
+  },
+  "sov_heavy_tank_chassis_3": {
+    "english": "KV-1S",
+    "russian": "Тяжёлый танк: KV-1S"
+  },
+  "sov_heavy_tank_chassis_3_2": {
+    "english": "KV (85)",
+    "russian": "Тяжёлый танк: KV (85)"
+  },
+  "sov_heavy_tank_chassis_4": {
+    "english": "IS-1",
+    "russian": "Тяжёлый танк: IS-1"
+  },
+  "sov_heavy_tank_chassis_4_2": {
+    "english": "IS-2",
+    "russian": "Тяжёлый танк: IS-2"
+  },
+  "sov_heavy_tank_spg_3": {
+    "english": "212A",
+    "russian": "Тяжёлый танк: 212A"
+  },
+  "sov_heavy_tank_spg_4": {
+    "english": "S 51",
+    "russian": "Тяжёлый танк: S 51"
+  },
+  "sov_heavy_tank_spg_6": {
+    "english": "SU 152",
+    "russian": "Тяжёлый танк: SU 152"
+  },
+  "sov_heavy_tank_spg_7": {
+    "english": "ISU 152",
+    "russian": "Тяжёлый танк: ISU 152"
+  },
+  "sov_heavy_tank_spg_9": {
+    "english": "Object 704",
+    "russian": "Тяжёлый танк: Object 704"
+  },
+  "sov_heavy_tank_td_7": {
+    "english": "ISU 122",
+    "russian": "Тяжёлый танк: ISU 122"
+  },
+  "sov_heavy_td_7": {
+    "english": "ISU 122",
+    "russian": "Тяжёлая бронетехника: ISU 122"
+  },
+  "sov_infantry_weapons_5": {
+    "english": "SVT-40 + PPS",
+    "russian": "Пехотное вооружение: SVT-40 + PPS"
+  },
+  "sov_infantry_weapons_upgrade_3": {
+    "english": "RPG-43",
+    "russian": "Пехотное вооружение 3 (1943)"
+  },
+  "sov_infantry_weapons_upgrade_5": {
+    "english": "VKG-40",
+    "russian": "Пехотное вооружение 5 (1944)"
+  },
+  "sov_interceptor_ad_tech_2": {
+    "english": "Mikoyan MiG-3",
+    "russian": "Перехватчик: Mikoyan MiG-3"
+  },
+  "sov_interceptor_ad_tech_3": {
+    "english": "Mikoyan MiG-7",
+    "russian": "Перехватчик: Mikoyan MiG-7"
+  },
+  "sov_jungle_training": {
+    "english": "Jungle Training",
+    "russian": "Подготовка к бою в джунглях (1944)"
+  },
+  "sov_light_4": {
+    "english": "T-60",
+    "russian": "Лёгкая бронетехника: T-60"
+  },
+  "sov_light_5": {
+    "english": "T-70",
+    "russian": "Лёгкая бронетехника: T-70"
+  },
+  "sov_light_6": {
+    "english": "T-80",
+    "russian": "Лёгкая бронетехника: T-80"
+  },
+  "sov_light_aa_4": {
+    "english": "T-90",
+    "russian": "Лёгкая бронетехника: T-90"
+  },
+  "sov_light_aa_5": {
+    "english": "ZUT-37",
+    "russian": "Лёгкая бронетехника: ZUT-37"
+  },
+  "sov_light_aa_6": {
+    "english": "ZSU-37",
+    "russian": "Лёгкая бронетехника: ZSU-37"
+  },
+  "sov_light_spg_5": {
+    "english": "SU-76",
+    "russian": "Лёгкая бронетехника: SU-76"
+  },
+  "sov_light_tank_aa_4": {
+    "english": "T-90",
+    "russian": "Лёгкий танк: T-90"
+  },
+  "sov_light_tank_aa_5": {
+    "english": "ZUT 37",
+    "russian": "Лёгкий танк: ZUT 37"
+  },
+  "sov_light_tank_aa_6": {
+    "english": "ZSU 37",
+    "russian": "Лёгкий танк: ZSU 37"
+  },
+  "sov_light_tank_chassis_4": {
+    "english": "T-60",
+    "russian": "Лёгкий танк: T-60"
+  },
+  "sov_light_tank_chassis_4_2": {
+    "english": "T-70",
+    "russian": "Лёгкий танк: T-70"
+  },
+  "sov_light_tank_chassis_4_3": {
+    "english": "T-80",
+    "russian": "Лёгкий танк: T-80"
+  },
+  "sov_light_tank_spg_2": {
+    "english": "SU 26",
+    "russian": "Лёгкий танк: SU 26"
+  },
+  "sov_light_tank_spg_5": {
+    "english": "SU 76",
+    "russian": "Лёгкий танк: SU 76"
+  },
+  "sov_light_tank_spg_6": {
+    "english": "SU-76M",
+    "russian": "Лёгкий танк: SU-76M"
+  },
+  "sov_marines2": {
+    "english": "Marines II",
+    "russian": "Морская пехота 2 (1941)"
+  },
+  "sov_marines3": {
+    "english": "Marines III",
+    "russian": "Морская пехота 3 (1943)"
+  },
+  "sov_mechanized_aa_2": {
+    "english": "ZiS-43",
+    "russian": "Механизированная пехота: ZiS-43"
+  },
+  "sov_mechanized_artillery_1": {
+    "english": "BM-13 Katyusha",
+    "russian": "Механизированная пехота: BM-13 Katyusha"
+  },
+  "sov_mechanized_artillery_2": {
+    "english": "BM-31 Katyusha",
+    "russian": "Механизированная пехота: BM-31 Katyusha"
+  },
+  "sov_mechanized_infantry_3": {
+    "english": "ZiS-42",
+    "russian": "Механизированная пехота: ZiS-42"
+  },
+  "sov_mechanized_infantry_4": {
+    "english": "B-3",
+    "russian": "Механизированная пехота: B-3"
+  },
+  "sov_mechanized_td_1": {
+    "english": "ZiS-30",
+    "russian": "Механизированная пехота: ZiS-30"
+  },
+  "sov_medium_4": {
+    "english": "T-34 76 (41)",
+    "russian": "Средняя бронетехника: T-34 76 (41)"
+  },
+  "sov_medium_5": {
+    "english": "T-34 76 (42)",
+    "russian": "Средняя бронетехника: T-34 76 (42)"
+  },
+  "sov_medium_6": {
+    "english": "T-34 85",
+    "russian": "Средняя бронетехника: T-34 85"
+  },
+  "sov_medium_7": {
+    "english": "T-34M",
+    "russian": "Средняя бронетехника: T-34M"
+  },
+  "sov_medium_8": {
+    "english": "T-43",
+    "russian": "Средняя бронетехника: T-43"
+  },
+  "sov_medium_infantry_support_tank_3": {
+    "english": "T-34 122",
+    "russian": "Подготовка пехоты: T-34 122"
+  },
+  "sov_medium_spg_3": {
+    "english": "SU 122",
+    "russian": "Средняя бронетехника: SU 122"
+  },
+  "sov_medium_tank_chassis_3_2": {
+    "english": "T-34 (41)",
+    "russian": "Средний танк: T-34 (41)"
+  },
+  "sov_medium_tank_chassis_3_3": {
+    "english": "T-34 (42)",
+    "russian": "Средний танк: T-34 (42)"
+  },
+  "sov_medium_tank_chassis_3_4": {
+    "english": "T-34 (85)",
+    "russian": "Средний танк: T-34 (85)"
+  },
+  "sov_medium_tank_chassis_4": {
+    "english": "T-34M",
+    "russian": "Средний танк: T-34M"
+  },
+  "sov_medium_tank_chassis_5": {
+    "english": "T-43",
+    "russian": "Средний танк: T-43"
+  },
+  "sov_medium_tank_spg_3": {
+    "english": "SU 122",
+    "russian": "Средний танк: SU 122"
+  },
+  "sov_medium_tank_spg_4": {
+    "english": "SU-122M",
+    "russian": "Средний танк: SU-122M"
+  },
+  "sov_medium_tank_td_2": {
+    "english": "T-34 (57)",
+    "russian": "Средний танк: T-34 (57)"
+  },
+  "sov_medium_tank_td_3": {
+    "english": "SU 85",
+    "russian": "Средний танк: SU 85"
+  },
+  "sov_medium_tank_td_4": {
+    "english": "SU 100",
+    "russian": "Средний танк: SU 100"
+  },
+  "sov_medium_td_1": {
+    "english": "ZiS-30",
+    "russian": "Средняя бронетехника: ZiS-30"
+  },
+  "sov_medium_td_2": {
+    "english": "T-34 57",
+    "russian": "Средняя бронетехника: T-34 57"
+  },
+  "sov_medium_td_3": {
+    "english": "SU 85",
+    "russian": "Средняя бронетехника: SU 85"
+  },
+  "sov_medium_td_4": {
+    "english": "SU 100",
+    "russian": "Средняя бронетехника: SU 100"
+  },
+  "sov_modern_1": {
+    "english": "T-44",
+    "russian": "Современная бронетехника: T-44"
+  },
+  "sov_modern_tank_chassis_1": {
+    "english": "T-44",
+    "russian": "Современная бронетехника: T-44"
+  },
+  "sov_naval_bomber_2": {
+    "english": "Il-2T",
+    "russian": "Военная технология: Il-2T"
+  },
+  "sov_naval_bomber_ad_tech_1": {
+    "english": "Il-2T",
+    "russian": "Военная технология: Il-2T"
+  },
+  "sov_night_vision_1": {
+    "english": "Night Vision I",
+    "russian": "Ночное видение 1 (1944)"
+  },
+  "sov_pack_artillery_3": {
+    "english": "Artillery (1943)",
+    "russian": "Артиллерия 3 (1943)"
+  },
+  "sov_paratroopers2": {
+    "english": "Paratroopers II",
+    "russian": "Воздушный десант 2 (1941)"
+  },
+  "sov_paratroopers3": {
+    "english": "Paratroopers III",
+    "russian": "Воздушный десант 3 (1943)"
+  },
+  "sov_patrol_2": {
+    "english": "Be-4",
+    "russian": "Патрульный самолёт: Be-4"
+  },
+  "sov_patrol_3": {
+    "english": "Be-5",
+    "russian": "Патрульный самолёт: Be-5"
+  },
+  "sov_patrol_ad_tech_2": {
+    "english": "Beriev Be-4",
+    "russian": "Патрульный самолёт: Beriev Be-4"
+  },
+  "sov_patrol_ad_tech_3": {
+    "english": "Beriev Be-5",
+    "russian": "Патрульный самолёт: Beriev Be-5"
+  },
+  "sov_recon_training": {
+    "english": "Recon Training",
+    "russian": "Разведывательная рота (1943)"
+  },
+  "sov_rocket_artillery_1": {
+    "english": "Artillery (1941)",
+    "russian": "Артиллерия 1 (1941)"
+  },
+  "sov_rocket_artillery_2": {
+    "english": "Artillery (1944)",
+    "russian": "Артиллерия 2 (1944)"
+  },
+  "sov_rocket_upgrade_1": {
+    "english": "Fixed Rail System",
+    "russian": "Ракетное вооружение 1 (1942)"
+  },
+  "sov_rocket_upgrade_2": {
+    "english": "Packed Explosives",
+    "russian": "Ракетное вооружение 2 (1943)"
+  },
+  "sov_scout_armoured_car_3": {
+    "english": "BA-64",
+    "russian": "Разведывательный бронеавтомобиль: BA-64"
+  },
+  "sov_scout_car_3": {
+    "english": "BA-64",
+    "russian": "Разведывательный бронеавтомобиль: BA-64"
+  },
+  "sov_scout_plane_2": {
+    "english": "Yak-4",
+    "russian": "Разведывательный самолёт: Yak-4"
+  },
+  "sov_scout_plane_ad_tech_2": {
+    "english": "Yakovlev Yak-4",
+    "russian": "Разведывательный самолёт: Yakovlev Yak-4"
+  },
+  "sov_strategic_bomber_3": {
+    "english": "Yer-2M",
+    "russian": "Стратегический бомбардировщик: Yer-2M"
+  },
+  "sov_strategic_bomber_4": {
+    "english": "Yer-2A",
+    "russian": "Стратегический бомбардировщик: Yer-2A"
+  },
+  "sov_strategic_bomber_ad_tech_3": {
+    "english": "Yermolayev Yer-2 2M-105",
+    "russian": "Стратегический бомбардировщик: Yermolayev Yer-2 2M-105"
+  },
+  "sov_strategic_bomber_ad_tech_4": {
+    "english": "Yermolayev Yer-2 2Ach-30B",
+    "russian": "Стратегический бомбардировщик: Yermolayev Yer-2 2Ach-30B"
+  },
+  "sov_strike_bomber_3": {
+    "english": "Pe-2",
+    "russian": "Ударный бомбардировщик: Pe-2"
+  },
+  "sov_strike_bomber_4": {
+    "english": "Tu-2",
+    "russian": "Ударный бомбардировщик: Tu-2"
+  },
+  "sov_strike_bomber_5": {
+    "english": "Tu-2S",
+    "russian": "Ударный бомбардировщик: Tu-2S"
+  },
+  "sov_strike_bomber_ad_tech_3": {
+    "english": "Petlyakov Pe-2 `Peshka`",
+    "russian": "Ударный бомбардировщик: Petlyakov Pe-2 `Peshka`"
+  },
+  "sov_strike_bomber_ad_tech_4": {
+    "english": "Tupolev Tu-2 `Bat`",
+    "russian": "Ударный бомбардировщик: Tupolev Tu-2 `Bat`"
+  },
+  "sov_strike_bomber_ad_tech_5": {
+    "english": "Tupolev Tu-2S `Bat`",
+    "russian": "Ударный бомбардировщик: Tupolev Tu-2S `Bat`"
+  },
+  "sov_survival_training": {
+    "english": "Survival Training",
+    "russian": "Подготовка к выживанию (1941)"
+  },
+  "sov_tactical_bomber_3": {
+    "english": "Il-6",
+    "russian": "Тактический бомбардировщик: Il-6"
+  },
+  "sov_tank_training": {
+    "english": "Anti-Tank Training",
+    "russian": "Противотанковая подготовка (1943)"
+  },
+  "sov_tech_mountaineers2": {
+    "english": "Mountain Infantry II",
+    "russian": "Горная пехота 2 (1941)"
+  },
+  "sov_tech_mountaineers3": {
+    "english": "Mountain Infantry III",
+    "russian": "Горная пехота 3 (1943)"
+  },
+  "sov_water_training": {
+    "english": "Water Training",
+    "russian": "Водная подготовка (1944)"
+  },
+  "squid_depth_charge_mortar": {
+    "english": "Depth Charge Mortar (1944)",
+    "russian": "Миномёт для глубинных бомб (1944)"
+  },
+  "streamlined_line_comp": {
+    "english": "Streamlined Line (component production)",
+    "russian": "Оптимизированная производственная линия (1945) (производство компонентов)"
+  },
+  "superior_computing_machine": {
+    "english": "Superior Computing Machine (component production)",
+    "russian": "Вычислительные машины (1944) (производство компонентов)"
+  },
+  "superior_decryption": {
+    "english": "Superior Decryption",
+    "russian": "Дешифрование (1944)"
+  },
+  "superior_encryption": {
+    "english": "Superior Encryption",
+    "russian": "Шифрование (1944)"
+  },
+  "superior_oil_processing": {
+    "english": "Superior oil processing",
+    "russian": "Переработка нефти (1943)"
+  },
+  "superior_rubber_processing": {
+    "english": "Superior rubber processing",
+    "russian": "Переработка каучука (1943)"
+  },
+  "tech_battlefield_medicine_2": {
+    "english": "Improved Medicine",
+    "russian": "Военная медицина 2 (1942)"
+  },
+  "tech_battlefield_medicine_3": {
+    "english": "Advanced Medicine",
+    "russian": "Военная медицина 3 (1945)"
+  },
+  "tech_engineers3": {
+    "english": "Engineer Company III",
+    "russian": "Инженерная рота 3 (1941)"
+  },
+  "tech_engineers4": {
+    "english": "Engineer Company IV",
+    "russian": "Инженерная рота 4 (1943)"
+  },
+  "tech_engineers5": {
+    "english": "Engineers Company V",
+    "russian": "Инженерная рота 5 (1945)"
+  },
+  "tech_field_hospital3": {
+    "english": "Field Hospital III",
+    "russian": "Полевой госпиталь 3 (1941)"
+  },
+  "tech_field_hospital4": {
+    "english": "Field Hospital IV",
+    "russian": "Полевой госпиталь 4 (1943)"
+  },
+  "tech_field_hospital5": {
+    "english": "Field Hospital V",
+    "russian": "Полевой госпиталь 5 (1945)"
+  },
+  "tech_headquarters1": {
+    "english": "Improved Headquarters",
+    "russian": "Штабное управление 1 (1941)"
+  },
+  "tech_headquarters2": {
+    "english": "Advanced Combat Command",
+    "russian": "Штабное управление 2 (1943)"
+  },
+  "tech_headquarters3": {
+    "english": "Flexible Task Forces",
+    "russian": "Штабное управление 3 (1945)"
+  },
+  "tech_logistics_company3": {
+    "english": "Logistics Company III (component production)",
+    "russian": "Рота обеспечения 3 (1941) (производство компонентов)"
+  },
+  "tech_logistics_company4": {
+    "english": "Logistics Company IV (component production)",
+    "russian": "Рота обеспечения 4 (1943) (производство компонентов)"
+  },
+  "tech_logistics_company5": {
+    "english": "Logistics Company V (component production)",
+    "russian": "Рота обеспечения 5 (1945) (производство компонентов)"
+  },
+  "tech_maintenance_company3": {
+    "english": "Maintenance Company III (component production)",
+    "russian": "Ремонтная рота 3 (1941) (производство компонентов)"
+  },
+  "tech_maintenance_company4": {
+    "english": "Maintenance Company IV (component production)",
+    "russian": "Ремонтная рота 4 (1943) (производство компонентов)"
+  },
+  "tech_maintenance_company5": {
+    "english": "Maintenance Company V (component production)",
+    "russian": "Ремонтная рота 5 (1945) (производство компонентов)"
+  },
+  "tech_military_police3": {
+    "english": "Military Police III",
+    "russian": "Военная полиция 3 (1941)"
+  },
+  "tech_military_police4": {
+    "english": "Military Police IV",
+    "russian": "Военная полиция 4 (1943)"
+  },
+  "tech_military_police5": {
+    "english": "Military Police V",
+    "russian": "Военная полиция 5 (1945)"
+  },
+  "tech_recon3": {
+    "english": "Recon Company III",
+    "russian": "Разведывательная рота 3 (1941)"
+  },
+  "tech_recon4": {
+    "english": "Recon Company IV",
+    "russian": "Разведывательная рота 4 (1943)"
+  },
+  "tech_recon5": {
+    "english": "Recon Company V",
+    "russian": "Разведывательная рота 5 (1945)"
+  },
+  "tech_signal_company3": {
+    "english": "Signal Company III (component production)",
+    "russian": "Рота связи 3 (1941) (производство компонентов)"
+  },
+  "tech_signal_company4": {
+    "english": "Signal Company IV (component production)",
+    "russian": "Рота связи 4 (1943) (производство компонентов)"
+  },
+  "tech_signal_company5": {
+    "english": "Signal Company V (component production)",
+    "russian": "Рота связи 5 (1945) (производство компонентов)"
+  },
+  "usa_aa_tower_2": {
+    "english": "AA Towers",
+    "russian": "Зенитная башня 2 (1941)"
+  },
+  "usa_aa_tower_3": {
+    "english": "Large AA Towers",
+    "russian": "Зенитная башня 3 (1943)"
+  },
+  "usa_amphibious_1": {
+    "english": "LVT 1",
+    "russian": "Амфибийные машины: LVT 1"
+  },
+  "usa_amphibious_2": {
+    "english": "LVT 2",
+    "russian": "Амфибийные машины: LVT 2"
+  },
+  "usa_amphibious_3": {
+    "english": "LVT 3",
+    "russian": "Амфибийные машины: LVT 3"
+  },
+  "usa_amphibious_4": {
+    "english": "LVT 4",
+    "russian": "Амфибийные машины: LVT 4"
+  },
+  "usa_anti_air_2": {
+    "english": "Anti-Air Weapons (1943)",
+    "russian": "Зенитное вооружение 2 (1943)"
+  },
+  "usa_anti_air_upgrade_3": {
+    "english": "Increased Gun Depression",
+    "russian": "Зенитное вооружение 3 (1942)"
+  },
+  "usa_anti_air_upgrade_4": {
+    "english": "Water Coolers",
+    "russian": "Зенитное вооружение 4 (1944)"
+  },
+  "usa_anti_tank_2": {
+    "english": "Anti-Tank Weapons (1942)",
+    "russian": "Противотанковое вооружение 2 (1942)"
+  },
+  "usa_anti_tank_3": {
+    "english": "Anti-Tank Weapons (1943)",
+    "russian": "Противотанковое вооружение 3 (1943)"
+  },
+  "usa_anti_tank_upgrade_2": {
+    "english": "Enhanced Gun Rammer",
+    "russian": "Противотанковое вооружение 2 (1941)"
+  },
+  "usa_anti_tank_upgrade_3": {
+    "english": "Improved Gun Sights",
+    "russian": "Противотанковое вооружение 3 (1944)"
+  },
+  "usa_armoured_car_4": {
+    "english": "M38 Wolfhound",
+    "russian": "Бронеавтомобиль: M38 Wolfhound"
+  },
+  "usa_artillery_3": {
+    "english": "Artillery (1941)",
+    "russian": "Артиллерия 3 (1941)"
+  },
+  "usa_artillery_upgrade_3": {
+    "english": "Faster Reciever",
+    "russian": "Артиллерия 3 (1943)"
+  },
+  "usa_artillery_upgrade_4": {
+    "english": "Improved Breech Ring",
+    "russian": "Артиллерия 4 (1945)"
+  },
+  "usa_attacker_1": {
+    "english": "P-61 Black Widow",
+    "russian": "Самолёт-штурмовик: P-61 Black Widow"
+  },
+  "usa_attacker_ad_tech_1": {
+    "english": "Northrop P-61A `Black Widow`",
+    "russian": "Самолёт-штурмовик: Northrop P-61A `Black Widow`"
+  },
+  "usa_cas_4": {
+    "english": "A-31 Vengeance",
+    "russian": "Штурмовик: A-31 Vengeance"
+  },
+  "usa_cas_5": {
+    "english": "F4U-1 Corsair",
+    "russian": "Штурмовик: F4U-1 Corsair"
+  },
+  "usa_cas_6": {
+    "english": "F4U-4B Corsair",
+    "russian": "Штурмовик: F4U-4B Corsair"
+  },
+  "usa_cas_ad_tech_4": {
+    "english": "North American A-36 `Apache`",
+    "russian": "Штурмовик: North American A-36 `Apache`"
+  },
+  "usa_cas_ad_tech_5": {
+    "english": "Vultee A-35B `Vengeance`",
+    "russian": "Штурмовик: Vultee A-35B `Vengeance`"
+  },
+  "usa_cas_ad_tech_6": {
+    "english": "Goodyear FG-1D `Corsair`",
+    "russian": "Штурмовик: Goodyear FG-1D `Corsair`"
+  },
+  "usa_combat_armoured_car_1": {
+    "english": "M8 Greyhound",
+    "russian": "Бронеавтомобиль: M8 Greyhound"
+  },
+  "usa_combat_armoured_car_2": {
+    "english": "T17E1 Staghound",
+    "russian": "Бронеавтомобиль: T17E1 Staghound"
+  },
+  "usa_combat_armoured_car_3": {
+    "english": "M38 Wolfhound",
+    "russian": "Бронеавтомобиль: M38 Wolfhound"
+  },
+  "usa_cv_cas_5": {
+    "english": "SB2C Helldiver",
+    "russian": "Штурмовик: SB2C Helldiver"
+  },
+  "usa_cv_cas_ad_tech_4": {
+    "english": "Curtiss SB2C-1C `Helldiver`",
+    "russian": "Штурмовик: Curtiss SB2C-1C `Helldiver`"
+  },
+  "usa_cv_cas_ad_tech_5": {
+    "english": "Vought F4U-1A `Corsair`",
+    "russian": "Штурмовик: Vought F4U-1A `Corsair`"
+  },
+  "usa_cv_cas_ad_tech_6": {
+    "english": "Vought F4U-4B `Corsair`",
+    "russian": "Штурмовик: Vought F4U-4B `Corsair`"
+  },
+  "usa_cv_fighter_3": {
+    "english": "F4F Wildcat",
+    "russian": "Истребитель: F4F Wildcat"
+  },
+  "usa_cv_fighter_4": {
+    "english": "F6F Hellcat",
+    "russian": "Истребитель: F6F Hellcat"
+  },
+  "usa_cv_fighter_ad_tech_3": {
+    "english": "Grumman F4F-4 `Wildcat`",
+    "russian": "Истребитель: Grumman F4F-4 `Wildcat`"
+  },
+  "usa_cv_fighter_ad_tech_4": {
+    "english": "Grumman F6F-3 `Hellcat`",
+    "russian": "Истребитель: Grumman F6F-3 `Hellcat`"
+  },
+  "usa_cv_naval_bomber_2": {
+    "english": "TBF Avenger",
+    "russian": "Военная технология: TBF Avenger"
+  },
+  "usa_cv_naval_bomber_3": {
+    "english": "BTD Destroyer",
+    "russian": "Военная технология: BTD Destroyer"
+  },
+  "usa_cv_naval_bomber_ad_tech_2": {
+    "english": "Grumman TBF-1C `Avenger`",
+    "russian": "Военная технология: Grumman TBF-1C `Avenger`"
+  },
+  "usa_cv_naval_bomber_ad_tech_3": {
+    "english": "Douglas BTD-1 `Destroyer`",
+    "russian": "Военная технология: Douglas BTD-1 `Destroyer`"
+  },
+  "usa_elite_forces": {
+    "english": "Elite Forces",
+    "russian": "Элитные войска (1945)"
+  },
+  "usa_extreme_environment_training": {
+    "english": "Extreme Environment Training",
+    "russian": "Подготовка к экстремальным условиям (1941)"
+  },
+  "usa_fighter_3": {
+    "english": "P-63 Kingcobra",
+    "russian": "Истребитель: P-63 Kingcobra"
+  },
+  "usa_fighter_4": {
+    "english": "P-51A Mustang",
+    "russian": "Истребитель: P-51A Mustang"
+  },
+  "usa_fighter_5": {
+    "english": "P-51D Mustang",
+    "russian": "Истребитель: P-51D Mustang"
+  },
+  "usa_fighter_6": {
+    "english": "P-75 Eagle",
+    "russian": "Истребитель: P-75 Eagle"
+  },
+  "usa_fighter_ad_tech_3": {
+    "english": "North American P-51 `Mustang`",
+    "russian": "Истребитель: North American P-51 `Mustang`"
+  },
+  "usa_fighter_ad_tech_4": {
+    "english": "North American P-51C `Mustang`",
+    "russian": "Истребитель: North American P-51C `Mustang`"
+  },
+  "usa_fighter_ad_tech_5": {
+    "english": "North American P-51D `Mustang`",
+    "russian": "Истребитель: North American P-51D `Mustang`"
+  },
+  "usa_fighter_multirole_2": {
+    "english": "P-47D Thunderbolt",
+    "russian": "Истребитель: P-47D Thunderbolt"
+  },
+  "usa_fighter_multirole_3": {
+    "english": "P-47N Thunderbolt",
+    "russian": "Истребитель: P-47N Thunderbolt"
+  },
+  "usa_fighter_multirole_ad_tech_1": {
+    "english": "Curtiss P-40E `Warhawk`",
+    "russian": "Истребитель: Curtiss P-40E `Warhawk`"
+  },
+  "usa_fighter_multirole_ad_tech_2": {
+    "english": "Republic P-47D-22 `Thunderbolt`",
+    "russian": "Истребитель: Republic P-47D-22 `Thunderbolt`"
+  },
+  "usa_fighter_multirole_ad_tech_3": {
+    "english": "Republic P-47D-28 `Thunderbolt`",
+    "russian": "Истребитель: Republic P-47D-28 `Thunderbolt`"
+  },
+  "usa_fighter_multirole_ad_tech_4": {
+    "english": "Republic P-47M/N `Thunderbolt`",
+    "russian": "Истребитель: Republic P-47M/N `Thunderbolt`"
+  },
+  "usa_heavy_1": {
+    "english": "M6 Heavy Tank",
+    "russian": "Тяжёлая бронетехника: M6 Heavy Tank"
+  },
+  "usa_heavy_anti_air_3": {
+    "english": "Anti-Air Weapons (1942)",
+    "russian": "Зенитное вооружение 3 (1942)"
+  },
+  "usa_heavy_anti_air_4": {
+    "english": "Anti-Air Weapons (1945)",
+    "russian": "Зенитное вооружение 4 (1945)"
+  },
+  "usa_heavy_anti_tank_1": {
+    "english": "Anti-Tank Weapons (1944)",
+    "russian": "Противотанковое вооружение 1 (1944)"
+  },
+  "usa_heavy_artillery_2": {
+    "english": "Artillery (1941)",
+    "russian": "Артиллерия 2 (1941)"
+  },
+  "usa_heavy_artillery_3": {
+    "english": "Artillery (1945)",
+    "russian": "Артиллерия 3 (1945)"
+  },
+  "usa_heavy_fighter_1": {
+    "english": "P-38E Lightning",
+    "russian": "Истребитель: P-38E Lightning"
+  },
+  "usa_heavy_fighter_2": {
+    "english": "P-38L Lightning",
+    "russian": "Истребитель: P-38L Lightning"
+  },
+  "usa_heavy_fighter_3": {
+    "english": "F7F Tigercat",
+    "russian": "Истребитель: F7F Tigercat"
+  },
+  "usa_heavy_fighter_ad_tech_1": {
+    "english": "Lockheed P-38E `Lightning`",
+    "russian": "Истребитель: Lockheed P-38E `Lightning`"
+  },
+  "usa_heavy_fighter_ad_tech_2": {
+    "english": "Lockheed P-38L `Lightning`",
+    "russian": "Истребитель: Lockheed P-38L `Lightning`"
+  },
+  "usa_heavy_fighter_ad_tech_3": {
+    "english": "Grumman F7F-1 `Tigercat`",
+    "russian": "Истребитель: Grumman F7F-1 `Tigercat`"
+  },
+  "usa_heavy_fighter_ad_tech_4": {
+    "english": "Lockheed P-58 `Chain Lightning`",
+    "russian": "Истребитель: Lockheed P-58 `Chain Lightning`"
+  },
+  "usa_heavy_infantry_weapons_4": {
+    "english": "M2HB Browning + M1919A4 Browning + M1918A2 BAR + M1 Bazooka",
+    "russian": "Пехотное вооружение: M2HB Browning + M1919A4 Browning + M1918A2 BAR + M1 Bazooka"
+  },
+  "usa_heavy_infantry_weapons_5": {
+    "english": "M2HB Browning + M1919A6 Browning + M1918A2 BAR + M9 Bazooka",
+    "russian": "Пехотное вооружение: M2HB Browning + M1919A6 Browning + M1918A2 BAR + M9 Bazooka"
+  },
+  "usa_heavy_infantry_weapons_6": {
+    "english": "M2HB Browning + M1919A6 Browning + M1918A2 BAR + M20 Super Bazooka",
+    "russian": "Пехотное вооружение: M2HB Browning + M1919A6 Browning + M1918A2 BAR + M20 Super Bazooka"
+  },
+  "usa_heavy_infantry_weapons_upgrade_3": {
+    "english": "M2 107mm Mortar",
+    "russian": "Пехотное вооружение 3 (1943)"
+  },
+  "usa_heavy_spg_3": {
+    "english": "T30",
+    "russian": "Тяжёлая бронетехника: T30"
+  },
+  "usa_heavy_tank_chassis_1": {
+    "english": "M6 Heavy",
+    "russian": "Тяжёлый танк: M6 Heavy"
+  },
+  "usa_heavy_tank_spg_2": {
+    "english": "T30",
+    "russian": "Тяжёлый танк: T30"
+  },
+  "usa_infantry_support_1": {
+    "english": "M8 Scott",
+    "russian": "Подготовка пехоты: M8 Scott"
+  },
+  "usa_infantry_support_2": {
+    "english": "M4A3 (105) Sherman",
+    "russian": "Подготовка пехоты: M4A3 (105) Sherman"
+  },
+  "usa_infantry_support_tank_1": {
+    "english": "M8 Scott",
+    "russian": "Подготовка пехоты: M8 Scott"
+  },
+  "usa_infantry_support_tank_2": {
+    "english": "M4A3 105",
+    "russian": "Подготовка пехоты: M4A3 105"
+  },
+  "usa_infantry_weapons_4": {
+    "english": "M1 Garand + M1 Carbine + M1A1 Thompson",
+    "russian": "Пехотное вооружение: M1 Garand + M1 Carbine + M1A1 Thompson"
+  },
+  "usa_infantry_weapons_5": {
+    "english": "M1 Garand + M1 Carbine + M3 Grease Gun",
+    "russian": "Пехотное вооружение: M1 Garand + M1 Carbine + M3 Grease Gun"
+  },
+  "usa_infantry_weapons_6": {
+    "english": "M1 Garand + M2 Carbine + M3A1 Grease Gun",
+    "russian": "Пехотное вооружение: M1 Garand + M2 Carbine + M3A1 Grease Gun"
+  },
+  "usa_infantry_weapons_7": {
+    "english": "M1 Garand + M2 Carbine + M1A1 Thompson",
+    "russian": "Пехотное вооружение: M1 Garand + M2 Carbine + M1A1 Thompson"
+  },
+  "usa_infantry_weapons_upgrade_3": {
+    "english": "M7 Grenade Launcher",
+    "russian": "Пехотное вооружение 3 (1943)"
+  },
+  "usa_interceptor_ad_tech_2": {
+    "english": "Bell P-39N `Airacobra`",
+    "russian": "Перехватчик: Bell P-39N `Airacobra`"
+  },
+  "usa_interceptor_ad_tech_3": {
+    "english": "Bell P-63A `Kingcobra`",
+    "russian": "Перехватчик: Bell P-63A `Kingcobra`"
+  },
+  "usa_interceptor_ad_tech_4": {
+    "english": "Bell P-63C `Kingcobra`",
+    "russian": "Перехватчик: Bell P-63C `Kingcobra`"
+  },
+  "usa_jungle_training": {
+    "english": "Jungle Training",
+    "russian": "Подготовка к бою в джунглях (1944)"
+  },
+  "usa_light_2": {
+    "english": "M3 Stuart",
+    "russian": "Лёгкая бронетехника: M3 Stuart"
+  },
+  "usa_light_3": {
+    "english": "M5 Stuart",
+    "russian": "Лёгкая бронетехника: M5 Stuart"
+  },
+  "usa_light_4": {
+    "english": "M24 Chaffee",
+    "russian": "Лёгкая бронетехника: M24 Chaffee"
+  },
+  "usa_light_4_aa": {
+    "english": "M19",
+    "russian": "Лёгкая бронетехника: M19"
+  },
+  "usa_light_7": {
+    "english": "M22 Locust",
+    "russian": "Лёгкая бронетехника: M22 Locust"
+  },
+  "usa_light_tank_aa_4": {
+    "english": "M19",
+    "russian": "Лёгкий танк: M19"
+  },
+  "usa_light_tank_chassis_2": {
+    "english": "M3 Stuart",
+    "russian": "Лёгкий танк: M3 Stuart"
+  },
+  "usa_light_tank_chassis_3": {
+    "english": "M5 Stuart",
+    "russian": "Лёгкий танк: M5 Stuart"
+  },
+  "usa_light_tank_chassis_4": {
+    "english": "M24 Chaffee",
+    "russian": "Лёгкий танк: M24 Chaffee"
+  },
+  "usa_light_tank_chassis_7": {
+    "english": "M22 Locust",
+    "russian": "Лёгкий танк: M22 Locust"
+  },
+  "usa_light_tank_td_3": {
+    "english": "T49 TD",
+    "russian": "Лёгкий танк: T49 TD"
+  },
+  "usa_light_tank_td_7": {
+    "english": "M18 Hellcat",
+    "russian": "Лёгкий танк: M18 Hellcat"
+  },
+  "usa_marines2": {
+    "english": "Marines II",
+    "russian": "Морская пехота 2 (1941)"
+  },
+  "usa_marines3": {
+    "english": "Marines III",
+    "russian": "Морская пехота 3 (1943)"
+  },
+  "usa_mechanized_aa_2": {
+    "english": "M16 GMC",
+    "russian": "Механизированная пехота: M16 GMC"
+  },
+  "usa_mechanized_aa_3": {
+    "english": "M15 GMC",
+    "russian": "Механизированная пехота: M15 GMC"
+  },
+  "usa_mechanized_artillery_2": {
+    "english": "T19 105 GMC",
+    "russian": "Механизированная пехота: T19 105 GMC"
+  },
+  "usa_mechanized_infantry_2": {
+    "english": "M3 Halftrack",
+    "russian": "Механизированная пехота: M3 Halftrack"
+  },
+  "usa_mechanized_infantry_3": {
+    "english": "M5 Halftrack",
+    "russian": "Механизированная пехота: M5 Halftrack"
+  },
+  "usa_mechanized_infantry_4": {
+    "english": "M39 APC",
+    "russian": "Механизированная пехота: M39 APC"
+  },
+  "usa_mechanized_td_2": {
+    "english": "M3 7.5cm",
+    "russian": "Механизированная пехота: M3 7.5cm"
+  },
+  "usa_medium_2_spg": {
+    "english": "HMC M7 Priest",
+    "russian": "Средняя бронетехника: HMC M7 Priest"
+  },
+  "usa_medium_2_td": {
+    "english": "M9",
+    "russian": "Средняя бронетехника: M9"
+  },
+  "usa_medium_3": {
+    "english": "M4A1 Sherman",
+    "russian": "Средняя бронетехника: M4A1 Sherman"
+  },
+  "usa_medium_3_armoured_rocket": {
+    "english": "T34 Calliope",
+    "russian": "Ракетное вооружение: T34 Calliope"
+  },
+  "usa_medium_3_spg": {
+    "english": "M12",
+    "russian": "Средняя бронетехника: M12"
+  },
+  "usa_medium_3_td": {
+    "english": "M10 Wolverine",
+    "russian": "Средняя бронетехника: M10 Wolverine"
+  },
+  "usa_medium_4": {
+    "english": "M4A2 Sherman",
+    "russian": "Средняя бронетехника: M4A2 Sherman"
+  },
+  "usa_medium_5": {
+    "english": "M4A3E8 Sherman",
+    "russian": "Средняя бронетехника: M4A3E8 Sherman"
+  },
+  "usa_medium_5_spg": {
+    "english": "M40",
+    "russian": "Средняя бронетехника: M40"
+  },
+  "usa_medium_5_td": {
+    "english": "M36 Jackson",
+    "russian": "Средняя бронетехника: M36 Jackson"
+  },
+  "usa_medium_6": {
+    "english": "T20",
+    "russian": "Средняя бронетехника: T20"
+  },
+  "usa_medium_7": {
+    "english": "T23",
+    "russian": "Средняя бронетехника: T23"
+  },
+  "usa_medium_aa_4": {
+    "english": "M4A3 Skink",
+    "russian": "Средняя бронетехника: M4A3 Skink"
+  },
+  "usa_medium_tank_3_armoured_rocket": {
+    "english": "T34 Calliope",
+    "russian": "Средний танк: T34 Calliope"
+  },
+  "usa_medium_tank_aa_4": {
+    "english": "M4A2 Skink",
+    "russian": "Средний танк: M4A2 Skink"
+  },
+  "usa_medium_tank_chassis_3": {
+    "english": "M4A1 Sherman",
+    "russian": "Средний танк: M4A1 Sherman"
+  },
+  "usa_medium_tank_chassis_3_2": {
+    "english": "M4A2 Sherman",
+    "russian": "Средний танк: M4A2 Sherman"
+  },
+  "usa_medium_tank_chassis_3_3": {
+    "english": "M4A3E8 Sherman",
+    "russian": "Средний танк: M4A3E8 Sherman"
+  },
+  "usa_medium_tank_chassis_4": {
+    "english": "T20",
+    "russian": "Средний танк: T20"
+  },
+  "usa_medium_tank_chassis_5": {
+    "english": "T23",
+    "russian": "Средний танк: T23"
+  },
+  "usa_medium_tank_spg_2": {
+    "english": "M7 Priest",
+    "russian": "Средний танк: M7 Priest"
+  },
+  "usa_medium_tank_spg_3": {
+    "english": "M12",
+    "russian": "Средний танк: M12"
+  },
+  "usa_medium_tank_spg_5": {
+    "english": "M40",
+    "russian": "Средний танк: M40"
+  },
+  "usa_medium_tank_td_2": {
+    "english": "M9",
+    "russian": "Средний танк: M9"
+  },
+  "usa_medium_tank_td_3": {
+    "english": "M10 Wolverine",
+    "russian": "Средний танк: M10 Wolverine"
+  },
+  "usa_medium_tank_td_4": {
+    "english": "M10A1 Wolverine",
+    "russian": "Средний танк: M10A1 Wolverine"
+  },
+  "usa_medium_tank_td_5": {
+    "english": "M36 Jackson",
+    "russian": "Средний танк: M36 Jackson"
+  },
+  "usa_medium_td_4": {
+    "english": "M18 Hellcat",
+    "russian": "Средняя бронетехника: M18 Hellcat"
+  },
+  "usa_modern_1": {
+    "english": "M26 Pershing",
+    "russian": "Современная бронетехника: M26 Pershing"
+  },
+  "usa_modern_tank_chassis_1": {
+    "english": "M26 Pershing",
+    "russian": "Современная бронетехника: M26 Pershing"
+  },
+  "usa_night_vision_1": {
+    "english": "Night Vision I",
+    "russian": "Ночное видение 1 (1944)"
+  },
+  "usa_pack_artillery_2": {
+    "english": "Artillery (1943)",
+    "russian": "Артиллерия 2 (1943)"
+  },
+  "usa_paratroopers2": {
+    "english": "Paratroopers II",
+    "russian": "Воздушный десант 2 (1941)"
+  },
+  "usa_paratroopers3": {
+    "english": "Paratroopers III",
+    "russian": "Воздушный десант 3 (1943)"
+  },
+  "usa_patrol_3": {
+    "english": "P4Y Privateer",
+    "russian": "Патрульный самолёт: P4Y Privateer"
+  },
+  "usa_patrol_ad_tech_3": {
+    "english": "Consolidated PB4Y-2 `Privateer`",
+    "russian": "Патрульный самолёт: Consolidated PB4Y-2 `Privateer`"
+  },
+  "usa_recon_training": {
+    "english": "Recon Training",
+    "russian": "Разведывательная рота (1943)"
+  },
+  "usa_rocket_artillery_1": {
+    "english": "Artillery (1945)",
+    "russian": "Артиллерия 1 (1945)"
+  },
+  "usa_rocket_upgrade_1": {
+    "english": "Fixed Rail System",
+    "russian": "Ракетное вооружение 1 (1941)"
+  },
+  "usa_rocket_upgrade_2": {
+    "english": "Packed Explosives",
+    "russian": "Ракетное вооружение 2 (1943)"
+  },
+  "usa_scout_car_3": {
+    "english": "M8 Greyhound",
+    "russian": "Разведывательный бронеавтомобиль: M8 Greyhound"
+  },
+  "usa_scout_car_4": {
+    "english": "T17E1 Staghound",
+    "russian": "Разведывательный бронеавтомобиль: T17E1 Staghound"
+  },
+  "usa_scout_plane_1": {
+    "english": "F-5E",
+    "russian": "Разведывательный самолёт: F-5E"
+  },
+  "usa_scout_plane_2": {
+    "english": "F-5G",
+    "russian": "Разведывательный самолёт: F-5G"
+  },
+  "usa_scout_plane_ad_tech_2": {
+    "english": "Lockheed F-4 `Lightning Recon`",
+    "russian": "Разведывательный самолёт: Lockheed F-4 `Lightning Recon`"
+  },
+  "usa_scout_plane_ad_tech_3": {
+    "english": "Lockheed F-5G `Lightning Recon`",
+    "russian": "Разведывательный самолёт: Lockheed F-5G `Lightning Recon`"
+  },
+  "usa_strategic_bomber_2_ad_tech_2": {
+    "english": "Consolidated B-24J `Liberator`",
+    "russian": "Стратегический бомбардировщик: Consolidated B-24J `Liberator`"
+  },
+  "usa_strategic_bomber_3": {
+    "english": "B-17F Flying Fortress",
+    "russian": "Стратегический бомбардировщик: B-17F Flying Fortress"
+  },
+  "usa_strategic_bomber_4": {
+    "english": "B-17G Flying Fortress",
+    "russian": "Стратегический бомбардировщик: B-17G Flying Fortress"
+  },
+  "usa_strategic_bomber_5": {
+    "english": "B-29 Super Fortress",
+    "russian": "Стратегический бомбардировщик: B-29 Super Fortress"
+  },
+  "usa_strategic_bomber_8": {
+    "english": "B-24J Liberator",
+    "russian": "Стратегический бомбардировщик: B-24J Liberator"
+  },
+  "usa_strategic_bomber_ad_tech_2": {
+    "english": "Boeing B-17F `Flying Fortress`",
+    "russian": "Стратегический бомбардировщик: Boeing B-17F `Flying Fortress`"
+  },
+  "usa_strategic_bomber_ad_tech_3": {
+    "english": "Boeing B-17G `Flying Fortress`",
+    "russian": "Стратегический бомбардировщик: Boeing B-17G `Flying Fortress`"
+  },
+  "usa_strategic_bomber_ad_tech_4": {
+    "english": "Boeing B-29A `Superfortress`",
+    "russian": "Стратегический бомбардировщик: Boeing B-29A `Superfortress`"
+  },
+  "usa_strike_bomber_3": {
+    "english": "A-26 Invader",
+    "russian": "Ударный бомбардировщик: A-26 Invader"
+  },
+  "usa_strike_bomber_ad_tech_4": {
+    "english": "Douglas A-20C `Havoc`",
+    "russian": "Ударный бомбардировщик: Douglas A-20C `Havoc`"
+  },
+  "usa_strike_bomber_ad_tech_4_2": {
+    "english": "Douglas P-70 `Havoc`",
+    "russian": "Ударный бомбардировщик: Douglas P-70 `Havoc`"
+  },
+  "usa_strike_bomber_ad_tech_5": {
+    "english": "Douglas A-26B `Invader`",
+    "russian": "Ударный бомбардировщик: Douglas A-26B `Invader`"
+  },
+  "usa_strike_bomber_ad_tech_6": {
+    "english": "Douglas A-26C `Invader`",
+    "russian": "Ударный бомбардировщик: Douglas A-26C `Invader`"
+  },
+  "usa_support_1": {
+    "english": "M4A3E2 Sherman Jumbo",
+    "russian": "Оснащение поддержки: M4A3E2 Sherman Jumbo"
+  },
+  "usa_support_2": {
+    "english": "M4A3E2 Jumbo 76'",
+    "russian": "Оснащение поддержки: M4A3E2 Jumbo 76'"
+  },
+  "usa_support_tank_chassis_1": {
+    "english": "M4A3 Jumbo",
+    "russian": "Оснащение поддержки: M4A3 Jumbo"
+  },
+  "usa_support_tank_chassis_2": {
+    "english": "M4A3 Jumbo 76'",
+    "russian": "Оснащение поддержки: M4A3 Jumbo 76'"
+  },
+  "usa_survival_training": {
+    "english": "Survival Training",
+    "russian": "Подготовка к выживанию (1941)"
+  },
+  "usa_tactical_bomber_5": {
+    "english": "B-25D Mitchell",
+    "russian": "Тактический бомбардировщик: B-25D Mitchell"
+  },
+  "usa_tactical_bomber_6": {
+    "english": "B-25J Mitchell",
+    "russian": "Тактический бомбардировщик: B-25J Mitchell"
+  },
+  "usa_tactical_bomber_ad_tech_5": {
+    "english": "North American B-25D `Mitchell`",
+    "russian": "Тактический бомбардировщик: North American B-25D `Mitchell`"
+  },
+  "usa_tactical_bomber_ad_tech_6": {
+    "english": "North American B-25H `Mitchell`",
+    "russian": "Тактический бомбардировщик: North American B-25H `Mitchell`"
+  },
+  "usa_tank_training": {
+    "english": "Anti-Tank Training",
+    "russian": "Противотанковая подготовка (1943)"
+  },
+  "usa_tech_mountaineers2": {
+    "english": "Mountain Infantry II",
+    "russian": "Горная пехота 2 (1941)"
+  },
+  "usa_tech_mountaineers3": {
+    "english": "Mountain Infantry III",
+    "russian": "Горная пехота 3 (1943)"
+  },
+  "usa_transport_plane_3": {
+    "english": "C-47 Skytrain",
+    "russian": "Транспортный самолёт: C-47 Skytrain"
+  },
+  "usa_water_training": {
+    "english": "Water Training",
+    "russian": "Водная подготовка (1944)"
+  },
+  "wartime_train": {
+    "english": "War Austerity Train",
+    "russian": "Военная технология: War Austerity Train"
+  }
+}

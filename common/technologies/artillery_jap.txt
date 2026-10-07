@@ -240,7 +240,7 @@ technologies = {
 	}
 
 	jap_artillery_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_artillery = {
@@ -288,7 +288,7 @@ technologies = {
 	}
 
 	jap_artillery_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Type 4 10cm
 
 		enable_equipments = {
@@ -335,7 +335,7 @@ technologies = {
 	}
 
 	jap_artillery_upgrade_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_artillery = {
@@ -467,7 +467,7 @@ technologies = {
 		}
 	}
 	jap_pack_artillery_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -514,7 +514,7 @@ technologies = {
 		}
 	}
 	jap_pack_artillery_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -665,7 +665,7 @@ technologies = {
 	}
 
 	jap_heavy_artillery_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -713,7 +713,7 @@ technologies = {
 	}
 
 	jap_rocket_artillery_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Type 4 40cm
 
 		enable_equipments = {
@@ -770,7 +770,7 @@ technologies = {
 	}
 
 	jap_rocket_upgrade_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		rocket_artillery = {
@@ -834,7 +834,7 @@ technologies = {
 	}
 
 	jap_rocket_artillery_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Type 5 15cm Tarenso
 
 		enable_equipments = {
@@ -891,7 +891,7 @@ technologies = {
 	}
 
 	jap_rocket_upgrade_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		rocket_artillery = {
@@ -955,7 +955,7 @@ technologies = {
 	}
 
 	jap_rocket_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		rocket_artillery = {
@@ -1209,7 +1209,7 @@ technologies = {
 	}
 
 	jap_anti_tank_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_anti_tank = {
@@ -1256,7 +1256,7 @@ technologies = {
 	}
 
 	jap_anti_tank_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Type 90 75mm
 
 		enable_equipments = {
@@ -1308,7 +1308,7 @@ technologies = {
 	}
 
 	jap_anti_tank_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Type 5 75mm
 
 		enable_equipments = {
@@ -1355,7 +1355,7 @@ technologies = {
 	}
 
 	jap_anti_tank_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Type 7 105mm R.G
 
 		enable_equipments = {
@@ -1402,7 +1402,7 @@ technologies = {
 	}
 
 	jap_anti_tank_upgrade_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_anti_tank = {
@@ -1444,7 +1444,7 @@ technologies = {
 	}
 
 	jap_heavy_anti_tank_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Type 5 105mm
 
 		enable_equipments = {
@@ -1502,7 +1502,7 @@ technologies = {
 	}
 
 	jap_heavy_anti_tank_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Type 8 127mm
 
 		enable_equipments = {
@@ -1656,7 +1656,7 @@ technologies = {
 	}
 
 	jap_anti_air_upgrade_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_anti_air = {
@@ -1704,7 +1704,7 @@ technologies = {
 	}
 
 	jap_anti_air_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Type 2 20mm
 
 		enable_equipments = {
@@ -1751,7 +1751,7 @@ technologies = {
 	}
 
 	jap_anti_air_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Type 4 20mm
 
 		enable_equipments = {
@@ -1798,7 +1798,7 @@ technologies = {
 	}
 
 	jap_anti_air_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_anti_air = {
@@ -1845,7 +1845,7 @@ technologies = {
 	}
 
 	jap_anti_air_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #40mm Type 5
 
 		enable_equipments = {
@@ -1892,7 +1892,7 @@ technologies = {
 	}
 
 	jap_anti_air_upgrade_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_anti_air = {
@@ -1940,7 +1940,7 @@ technologies = {
 	}
 
 	jap_anti_air_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #40mm Type 8
 
 		enable_equipments = {
@@ -1987,7 +1987,7 @@ technologies = {
 	}
 
 	jap_anti_air_upgrade_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_anti_air = {
@@ -2271,7 +2271,7 @@ technologies = {
 	}
 
 	jap_aa_tower_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_building = {
@@ -2338,7 +2338,7 @@ technologies = {
 	}
 
 	jap_heavy_anti_air_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Type 3 120mm
 
 		enable_equipments = {
@@ -2386,7 +2386,7 @@ technologies = {
 	}
 
 	jap_heavy_anti_air_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Type 4 75mm
 
 		enable_equipments = {
@@ -2434,7 +2434,7 @@ technologies = {
 	}
 
 	jap_heavy_anti_air_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Type 5 150mm
 
 		enable_equipments = {

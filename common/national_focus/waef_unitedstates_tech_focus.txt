@@ -11,7 +11,7 @@ focus_tree = {
         x = 16
         y = 0
         cost = 10
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         completion_reward = {
@@ -26,7 +26,7 @@ focus_tree = {
         x = 0
         y = 2
         cost = 10
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C00 }
@@ -44,7 +44,7 @@ focus_tree = {
         x = 0
         y = 4
         cost = 10
-        available = { date > 1942.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C11 }
@@ -62,7 +62,7 @@ focus_tree = {
         x = 0
         y = 6
         cost = 10
-        available = { date > 1944.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C13 }
@@ -80,7 +80,7 @@ focus_tree = {
         x = 5
         y = 2
         cost = 10
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C00 }
@@ -96,7 +96,7 @@ focus_tree = {
         x = 5
         y = 4
         cost = 10
-        available = { date > 1942.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C21 }
@@ -113,7 +113,7 @@ focus_tree = {
         x = 5
         y = 6
         cost = 10
-        available = { date > 1944.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C23 }
@@ -130,7 +130,7 @@ focus_tree = {
         x = 10
         y = 2
         cost = 10
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C00 }
@@ -146,7 +146,7 @@ focus_tree = {
         x = 10
         y = 4
         cost = 10
-        available = { date > 1942.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C31 }
@@ -162,7 +162,7 @@ focus_tree = {
         x = 10
         y = 6
         cost = 10
-        available = { date > 1944.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C33 }
@@ -178,7 +178,7 @@ focus_tree = {
         x = 0
         y = 7
         cost = 10
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C11 }
@@ -194,7 +194,7 @@ focus_tree = {
         x = 2
         y = 7
         cost = 10
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C11 }
@@ -210,7 +210,7 @@ focus_tree = {
         x = 5
         y = 7
         cost = 10
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C21 }
@@ -226,7 +226,7 @@ focus_tree = {
         x = 7
         y = 7
         cost = 10
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C21 }
@@ -242,7 +242,7 @@ focus_tree = {
         x = 10
         y = 7
         cost = 10
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C31 }
@@ -258,7 +258,7 @@ focus_tree = {
         x = 12
         y = 7
         cost = 10
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C31 }
@@ -274,7 +274,7 @@ focus_tree = {
         x = 15
         y = 2
         cost = 10
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C00 }
@@ -289,7 +289,7 @@ focus_tree = {
         x = 20
         y = 2
         cost = 13
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C00 }
@@ -305,7 +305,7 @@ focus_tree = {
         x = 20
         y = 6
         cost = 13
-        available = { date > 1942.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_I1 }
@@ -321,7 +321,7 @@ focus_tree = {
         x = 20
         y = 10
         cost = 13
-        available = { date > 1944.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_I3 }
@@ -337,7 +337,7 @@ focus_tree = {
         x = 25
         y = 2
         cost = 13
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C00 }
@@ -353,7 +353,7 @@ focus_tree = {
         x = 25
         y = 6
         cost = 13
-        available = { date > 1942.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_G1 }
@@ -369,7 +369,7 @@ focus_tree = {
         x = 25
         y = 10
         cost = 13
-        available = { date > 1944.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_G3 }
@@ -385,7 +385,7 @@ focus_tree = {
         x = 35
         y = 2
         cost = 13
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C00 }
@@ -403,7 +403,7 @@ focus_tree = {
         x = 34
         y = 5
         cost = 13
-        available = { date > 1941.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_T1 }
@@ -421,7 +421,7 @@ focus_tree = {
         x = 34
         y = 9
         cost = 13
-        available = { date > 1943.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_TA2 }
@@ -438,7 +438,7 @@ focus_tree = {
         x = 37
         y = 5
         cost = 13
-        available = { date > 1941.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_T1 }
@@ -456,7 +456,7 @@ focus_tree = {
         x = 37
         y = 9
         cost = 13
-        available = { date > 1943.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_TB2 }
@@ -473,7 +473,7 @@ focus_tree = {
         x = 45
         y = 2
         cost = 13
-        available = { date > 1940.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C00 }
@@ -489,7 +489,7 @@ focus_tree = {
         x = 44
         y = 7
         cost = 13
-        available = { date > 1942.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_A1 }
@@ -507,7 +507,7 @@ focus_tree = {
         x = 44
         y = 9
         cost = 13
-        available = { date > 1943.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_AA3 }
@@ -524,7 +524,7 @@ focus_tree = {
         x = 47
         y = 7
         cost = 13
-        available = { date > 1942.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_A1 }
@@ -543,7 +543,7 @@ focus_tree = {
         x = 47
         y = 9
         cost = 13
-        available = { date > 1943.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_AB3 }
@@ -560,7 +560,7 @@ focus_tree = {
         x = 30
         y = 4
         cost = 13
-        available = { date > 1941.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_I1 }
@@ -578,7 +578,7 @@ focus_tree = {
         x = 30
         y = 8
         cost = 13
-        available = { date > 1943.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_M2 }
@@ -596,7 +596,7 @@ focus_tree = {
         x = 15
         y = 4
         cost = 10
-        available = { date > 1941.12.31 }
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_USA_C70 }

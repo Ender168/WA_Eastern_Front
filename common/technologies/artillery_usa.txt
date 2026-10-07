@@ -190,7 +190,7 @@ technologies = {
 	}
 
 	usa_artillery_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -237,7 +237,7 @@ technologies = {
 	}
 
 	usa_artillery_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_artillery = {
@@ -285,7 +285,7 @@ technologies = {
 	}
 
 	usa_artillery_upgrade_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		artillery = {
@@ -371,7 +371,7 @@ technologies = {
 	}
 
 	usa_artillery_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -458,7 +458,7 @@ technologies = {
 		}
 	}
 	usa_pack_artillery_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -557,7 +557,7 @@ technologies = {
 	}
 
 	usa_heavy_artillery_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -610,7 +610,7 @@ technologies = {
 	}
 
 	usa_heavy_artillery_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -653,7 +653,7 @@ technologies = {
 	}
 
 	usa_rocket_upgrade_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		rocket_artillery = {
@@ -722,7 +722,7 @@ technologies = {
 	}
 
 	usa_rocket_upgrade_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		rocket_artillery = {
@@ -786,7 +786,7 @@ technologies = {
 	}
 
 	usa_rocket_artillery_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -833,7 +833,7 @@ technologies = {
 	}
 
 	usa_rocket_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		rocket_artillery = {
@@ -902,7 +902,7 @@ technologies = {
 	}
 
 	usa_rocket_artillery_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -1039,7 +1039,7 @@ technologies = {
 	}
 
 	usa_anti_tank_upgrade_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_anti_tank = {
@@ -1086,7 +1086,7 @@ technologies = {
 	}
 
 	usa_anti_tank_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -1138,7 +1138,7 @@ technologies = {
 	}
 
 	usa_anti_tank_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -1185,7 +1185,7 @@ technologies = {
 	}
 
 	usa_anti_tank_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_anti_tank = {
@@ -1277,7 +1277,7 @@ technologies = {
 	# }
 
 	usa_anti_tank_upgrade_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_anti_tank = {
@@ -1319,7 +1319,7 @@ technologies = {
 	}
 
 	usa_heavy_anti_tank_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -1372,7 +1372,7 @@ technologies = {
 	}
 
 	usa_heavy_anti_tank_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -1552,7 +1552,7 @@ technologies = {
 	}
 
 	usa_anti_air_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_anti_air = {
@@ -1599,7 +1599,7 @@ technologies = {
 	}
 
 	usa_anti_air_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -1646,7 +1646,7 @@ technologies = {
 	}
 
 	usa_anti_air_upgrade_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_anti_air = {
@@ -1694,7 +1694,7 @@ technologies = {
 	}
 
 	usa_anti_air_upgrade_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_anti_air = {
@@ -1742,7 +1742,7 @@ technologies = {
 	}
 
 	usa_anti_air_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -1951,7 +1951,7 @@ technologies = {
 	}
 
 	usa_aa_tower_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_building = {
@@ -2018,7 +2018,7 @@ technologies = {
 	}
 
 	usa_heavy_anti_air_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -2066,7 +2066,7 @@ technologies = {
 	}
 
 	usa_aa_tower_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_building = {
@@ -2133,7 +2133,7 @@ technologies = {
 	}
 
 	usa_heavy_anti_air_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {

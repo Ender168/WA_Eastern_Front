@@ -253,7 +253,7 @@ technologies = {
 	}
 
 	ger_infantry_weapons_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -283,7 +283,7 @@ technologies = {
 	}
 
 	ger_infantry_weapons_upgrade_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_all_infantry = {
@@ -324,7 +324,7 @@ technologies = {
 	}
 
 	ger_infantry_weapons_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -354,7 +354,7 @@ technologies = {
 	}
 
     ger_infantry_weapons_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -399,7 +399,7 @@ technologies = {
 	}
 
 	ger_infantry_weapons_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		path = {
@@ -454,7 +454,7 @@ technologies = {
 	}
 
     ger_infantry_weapons_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -499,7 +499,7 @@ technologies = {
 	}
 
     ger_infantry_weapons_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -539,7 +539,7 @@ technologies = {
 	}
 
 	ger_night_vision_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
         path = {
@@ -583,7 +583,7 @@ technologies = {
 	}
 
 	ger_night_vision_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		land_night_attack = 0.15
@@ -890,7 +890,7 @@ technologies = {
 	}
 
 	ger_heavy_infantry_weapons_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -938,7 +938,7 @@ technologies = {
 	}
 
 	ger_heavy_infantry_weapons_upgrade_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		category_heavy_infantry = {
@@ -977,7 +977,7 @@ technologies = {
 		}
 	}
 	ger_heavy_infantry_weapons_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -1022,7 +1022,7 @@ technologies = {
 	}
 
 	ger_heavy_infantry_weapons_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
         path = {
@@ -1072,7 +1072,7 @@ technologies = {
 	}
 
     ger_heavy_infantry_weapons_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -1302,7 +1302,7 @@ technologies = {
 	}
 
 	ger_paratroopers2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = army
@@ -1433,7 +1433,7 @@ technologies = {
 	}
 
 	ger_paratroopers3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = army
@@ -1525,7 +1525,7 @@ technologies = {
 	}
 
 	ger_recon_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = army
@@ -1797,7 +1797,7 @@ technologies = {
 	}
 
 	ger_tech_mountaineers2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = army
@@ -1912,7 +1912,7 @@ technologies = {
 	}
 
 	ger_tech_mountaineers3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = army
@@ -2144,7 +2144,7 @@ technologies = {
 	}
 
 	ger_marines2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = army
@@ -2325,7 +2325,7 @@ technologies = {
 	}
 
 	ger_marines3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = army
@@ -2424,7 +2424,7 @@ technologies = {
 	}
 
 	ger_tank_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = army
@@ -2485,7 +2485,7 @@ technologies = {
 	}
 
 	ger_water_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = army
@@ -2592,7 +2592,7 @@ technologies = {
 	}
 
 	ger_jungle_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = army
@@ -2741,7 +2741,7 @@ technologies = {
 
 
 	ger_extreme_environment_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = army
@@ -2774,7 +2774,7 @@ technologies = {
 
 
 	ger_survival_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = army
@@ -2805,7 +2805,7 @@ technologies = {
 
 
 	ger_elite_forces = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = army

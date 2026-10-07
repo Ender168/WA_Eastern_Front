@@ -281,7 +281,7 @@ technologies = {
 	}
 
 	fra_fighter_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# D 550
 
 		enable_equipments = {
@@ -330,7 +330,7 @@ technologies = {
 
 
 	fra_fighter_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# VG 50
 
 		enable_equipments = {
@@ -382,7 +382,7 @@ technologies = {
 	}
 
 	fra_cv_fighter_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# VG 40
 
 		enable_equipments = {
@@ -420,7 +420,7 @@ technologies = {
 	}
 
 	fra_fighter_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# SE 580
 
 		enable_equipments = {
@@ -472,7 +472,7 @@ technologies = {
 	}
 
 	fra_cv_fighter_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# VB 15
 
 		enable_equipments = {
@@ -510,7 +510,7 @@ technologies = {
 	}
 
 	fra_jet_fighter_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# VG 70
 
 		enable_equipments = {
@@ -561,7 +561,7 @@ technologies = {
 	}
 
 	fra_jet_fighter_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# VG 90
 
 		enable_equipments = {
@@ -615,7 +615,7 @@ technologies = {
 	}
 
 	fra_jet_cv_fighter_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# VG 90C
 
 		enable_equipments = {
@@ -653,7 +653,7 @@ technologies = {
 	}
 
 	fra_jet_fighter_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# SNCAC NC 1080
 
 		enable_equipments = {
@@ -704,7 +704,7 @@ technologies = {
 	}
 
 	fra_jet_cv_fighter_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# Norad 2200
 
 		enable_equipments = {
@@ -742,7 +742,7 @@ technologies = {
 	}
 
 	fra_jet_fighter_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# SE 5000
 
 		enable_equipments = {
@@ -788,7 +788,7 @@ technologies = {
 	}
 
 	fra_jet_cv_fighter_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# Nord 1601
 
 		enable_equipments = {
@@ -826,7 +826,7 @@ technologies = {
 	}
 
 	fra_jet_fighter_multirole_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# D 450 Ouragan
 
 		enable_equipments = {
@@ -877,7 +877,7 @@ technologies = {
 	}
 
 	fra_jet_fighter_multirole_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# MD 452 Mystere
 
 		enable_equipments = {
@@ -1090,7 +1090,7 @@ technologies = {
 	}
 
 	fra_attacker_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# CAPRA R40
 
 		enable_equipments = {
@@ -1124,7 +1124,7 @@ technologies = {
 	}
 
 	fra_attacker_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# CAPRA R41
 
 		enable_equipments = {
@@ -1153,7 +1153,7 @@ technologies = {
 	}
 
 	fra_heavy_fighter_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# VB 10-1
 
 		enable_equipments = {
@@ -1187,7 +1187,7 @@ technologies = {
 	}
 
 	fra_heavy_fighter_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# VB 10-2
 
 		enable_equipments = {
@@ -1345,7 +1345,7 @@ technologies = {
 	}
 
 	fra_cas_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# LN 42
 
 		enable_equipments = {
@@ -1397,7 +1397,7 @@ technologies = {
 	}
 
 	fra_cv_cas_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# LN 402
 
 		enable_equipments = {
@@ -1420,7 +1420,7 @@ technologies = {
 	}
 
 	fra_cas_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 
 
 		enable_equipments = {
@@ -1472,7 +1472,7 @@ technologies = {
 	}
 
 	fra_cv_cas_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 
 
 		enable_equipments = {
@@ -1495,7 +1495,7 @@ technologies = {
 	}
 
 	fra_cas_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# LN 50
 
 		enable_equipments = {
@@ -1547,7 +1547,7 @@ technologies = {
 	}
 
 	fra_cv_cas_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# LN 501
 
 		enable_equipments = {
@@ -1570,7 +1570,7 @@ technologies = {
 	}
 
 	fra_cas_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SNCASO 8000 Narval
 
 		enable_equipments = {
@@ -1618,7 +1618,7 @@ technologies = {
 	}
 
 	fra_jet_cas_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Matra 120
 
 		enable_equipments = {
@@ -1668,7 +1668,7 @@ technologies = {
 	}
 
 	fra_jet_cv_cas_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Matra 120C
 
 		enable_equipments = {
@@ -1842,7 +1842,7 @@ technologies = {
 	}
 
 	fra_naval_bomber_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Late 310
 
 		enable_equipments = {
@@ -1894,7 +1894,7 @@ technologies = {
 	}
 
 	fra_naval_bomber_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Late 340
 
 		enable_equipments = {
@@ -1941,7 +1941,7 @@ technologies = {
 	}
 
 	fra_jet_naval_bomber_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SNCAC NC 1071
 
 		enable_equipments = {
@@ -2040,7 +2040,7 @@ technologies = {
 	}
 
 	fra_patrol_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Late 631
 
 		enable_equipments = {
@@ -2164,7 +2164,7 @@ technologies = {
 	}
 
 	fra_tactical_bomber_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Amiot 354
 
 		enable_equipments = {
@@ -2211,7 +2211,7 @@ technologies = {
 	}
 
 	fra_tactical_bomber_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Amiot 360
 
 		enable_equipments = {
@@ -2259,7 +2259,7 @@ technologies = {
 	}
 
 	fra_jet_tactical_bomber_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SO4050 Vautour IIB
 
 		enable_equipments = {
@@ -2372,7 +2372,7 @@ technologies = {
 	}
 
 	fra_strategic_bomber_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Bloch MB.162
 
 		enable_equipments = {
@@ -2404,7 +2404,7 @@ technologies = {
 	}
 
 	fra_strategic_bomber_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Bréguet Br.482
 
 		enable_equipments = {
@@ -2436,7 +2436,7 @@ technologies = {
 	}
 
 	fra_jet_strategic_bomber_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SNCASO 4000
 
 		enable_equipments = {
@@ -2612,7 +2612,7 @@ technologies = {
 	}
 
 	fra_scout_plane_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SE-1011
 
 		enable_equipments = {
@@ -2795,7 +2795,7 @@ technologies = {
 	}
 
 	fra_transport_plane_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SNCASO SO.30P
 
 		enable_equipments = {
@@ -2843,7 +2843,7 @@ technologies = {
 	}
 
 	fra_transport_plane_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Nord N.2501 Noratlas
 
 		enable_equipments = {
@@ -3245,7 +3245,7 @@ technologies = {
 	}
 
 	fra_fighter_ad_tech_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 			# Arsenal VG.36
 
 		enable_equipments = {
@@ -3298,7 +3298,7 @@ technologies = {
 	}
 
 	fra_fighter_ad_tech_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 			# Arsenal VG.39
 
 		enable_equipments = {
@@ -3349,7 +3349,7 @@ technologies = {
 	}
 
 	fra_fighter_ad_tech_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 			# Arsenal VG.60
 
 		enable_equipments = {
@@ -3401,7 +3401,7 @@ technologies = {
 	}
 
 	fra_jet_fighter_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 		# Arsenal VG.71
 
 		enable_equipments = {
@@ -3463,7 +3463,7 @@ technologies = {
 	}
 
 	fra_jet_cv_fighter_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# Arsenal VG.80
 
 		enable_equipments = {
@@ -3504,7 +3504,7 @@ technologies = {
 	}
 
 	fra_jet_fighter_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 		# Arsenal VG.92
 
 		enable_equipments = {
@@ -3577,7 +3577,7 @@ technologies = {
 	}
 
 	fra_jet_cv_fighter_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# Arsenal VG.91
 
 		enable_equipments = {
@@ -3615,7 +3615,7 @@ technologies = {
 	}
 
 	fra_jet_fighter_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 		# Arsenal VG.94
 
 		enable_equipments = {
@@ -3915,7 +3915,7 @@ technologies = {
 	}
 
 	fra_interceptor_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 		# Bloch MB.157
 
 		enable_equipments = {
@@ -3966,7 +3966,7 @@ technologies = {
 	}
 
 	fra_interceptor_ad_tech_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 		# Bloch MB.700
 
 		enable_equipments = {
@@ -4026,7 +4026,7 @@ technologies = {
 		}
 	}
 	fra_cv_fighter_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 		# Bloch MB.720
 
 		enable_equipments = {
@@ -4064,7 +4064,7 @@ technologies = {
 	}
 
 	fra_jet_interceptor_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# Nord N.1620
 
 		enable_equipments = {
@@ -4131,7 +4131,7 @@ technologies = {
 		}
 	}
 	fra_jet_cv_fighter_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# Nord N.2200
 
 		enable_equipments = {
@@ -4177,7 +4177,7 @@ technologies = {
 	}
 
 	fra_jet_interceptor_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# SNCASE SE.5003
 
 		enable_equipments = {
@@ -4230,7 +4230,7 @@ technologies = {
 	}
 
 	fra_jet_interceptor_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# SNCASE SE.212 `Durandal`
 
 		enable_equipments = {
@@ -4283,7 +4283,7 @@ technologies = {
 		}
 	}
 	fra_jet_cv_fighter_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 	# SNCAC NC.1080
 
 		enable_equipments = {
@@ -4470,7 +4470,7 @@ technologies = {
 	}
 
 	fra_fighter_multirole_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# Dewoitine D.524
 
 		enable_equipments = {
@@ -4522,7 +4522,7 @@ technologies = {
 	}
 
 	fra_fighter_multirole_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# SNCASE SE.520Z
 
 		enable_equipments = {
@@ -4576,7 +4576,7 @@ technologies = {
 	}
 
 	fra_fighter_multirole_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# SNCASE SE.552
 
 		enable_equipments = {
@@ -4627,7 +4627,7 @@ technologies = {
 	}
 
 	fra_fighter_multirole_ad_tech_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# SNCASE SE.580
 
 		enable_equipments = {
@@ -4689,7 +4689,7 @@ technologies = {
 	}
 
 	fra_cv_fighter_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_FRA_AA3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AA3 } } } }
 			# SNCASE SE.582
 
 		enable_equipments = {
@@ -4727,7 +4727,7 @@ technologies = {
 	}
 
 	fra_jet_fighter_multirole_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Dassault MD.450 Ouragan
 
 		enable_equipments = {
@@ -4787,7 +4787,7 @@ technologies = {
 	}
 
 	fra_jet_fighter_multirole_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Dassault MD.452 Mystere
 
 		enable_equipments = {
@@ -5108,7 +5108,7 @@ technologies = {
 	}
 
 	fra_cas_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# Loire-Nieuport LN.412
 
 		enable_equipments = {
@@ -5168,7 +5168,7 @@ technologies = {
 		}
 	}
 	fra_cv_cas_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Loire-Nieuport LN.42
 
 		enable_equipments = {
@@ -5191,7 +5191,7 @@ technologies = {
 	}
 
 	fra_cas_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# Loire-Nieuport LN.560
 
 		enable_equipments = {
@@ -5251,7 +5251,7 @@ technologies = {
 		}
 	}
 	fra_cv_cas_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Loire-Nieuport LN.561
 
 		enable_equipments = {
@@ -5289,7 +5289,7 @@ technologies = {
 	}
 
 	fra_cas_ad_tech_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# Potez Po.632
 
 		enable_equipments = {
@@ -5338,7 +5338,7 @@ technologies = {
 	}
 
 	fra_cas_ad_tech_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# SNCAO CAO.810
 
 		enable_equipments = {
@@ -5393,7 +5393,7 @@ technologies = {
 	}
 
 	fra_cas_ad_tech_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# Nord N.1500 `Noréclair`
 
 		enable_equipments = {
@@ -5452,7 +5452,7 @@ technologies = {
 		}
 	}
 	fra_cv_cas_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Nord N.1501 `Noréclair`
 
 		enable_equipments = {
@@ -5490,7 +5490,7 @@ technologies = {
 	}
 
 	fra_jet_cas_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Nord N.1510 `Noréclair`
 
 		enable_equipments = {
@@ -5549,7 +5549,7 @@ technologies = {
 		}
 	}
 	fra_jet_cv_cas_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 # Nord N.1511 `Noréclair`
 
 		enable_equipments = {
@@ -5572,7 +5572,7 @@ technologies = {
 	}
 
 	fra_jet_cas_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SNCASE SE.2415 `Grognard`
 
 		enable_equipments = {
@@ -5726,7 +5726,7 @@ technologies = {
 	}
 
 	fra_attacker_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Bréguet Br.700
 
 		enable_equipments = {
@@ -5781,7 +5781,7 @@ technologies = {
 	}
 
 	fra_attacker_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# CAPRA R.40
 
 		enable_equipments = {
@@ -5839,7 +5839,7 @@ technologies = {
 	}
 
 	fra_attacker_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# CAPRA R.41
 
 		enable_equipments = {
@@ -5892,7 +5892,7 @@ technologies = {
 	}
 
 	fra_attacker_ad_tech_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SNCASO SO.8000 Narval
 
 		enable_equipments = {
@@ -6111,7 +6111,7 @@ technologies = {
 	}
 
 	fra_heavy_fighter_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SNCASE SE.100
 
 		enable_equipments = {
@@ -6162,7 +6162,7 @@ technologies = {
 	}
 
 	fra_heavy_fighter_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SNCASE SE.105
 
 		enable_equipments = {
@@ -6216,7 +6216,7 @@ technologies = {
 	}
 
 	fra_heavy_fighter_ad_tech_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Arsenal VB.10
 
 		enable_equipments = {
@@ -6275,7 +6275,7 @@ technologies = {
 	}
 
 	fra_heavy_fighter_ad_tech_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Arsenal VB.15
 
 		enable_equipments = {
@@ -6317,7 +6317,7 @@ technologies = {
 	}
 
 	fra_heavy_fighter_ad_tech_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Arsenal VB.20
 
 		enable_equipments = {
@@ -6533,7 +6533,7 @@ technologies = {
 	}
 
 	fra_naval_bomber_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# Dewoitine D.750
 
 		enable_equipments = {
@@ -6588,7 +6588,7 @@ technologies = {
 	}
 
 	fra_naval_bomber_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# SNCAO CAO.600
 
 		enable_equipments = {
@@ -6644,7 +6644,7 @@ technologies = {
 	}
 
 	fra_naval_bomber_ad_tech_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# SNCAC NC.1070
 
 		enable_equipments = {
@@ -6700,7 +6700,7 @@ technologies = {
 	}
 
 	fra_jet_naval_bomber_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SNCAC NC.1071
 
 		enable_equipments = {
@@ -6777,7 +6777,7 @@ technologies = {
 		}
 
 		allow = {
-        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_FRA_AB3 } }
+        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } }
 
 			OR = {
 				FRA = {
@@ -6940,7 +6940,7 @@ technologies = {
 	}
 
 	fra_patrol_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Latécoère Laté.631
 
 		enable_equipments = {
@@ -6984,7 +6984,7 @@ technologies = {
 	}
 
 	fra_patrol_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Nord N.1402 `Noroit`
 
 		enable_equipments = {
@@ -7197,7 +7197,7 @@ technologies = {
 	}
 
 	fra_tactical_bomber_ad_tech_2_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# Lioré et Olivier LeO 455
 
 		enable_equipments = {
@@ -7255,7 +7255,7 @@ technologies = {
 	}
 
 	fra_tactical_bomber_ad_tech_2_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# Lioré et Olivier LeO 457
 
 		enable_equipments = {
@@ -7311,7 +7311,7 @@ technologies = {
 	}
 
 	fra_jet_tactical_bomber_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SNCASO SO.4000 `Vautour I`
 
 		enable_equipments = {
@@ -7368,7 +7368,7 @@ technologies = {
 	}
 
 	fra_jet_tactical_bomber_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SNCASO SO.4050 Vautour IIB
 
 		enable_equipments = {
@@ -7587,7 +7587,7 @@ technologies = {
 	}
 
 	fra_strike_bomber_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# Amiot 357
 
 		enable_equipments = {
@@ -7640,7 +7640,7 @@ technologies = {
 	}
 
 	fra_strike_bomber_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# Amiot 400
 
 		enable_equipments = {
@@ -7693,7 +7693,7 @@ technologies = {
 	}
 
 	fra_jet_strike_bomber_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SNCAC NC.270
 
 		enable_equipments = {
@@ -7931,7 +7931,7 @@ technologies = {
 	}
 
 	fra_fast_bomber_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 			# Bloch MB.178
 
 		enable_equipments = {
@@ -7986,7 +7986,7 @@ technologies = {
 	}
 
 	fra_fast_bomber_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 			# SNCAC NC.152
 
 		enable_equipments = {
@@ -8043,7 +8043,7 @@ technologies = {
 	}
 
 	fra_fast_bomber_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 			# SNCAC NC.153
 
 		enable_equipments = {
@@ -8098,7 +8098,7 @@ technologies = {
 	}
 
 	fra_jet_fast_bomber_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# SNCASO SO.M2 `Vautour`
 
 		enable_equipments = {
@@ -8161,7 +8161,7 @@ technologies = {
 	}
 
 	fra_jet_fast_bomber_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# SNCASO SO.4050 Vautour IIA
 
 		enable_equipments = {
@@ -8331,7 +8331,7 @@ technologies = {
 	}
 
 	fra_strategic_bomber_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# Bloch MB.162
 
 		enable_equipments = {
@@ -8371,7 +8371,7 @@ technologies = {
 	}
 
 	fra_strategic_bomber_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# Bréguet Br.482
 
 		enable_equipments = {
@@ -8452,7 +8452,7 @@ technologies = {
 	# }
 
 	fra_strategic_bomber_ad_tech_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# Amiot 380
 
 		enable_equipments = {
@@ -8490,7 +8490,7 @@ technologies = {
 	}
 
 	fra_strategic_bomber_ad_tech_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 		# Amiot 410
 
 		enable_equipments = {
@@ -8528,7 +8528,7 @@ technologies = {
 	}
 
 	fra_jet_strategic_bomber_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Amiot 420
 
 		enable_equipments = {
@@ -8571,7 +8571,7 @@ technologies = {
 	}
 
 	fra_jet_strategic_bomber_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Dassault Mirage IV
 
 		enable_equipments = {
@@ -8775,7 +8775,7 @@ technologies = {
 	}
 
 	fra_scout_plane_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# Bloch MB.174Z
 
 		enable_equipments = {
@@ -8828,7 +8828,7 @@ technologies = {
 	}
 
 	fra_scout_plane_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_FRA_AB3 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_FRA_AB3 } } } }
 	# SNCASE SE.1011
 
 		enable_equipments = {

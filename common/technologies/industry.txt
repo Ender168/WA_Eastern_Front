@@ -166,7 +166,7 @@ technologies = {
 	}
 
 	assembly_line_production_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_max_efficiency_factor = 0.1
@@ -217,7 +217,7 @@ technologies = {
 	}
 
 	assembly_cranes_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_max_efficiency_factor = 0.1
@@ -267,7 +267,7 @@ technologies = {
 	}
 
 	flexible_line_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_max_efficiency_factor = 0.1
@@ -312,7 +312,7 @@ technologies = {
 	}
 
 	streamlined_line_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_max_efficiency_factor = 0.1
@@ -519,7 +519,7 @@ technologies = {
 	}
 
 	expanded_industry4_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		industrial_capacity_factory = 0.2
@@ -582,7 +582,7 @@ technologies = {
 	}
 
 	expanded_industry5_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		industrial_capacity_factory = 0.25
@@ -639,7 +639,7 @@ technologies = {
 	}
 
 	expanded_industry6_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		industrial_capacity_factory = 0.3
@@ -805,7 +805,7 @@ technologies = {
 	}
 
 	industry_infrastructure4_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_efficiency_gain_factor = 0.2
@@ -845,7 +845,7 @@ technologies = {
 	}
 
 	industry_infrastructure5_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_efficiency_gain_factor = 0.3
@@ -885,7 +885,7 @@ technologies = {
 	}
 
 	industry_infrastructure6_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_efficiency_gain_factor = 0.3
@@ -1052,7 +1052,7 @@ technologies = {
 	}
 
 	industry_organization4_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_start_efficiency_factor = 0.06
@@ -1094,7 +1094,7 @@ technologies = {
 	}
 
 	industry_organization5_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		industry_air_damage_factor = -0.1
@@ -1140,7 +1140,7 @@ technologies = {
 	}
 
 	industry_organization6_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_start_efficiency_factor = 0.08
@@ -1337,7 +1337,7 @@ technologies = {
 	}
 
 	construction4_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_speed_buildings_factor = 0.05
@@ -1383,7 +1383,7 @@ technologies = {
 	}
 
 	construction5_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_speed_buildings_factor = 0.05
@@ -1429,7 +1429,7 @@ technologies = {
 	}
 
 	construction6_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_speed_buildings_factor = 0.05
@@ -1470,7 +1470,7 @@ technologies = {
 	}
 
 	airbase4_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_building = {
@@ -1534,7 +1534,7 @@ technologies = {
 	}
 
 	airbase5_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_building = {
@@ -1598,7 +1598,7 @@ technologies = {
 	}
 
 	airbase6_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_building = {
@@ -1788,7 +1788,7 @@ technologies = {
 	}
 
 	excavation4_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		local_resources_factor = 0.05
@@ -1836,7 +1836,7 @@ technologies = {
 	}
 
 	excavation5_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		local_resources_factor = 0.05
@@ -1884,7 +1884,7 @@ technologies = {
 	}
 
 	excavation6_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		local_resources_factor = 0.05
@@ -2090,7 +2090,7 @@ technologies = {
 	}
 
 	assembly_line_production = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_max_efficiency_factor = 0.05
@@ -2141,7 +2141,7 @@ technologies = {
 	}
 
 	assembly_cranes = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_max_efficiency_factor = 0.05
@@ -2191,7 +2191,7 @@ technologies = {
 	}
 
 	flexible_line = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 OR = { has_completed_focus = WAEF_GER_C42 has_completed_focus = WAEF_SOV_C42 has_completed_focus = WAEF_USA_C42 has_completed_focus = WAEF_ENG_C42 has_completed_focus = WAEF_FRA_C42 has_completed_focus = WAEF_ITA_C42 has_completed_focus = WAEF_JAP_C42 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_C42 has_completed_focus = WAEF_SOV_C42 has_completed_focus = WAEF_USA_C42 has_completed_focus = WAEF_ENG_C42 has_completed_focus = WAEF_FRA_C42 has_completed_focus = WAEF_ITA_C42 has_completed_focus = WAEF_JAP_C42 } } } }
 
 
 		line_change_production_efficiency_factor = 0.2
@@ -2235,7 +2235,7 @@ technologies = {
 	}
 
 	streamlined_line = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 OR = { has_completed_focus = WAEF_GER_C41 has_completed_focus = WAEF_SOV_C41 has_completed_focus = WAEF_USA_C41 has_completed_focus = WAEF_ENG_C41 has_completed_focus = WAEF_FRA_C41 has_completed_focus = WAEF_ITA_C41 has_completed_focus = WAEF_JAP_C41 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_C41 has_completed_focus = WAEF_SOV_C41 has_completed_focus = WAEF_USA_C41 has_completed_focus = WAEF_ENG_C41 has_completed_focus = WAEF_FRA_C41 has_completed_focus = WAEF_ITA_C41 has_completed_focus = WAEF_JAP_C41 } } } }
 
 
 		production_factory_efficiency_gain_factor = 0.1
@@ -2519,7 +2519,7 @@ technologies = {
 	}
 
 	expanded_industry4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		#industrial_capacity_factory = 0.1
@@ -2582,7 +2582,7 @@ technologies = {
 	}
 
 	expanded_industry5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		#industrial_capacity_factory = 0.1
@@ -2639,7 +2639,7 @@ technologies = {
 	}
 
 	expanded_industry6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		#industrial_capacity_factory = 0.15
@@ -2805,7 +2805,7 @@ technologies = {
 	}
 
 	industry_infrastructure4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_efficiency_gain_factor = 0.05
@@ -2845,7 +2845,7 @@ technologies = {
 	}
 
 	industry_infrastructure5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_efficiency_gain_factor = 0.05
@@ -2885,7 +2885,7 @@ technologies = {
 	}
 
 	industry_infrastructure6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_efficiency_gain_factor = 0.05
@@ -3052,7 +3052,7 @@ technologies = {
 	}
 
 	industry_organization4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_start_efficiency_factor = 0.06
@@ -3094,7 +3094,7 @@ technologies = {
 	}
 
 	industry_organization5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		industry_air_damage_factor = -0.1
@@ -3140,7 +3140,7 @@ technologies = {
 	}
 
 	industry_organization6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_factory_start_efficiency_factor = 0.08
@@ -3438,7 +3438,7 @@ technologies = {
 	}
 
 	fuel_refining4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		fuel_gain_factor = 0.1
@@ -3484,7 +3484,7 @@ technologies = {
 	}
 
 	fuel_refining5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		fuel_gain_factor = 0.1
@@ -3530,7 +3530,7 @@ technologies = {
 	}
 
 	fuel_refining6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		fuel_gain_factor = 0.1
@@ -3713,7 +3713,7 @@ technologies = {
 	}
 
 	advanced_oil_processing = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		fuel_gain_factor_from_states = 0.60
@@ -3754,7 +3754,7 @@ technologies = {
 	}
 
 	superior_oil_processing = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		fuel_gain_factor_from_states = 0.60
@@ -3795,7 +3795,7 @@ technologies = {
 	}
 
 	modern_oil_processing = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		fuel_gain_factor_from_states = 0.60
@@ -3925,7 +3925,7 @@ technologies = {
 	}
 
 	advanced_rubber_processing = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		on_research_complete = {
@@ -3973,7 +3973,7 @@ technologies = {
 	}
 
 	superior_rubber_processing = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		on_research_complete = {
@@ -4021,7 +4021,7 @@ technologies = {
 	}
 
 	modern_rubber_processing = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		on_research_complete = {
@@ -4216,7 +4216,7 @@ technologies = {
 	}
 
 	construction4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_speed_buildings_factor = 0.05
@@ -4261,7 +4261,7 @@ technologies = {
 	}
 
 	construction5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_speed_buildings_factor = 0.05
@@ -4306,7 +4306,7 @@ technologies = {
 	}
 
 	construction6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		production_speed_buildings_factor = 0.05
@@ -4346,7 +4346,7 @@ technologies = {
 	}
 
 	airbase4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_building = {
@@ -4419,7 +4419,7 @@ technologies = {
 	}
 
 	airbase5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_building = {
@@ -4483,7 +4483,7 @@ technologies = {
 	}
 
 	airbase6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_building = {
@@ -4673,7 +4673,7 @@ technologies = {
 	}
 
 	excavation4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		local_resources_factor = 0.05
@@ -4721,7 +4721,7 @@ technologies = {
 	}
 
 	excavation5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		local_resources_factor = 0.05
@@ -4769,7 +4769,7 @@ technologies = {
 	}
 
 	excavation6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		local_resources_factor = 0.05

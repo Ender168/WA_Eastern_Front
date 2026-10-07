@@ -13,7 +13,7 @@ def focus_nodes():
  return {get(n.value,'id'):n.value for path in (ROOT/'common/national_focus').glob('waef_*_tech_focus.txt') for n in get(parse(path.read_text()),'focus_tree') if n.key=='focus'}
 def localisation(lang):
  result={}
- for p in (ROOT/'localisation'/lang).glob('waef_*focus*.yml'):
+ for p in list((ROOT/'localisation'/lang).glob('*focus*.yml'))+list((ROOT/'localisation'/'replace').glob(f'*focus*_l_{lang}.yml')):
   assert p.read_bytes().startswith(b'\xef\xbb\xbf'),p
   for k,v in re.findall(r'^\s*(\w+):\d*\s+"(.*)"',p.read_text(encoding='utf-8-sig'),re.M):
    assert k not in result,(k,p)
@@ -24,6 +24,7 @@ def eval_gate(nodes,tag='WEF',done=(),date=19420101):
  vals=[]
  for n in nodes:
   if n.key=='tag':vals.append(tag==n.value)
+  elif n.key=='always':vals.append(n.value=='yes')
   elif n.key=='date':
    y,m,d=map(int,n.value.split('.'));vals.append(date>y*10000+m*100+d)
   elif n.key=='has_completed_focus':vals.append(n.value in done)
@@ -42,19 +43,20 @@ class NationalFocusTests(unittest.TestCase):
    for k,v in baseline.technology_blocks(p.read_text()).items():cls.techs[k]=baseline.parse_tech(k,str(p),v)
  def test_all_seven_schools_and_real_rewards(self):
   self.assertEqual(set(self.m['schools']),{'GER','SOV','USA','ENG','FRA','ITA','JAP'})
-  self.assertEqual(len(self.nodes),254)
+  self.assertEqual(len(self.nodes),265)
   for code,rows in self.m['schools'].items():
-   self.assertEqual(len(rows),38 if code=='GER' else 36)
+   self.assertEqual(len(rows),49 if code=='GER' else 36)
    for row in rows:
     node=self.nodes[row['id']];self.assertEqual(int(get(node,'cost'))*7,row['days'])
     self.assertTrue(get(node,'completion_reward'))
-    granted={x.key for n in walk(get(node,'completion_reward')) if n.key=='set_technology' for x in n.value}
+    granted={x.key for n in walk(get(node,'completion_reward')) if n.key=='set_technology' for x in n.value if x.value=='1'}
     self.assertEqual(granted,set(row['technologies']))
  def test_no_future_technology_in_any_focus_reward(self):
   for rows in self.m['schools'].values():
    for row in rows:
     self.assertTrue(eval_gate(get(self.nodes[row['id']],'available'),date=row['year']*10000+101))
-    self.assertFalse(eval_gate(get(self.nodes[row['id']],'available'),date=(row['year']-1)*10000+1231))
+    self.assertTrue(eval_gate(get(self.nodes[row['id']],'available'),date=19360101))
+    self.assertNotIn('date',[n.key for n in walk(get(self.nodes[row['id']],'available'))])
     for tech in row['technologies']:
      self.assertIn(tech,self.techs)
      self.assertLessEqual(self.techs[tech].year,row['year'],(row['id'],tech))
@@ -73,8 +75,8 @@ class NationalFocusTests(unittest.TestCase):
    lookup={r['id']:r for r in rows}
    for r in rows:
     if r['exclusive']:
-     self.assertEqual(lookup[r['exclusive']]['exclusive'],r['id'])
-     self.assertEqual(get(get(self.nodes[r['id']],'mutually_exclusive'),'focus'),r['exclusive'])
+     for other in r['exclusive']:self.assertIn(r['id'],lookup[other]['exclusive'])
+     self.assertEqual([n.value for n in get(self.nodes[r['id']],'mutually_exclusive') if n.key=='focus'],r['exclusive'])
  def test_shared_rewards_are_identical_for_all_schools(self):
   reference={r['code']:r for r in self.m['schools']['GER'] if r['code'].startswith('C')}
   for code,rows in self.m['schools'].items():
@@ -102,7 +104,7 @@ class NationalFocusTests(unittest.TestCase):
    for r in rows:
     for t in r['technologies']:
      gate=self.m['research_gates'].get(t,{}).get('requires_focus')
-     if gate:self.assertIn(gate,ancestors(r['id']),(r['id'],t,gate))
+     if gate:self.assertTrue(set(gate if isinstance(gate,list) else [gate]) & ancestors(r['id']),(r['id'],t,gate))
  def test_generated_script_files_have_balanced_blocks(self):
   for folder in ['common/technologies','common/national_focus','common/decisions','common/scripted_effects','common/scripted_triggers','common/dynamic_modifiers']:
    for path in (ROOT/folder).glob('*.txt'):
@@ -123,8 +125,9 @@ class NationalFocusTests(unittest.TestCase):
    # Existing upstream restrictions may include other triggers. Select the added OR.
    ours=[Node('OR',next(n.value for n in allow if n.key=='OR' and any(c.key=='NOT' and 'tag' in str(c.value) for c in n.value)),'=')]
    self.assertFalse(eval_gate(ours,date=19550101),name)
-   self.assertFalse(eval_gate(ours,done=[gate['requires_focus']],date=(gate['year']-1)*10000+1231),name)
-   self.assertTrue(eval_gate(ours,done=[gate['requires_focus']],date=gate['year']*10000+101),name)
+   options=gate['requires_focus'] if isinstance(gate['requires_focus'],list) else [gate['requires_focus']]
+   for choice in options:self.assertTrue(eval_gate(ours,done=[choice],date=19360101),name)
+   self.assertNotIn('date',[n.key for n in walk(ours)])
    self.assertTrue(eval_gate(ours,tag='GER',date=19360101),name)
  def test_localisation_covers_all_new_visible_keys(self):
   keys=set(self.nodes)|{k+'_desc' for k in self.nodes}

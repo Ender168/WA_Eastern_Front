@@ -461,7 +461,7 @@ technologies = {
 	}
 
 	improved_centimetric_radar = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		# radar boost in air/sea combat depends on radar level
@@ -549,7 +549,7 @@ technologies = {
 	}
 
 	advanced_centimetric_radar = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		# radar boost in air/sea combat depends on radar level
@@ -799,7 +799,7 @@ technologies = {
 	}
 
 	advanced_computing_machine = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		# small boost to research speed
@@ -855,7 +855,7 @@ technologies = {
 	}
 
 	superior_computing_machine = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		# small boost to research speed
@@ -978,7 +978,7 @@ technologies = {
 	}
 
 	advanced_encryption = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		# encryption 3
@@ -1021,7 +1021,7 @@ technologies = {
 	}
 
 	superior_encryption = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		# encryption 4
@@ -1136,7 +1136,7 @@ technologies = {
 	}
 
 	advanced_decryption = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		# decryption 3
@@ -1179,7 +1179,7 @@ technologies = {
 	}
 
 	superior_decryption = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		# decryption 4
@@ -2074,7 +2074,7 @@ technologies = {
 		}
 	}
 	squid_depth_charge_mortar = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipment_modules = {
@@ -2475,7 +2475,7 @@ technologies = {
 	}
 
 	improved_submarine_snorkel = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipment_modules = {
@@ -2556,7 +2556,7 @@ technologies = {
 	}
 
 	advanced_sonar = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 		enable_equipment_modules = {
 			ship_sonar_3
@@ -2798,7 +2798,7 @@ technologies = {
 	}
 
 	homing_torpedo = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = navy
@@ -2896,7 +2896,7 @@ technologies = {
 	}
 
 	long_lance = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		xp_research_type = navy
@@ -3523,7 +3523,7 @@ technologies = {
 	}
 
 	advanced_naval_mines = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		research_cost = 2
@@ -3596,7 +3596,7 @@ technologies = {
 	}
 
 	degaussing = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		research_cost = 1.5
@@ -3659,7 +3659,7 @@ technologies = {
 	}
 
 	modern_naval_mines = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		research_cost = 2
@@ -4073,7 +4073,7 @@ technologies = {
 	}
 
 	mtg_tank_snorkals = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		light_armor = {
@@ -4238,7 +4238,7 @@ technologies = {
 	}
 
 	mtg_amphibious_assault_ships = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		amphibious_invasion = 0.25
@@ -4320,7 +4320,7 @@ technologies = {
 	}
 
 	mtg_large_landing_craft = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		naval_invasion_plan_cap = 1
@@ -4433,7 +4433,7 @@ technologies = {
 	}
 
 	mtg_tank_floats = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		light_armor = {
@@ -5270,7 +5270,7 @@ technologies = {
 ############################################################################################################################################## Rockets
 
 	experimental_rockets = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_building = {
@@ -5334,7 +5334,7 @@ technologies = {
 	}
 
 	rocket_engines = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		show_equipment_icon = yes
@@ -5418,7 +5418,7 @@ technologies = {
 	}
 
 	improved_rocket_engines = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		show_equipment_icon = yes
@@ -5490,7 +5490,7 @@ technologies = {
 	}
 
 	advanced_rocket_engines = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		show_equipment_icon = yes
@@ -5557,7 +5557,7 @@ technologies = {
 	}
 
 	jet_engines = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		folder = {

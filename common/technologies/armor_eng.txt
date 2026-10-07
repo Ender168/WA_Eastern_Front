@@ -948,7 +948,7 @@ technologies = {
 	}
 
 	eng_light_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Hopkins A25
 
 		enable_equipments = {
@@ -984,7 +984,7 @@ technologies = {
 	}
 
 	eng_light_spg_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Alecto
 		enable_equipments = {
 			eng_light_spg_equipment_2
@@ -1015,7 +1015,7 @@ technologies = {
 		}
 
 		allow = {
-        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_ENG_TA2 } }
+        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } }
 
 			OR = {
 				ENG = {
@@ -1062,7 +1062,7 @@ technologies = {
 	}
 
 	eng_light_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #FV301
 
 		enable_equipments = {
@@ -1098,7 +1098,7 @@ technologies = {
 	}
 
 	eng_light_spg_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #FV304
 		enable_equipments = {
 			eng_light_spg_equipment_4
@@ -1118,7 +1118,7 @@ technologies = {
 	}
 
 	eng_light_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #GSR Setter
 
 		enable_equipments = {
@@ -1412,7 +1412,7 @@ technologies = {
 	}
 
 	eng_medium_spg_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Crusader CS
 		enable_equipments = {
 			eng_medium_tank_infantry_support_chassis_3
@@ -1448,7 +1448,7 @@ technologies = {
 	}
 
 	eng_medium_aa_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Crusader AA Mk I
 		enable_equipments = {
 			eng_medium_aa_equipment_4
@@ -1484,7 +1484,7 @@ technologies = {
 	}
 
 	eng_medium_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Crusader mk iii
 
 		enable_equipments = {
@@ -1530,7 +1530,7 @@ technologies = {
 	}
 
 	eng_medium_aa_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Crusader AA Mk II
 		enable_equipments = {
 			eng_medium_aa_equipment_5
@@ -1565,7 +1565,7 @@ technologies = {
 	}
 
 	eng_medium_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Cavalier
 
 		enable_equipments = {
@@ -1617,7 +1617,7 @@ technologies = {
 	}
 
 	eng_medium_td_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Avenger
 		enable_equipments = {
 			eng_medium_td_equipment_6
@@ -1652,7 +1652,7 @@ technologies = {
 	}
 
 	eng_medium_spg_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Cromwell CS
 		enable_equipments = {
 			eng_medium_tank_infantry_support_chassis_4
@@ -1688,7 +1688,7 @@ technologies = {
 	}
 
 	eng_medium_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Cromwell
 
 		enable_equipments = {
@@ -1740,7 +1740,7 @@ technologies = {
 	}
 
 	eng_medium_td_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Challenger
 		enable_equipments = {
 			eng_medium_td_equipment_7
@@ -1760,7 +1760,7 @@ technologies = {
 	}
 
 	eng_medium_aa_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Centaur AA
 		enable_equipments = {
 			eng_medium_aa_equipment_7
@@ -1796,7 +1796,7 @@ technologies = {
 	}
 
 	eng_medium_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Comet
 
 		enable_equipments = {
@@ -1848,7 +1848,7 @@ technologies = {
 	}
 
 	eng_medium_td_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Charioteer
 		enable_equipments = {
 			eng_medium_td_equipment_8
@@ -1883,7 +1883,7 @@ technologies = {
 	}
 
 	eng_medium_spg_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Comet GC
 		enable_equipments = {
 			eng_medium_spg_equipment_8
@@ -1919,7 +1919,7 @@ technologies = {
 		}
 
 		allow = {
-        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TA2 } }
+        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } }
 
 			OR = {
 				ENG = {
@@ -1966,7 +1966,7 @@ technologies = {
 	}
 
 	eng_medium_td_9 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Sherman Firefly
 
 		enable_equipments = {
@@ -2003,7 +2003,7 @@ technologies = {
 	}
 
 	eng_medium_spg_9 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Sexton
 		enable_equipments = {
 			eng_medium_spg_equipment_9
@@ -2298,7 +2298,7 @@ technologies = {
 	}
 
 	eng_heavy_1_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Bishop
 		enable_equipments = {
 			eng_heavy_spg_equipment_3
@@ -2355,7 +2355,7 @@ technologies = {
 	}
 
 	eng_heavy_td_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Valentine AT
 		enable_equipments = {
 			eng_heavy_td_equipment_3
@@ -2412,7 +2412,7 @@ technologies = {
 	}
 
 	eng_super_heavy_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #TOG II
 
 		enable_equipments = {
@@ -2439,7 +2439,7 @@ technologies = {
 	}
 
 	eng_heavy_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Churchill MkI
 
 		enable_equipments = {
@@ -2507,7 +2507,7 @@ technologies = {
 	}
 
 	eng_heavy_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Churchill MkIII
 
 		enable_equipments = {
@@ -2558,7 +2558,7 @@ technologies = {
 	}
 
 	eng_heavy_5_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Churchill AVRE
 		enable_equipments = {
 			eng_medium_tank_assault_chassis_5
@@ -2593,7 +2593,7 @@ technologies = {
 	}
 
 	eng_support_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Valentine Mk X
 
 		enable_equipments = {
@@ -2640,7 +2640,7 @@ technologies = {
 	}
 
 	eng_support_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Valentine Mk XI
 
 		enable_equipments = {
@@ -2691,7 +2691,7 @@ technologies = {
 	}
 
 	eng_heavy_td_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Archer
 		enable_equipments = {
 			eng_heavy_td_equipment_7
@@ -2727,7 +2727,7 @@ technologies = {
 	}
 
 	eng_heavy_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Churchill MkVII
 
 		enable_equipments = {
@@ -2774,7 +2774,7 @@ technologies = {
 	}
 
 	eng_heavy_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Black Prince
 
 		enable_equipments = {
@@ -2826,7 +2826,7 @@ technologies = {
 	}
 
 	eng_heavy_td_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Tortoise
 		enable_equipments = {
 			eng_heavy_td_equipment_8
@@ -2861,7 +2861,7 @@ technologies = {
 	}
 
 	eng_heavy_spg_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Churchill Ardeer Aggie
 		enable_equipments = {
 			eng_medium_tank_assault_chassis_8
@@ -2896,7 +2896,7 @@ technologies = {
 	}
 
 	eng_heavy_9 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Caernarvon
 
 		enable_equipments = {
@@ -2968,7 +2968,7 @@ technologies = {
 	}
 
 	eng_heavy_spg_9 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #FV3805
 		enable_equipments = {
 			eng_heavy_spg_equipment_9
@@ -3003,7 +3003,7 @@ technologies = {
 	}
 
 	eng_heavy_10 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Conqueror
 
 		enable_equipments = {
@@ -3050,7 +3050,7 @@ technologies = {
 	}
 
 	eng_heavy_spg_10 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Conqueror GC
 		enable_equipments = {
 			eng_heavy_spg_equipment_10
@@ -3085,7 +3085,7 @@ technologies = {
 	}
 
 	eng_heavy_td_10 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Badger
 		enable_equipments = {
 			eng_heavy_td_equipment_10
@@ -3120,7 +3120,7 @@ technologies = {
 	}
 
 	eng_modern_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Centurion MKI
 
 		enable_equipments = {
@@ -3170,7 +3170,7 @@ technologies = {
 	}
 
 	eng_modern_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Centurion MkIII
 
 		enable_equipments = {
@@ -3221,7 +3221,7 @@ technologies = {
 	}
 
 	eng_modern_2_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #FV3805
 		enable_equipments = {
 			eng_modern_spg_equipment_2
@@ -3256,7 +3256,7 @@ technologies = {
 	}
 
 	eng_modern_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Centurion MkV
 
 		enable_equipments = {
@@ -3309,7 +3309,7 @@ technologies = {
 	}
 
 	eng_modern_3_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #FV433 Abbot
 		enable_equipments = {
 			eng_modern_spg_equipment_3
@@ -3344,7 +3344,7 @@ technologies = {
 	}
 
 	eng_modern_3_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Conway
 		enable_equipments = {
 			eng_modern_td_equipment_3
@@ -3379,7 +3379,7 @@ technologies = {
 	}
 
 	eng_modern_3_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Falcon
 		enable_equipments = {
 			eng_modern_aa_equipment_3
@@ -3414,7 +3414,7 @@ technologies = {
 	}
 
 	eng_modern_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Centurion MkVII
 
 		enable_equipments = {
@@ -4118,7 +4118,7 @@ technologies = {
 	}
 
 	eng_light_tank_chassis_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Hopkins A25
 
 		enable_equipments = {
@@ -4161,7 +4161,7 @@ technologies = {
 	}
 
 	eng_light_tank_spg_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Alecto
 
 		enable_equipments = {
@@ -4188,7 +4188,7 @@ technologies = {
 	}
 
 	eng_light_tank_chassis_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #FV301
 
 		enable_equipments = {
@@ -4228,7 +4228,7 @@ technologies = {
 	}
 
 	eng_light_tank_spg_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #FV304
 
 		enable_equipments = {
@@ -4257,7 +4257,7 @@ technologies = {
 	}
 
 	eng_light_tank_chassis_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #GSR Setter
 
 		enable_equipments = {
@@ -4620,7 +4620,7 @@ technologies = {
 	}
 
 	eng_medium_tank_aa_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Crusader AA Mk I
 
 		enable_equipments = {
@@ -4662,7 +4662,7 @@ technologies = {
 	}
 
 	eng_medium_tank_chassis_3_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Crusader Mk III
 
 		enable_equipments = {
@@ -4715,7 +4715,7 @@ technologies = {
 	}
 
 	eng_medium_tank_aa_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Crusader AA Mk II
 
 		enable_equipments = {
@@ -4756,7 +4756,7 @@ technologies = {
 	}
 
 	eng_medium_tank_chassis_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Cavalier
 
 		enable_equipments = {
@@ -4815,7 +4815,7 @@ technologies = {
 	}
 
 	eng_medium_tank_td_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Avenger
 
 		enable_equipments = {
@@ -4856,7 +4856,7 @@ technologies = {
 	}
 
 	eng_medium_tank_spg_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Cromwell CS
 
 		enable_equipments = {
@@ -4898,7 +4898,7 @@ technologies = {
 	}
 
 	eng_medium_tank_chassis_4_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Cromwell
 
 		enable_equipments = {
@@ -4955,7 +4955,7 @@ technologies = {
 	}
 
 	eng_medium_tank_td_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Challenger
 
 		enable_equipments = {
@@ -4981,7 +4981,7 @@ technologies = {
 	}
 
 	eng_medium_tank_spg_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Cromwell GC
 		enable_equipments = {
 			tank_eng_medium_chassis_spg_4
@@ -5022,7 +5022,7 @@ technologies = {
 	}
 
 	eng_medium_tank_aa_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Centaur AA
 		enable_equipments = {
 			tank_eng_medium_chassis_aa_4
@@ -5063,7 +5063,7 @@ technologies = {
 	}
 
 	eng_medium_tank_chassis_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Comet
 
 		enable_equipments = {
@@ -5122,7 +5122,7 @@ technologies = {
 	}
 
 	eng_medium_tank_td_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Charioteer
 		enable_equipments = {
 			tank_eng_medium_chassis_td_5
@@ -5162,7 +5162,7 @@ technologies = {
 	}
 
 	eng_medium_tank_spg_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Comet GC
 		enable_equipments = {
 			tank_eng_medium_chassis_spg_5
@@ -5640,7 +5640,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_spg_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Bishop
 		enable_equipments = {
 			tank_eng_medium_chassis_spg_10
@@ -5702,7 +5702,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_td_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Valentine AT
 		enable_equipments = {
 			tank_eng_medium_chassis_td_10
@@ -5764,7 +5764,7 @@ technologies = {
 	}
 
 	eng_support_tank_chassis_3_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Valentine Mk X
 
 		enable_equipments = {
@@ -5815,7 +5815,7 @@ technologies = {
 	}
 
 	eng_support_tank_chassis_3_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Valentine Mk XI
 
 		enable_equipments = {
@@ -5871,7 +5871,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_td_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Archer
 		enable_equipments = {
 			tank_eng_medium_chassis_td_10_2
@@ -5912,7 +5912,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_chassis_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Churchill Mk I
 
 		enable_equipments = {
@@ -5987,7 +5987,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_chassis_3_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Churchill Mk III
 
 		enable_equipments = {
@@ -6047,7 +6047,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_spg_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Churchill AVRE
 		enable_equipments = {
 			tank_eng_heavy_chassis_infantry_support_3
@@ -6087,7 +6087,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_chassis_3_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Churchill Mk VII
 
 		enable_equipments = {
@@ -6138,7 +6138,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_chassis_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Black Prince
 
 		enable_equipments = {
@@ -6197,7 +6197,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_td_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Tortoise
 		enable_equipments = {
 			tank_eng_heavy_chassis_td_5
@@ -6237,7 +6237,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_spg_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Churchill Ardeer Aggie
 		enable_equipments = {
 			tank_eng_heavy_chassis_infantry_support_3_2
@@ -6277,7 +6277,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_chassis_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Caernarvon
 
 		enable_equipments = {
@@ -6356,7 +6356,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_spg_9 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #FV207
 		enable_equipments = {
 			tank_eng_heavy_chassis_spg_6
@@ -6396,7 +6396,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_chassis_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Conqueror
 
 		enable_equipments = {
@@ -6447,7 +6447,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_spg_10 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Conqueror GC
 		enable_equipments = {
 			tank_eng_heavy_chassis_spg_6_2
@@ -6487,7 +6487,7 @@ technologies = {
 	}
 
 	eng_heavy_tank_td_10 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #Badger
 		enable_equipments = {
 			tank_eng_heavy_chassis_td_6
@@ -6527,7 +6527,7 @@ technologies = {
 	}
 
 	eng_modern_tank_chassis_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Centurion MK I
 
 		enable_equipments = {
@@ -6582,7 +6582,7 @@ technologies = {
 	}
 
 	eng_modern_tank_chassis_1_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Centurion Mk III
 
 		enable_equipments = {
@@ -6637,7 +6637,7 @@ technologies = {
 	}
 
 	eng_modern_tank_spg_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #FV3805
 		enable_equipments = {
 			tank_eng_modern_chassis_spg_1
@@ -6677,7 +6677,7 @@ technologies = {
 	}
 
 	eng_modern_tank_chassis_1_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Centurion Mk V
 
 		enable_equipments = {
@@ -6734,7 +6734,7 @@ technologies = {
 	}
 
 	eng_modern_tank_spg_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #FV433 Abbot
 		enable_equipments = {
 			tank_eng_modern_chassis_spg_2
@@ -6774,7 +6774,7 @@ technologies = {
 	}
 
 	eng_modern_tank_td_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Conway
 		enable_equipments = {
 			tank_eng_modern_chassis_td_1
@@ -6814,7 +6814,7 @@ technologies = {
 	}
 
 	eng_modern_tank_aa_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Falcon AA
 		enable_equipments = {
 			tank_eng_modern_chassis_aa_2
@@ -6854,7 +6854,7 @@ technologies = {
 	}
 
 	eng_modern_tank_chassis_1_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_ENG_TA2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TA2 } } } }
  #Centurion Mk VII
 
 		enable_equipments = {
@@ -6900,7 +6900,7 @@ technologies = {
 	}
 
 	eng_super_heavy_tank_chassis_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_ENG_TB2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ENG_TB2 } } } }
  #TOG II
 
 		enable_equipments = {

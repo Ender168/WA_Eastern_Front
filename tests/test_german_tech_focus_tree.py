@@ -66,7 +66,8 @@ class GermanTechFocusTreeTests(unittest.TestCase):
             cost = re.search(r"\bcost\s*=\s*([0-9]+)", block)
             self.assertIsNotNone(focus_id)
             self.assertIsNotNone(cost, focus_id.group(1))
-            self.assertGreaterEqual(int(cost.group(1)), 10, focus_id.group(1))
+            if focus_id.group(1).endswith(('_P1','_P2')):self.assertEqual(int(cost.group(1)),3)
+            else:self.assertGreaterEqual(int(cost.group(1)), 10, focus_id.group(1))
             self.assertIn("completion_reward = {", block, focus_id.group(1))
 
     def test_every_focus_has_english_and_russian_localisation(self):
@@ -91,7 +92,7 @@ class GermanTechFocusTreeTests(unittest.TestCase):
     def test_strategic_tradeoffs_are_mutually_exclusive(self):
         text = FOCUS_PATH.read_text(encoding="utf-8-sig")
         blocks = {re.search(r"id = (\w+)", b).group(1): b for b in focus_blocks(text)}
-        for a, b in [("H2", "W2"), ("C41", "C42"), ("C51", "C52"), ("C61", "C62")]:
+        for a, b in [("T1", "H1"), ("P1", "P2"), ("C41", "C42"), ("C51", "C52"), ("C61", "C62")]:
             self.assertIn(f"mutually_exclusive = {{ focus = WAEF_GER_{b} }}", blocks[f"WAEF_GER_{a}"])
             self.assertIn(f"mutually_exclusive = {{ focus = WAEF_GER_{a} }}", blocks[f"WAEF_GER_{b}"])
 

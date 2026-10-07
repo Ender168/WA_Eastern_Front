@@ -282,7 +282,7 @@ technologies = {
 	}
 
 	ger_fighter_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  # Bf 109 F-4
 
 		enable_equipments = {
@@ -335,7 +335,7 @@ technologies = {
 	}
 
 	ger_cv_fighter_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -359,7 +359,7 @@ technologies = {
 	}
 
 	ger_fighter_multirole_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Fw 190 A-2
 
 		enable_equipments = {
@@ -408,7 +408,7 @@ technologies = {
 	}
 
 	ger_fighter_multirole_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Fw 190 A-4
 
 		enable_equipments = {
@@ -461,7 +461,7 @@ technologies = {
 	}
 
 	ger_cv_fighter_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -500,7 +500,7 @@ technologies = {
 	}
 
 	ger_fighter_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -549,7 +549,7 @@ technologies = {
 	}
 
 	ger_fighter_multirole_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -603,7 +603,7 @@ technologies = {
 	}
 
 	ger_fighter_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -661,7 +661,7 @@ technologies = {
 	}
 
 	ger_cv_fighter_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -685,7 +685,7 @@ technologies = {
 	}
 
 	ger_fighter_multirole_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -738,7 +738,7 @@ technologies = {
 	}
 
 	ger_cv_fighter_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -777,7 +777,7 @@ technologies = {
 	}
 
 	ger_fighter_multirole_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -821,7 +821,7 @@ technologies = {
 	}
 
 	ger_jet_fighter_multirole_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Me 262
 
 		enable_equipments = {
@@ -877,7 +877,7 @@ technologies = {
 	}
 
 	ger_jet_cv_fighter_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -916,7 +916,7 @@ technologies = {
 	}
 
 	ger_jet_fighter_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -963,7 +963,7 @@ technologies = {
 	}
 
 	ger_jet_fighter_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -1019,7 +1019,7 @@ technologies = {
 	}
 
 	ger_jet_cv_fighter_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -1058,7 +1058,7 @@ technologies = {
 	}
 
 	ger_jet_fighter_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -1109,7 +1109,7 @@ technologies = {
 	}
 
 	ger_jet_cv_fighter_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -1148,7 +1148,7 @@ technologies = {
 	}
 
 	ger_jet_fighter_multirole_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Me 262 HG I
 
 		enable_equipments = {
@@ -1205,7 +1205,7 @@ technologies = {
 	}
 
 	ger_jet_fighter_multirole_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Me 262 HG II
 
 		enable_equipments = {
@@ -1257,7 +1257,7 @@ technologies = {
 	}
 
 	ger_jet_fighter_multirole_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Me 262 HG III
 
 		enable_equipments = {
@@ -1400,7 +1400,7 @@ technologies = {
 	}
 
 	ger_attacker_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 	# Bf 110 F-2
 
 		enable_equipments = {
@@ -1449,7 +1449,7 @@ technologies = {
 	}
 
 	ger_attacker_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 
 
 		enable_equipments = {
@@ -1498,7 +1498,7 @@ technologies = {
 	}
 
 	ger_heavy_fighter_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# He 219
 
 		enable_equipments = {
@@ -1533,7 +1533,7 @@ technologies = {
 	}
 
 	ger_heavy_fighter_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Do 335
 
 		enable_equipments = {
@@ -1758,7 +1758,7 @@ technologies = {
 	}
 
 	ger_cv_cas_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 has_completed_focus = WAEF_GER_R1 } } } }
 
 
 		enable_equipments = {
@@ -1781,7 +1781,7 @@ technologies = {
 	}
 
 	ger_cas_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 has_completed_focus = WAEF_GER_R1 } } } }
 
 
 		enable_equipments = {
@@ -1833,7 +1833,7 @@ technologies = {
 	}
 
 	ger_cas_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 
 
 		enable_equipments = {
@@ -1885,7 +1885,7 @@ technologies = {
 	}
 
 	ger_cv_cas_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 
 
 		enable_equipments = {
@@ -1908,7 +1908,7 @@ technologies = {
 	}
 
 	ger_cas_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 
 
 		enable_equipments = {
@@ -1960,7 +1960,7 @@ technologies = {
 	}
 
 	ger_cv_cas_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 
 
 		enable_equipments = {
@@ -1998,7 +1998,7 @@ technologies = {
 	}
 
 	ger_jet_cas_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 
 
 		enable_equipments = {
@@ -2050,7 +2050,7 @@ technologies = {
 	}
 
 	ger_jet_cas_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 
 
 		enable_equipments = {
@@ -2168,7 +2168,7 @@ technologies = {
 	}
 
 	ger_naval_bomber_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 has_completed_focus = WAEF_GER_R1 } } } }
 
 
 		allow_branch = {
@@ -2218,7 +2218,7 @@ technologies = {
 	}
 
 	ger_naval_bomber_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 
 
 		allow_branch = {
@@ -2273,7 +2273,7 @@ technologies = {
 	}
 
 	ger_jet_naval_bomber_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
  #Me 262 Sturm Vogel
 
 		enable_equipments = {
@@ -2326,7 +2326,7 @@ technologies = {
 	}
 
 	ger_jet_naval_bomber_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
  #Me 274 Feuersturm
 
 		enable_equipments = {
@@ -2409,7 +2409,7 @@ technologies = {
 	}
 
 	ger_patrol_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 has_completed_focus = WAEF_GER_R1 } } } }
 
 
 		enable_equipments = {
@@ -2441,7 +2441,7 @@ technologies = {
 	}
 
 	ger_patrol_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 
 
 		enable_equipments = {
@@ -2648,7 +2648,7 @@ technologies = {
 	}
 
 	ger_tactical_bomber_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
  # He 111 H-16
 
 		enable_equipments = {
@@ -2696,7 +2696,7 @@ technologies = {
 	}
 
 	ger_tactical_bomber_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
  # Do 217 K-2
 
 		enable_equipments = {
@@ -2748,7 +2748,7 @@ technologies = {
 	}
 
 	ger_heavy_fighter_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Do 217 J-2
 
 		enable_equipments = {
@@ -2924,7 +2924,7 @@ technologies = {
 	}
 
 	ger_strike_bomber_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 has_completed_focus = WAEF_GER_R1 } } } }
 	# Ju 88 A-4
 
 		enable_equipments = {
@@ -2972,7 +2972,7 @@ technologies = {
 	}
 
 	ger_strike_bomber_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
  # Ju 188
 
 		enable_equipments = {
@@ -3010,7 +3010,7 @@ technologies = {
 	}
 
 	ger_strike_bomber_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
  # Ju 288
 
 		enable_equipments = {
@@ -3038,7 +3038,7 @@ technologies = {
 	}
 
 	ger_jet_tactical_bomber_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
  # Ar 234 B-2
 
 		enable_equipments = {
@@ -3090,7 +3090,7 @@ technologies = {
 	}
 
 	ger_jet_tactical_bomber_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 
 
 		enable_equipments = {
@@ -3142,7 +3142,7 @@ technologies = {
 	}
 
 	ger_jet_tactical_bomber_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 
 
 		enable_equipments = {
@@ -3195,7 +3195,7 @@ technologies = {
 	}
 
 	ger_jet_tactical_bomber_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 
 
 		enable_equipments = {
@@ -3245,7 +3245,7 @@ technologies = {
 	############################### Strategic Bomber
 
 	ger_strategic_bomber_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_R1 } } } }
 
 
 		enable_equipments = {
@@ -3303,7 +3303,7 @@ technologies = {
 	}
 
 	ger_strategic_bomber_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_R1 } } } }
  #Me 264
 
 		enable_equipments = {
@@ -3361,7 +3361,7 @@ technologies = {
 	}
 
 	ger_strategic_bomber_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_R1 } } } }
  #Ta 400
 
 		enable_equipments = {
@@ -3419,7 +3419,7 @@ technologies = {
 	}
 
 	ger_jet_strategic_bomber_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_R1 } } } }
 
 
 		enable_equipments = {
@@ -3471,7 +3471,7 @@ technologies = {
 	}
 
 	ger_jet_strategic_bomber_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_R1 } } } }
 
 
 		enable_equipments = {
@@ -3615,7 +3615,7 @@ technologies = {
 	}
 
 	ger_scout_plane_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  # Fw 189
 
 		enable_equipments = {
@@ -3665,7 +3665,7 @@ technologies = {
 	}
 
 	ger_jet_scout_plane_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  # Me 462
 
 		enable_equipments = {
@@ -3805,7 +3805,7 @@ technologies = {
 	}
 
 	ger_transport_plane_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -3853,7 +3853,7 @@ technologies = {
 	}
 
 	ger_transport_plane_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 
 
 		enable_equipments = {
@@ -4210,7 +4210,7 @@ technologies = {
 		}
 	}
 	ger_cv_fighter_ad_tech__2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 			# Bf 109 T-2
 
 		enable_equipments = {
@@ -4233,7 +4233,7 @@ technologies = {
 	}
 
 	ger_fighter_ad_tech_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  				# Bf 109 F-4
 
 		enable_equipments = {
@@ -4289,7 +4289,7 @@ technologies = {
 		}
 	}
 	ger_fighter_ad_tech_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  				# Bf 109 G-6
 
 		enable_equipments = {
@@ -4345,7 +4345,7 @@ technologies = {
 		}
 	}
 	ger_fighter_ad_tech_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  				# Bf 109 K-4
 
 		enable_equipments = {
@@ -4407,7 +4407,7 @@ technologies = {
 		}
 	}
 	ger_cv_fighter_ad_tech__4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 			# Bf 109 T-4
 
 		enable_equipments = {
@@ -4430,7 +4430,7 @@ technologies = {
 	}
 
 	ger_jet_fighter_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 			# He 162 A-2
 
 		enable_equipments = {
@@ -4486,7 +4486,7 @@ technologies = {
 		}
 	}
 	ger_jet_fighter_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 			# Ho 229
 
 		enable_equipments = {
@@ -4535,7 +4535,7 @@ technologies = {
 	}
 
 	ger_fighter_multirole_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 		# Fw 190 A-2
 
 		enable_equipments = {
@@ -4589,7 +4589,7 @@ technologies = {
 		}
 	}
 	ger_fighter_multirole_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 		# Fw 190 A-4
 
 		enable_equipments = {
@@ -4641,7 +4641,7 @@ technologies = {
 		}
 	}
 	ger_fighter_multirole_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 		# Fw 190 A-6
 
 		enable_equipments = {
@@ -4696,7 +4696,7 @@ technologies = {
 		}
 	}
 	ger_fighter_multirole_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 		# Fw 190 D-9
 
 		enable_equipments = {
@@ -4759,7 +4759,7 @@ technologies = {
 	}
 
 	ger_fighter_multirole_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 		# Ta 152
 
 		enable_equipments = {
@@ -4812,7 +4812,7 @@ technologies = {
 	}
 
 	ger_jet_fighter_multirole_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Me 262 A-1a
 
 		enable_equipments = {
@@ -4877,7 +4877,7 @@ technologies = {
 		}
 	}
 	ger_jet_cv_fighter_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 		# Me 262 T
 
 		enable_equipments = {
@@ -4915,7 +4915,7 @@ technologies = {
 		}
 	}
 	ger_jet_fighter_multirole_ad_tech_1_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Me 262 A-1a/U4 Narwal
 
 		enable_equipments = {
@@ -4961,7 +4961,7 @@ technologies = {
 	}
 
 	ger_jet_fighter_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 			# Ta 183 I
 
 		enable_equipments = {
@@ -5024,7 +5024,7 @@ technologies = {
 		}
 	}
 	ger_jet_cv_fighter_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 		# Ta 183 T-I
 
 		enable_equipments = {
@@ -5063,7 +5063,7 @@ technologies = {
 	}
 
 	ger_jet_fighter_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 			# Ta 183 II
 
 		enable_equipments = {
@@ -5116,7 +5116,7 @@ technologies = {
 		}
 	}
 	ger_jet_cv_fighter_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 		# Ta 183 T-II
 
 		enable_equipments = {
@@ -5155,7 +5155,7 @@ technologies = {
 	}
 
 	ger_jet_fighter_multirole_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Me 262 HG-I
 
 		enable_equipments = {
@@ -5211,7 +5211,7 @@ technologies = {
 		}
 	}
 	ger_jet_fighter_multirole_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Me 262 HG-II
 
 		enable_equipments = {
@@ -5264,7 +5264,7 @@ technologies = {
 		}
 	}
 	ger_jet_fighter_multirole_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Me 262 HG-III
 
 		enable_equipments = {
@@ -5424,7 +5424,7 @@ technologies = {
 		}
 	}
 	ger_attacker_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 		# Bf 110 F-2
 
 		enable_equipments = {
@@ -5484,7 +5484,7 @@ technologies = {
 		}
 	}
 	ger_attacker_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 		# Bf 110 G-2
 
 		enable_equipments = {
@@ -5534,7 +5534,7 @@ technologies = {
 	}
 
 	ger_heavy_fighter_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Me 410 A-1/U2
 
 		enable_equipments = {
@@ -5594,7 +5594,7 @@ technologies = {
 		}
 	}
 	ger_heavy_fighter_ad_tech_2_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Me 410 B-1/U2
 
 		enable_equipments = {
@@ -5642,7 +5642,7 @@ technologies = {
 	}
 
 	ger_heavy_fighter_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# He 219 A-2
 
 		enable_equipments = {
@@ -5701,7 +5701,7 @@ technologies = {
 	}
 
 	ger_heavy_fighter_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Do 335 B-2
 
 		enable_equipments = {
@@ -6000,7 +6000,7 @@ technologies = {
 	}
 
 	ger_cas_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 has_completed_focus = WAEF_GER_R1 } } } }
 		# Ju 87 D-1
 
 		enable_equipments = {
@@ -6065,7 +6065,7 @@ technologies = {
 		}
 	}
 	ger_cv_cas_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 has_completed_focus = WAEF_GER_R1 } } } }
 	# Ju 87 R-4
 
 		enable_equipments = {
@@ -6108,7 +6108,7 @@ technologies = {
 		}
 
 		allow = {
-        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_S2 } }
+        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } }
 
 			OR = {
 				has_full_control_of_state = 855
@@ -6223,7 +6223,7 @@ technologies = {
 	}
 
 	ger_cas_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 		# Ju 87 D-5
 
 		enable_equipments = {
@@ -6300,7 +6300,7 @@ technologies = {
 	}
 
 	ger_cas_ad_tech_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 		# Ju 187
 
 		enable_equipments = {
@@ -6357,7 +6357,7 @@ technologies = {
 		}
 	}
 	ger_cv_cas_ad_tech_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 	# Ju 187 C-1
 
 		enable_equipments = {
@@ -6395,7 +6395,7 @@ technologies = {
 	}
 
 	ger_jet_cas_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 	# Me 262 A-2a Sturmvogel
 
 		enable_equipments = {
@@ -6452,7 +6452,7 @@ technologies = {
 		}
 	}
 	ger_jet_cas_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_S1 } } } }
 	# Me 1100 B Feuersturm
 
 		enable_equipments = {
@@ -6576,7 +6576,7 @@ technologies = {
 	}
 
 	ger_naval_bomber_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 has_completed_focus = WAEF_GER_R1 } } } }
  		# Ju 87 D-4
 
 		allow_branch = {
@@ -6631,7 +6631,7 @@ technologies = {
 	}
 
 	ger_naval_bomber_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 		# Ju 187 C-2
 
 		allow_branch = {
@@ -6686,7 +6686,7 @@ technologies = {
 	}
 
 	ger_jet_naval_bomber_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
  	# Me 262 A-2c Sturmvogel
 
 		enable_equipments = {
@@ -6741,7 +6741,7 @@ technologies = {
 	}
 
 	ger_jet_naval_bomber_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
  	# Me 1100 C Schiffzerstörer
 
 		enable_equipments = {
@@ -6842,7 +6842,7 @@ technologies = {
 	}
 
 	ger_patrol_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 has_completed_focus = WAEF_GER_R1 } } } }
 		# Fw 200 C-3
 
 		enable_equipments = {
@@ -6887,7 +6887,7 @@ technologies = {
 		}
 	}
 	ger_patrol_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 		# Fw 200 C-4
 
 		enable_equipments = {
@@ -6926,7 +6926,7 @@ technologies = {
 	}
 
 	ger_patrol_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 		# BV 238
 
 		enable_equipments = {
@@ -6996,7 +6996,7 @@ technologies = {
 		}
 	}
 	ger_heavy_fighter_ad_tech_conversion_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 		# Do 217 J-2
 
 		enable_equipments = {
@@ -7032,7 +7032,7 @@ technologies = {
 		}
 	}
 	ger_heavy_fighter_ad_tech_conversion_2_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Do 217 N-2
 
 		enable_equipments = {
@@ -7096,7 +7096,7 @@ technologies = {
 		}
 	}
 	ger_heavy_fighter_ad_tech_conversion_3_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Ju 88 C-6
 
 		enable_equipments = {
@@ -7133,7 +7133,7 @@ technologies = {
 		}
 	}
 	ger_heavy_fighter_ad_tech_conversion_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 		# Ju 388 J-1
 		enable_equipments = {
 			GER_ju_388_j1_airframe
@@ -7312,7 +7312,7 @@ technologies = {
 		}
 	}
 	ger_fast_bomber_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 has_completed_focus = WAEF_GER_R1 } } } }
 		# Ju 88 A-4
 
 		enable_equipments = {
@@ -7374,7 +7374,7 @@ technologies = {
 	}
 
 	ger_fast_bomber_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 		# Ju 188 A
 
 		enable_equipments = {
@@ -7420,7 +7420,7 @@ technologies = {
 	}
 
 	ger_jet_fast_bomber_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 	# Ar 234 B-2
 
 		enable_equipments = {
@@ -7477,7 +7477,7 @@ technologies = {
 		}
 	}
 	ger_jet_fast_bomber_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 	# Ar 234 C-3
 
 		enable_equipments = {
@@ -7536,7 +7536,7 @@ technologies = {
 	}
 
 	ger_jet_fast_bomber_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 	# Ho 267
 
 		enable_equipments = {
@@ -7774,7 +7774,7 @@ technologies = {
 		}
 	}
 	ger_strike_bomber_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 has_completed_focus = WAEF_GER_R1 } } } }
 				# Do 217 E-2
 
 		enable_equipments = {
@@ -7841,7 +7841,7 @@ technologies = {
 		}
 	}
 	ger_strike_bomber_ad_tech_3_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 			# Do 217 K-2
 
 		enable_equipments = {
@@ -7898,7 +7898,7 @@ technologies = {
 		}
 	}
 	ger_strike_bomber_ad_tech_3_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 			# Do 217 M-11
 
 		enable_equipments = {
@@ -8151,7 +8151,7 @@ technologies = {
 	}
 
 	ger_tactical_bomber_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 has_completed_focus = WAEF_GER_R1 } } } }
 		# He 111 H-6
 
 		enable_equipments = {
@@ -8205,7 +8205,7 @@ technologies = {
 	}
 
 	ger_tactical_bomber_ad_tech_4_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 		# He 111 H-16
 
 		enable_equipments = {
@@ -8263,7 +8263,7 @@ technologies = {
 	}
 
 	ger_tactical_bomber_ad_tech_4_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 		# He 111 H-21
 
 		enable_equipments = {
@@ -8321,7 +8321,7 @@ technologies = {
 	}
 
 	ger_tactical_bomber_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 			# Ju 288 C
 
 		enable_equipments = {
@@ -8380,7 +8380,7 @@ technologies = {
 	}
 
 	ger_jet_tactical_bomber_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 	# Fw 239
 
 		enable_equipments = {
@@ -8440,7 +8440,7 @@ technologies = {
 	}
 
 	ger_jet_tactical_bomber_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_B1 } } } }
 	# Fw 1000
 
 		enable_equipments = {
@@ -8557,7 +8557,7 @@ technologies = {
 		}
 	}
 	ger_strategic_bomber_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_R1 } } } }
 		# He 177 A-1
 
 		enable_equipments = {
@@ -8638,7 +8638,7 @@ technologies = {
 		}
 	}
 	ger_strategic_bomber_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_R1 } } } }
 		# He 177 A-5
 
 		enable_equipments = {
@@ -8693,7 +8693,7 @@ technologies = {
 		}
 	}
 	ger_strategic_bomber_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_R1 } } } }
 		# He 277 A
 
 		enable_equipments = {
@@ -8748,7 +8748,7 @@ technologies = {
 		}
 	}
 	ger_jet_strategic_bomber_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_R1 } } } }
 	# Ar 555
 
 		enable_equipments = {
@@ -8799,7 +8799,7 @@ technologies = {
 
 	############################### Heavy Strategic Bomber
 	ger_heavy_strategic_bomber_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_R1 } } } }
  		# Me 264
 
 		enable_equipments = {
@@ -8871,7 +8871,7 @@ technologies = {
 	}
 
 	ger_heavy_strategic_bomber_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_R1 } } } }
  		# Ta 400
 
 		enable_equipments = {
@@ -8938,7 +8938,7 @@ technologies = {
 	}
 
 	ger_jet_heavy_strategic_bomber_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_R1 } } } }
 	# Ju 132
 
 		enable_equipments = {
@@ -8996,7 +8996,7 @@ technologies = {
 	}
 
 	ger_jet_heavy_strategic_bomber_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_R1 } } } }
 	# Me 462
 
 		enable_equipments = {
@@ -9156,7 +9156,7 @@ technologies = {
 	}
 
 	ger_scout_plane_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  		# Fw 189
 
 		enable_equipments = {
@@ -9212,9 +9212,7 @@ technologies = {
 			}
 		}
 	}
-	ger_air_upgrade_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_S2 } } }
-				# Fw 189 Upgrade Pack
+	ger_air_upgrade_1 = {				# Fw 189 Upgrade Pack
 		enable_equipment_modules = {
 			GER_engine_argus_as_411_2x
 			armour_light_cockpit_engine
@@ -9256,7 +9254,7 @@ technologies = {
 	}
 
 	ger_jet_scout_plane_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_GER_W2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
 	# Ar 234 C-4
 
 		enable_equipments = {

@@ -9,11 +9,12 @@ from pathlib import Path
 import argparse, json, re
 from collections import defaultdict
 import generate_1940_tech_baseline as baseline
+import german_focus_revision as german
 ROOT = Path(__file__).resolve().parents[1]
 SCHOOLS = {'GER':'german','SOV':'soviet','USA':'unitedstates','ENG':'british','FRA':'french','ITA':'italian','JAP':'japanese'}
 FILENAMES = {'GER':'germany','SOV':'soviet','USA':'unitedstates','ENG':'british','FRA':'french','ITA':'italian','JAP':'japanese'}
 START_EXCEPTIONS = {'USA': ['usa_medium_tank_chassis_2','usa_medium_2'], 'ITA':['ita_interceptor_ad_tech_2','ita_fighter_4']}
-EXPENSIVE = {'GER':'H2','SOV':'TB2','USA':'TB4','FRA':'TB4','ITA':'TB5','JAP':'TB5'}
+EXPENSIVE = {'GER':'H1','SOV':'TB2','USA':'TB4','FRA':'TB4','ITA':'TB5','JAP':'TB5'}
 EN = {
 'C00':'Military Research Organisation','C11':'Industry 1941','C13':'Industry 1943','C15':'Industry 1945',
 'C21':'Electronics 1941','C23':'Electronics 1943','C25':'Electronics 1945','C31':'Support Companies 1941','C33':'Support Companies 1943','C35':'Support Companies 1945',
@@ -23,6 +24,7 @@ EN = {
 'A1':'Air Force Modernisation','A3':'Messerschmitt Programme','A4':'Late War Fighters','W2':'Focke Wulf Priority','W4':'Focke Wulf Development','S2':'Ground Attack Aviation','S4':'Armoured Offensive Air Support',
 'TA2':'Serial Armoured Programme','TA3':'Mobile Armoured Programme','TA4':'Serial Armour Development','TB2':'Heavy Armoured Programme','TB3':'Advanced Armoured Programme','TB4':'Advanced Armoured Formations','TB5':'Late War Armoured Programme',
 'AA2':'Fighter Priority','AA3':'Fighter Priority','AA4':'Late War Fighters','AB2':'Army Air Support Priority','AB3':'Army Air Support Priority','AB4':'Late War Air Support','O2':'National Operational Doctrine'}
+EN.update({k:v for k,v in german.EN.items() if k not in EN})
 NATIONAL_EN = {
 'SOV':{'TA2':'Mass Production of T-34','TA4':'T-34-85 and T-44','TB2':'Guards Heavy Armour','TB4':'IS Breakthrough Formations','AA2':'Frontline Fighter Priority','AB2':'Shturmovik Priority'},
 'USA':{'TA2':'Sherman Standardisation','TA4':'Serial Tank Formations','TB2':'Experimental Tanks','TB4':'Pershing Programme','AA3':'Long Range Fighter Cover','AB3':'Army Air Support'},
@@ -86,10 +88,10 @@ def coord(node):
 
 def icon(node):
     if node=='C00':return 'GFX_goal_generic_scientific_exchange'
-    if node.startswith(('C1','C4')):return 'GFX_goal_generic_construct_civ_factory'
+    if node.startswith(('C1','C4','P')):return 'GFX_goal_generic_construct_civ_factory'
     if node.startswith(('C2','C5')):return 'GFX_goal_generic_scientific_exchange'
-    if node.startswith(('T','H')):return 'GFX_goal_generic_army_tanks'
-    if node.startswith(('A','W','S')):return 'GFX_goal_generic_air_fighter'
+    if node.startswith(('T','H','L')):return 'GFX_goal_generic_army_tanks'
+    if node.startswith(('A','W','S','B','R')):return 'GFX_goal_generic_air_fighter'
     return 'GFX_goal_generic_army_doctrine'
 
 def main():
@@ -117,14 +119,14 @@ def main():
         return '\n'.join(out)
     locales={'russian':{},'english':{}}
     def loc(key,ru,en):locales['russian'][key]=ru;locales['english'][key]=en
-    restrictions={};manifest={'wa_commit':baseline.WA_COMMIT,'plan_version':'1.1','schools':{},'research_gates':{},'start_exceptions':START_EXCEPTIONS}
+    restrictions={};manifest={'wa_commit':baseline.WA_COMMIT,'plan_version':'1.1','german_revision':'2026-10-07','calendar_gates':False,'schools':{},'research_gates':{},'start_exceptions':START_EXCEPTIONS}
     ideas=[]
     for c,(ident,mods,ru,en) in COMMON_MODS.items():
         ideas.append(f'    {ident} = {{ picture = generic_research allowed = {{ always = no }} removal_cost = -1 modifier = {{ {mods} }} }}')
         loc(ident,spec['common'][[x[0] for x in spec['common']].index(c)][1],EN[c]);loc(ident+'_desc',ru,en)
     for nation in spec['nations']:
         code=nation['code'];prefix=code.lower();school=SCHOOLS[code]
-        records=spec['common']+nation['records']
+        records=german.records(spec['common']) if code=='GER' else spec['common']+nation['records']
         if code=='JAP':records=[(r[0],r[1],'1945 / 91',r[3],'Механизация 1945') if r[0]=='M4' else r for r in records]
         by_code={r[0]:r for r in records}
         packages={r[0]:set() for r in records};route_roots={}
@@ -163,6 +165,11 @@ def main():
                 elif code=='GER' and route=='A':assign(t,['A1','A3','A4']);branch=None
                 else:assign(t,[n for n in by_code if re.fullmatch(route+r'[2-5]',n)])
             restrictions[name]=(t.year, f'WAEF_{code}_{branch}' if branch else None)
+        if code=='GER':
+            german_packages,german_gates=german.packages(techs,records)
+            for node in packages:
+                if not node.startswith('C'):packages[node]=german_packages[node]
+            for name,options in german_gates.items():restrictions[name]=(techs[name].year,options)
         # Re.2001 is the shared Italian 1941 fighter, not a late route reward.
         if code=='ITA':
             for name in ['ita_fighter_multirole_ad_tech_1','ita_fighter_multirole_1']:
@@ -173,7 +180,7 @@ def main():
             assert name in techs,name
             for ids in packages.values():ids.discard(name)
             restrictions.pop(name,None)
-        # Attach hidden subtechnologies only when they respect the focus calendar and route.
+        # Attach hidden subtechnologies only when they respect the package source period and route.
         for node,ids in packages.items():
             cutoff=int(by_code[node][2].split('/')[0]);queue=list(ids)
             while queue:
@@ -185,19 +192,26 @@ def main():
                     if gate and parent_gate and gate[1]!=parent_gate[1]:continue
                     ids.add(child);queue.append(child)
                     if parent_gate:restrictions.setdefault(child,parent_gate)
+        if code=='GER':
+            basic=packages['S1']|packages['B1']
+            for node in ['R1','R2','R3']:
+                packages[node]={t for t in packages[node] if german.route(techs[t])=='R'}|basic
         # Symmetric common choices.
         excludes={}
-        for a,b in [('C41','C42'),('C51','C52'),('C61','C62')]+([('H2','W2')] if code=='GER' else [(first_route('TA'),first_route('TB')),(first_route('AA'),first_route('AB'))]):
+        for a,b in [('C41','C42'),('C51','C52'),('C61','C62')]+([] if code=='GER' else [(first_route('TA'),first_route('TB')),(first_route('AA'),first_route('AB'))]):
             if a and b:excludes[a]=b;excludes[b]=a
+        excludes={key:[value] for key,value in excludes.items()}
+        if code=='GER':excludes.update(german.EXCLUDES)
         tree=f'WAEF_{code}_TECH_DOCTRINE'
         chunks=[f'# Generated from docs/FOCUS_PLAN_v1_1.json; WA {baseline.WA_COMMIT}.\nfocus_tree = {{\n    id = {tree}\n    country = {{ factor = 0 modifier = {{ add = 200000 has_country_flag = {school}_technologies_tree_flag OR = {{ tag = WEF tag = EEF }} }} }}\n    default = no\n    reset_on_civilwar = no']
         nation_manifest=[]
         for node,title,when,pre,desc in records:
-            yr,days=map(int,when.split('/'));fid=f'WAEF_{code}_{node}';x,y=coord(node)
-            deps=[] if node=='C00' else pre.split(' и ')
+            yr,days=map(int,when.split('/'));fid=f'WAEF_{code}_{node}';x,y=german.COORDS[node] if code=='GER' else coord(node)
+            deps=[] if node in ('C00','P1','P2') else pre.split(' и ')
             reward=[];ru_effect=[];en_effect=[]
             if node=='A1':reward.append('air_experience = 10');ru_effect.append('+10 опыта авиации.');en_effect.append('+10 air experience.')
             if node=='C00':reward=['army_experience = 25','air_experience = 25'];ru_effect=['+25 опыта армии и авиации.'];en_effect=['+25 army and air experience.']
+            if node in ['P1','P2']:reward.append('set_technology = { standard_industry = 0 }')
             if node in COMMON_MODS:
                 ident,mods,ru,en=COMMON_MODS[node];reward.append('add_ideas = '+ident);ru_effect.append(ru);en_effect.append(en)
             if node=='C70':reward.append('set_country_flag = waef_operations_unlocked');ru_effect.append('Открывает наступательные операции и подготовку оборонительных рубежей.');en_effect.append('Unlocks offensive operations and defensive line preparation.')
@@ -206,8 +220,8 @@ def main():
                 reward.append('waef_start_armament_fatigue = yes');ru_effect.append('Дорогая программа: повторяющаяся миссия повышает усталость на 1 каждые 70 дней.');en_effect.append('Expensive programme: a recurring mission adds 1 fatigue every 70 days.')
             # Specific family bonuses, scoped to equipment granted by the selected route.
             bonus=None
-            if (code,node) in [('GER','H4'),('SOV','TB4'),('FRA','TB4')]:bonus=('breakthrough',.05)
-            if (code,node) in [('GER','W4'),('USA','TA4'),('FRA','TA3'),('JAP','TA4')]:bonus=('build_cost_ic',-.05)
+            if (code,node) in [('GER','H3'),('SOV','TB4'),('FRA','TB4')]:bonus=('breakthrough',.05)
+            if (code,node) in [('USA','TA4'),('FRA','TA3'),('JAP','TA4')]:bonus=('build_cost_ic',-.05)
             if (code,node)==('ITA','TA4'):bonus=('build_cost_ic',-.08)
             if (code,node)==('ITA','TB5'):bonus=('reliability',.05)
             if (code,node)==('USA','M4'):bonus=('reliability',.05)
@@ -224,20 +238,23 @@ def main():
                     ideas.append(f'    {ident} = {{ picture = generic_research allowed = {{ always = no }} removal_cost = -1 equipment_bonus = {{ {equip} }} }}');reward.append('add_ideas = '+ident)
                     label={'build_cost_ic':('Стоимость','Production cost'),'breakthrough':('Прорыв','Breakthrough'),'reliability':('Надёжность','Reliability')}[stat]
                     rus=f'{label[0]} выбранного семейства: {value:+.0%}.';ens=f'{label[1]} of the selected equipment family: {value:+.0%}.'
-                    loc(ident,title,NATIONAL_EN.get(code,{}).get(node,EN[node]));loc(ident+'_desc',rus,ens);ru_effect.append(rus);en_effect.append(ens)
+                    loc(ident,title,(german.EN.get(node,EN[node]) if code=='GER' else NATIONAL_EN.get(code,{}).get(node,EN[node])));loc(ident+'_desc',rus,ens);ru_effect.append(rus);en_effect.append(ens)
             if (code,node)==('SOV','TA4'):
                 ident='waef_sov_serial_armour';ideas.append(f'    {ident} = {{ picture = generic_research allowed = {{ always = no }} removal_cost = -1 modifier = {{ production_factory_efficiency_gain_factor = 0.10 }} }}');reward.append('add_ideas = '+ident);loc(ident,'Серийная бронетанковая программа','Serial Armour Programme');loc(ident+'_desc','+10% прироста производственной эффективности.','+10% production efficiency growth.');ru_effect.append('+10% прироста эффективности.');en_effect.append('+10% efficiency growth.')
             grants=grant(packages[node]);rewards='\n'.join('            '+r for r in reward)+ ('\n'+grants if grants else '')
-            rows=[f'    focus = {{\n        id = {fid}\n        icon = {icon(node)}\n        x = {x}\n        y = {y}\n        cost = {days//7}',f'        available = {{ date > {yr-1}.12.31 }}','        cancel_if_invalid = yes','        continue_if_invalid = no']
+            rows=[f'    focus = {{\n        id = {fid}\n        icon = {icon(node)}\n        x = {x}\n        y = {y}\n        cost = {days//7}','        available = { always = yes }','        cancel_if_invalid = yes','        continue_if_invalid = no']
             rows.extend(f'        prerequisite = {{ focus = WAEF_{code}_{dep} }}' for dep in deps)
-            if node in excludes:rows.append(f'        mutually_exclusive = {{ focus = WAEF_{code}_{excludes[node]} }}')
+            if node in excludes:rows.append('        mutually_exclusive = { '+' '.join(f'focus = WAEF_{code}_{other}' for other in excludes[node])+' }')
             rows.append(f'        completion_reward = {{\n{rewards}\n        }}\n    }}');chunks.append('\n'.join(rows))
-            entitle=NATIONAL_EN.get(code,{}).get(node,EN[node]);loc(fid,title,entitle)
-            rule_ru=f'Доступно с {yr} года. Длительность: {days} дней.';rule_en=f'Available from {yr}. Duration: {days} days.'
+            entitle=(german.EN.get(node,EN[node]) if code=='GER' else NATIONAL_EN.get(code,{}).get(node,EN[node]))
+            if code=='GER':
+                for old,new in [('1941','I'),('1943','II'),('1945','III')]:entitle=entitle.replace(old,new)
+            loc(fid,title,entitle)
+            rule_ru=f'Длительность: {days} дней. Без календарного ограничения.';rule_en=f'Duration: {days} days. No calendar restriction.'
             if packages[node]:rule_ru+=' '+desc+'. Выдаёт доступные по DLC технологии своего периода.';rule_en+=' Grants period technologies compatible with the enabled DLC.'
-            if node in excludes:rule_ru+=' Исключает направление «'+by_code[excludes[node]][1]+'».';rule_en+=' Mutually exclusive with '+NATIONAL_EN.get(code,{}).get(excludes[node],EN[excludes[node]])+'.'
+            if node in excludes:rule_ru+=' Исключает: '+', '.join(by_code[other][1] for other in excludes[node])+'.';rule_en+=' Mutually exclusive with '+', '.join((german.EN.get(other,EN[other]) if code=='GER' else NATIONAL_EN.get(code,{}).get(other,EN[other])) for other in excludes[node])+'.'
             loc(fid+'_desc',' '.join([rule_ru]+ru_effect),' '.join([rule_en]+en_effect))
-            nation_manifest.append({'id':fid,'code':node,'year':yr,'days':days,'prerequisites':[f'WAEF_{code}_{d}' for d in deps],'exclusive':f'WAEF_{code}_{excludes[node]}' if node in excludes else None,'technologies':sorted(packages[node]),'effects':reward})
+            nation_manifest.append({'id':fid,'code':node,'year':yr,'days':days,'prerequisites':[f'WAEF_{code}_{d}' for d in deps],'exclusive':[f'WAEF_{code}_{other}' for other in excludes.get(node,[])],'technologies':sorted(packages[node]),'effects':reward})
         chunks.append('}');write(f'common/national_focus/waef_{FILENAMES[code]}_tech_focus.txt','\n\n'.join(chunks)+'\n')
         loc(tree,nation['title']+': военные разработки',{'GER':'Germany','SOV':'Soviet Union','USA':'United States','ENG':'Britain','FRA':'France','ITA':'Italy','JAP':'Japan'}[code]+': Military Research')
         manifest['schools'][code]=nation_manifest
@@ -249,25 +266,26 @@ def main():
             if techs[name].path!=rel:continue
             for m in re.finditer(r'\b'+re.escape(name)+r'\s*=\s*\{',raw):
                 pos=raw.find('{',m.start())+1
-                condition=f'date > {yr-1}.12.31'+(f' has_completed_focus = {branch}' if branch else '')
+                options=branch if isinstance(branch,list) else [branch] if branch else []
+                condition='OR = { '+' '.join(f'has_completed_focus = {option}' for option in options)+' }' if options else 'always = yes'
                 gate=f'\n        allow = {{ OR = {{ NOT = {{ OR = {{ tag = WEF tag = EEF }} }} AND = {{ {condition} }} }} }}\n'
                 existing=re.search(r'\ballow\s*=\s*\{',raw[pos:baseline.matching_brace(raw,pos-1)])
                 if existing:
                     pos=pos+existing.end()
                     gate=gate.replace('allow = { OR =', 'OR =').rsplit(' }',1)[0]+'\n'
                 changes.append((pos,gate))
-            manifest['research_gates'][name]={'year':yr,'requires_focus':branch}
+            manifest['research_gates'][name]={'year':yr,'requires_focus':branch,'calendar_gate':False}
         if changes:
             for pos,gate in sorted(changes,reverse=True):raw=raw[:pos]+gate+raw[pos:]
-            write(rel,raw)
-    # Common mutually exclusive production-line techs retain their own calendar.
+        write(rel,raw)
+    # Common production-line technologies require their chosen focus.
     raw=(ROOT/'common/technologies/industry.txt').read_text()
     for name,node in [('streamlined_line','C41'),('flexible_line','C42')]:
         t=techs[name];m=re.search(r'\b'+name+r'\s*=\s*\{',raw);pos=raw.find('{',m.start())+1
         allowed=' '.join(f'has_completed_focus = WAEF_{code}_{node}' for code in SCHOOLS)
-        gate=f'\n        allow = {{ OR = {{ NOT = {{ OR = {{ tag = WEF tag = EEF }} }} AND = {{ date > {t.year-1}.12.31 OR = {{ {allowed} }} }} }} }}\n'
+        gate=f'\n        allow = {{ OR = {{ NOT = {{ OR = {{ tag = WEF tag = EEF }} }} AND = {{ OR = {{ {allowed} }} }} }} }}\n'
         raw=raw[:pos]+gate+raw[pos:]
-        manifest['research_gates'][name]={'year':t.year,'choice':node}
+        manifest['research_gates'][name]={'year':t.year,'choice':node,'calendar_gate':False}
     write('common/technologies/industry.txt',raw)
     write('common/ideas/waef_focus_programmes.txt','ideas = { country = {\n'+'\n'.join(ideas)+'\n} }\n')
     loc('waef_armament_fatigue','Усталость от дорогой программы вооружений','Armament Programme Fatigue')

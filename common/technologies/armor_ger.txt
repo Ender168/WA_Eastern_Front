@@ -309,7 +309,9 @@ technologies = {
 		}
 	}
 
-	ger_scout_car_5 = { #Sd.Kfz. 234
+	ger_scout_car_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+ #Sd.Kfz. 234
 
 		enable_equipments = {
 			ger_scout_car_equipment_5
@@ -357,7 +359,9 @@ technologies = {
 		}
 	}
 
-	ger_armoured_car_5 = { #Sd.Kfz. 234/2 Puma
+	ger_armoured_car_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+ #Sd.Kfz. 234/2 Puma
 
 		enable_equipments = {
 			ger_armoured_car_equipment_5
@@ -391,7 +395,9 @@ technologies = {
 		}
 	}
 
-	ger_armoured_car_6 = { #Sd.Kfz. 234/4 Pak-Wagen
+	ger_armoured_car_6 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+ #Sd.Kfz. 234/4 Pak-Wagen
 
 		enable_equipments = {
 			ger_armoured_car_equipment_6
@@ -425,7 +431,9 @@ technologies = {
 		}
 	}
 
-	ger_scout_car_6 = { #Schützenpanzer Kurz
+	ger_scout_car_6 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+ #Schützenpanzer Kurz
 
 		enable_equipments = {
 			ger_scout_car_equipment_6
@@ -468,7 +476,9 @@ technologies = {
 		}
 	}
 
-	ger_scout_car_7 = { #Spähpanzer Luchs
+	ger_scout_car_7 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+ #Spähpanzer Luchs
 
 		enable_equipments = {
 			ger_scout_car_equipment_7
@@ -662,6 +672,8 @@ technologies = {
 	}
 
 	ger_mechanized_infantry_6 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_equipment_6
@@ -696,6 +708,8 @@ technologies = {
 	}
 
 	ger_mechanized_td_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_td_equipment_4
@@ -730,6 +744,8 @@ technologies = {
 	}
 
 	ger_mechanized_aa_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_aa_equipment_1
@@ -846,6 +862,8 @@ technologies = {
 	}
 
 	ger_mechanized_artillery_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_artillery_equipment_2
@@ -916,6 +934,8 @@ technologies = {
 	}
 
 	ger_mechanized_infantry_7 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_equipment_7
@@ -948,6 +968,8 @@ technologies = {
 
 
 	ger_mechanized_artillery_6 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_artillery_equipment_6
@@ -968,6 +990,8 @@ technologies = {
 	}
 
 	ger_mechanized_infantry_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_equipment_3
@@ -1017,6 +1041,8 @@ technologies = {
 		}
 	}
 	ger_mechanized_artillery_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_artillery_equipment_5
@@ -1037,6 +1063,8 @@ technologies = {
 	}
 
 	ger_mechanized_aa_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_aa_equipment_2
@@ -1071,6 +1099,8 @@ technologies = {
 	}
 
 	ger_mechanized_infantry_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_equipment_4
@@ -1119,6 +1149,8 @@ technologies = {
 		}
 	}
 	ger_mechanized_td_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_td_equipment_3
@@ -1153,6 +1185,8 @@ technologies = {
 	}
 
 	ger_mechanized_artillery_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_artillery_equipment_3
@@ -1193,6 +1227,8 @@ technologies = {
 	}
 
 	ger_mechanized_aa_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_aa_equipment_3
@@ -1227,6 +1263,8 @@ technologies = {
 	}
 
 	ger_amphibious_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_amphibious_mechanized_equipment_2
@@ -1272,6 +1310,8 @@ technologies = {
 	}
 
 	ger_mechanized_infantry_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_equipment_5
@@ -1316,6 +1356,8 @@ technologies = {
 	}
 
 	ger_amphibious_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_amphibious_mechanized_equipment_3
@@ -1356,6 +1398,8 @@ technologies = {
 	}
 
 	ger_mechanized_infantry_8 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_equipment_8
@@ -1405,6 +1449,8 @@ technologies = {
 	}
 
 	ger_mechanized_artillery_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_artillery_equipment_4
@@ -1478,6 +1524,8 @@ technologies = {
 #	}
 
 	ger_mechanized_infantry_9 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+
 
 		enable_equipments = {
 			ger_mechanized_equipment_9
@@ -1773,7 +1821,7 @@ technologies = {
 	}
 
 	ger_light_2_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Marder II
 
 		enable_equipments = {
@@ -1904,7 +1952,7 @@ technologies = {
 	}
 
 	ger_light_3_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Hetzer
 
 		enable_equipments = {
@@ -1940,7 +1988,7 @@ technologies = {
 	}
 
 	ger_light_3_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Grille
 
 		enable_equipments = {
@@ -2010,7 +2058,7 @@ technologies = {
 	}
 
 	ger_light_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Panzer II Luchs
 		enable_equipments = {
 			ger_light_equipment_4
@@ -2060,7 +2108,7 @@ technologies = {
 	}
 
 	ger_light_4_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #MarderIII
 
 		enable_equipments = {
@@ -2096,7 +2144,7 @@ technologies = {
 	}
 
 	ger_light_4_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Wespe
 
 		enable_equipments = {
@@ -2132,7 +2180,7 @@ technologies = {
 	}
 
 	ger_light_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Leopard
 		enable_equipments = {
 			ger_light_equipment_5
@@ -2183,7 +2231,7 @@ technologies = {
 	}
 
 	ger_light_5_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Stug Leopard
 
 		enable_equipments = {
@@ -2204,7 +2252,7 @@ technologies = {
 	}
 
 	ger_light_5_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Kafer
 
 		enable_equipments = {
@@ -2225,7 +2273,7 @@ technologies = {
 	}
 
 	ger_light_5_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Gepard
 
 		enable_equipments = {
@@ -2261,7 +2309,7 @@ technologies = {
 	}
 
 	ger_light_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #E 25
 		enable_equipments = {
 			ger_light_equipment_6
@@ -2310,7 +2358,7 @@ technologies = {
 	}
 
 	ger_light_6_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Jagdpanzer E 25
 
 		enable_equipments = {
@@ -2346,7 +2394,7 @@ technologies = {
 	}
 
 	ger_light_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #E 30
 		enable_equipments = {
 			ger_light_equipment_7
@@ -2461,7 +2509,7 @@ technologies = {
 	}
 
 	ger_support_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panzer IV F
 		enable_equipments = {
 			ger_medium_tank_infantry_support_chassis_3
@@ -2521,7 +2569,7 @@ technologies = {
 	}
 
 	ger_support_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panzer III N
 		enable_equipments = {
 			ger_medium_tank_infantry_support_chassis_4
@@ -2566,7 +2614,7 @@ technologies = {
 	}
 
 	ger_medium_3_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Stug III F
 
 		enable_equipments = {
@@ -2602,7 +2650,7 @@ technologies = {
 	}
 
 	ger_assault_4_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Stug III G
 		enable_equipments = {
 			ger_medium_tank_assault_chassis_4
@@ -2859,7 +2907,7 @@ technologies = {
 	}
 
 	ger_medium_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panzer III L
 		enable_equipments = {
 			ger_medium_equipment_3
@@ -2914,7 +2962,7 @@ technologies = {
 	}
 
 	ger_assault_3_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #STUG C
 		enable_equipments = {
 			ger_medium_tank_assault_chassis_3
@@ -2949,7 +2997,7 @@ technologies = {
 	}
 
 	ger_medium_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panzer IV G
 		enable_equipments = {
 			ger_medium_equipment_4
@@ -3000,7 +3048,7 @@ technologies = {
 	}
 
 	ger_medium_4_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Nashorn
 		enable_equipments = {
 			ger_medium_td_equipment_4
@@ -3021,7 +3069,7 @@ technologies = {
 	}
 
 	ger_medium_4_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Hummel
 		enable_equipments = {
 			ger_medium_spg_equipment_4
@@ -3056,7 +3104,7 @@ technologies = {
 	}
 
 	ger_medium_4_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Ostwind
 		enable_equipments = {
 			ger_medium_aa_equipment_4
@@ -3091,7 +3139,7 @@ technologies = {
 	}
 
 	ger_medium_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panzer IV H
 		enable_equipments = {
 			ger_medium_equipment_5
@@ -3142,7 +3190,7 @@ technologies = {
 	}
 
 	ger_medium_5_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Stug IV
 		enable_equipments = {
 			ger_medium_td_equipment_5
@@ -3177,7 +3225,7 @@ technologies = {
 	}
 
 	ger_assault_5_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Brummbar
 		enable_equipments = {
 			ger_medium_tank_assault_chassis_5
@@ -3197,7 +3245,7 @@ technologies = {
 	}
 
 	ger_medium_5_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #wirbelwind
 		enable_equipments = {
 			ger_medium_aa_equipment_5
@@ -3232,7 +3280,7 @@ technologies = {
 	}
 
 	ger_medium_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panzer IV J
 		enable_equipments = {
 			ger_medium_equipment_6
@@ -3277,7 +3325,7 @@ technologies = {
 	}
 
 	ger_medium_6_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Jagdpanzer IV
 		enable_equipments = {
 			ger_medium_td_equipment_6
@@ -3312,7 +3360,7 @@ technologies = {
 	}
 
 	ger_medium_6_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #kugelblitz
 		enable_equipments = {
 			ger_medium_aa_equipment_6
@@ -3347,7 +3395,7 @@ technologies = {
 	}
 
 	ger_modern_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panther D
 		enable_equipments = {
 			ger_modern_equipment_1
@@ -3392,7 +3440,7 @@ technologies = {
 	}
 
 	ger_modern_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panther G
 		enable_equipments = {
 			ger_modern_equipment_2
@@ -3448,7 +3496,7 @@ technologies = {
 	}
 
 	ger_modern_2_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Jagdpanther
 		enable_equipments = {
 			ger_modern_td_equipment_2
@@ -3483,7 +3531,7 @@ technologies = {
 	}
 
 	ger_modern_2_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #GW Panther
 		enable_equipments = {
 			ger_modern_spg_equipment_2
@@ -3518,7 +3566,7 @@ technologies = {
 	}
 
 	ger_modern_2_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Coelian
 		enable_equipments = {
 			ger_modern_aa_equipment_2
@@ -3553,7 +3601,7 @@ technologies = {
 	}
 
 	ger_modern_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panther F
 		enable_equipments = {
 			ger_modern_equipment_3
@@ -3603,7 +3651,7 @@ technologies = {
 	}
 
 	ger_modern_3_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Skorpion
 		enable_equipments = {
 			ger_modern_td_equipment_3
@@ -3638,7 +3686,7 @@ technologies = {
 	}
 
 	ger_modern_3_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #RB Panther
 		enable_equipments = {
 			ger_modern_spg_equipment_3
@@ -3673,7 +3721,7 @@ technologies = {
 	}
 
 	ger_modern_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panther II
 		enable_equipments = {
 			ger_modern_equipment_4
@@ -3718,7 +3766,7 @@ technologies = {
 	}
 
 	ger_modern_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #E 50
 		enable_equipments = {
 			ger_modern_equipment_5
@@ -3769,7 +3817,7 @@ technologies = {
 	}
 
 	ger_modern_5_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Jagdpanther E50
 		enable_equipments = {
 			ger_modern_td_equipment_5
@@ -3804,7 +3852,7 @@ technologies = {
 	}
 
 	ger_modern_5_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #GW E 50
 		enable_equipments = {
 			ger_modern_spg_equipment_5
@@ -3839,7 +3887,7 @@ technologies = {
 	}
 
 	ger_modern_5_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Flakpanzer E 50
 		enable_equipments = {
 			ger_modern_aa_equipment_4
@@ -3874,7 +3922,7 @@ technologies = {
 	}
 
 	ger_modern_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #E 55
 		enable_equipments = {
 			ger_modern_equipment_6
@@ -3924,7 +3972,7 @@ technologies = {
 	}
 
 	ger_modern_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #E 60
 		enable_equipments = {
 			ger_modern_equipment_7
@@ -3964,7 +4012,7 @@ technologies = {
 	}
 
 	ger_modern_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Leopard I
 		enable_equipments = {
 			ger_modern_equipment_8
@@ -4006,7 +4054,7 @@ technologies = {
 	### Heavy
 
 	ger_heavy_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Tiger P
 		enable_equipments = {
 			ger_heavy_equipment_2
@@ -4045,7 +4093,7 @@ technologies = {
 	}
 
 	ger_heavy_2_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Ferdinand
 		enable_equipments = {
 			ger_heavy_td_equipment_2
@@ -4064,7 +4112,7 @@ technologies = {
 	}
 
 	ger_heavy_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Tiger I
 		enable_equipments = {
 			ger_heavy_equipment_3
@@ -4119,7 +4167,7 @@ technologies = {
 	}
 
 	ger_heavy_1_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Sturer Emil
 		enable_equipments = {
 			ger_heavy_td_equipment_3
@@ -4139,7 +4187,7 @@ technologies = {
 	}
 
 	ger_heavy_assault_3_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #SturmTiger
 		enable_equipments = {
 			ger_heavy_spg_equipment_3
@@ -4158,7 +4206,7 @@ technologies = {
 	}
 
 	ger_heavy_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Tiger II
 		enable_equipments = {
 			ger_heavy_equipment_4
@@ -4213,7 +4261,7 @@ technologies = {
 	}
 
 	ger_heavy_4_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Jagdtiger
 		enable_equipments = {
 			ger_heavy_td_equipment_4
@@ -4248,7 +4296,7 @@ technologies = {
 	}
 
 	ger_heavy_4_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #GW Tiger
 		enable_equipments = {
 			ger_heavy_spg_equipment_4
@@ -4283,7 +4331,7 @@ technologies = {
 	}
 
 	ger_heavy_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #E75
 		enable_equipments = {
 			ger_heavy_equipment_6
@@ -4333,7 +4381,7 @@ technologies = {
 	}
 
 	ger_heavy_6_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Jagdpanzer E75
 		enable_equipments = {
 			ger_heavy_td_equipment_6
@@ -4368,7 +4416,7 @@ technologies = {
 	}
 
 	ger_heavy_6_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #GW E 75
 		enable_equipments = {
 			ger_heavy_spg_equipment_6
@@ -4404,7 +4452,7 @@ technologies = {
 	}
 
 	ger_heavy_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #E70
 		enable_equipments = {
 			ger_heavy_equipment_7
@@ -4449,7 +4497,7 @@ technologies = {
 	}
 
 	ger_heavy_7_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Jagdpanzer E 75M
 		enable_equipments = {
 			ger_heavy_td_equipment_7
@@ -4484,7 +4532,7 @@ technologies = {
 	}
 
 	ger_heavy_7_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #GW E 75M
 		enable_equipments = {
 			ger_heavy_spg_equipment_7
@@ -4519,7 +4567,7 @@ technologies = {
 	}
 
 	ger_super_heavy_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Maus
 		enable_equipments = {
 			ger_super_heavy_equipment_1
@@ -4548,7 +4596,7 @@ technologies = {
 	}
 
 	ger_super_heavy_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #E 100
 		enable_equipments = {
 			ger_super_heavy_equipment_2
@@ -4573,7 +4621,7 @@ technologies = {
 	}
 
 	ger_landkruiser_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Ratte
 		enable_equipments = {
 			ger_landkruiser_equipment_1
@@ -4858,7 +4906,9 @@ technologies = {
 		}
 	}
 
-	ger_scout_armoured_car_5 = { #Sd.Kfz. 234
+	ger_scout_armoured_car_5 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+ #Sd.Kfz. 234
 
 		enable_equipments = {
 			tank_ger_combat_car_chassis_5
@@ -4911,7 +4961,9 @@ technologies = {
 		}
 	}
 
-	ger_combat_armoured_car_5_1 = { #Sd.Kfz. 234/2 Puma
+	ger_combat_armoured_car_5_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+ #Sd.Kfz. 234/2 Puma
 
 		enable_equipments = {
 			tank_ger_combat_car_chassis_5_1
@@ -4949,7 +5001,9 @@ technologies = {
 		}
 	}
 
-	ger_combat_armoured_car_5_2 = { #Sd.Kfz. 234/4 Pak-Wagen
+	ger_combat_armoured_car_5_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+ #Sd.Kfz. 234/4 Pak-Wagen
 
 		enable_equipments = {
 			tank_ger_combat_car_chassis_5_2
@@ -4987,7 +5041,9 @@ technologies = {
 		}
 	}
 
-	ger_scout_armoured_car_6 = { #Schützenpanzer Kurz
+	ger_scout_armoured_car_6 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+ #Schützenpanzer Kurz
 
 		enable_equipments = {
 			tank_ger_scout_car_chassis_6
@@ -5035,7 +5091,9 @@ technologies = {
 		}
 	}
 
-	ger_scout_armoured_car_7 = { #Spähpanzer Luchs
+	ger_scout_armoured_car_7 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+ #Spähpanzer Luchs
 
 		enable_equipments = {
 			tank_ger_scout_car_chassis_7
@@ -5398,7 +5456,7 @@ technologies = {
 	}
 
 	ger_light_tank_2_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Marder II
 
 		enable_equipments = {
@@ -5606,7 +5664,7 @@ technologies = {
 	}
 
 	ger_light_tank_4_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Marder III H
 
 		enable_equipments = {
@@ -5647,7 +5705,7 @@ technologies = {
 	}
 
 	ger_light_tank_3_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Grille
 
 		enable_equipments = {
@@ -5689,7 +5747,7 @@ technologies = {
 	}
 
 	ger_light_tank_3_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Flakpanzer 38t
 
 		enable_equipments = {
@@ -5751,7 +5809,7 @@ technologies = {
 		start_year = 1941
 
 		allow = {
-        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } }
+        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } }
 
 			OR = {
 				has_full_control_of_state = 9
@@ -5798,7 +5856,7 @@ technologies = {
 		}
 	}
 	ger_light_tank_4_1_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Marder III M
 
 		enable_equipments = {
@@ -5838,7 +5896,7 @@ technologies = {
 		}
 	}
 	ger_light_tank_3_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Hetzer
 
 		enable_equipments = {
@@ -5880,7 +5938,7 @@ technologies = {
 	}
 
 	ger_light_tank_chassis_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Panzer II Luchs
 		enable_equipments = {
 			tank_ger_light_chassis_4
@@ -5935,7 +5993,7 @@ technologies = {
 
 
 	ger_light_tank_4_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Wespe
 
 		enable_equipments = {
@@ -5976,7 +6034,7 @@ technologies = {
 	}
 
 	ger_light_tank_chassis_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Leopard
 		enable_equipments = {
 			tank_ger_light_chassis_5
@@ -6032,7 +6090,7 @@ technologies = {
 	}
 
 	ger_light_tank_5_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Jagdpanzer Leopard
 
 		enable_equipments = {
@@ -6058,7 +6116,7 @@ technologies = {
 	}
 
 	ger_light_tank_5_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Waffenträger auf Leopard Käfer
 
 		enable_equipments = {
@@ -6084,7 +6142,7 @@ technologies = {
 	}
 
 	ger_light_tank_5_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Flakpanzer Leopard
 
 		enable_equipments = {
@@ -6125,7 +6183,7 @@ technologies = {
 	}
 
 	ger_light_tank_chassis_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #E 25
 		enable_equipments = {
 			tank_ger_light_chassis_6
@@ -6174,7 +6232,7 @@ technologies = {
 	}
 
 	ger_light_tank_6_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #Jagdpanzer E 25
 
 		enable_equipments = {
@@ -6215,7 +6273,7 @@ technologies = {
 	}
 
 	ger_light_tank_chassis_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1948.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
  #E 30
 		enable_equipments = {
 			tank_ger_light_chassis_7
@@ -6443,7 +6501,7 @@ technologies = {
 	}
 
 	ger_support_tank_chassis_1_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panzer IV F
 		enable_equipments = {
 			tank_ger_medium_chassis_infantry_support_3_3
@@ -6515,7 +6573,7 @@ technologies = {
 	}
 
 	ger_medium_tank_5_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Nashorn
 		enable_equipments = {
 			tank_ger_medium_chassis_td_3
@@ -6541,7 +6599,7 @@ technologies = {
 	}
 
 	ger_medium_tank_5_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Hummel
 		enable_equipments = {
 			tank_ger_medium_chassis_spg_3
@@ -6581,7 +6639,7 @@ technologies = {
 	}
 
 	ger_medium_tank_5_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Wirbelwind
 		enable_equipments = {
 			tank_ger_medium_chassis_aa_3
@@ -6621,7 +6679,7 @@ technologies = {
 	}
 
 	ger_support_tank_chassis_1_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panzer III N
 		enable_equipments = {
 			tank_ger_medium_chassis_infantry_support_2
@@ -6670,7 +6728,7 @@ technologies = {
 	}
 
 	ger_medium_tank_4_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #StuG III F
 
 		enable_equipments = {
@@ -6711,7 +6769,7 @@ technologies = {
 	}
 
 	ger_assault_tank_4_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #StuH 42
 		enable_equipments = {
 			tank_ger_medium_chassis_assault_2_3
@@ -6906,7 +6964,7 @@ technologies = {
 	}
 
 	ger_medium_tank_chassis_2_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panzer III L
 		enable_equipments = {
 			tank_ger_medium_chassis_2_3
@@ -6969,7 +7027,7 @@ technologies = {
 	}
 
 	ger_assault_tank_3_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #StuG E
 		enable_equipments = {
 			tank_ger_medium_chassis_assault_2_2
@@ -7008,7 +7066,7 @@ technologies = {
 	}
 
 	ger_medium_tank_chassis_2_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panzer IV F2
 		enable_equipments = {
 			tank_ger_medium_chassis_3
@@ -7068,7 +7126,7 @@ technologies = {
 	ger_medium_tank_chassis_2_5 = { #Panzer IV G
 
 		allow = {
-        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 } }
+        OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } }
 
 			always = no
 		}
@@ -7082,7 +7140,7 @@ technologies = {
 	}
 
 	ger_medium_tank_6_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #StuG IV
 		enable_equipments = {
 			tank_ger_medium_chassis_td_3_2
@@ -7122,7 +7180,7 @@ technologies = {
 	}
 
 	ger_assault_tank_6_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Brummbar
 		enable_equipments = {
 			tank_ger_medium_chassis_assault_3
@@ -7147,7 +7205,7 @@ technologies = {
 	}
 
 	ger_medium_tank_6_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Ostwind
 		enable_equipments = {
 			tank_ger_medium_chassis_aa_3_2
@@ -7192,7 +7250,7 @@ technologies = {
 	}
 
 	ger_medium_tank_chassis_2_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panzer IV H
 		enable_equipments = {
 			tank_ger_medium_chassis_3_3
@@ -7242,7 +7300,7 @@ technologies = {
 	}
 
 	ger_medium_tank_7_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Jagdpanzer IV
 		enable_equipments = {
 			tank_ger_medium_chassis_td_3_3
@@ -7284,7 +7342,7 @@ technologies = {
 	}
 
 	ger_medium_tank_7_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Kugelblitz
 		enable_equipments = {
 			tank_ger_medium_chassis_aa_3_3
@@ -7324,7 +7382,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panther D
 		enable_equipments = {
 			tank_ger_modern_chassis_1
@@ -7369,7 +7427,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_1_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panther G
 		enable_equipments = {
 			tank_ger_modern_chassis_1_2
@@ -7432,7 +7490,7 @@ technologies = {
 	}
 
 	ger_modern_tank_1_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Jagdpanther
 		enable_equipments = {
 			tank_ger_modern_chassis_td_1
@@ -7472,7 +7530,7 @@ technologies = {
 	}
 
 	ger_modern_tank_1_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #GW Panther
 		enable_equipments = {
 			tank_ger_modern_chassis_spg_1
@@ -7512,7 +7570,7 @@ technologies = {
 	}
 
 	ger_modern_tank_1_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Coelian
 		enable_equipments = {
 			tank_ger_modern_chassis_aa_1
@@ -7552,7 +7610,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_1_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panther F
 		enable_equipments = {
 			tank_ger_modern_chassis_1_3
@@ -7605,7 +7663,7 @@ technologies = {
 	}
 
 	ger_modern_tank_1_2_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Skorpion
 		enable_equipments = {
 			tank_ger_modern_chassis_td_1_2
@@ -7645,7 +7703,7 @@ technologies = {
 	}
 
 	ger_modern_tank_1_2_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #RB Panther
 		enable_equipments = {
 			tank_ger_modern_chassis_spg_1_2
@@ -7685,7 +7743,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Panther II
 		enable_equipments = {
 			tank_ger_modern_chassis_2
@@ -7734,7 +7792,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #E 50
 		enable_equipments = {
 			tank_ger_modern_chassis_3
@@ -7785,7 +7843,7 @@ technologies = {
 	}
 
 	ger_modern_tank_3_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Jagdpanther E50
 		enable_equipments = {
 			tank_ger_modern_chassis_td_3
@@ -7825,7 +7883,7 @@ technologies = {
 	}
 
 	ger_modern_tank_3_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #GW E 50
 		enable_equipments = {
 			tank_ger_modern_chassis_spg_3
@@ -7865,7 +7923,7 @@ technologies = {
 	}
 
 	ger_modern_tank_3_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1946.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Flakpanzer E 50
 		enable_equipments = {
 			tank_ger_modern_chassis_aa_3
@@ -7905,7 +7963,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_3_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #E 50m
 		enable_equipments = {
 			tank_ger_modern_chassis_3_2
@@ -7959,7 +8017,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #E 60
 		enable_equipments = {
 			tank_ger_modern_chassis_4
@@ -7999,7 +8057,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1949.12.31 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
  #Leopard I
 		enable_equipments = {
 			tank_ger_modern_chassis_5
@@ -8102,7 +8160,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_chassis_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Vk 36 01
 
 		enable_equipments = {
@@ -8168,7 +8226,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_1_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Sturer Emil
 		enable_equipments = {
 			tank_ger_heavy_chassis_td_1
@@ -8193,7 +8251,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_1_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1940.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #VK 36 01
 		enable_equipments = {
 			tank_ger_heavy_chassis_infantry_support_1
@@ -8218,7 +8276,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_chassis_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Tiger P
 		enable_equipments = {
 			tank_ger_heavy_chassis_2
@@ -8262,7 +8320,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_2_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Ferdinand
 		enable_equipments = {
 			tank_ger_heavy_chassis_td_2
@@ -8286,7 +8344,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_chassis_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1941.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Tiger I
 		enable_equipments = {
 			tank_ger_heavy_chassis_3
@@ -8349,7 +8407,7 @@ technologies = {
 	}
 
 	ger_heavy_assault_tank_3_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #SturmTiger
 		enable_equipments = {
 			tank_ger_heavy_chassis_assault_3
@@ -8373,7 +8431,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_chassis_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Tiger II
 		enable_equipments = {
 			tank_ger_heavy_chassis_4
@@ -8439,7 +8497,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_4_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Jagdtiger
 		enable_equipments = {
 			tank_ger_heavy_chassis_td_4
@@ -8479,7 +8537,7 @@ technologies = {
 	}
 
 	ger_heavy_assault_tank_4_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #SturmTiger Bär
 		enable_equipments = {
 			tank_ger_heavy_chassis_assault_4
@@ -8504,7 +8562,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_4_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #GW Tiger
 		enable_equipments = {
 			tank_ger_heavy_chassis_spg_4
@@ -8544,7 +8602,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_chassis_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1944.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Lowe
 		enable_equipments = {
 			tank_ger_heavy_chassis_5
@@ -8588,7 +8646,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_chassis_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #E 75
 		enable_equipments = {
 			tank_ger_heavy_chassis_6
@@ -8642,7 +8700,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_6_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Jagdpanzer E75
 		enable_equipments = {
 			tank_ger_heavy_chassis_td_6
@@ -8682,7 +8740,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_6_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #GW E 75
 		enable_equipments = {
 			tank_ger_heavy_chassis_spg_6
@@ -8723,7 +8781,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_chassis_6_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #E75m
 		enable_equipments = {
 			tank_ger_heavy_chassis_6_2
@@ -8772,7 +8830,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_7_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Jagdpanzer E 75m
 		enable_equipments = {
 			tank_ger_heavy_chassis_td_6_2
@@ -8812,7 +8870,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_7_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1947.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #GW E 75M
 		enable_equipments = {
 			tank_ger_heavy_chassis_spg_6_2
@@ -8852,7 +8910,7 @@ technologies = {
 	}
 
 	ger_super_heavy_tank_chassis_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1943.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Maus
 		enable_equipments = {
 			tank_ger_super_heavy_chassis_1
@@ -8885,7 +8943,7 @@ technologies = {
 	}
 
 	ger_super_heavy_tank_chassis_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1945.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #E 100
 		enable_equipments = {
 			tank_ger_super_heavy_chassis_2
@@ -8914,7 +8972,7 @@ technologies = {
 	}
 
 	ger_landkruiser_tank_chassis_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { date > 1942.12.31 has_completed_focus = WAEF_GER_H2 } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
  #Ratte
 		enable_equipments = {
 			tank_ger_landkruiser_chassis_1
