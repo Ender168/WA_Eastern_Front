@@ -24,12 +24,13 @@ focus_tree = {
         completion_reward = {
             unlock_technology = infantry_weapons3
             unlock_technology = support_weapons3
+            unlock_technology = artillery2
         }
     }
 
     focus = {
         id = WAEF_GER_MOBILE_ARMOUR
-        icon = GFX_goal_generic_army_doctrine
+        icon = GFX_goal_generic_army_motorized
         x = 2
         y = 2
         cost = 10
@@ -62,6 +63,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_GER_TECH_ROOT }
         completion_reward = {
             set_country_flag = WAEF_GER_FIGHTER_SCHOOL
+            unlock_technology = fighter2
+            unlock_technology = fighter3
         }
     }
 
@@ -74,6 +77,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_GER_TECH_ROOT }
         completion_reward = {
             set_country_flag = WAEF_GER_TACTICAL_AIR
+            unlock_technology = CAS2
+            unlock_technology = tactical_bomber2
         }
     }
 
