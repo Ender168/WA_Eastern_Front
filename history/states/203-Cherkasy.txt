@@ -11,7 +11,7 @@ state = {
 		tungsten = 2
 		chromium = 3
 		coal = 35
-		iron = 25
+		iron = 120
 	}
 
 	history = {
@@ -32,7 +32,7 @@ state = {
 			industrial_complex = 2
 			arms_factory = 5
 			fuel_silo = 1
-			hydro_steel_refinery = 15
+			hydro_steel_refinery = 12
 			hydro_aluminium_refinery = 5
 		}
 	}
