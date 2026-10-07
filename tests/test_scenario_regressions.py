@@ -201,6 +201,27 @@ class ScenarioRegressionTests(unittest.TestCase):
         self.assertIn('TUR_etatism_crisis_2',definitions)
         self.assertIn('FRA_modernize_airforce_mission',definitions)
 
+    def test_starting_armies_activate_manpower_accounting(self):
+        decisions = read('common/decisions/waef_technology_assimilation.txt')
+        forces = next(n.value for n in walk(decisions) if n.key == 'waef_create_starting_forces')
+        grants = [n.value for n in walk(forces) if n.key == 'add_timed_idea']
+        self.assertEqual(len(grants), 1)
+        self.assertEqual(get(grants[0], 'idea'), 'waef_manpower_accounting')
+        self.assertEqual(int(get(grants[0], 'days')), 700)
+        calls = [n.value for n in walk(forces) if n.key == 'country_event']
+        self.assertEqual([get(e, 'id') for e in calls], ['waef.1'])
+
+        definitions = get(get(read('common/ideas/waef_doctrine_ideas.txt'), 'ideas'), 'country')
+        spirit = get(definitions, 'waef_manpower_accounting')
+        self.assertEqual(int(get(get(spirit, 'modifier'), 'weekly_manpower')), -57400)
+        event = get(read('events/waef_events.txt'), 'country_event')
+        self.assertEqual(get(event, 'id'), 'waef.1')
+        self.assertEqual(get(event, 'is_triggered_only'), 'yes')
+        for path in ('localisation/english/waef_l_english.yml', 'localisation/russian/waef_l_russian.yml'):
+            text = (ROOT / path).read_text(encoding='utf-8-sig')
+            for key in ('waef_manpower_accounting', 'waef_manpower_accounting_desc', 'waef.1.t', 'waef.1.d', 'waef.1.a'):
+                self.assertRegex(text, rf'(?m)^ {re.escape(key)}:0 ')
+
     def test_every_script_has_balanced_blocks(self):
         for directory in ('common','history','events'):
             for p in (ROOT/directory).rglob('*.txt'):

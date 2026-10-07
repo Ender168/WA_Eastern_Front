@@ -145,6 +145,7 @@ national equipment-variant history absent from WEF/EEF. The exclusions apply
 through recursive dependency/subtechnology traversal. DLC conditions propagate
 through both technology links and subtechnologies.
 
-Manpower accounting remains disabled during crash diagnosis. The previously
-planned conscription schedule and war-preparation systems are not implemented
-by this corrective pass.
+The starting-force decision activates 700 days of manpower accounting:
+57,400 available manpower is removed per week (5,740,000 over 100 weeks).
+The previously planned conscription schedule and war-preparation systems
+are not implemented by this corrective pass.
