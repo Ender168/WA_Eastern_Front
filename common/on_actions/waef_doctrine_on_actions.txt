@@ -2,6 +2,7 @@ on_actions = {
     on_daily_WEF = {
         effect = {
             waef_sync_fuel_capacity_penalty = yes
+            waef_check_operation_victory = yes
             waef_apply_scheduled_mobilization = yes
 
             if = {
@@ -20,6 +21,7 @@ on_actions = {
     on_daily_EEF = {
         effect = {
             waef_sync_fuel_capacity_penalty = yes
+            waef_check_operation_victory = yes
             waef_apply_scheduled_mobilization = yes
 
             if = {

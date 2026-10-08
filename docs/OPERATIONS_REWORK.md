@@ -1,69 +1,46 @@
-# Operations rework: design and offline prototype
+# Operations rework: playable test branch
 
-Branch: feature/operations-rework. Based on main 9ffbd161f06999ce1e9ed810383a1b436b316af7.
-Status: researched design, exact map inventory and tested accounting model. Existing playable decisions are unchanged. No claim of engine or battle verification.
+Branch: feature/operations-rework. Based on main 9ffbd161f06999ce1e9ed810383a1b436b316af7. Latest requirements supersede the earlier weekly-fatigue draft.
 
-## Requested rules
+## Interface and availability
 
-| Type | Preparation | Offensive bonus duration | Area | Eligibility |
+Tactical and strategic operations are separate categories visible from game start for WEF/EEF. Neither visibility nor launching depends on peace, war, assimilation, date or an operations focus. Strategic decisions remain in the decisions list only: incomplete one-state highlights have been removed. Tactical operations use Japanese-style map state targets. Only state/region names appear in launch decision titles, with command/political costs displayed as icons. Category descriptions explain effect coverage and timing; individual decisions do not enumerate affected states. No operation cooldown or failure penalty remains. Existing defensive-line construction is separate and unchanged.
+
+## Targets and timing
+
+| Type | Preparation | Offensive | Preparation fatigue | Cost |
 | --- | --- | --- | --- | --- |
-| Tactical offensive | 7 days | 14 days | One state | More than 7 land provinces |
-| Strategic operation | 30 days | 60 days | States of one air region | Strictly more than half its land provinces controlled by the opponent |
+| Tactical | 7 days | 14 days | +2 points immediately | 25 command power + 25 political power |
+| Strategic | 30 days | 60 days | +5 points immediately | 50 command power + 50 political power |
 
-Two months means a fixed 60 days for the mission timer. The user clarified that the tactical threshold concerns provinces. No national duration exception is applied in this design.
+The requested latest tactical threshold is **at least 7 land provinces**, replacing the initial >7 interpretation. 187 of 282 playable states qualify. Memel, Suwalki and Carpathian Ruthenia do not qualify. Targets must contain opponent-controlled provinces and touch a state controlled by the attacking side, without requiring an actual war.
 
-## Exact geography and eligibility
+Strategic launch requires strictly more than half of the full air region's land provinces controlled by the opposing side. Generated `count_triggers` with `controls_province` checks distinguish province control from ownership/state control; exactly 50% fails. Neutral land counts in the denominator but not the enemy numerator. Sea/lake provinces do not count. Bonuses affect every WEF/EEF state in the selected region; neutral OBS states are excluded. Audit found no playable states split across region borders.
 
-`tools/operations_prototype.py` reads WA's definition.csv and strategicregions and this mod's state history. The generated inventory records every province, region and state, instead of assigning states by a majority guess. Among 282 playable states, 165 have at least 8 land provinces. None cross region borders.
+## Missions and fatigue
 
-At launch count enemy-controlled land provinces P, and compare 2*P > N. Exactly 50% fails. Weight every land province equally; do not use victory points, state controllers, population or aerial superiority. Count the full air region for the literal user condition. The inventory also records playable-only provinces to expose neutral OBS border cases; do not silently substitute that smaller denominator. Neutral provinces count in N but not P. Sea and lake provinces are excluded. Only WEF/EEF states receive offensive bonuses; OBS must never become an operation target. If a region includes OBS land, victory concerns all playable provinces, not neutral observer territory. This boundary should be visible in the tooltip.
+Clicking a launch decision charges preparation fatigue immediately and starts a native 7/30-day preparation mission. Preparation adds no repeating charges. After preparation, the 14/60-day offensive mission and a separate repeating 10-day fatigue mission activate together. Each offensive fatigue timeout gives +1 fatigue point and reactivates its timer while the operation remains active. A 30-day offensive therefore costs 3 offensive points; the configured 60-day strategic offensive costs 6.
 
-Generate an explicit `controls_province = ID` check in the opposing country scope for each province. In this two-side scenario choose EEF when ROOT is WEF and WEF when ROOT is EEF. Sum into a temporary counter, then compare against the precomputed integer threshold floor(N/2)+1. Never equate ownership with control. Existing WA ITA decisions use `controls_province`.
+Victory requires full control by the attacker of every target state, including all its provinces. Daily checks resolve victory automatically; fatigue and deadline callbacks check victory before charging. Cleanup removes preparation, offensive and fatigue missions, side-specific bonuses, flags and target arrays. Continued charges stop after victory. Offensive deadline failure adds no extra penalty and gives no refund. The final deadline settles any missing full 10-day interval to avoid callback-order undercharging, then stops all timers.
 
-Also require war, an unlocked operations focus, no current offensive operation, at least one remaining hostile target province and a reachable adjacent friendly frontline state. Freeze the province/state target list at launch. The >50% rule is a launch condition only: successful progress must not cancel the offensive when enemy control drops below half. Revalidate war and remaining target at the end of preparation, without reapplying the launch majority rule.
+Success refunds only the actual preparation increase recorded at click time. Native WA fatigue effects maintain the fatigue idea and clamp 0..100. A blocked charge at cap 100 creates no refund credit. Offensive fatigue remains. Other fatigue mechanics are never reset to a launch snapshot. If the objective is conquered during preparation, the daily check also ends the mission and refunds preparation.
 
-Victory: all playable target land provinces controlled by the launching side. No automatic allied qualification in this two-country prototype. Tactical victory requires every province of its state. Strategic victory requires every playable province of its region. Completion during preparation also counts, preventing charging for an already conquered objective.
+No country-wide attack modifier is used. Bonuses are scoped state dynamic modifiers, separately named for WEF/EEF, with explicit 14/60-day fallback expiry. Current test values are +5% attack tactically and +5% attack/+10% organisation recovery strategically. Engine/battle verification is still required for side-specific scope.
 
-## Fatigue accounting
+## WA source patterns
 
-Proposed first-playtest rate, not a user-specified balance value: +1 fatigue point each 7 days for both phases. Keep the weekly counter running across the phase boundary. Tactical preparation adds 1 point; strategic preparation adds 4 points, with its remaining 2 days carrying into the offensive. Full unsuccessful campaigns add 3 / 12 points respectively. This makes the longer campaign substantially more expensive and must be tested for balance.
+Read upstream WA 9.6 at 691c7085f3ec1333ac2a0742983da8a64011ca8b:
 
-Track the *actual applied* preparation increase in a separate country variable. Call WA's `economy_fatigue_level_up_1`, compare economic_fatigue before and after, and record only the difference. At cap 100, a blocked increase must not create a refundable credit. On victory call the native `economy_fatigue_level_down_1` once per recorded point, clamping through WA's own effect. Never overwrite economic_fatigue with its launch value: other mechanics may change it during the operation. Offensive fatigue is never refunded.
+- JAP.txt / JAP_military_offensive: state targets, FROM and map_and_decisions_view. Its static province modifier is deliberately not copied blindly.
+- SOV.txt / SOV_operation_uranus and SOV_operation_saturn: state effects covering strategic regions. Bagration's country-wide attack bonus would exceed requested coverage.
+- SOV_scripted_effects.txt: saved state arrays, country-scoped dynamic modifiers and cleanup.
+- Economy_Fatigue_scripted_effects.txt: immediate increases/decreases, idea synchronization and the 100-point cap.
+- SOV.txt: count_triggers pattern; ITA.txt: controls_province checks; ENG.txt: remove_mission cleanup.
 
-Example: tactical operation starts at fatigue 10, completes preparation at 11, gains another point after 7 offensive days, then wins: fatigue becomes 11 after the one-point preparation refund. A victory before the next weekly charge stops that charge.
+## Temporary war test button
 
-Daily ordering: peace/cancellation; victory; fatigue charge; preparation/timeout transition. A victory on the deadline wins. End-of-war cancellation and timeout retain accumulated fatigue, give no refund and stop future ticks. No additional failure penalty in this prototype, because the user requested gradual fatigue and no extra penalty.
+`waef_test_declare_war` in the existing war setup category is available from game start, costs zero and immediately declares WEF/EEF war on the other side. AI is disabled. It bypasses the scheduled date and does not grant the normal offensive-momentum spirit. The normal declaration decision remains. Remove the test button and its dedicated RU/EN localisation after playtesting.
 
-## Engine implementation plan
+## Verification
 
-Use one country-owned operation record per side: phase, target type, target province/state arrays, remaining phase days, fatigue day counter and preparation refund. No shared global clock. Native decisions/missions show 7/30-day preparation and 14/60-day offensive timers. Daily country effects update the accounting and automatically resolve victory, so the player does not need to click a completion button.
-
-Use WA's state dynamic modifier pattern: `common/decisions/ITA.txt`, ITA_subdue_the_sentinels decision applies `ITA_planned_offensive` to states with `scope = ITA` and `days = 90`. This establishes the scoped regional approach. Existing WAEF local/regional modifiers propose +5% attack, with regional +10% organisation recovery. Preserve these values only as provisional defaults; neither magnitude was specified in the new request. Battle testing must verify that only the launching country's divisions receive the modifier, in the target state and during the active phase only. Do not assume `scope = ROOT` alone proves that behaviour.
-
-Cleanup removes all side-specific modifiers, active missions, arrays and operation bookkeeping exactly once. Bonuses carry an explicit 14/60-day expiry as a backup. Never remove the opposite side's modifier. Old callbacks must be cancelled or guarded so they cannot close a later operation. Save/load uses country variables and native timers, with no initialization reset for an active operation.
-
-Replace offensive code in the generator, not just generated decisions. Leave defensive fortification projects separate. Existing political/command costs, 365-day cooldown and focus specialisations are inherited legacy behaviour, not new requirements: review them before enabling the replacement. Duration-changing GER/JAP/SOV specialisations conflict with the new fixed timing and need updated focus tooltips/effects as part of that implementation.
-
-## Verification and next implementation checkpoint
-
-Six offline tests cover strict majority, preparation-only refund, a clock spanning phases, actual applied refunds at cap 100, timeout/peace and victory-before-charge ordering. Map audit validates 282 states and exact region membership. These tests establish accounting, not game engine behaviour.
-
-Next: generate exact province counters and country-specific daily effects, replace offensive missions with the two requested variants, update RU/EN tooltips and add integration checks. Then playtest: two simultaneous opposing operations, bonus scope in battles, divided state control, exact 50% region control, victory in preparation/on deadline, cancellation, and save/load. Do not publish to main until the playable prototype is verified.
-
-## User follow-up: WA Japanese and Soviet decisions
-
-Read the actual upstream WA code, not a copied wiki example:
-
-- `common/decisions/JAP.txt`, `JAP_military_offensive`: `state_target = yes`, `FROM` for selected state and `on_map_mode = map_and_decisions_view`. Use this interface for tactical operations, with the audited 165-state eligibility list. Do not copy the Japanese China-only conditions or neighbour expansion; our tactical objective is exactly one state.
-- `common/scripted_effects/JAP_scripted_effects.txt`, `JAP_set_military_offensive_effect`: active code applies the static province modifier `military_offensive`. Its dynamic modifier implementation is commented out. Do not copy that static modifier blindly into a symmetric WEF/EEF conflict; side-specific behaviour needs verification.
-- `common/decisions/SOV.txt`, `SOV_operation_uranus` and `SOV_operation_saturn`: normal decisions highlight a state and iterate states by `region = ID`, applying `SOV_offensive_operation` with `scope = SOV` and an explicit expiry. This is the regional pattern to adapt for strategic operations. Our version uses one air region, a strict enemy province majority and a separate preparation phase.
-- `SOV_operation_bagration` instead gives a country-wide targeted bonus against GER and other country modifiers. That would exceed the requested geographic area. Reuse its decision presentation and 60-day mission concept only; use Uranus-style state modifiers for the actual regional bonus.
-- `SOV_set_military_offensive_effect` / `SOV_clean_military_offensive_effect` show a saved state array, scoped dynamic modifiers and explicit cleanup. Use this structure for independent WEF/EEF target lists.
-
-Interface decision: tactical icons on the map and visible in the decisions view, as Japan; strategic operations as named regional decisions with target-state highlights, as Soviet regional operations. Localisation must name the region, list target states, show preparation/offensive timers, weekly fatigue and refundable preparation points. No country-wide offensive modifier.
-
-## Implemented interface checkpoint: separate categories from game start
-
-The operations generator now emits `waef_tactical_operations` and `waef_strategic_operations` as separate categories visible immediately for WEF/EEF. Offensive launch decisions no longer require the `waef_operations_unlocked` flag. War remains a launch requirement. Each category has a disabled peacetime information card, so it is not empty before war. Active mission timers are visible only in their corresponding category. Fortification decisions remain in the existing, separately named Defensive Lines category and retain their original focus requirement.
-
-This checkpoint changes the actual game decision interface. It does not yet replace the old offensive durations/fatigue mechanics with the new accounting prototype above. That replacement is the next checkpoint.
+86 Python checks pass, including map thresholds, strict majority, immediate preparation charge, 30-day three-point accounting, cap refunds, success cancellation, category independence, no cooldown/failure war-support penalties, complete cleanup and temporary war access. Generated files reproduce from the generator. No in-game test has been performed in this environment. Begin a new test campaign; migrating an already active legacy operation is not supported.

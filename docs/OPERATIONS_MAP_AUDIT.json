@@ -1,8 +1,8 @@
 {
   "scope": "WEF/EEF playable land provinces; excludes OBS, sea and lakes",
-  "tactical_minimum_provinces": 8,
+  "tactical_minimum_provinces": 7,
   "state_count": 282,
-  "tactical_eligible_count": 165,
+  "tactical_eligible_count": 187,
   "split_states": {},
   "states": {
     "10": {
@@ -205,7 +205,7 @@
         12393,
         12558
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         150
       ]
@@ -799,7 +799,7 @@
         11618,
         11634
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         294
       ]
@@ -927,7 +927,7 @@
         11584,
         13534
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         21
       ]
@@ -1136,7 +1136,7 @@
         13291,
         13325
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         132
       ]
@@ -1455,7 +1455,7 @@
         9902,
         9919
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         295
       ]
@@ -2975,7 +2975,7 @@
         11598,
         11615
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         21
       ]
@@ -3228,7 +3228,7 @@
         10454,
         10523
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         116
       ]
@@ -3632,7 +3632,7 @@
         11305,
         13519
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         8
       ]
@@ -3858,7 +3858,7 @@
         9387,
         11478
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         38
       ]
@@ -3909,7 +3909,7 @@
         11522,
         11539
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         22
       ]
@@ -3924,7 +3924,7 @@
         6604,
         11554
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         22
       ]
@@ -3986,7 +3986,7 @@
         6590,
         11511
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         22
       ]
@@ -4118,7 +4118,7 @@
         11420,
         11549
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         239
       ]
@@ -4166,7 +4166,7 @@
         3324,
         6347
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         38
       ]
@@ -4251,7 +4251,7 @@
         11359,
         11468
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         8
       ]
@@ -4472,7 +4472,7 @@
         11428,
         11515
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         296
       ]
@@ -4665,7 +4665,7 @@
         11411,
         11550
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         39
       ]
@@ -4705,7 +4705,7 @@
         13916,
         13917
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         296
       ]
@@ -4755,7 +4755,7 @@
         11430,
         11532
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         296
       ]
@@ -4856,7 +4856,7 @@
         9638,
         11590
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         293
       ]
@@ -4958,7 +4958,7 @@
         9341,
         11391
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         39
       ]
@@ -5071,7 +5071,7 @@
         11329,
         11357
       ],
-      "tactical_eligible": false,
+      "tactical_eligible": true,
       "regions": [
         296
       ]

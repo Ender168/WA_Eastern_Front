@@ -117,9 +117,9 @@ class NationalFocusTests(unittest.TestCase):
   for scale in ['local','regional']:
    keys=[get(n.value,'modifier') for n in walk(get(effects,'waef_activate_'+scale+'_offensive')) if n.key=='add_dynamic_modifier']
    self.assertEqual(set(keys),{f'waef_{tag}_offensive_{scale}_modifier' for tag in ['wef','eef']})
-  for mission in ['waef_local_offensive_21','waef_regional_offensive_45']:
+  for mission in ['waef_local_offensive_14','waef_regional_offensive_60']:
    n=get(get(read('common/decisions/waef_focus_operations.txt'),'waef_tactical_operations' if 'local' in mission else 'waef_strategic_operations'),mission)
-   self.assertEqual(get(get(n,'cancel_effect'),'waef_fail_'+('local' if 'local' in mission else 'regional')+'_offensive'),'yes')
+   self.assertEqual(get(get(n,'complete_effect'),'waef_win_operation'),'yes')
  def test_closed_routes_cannot_be_researched_even_after_1945(self):
   for name,gate in self.m['research_gates'].items():
    if not gate.get('requires_focus'):continue
@@ -161,11 +161,8 @@ class NationalFocusTests(unittest.TestCase):
    self.assertEqual(get(get(get(categories,key),'visible'),'always'),'yes')
    entries=get(decisions,key)
    self.assertNotIn('waef_operations_unlocked',[n.value for n in walk(entries) if n.key=='has_country_flag'])
-   info=get(entries,key+'_peacetime')
-   self.assertEqual(get(get(info,'visible'),'has_war'),'no')
-   self.assertEqual(get(get(info,'available'),'always'),'no')
   self.assertIsNotNone(get(get(decisions,'waef_tactical_operations'),'waef_local_offensive'))
-  self.assertIsNotNone(get(get(decisions,'waef_strategic_operations'),'waef_regional_offensive_296_standard'))
+  self.assertIsNotNone(get(get(decisions,'waef_strategic_operations'),'waef_regional_offensive_296'))
  def test_operation_states_regions_and_forts_cover_the_map_once(self):
   targets=json.loads(text('docs/OPERATION_TARGETS.json'))
   states=[sid for ids in targets['state_regions'].values() for sid in ids]
@@ -174,16 +171,14 @@ class NationalFocusTests(unittest.TestCase):
   for sid,pids in targets['fort_provinces'].items():self.assertTrue(1<=len(pids)<=3);self.assertEqual(len(pids),len(set(pids)))
  def test_operation_success_timeout_and_failure_all_cleanup(self):
   cats=read('common/decisions/waef_focus_operations.txt')
-  for key in ['waef_local_offensive_21','waef_local_offensive_28','waef_regional_offensive_45','waef_regional_offensive_52']:
+  for key in ['waef_local_offensive_14','waef_regional_offensive_60']:
    mission=get(get(cats,'waef_tactical_operations' if 'local' in key else 'waef_strategic_operations'),key);self.assertIn('waef_operation_full_control',[n.key for n in walk(get(mission,'available'))])
-   self.assertIn('waef_cleanup_operation',[n.key for n in walk(get(mission,'complete_effect'))])
+   self.assertIn('waef_win_operation',[n.key for n in walk(get(mission,'complete_effect'))])
    self.assertIn('waef_cleanup_operation',[n.key for n in walk(get(mission,'timeout_effect'))])
   effects=read('common/scripted_effects/waef_focus_operations.txt')
-  for scale in ['local','regional']:
-   self.assertEqual(get(get(effects,'waef_fail_'+scale+'_offensive'),'waef_cleanup_operation'),'yes')
   cleanup=get(effects,'waef_cleanup_operation')
   self.assertEqual(get(cleanup,'clear_array'),'waef_operation_states')
-  self.assertEqual(get(cleanup,'clr_country_flag'),'waef_operation_in_progress')
+  self.assertIn('waef_operation_in_progress',[n.value for n in cleanup if n.key=='clr_country_flag'])
  def test_no_unknown_experience_effect_or_fort_inflation(self):
   for p in (ROOT/'common/national_focus').glob('waef*'):
    self.assertNotRegex(p.read_text(),r'add_(army|air)_experience\s*=')

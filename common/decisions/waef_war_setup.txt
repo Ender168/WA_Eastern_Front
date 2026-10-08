@@ -1,4 +1,18 @@
 waef_war_setup = {
+    waef_test_declare_war = {
+        icon = generic_operation
+        allowed = { OR = { tag = WEF tag = EEF } }
+        visible = { NOT = { has_country_flag = waef_scenario_war_declared } }
+        available = { OR = { AND = { tag = WEF NOT = { has_war_with = EEF } } AND = { tag = EEF NOT = { has_war_with = WEF } } } }
+        cost = 0 fire_only_once = yes
+        complete_effect = {
+            if = { limit = { tag = WEF } declare_war_on = { target = EEF type = annex_everything } }
+            else_if = { limit = { tag = EEF } declare_war_on = { target = WEF type = annex_everything } }
+            set_country_flag = waef_scenario_war_declared
+        }
+        ai_will_do = { base = 0 }
+    }
+
     waef_war_preparation_countdown = {
         icon = generic_prepare_civil_war
 

@@ -1,5 +1,20 @@
-waef_activate_local_offensive = { for_each_scope_loop = { array = waef_operation_states if = { limit = { ROOT = { tag = WEF } } add_dynamic_modifier = { modifier = waef_wef_offensive_local_modifier scope = ROOT } } if = { limit = { ROOT = { tag = EEF } } add_dynamic_modifier = { modifier = waef_eef_offensive_local_modifier scope = ROOT } } } }
-waef_activate_regional_offensive = { for_each_scope_loop = { array = waef_operation_states if = { limit = { ROOT = { tag = WEF } } add_dynamic_modifier = { modifier = waef_wef_offensive_regional_modifier scope = ROOT } } if = { limit = { ROOT = { tag = EEF } } add_dynamic_modifier = { modifier = waef_eef_offensive_regional_modifier scope = ROOT } } } }
-waef_cleanup_operation = { for_each_scope_loop = { array = waef_operation_states if = { limit = { ROOT = { tag = WEF } } remove_dynamic_modifier = { modifier = waef_wef_offensive_local_modifier } remove_dynamic_modifier = { modifier = waef_wef_offensive_regional_modifier } } if = { limit = { ROOT = { tag = EEF } } remove_dynamic_modifier = { modifier = waef_eef_offensive_local_modifier } remove_dynamic_modifier = { modifier = waef_eef_offensive_regional_modifier } } } clear_array = waef_operation_states clr_country_flag = waef_operation_in_progress }
-waef_fail_local_offensive = { economy_fatigue_level_up_1 = yes add_war_support = -0.02 waef_cleanup_operation = yes }
-waef_fail_regional_offensive = { economy_fatigue_level_up_3 = yes add_war_support = -0.05 waef_cleanup_operation = yes }
+waef_charge_local_preparation = {
+    set_variable = { waef_preparation_refund = economic_fatigue }
+    economy_fatigue_level_up_2 = yes
+    multiply_variable = { waef_preparation_refund = -1 }
+    add_to_variable = { waef_preparation_refund = economic_fatigue }
+    set_variable = { waef_operation_fatigue_ticks = 0 }
+}
+waef_activate_local_offensive = { set_country_flag = waef_operation_active for_each_scope_loop = { array = waef_operation_states if = { limit = { ROOT = { tag = WEF } } add_dynamic_modifier = { modifier = waef_wef_offensive_local_modifier scope = ROOT days = 14 } } if = { limit = { ROOT = { tag = EEF } } add_dynamic_modifier = { modifier = waef_eef_offensive_local_modifier scope = ROOT days = 14 } } } activate_mission = waef_local_offensive_14 activate_mission = waef_local_operation_fatigue }
+waef_charge_regional_preparation = {
+    set_variable = { waef_preparation_refund = economic_fatigue }
+    economy_fatigue_level_up_5 = yes
+    multiply_variable = { waef_preparation_refund = -1 }
+    add_to_variable = { waef_preparation_refund = economic_fatigue }
+    set_variable = { waef_operation_fatigue_ticks = 0 }
+}
+waef_activate_regional_offensive = { set_country_flag = waef_operation_active for_each_scope_loop = { array = waef_operation_states if = { limit = { ROOT = { tag = WEF } } add_dynamic_modifier = { modifier = waef_wef_offensive_regional_modifier scope = ROOT days = 60 } } if = { limit = { ROOT = { tag = EEF } } add_dynamic_modifier = { modifier = waef_eef_offensive_regional_modifier scope = ROOT days = 60 } } } activate_mission = waef_regional_offensive_60 activate_mission = waef_regional_operation_fatigue }
+waef_cleanup_operation = { clr_country_flag = waef_operation_in_progress clr_country_flag = waef_operation_active clr_country_flag = waef_operation_local clr_country_flag = waef_operation_regional remove_mission = waef_local_preparation remove_mission = waef_regional_preparation remove_mission = waef_local_offensive_14 remove_mission = waef_regional_offensive_60 remove_mission = waef_local_operation_fatigue remove_mission = waef_regional_operation_fatigue for_each_scope_loop = { array = waef_operation_states if = { limit = { ROOT = { tag = WEF } } remove_dynamic_modifier = { modifier = waef_wef_offensive_local_modifier } remove_dynamic_modifier = { modifier = waef_wef_offensive_regional_modifier } } if = { limit = { ROOT = { tag = EEF } } remove_dynamic_modifier = { modifier = waef_eef_offensive_local_modifier } remove_dynamic_modifier = { modifier = waef_eef_offensive_regional_modifier } } } clear_array = waef_operation_states clear_variable = waef_preparation_refund clear_variable = waef_operation_fatigue_ticks }
+waef_charge_offensive_fatigue = { economy_fatigue_level_up_1 = yes add_to_variable = { waef_operation_fatigue_ticks = 1 } }
+waef_win_operation = { while_loop_effect = { limit = { check_variable = { waef_preparation_refund > 0 } } economy_fatigue_level_down_1 = yes subtract_from_variable = { waef_preparation_refund = 1 } } waef_cleanup_operation = yes }
+waef_check_operation_victory = { if = { limit = { has_country_flag = waef_operation_in_progress waef_operation_full_control = yes } waef_win_operation = yes } }

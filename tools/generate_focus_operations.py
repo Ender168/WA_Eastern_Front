@@ -28,103 +28,120 @@ def main():
  locales={'russian':{},'english':{}}
  def loc(k,ru,en):locales['russian'][k]=ru;locales['english'][k]=en
  loc('waef_operations','Оборонительные рубежи','Defensive Lines')
+ loc('waef_operations_desc','Подготовка оборонительных рубежей.','Prepare defensive lines.')
  loc('waef_tactical_operations','Тактические наступления','Tactical Offensives')
  loc('waef_strategic_operations','Стратегические операции','Strategic Operations')
- loc('waef_tactical_operations_desc','Операции в отдельных стейтах. Раздел доступен с начала игры; запуск требует войны.','Operations in individual states. Available from the start of the game; launching requires war.')
- loc('waef_strategic_operations_desc','Операции в воздушных регионах. Раздел доступен с начала игры; запуск требует войны.','Operations in air regions. Available from the start of the game; launching requires war.')
- loc('waef_operations_desc','Подготовка оборонительных рубежей после изучения оперативного фокуса.','Prepare defensive lines after completing the operations focus.')
- loc('waef_operation_targets_tt','Требуется полный контроль всех провинций целевых стейтов. Полный контроль союзной страны также засчитывается.','Every province of each target state must be under full friendly control. A fully controlling allied country also qualifies.')
- loc('waef_local_offensive','Локальное наступление: [FROM.GetName]','Local Offensive: [FROM.GetName]')
- loc('waef_local_offensive_desc','Цель: один соседний вражеский стейт. Подготовка: 7 дней, наступление: 21 день, либо 28 после японского оперативного фокуса. Цена: 25 политвласти и 25 командного ресурса, усталость +2. Во время наступления +5% атаки только в целевом стейте. Успех: усталость −1, поддержка войны +1 п.п.; провал: усталость +1, поддержка войны −2 п.п. Повтор по этому стейту закрыт на 365 дней. Итальянский оперативный фокус снижает политическую цену до 20.','Target: one adjacent enemy state. Preparation: 7 days. Offensive: 21 days, or 28 after the Japanese operational focus. Cost: 25 political power, 25 command power and +2 fatigue. +5% attack in the target state during the offensive. Success: −1 fatigue, +1 percentage point war support. Failure: +1 fatigue, −2 percentage points war support. Each target has a 365-day cooldown. The Italian operational focus reduces political cost to 20.')
- loc('waef_local_cost_tt','25 политвласти и 25 командного ресурса; с итальянским оперативным фокусом: 20 политвласти.','25 political power and 25 command power; 20 political power with the Italian operational focus.')
- loc('waef_regional_cost_tt','50 политвласти и 50 командного ресурса; с американским оперативным фокусом: 40 командного ресурса.','50 political power and 50 command power; 40 command power with the American operational focus.')
+ loc('waef_tactical_operations_desc','Бонус действует в выбранном стейте с минимум 7 сухопутными провинциями. Подготовка: 7 дней, усталость +2% сразу. Наступление: 14 дней, +5% атаки. Каждые 10 дней наступления: +1% усталости. Полный захват цели завершает миссию и возвращает усталость подготовки.','The bonus applies in the selected state with at least 7 land provinces. Preparation: 7 days and +2% fatigue immediately. Offensive: 14 days and +5% attack. Every 10 offensive days: +1% fatigue. Full conquest completes the mission and refunds preparation fatigue.')
+ loc('waef_strategic_operations_desc','Бонус действует во всех игровых стейтах выбранного воздушного региона. Для запуска противник должен контролировать больше половины его сухопутных провинций. Подготовка: 30 дней, усталость +5% сразу. Наступление: 60 дней, +5% атаки и +10% восстановления организации. Каждые 10 дней наступления: +1% усталости. Полный захват целей завершает миссию и возвращает усталость подготовки.','The bonus applies in every playable state of the selected air region. The opponent must control more than half its land provinces at launch. Preparation: 30 days and +5% fatigue immediately. Offensive: 60 days, +5% attack and +10% organisation recovery. Every 10 offensive days: +1% fatigue. Full conquest completes the mission and refunds preparation fatigue.')
+ loc('waef_local_offensive','[FROM.GetName]','[FROM.GetName]')
+ loc('waef_local_offensive_desc','Подготовка: 7 дней.','Preparation: 7 days.')
+ loc('waef_local_cost_tt','£command_power §Y25§! £pol_power §Y25§!','£command_power §Y25§! £pol_power §Y25§!')
+ loc('waef_regional_cost_tt','£command_power §Y50§! £pol_power §Y50§!','£command_power §Y50§! £pol_power §Y50§!')
+ for key,amount in [('waef_local_cost_tt',25),('waef_regional_cost_tt',50)]:
+  loc(key+'_blocked',f'£command_power §R{amount}§! £pol_power §R{amount}§!',f'£command_power §R{amount}§! £pol_power §R{amount}§!')
+  loc(key+'_tooltip',f'£command_power §Y{amount}§! £pol_power §Y{amount}§!',f'£command_power §Y{amount}§! £pol_power §Y{amount}§!')
  loc('waef_fort_cost_tt','25 политвласти; с французским оперативным фокусом: 15.','25 political power; 15 with the French operational focus.')
- cooldown='OR = { AND = { ROOT = { tag = WEF } has_state_flag = waef_wef_operation_cooldown } AND = { ROOT = { tag = EEF } has_state_flag = waef_eef_operation_cooldown } }'
- stamp='if = { limit = { ROOT = { tag = WEF } } set_state_flag = { flag = waef_wef_operation_cooldown days = 365 } } else = { set_state_flag = { flag = waef_eef_operation_cooldown days = 365 } }'
- frontline='controller = { has_war_with = ROOT } any_neighbor_state = { is_fully_controlled_by = ROOT }'
  allowed='allowed = { OR = { tag = WEF tag = EEF } }'
- root_avail='has_war = yes NOT = { has_country_flag = waef_operation_in_progress }'
+ root_avail='NOT = { has_country_flag = waef_operation_in_progress }'
  targets=' '.join(str(s) for s in sorted(states))
- prep=[]
+ tactical_targets=' '.join(str(s) for s,ps in sorted(states.items()) if len(ps)>=7)
+ prep=[];triggers=[]
+ # Use exact province control, including split states, in either peace or war.
+ def enemy_check(ps,minimum=1):
+  choices=[]
+  for tag,enemy in [('WEF','EEF'),('EEF','WEF')]:
+   choices.append(f'AND = {{ tag = {tag} {enemy} = {{ count_triggers = {{ amount = {minimum} '+' '.join(f'controls_province = {pid}' for pid in ps)+' } } }')
+  return 'OR = { '+' '.join(choices)+' }'
+ for sid,ps in sorted(states.items()):
+  triggers.append(f'waef_enemy_in_state_{sid} = {{ {enemy_check(ps)} }}')
+ tactical_state_check='OR = { '+' '.join(f'AND = {{ state = {sid} ROOT = {{ waef_enemy_in_state_{sid} = yes }} }}' for sid,ps in sorted(states.items()) if len(ps)>=7)+' }'
  prep.append(f'''    waef_local_offensive = {{
         icon = generic_operation {allowed}
-        state_target = yes targets = {{ {targets} }} on_map_mode = map_and_decisions_view
+        state_target = yes targets = {{ {tactical_targets} }} on_map_mode = map_and_decisions_view
         target_root_trigger = {{ {root_avail} }}
-        target_trigger = {{ FROM = {{ {frontline} NOT = {{ {cooldown} }} }} }}
-        visible = {{ {root_avail} }}
-        available = {{ {root_avail} }}
-        custom_cost_trigger = {{ command_power > 24 OR = {{ AND = {{ has_country_flag = waef_ita_operations_specialisation has_political_power > 19 }} AND = {{ NOT = {{ has_country_flag = waef_ita_operations_specialisation }} has_political_power > 24 }} }} }}
-        custom_cost_text = waef_local_cost_tt
-        days_remove = 7 fire_only_once = no
+        target_trigger = {{ FROM = {{ {tactical_state_check} any_neighbor_state = {{ is_controlled_by = ROOT }} }} }}
+        visible = {{ always = yes }} available = {{ {root_avail} }}
+        custom_cost_trigger = {{ command_power > 24 has_political_power > 24 }}
+        custom_cost_text = waef_local_cost_tt fire_only_once = no
         complete_effect = {{
-            set_country_flag = waef_operation_in_progress
+            set_country_flag = waef_operation_in_progress set_country_flag = waef_operation_local
             clear_array = waef_operation_states
-            FROM = {{ ROOT = {{ add_to_array = {{ waef_operation_states = PREV }} }} {stamp} }}
-            add_command_power = -25
-            if = {{ limit = {{ has_country_flag = waef_ita_operations_specialisation }} add_political_power = -20 }} else = {{ add_political_power = -25 }}
-            economy_fatigue_level_up_2 = yes
-        }}
-        remove_effect = {{
-            if = {{ limit = {{ has_war = yes }}
-                waef_activate_local_offensive = yes
-                if = {{ limit = {{ has_country_flag = waef_jap_operations_specialisation }} activate_mission = waef_local_offensive_28 }} else = {{ activate_mission = waef_local_offensive_21 }}
-            }} else = {{ waef_fail_local_offensive = yes }}
+            FROM = {{ ROOT = {{ add_to_array = {{ waef_operation_states = PREV }} }} }}
+            add_command_power = -25 add_political_power = -25
+            waef_charge_local_preparation = yes activate_mission = waef_local_preparation
         }}
         ai_will_do = {{ base = 0 }}
     }}''')
+ names_by_region=json.loads((ROOT/'docs/OPERATION_REGION_NAMES.json').read_text())
  for rid,sids in sorted(regions.items()):
-  for variant,days in [('standard',14),('german',7)]:
-   key=f'waef_regional_offensive_{rid}_{variant}'
-   school='has_country_flag = waef_ger_operations_specialisation' if variant=='german' else 'NOT = { has_country_flag = waef_ger_operations_specialisation }'
-   state_list=' '.join(str(s) for s in sorted(sids));enemy=' '.join(f'{s} = {{ {frontline} }}' for s in sids)
-   nocool=' '.join(f'{s} = {{ NOT = {{ {cooldown} }} }}' for s in sids)
-   add='\n'.join(f'            {s} = {{ ROOT = {{ add_to_array = {{ waef_operation_states = PREV }} }} {stamp} }}' for s in sids)
-   names_by_region=json.loads((ROOT/'docs/OPERATION_REGION_NAMES.json').read_text())
-   loc('WAEF_OPERATION_REGION_'+str(rid),names_by_region[str(rid)]['russian'],names_by_region[str(rid)]['english'])
-   loc(key,'Региональная операция: $WAEF_OPERATION_REGION_'+str(rid)+'$','Regional Operation: $WAEF_OPERATION_REGION_'+str(rid)+'$')
-   names=', '.join('$STATE_'+str(s)+'$' for s in sorted(sids))
-   loc(key+'_desc',f'Целевые стейты: {names}. Район составлен по большинству сухопутных провинций воздушного региона; стейты не разрезаются. Подготовка {days} дней; наступление 45 дней, либо 52 после советского оперативного фокуса. Цена: 50 политвласти, 50 командного ресурса (40 с американским оперативным фокусом), усталость +5. Бонус в районе: +5% атаки и +10% восстановления организации. Успех: усталость −2, поддержка войны +3 п.п. Провал: усталость +3, поддержка войны −5 п.п. Целевые стейты блокируются для повторных операций на 365 дней.',f'Target states: {names}. States are assigned by majority of land provinces in the air region and are never split. Preparation: {days} days. Offensive: 45 days, or 52 with the Soviet operational focus. Cost: 50 political power, 50 command power (40 with the American operational focus), +5 fatigue. Regional bonus: +5% attack and +10% organisation recovery. Success: −2 fatigue, +3 percentage points war support. Failure: +3 fatigue, −5 percentage points war support. Target states have a 365-day operation cooldown.')
-   prep.append(f'''    {key} = {{
+  ps=sorted(p for p,r in region_of.items() if r==rid and provinces.get(p)=='land')
+  triggers.append(f'waef_enemy_majority_region_{rid} = {{ {enemy_check(ps,len(ps)//2+1)} }}')
+  key=f'waef_regional_offensive_{rid}'
+  loc(key,names_by_region[str(rid)]['russian'],names_by_region[str(rid)]['english'])
+  loc(key+'_desc','Подготовка: 30 дней.','Preparation: 30 days.')
+  add='\n'.join(f'            {sid} = {{ ROOT = {{ add_to_array = {{ waef_operation_states = PREV }} }} }}' for sid in sorted(sids))
+  prep.append(f'''    {key} = {{
         icon = generic_operation {allowed}
-        visible = {{ {root_avail} {school} OR = {{ {enemy} }} }}
-        available = {{ {root_avail} {school} {nocool} OR = {{ {enemy} }} }}
-        custom_cost_trigger = {{ has_political_power > 49 OR = {{ AND = {{ has_country_flag = waef_usa_operations_specialisation command_power > 39 }} AND = {{ NOT = {{ has_country_flag = waef_usa_operations_specialisation }} command_power > 49 }} }} }}
-        custom_cost_text = waef_regional_cost_tt
-        days_remove = {days} fire_only_once = no
-        highlight_states = {{ highlight_state_targets = {{ state = {min(sids)} }} }}
+        visible = {{ always = yes }}
+        available = {{ {root_avail} waef_enemy_majority_region_{rid} = yes }}
+        custom_cost_trigger = {{ command_power > 49 has_political_power > 49 }}
+        custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {{
-            set_country_flag = waef_operation_in_progress clear_array = waef_operation_states
+            set_country_flag = waef_operation_in_progress set_country_flag = waef_operation_regional
+            clear_array = waef_operation_states
 {add}
-            add_political_power = -50
-            if = {{ limit = {{ has_country_flag = waef_usa_operations_specialisation }} add_command_power = -40 }} else = {{ add_command_power = -50 }}
-            economy_fatigue_level_up_5 = yes
-        }}
-        remove_effect = {{
-            if = {{ limit = {{ has_war = yes }}
-                waef_activate_regional_offensive = yes
-                if = {{ limit = {{ has_country_flag = waef_sov_operations_specialisation }} activate_mission = waef_regional_offensive_52 }} else = {{ activate_mission = waef_regional_offensive_45 }}
-            }} else = {{ waef_fail_regional_offensive = yes }}
+            add_command_power = -50 add_political_power = -50
+            waef_charge_regional_preparation = yes activate_mission = waef_regional_preparation
         }}
         ai_will_do = {{ base = 0 }}
     }}''')
- # Completion succeeds only under full control. A split state cannot be won merely
- # by occupying its capital. Both operations share a single in-progress flag/array.
- for scale,days,refund,ws in [('local',21,1,.01),('local',28,1,.01),('regional',45,2,.03),('regional',52,2,.03)]:
-  key=f'waef_{scale}_offensive_{days}'
-  loc(key,'Наступление: '+('один стейт' if scale=='local' else 'регион'),'Offensive: '+('One State' if scale=='local' else 'Region'))
-  loc(key+'_desc',f'Срок выполнения: {days} дней. Цели зафиксированы при начале подготовки. Успех требует полного дружественного контроля. По истечении срока начисляется цена провала.',f'Deadline: {days} days. Targets are fixed when preparation begins. Success requires full friendly control. Missing the deadline incurs the failure penalty.')
+ for scale,days in [('local',7),('regional',30)]:
+  key=f'waef_{scale}_preparation'
+  loc(key,'Подготовка наступления','Offensive Preparation');loc(key+'_desc','Подготовка выбранной операции.','Prepare the selected operation.')
+  prep.append(f'''    {key} = {{
+        icon = generic_operation {allowed}
+        activation = {{ always = no }} selectable_mission = no
+        visible = {{ has_active_mission = {key} }} available = {{ always = no }}
+        days_mission_timeout = {days} is_good = yes
+        timeout_effect = {{
+            if = {{ limit = {{ has_country_flag = waef_operation_{scale} }}
+                if = {{ limit = {{ waef_operation_full_control = yes }} waef_win_operation = yes }}
+                else = {{ waef_activate_{scale}_offensive = yes }}
+            }}
+        }}
+    }}''')
+ for scale,days in [('local',14),('regional',60)]:
+  key=f'waef_{scale}_offensive_{days}';fatigue=f'waef_{scale}_operation_fatigue'
+  loc(key,'Наступление','Offensive');loc(key+'_desc','Захватите все целевые провинции до истечения срока.','Capture every target province before the deadline.')
+  loc(fatigue,'Усталость наступления','Offensive Fatigue')
+  loc(fatigue+'_desc','Каждые 10 дней: +1% усталости. Полный захват целей прекращает начисление.','Every 10 days: +1% fatigue. Full conquest stops further charges.')
   prep.append(f'''    {key} = {{
         icon = generic_operation {allowed}
         activation = {{ always = no }} selectable_mission = no
         visible = {{ has_active_mission = {key} }}
         available = {{ has_country_flag = waef_operation_in_progress waef_operation_full_control = yes }}
         days_mission_timeout = {days} is_good = yes
-        cancel_trigger = {{ NOT = {{ has_war = yes }} }}
-        cancel_effect = {{ waef_fail_{scale}_offensive = yes }}
-        complete_effect = {{ economy_fatigue_level_down_{refund} = yes add_war_support = {ws} waef_cleanup_operation = yes }}
+        complete_effect = {{ waef_win_operation = yes }}
         timeout_effect = {{
-            if = {{ limit = {{ waef_operation_full_control = yes }} economy_fatigue_level_down_{refund} = yes add_war_support = {ws} waef_cleanup_operation = yes }}
-            else = {{ waef_fail_{scale}_offensive = yes }}
+            if = {{ limit = {{ has_country_flag = waef_operation_{scale} }}
+                if = {{ limit = {{ waef_operation_full_control = yes }} waef_win_operation = yes }}
+                else = {{
+                    while_loop_effect = {{ limit = {{ check_variable = {{ waef_operation_fatigue_ticks < {days//10} }} }} waef_charge_offensive_fatigue = yes }}
+                    waef_cleanup_operation = yes
+                }}
+            }}
+        }}
+    }}
+    {fatigue} = {{
+        icon = economy_fatigue {allowed}
+        activation = {{ always = no }} selectable_mission = no
+        visible = {{ has_active_mission = {fatigue} }} available = {{ always = no }}
+        days_mission_timeout = 10 is_good = no
+        timeout_effect = {{
+            if = {{ limit = {{ has_country_flag = waef_operation_active has_country_flag = waef_operation_{scale} }}
+                if = {{ limit = {{ waef_operation_full_control = yes }} waef_win_operation = yes }}
+                else = {{ waef_charge_offensive_fatigue = yes activate_mission = {fatigue} }}
+            }}
         }}
     }}''')
  # Fort projects use real civilian factories while the timed decision is running.
@@ -164,48 +181,45 @@ def main():
         ai_will_do = {{ base = 0 }}
     }}''')
  groups={'waef_tactical_operations':[], 'waef_strategic_operations':[], 'waef_operations':[]}
- for kind in ['tactical','strategic']:
-  key='waef_'+kind+'_operations_peacetime'
-  loc(key,'Подготовка наступлений: требуется война','Offensive Planning: War Required')
-  loc(key+'_desc','Раздел доступен с начала игры. Наступательные операции можно запускать после начала войны.','This category is available from the start of the game. Offensive operations can be launched once the war begins.')
-  groups['waef_'+kind+'_operations'].append(f'    {key} = {{ icon = generic_operation {allowed} visible = {{ has_war = no }} available = {{ always = no }} ai_will_do = {{ base = 0 }} }}')
  for entry in prep:
   key=re.search(r'waef_\w+',entry)[0]
-  category='waef_tactical_operations' if key.startswith('waef_local_offensive') else 'waef_strategic_operations' if key.startswith('waef_regional_offensive') else 'waef_operations'
+  category='waef_tactical_operations' if key.startswith('waef_local') else 'waef_strategic_operations' if key.startswith('waef_regional') else 'waef_operations'
   groups[category].append(entry)
  write('common/decisions/waef_focus_operations.txt','\n'.join(key+' = {\n'+'\n'.join(entries)+'\n}' for key,entries in groups.items())+'\n')
  write('common/decisions/categories/waef_focus_operations.txt','waef_tactical_operations = { icon = decision_category_military_operation allowed = { OR = { tag = WEF tag = EEF } } visible = { always = yes } }\nwaef_strategic_operations = { icon = decision_category_military_operation allowed = { OR = { tag = WEF tag = EEF } } visible = { always = yes } }\nwaef_operations = { icon = decision_category_military_operation allowed = { OR = { tag = WEF tag = EEF } } visible = { has_country_flag = waef_operations_unlocked } }\n')
- write('common/scripted_triggers/waef_focus_operations.txt','''waef_operation_full_control = {
+ triggers.append('''waef_operation_full_control = {
     check_variable = { waef_operation_states^num > 0 }
-    all_of_scopes = {
-        array = waef_operation_states
-        OR = {
-            is_fully_controlled_by = ROOT
-            AND = { is_fully_controlled_by = controller controller = { is_in_faction_with = ROOT } }
-        }
-    }
-}
-''')
+    all_of_scopes = { array = waef_operation_states is_fully_controlled_by = ROOT }
+}''')
+ write('common/scripted_triggers/waef_focus_operations.txt','\n'.join(triggers)+'\n')
  effects=[];modifiers=[]
- for scale in ['local','regional']:
+ for scale,days,charge in [('local',14,2),('regional',60,5)]:
+  effects.append(f'''waef_charge_{scale}_preparation = {{
+    set_variable = {{ waef_preparation_refund = economic_fatigue }}
+    economy_fatigue_level_up_{charge} = yes
+    multiply_variable = {{ waef_preparation_refund = -1 }}
+    add_to_variable = {{ waef_preparation_refund = economic_fatigue }}
+    set_variable = {{ waef_operation_fatigue_ticks = 0 }}
+}}''')
   bonus='army_attack_factor = 0.05'+(' local_org_regain = 0.10' if scale=='regional' else '')
   choices=[]
   for tag in ['WEF','EEF']:
    key=f'waef_{tag.lower()}_offensive_{scale}_modifier'
-   loc(key,('Локальное' if scale=='local' else 'Региональное')+' наступление: '+('Западный фронт' if tag=='WEF' else 'Восточный фронт'),('Local' if scale=='local' else 'Regional')+' Offensive: '+tag)
-   loc(key+'_desc',('+5% атаки' if scale=='local' else '+5% атаки и +10% восстановления организации')+' для страны, проводящей операцию, только в целевых стейтах.',('+5% attack' if scale=='local' else '+5% attack and +10% organisation recovery')+' for the operating country in target states only.')
+   loc(key,'Наступление','Offensive');loc(key+'_desc','Временный бонус выбранной операции.','Temporary bonus for the selected operation.')
    modifiers.append(f'{key} = {{ enable = {{ always = yes }} icon = GFX_modifiers_generic_military_plans {bonus} }}')
-   choices.append(f'if = {{ limit = {{ ROOT = {{ tag = {tag} }} }} add_dynamic_modifier = {{ modifier = {key} scope = ROOT }} }}')
-  effects.append(f'waef_activate_{scale}_offensive = {{ for_each_scope_loop = {{ array = waef_operation_states '+ ' '.join(choices)+' } }')
+   choices.append(f'if = {{ limit = {{ ROOT = {{ tag = {tag} }} }} add_dynamic_modifier = {{ modifier = {key} scope = ROOT days = {days} }} }}')
+  effects.append(f'waef_activate_{scale}_offensive = {{ set_country_flag = waef_operation_active for_each_scope_loop = {{ array = waef_operation_states '+ ' '.join(choices)+f' }} activate_mission = waef_{scale}_offensive_{days} activate_mission = waef_{scale}_operation_fatigue }}')
  cleanup=[]
  for tag in ['WEF','EEF']:
   cleanup.append(f'if = {{ limit = {{ ROOT = {{ tag = {tag} }} }} '+ ' '.join(f'remove_dynamic_modifier = {{ modifier = waef_{tag.lower()}_offensive_{scale}_modifier }}' for scale in ['local','regional'])+' }')
- effects.append('waef_cleanup_operation = { for_each_scope_loop = { array = waef_operation_states '+' '.join(cleanup)+' } clear_array = waef_operation_states clr_country_flag = waef_operation_in_progress }')
- effects.append('waef_fail_local_offensive = { economy_fatigue_level_up_1 = yes add_war_support = -0.02 waef_cleanup_operation = yes }')
- effects.append('waef_fail_regional_offensive = { economy_fatigue_level_up_3 = yes add_war_support = -0.05 waef_cleanup_operation = yes }')
+ missions=['waef_local_preparation','waef_regional_preparation','waef_local_offensive_14','waef_regional_offensive_60','waef_local_operation_fatigue','waef_regional_operation_fatigue']
+ effects.append('waef_cleanup_operation = { clr_country_flag = waef_operation_in_progress clr_country_flag = waef_operation_active clr_country_flag = waef_operation_local clr_country_flag = waef_operation_regional '+' '.join('remove_mission = '+m for m in missions)+' for_each_scope_loop = { array = waef_operation_states '+' '.join(cleanup)+' } clear_array = waef_operation_states clear_variable = waef_preparation_refund clear_variable = waef_operation_fatigue_ticks }')
+ effects.append('waef_charge_offensive_fatigue = { economy_fatigue_level_up_1 = yes add_to_variable = { waef_operation_fatigue_ticks = 1 } }')
+ effects.append('waef_win_operation = { while_loop_effect = { limit = { check_variable = { waef_preparation_refund > 0 } } economy_fatigue_level_down_1 = yes subtract_from_variable = { waef_preparation_refund = 1 } } waef_cleanup_operation = yes }')
+ effects.append('waef_check_operation_victory = { if = { limit = { has_country_flag = waef_operation_in_progress waef_operation_full_control = yes } waef_win_operation = yes } }')
  write('common/scripted_effects/waef_focus_operations.txt','\n'.join(effects)+'\n')
  write('common/dynamic_modifiers/waef_focus_operations.txt','\n'.join(modifiers)+'\n')
  for lang,entries in locales.items():write(f'localisation/{lang}/waef_focus_operations_l_{lang}.yml','l_'+lang+':\n'+'\n'.join(f' {k}:0 "{v}"' for k,v in entries.items())+'\n',True)
- write('docs/OPERATION_TARGETS.json',json.dumps({'state_regions':{r:sorted(ss) for r,ss in regions.items()},'fort_provinces':forts},indent=2)+'\n')
- print('Operation regions:',len(regions),'states:',len(states),'fort provinces:',sum(map(len,forts.values())))
+ write('docs/OPERATION_TARGETS.json',json.dumps({'state_regions':{r:sorted(ss) for r,ss in regions.items()},'tactical_states':[s for s,ps in sorted(states.items()) if len(ps)>=7],'fort_provinces':forts},indent=2)+'\n')
+ print('Operation regions:',len(regions),'eligible tactical states:',len(tactical_targets.split()))
 if __name__=='__main__':main()

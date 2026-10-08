@@ -16,33 +16,31 @@ class Operation:
     phase: str = 'preparation'
     elapsed: int = 0
     preparation_refund: int = 0
-    fatigue_days: int = 0
-    fatigue_interval: int = 7
+    fatigue_interval: int = 10
+    preparation_charge: int = 2
 
-    def tick(self, victory=False, at_war=True):
-        """Daily ordering: peace, victory, charge, phase boundary. One call per day."""
-        if self.phase in ('victory', 'failed', 'cancelled'):
-            return
-        if not at_war:
-            self.phase = 'cancelled'
+    def __post_init__(self):
+        before = self.fatigue
+        self.fatigue = min(100, self.fatigue + self.preparation_charge)
+        self.preparation_refund = self.fatigue - before
+
+    def tick(self, victory=False):
+        if self.phase in ('victory', 'failed'):
             return
         if victory:
             self.fatigue = max(0, self.fatigue - self.preparation_refund)
             self.phase = 'victory'
             return
         self.elapsed += 1
-        self.fatigue_days += 1
-        if self.fatigue_days >= self.fatigue_interval:
-            before = self.fatigue
-            self.fatigue = min(100, self.fatigue + 1)
-            if self.phase == 'preparation':
-                self.preparation_refund += self.fatigue - before
-            self.fatigue_days = 0
-        if self.phase == 'preparation' and self.elapsed == self.preparation_days:
-            self.phase = 'offensive'
-            self.elapsed = 0
-        elif self.phase == 'offensive' and self.elapsed == self.offensive_days:
-            self.phase = 'failed'
+        if self.phase == 'preparation':
+            if self.elapsed == self.preparation_days:
+                self.phase = 'offensive'
+                self.elapsed = 0
+        else:
+            if self.elapsed % self.fatigue_interval == 0:
+                self.fatigue = min(100, self.fatigue + 1)
+            if self.elapsed == self.offensive_days:
+                self.phase = 'failed'
 
 
 def enemy_majority(provinces, enemy_controlled):
@@ -74,7 +72,7 @@ def audit(wa_root, mod_root):
         membership = defaultdict(list)
         for province in provinces:
             membership[province_region[province]].append(province)
-        states[str(sid)] = {'provinces': provinces, 'tactical_eligible': len(provinces) > 7, 'regions': sorted(membership)}
+        states[str(sid)] = {'provinces': provinces, 'tactical_eligible': len(provinces) >= 7, 'regions': sorted(membership)}
         if len(membership) != 1:
             split_states[str(sid)] = sorted(membership)
         for rid, ps in membership.items():
@@ -83,7 +81,7 @@ def audit(wa_root, mod_root):
     assert len(states) == 282
     return {
         'scope': 'WEF/EEF playable land provinces; excludes OBS, sea and lakes',
-        'tactical_minimum_provinces': 8,
+        'tactical_minimum_provinces': 7,
         'state_count': len(states),
         'tactical_eligible_count': sum(s['tactical_eligible'] for s in states.values()),
         'split_states': split_states,
