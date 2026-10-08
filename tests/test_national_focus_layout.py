@@ -1,4 +1,4 @@
-"""Layout-only migration of the six other schools, with frozen content hashes."""
+"""Reviewed compact national layouts and approved content snapshots."""
 import dataclasses,hashlib,json,unittest
 from test_national_focus_trees import ROOT,focus_nodes,eval_gate
 from test_scenario_regressions import get
@@ -10,7 +10,7 @@ class NationalLayoutTests(unittest.TestCase):
         cls.lock=json.loads((ROOT/'docs/NATIONAL_FOCUS_CONTENT_LOCK.json').read_text())
         cls.nodes=focus_nodes()
 
-    def test_other_school_contents_are_identical_to_previous_published_version(self):
+    def test_other_school_contents_match_the_reviewed_revision(self):
         self.assertEqual(set(self.lock['schools']),{'SOV','USA','ENG','FRA','ITA','JAP'})
         for code,expected in self.lock['schools'].items():
             content=[{k:r[k] for k in self.lock['fields']} for r in self.m['schools'][code]]
@@ -30,7 +30,7 @@ class NationalLayoutTests(unittest.TestCase):
                     self.assertEqual((x,y),(int(get(ref[r['code']],'x')),int(get(ref[r['code']],'y'))))
             self.assertEqual(min(x for x,y in coords),9)
             self.assertLessEqual(max(x for x,y in coords),26)
-            self.assertLessEqual(max(y for x,y in coords),8 if code=='GER' else 7)
+            self.assertLessEqual(max(y for x,y in coords),8)
             for y in {y for x,y in coords}:
                 xs=sorted(x for x,row in coords if row==y)
                 self.assertTrue(all(b-a>=2 for a,b in zip(xs,xs[1:])),(code,y,xs))

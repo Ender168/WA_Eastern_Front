@@ -248,6 +248,8 @@ technologies = {
 	}
 
 	jap_amphibious_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_M1 } } } }
+
 
 		enable_equipments = {
 			jap_amphibious_mechanized_equipment_1
@@ -288,6 +290,8 @@ technologies = {
 	}
 
 	jap_mechanized_infantry_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_M1 } } } }
+
 
 		enable_equipments = {
 			jap_mechanized_equipment_2
@@ -332,6 +336,8 @@ technologies = {
 	}
 
 	jap_mechanized_infantry_3 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_M1 } } } }
+
 
 		enable_equipments = {
 			jap_mechanized_equipment_3
@@ -376,6 +382,8 @@ technologies = {
 	}
 
 	jap_mechanized_infantry_4 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_M1 } } } }
+
 
 		enable_equipments = {
 			jap_mechanized_equipment_4
@@ -706,7 +714,7 @@ technologies = {
 	}
 
 	jap_light_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ke To
 
 		enable_equipments = {
@@ -758,7 +766,7 @@ technologies = {
 
 
 	jap_light_aa_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ta Se
 		enable_equipments = {
 			jap_light_aa_equipment_5
@@ -793,7 +801,7 @@ technologies = {
 	}
 
 	jap_light_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ke Ho
 
 		enable_equipments = {
@@ -846,7 +854,7 @@ technologies = {
 	}
 
 	jap_light_td_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ho Ha
 
 		enable_equipments = {
@@ -882,7 +890,7 @@ technologies = {
 	}
 
 	jap_light_spg_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ku Se
 
 		enable_equipments = {
@@ -918,7 +926,7 @@ technologies = {
 	}
 
 	jap_light_aa_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ta Se AAG
 		enable_equipments = {
 			jap_light_aa_equipment_6
@@ -953,7 +961,7 @@ technologies = {
 	}
 
 	jap_light_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ke-Ho kai
 
 		enable_equipments = {
@@ -1186,7 +1194,7 @@ technologies = {
 	}
 
 	jap_medium_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Chi Ha kai
 
 		enable_equipments = {
@@ -1244,7 +1252,7 @@ technologies = {
 	}
 
 	jap_medium_spg_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Ho Ni
 		enable_equipments = {
 			jap_medium_spg_equipment_4
@@ -1280,7 +1288,7 @@ technologies = {
 	}
 
 	jap_medium_td_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Ho Ni TD
 		enable_equipments = {
 			jap_medium_td_equipment_4
@@ -1315,7 +1323,7 @@ technologies = {
 	}
 
 	jap_medium_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Chi Ho
 
 		enable_equipments = {
@@ -1352,7 +1360,7 @@ technologies = {
 	}
 
 	jap_medium_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Chi He
 
 		enable_equipments = {
@@ -1404,7 +1412,7 @@ technologies = {
 	}
 
 	jap_infantry_support_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Chi-Ha 120
 		enable_equipments = {
 			jap_medium_tank_infantry_support_chassis_2
@@ -1439,7 +1447,7 @@ technologies = {
 	}
 
 	jap_medium_td_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Ho Nu
 		enable_equipments = {
 			jap_medium_td_equipment_6
@@ -1474,7 +1482,7 @@ technologies = {
 	}
 
 	jap_medium_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H1 } } } }
  #Chi To
 
 		enable_equipments = {
@@ -1510,7 +1518,7 @@ technologies = {
 	}
 
 	jap_medium_td_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H1 } } } }
  #Ka-To
 		enable_equipments = {
 			jap_medium_td_equipment_7
@@ -1529,7 +1537,7 @@ technologies = {
 	}
 
 	jap_medium_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Chi-Nu
 
 		enable_equipments = {
@@ -1582,7 +1590,7 @@ technologies = {
 	}
 
 	jap_medium_spg_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Ho Ro
 
 		enable_equipments = {
@@ -1618,7 +1626,7 @@ technologies = {
 	}
 
 	jap_medium_td_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Na To
 
 		enable_equipments = {
@@ -1654,7 +1662,7 @@ technologies = {
 	}
 
 	jap_medium_aa_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Ta Ri
 
 		enable_equipments = {
@@ -1690,7 +1698,7 @@ technologies = {
 	}
 
 	jap_medium_9 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H4 } } } }
  #Chi Ri
 
 		enable_equipments = {
@@ -1747,7 +1755,7 @@ technologies = {
 	}
 
 	jap_medium_spg_9 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H4 } } } }
  #Ho Ri
 
 		enable_equipments = {
@@ -1783,7 +1791,7 @@ technologies = {
 	}
 
 	jap_medium_td_9 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H4 } } } }
  #Ho Ri TD
 
 		enable_equipments = {
@@ -1819,7 +1827,7 @@ technologies = {
 	}
 
 	jap_modern_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Chi Ri Kai
 
 		enable_equipments = {
@@ -1875,7 +1883,7 @@ technologies = {
 	}
 
 	jap_modern_spg_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Ho Go
 
 		enable_equipments = {
@@ -1911,7 +1919,7 @@ technologies = {
 	}
 
 	jap_modern_td_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Ho Go TD
 
 		enable_equipments = {
@@ -1947,7 +1955,7 @@ technologies = {
 	}
 
 	jap_modern_aa_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Ta Ri
 
 		enable_equipments = {
@@ -1983,7 +1991,7 @@ technologies = {
 	}
 
 	jap_modern_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #STA 2
 
 		enable_equipments = {
@@ -2030,7 +2038,7 @@ technologies = {
 	}
 
 	jap_modern_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Type 61
 
 		enable_equipments = {
@@ -2194,7 +2202,7 @@ technologies = {
 	}
 
 	jap_super_heavy_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H4 } } } }
  #O i
 
 		enable_equipments = {
@@ -2226,7 +2234,7 @@ technologies = {
 	}
 
 	jap_super_heavy_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H4 } } } }
  #O Ni
 
 		enable_equipments = {
@@ -2258,7 +2266,7 @@ technologies = {
 	}
 
 	jap_heavy_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Chi Se
 
 		enable_equipments = {
@@ -2290,7 +2298,7 @@ technologies = {
 	}
 
 	jap_heavy_spg_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Ho Ro
 
 		enable_equipments = {
@@ -2310,7 +2318,7 @@ technologies = {
 	}
 
 	jap_heavy_td_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Na To
 
 		enable_equipments = {
@@ -2330,7 +2338,7 @@ technologies = {
 	}
 
 	jap_super_heavy_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H4 } } } }
  #Type 5 Heavy
 
 		enable_equipments = {
@@ -2717,7 +2725,7 @@ technologies = {
 	}
 
 	jap_light_tank_spg_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ho To
 		enable_equipments = {
 			tank_jap_light_chassis_spg_3
@@ -2845,7 +2853,7 @@ technologies = {
 	}
 
 	jap_light_tank_chassis_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ke To
 
 		enable_equipments = {
@@ -2900,7 +2908,7 @@ technologies = {
 
 
 	jap_light_tank_aa_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ta Se
 		enable_equipments = {
 			tank_jap_light_chassis_aa_4
@@ -2940,7 +2948,7 @@ technologies = {
 	}
 
 	jap_light_tank_chassis_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ke Ho
 
 		enable_equipments = {
@@ -3000,7 +3008,7 @@ technologies = {
 	}
 
 	jap_light_tank_td_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ho He
 
 		enable_equipments = {
@@ -3041,7 +3049,7 @@ technologies = {
 	}
 
 	jap_light_tank_spg_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ku Se
 
 		enable_equipments = {
@@ -3082,7 +3090,7 @@ technologies = {
 	}
 
 	jap_light_tank_aa_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ta Se AAG
 		enable_equipments = {
 			tank_jap_light_chassis_aa_4_2
@@ -3122,7 +3130,7 @@ technologies = {
 	}
 
 	jap_light_tank_chassis_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 has_completed_focus = WAEF_JAP_H1 } } } }
  #Ke Ho Kai
 
 		enable_equipments = {
@@ -3388,7 +3396,7 @@ technologies = {
 	}
 
 	jap_infantry_support_tank_chassis_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Chi-Ha 120
 		enable_equipments = {
 			tank_jap_medium_chassis_infantry_support_3
@@ -3428,7 +3436,7 @@ technologies = {
 	}
 
 	jap_medium_tank_chassis_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Chi Ha kai
 
 		enable_equipments = {
@@ -3485,7 +3493,7 @@ technologies = {
 	}
 
 	jap_medium_tank_spg_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Ho Ni
 		enable_equipments = {
 			tank_jap_medium_chassis_spg_3
@@ -3525,7 +3533,7 @@ technologies = {
 	}
 
 	jap_medium_tank_td_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Ho Ni TD
 		enable_equipments = {
 			tank_jap_medium_chassis_td_3
@@ -3599,7 +3607,7 @@ technologies = {
 	}
 
 	jap_medium_tank_chassis_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Chi He
 
 		enable_equipments = {
@@ -3663,7 +3671,7 @@ technologies = {
 	}
 
 	jap_infantry_support_tank_chassis_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Ho I
 		enable_equipments = {
 			tank_jap_medium_chassis_infantry_support_5
@@ -3703,7 +3711,7 @@ technologies = {
 	}
 
 	jap_medium_tank_td_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Ho Nu
 		enable_equipments = {
 			tank_jap_medium_chassis_td_5
@@ -3743,7 +3751,7 @@ technologies = {
 	}
 
 	jap_medium_tank_chassis_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H1 } } } }
  #Chi To
 
 		enable_equipments = {
@@ -3786,7 +3794,7 @@ technologies = {
 	}
 
 	jap_medium_tank_td_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H1 } } } }
  #Ka-To
 		enable_equipments = {
 			tank_jap_medium_chassis_td_6
@@ -3810,7 +3818,7 @@ technologies = {
 	}
 
 	jap_medium_tank_chassis_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Chi-Nu
 
 		enable_equipments = {
@@ -3870,7 +3878,7 @@ technologies = {
 	}
 
 	jap_medium_tank_td_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Chi-Ha 120mm TD
 
 		enable_equipments = {
@@ -3896,7 +3904,7 @@ technologies = {
 	}
 
 	jap_medium_tank_spg_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Ho Ro
 
 		enable_equipments = {
@@ -3937,7 +3945,7 @@ technologies = {
 	}
 
 	jap_medium_tank_aa_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T1 } } } }
  #Ta Ha
 
 		enable_equipments = {
@@ -3978,7 +3986,7 @@ technologies = {
 	}
 
 	jap_medium_tank_chassis_9 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H4 } } } }
  #Chi Ri
 
 		enable_equipments = {
@@ -4039,7 +4047,7 @@ technologies = {
 	}
 
 	jap_medium_tank_td_9 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H4 } } } }
  #Ho Ri
 
 		enable_equipments = {
@@ -4080,7 +4088,7 @@ technologies = {
 	}
 
 	jap_medium_tank_spg_9 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H4 } } } }
  #Ho Chi
 
 		enable_equipments = {
@@ -4121,7 +4129,7 @@ technologies = {
 	}
 
 	jap_modern_tank_chassis_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Chi Ri Kai
 
 		enable_equipments = {
@@ -4181,7 +4189,7 @@ technologies = {
 	}
 
 	jap_modern_tank_td_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Ho Go TD
 
 		enable_equipments = {
@@ -4222,7 +4230,7 @@ technologies = {
 	}
 
 	jap_modern_tank_spg_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Ho Go
 
 		enable_equipments = {
@@ -4263,7 +4271,7 @@ technologies = {
 	}
 
 	jap_modern_tank_aa_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Ta-Ri
 
 		enable_equipments = {
@@ -4304,7 +4312,7 @@ technologies = {
 	}
 
 	jap_modern_tank_chassis_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Chi Ru
 
 		enable_equipments = {
@@ -4355,7 +4363,7 @@ technologies = {
 	}
 
 	jap_modern_tank_chassis_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Chi O
 
 		enable_equipments = {
@@ -4625,7 +4633,7 @@ technologies = {
 #	}
 
 	jap_heavy_tank_chassis_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Chi Se
 
 		enable_equipments = {
@@ -4667,7 +4675,7 @@ technologies = {
 	}
 
 	jap_heavy_tank_chassis_td_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Ho Ri Kai
 
 		enable_equipments = {
@@ -4692,7 +4700,7 @@ technologies = {
 	}
 
 	jap_heavy_tank_chassis_spg_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Ho-O
 
 		enable_equipments = {
@@ -4717,7 +4725,7 @@ technologies = {
 	}
 
 	jap_heavy_tank_chassis_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_T4 } } } }
  #Chi Se Kai
 
 		enable_equipments = {
@@ -4753,7 +4761,7 @@ technologies = {
 	}
 
 	jap_heavy_tank_chassis_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H4 } } } }
  #Ju-To
 
 		enable_equipments = {
@@ -4819,7 +4827,7 @@ technologies = {
 	}
 
 	jap_super_heavy_tank_chassis_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H4 } } } }
  #O i
 
 		enable_equipments = {
@@ -4855,7 +4863,7 @@ technologies = {
 	}
 
 	jap_super_heavy_tank_chassis_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H4 } } } }
  #O Ro
 
 		enable_equipments = {
@@ -4894,7 +4902,7 @@ technologies = {
 	}
 
 	jap_super_heavy_tank_chassis_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_TB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_H4 } } } }
  #O-Ha
 
 		enable_equipments = {

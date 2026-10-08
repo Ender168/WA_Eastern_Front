@@ -296,7 +296,7 @@ technologies = {
 	}
 
 	ita_cv_fighter_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 
 
 		enable_equipments = {
@@ -335,7 +335,7 @@ technologies = {
 	}
 
 	ita_fighter_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_A1 } } } }
 
 
 		enable_equipments = {
@@ -364,7 +364,7 @@ technologies = {
 	}
 
 	ita_fighter_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_A1 } } } }
 
 
 		enable_equipments = {
@@ -417,7 +417,7 @@ technologies = {
 	}
 
 	ita_cv_fighter_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 
 
 		enable_equipments = {
@@ -456,7 +456,7 @@ technologies = {
 	}
 
 	ita_fighter_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_A1 } } } }
 
 
 		enable_equipments = {
@@ -509,7 +509,7 @@ technologies = {
 	}
 
 	ita_cv_fighter_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 
 
 		enable_equipments = {
@@ -548,7 +548,7 @@ technologies = {
 	}
 
 	ita_fighter_multirole_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_A1 has_completed_focus = WAEF_ITA_W1 } } } }
 
 
 		enable_equipments = {
@@ -581,7 +581,7 @@ technologies = {
 	}
 
 	ita_fighter_multirole_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 
 
 		enable_equipments = {
@@ -614,7 +614,7 @@ technologies = {
 	}
 
 	ita_fighter_multirole_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 
 
 		enable_equipments = {
@@ -647,7 +647,7 @@ technologies = {
 	}
 
 	ita_fighter_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_A1 } } } }
 
 
 		enable_equipments = {
@@ -700,7 +700,7 @@ technologies = {
 	}
 
 	ita_jet_fighter_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_A4 } } } }
 
 
 		enable_equipments = {
@@ -752,7 +752,7 @@ technologies = {
 	}
 
 	ita_jet_fighter_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_A4 } } } }
 
 
 		enable_equipments = {
@@ -799,7 +799,7 @@ technologies = {
 	}
 
 	ita_jet_fighter_multirole_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_W4 } } } }
 
 
 		enable_equipments = {
@@ -854,7 +854,7 @@ technologies = {
 	}
 
 	ita_jet_cv_fighter_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_W4 } } } }
 
 
 		enable_equipments = {
@@ -892,7 +892,7 @@ technologies = {
 	}
 
 	ita_jet_fighter_multirole_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_W4 } } } }
 
 
 		enable_equipments = {
@@ -942,7 +942,7 @@ technologies = {
 	}
 
 	ita_jet_cv_fighter_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_W4 } } } }
 
 
 		enable_equipments = {
@@ -1082,7 +1082,7 @@ technologies = {
 	}
 
 	ita_heavy_fighter_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 
 
 		enable_equipments = {
@@ -1115,7 +1115,7 @@ technologies = {
 	}
 
 	ita_attacker_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 
 
 		enable_equipments = {
@@ -1148,7 +1148,7 @@ technologies = {
 	}
 
 	ita_heavy_fighter_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 
 
 		enable_equipments = {
@@ -1176,7 +1176,7 @@ technologies = {
 	}
 
 	ita_attacker_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 
 
 		enable_equipments = {
@@ -1377,7 +1377,7 @@ technologies = {
 	}
 
 	ita_cv_cas_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 has_completed_focus = WAEF_ITA_B3 has_completed_focus = WAEF_ITA_R3 } } } }
 
 
 		enable_equipments = {
@@ -1400,7 +1400,7 @@ technologies = {
 	}
 
 	ita_cas_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 has_completed_focus = WAEF_ITA_B3 has_completed_focus = WAEF_ITA_R3 } } } }
 
 
 		enable_equipments = {
@@ -1452,7 +1452,7 @@ technologies = {
 	}
 
 	ita_cv_cas_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 
 
 		enable_equipments = {
@@ -1475,7 +1475,7 @@ technologies = {
 	}
 
 	ita_cas_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 
 
 		enable_equipments = {
@@ -1527,7 +1527,7 @@ technologies = {
 	}
 
 	ita_cv_cas_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 
 
 		enable_equipments = {
@@ -1550,7 +1550,7 @@ technologies = {
 	}
 
 	ita_jet_cas_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_S4 } } } }
 
 
 		enable_equipments = {
@@ -1648,7 +1648,7 @@ technologies = {
 	}
 
 	ita_naval_bomber_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 has_completed_focus = WAEF_ITA_S3 has_completed_focus = WAEF_ITA_R3 } } } }
 
 
 		enable_equipments = {
@@ -1700,7 +1700,7 @@ technologies = {
 	}
 
 	ita_naval_bomber_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 } } } }
 
 
 		enable_equipments = {
@@ -1747,7 +1747,7 @@ technologies = {
 	}
 
 	ita_naval_bomber_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 } } } }
 
 
 		enable_equipments = {
@@ -1794,7 +1794,7 @@ technologies = {
 	}
 
 	ita_jet_naval_bomber_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_B4 } } } }
 
 
 		enable_equipments = {
@@ -1846,7 +1846,7 @@ technologies = {
 	}
 
 	ita_jet_naval_bomber_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_B4 } } } }
 
 
 		enable_equipments = {
@@ -1920,7 +1920,7 @@ technologies = {
 	}
 
 	ita_patrol_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 has_completed_focus = WAEF_ITA_S3 has_completed_focus = WAEF_ITA_R3 } } } }
 
 
 		enable_equipments = {
@@ -2195,7 +2195,7 @@ technologies = {
 	}
 
 	ita_tactical_bomber_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 } } } }
 
 
 		enable_equipments = {
@@ -2242,7 +2242,7 @@ technologies = {
 	}
 
 	ita_jet_tactical_bomber_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_B4 } } } }
 
 
 		enable_equipments = {
@@ -2294,7 +2294,7 @@ technologies = {
 	}
 
 	ita_jet_tactical_bomber_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_B4 } } } }
 
 
 		enable_equipments = {
@@ -2369,7 +2369,7 @@ technologies = {
 	}
 
 	ita_strategic_bomber_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_R1 has_completed_focus = WAEF_ITA_S3 has_completed_focus = WAEF_ITA_B3 } } } }
 
 
 		enable_equipments = {
@@ -2401,7 +2401,7 @@ technologies = {
 	}
 
 	ita_strategic_bomber_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_R1 } } } }
 
 
 		enable_equipments = {
@@ -2433,7 +2433,7 @@ technologies = {
 	}
 
 	ita_jet_strategic_bomber_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_R4 } } } }
 
 
 		enable_equipments = {
@@ -2578,7 +2578,7 @@ technologies = {
 	}
 
 	ita_scout_plane_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_A1 has_completed_focus = WAEF_ITA_W1 } } } }
 
 
 		enable_equipments = {
@@ -2714,7 +2714,7 @@ technologies = {
 	}
 
 	ita_transport_plane_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_A1 has_completed_focus = WAEF_ITA_W1 } } } }
 	# SM.90
 
 		enable_equipments = {
@@ -3024,7 +3024,7 @@ technologies = {
 	}
 
 	ita_cv_fighter_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 		# Fiat G.50 A/N `Naval Freccia`
 
 		enable_equipments = {
@@ -3052,7 +3052,7 @@ technologies = {
 	}
 
 	ita_fighter_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_A1 } } } }
 			# Fiat G.55 `Centauro`
 
 		enable_equipments = {
@@ -3114,7 +3114,7 @@ technologies = {
 	}
 
 	ita_cv_fighter_ad_tech_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 		# Fiat G.57 `Centauro`
 
 		enable_equipments = {
@@ -3142,7 +3142,7 @@ technologies = {
 	}
 
 	ita_fighter_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_A1 } } } }
 			# Fiat G.56 `Centauro`
 
 		enable_equipments = {
@@ -3194,7 +3194,7 @@ technologies = {
 	}
 
 	ita_jet_fighter_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_A4 } } } }
 		# Caproni Ca.183bis
 
 		enable_equipments = {
@@ -3365,7 +3365,7 @@ technologies = {
 	}
 
 	ita_interceptor_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_A1 } } } }
 			# Macchi C.205 `Veltro`
 
 		enable_equipments = {
@@ -3423,7 +3423,7 @@ technologies = {
 	}
 
 	ita_interceptor_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_A1 } } } }
 			# Macchi C.207 `Fragore`
 
 		enable_equipments = {
@@ -3532,7 +3532,9 @@ technologies = {
 			}
 		}
 	}
-	ita_fighter_multirole_ad_tech_0_2 = {	# Reggiane Re.2000 GA `Falco I`
+	ita_fighter_multirole_ad_tech_0_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
+	# Reggiane Re.2000 GA `Falco I`
 
 		enable_equipment_modules = {
 			ITA_engine_piaggio_pxibis_1x
@@ -3596,7 +3598,7 @@ technologies = {
 	}
 
 	ita_cv_fighter_multirole_ad_tech_0 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 	# Re.2000 Cat. `Ochetta`
 
 		enable_equipments = {
@@ -3625,7 +3627,7 @@ technologies = {
 	}
 
 	ita_fighter_multirole_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_A1 has_completed_focus = WAEF_ITA_W1 } } } }
 		# Reggiane Re.2001 `Falco II`
 
 		enable_equipments = {
@@ -3681,7 +3683,7 @@ technologies = {
 	}
 
 	ita_cv_fighter_multirole_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 	# Reggiane Re.2001 OR `Falco II`
 
 		enable_equipments = {
@@ -3710,7 +3712,7 @@ technologies = {
 	}
 
 	ita_fighter_multirole_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 		# Reggiane Re.2005 `Sagittario I`
 
 		enable_equipments = {
@@ -3770,7 +3772,7 @@ technologies = {
 	}
 
 	ita_cv_fighter_multirole_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 	# Reggiane Re.2005 OR `Naval`
 
 		enable_equipments = {
@@ -3794,7 +3796,7 @@ technologies = {
 	}
 
 	ita_fighter_multirole_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 		# Reggiane Re.2006 `Sagittario II`
 
 		enable_equipments = {
@@ -3845,7 +3847,7 @@ technologies = {
 	}
 
 	ita_jet_fighter_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_A4 } } } }
 			# Reggiane Re.2007
 
 		enable_equipments = {
@@ -3907,7 +3909,7 @@ technologies = {
 	}
 
 	ita_jet_cv_fighter_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_W4 } } } }
 		# IMAM Ro.70 `Sagittario`
 
 		enable_equipments = {
@@ -3950,7 +3952,7 @@ technologies = {
 	}
 
 	ita_jet_fighter_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AA3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_A4 } } } }
 			# Reggiane Re.2008
 
 		enable_equipments = {
@@ -4001,7 +4003,7 @@ technologies = {
 	}
 
 	ita_jet_cv_fighter_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_W4 } } } }
 		# IMAM Ro.73 `Sagittario 2`
 
 		enable_equipments = {
@@ -4047,7 +4049,7 @@ technologies = {
 	}
 
 	ita_jet_fighter_multirole_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_W4 } } } }
 	# Fiat G.80
 
 		enable_equipments = {
@@ -4106,7 +4108,7 @@ technologies = {
 	}
 
 	ita_jet_fighter_multirole_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_W4 } } } }
 	# Fiat G.91
 
 		enable_equipments = {
@@ -4221,7 +4223,7 @@ technologies = {
 	}
 
 	ita_attacker_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 has_completed_focus = WAEF_ITA_B3 has_completed_focus = WAEF_ITA_R3 } } } }
 	# Caproni Ca.331 `Raffica `
 
 		enable_equipments = {
@@ -4279,7 +4281,7 @@ technologies = {
 		}
 	}
 	ita_attacker_ad_tech_2_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 	# Zeta Engine Upgrades
 
 		enable_equipment_modules = {
@@ -4304,7 +4306,7 @@ technologies = {
 	}
 
 	ita_attacker_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 	# Fiat FC.20Bis
 
 		enable_equipments = {
@@ -4341,7 +4343,7 @@ technologies = {
 	}
 
 	ita_attacker_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 	# Savoia-Marchetti SM.91
 
 		enable_equipments = {
@@ -4394,7 +4396,7 @@ technologies = {
 	}
 
 	ita_attacker_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 	# Savoia-Marchetti SM.92
 
 		enable_equipments = {
@@ -4485,7 +4487,9 @@ technologies = {
 			factor = 0
 		}
 	}
-	ita_heavy_fighter_ad_tech_1_1 = {	# IMAM Ro.57Bis	(attacker)
+	ita_heavy_fighter_ad_tech_1_1 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
+	# IMAM Ro.57Bis	(attacker)
 
 		enable_equipment_modules = {
 			dive_brakes_small
@@ -4534,7 +4538,7 @@ technologies = {
 	}
 
 	ita_heavy_fighter_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 		# IMAM Ro.58
 
 		enable_equipments = {
@@ -4576,7 +4580,7 @@ technologies = {
 	}
 
 	ita_heavy_fighter_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 		# Caproni Ca.380 `Corsaro`
 
 		enable_equipments = {
@@ -4773,7 +4777,7 @@ technologies = {
 	}
 
 	ita_cv_cas_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 	# Reggiane Re.2001 GV `Falco II`
 
 		enable_equipments = {
@@ -4801,7 +4805,7 @@ technologies = {
 	}
 
 	ita_cv_cas_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 	# Reggiane Re.2002 `Ariete`
 
 		enable_equipments = {
@@ -4827,7 +4831,7 @@ technologies = {
 	}
 
 	ita_cas_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 		# Breda Ba.201
 
 		enable_equipments = {
@@ -4885,7 +4889,7 @@ technologies = {
 	}
 
 	ita_cv_cas_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 	# Breda Ba.201G
 
 		enable_equipments = {
@@ -4908,7 +4912,7 @@ technologies = {
 	}
 
 	ita_cas_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 		# Savoia-Marchetti SM.93
 
 		enable_equipments = {
@@ -4964,7 +4968,7 @@ technologies = {
 	}
 
 	ita_cv_cas_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 	# Reggiane Re.2005G `Naval`
 
 		enable_equipments = {
@@ -4990,7 +4994,7 @@ technologies = {
 	}
 
 	ita_cas_ad_tech_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_S1 } } } }
 		# Fiat CR.44
 
 		enable_equipments = {
@@ -5043,7 +5047,7 @@ technologies = {
 	}
 
 	ita_jet_cas_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_S4 } } } }
 	# Breda Ba.405
 
 		enable_equipments = {
@@ -5102,7 +5106,7 @@ technologies = {
 	}
 
 	ita_jet_cas_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_S4 } } } }
 	# IMAM Ro.74 `Sagittario 2`
 
 		enable_equipments = {
@@ -5157,7 +5161,7 @@ technologies = {
 	}
 
 	ita_jet_cv_cas_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_S4 } } } }
 	# IMAM Ro.74G `Sagittario 2`
 
 		enable_equipments = {
@@ -5256,7 +5260,7 @@ technologies = {
 	}
 
 	ita_cv_naval_bomber_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 } } } }
 	# Reggiane Re.2001G `Falco II`
 
 		enable_equipments = {
@@ -5313,7 +5317,7 @@ technologies = {
 	}
 
 	ita_cv_naval_bomber_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 } } } }
 	# Fiat G.57S `Centauro`
 
 		enable_equipments = {
@@ -5371,7 +5375,7 @@ technologies = {
 	}
 
 	ita_cv_naval_bomber_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 } } } }
 	# Fiat G.55S `Centauro`
 
 		enable_equipments = {
@@ -5421,7 +5425,7 @@ technologies = {
 	}
 
 	ita_jet_cv_naval_bomber_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_B4 } } } }
 	# IMAM Ro.70S `Sagittario`
 
 		enable_equipments = {
@@ -5478,7 +5482,7 @@ technologies = {
 	}
 
 	ita_jet_cv_naval_bomber_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_B4 } } } }
 	# IMAM Ro.74S `Sagittario 2`
 
 		enable_equipments = {
@@ -5568,7 +5572,7 @@ technologies = {
 	}
 
 	ita_patrol_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 has_completed_focus = WAEF_ITA_S3 has_completed_focus = WAEF_ITA_R3 } } } }
 	# Fiat RS.14
 
 		enable_equipments = {
@@ -5608,7 +5612,7 @@ technologies = {
 	}
 
 	ita_patrol_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 } } } }
 	# Caproni Ca.314
 
 		enable_equipments = {
@@ -5647,7 +5651,7 @@ technologies = {
 	}
 
 	ita_patrol_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 } } } }
 	# CANT Z.511 `Idrogigante`
 
 		enable_equipments = {
@@ -5811,7 +5815,9 @@ technologies = {
 			}
 		}
 	}
-	ita_tactical_bomber_ad_tech_2_2 = {	# Fiat BR.20Bis `Cicogna`
+	ita_tactical_bomber_ad_tech_2_2 = {
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 } } } }
+	# Fiat BR.20Bis `Cicogna`
 
 		enable_equipment_modules = {
 			ITA_engine_fiat_a82_83_2x
@@ -5920,7 +5926,7 @@ technologies = {
 	}
 
 	ita_tactical_bomber_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 } } } }
 	# CANT Z.1018 `Leone`
 
 		enable_equipments = {
@@ -5971,7 +5977,7 @@ technologies = {
 	}
 
 	ita_tactical_bomber_ad_tech_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 } } } }
 	# Breda BZ.301Bis `Leone II`
 
 		enable_equipments = {
@@ -6024,7 +6030,7 @@ technologies = {
 	}
 
 	ita_jet_tactical_bomber_ad_tech_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { has_completed_focus = WAEF_ITA_C25 OR = { has_completed_focus = WAEF_ITA_B4 } } } }
 	# Breda BZ.318 `Pumaro`
 
 		enable_equipments = {
@@ -6190,7 +6196,7 @@ technologies = {
 		}
 	}
 	ita_heavy_fighter_conversion_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_W1 } } } }
 	# Savoia-Marchetti SM.89
 
 		enable_equipments = {
@@ -6253,7 +6259,7 @@ technologies = {
 	}
 
 	ita_strike_bomber_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 } } } }
 				# Savoia-Marchetti SM.79Bis `Sparviero`
 
 		enable_equipments = {
@@ -6311,7 +6317,7 @@ technologies = {
 	}
 
 	ita_strike_bomber_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_B1 } } } }
 				# Fiat BR.44
 
 		enable_equipments = {
@@ -6456,7 +6462,7 @@ technologies = {
 	}
 
 	ita_strategic_bomber_ad_tech_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_R1 has_completed_focus = WAEF_ITA_S3 has_completed_focus = WAEF_ITA_B3 } } } }
 	# Piaggio P.108 `Bombardiere`
 
 		enable_equipments = {
@@ -6500,7 +6506,7 @@ technologies = {
 		}
 	}
 	ita_strategic_bomber_ad_tech_2_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_R1 } } } }
 	# Piaggio P.108A `Artigliere`
 
 		enable_equipments = {
@@ -6559,7 +6565,7 @@ technologies = {
 	}
 
 	ita_strategic_bomber_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_R1 } } } }
 	# Piaggio P.133 `Bombardiere`
 
 		enable_equipments = {
@@ -6605,7 +6611,7 @@ technologies = {
 	}
 
 	ita_strategic_bomber_ad_tech_3_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_R1 } } } }
 	# Piaggio P.133A `Artigliere`
 
 		enable_equipments = {
@@ -6637,7 +6643,7 @@ technologies = {
 	}
 
 	ita_strategic_bomber_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_R1 } } } }
 	# Piaggio P.152
 
 		enable_equipments = {
@@ -6796,7 +6802,7 @@ technologies = {
 	}
 
 	ita_scout_plane_ad_tech_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_A1 has_completed_focus = WAEF_ITA_W1 } } } }
 	# Caproni Ca.313 `Libeccio`
 
 		enable_equipments = {
@@ -6849,7 +6855,7 @@ technologies = {
 	}
 
 	ita_scout_plane_ad_tech_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_AB3 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_A1 has_completed_focus = WAEF_ITA_W1 } } } }
 	# Reggiane Re.2003 `Ariete`
 
 		enable_equipments = {

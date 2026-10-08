@@ -5354,5 +5354,1261 @@
   "ger_jet_tactical_bomber_ad_tech_1": {
     "english": "Focke-Wulf Fw 239 `1000x1000x1000`",
     "russian": "Focke-Wulf Fw 239 `1000x1000x1000`"
+  },
+  "eng_armoured_car_4": {
+    "english": "Alvis Saladin",
+    "russian": "Alvis Saladin"
+  },
+  "eng_cas_8": {
+    "english": "Firebrand",
+    "russian": "Firebrand"
+  },
+  "eng_cas_ad_tech_8": {
+    "english": "Blackburn Firebrand Mk IV",
+    "russian": "Blackburn Firebrand Mk IV"
+  },
+  "eng_combat_armoured_car_4": {
+    "english": "Alvis Saladin",
+    "russian": "Alvis Saladin"
+  },
+  "eng_cv_fighter_6": {
+    "english": "Sea Fury",
+    "russian": "Sea Fury"
+  },
+  "eng_fighter_7": {
+    "english": "Spiteful Mk XVI",
+    "russian": "Spiteful Mk XVI"
+  },
+  "eng_fighter_ad_tech_7": {
+    "english": "Supermarine Spiteful F16",
+    "russian": "Supermarine Spiteful F16"
+  },
+  "eng_heavy_8": {
+    "english": "Black Prince",
+    "russian": "Black Prince"
+  },
+  "eng_heavy_9": {
+    "english": "Caernarvon",
+    "russian": "Caernarvon"
+  },
+  "eng_heavy_fighter_4": {
+    "english": "Hornet",
+    "russian": "Hornet"
+  },
+  "eng_heavy_fighter_ad_tech_4": {
+    "english": "De Havilland Hornet F Mk I",
+    "russian": "De Havilland Hornet F Mk I"
+  },
+  "eng_heavy_spg_8": {
+    "english": "Churchill Ardeer Aggie",
+    "russian": "Churchill Ardeer Aggie"
+  },
+  "eng_heavy_spg_9": {
+    "english": "FV207",
+    "russian": "FV207"
+  },
+  "eng_heavy_strategic_bomber_ad_tech_4": {
+    "english": "Avro Lincoln",
+    "russian": "Avro Lincoln"
+  },
+  "eng_heavy_tank_chassis_4": {
+    "english": "Black Prince",
+    "russian": "Black Prince"
+  },
+  "eng_heavy_tank_chassis_5": {
+    "english": "Caernarvon",
+    "russian": "Caernarvon"
+  },
+  "eng_heavy_tank_spg_8": {
+    "english": "Churchill Ardeer Aggie",
+    "russian": "Churchill Ardeer Aggie"
+  },
+  "eng_heavy_tank_spg_9": {
+    "english": "FV207",
+    "russian": "FV207"
+  },
+  "eng_jet_cv_cas_1": {
+    "english": "Sea Vampire",
+    "russian": "Sea Vampire"
+  },
+  "eng_jet_cv_cas_ad_tech_1": {
+    "english": "Sea Vampire FB 20",
+    "russian": "Sea Vampire FB 20"
+  },
+  "eng_jet_cv_fighter_1": {
+    "english": "Attacker",
+    "russian": "Attacker"
+  },
+  "eng_jet_cv_fighter_2": {
+    "english": "Sea Hawk",
+    "russian": "Sea Hawk"
+  },
+  "eng_jet_fighter_2": {
+    "english": "Meteor F8",
+    "russian": "Meteor F8"
+  },
+  "eng_jet_fighter_multirole_1": {
+    "english": "Vampire",
+    "russian": "Vampire"
+  },
+  "eng_jet_fighter_multirole_ad_tech_1": {
+    "english": "Vampire FB5",
+    "russian": "Vampire FB5"
+  },
+  "eng_jet_heavy_strategic_bomber_ad_tech_1": {
+    "english": "Handley Page H.P.80 Victor",
+    "russian": "Handley Page H.P.80 Victor"
+  },
+  "eng_jet_scout_plane_1": {
+    "english": "PR Meteor",
+    "russian": "PR Meteor"
+  },
+  "eng_jet_strategic_bomber_1": {
+    "english": "Valiant",
+    "russian": "Valiant"
+  },
+  "eng_jet_strategic_bomber_ad_tech_1": {
+    "english": "Vickers Valiant",
+    "russian": "Vickers Valiant"
+  },
+  "eng_jet_strike_bomber_ad_tech_1": {
+    "english": "English Electric Canberra B.2",
+    "russian": "English Electric Canberra B.2"
+  },
+  "eng_light_5": {
+    "english": "FV301",
+    "russian": "FV301"
+  },
+  "eng_light_6": {
+    "english": "GSR Setter",
+    "russian": "GSR Setter"
+  },
+  "eng_light_spg_4": {
+    "english": "FV304",
+    "russian": "FV304"
+  },
+  "eng_light_tank_chassis_5": {
+    "english": "FV301",
+    "russian": "FV301"
+  },
+  "eng_light_tank_chassis_6": {
+    "english": "GSR Setter",
+    "russian": "GSR Setter"
+  },
+  "eng_light_tank_spg_4": {
+    "english": "FV304",
+    "russian": "FV304"
+  },
+  "eng_mechanized_infantry_4": {
+    "english": "Cambridge Carrier",
+    "russian": "Cambridge Carrier"
+  },
+  "eng_medium_tank_td_8": {
+    "english": "Charioteer",
+    "russian": "Charioteer"
+  },
+  "eng_medium_td_8": {
+    "english": "Charioteer",
+    "russian": "Charioteer"
+  },
+  "eng_modern_1": {
+    "english": "Centurion Mk I",
+    "russian": "Centurion Mk I"
+  },
+  "eng_modern_2": {
+    "english": "Centurion Mk III",
+    "russian": "Centurion Mk III"
+  },
+  "eng_modern_2_spg": {
+    "english": "FV3805",
+    "russian": "FV3805"
+  },
+  "eng_modern_tank_chassis_1": {
+    "english": "Centurion Mk I",
+    "russian": "Centurion Mk I"
+  },
+  "eng_modern_tank_chassis_1_2": {
+    "english": "Centurion Mk III",
+    "russian": "Centurion Mk III"
+  },
+  "eng_modern_tank_spg_2": {
+    "english": "FV3805",
+    "russian": "FV3805"
+  },
+  "eng_scout_armoured_car_4": {
+    "english": "Daimler Ferret MK I",
+    "russian": "Daimler Ferret MK I"
+  },
+  "eng_scout_car_4": {
+    "english": "Daimler Ferret MK I",
+    "russian": "Daimler Ferret MK I"
+  },
+  "eng_strategic_bomber_4": {
+    "english": "Lincoln",
+    "russian": "Lincoln"
+  },
+  "eng_strategic_bomber_5": {
+    "english": "Windsor",
+    "russian": "Windsor"
+  },
+  "eng_strategic_bomber_ad_tech_5": {
+    "english": "Vickers Windsor",
+    "russian": "Vickers Windsor"
+  },
+  "eng_transport_plane_2": {
+    "english": "Valetta",
+    "russian": "Valetta"
+  },
+  "fra_armoured_car_3": {
+    "english": "Panhard EBR 11",
+    "russian": "Panhard EBR 11"
+  },
+  "fra_assault_spg_8": {
+    "english": "CDA Lorraine Mle 52",
+    "russian": "CDA Lorraine Mle 52"
+  },
+  "fra_assault_tank_spg_8": {
+    "english": "CDA Lorraine Mle 52",
+    "russian": "CDA Lorraine Mle 52"
+  },
+  "fra_cas_5": {
+    "english": "LN 50",
+    "russian": "LN 50"
+  },
+  "fra_combat_armoured_car_2_2": {
+    "english": "Panhard EBR 11",
+    "russian": "Panhard EBR 11"
+  },
+  "fra_cv_fighter_ad_tech_3": {
+    "english": "SNCASE SE.582",
+    "russian": "SNCASE SE.582"
+  },
+  "fra_cv_fighter_ad_tech_4": {
+    "english": "Bloch MB.720",
+    "russian": "Bloch MB.720"
+  },
+  "fra_fast_bomber_ad_tech_5": {
+    "english": "SNCAC NC.153",
+    "russian": "SNCAC NC.153"
+  },
+  "fra_fighter_multirole_ad_tech_6": {
+    "english": "SNCASE SE.580",
+    "russian": "SNCASE SE.580"
+  },
+  "fra_heavy_7": {
+    "english": "FCM 50t",
+    "russian": "FCM 50t"
+  },
+  "fra_heavy_8": {
+    "english": "AMX M4 49",
+    "russian": "AMX M4 49"
+  },
+  "fra_heavy_fighter_8": {
+    "english": "VB 10-2",
+    "russian": "VB 10-2"
+  },
+  "fra_heavy_fighter_ad_tech_6": {
+    "english": "Arsenal VB.10",
+    "russian": "Arsenal VB.10"
+  },
+  "fra_heavy_tank_chassis_7": {
+    "english": "FCM 50t",
+    "russian": "FCM 50t"
+  },
+  "fra_heavy_tank_chassis_8": {
+    "english": "AMX M4 49",
+    "russian": "AMX M4 49"
+  },
+  "fra_interceptor_ad_tech_6": {
+    "english": "Bloch MB.700",
+    "russian": "Bloch MB.700"
+  },
+  "fra_jet_cas_ad_tech_1": {
+    "english": "Nord N.1510 `Noréclair`",
+    "russian": "Nord N.1510 `Noréclair`"
+  },
+  "fra_jet_cv_cas_ad_tech_1": {
+    "english": "Nord N.1511 `Noréclair`",
+    "russian": "Nord N.1511 `Noréclair`"
+  },
+  "fra_jet_cv_fighter_2": {
+    "english": "VG 90C",
+    "russian": "VG 90C"
+  },
+  "fra_jet_cv_fighter_ad_tech_1": {
+    "english": "Arsenal VG.80",
+    "russian": "Arsenal VG.80"
+  },
+  "fra_jet_fast_bomber_ad_tech_1": {
+    "english": "SNCASO SO.M2 `Vautour`",
+    "russian": "SNCASO SO.M2 `Vautour`"
+  },
+  "fra_jet_fighter_1": {
+    "english": "VG 70",
+    "russian": "VG 70"
+  },
+  "fra_jet_fighter_2": {
+    "english": "VG 90",
+    "russian": "VG 90"
+  },
+  "fra_jet_fighter_ad_tech_1": {
+    "english": "Arsenal VG.71",
+    "russian": "Arsenal VG.71"
+  },
+  "fra_jet_strategic_bomber_1": {
+    "english": "Sncaso 4000",
+    "russian": "Sncaso 4000"
+  },
+  "fra_jet_strategic_bomber_ad_tech_1": {
+    "english": "Amiot 420",
+    "russian": "Amiot 420"
+  },
+  "fra_light_4": {
+    "english": "AMX 12t",
+    "russian": "AMX 12t"
+  },
+  "fra_light_5": {
+    "english": "AMX 13 75",
+    "russian": "AMX 13 75"
+  },
+  "fra_light_8": {
+    "english": "Bat Chatillon 25t",
+    "russian": "Bat Chatillon 25t"
+  },
+  "fra_light_spg_4": {
+    "english": "AMX 105 AM",
+    "russian": "AMX 105 AM"
+  },
+  "fra_light_tank_chassis_4": {
+    "english": "AMX 12",
+    "russian": "AMX 12"
+  },
+  "fra_light_tank_chassis_5": {
+    "english": "AMX 13 75",
+    "russian": "AMX 13 75"
+  },
+  "fra_light_tank_chassis_8": {
+    "english": "BC 25",
+    "russian": "BC 25"
+  },
+  "fra_light_tank_spg_4": {
+    "english": "AMX-105 AM",
+    "russian": "AMX-105 AM"
+  },
+  "fra_light_tank_spg_5": {
+    "english": "AMX-13 AM",
+    "russian": "AMX-13 AM"
+  },
+  "fra_modern_1": {
+    "english": "AMX M4 45",
+    "russian": "AMX M4 45"
+  },
+  "fra_modern_2": {
+    "english": "AMX 50 100",
+    "russian": "AMX 50 100"
+  },
+  "fra_modern_4": {
+    "english": "Lorraine 40 90",
+    "russian": "Lorraine 40 90"
+  },
+  "fra_modern_5": {
+    "english": "Lorraine 40 100",
+    "russian": "Lorraine 40 100"
+  },
+  "fra_modern_spg_1": {
+    "english": "Bat Chatillon 155 55",
+    "russian": "Bat Chatillon 155 55"
+  },
+  "fra_modern_tank_aa_3": {
+    "english": "Lorraine 40 DCA",
+    "russian": "Lorraine 40 DCA"
+  },
+  "fra_modern_tank_chassis_1": {
+    "english": "AMX M4 45",
+    "russian": "AMX M4 45"
+  },
+  "fra_modern_tank_chassis_2": {
+    "english": "AMX 50 100",
+    "russian": "AMX 50 100"
+  },
+  "fra_modern_tank_chassis_4": {
+    "english": "Lorraine 40 90",
+    "russian": "Lorraine 40 90"
+  },
+  "fra_modern_tank_chassis_5": {
+    "english": "Lorraine 40 100",
+    "russian": "Lorraine 40 100"
+  },
+  "fra_modern_tank_spg_1": {
+    "english": "Lorraine 155 50",
+    "russian": "Lorraine 155 50"
+  },
+  "fra_modern_tank_spg_3": {
+    "english": "Lorraine 105 45",
+    "russian": "Lorraine 105 45"
+  },
+  "fra_modern_tank_td_1": {
+    "english": "CDA Lorraine Mle 51",
+    "russian": "CDA Lorraine Mle 51"
+  },
+  "fra_modern_tank_td_2": {
+    "english": "AMX AC 48",
+    "russian": "AMX AC 48"
+  },
+  "fra_modern_td_1": {
+    "english": "CA Lorraine Mle 51",
+    "russian": "CA Lorraine Mle 51"
+  },
+  "fra_modern_td_2": {
+    "english": "AMX AC 48",
+    "russian": "AMX AC 48"
+  },
+  "fra_naval_bomber_5": {
+    "english": "Late 340",
+    "russian": "Late 340"
+  },
+  "fra_strategic_bomber_ad_tech_8": {
+    "english": "Amiot 410",
+    "russian": "Amiot 410"
+  },
+  "fra_tactical_bomber_ad_tech_2_3": {
+    "english": "Lioré et Olivier LeO 457",
+    "russian": "Lioré et Olivier LeO 457"
+  },
+  "fra_transport_plane_4": {
+    "english": "SNCASO SO.30P `Bretagne`",
+    "russian": "SNCASO SO.30P `Bretagne`"
+  },
+  "ita_attacker_ad_tech_5": {
+    "english": "Savoia-Marchetti SM.92",
+    "russian": "Savoia-Marchetti SM.92"
+  },
+  "ita_cas_ad_tech_6": {
+    "english": "Fiat CR.44",
+    "russian": "Fiat CR.44"
+  },
+  "ita_cv_cas_ad_tech_5": {
+    "english": "Reggiane Re.2005G `Naval`",
+    "russian": "Reggiane Re.2005G `Naval`"
+  },
+  "ita_cv_naval_bomber_ad_tech_4": {
+    "english": "Fiat G.55S `Centauro`",
+    "russian": "Fiat G.55S `Centauro`"
+  },
+  "ita_fighter_8": {
+    "english": "CR.42 Falco",
+    "russian": "CR.42 Falco"
+  },
+  "ita_heavy_3": {
+    "english": "Carro Armato C55",
+    "russian": "Carro Armato C55"
+  },
+  "ita_heavy_assault_2": {
+    "english": "Semovente da 149 43",
+    "russian": "Semovente da 149 43"
+  },
+  "ita_heavy_fighter_ad_tech_3": {
+    "english": "Caproni Ca.380 `Corsaro`",
+    "russian": "Caproni Ca.380 `Corsaro`"
+  },
+  "ita_heavy_tank_chassis_3": {
+    "english": "Carro Armato C55",
+    "russian": "Carro Armato C55"
+  },
+  "ita_heavy_tank_chassis_assault_2": {
+    "english": "Semovente da 149 43",
+    "russian": "Semovente da 149 43"
+  },
+  "ita_heavy_tank_td_2": {
+    "english": "Semovente da 120 43",
+    "russian": "Semovente da 120 43"
+  },
+  "ita_heavy_td_2": {
+    "english": "Semovente da 120 43",
+    "russian": "Semovente da 120 43"
+  },
+  "ita_interceptor_ad_tech_4": {
+    "english": "Macchi C.207 `Fragore`",
+    "russian": "Macchi C.207 `Fragore`"
+  },
+  "ita_jet_cas_ad_tech_1": {
+    "english": "Breda Ba.405",
+    "russian": "Breda Ba.405"
+  },
+  "ita_jet_cv_fighter_1": {
+    "english": "G 80 Naval",
+    "russian": "G 80 Naval"
+  },
+  "ita_jet_cv_fighter_ad_tech_1": {
+    "english": "IMAM Ro.70 `Sagittario`",
+    "russian": "IMAM Ro.70 `Sagittario`"
+  },
+  "ita_jet_cv_naval_bomber_ad_tech_1": {
+    "english": "IMAM Ro.70S `Sagittario`",
+    "russian": "IMAM Ro.70S `Sagittario`"
+  },
+  "ita_jet_fighter_1": {
+    "english": "Re 2007 Sagittario",
+    "russian": "Re 2007 Sagittario"
+  },
+  "ita_jet_fighter_ad_tech_1": {
+    "english": "Caproni Ca.183bis",
+    "russian": "Caproni Ca.183bis"
+  },
+  "ita_jet_fighter_ad_tech_2": {
+    "english": "Reggiane Re.2007",
+    "russian": "Reggiane Re.2007"
+  },
+  "ita_jet_fighter_multirole_1": {
+    "english": "Fiat G 80",
+    "russian": "Fiat G 80"
+  },
+  "ita_jet_fighter_multirole_ad_tech_1": {
+    "english": "Fiat G.80",
+    "russian": "Fiat G.80"
+  },
+  "ita_jet_naval_bomber_1": {
+    "english": "Re 2009 Silurante",
+    "russian": "Re 2009 Silurante"
+  },
+  "ita_jet_strategic_bomber_1": {
+    "english": "P 152 Piaggio",
+    "russian": "P 152 Piaggio"
+  },
+  "ita_jet_tactical_bomber_1": {
+    "english": "Z 1040 Leone",
+    "russian": "Z 1040 Leone"
+  },
+  "ita_light_6": {
+    "english": "Carro Celere M18",
+    "russian": "Carro Celere M18"
+  },
+  "ita_light_tank_chassis_6": {
+    "english": "Carro Celere M18",
+    "russian": "Carro Celere M18"
+  },
+  "ita_mechanized_infantry_4": {
+    "english": "Fiat 727NM",
+    "russian": "Fiat 727NM"
+  },
+  "ita_modern_3": {
+    "english": "Carro Armato P35",
+    "russian": "Carro Armato P35"
+  },
+  "ita_modern_aa_3": {
+    "english": "Anti aria da duello 37",
+    "russian": "Anti aria da duello 37"
+  },
+  "ita_modern_spg_3": {
+    "english": "Semovente da 155",
+    "russian": "Semovente da 155"
+  },
+  "ita_modern_tank_aa_3": {
+    "english": "Anti aria da duello 37",
+    "russian": "Anti aria da duello 37"
+  },
+  "ita_modern_tank_chassis_3": {
+    "english": "Progetto P50",
+    "russian": "Progetto P50"
+  },
+  "ita_modern_tank_spg_3": {
+    "english": "Semovente da 155",
+    "russian": "Semovente da 155"
+  },
+  "ita_modern_tank_td_3": {
+    "english": "Semovente da 120 42",
+    "russian": "Semovente da 120 42"
+  },
+  "ita_modern_td_3": {
+    "english": "Semovente da 120 42",
+    "russian": "Semovente da 120 42"
+  },
+  "ita_scout_plane_ad_tech_4": {
+    "english": "Reggiane Re.2003 `Ariete`",
+    "russian": "Reggiane Re.2003 `Ariete`"
+  },
+  "ita_strike_bomber_ad_tech_4": {
+    "english": "Fiat BR.44",
+    "russian": "Fiat BR.44"
+  },
+  "jap_attacker_ad_tech_3": {
+    "english": "Rikugen Ki-93",
+    "russian": "Rikugen Ki-93"
+  },
+  "jap_attacker_ad_tech_4": {
+    "english": "Aichi S1A `Denko`",
+    "russian": "Aichi S1A `Denko`"
+  },
+  "jap_cas_ad_tech_6": {
+    "english": "Mansyū Ki-98",
+    "russian": "Mansyū Ki-98"
+  },
+  "jap_cv_fighter_5": {
+    "english": "A7M2 Reppu",
+    "russian": "A7M2 Reppu"
+  },
+  "jap_cv_fighter_6": {
+    "english": "A7M3 Reppū",
+    "russian": "A7M3 Reppū"
+  },
+  "jap_cv_fighter_ad_tech_4_2": {
+    "english": "Mitsubishi A6M8 `Reisen`",
+    "russian": "Mitsubishi A6M8 `Reisen`"
+  },
+  "jap_cv_fighter_ad_tech_5": {
+    "english": "Mitsubishi A7M2 `Reppū`",
+    "russian": "Mitsubishi A7M2 `Reppū`"
+  },
+  "jap_cv_fighter_ad_tech_6": {
+    "english": "Mitsubishi A7M3 `Reppū Kai`",
+    "russian": "Mitsubishi A7M3 `Reppū Kai`"
+  },
+  "jap_cv_fighter_ad_tech_7": {
+    "english": "Kawanishi N1K3-A Shiden Kai",
+    "russian": "Kawanishi N1K3-A Shiden Kai"
+  },
+  "jap_fast_bomber_ad_tech_2_1": {
+    "english": "Kawasaki Ki-66",
+    "russian": "Kawasaki Ki-66"
+  },
+  "jap_fighter_4_1": {
+    "english": "Mitsubishi J2M5 Raiden",
+    "russian": "Mitsubishi J2M5 Raiden"
+  },
+  "jap_fighter_8": {
+    "english": "J7W1 Shinden",
+    "russian": "J7W1 Shinden"
+  },
+  "jap_fighter_ad_tech_7": {
+    "english": "Kawanishi J6K `Jinpu`",
+    "russian": "Kawanishi J6K `Jinpu`"
+  },
+  "jap_fighter_multirole_8": {
+    "english": "N1K6 Shiden",
+    "russian": "N1K6 Shiden"
+  },
+  "jap_fighter_multirole_ad_tech_3_1": {
+    "english": "Kawasaki Ki-100 `Goshikisen`",
+    "russian": "Kawasaki Ki-100 `Goshikisen`"
+  },
+  "jap_heavy_3": {
+    "english": "Chi-Se",
+    "russian": "Chi-Se"
+  },
+  "jap_heavy_fighter_ad_tech_4": {
+    "english": "Kyushu J7W1 `Shinden`",
+    "russian": "Kyushu J7W1 `Shinden`"
+  },
+  "jap_heavy_spg_3": {
+    "english": "Ho-O",
+    "russian": "Ho-O"
+  },
+  "jap_heavy_tank_chassis_5": {
+    "english": "Chi-Se",
+    "russian": "Chi-Se"
+  },
+  "jap_heavy_tank_chassis_6": {
+    "english": "Chi-Se Kai",
+    "russian": "Chi-Se Kai"
+  },
+  "jap_heavy_tank_chassis_spg_3": {
+    "english": "Ho-O",
+    "russian": "Ho-O"
+  },
+  "jap_heavy_tank_chassis_td_3": {
+    "english": "Ho-Ri Kai",
+    "russian": "Ho-Ri Kai"
+  },
+  "jap_heavy_td_3": {
+    "english": "Ho-Ri Kai",
+    "russian": "Ho-Ri Kai"
+  },
+  "jap_interceptor_ad_tech_5": {
+    "english": "Nakajima Ki-117 `Hayate`",
+    "russian": "Nakajima Ki-117 `Hayate`"
+  },
+  "jap_jet_cas_1": {
+    "english": "R2Y2 Keiun Kai",
+    "russian": "R2Y2 Keiun Kai"
+  },
+  "jap_jet_cas_2": {
+    "english": "R2Y3 Keiun Kai",
+    "russian": "R2Y3 Keiun Kai"
+  },
+  "jap_jet_cas_ad_tech_1": {
+    "english": "Yokosuka R2Y2-G `Keiun-Kai`",
+    "russian": "Yokosuka R2Y2-G `Keiun-Kai`"
+  },
+  "jap_jet_cv_naval_bomber_1": {
+    "english": "P1Y Tenga",
+    "russian": "P1Y Tenga"
+  },
+  "jap_jet_cv_naval_bomber_ad_tech_1": {
+    "english": "Yokosuka P2Y `Tenga`",
+    "russian": "Yokosuka P2Y `Tenga`"
+  },
+  "jap_jet_fighter_2": {
+    "english": "J7W2 Shinden Kai",
+    "russian": "J7W2 Shinden Kai"
+  },
+  "jap_jet_fighter_multirole_1": {
+    "english": "Kikka Kai",
+    "russian": "Kikka Kai"
+  },
+  "jap_jet_fighter_multirole_2": {
+    "english": "Ki-201 Karyū",
+    "russian": "Ki-201 Karyū"
+  },
+  "jap_jet_fighter_multirole_ad_tech_1": {
+    "english": "Nakajima J9N `Kikka`",
+    "russian": "Nakajima J9N `Kikka`"
+  },
+  "jap_jet_fighter_multirole_ad_tech_2": {
+    "english": "Nakajima Ki-201 `Karyū`",
+    "russian": "Nakajima Ki-201 `Karyū`"
+  },
+  "jap_jet_interceptor_ad_tech_1": {
+    "english": "Kayaba `Katsuodori` Kai",
+    "russian": "Kayaba `Katsuodori` Kai"
+  },
+  "jap_jet_strategic_bomber_1": {
+    "english": "G12N Hijiri",
+    "russian": "G12N Hijiri"
+  },
+  "jap_light_7": {
+    "english": "Type 6 Ke-Ho Kai",
+    "russian": "Type 6 Ke-Ho Kai"
+  },
+  "jap_light_tank_chassis_7": {
+    "english": "Ke-Ho Kai",
+    "russian": "Ke-Ho Kai"
+  },
+  "jap_modern_1": {
+    "english": "Chi-Ri Kai",
+    "russian": "Chi-Ri Kai"
+  },
+  "jap_modern_aa_1": {
+    "english": "Ta-Ro",
+    "russian": "Ta-Ro"
+  },
+  "jap_modern_spg_1": {
+    "english": "Ho-Go",
+    "russian": "Ho-Go"
+  },
+  "jap_modern_tank_aa_1": {
+    "english": "Ta-Ri",
+    "russian": "Ta-Ri"
+  },
+  "jap_modern_tank_chassis_1": {
+    "english": "Chi-Ri Kai",
+    "russian": "Chi-Ri Kai"
+  },
+  "jap_modern_tank_spg_1": {
+    "english": "Ho-Go",
+    "russian": "Ho-Go"
+  },
+  "jap_modern_tank_td_1": {
+    "english": "Ho-Go TD",
+    "russian": "Ho-Go TD"
+  },
+  "jap_modern_td_1": {
+    "english": "Ho-Go TD",
+    "russian": "Ho-Go TD"
+  },
+  "jap_strategic_bomber_5": {
+    "english": "G10N Fugaku",
+    "russian": "G10N Fugaku"
+  },
+  "jap_strategic_bomber_ad_tech_4": {
+    "english": "Nakajima G10N `Fugaku`",
+    "russian": "Nakajima G10N `Fugaku`"
+  },
+  "jap_strike_bomber_ad_tech_5": {
+    "english": "Tachikawa Ki-74",
+    "russian": "Tachikawa Ki-74"
+  },
+  "jap_super_heavy_3": {
+    "english": "Type 5 O-Ha",
+    "russian": "Type 5 O-Ha"
+  },
+  "jap_super_heavy_tank_chassis_3": {
+    "english": "O-Ha",
+    "russian": "O-Ha"
+  },
+  "jap_transport_plane_3": {
+    "english": "Ki-92",
+    "russian": "Ki-92"
+  },
+  "sov_attacker_ad_tech_3": {
+    "english": "Petlyakov Pe-3DIS `Peshka`",
+    "russian": "Petlyakov Pe-3DIS `Peshka`"
+  },
+  "sov_cas_6": {
+    "english": "Il-10M",
+    "russian": "Il-10M"
+  },
+  "sov_fighter_7": {
+    "english": "Yak-9UT",
+    "russian": "Yak-9UT"
+  },
+  "sov_fighter_ad_tech_7": {
+    "english": "Yakovlev Yak-3U",
+    "russian": "Yakovlev Yak-3U"
+  },
+  "sov_heavy_10": {
+    "english": "IS-4",
+    "russian": "IS-4"
+  },
+  "sov_heavy_11": {
+    "english": "IS-7",
+    "russian": "IS-7"
+  },
+  "sov_heavy_9": {
+    "english": "IS-3",
+    "russian": "IS-3"
+  },
+  "sov_heavy_spg_11": {
+    "english": "Object-261",
+    "russian": "Object-261"
+  },
+  "sov_heavy_tank_chassis_5": {
+    "english": "IS-3",
+    "russian": "IS-3"
+  },
+  "sov_heavy_tank_chassis_6": {
+    "english": "IS-4",
+    "russian": "IS-4"
+  },
+  "sov_heavy_tank_chassis_7": {
+    "english": "IS-7",
+    "russian": "IS-7"
+  },
+  "sov_heavy_tank_spg_11": {
+    "english": "Object 261",
+    "russian": "Object 261"
+  },
+  "sov_heavy_tank_td_11": {
+    "english": "Object 264",
+    "russian": "Object 264"
+  },
+  "sov_heavy_tank_td_9": {
+    "english": "Object 708",
+    "russian": "Object 708"
+  },
+  "sov_heavy_td_11": {
+    "english": "Object-264",
+    "russian": "Object-264"
+  },
+  "sov_heavy_td_9": {
+    "english": "Object-708",
+    "russian": "Object-708"
+  },
+  "sov_interceptor_ad_tech_4": {
+    "english": "Mikoyan MiG-11 `Samolet`",
+    "russian": "Mikoyan MiG-11 `Samolet`"
+  },
+  "sov_jet_cas_1": {
+    "english": "Il-40",
+    "russian": "Il-40"
+  },
+  "sov_jet_cv_fighter_2": {
+    "english": "MiG-15C",
+    "russian": "MiG-15C"
+  },
+  "sov_jet_cv_fighter_ad_tech_1": {
+    "english": "Yakovlev Yak-15C",
+    "russian": "Yakovlev Yak-15C"
+  },
+  "sov_jet_fighter_1": {
+    "english": "MiG-9",
+    "russian": "MiG-9"
+  },
+  "sov_jet_fighter_2": {
+    "english": "MiG-15",
+    "russian": "MiG-15"
+  },
+  "sov_jet_fighter_ad_tech_1": {
+    "english": "Yakovlev Yak-15 `Feather`",
+    "russian": "Yakovlev Yak-15 `Feather`"
+  },
+  "sov_jet_fighter_ad_tech_2": {
+    "english": "Yakovlev Yak-17 `Feather`",
+    "russian": "Yakovlev Yak-17 `Feather`"
+  },
+  "sov_jet_fighter_ad_tech_3": {
+    "english": "Yakovlev Yak-23 `Feather`",
+    "russian": "Yakovlev Yak-23 `Feather`"
+  },
+  "sov_jet_interceptor_ad_tech_0": {
+    "english": "Mikoyan MiG-9 `Fargo`",
+    "russian": "Mikoyan MiG-9 `Fargo`"
+  },
+  "sov_jet_scout_plane_1": {
+    "english": "Tu-14",
+    "russian": "Tu-14"
+  },
+  "sov_jet_scout_plane_ad_tech_1": {
+    "english": "Tupolev Tu-6",
+    "russian": "Tupolev Tu-6"
+  },
+  "sov_jet_strategic_bomber_1": {
+    "english": "Tu-16",
+    "russian": "Tu-16"
+  },
+  "sov_jet_strategic_bomber_ad_tech_1": {
+    "english": "Tupolev Tu-16 `Badger`",
+    "russian": "Tupolev Tu-16 `Badger`"
+  },
+  "sov_jet_strike_bomber_ad_tech_1": {
+    "english": "Tupolev Tu-12 `Bat`",
+    "russian": "Tupolev Tu-12 `Bat`"
+  },
+  "sov_jet_tactical_bomber_1": {
+    "english": "Tu-12",
+    "russian": "Tu-12"
+  },
+  "sov_light_7": {
+    "english": "PT-76",
+    "russian": "PT-76"
+  },
+  "sov_light_tank_chassis_5": {
+    "english": "LTTB",
+    "russian": "LTTB"
+  },
+  "sov_light_tank_spg_7": {
+    "english": "SU-85BM",
+    "russian": "SU-85BM"
+  },
+  "sov_medium_tank_aa_4": {
+    "english": "ZSU-37-2",
+    "russian": "ZSU-37-2"
+  },
+  "sov_modern_2": {
+    "english": "T-44 100",
+    "russian": "T-44 100"
+  },
+  "sov_modern_3": {
+    "english": "T-54-1",
+    "russian": "T-54-1"
+  },
+  "sov_modern_aa_3": {
+    "english": "ZSU-57-2",
+    "russian": "ZSU-57-2"
+  },
+  "sov_modern_tank_aa_3": {
+    "english": "ZSU-57",
+    "russian": "ZSU-57"
+  },
+  "sov_modern_tank_chassis_1_2": {
+    "english": "T-44-100",
+    "russian": "T-44-100"
+  },
+  "sov_modern_tank_chassis_2": {
+    "english": "T-54-1",
+    "russian": "T-54-1"
+  },
+  "sov_modern_tank_td_1": {
+    "english": "SU-122-44",
+    "russian": "SU-122-44"
+  },
+  "sov_modern_tank_td_3": {
+    "english": "SU-122-54",
+    "russian": "SU-122-54"
+  },
+  "sov_modern_td_1": {
+    "english": "SU 122 44",
+    "russian": "SU 122 44"
+  },
+  "sov_modern_td_3": {
+    "english": "SU 122 54",
+    "russian": "SU 122 54"
+  },
+  "sov_naval_bomber_3": {
+    "english": "Il-10T",
+    "russian": "Il-10T"
+  },
+  "sov_scout_armoured_car_4": {
+    "english": "BTR-40",
+    "russian": "BTR-40"
+  },
+  "sov_scout_car_4": {
+    "english": "BTR-40",
+    "russian": "BTR-40"
+  },
+  "sov_tactical_bomber_ad_tech_3": {
+    "english": "Ilyushin Il-6",
+    "russian": "Ilyushin Il-6"
+  },
+  "sov_transport_plane_3": {
+    "english": "Il-12",
+    "russian": "Il-12"
+  },
+  "usa_attacker_ad_tech_2": {
+    "english": "Northrop P-61C `Black Widow`",
+    "russian": "Northrop P-61C `Black Widow`"
+  },
+  "usa_combat_armoured_car_4": {
+    "english": "T18E2 Boarhound",
+    "russian": "T18E2 Boarhound"
+  },
+  "usa_cv_fighter_5": {
+    "english": "F8F Bearcat",
+    "russian": "F8F Bearcat"
+  },
+  "usa_cv_fighter_ad_tech_5": {
+    "english": "Grumman F8F-2 `Bearcat`",
+    "russian": "Grumman F8F-2 `Bearcat`"
+  },
+  "usa_cv_naval_bomber_4": {
+    "english": "AM Mauler",
+    "russian": "AM Mauler"
+  },
+  "usa_cv_naval_bomber_ad_tech_4": {
+    "english": "Martin AM-1 `Mauler`",
+    "russian": "Martin AM-1 `Mauler`"
+  },
+  "usa_heavy_1_spg": {
+    "english": "T92",
+    "russian": "T92"
+  },
+  "usa_heavy_2": {
+    "english": "T26E5",
+    "russian": "T26E5"
+  },
+  "usa_heavy_3": {
+    "english": "T29",
+    "russian": "T29"
+  },
+  "usa_heavy_3_td": {
+    "english": "T95",
+    "russian": "T95"
+  },
+  "usa_heavy_4": {
+    "english": "T32",
+    "russian": "T32"
+  },
+  "usa_heavy_tank_chassis_2": {
+    "english": "T29",
+    "russian": "T29"
+  },
+  "usa_heavy_tank_chassis_3": {
+    "english": "T26E5",
+    "russian": "T26E5"
+  },
+  "usa_heavy_tank_chassis_4": {
+    "english": "T32",
+    "russian": "T32"
+  },
+  "usa_heavy_tank_spg_3": {
+    "english": "T92",
+    "russian": "T92"
+  },
+  "usa_heavy_tank_td_2": {
+    "english": "T95",
+    "russian": "T95"
+  },
+  "usa_interceptor_ad_tech_5": {
+    "english": "Fisher P-75 `Eagle`",
+    "russian": "Fisher P-75 `Eagle`"
+  },
+  "usa_jet_cas_1": {
+    "english": "F-84 Thunderstreak",
+    "russian": "F-84 Thunderstreak"
+  },
+  "usa_jet_cas_ad_tech_1": {
+    "english": "Republic F-84F `Thunderstreak`",
+    "russian": "Republic F-84F `Thunderstreak`"
+  },
+  "usa_jet_cv_fighter_1": {
+    "english": "F9F Panther",
+    "russian": "F9F Panther"
+  },
+  "usa_jet_cv_fighter_ad_tech_1": {
+    "english": "McDonnell FH-1 `Phantom`",
+    "russian": "McDonnell FH-1 `Phantom`"
+  },
+  "usa_jet_fighter_ad_tech_1": {
+    "english": "Lockheed P-80A `Shooting Star`",
+    "russian": "Lockheed P-80A `Shooting Star`"
+  },
+  "usa_jet_fighter_ad_tech_2": {
+    "english": "Lockheed P-80C `Shooting Star`",
+    "russian": "Lockheed P-80C `Shooting Star`"
+  },
+  "usa_jet_fighter_multirole_1": {
+    "english": "P-80 Shooting Star",
+    "russian": "P-80 Shooting Star"
+  },
+  "usa_jet_fighter_multirole_2": {
+    "english": "F-84 Thunderjet",
+    "russian": "F-84 Thunderjet"
+  },
+  "usa_jet_fighter_multirole_ad_tech_1": {
+    "english": "Republic F-84B `Thunderjet`",
+    "russian": "Republic F-84B `Thunderjet`"
+  },
+  "usa_jet_strategic_bomber_1": {
+    "english": "B-47 Stratojet",
+    "russian": "B-47 Stratojet"
+  },
+  "usa_jet_strategic_bomber_ad_tech_1": {
+    "english": "Boeing B-47B `Stratojet`",
+    "russian": "Boeing B-47B `Stratojet`"
+  },
+  "usa_jet_tactical_bomber_1": {
+    "english": "B-45 Tornado",
+    "russian": "B-45 Tornado"
+  },
+  "usa_jet_tactical_bomber_ad_tech_1": {
+    "english": "North American B-45A `Tornado`",
+    "russian": "North American B-45A `Tornado`"
+  },
+  "usa_light_4_spg": {
+    "english": "M41 HMC",
+    "russian": "M41 HMC"
+  },
+  "usa_light_5": {
+    "english": "M41 Walker Bulldog",
+    "russian": "M41 Walker Bulldog"
+  },
+  "usa_light_5_aa": {
+    "english": "M42 Duster",
+    "russian": "M42 Duster"
+  },
+  "usa_light_tank_aa_5": {
+    "english": "M42 Duster",
+    "russian": "M42 Duster"
+  },
+  "usa_light_tank_chassis_5": {
+    "english": "Walker Bulldog",
+    "russian": "Walker Bulldog"
+  },
+  "usa_light_tank_spg_4": {
+    "english": "M41 HMC",
+    "russian": "M41 HMC"
+  },
+  "usa_medium_5_armoured_rocket": {
+    "english": "T40 Whizbang",
+    "russian": "T40 Whizbang"
+  },
+  "usa_medium_tank_5_armoured_rocket": {
+    "english": "T40 Calliope",
+    "russian": "T40 Calliope"
+  },
+  "usa_modern_2": {
+    "english": "T26E4 Super Pershing",
+    "russian": "T26E4 Super Pershing"
+  },
+  "usa_modern_3": {
+    "english": "M46 Patton",
+    "russian": "M46 Patton"
+  },
+  "usa_modern_4": {
+    "english": "M47 Patton",
+    "russian": "M47 Patton"
+  },
+  "usa_modern_aa_2": {
+    "english": "M249 Vigilante",
+    "russian": "M249 Vigilante"
+  },
+  "usa_modern_tank_aa_2": {
+    "english": "M249 Vigilante",
+    "russian": "M249 Vigilante"
+  },
+  "usa_modern_tank_chassis_1_2": {
+    "english": "Super Pershing",
+    "russian": "Super Pershing"
+  },
+  "usa_modern_tank_chassis_2": {
+    "english": "M46 Patton",
+    "russian": "M46 Patton"
+  },
+  "usa_modern_tank_chassis_2_2": {
+    "english": "M47 Patton",
+    "russian": "M47 Patton"
+  },
+  "usa_modern_tank_td_2": {
+    "english": "Hellhound",
+    "russian": "Hellhound"
+  },
+  "usa_modern_td_2": {
+    "english": "M54 Hell Hound",
+    "russian": "M54 Hell Hound"
+  },
+  "usa_scout_plane_3": {
+    "english": "F-15",
+    "russian": "F-15"
+  },
+  "usa_scout_plane_ad_tech_4": {
+    "english": "Northrop F-15A `Reporter`",
+    "russian": "Northrop F-15A `Reporter`"
+  },
+  "usa_strategic_bomber_2_ad_tech_3": {
+    "english": "Consolidated B-32 `Dominator`",
+    "russian": "Consolidated B-32 `Dominator`"
+  },
+  "usa_strategic_bomber_6": {
+    "english": "B-50 Super Fortress",
+    "russian": "B-50 Super Fortress"
+  },
+  "usa_strategic_bomber_ad_tech_5": {
+    "english": "Boeing B-50D `Superfortress`",
+    "russian": "Boeing B-50D `Superfortress`"
+  },
+  "jap_heavy_fighter_ad_tech_2_2": {
+    "english": "J5N1 `Tenrai`",
+    "russian": "J5N1 `Tenrai`"
+  },
+  "jap_strike_bomber_ad_tech_2_1": {
+    "english": "Ki-21-II",
+    "russian": "Ki-21-II"
+  },
+  "fra_fighter_ad_tech_5_2": {
+    "english": "MS.450",
+    "russian": "MS.450"
+  },
+  "ita_fighter_multirole_ad_tech_0_2": {
+    "english": "Re.2000 GA",
+    "russian": "Re.2000 GA"
+  },
+  "ita_heavy_fighter_ad_tech_1_1": {
+    "english": "Ro.57Bis",
+    "russian": "Ro.57Bis"
+  },
+  "ita_tactical_bomber_ad_tech_2_2": {
+    "english": "BR.20Bis",
+    "russian": "BR.20Bis"
+  },
+  "usa_cv_cas_ad_tech_4_2": {
+    "english": "SB2C-4 `Helldiver`",
+    "russian": "SB2C-4 `Helldiver`"
+  },
+  "usa_fighter_ad_tech_5_2": {
+    "english": "P-51H-5 `Mustang`",
+    "russian": "P-51H-5 `Mustang`"
+  },
+  "eng_fighter_ad_tech_5_2": {
+    "english": "Spitfire LF Mk IX",
+    "russian": "Spitfire LF Mk IX"
+  },
+  "eng_fighter_multirole_ad_tech_2_2": {
+    "english": "Hurricane Mk IID",
+    "russian": "Hurricane Mk IID"
+  },
+  "eng_heavy_strategic_bomber_ad_tech_3_1": {
+    "english": "Lancaster B Mk I (late)",
+    "russian": "Lancaster B Mk I (late)"
+  },
+  "sov_strategic_bomber_ad_tech_2_1": {
+    "english": "Pe-8 M-82FN",
+    "russian": "Pe-8 M-82FN"
+  },
+  "jap_jet_cv_fighter_3": {
+    "english": "A8W7 Shinden Kai",
+    "russian": "A8W7 Shinden Kai"
+  },
+  "jap_jet_cv_fighter_ad_tech_3": {
+    "english": "Nakajima A8W7 Taifū",
+    "russian": "Nakajima A8W7 Taifū"
   }
 }

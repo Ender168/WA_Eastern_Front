@@ -10,7 +10,7 @@ focus_tree = {
         icon = GFX_goal_generic_scientific_exchange
         x = 18
         y = 0
-        cost = 10
+        cost = 2
         available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -283,6 +283,38 @@ focus_tree = {
     }
 
     focus = {
+        id = WAEF_FRA_P1
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 9
+        y = 0
+        cost = 3
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        mutually_exclusive = { focus = WAEF_FRA_P2 }
+        completion_reward = {
+            set_technology = { standard_industry = 0 }
+            set_technology = { concentrated_industry = 1 }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_P2
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 11
+        y = 0
+        cost = 3
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        mutually_exclusive = { focus = WAEF_FRA_P1 }
+        completion_reward = {
+            set_technology = { standard_industry = 0 }
+            set_technology = { dispersed_industry = 1 }
+        }
+    }
+
+    focus = {
         id = WAEF_FRA_I1
         icon = GFX_goal_generic_army_doctrine
         x = 22
@@ -299,7 +331,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_FRA_I3
+        id = WAEF_FRA_I2
         icon = GFX_goal_generic_army_doctrine
         x = 22
         y = 2
@@ -315,7 +347,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_FRA_I5
+        id = WAEF_FRA_I3
         icon = GFX_goal_generic_army_doctrine
         x = 22
         y = 3
@@ -323,10 +355,26 @@ focus_tree = {
         available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_I2 }
+        completion_reward = {
+
+            set_technology = { fra_heavy_infantry_weapons_4 = 1 fra_infantry_weapons_5 = 1 fra_jungle_training = 1 fra_night_vision_1 = 1 fra_water_training = 1 }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_I4
+        icon = GFX_goal_generic_army_doctrine
+        x = 22
+        y = 4
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
         prerequisite = { focus = WAEF_FRA_I3 }
         completion_reward = {
 
-            set_technology = { fra_elite_forces = 1 fra_heavy_infantry_weapons_4 = 1 fra_infantry_weapons_5 = 1 fra_jungle_training = 1 fra_night_vision_1 = 1 fra_water_training = 1 }
+            set_technology = { fra_elite_forces = 1 }
         }
     }
 
@@ -347,7 +395,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_FRA_G3
+        id = WAEF_FRA_G2
         icon = GFX_goal_generic_army_doctrine
         x = 24
         y = 2
@@ -363,7 +411,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_FRA_G5
+        id = WAEF_FRA_G3
         icon = GFX_goal_generic_army_doctrine
         x = 24
         y = 3
@@ -371,7 +419,7 @@ focus_tree = {
         available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_FRA_G3 }
+        prerequisite = { focus = WAEF_FRA_G2 }
         completion_reward = {
 
             set_technology = { fra_anti_air_upgrade_4 = 1 fra_anti_tank_upgrade_3 = 1 fra_artillery_4 = 1 fra_heavy_anti_air_4 = 1 fra_heavy_artillery_3 = 1 }
@@ -379,14 +427,63 @@ focus_tree = {
     }
 
     focus = {
+        id = WAEF_FRA_M1
+        icon = GFX_goal_generic_army_doctrine
+        x = 26
+        y = 1
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_C00 }
+        completion_reward = {
+
+            set_technology = { fra_amphibious_mechanized_infantry_1 = 1 }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_M2
+        icon = GFX_goal_generic_army_doctrine
+        x = 26
+        y = 2
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_M1 }
+        completion_reward = {
+
+            set_technology = { fra_mechanized_infantry_4 = 1 }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_M3
+        icon = GFX_goal_generic_army_doctrine
+        x = 26
+        y = 3
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_M2 }
+        completion_reward = {
+
+            set_technology = { fra_mechanized_infantry_5 = 1 }
+        }
+    }
+
+    focus = {
         id = WAEF_FRA_T1
         icon = GFX_goal_generic_army_tanks
-        x = 10
+        x = 9
         y = 5
         cost = 13
         available = { has_completed_focus = WAEF_FRA_C00 }
         cancel_if_invalid = yes
         continue_if_invalid = no
+        mutually_exclusive = { focus = WAEF_FRA_H1 }
         completion_reward = {
 
             if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { fra_assault_spg_4 = 1 fra_medium_4 = 1 fra_support_3 = 1 } }
@@ -395,7 +492,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_FRA_TA2
+        id = WAEF_FRA_T2
         icon = GFX_goal_generic_army_tanks
         x = 9
         y = 6
@@ -404,16 +501,15 @@ focus_tree = {
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_FRA_T1 }
-        mutually_exclusive = { focus = WAEF_FRA_TB2 }
         completion_reward = {
-
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { fra_medium_5 = 1 fra_medium_6 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { fra_medium_tank_chassis_3 = 1 fra_medium_tank_chassis_4 = 1 } }
+            add_ideas = waef_fra_t2_programme
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { fra_assault_spg_5 = 1 fra_medium_5 = 1 fra_medium_6 = 1 fra_medium_7 = 1 fra_medium_td_2 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { fra_assault_tank_spg_5 = 1 fra_medium_tank_aa_4 = 1 fra_medium_tank_aa_7 = 1 fra_medium_tank_chassis_3 = 1 fra_medium_tank_chassis_4 = 1 fra_medium_tank_chassis_5 = 1 fra_medium_tank_spg_7 = 1 fra_medium_tank_td_7 = 1 } }
         }
     }
 
     focus = {
-        id = WAEF_FRA_TA3
+        id = WAEF_FRA_T3
         icon = GFX_goal_generic_army_tanks
         x = 9
         y = 7
@@ -421,34 +517,69 @@ focus_tree = {
         available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_FRA_TA2 }
+        prerequisite = { focus = WAEF_FRA_T2 }
         completion_reward = {
-            add_ideas = waef_fra_ta3_programme
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { fra_assault_spg_5 = 1 fra_medium_7 = 1 fra_medium_td_2 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { fra_assault_tank_spg_5 = 1 fra_medium_tank_aa_4 = 1 fra_medium_tank_aa_7 = 1 fra_medium_tank_chassis_5 = 1 fra_medium_tank_spg_7 = 1 fra_medium_tank_td_7 = 1 } }
+
+            set_technology = { fra_armoured_car_2 = 1 fra_combat_armoured_car_2 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { fra_light_4 = 1 fra_light_spg_4 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { fra_light_tank_chassis_4 = 1 fra_light_tank_spg_4 = 1 } }
         }
     }
 
     focus = {
-        id = WAEF_FRA_TB2
+        id = WAEF_FRA_T4
         icon = GFX_goal_generic_army_tanks
-        x = 11
-        y = 6
+        x = 9
+        y = 8
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_FRA_T1 }
-        mutually_exclusive = { focus = WAEF_FRA_TA2 }
+        prerequisite = { focus = WAEF_FRA_T3 }
+        completion_reward = {
+
+            set_technology = { fra_armoured_car_3 = 1 fra_combat_armoured_car_2_2 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { fra_assault_spg_8 = 1 fra_light_5 = 1 fra_light_8 = 1 fra_modern_1 = 1 fra_modern_2 = 1 fra_modern_4 = 1 fra_modern_5 = 1 fra_modern_spg_1 = 1 fra_modern_td_1 = 1 fra_modern_td_2 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { fra_assault_tank_spg_8 = 1 fra_light_tank_chassis_5 = 1 fra_light_tank_chassis_8 = 1 fra_light_tank_spg_5 = 1 fra_modern_tank_aa_3 = 1 fra_modern_tank_chassis_1 = 1 fra_modern_tank_chassis_2 = 1 fra_modern_tank_chassis_4 = 1 fra_modern_tank_chassis_5 = 1 fra_modern_tank_spg_1 = 1 fra_modern_tank_spg_3 = 1 fra_modern_tank_td_1 = 1 fra_modern_tank_td_2 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_H1
+        icon = GFX_goal_generic_army_tanks
+        x = 11
+        y = 5
+        cost = 13
+        available = { has_completed_focus = WAEF_FRA_C00 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        mutually_exclusive = { focus = WAEF_FRA_T1 }
         completion_reward = {
 
             if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { fra_heavy_4 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { fra_heavy_tank_chassis_4 = 1 fra_super_heavy_tank_chassis_2 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { fra_heavy_tank_chassis_4 = 1 } }
         }
     }
 
     focus = {
-        id = WAEF_FRA_TB4
+        id = WAEF_FRA_H2
+        icon = GFX_goal_generic_army_tanks
+        x = 11
+        y = 6
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_H1 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { fra_heavy_5 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { fra_heavy_tank_chassis_5 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_H3
         icon = GFX_goal_generic_army_tanks
         x = 11
         y = 7
@@ -456,24 +587,43 @@ focus_tree = {
         available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_FRA_TB2 }
+        prerequisite = { focus = WAEF_FRA_H2 }
         completion_reward = {
             waef_start_armament_fatigue = yes
-            add_ideas = waef_fra_tb4_programme
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { fra_heavy_5 = 1 fra_heavy_6 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { fra_heavy_tank_chassis_5 = 1 fra_heavy_tank_chassis_6 = 1 } }
+            set_technology = { fra_armoured_car_2 = 1 fra_combat_armoured_car_2 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { fra_heavy_6 = 1 fra_light_4 = 1 fra_light_spg_4 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { fra_heavy_tank_chassis_6 = 1 fra_light_tank_chassis_4 = 1 fra_light_tank_spg_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_H4
+        icon = GFX_goal_generic_army_tanks
+        x = 11
+        y = 8
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_H3 }
+        completion_reward = {
+            add_ideas = waef_fra_h4_programme
+            set_technology = { fra_armoured_car_3 = 1 fra_combat_armoured_car_2_2 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { fra_heavy_7 = 1 fra_heavy_8 = 1 fra_light_5 = 1 fra_light_8 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { fra_heavy_tank_chassis_7 = 1 fra_heavy_tank_chassis_8 = 1 fra_light_tank_chassis_5 = 1 fra_light_tank_chassis_8 = 1 fra_light_tank_spg_5 = 1 fra_super_heavy_tank_chassis_2 = 1 } }
         }
     }
 
     focus = {
         id = WAEF_FRA_A1
         icon = GFX_goal_generic_air_fighter
-        x = 14
+        x = 15
         y = 5
         cost = 13
         available = { has_completed_focus = WAEF_FRA_C00 }
         cancel_if_invalid = yes
         continue_if_invalid = no
+        mutually_exclusive = { focus = WAEF_FRA_W1 }
         completion_reward = {
             air_experience = 10
             if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_fighter_5 = 1 } }
@@ -482,42 +632,7 @@ focus_tree = {
     }
 
     focus = {
-        id = WAEF_FRA_AA3
-        icon = GFX_goal_generic_air_fighter
-        x = 13
-        y = 6
-        cost = 13
-        available = { always = yes }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_FRA_A1 }
-        mutually_exclusive = { focus = WAEF_FRA_AB3 }
-        completion_reward = {
-
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_cv_fighter_3 = 1 fra_fighter_6 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_fighter_ad_tech_7 = 1 fra_interceptor_ad_tech_5 = 1 } }
-        }
-    }
-
-    focus = {
-        id = WAEF_FRA_AA4
-        icon = GFX_goal_generic_air_fighter
-        x = 13
-        y = 7
-        cost = 13
-        available = { always = yes }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_FRA_AA3 }
-        completion_reward = {
-
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_cv_fighter_4 = 1 fra_fighter_7 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_fighter_ad_tech_8 = 1 } }
-        }
-    }
-
-    focus = {
-        id = WAEF_FRA_AB3
+        id = WAEF_FRA_A2
         icon = GFX_goal_generic_air_fighter
         x = 15
         y = 6
@@ -526,16 +641,15 @@ focus_tree = {
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_FRA_A1 }
-        mutually_exclusive = { focus = WAEF_FRA_AA3 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_attacker_3 = 1 fra_attacker_4 = 1 fra_cas_3 = 1 fra_cas_4 = 1 fra_cv_cas_3 = 1 fra_cv_cas_4 = 1 fra_cv_cas_5 = 1 fra_naval_bomber_4 = 1 fra_strategic_bomber_3 = 1 fra_strategic_bomber_4 = 1 fra_tactical_bomber_3 = 1 fra_tactical_bomber_4 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_attacker_ad_tech_3 = 1 fra_attacker_ad_tech_4 = 1 fra_cas_ad_tech_4 = 1 fra_cas_ad_tech_5 = 1 fra_cas_ad_tech_6 = 1 fra_cv_cas_ad_tech_3 = 1 fra_cv_cas_ad_tech_4 = 1 fra_fast_bomber_ad_tech_3 = 1 fra_fast_bomber_ad_tech_4 = 1 fra_fighter_multirole_ad_tech_3 = 1 fra_fighter_multirole_ad_tech_4 = 1 fra_heavy_fighter_ad_tech_4 = 1 fra_heavy_fighter_ad_tech_5 = 1 fra_naval_bomber_ad_tech_4 = 1 fra_naval_bomber_ad_tech_5 = 1 fra_scout_plane_ad_tech_4 = 1 fra_strategic_bomber_ad_tech_4 = 1 fra_strategic_bomber_ad_tech_5 = 1 fra_strike_bomber_ad_tech_4 = 1 fra_tactical_bomber_ad_tech_2_2 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_fighter_6 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_fighter_ad_tech_5_2 = 1 fra_fighter_ad_tech_7 = 1 fra_interceptor_ad_tech_5 = 1 fra_scout_plane_ad_tech_4 = 1 } }
         }
     }
 
     focus = {
-        id = WAEF_FRA_AB4
+        id = WAEF_FRA_A3
         icon = GFX_goal_generic_air_fighter
         x = 15
         y = 7
@@ -543,42 +657,304 @@ focus_tree = {
         available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_FRA_AB3 }
+        prerequisite = { focus = WAEF_FRA_A2 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_heavy_fighter_6 = 1 fra_patrol_3 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_attacker_ad_tech_5 = 1 fra_cas_ad_tech_7 = 1 fra_fighter_multirole_ad_tech_5 = 1 fra_patrol_ad_tech_3 = 1 fra_strategic_bomber_ad_tech_7 = 1 fra_strike_bomber_ad_tech_5 = 1 } }
+            set_technology = { fra_transport_plane_4 = 1 }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_fighter_7 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_fighter_ad_tech_8 = 1 fra_interceptor_ad_tech_6 = 1 } }
         }
     }
 
     focus = {
-        id = WAEF_FRA_M2
-        icon = GFX_goal_generic_army_doctrine
-        x = 26
-        y = 1
-        cost = 13
-        available = { has_completed_focus = WAEF_FRA_I1 }
+        id = WAEF_FRA_A4
+        icon = GFX_goal_generic_air_fighter
+        x = 15
+        y = 8
+        cost = 1
+        available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_A3 }
+        prerequisite = { focus = WAEF_FRA_C25 }
         completion_reward = {
 
-            set_technology = { fra_amphibious_mechanized_infantry_1 = 1 fra_mechanized_infantry_4 = 1 }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_jet_fighter_1 = 1 fra_jet_fighter_2 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_jet_fighter_ad_tech_1 = 1 } }
         }
     }
 
     focus = {
-        id = WAEF_FRA_M4
-        icon = GFX_goal_generic_army_doctrine
-        x = 26
-        y = 2
+        id = WAEF_FRA_W1
+        icon = GFX_goal_generic_air_fighter
+        x = 13
+        y = 5
+        cost = 13
+        available = { has_completed_focus = WAEF_FRA_C00 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        mutually_exclusive = { focus = WAEF_FRA_A1 }
+        completion_reward = {
+
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_fighter_multirole_ad_tech_3 = 1 fra_heavy_fighter_ad_tech_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_W2
+        icon = GFX_goal_generic_air_fighter
+        x = 13
+        y = 6
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_FRA_M2 }
+        prerequisite = { focus = WAEF_FRA_W1 }
         completion_reward = {
 
-            set_technology = { fra_armoured_car_2 = 1 fra_combat_armoured_car_2 = 1 fra_mechanized_infantry_5 = 1 }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_cv_fighter_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_fighter_multirole_ad_tech_4 = 1 fra_heavy_fighter_ad_tech_5 = 1 fra_scout_plane_ad_tech_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_W3
+        icon = GFX_goal_generic_air_fighter
+        x = 13
+        y = 7
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_W2 }
+        completion_reward = {
+
+            set_technology = { fra_transport_plane_4 = 1 }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_cv_fighter_4 = 1 fra_heavy_fighter_6 = 1 fra_heavy_fighter_8 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_cv_fighter_ad_tech_3 = 1 fra_cv_fighter_ad_tech_4 = 1 fra_fighter_multirole_ad_tech_5 = 1 fra_fighter_multirole_ad_tech_6 = 1 fra_heavy_fighter_ad_tech_6 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_W4
+        icon = GFX_goal_generic_air_fighter
+        x = 13
+        y = 8
+        cost = 1
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_W3 }
+        prerequisite = { focus = WAEF_FRA_C25 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_jet_cv_fighter_2 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_jet_cv_fighter_ad_tech_1 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_S1
+        icon = GFX_goal_generic_air_fighter
+        x = 19
+        y = 5
+        cost = 13
+        available = { has_completed_focus = WAEF_FRA_C00 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        mutually_exclusive = { focus = WAEF_FRA_B1 focus = WAEF_FRA_R1 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_attacker_3 = 1 fra_cas_3 = 1 fra_cv_cas_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_cas_ad_tech_4 = 1 fra_cv_cas_ad_tech_3 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_S2
+        icon = GFX_goal_generic_air_fighter
+        x = 19
+        y = 6
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_S1 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_attacker_4 = 1 fra_cas_4 = 1 fra_cv_cas_4 = 1 fra_cv_cas_5 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_attacker_ad_tech_3 = 1 fra_attacker_ad_tech_4 = 1 fra_cas_ad_tech_5 = 1 fra_cas_ad_tech_6 = 1 fra_cv_cas_ad_tech_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_S3
+        icon = GFX_goal_generic_air_fighter
+        x = 19
+        y = 7
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_S2 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_cas_5 = 1 fra_cv_cas_5 = 1 fra_strategic_bomber_3 = 1 fra_tactical_bomber_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_attacker_ad_tech_5 = 1 fra_cas_ad_tech_7 = 1 fra_naval_bomber_ad_tech_4 = 1 fra_strategic_bomber_ad_tech_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_S4
+        icon = GFX_goal_generic_air_fighter
+        x = 19
+        y = 8
+        cost = 1
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_S3 }
+        prerequisite = { focus = WAEF_FRA_C25 }
+        completion_reward = {
+
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_jet_cas_ad_tech_1 = 1 fra_jet_cv_cas_ad_tech_1 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_B1
+        icon = GFX_goal_generic_air_fighter
+        x = 21
+        y = 5
+        cost = 13
+        available = { has_completed_focus = WAEF_FRA_C00 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        mutually_exclusive = { focus = WAEF_FRA_S1 focus = WAEF_FRA_R1 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_tactical_bomber_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_naval_bomber_ad_tech_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_B2
+        icon = GFX_goal_generic_air_fighter
+        x = 21
+        y = 6
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_B1 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_naval_bomber_4 = 1 fra_tactical_bomber_4 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_fast_bomber_ad_tech_3 = 1 fra_fast_bomber_ad_tech_4 = 1 fra_naval_bomber_ad_tech_5 = 1 fra_strike_bomber_ad_tech_4 = 1 fra_tactical_bomber_ad_tech_2_2 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_B3
+        icon = GFX_goal_generic_air_fighter
+        x = 21
+        y = 7
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_B2 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_attacker_3 = 1 fra_cas_3 = 1 fra_cv_cas_3 = 1 fra_naval_bomber_5 = 1 fra_patrol_3 = 1 fra_strategic_bomber_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_cas_ad_tech_4 = 1 fra_cv_cas_ad_tech_3 = 1 fra_fast_bomber_ad_tech_5 = 1 fra_patrol_ad_tech_3 = 1 fra_strategic_bomber_ad_tech_4 = 1 fra_strike_bomber_ad_tech_5 = 1 fra_tactical_bomber_ad_tech_2_3 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_B4
+        icon = GFX_goal_generic_air_fighter
+        x = 21
+        y = 8
+        cost = 1
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_B3 }
+        prerequisite = { focus = WAEF_FRA_C25 }
+        completion_reward = {
+
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_jet_fast_bomber_ad_tech_1 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_R1
+        icon = GFX_goal_generic_air_fighter
+        x = 23
+        y = 5
+        cost = 13
+        available = { has_completed_focus = WAEF_FRA_C00 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        mutually_exclusive = { focus = WAEF_FRA_S1 focus = WAEF_FRA_B1 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_strategic_bomber_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_strategic_bomber_ad_tech_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_R2
+        icon = GFX_goal_generic_air_fighter
+        x = 23
+        y = 6
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_R1 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_strategic_bomber_4 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_strategic_bomber_ad_tech_5 = 1 fra_strategic_bomber_ad_tech_7 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_R3
+        icon = GFX_goal_generic_air_fighter
+        x = 23
+        y = 7
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_R2 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_attacker_3 = 1 fra_cas_3 = 1 fra_cv_cas_3 = 1 fra_tactical_bomber_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_cas_ad_tech_4 = 1 fra_cv_cas_ad_tech_3 = 1 fra_naval_bomber_ad_tech_4 = 1 fra_strategic_bomber_ad_tech_8 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_FRA_R4
+        icon = GFX_goal_generic_air_fighter
+        x = 23
+        y = 8
+        cost = 1
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_FRA_R3 }
+        prerequisite = { focus = WAEF_FRA_C25 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { fra_jet_strategic_bomber_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { fra_jet_strategic_bomber_ad_tech_1 = 1 } }
         }
     }
 
