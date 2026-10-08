@@ -1,5 +1,5 @@
 {
-  "source_commit": "3c08cbb96e11172759f10e213e90e054f3ca50f3",
+  "source_commit": "c994b832b84291b3d79c18878b3fc4cff4548879",
   "fields": [
     "id",
     "code",
@@ -11,20 +11,20 @@
     "effects"
   ],
   "schools": {
-    "SOV": "489d2d67cd504dfa351b7768cab8d8c2ed1c0f3a67be0dfba3092e89f06ebc5e",
-    "USA": "01ee579ca48c15b3d54cd777f29bcbb3acbf387eb7c015d068bb4ff6fa09713a",
-    "ENG": "d1c25c52f8560ac54b1dd08bc87a840016654a400046fde22ff86adea4263b35",
-    "FRA": "b62119d3e27370a0607290131853193fcf5f979da9e8965cfe9730bbdbe0f76e",
-    "ITA": "7bec493ce72c309026217c60d404114856900bce778335282abf58ec6dcec264",
-    "JAP": "dadf112b4f3c89d69f0189c13b660f4dc6398bd8072e4ad90b8046eb88d91e6f"
+    "SOV": "2fec66e89ab66fdbd2e0ae46552e7154c6bcea0c598eda110c7ffd4bf4dd9704",
+    "USA": "d6c582c4c86b30a58cc8ff37d553bdb3b506db88cd00bfc52e3b9229e7429108",
+    "ENG": "68211a1a96f28d091164ff9951f9f2891ef5e3d44e21249262aadbf24d51ffbd",
+    "FRA": "6ba7bb5bd3a73716581236784228bf910d976d41af2e81988493b412f6763415",
+    "ITA": "66a7b036609de5bcc2d891b640446fe7c6a789620a919ad0beab354b90b6f5de",
+    "JAP": "586ea787c3fbb7e264ee1aa43f60abceb4f211201dd86e753dba7cb1909095bb"
   },
   "reward_ast": {
-    "SOV": "649078e2d40886fe720c104ffc5d334e20d4527a55846b5fa4275738a2c09f27",
-    "USA": "418f43cf0fb76d4e48d49917a7381288986f8455818d8792e28b98f6c0440681",
-    "ENG": "80e3242209cbfefadb66b5a8054851601a54e9bc12d47591c273173dd2dcbcea",
-    "FRA": "46f62e0ba66b71453faf9cc8f96d7a2fd38e2d09493cc919f65ed6911c75064a",
-    "ITA": "950d671ed76ffdf3a562f1da0988b63f03d9e4c3f62f9087818aca3377fad3c2",
-    "JAP": "eb0b7856dc9c86e6a6977621536f4a8c62529f7a822c4ebf8e0ebed56afcae54"
+    "SOV": "f85de38077a6cfc2d7ba1a868a1d08fc9e9a58c5a1135ce15ad059c5e130f3f3",
+    "USA": "392761f39d201ca2486e7a6701362da7e3ff09421a5e7ad3b5c366417307ee15",
+    "ENG": "72c0211cc01a8a92830cce5bc4b4e6225a19edd46ecf7bda9eea861b1ff90e3a",
+    "FRA": "85ecb7c049433a070a9854dbf5dcde69516ba297107bfc8c5e45eb89b4ecae84",
+    "ITA": "df164c48e30288f6451820db6cf5eb61e785a224c1041cb39a8ad9d91d29ab74",
+    "JAP": "2e206511641fc5c3a46635af67c73e1eab023ff6c422b69ebe962916e4d42c3c"
   },
-  "revision": "2026-10-08: user-authorized transfer of German playtest rules to six national schools"
+  "revision": "User document research speed надо.docx: country-specific years, model sequences and startup grants"
 }

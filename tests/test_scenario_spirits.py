@@ -46,7 +46,7 @@ class ScenarioSpiritTests(unittest.TestCase):
 
     def test_permanent_research_boost_for_both_sides(self):
         ideas = get(get(read('common/ideas/waef_scenario_ideas.txt'), 'ideas'), 'country')
-        self.assertEqual(float(get(get(get(ideas, 'waef_accelerated_research'), 'modifier'), 'research_speed_factor')), 10.0)
+        self.assertEqual(float(get(get(get(ideas, 'waef_accelerated_research'), 'modifier'), 'research_speed_factor')), -10.0)
         for tag, name in [('WEF', 'Western'), ('EEF', 'Eastern')]:
             history = read(f'history/countries/{tag} - {name} Front.txt')
             self.assertEqual(sum(n.key == 'add_ideas' and n.value == 'waef_accelerated_research' for n in history), 1)

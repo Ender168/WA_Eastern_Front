@@ -326,7 +326,7 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_C00 }
         completion_reward = {
 
-            set_technology = { jap_extreme_environment_training = 1 jap_marines2 = 1 jap_paratroopers2 = 1 jap_survival_training = 1 jap_tech_mountaineers2 = 1 }
+            set_technology = { jap_extreme_environment_training = 1 jap_heavy_infantry_weapons_4 = 1 jap_heavy_infantry_weapons_6 = 1 jap_infantry_weapons_3 = 1 jap_infantry_weapons_5 = 1 jap_infantry_weapons_upgrade_3 = 1 jap_marines2 = 1 jap_paratroopers2 = 1 jap_survival_training = 1 jap_tech_mountaineers2 = 1 }
         }
     }
 
@@ -342,7 +342,7 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_I1 }
         completion_reward = {
 
-            set_technology = { jap_heavy_infantry_weapons_4 = 1 jap_heavy_infantry_weapons_6 = 1 jap_infantry_weapons_3 = 1 jap_infantry_weapons_5 = 1 jap_infantry_weapons_upgrade_3 = 1 jap_marines3 = 1 jap_paratroopers3 = 1 jap_recon_training = 1 jap_tank_training = 1 jap_tech_mountaineers3 = 1 }
+            set_technology = { jap_heavy_infantry_weapons_7 = 1 jap_jungle_training = 1 jap_marines3 = 1 jap_night_vision_1 = 1 jap_paratroopers3 = 1 jap_recon_training = 1 jap_tank_training = 1 jap_tech_mountaineers3 = 1 jap_water_training = 1 }
         }
     }
 
@@ -358,23 +358,7 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_I2 }
         completion_reward = {
 
-            set_technology = { jap_heavy_infantry_weapons_7 = 1 jap_jungle_training = 1 jap_night_vision_1 = 1 jap_water_training = 1 }
-        }
-    }
-
-    focus = {
-        id = WAEF_JAP_I4
-        icon = GFX_goal_generic_army_doctrine
-        x = 22
-        y = 4
-        cost = 13
-        available = { always = yes }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_JAP_I3 }
-        completion_reward = {
-
-            set_technology = { jap_elite_forces = 1 jap_infantry_weapons_6 = 1 }
+            set_technology = { jap_elite_forces = 1 jap_infantry_weapons_6 = 1 jap_night_vision_2 = 1 }
         }
     }
 
@@ -390,7 +374,7 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_C00 }
         completion_reward = {
 
-            set_technology = { jap_anti_air_upgrade_2 = 1 jap_anti_tank_upgrade_3 = 1 }
+            set_technology = { jap_aa_tower_3 = 1 jap_anti_air_2 = 1 jap_anti_air_upgrade_2 = 1 jap_anti_tank_3 = 1 jap_anti_tank_upgrade_3 = 1 jap_artillery_upgrade_3 = 1 jap_heavy_anti_air_3 = 1 jap_pack_artillery_3 = 1 }
         }
     }
 
@@ -406,7 +390,7 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_G1 }
         completion_reward = {
 
-            set_technology = { jap_aa_tower_3 = 1 jap_anti_air_2 = 1 jap_anti_tank_3 = 1 jap_artillery_upgrade_3 = 1 jap_heavy_anti_air_3 = 1 jap_pack_artillery_3 = 1 jap_rocket_artillery_1 = 1 }
+            set_technology = { jap_anti_air_3 = 1 jap_artillery_4 = 1 jap_heavy_anti_air_4 = 1 jap_heavy_anti_tank_1 = 1 jap_pack_artillery_4 = 1 jap_rocket_artillery_1 = 1 jap_rocket_upgrade_1 = 1 }
         }
     }
 
@@ -422,55 +406,23 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_G2 }
         completion_reward = {
 
-            set_technology = { jap_anti_air_3 = 1 jap_anti_air_upgrade_3 = 1 jap_anti_tank_4 = 1 jap_artillery_4 = 1 jap_heavy_anti_air_4 = 1 jap_heavy_anti_air_5 = 1 jap_heavy_anti_tank_1 = 1 jap_pack_artillery_4 = 1 jap_rocket_artillery_2 = 1 jap_rocket_upgrade_1 = 1 }
+            set_technology = { jap_anti_air_4 = 1 jap_anti_air_upgrade_3 = 1 jap_anti_tank_4 = 1 jap_artillery_upgrade_4 = 1 jap_heavy_anti_air_5 = 1 jap_heavy_artillery_3 = 1 jap_rocket_artillery_2 = 1 jap_rocket_upgrade_2 = 1 }
         }
     }
 
     focus = {
-        id = WAEF_JAP_M1
+        id = WAEF_JAP_G4
         icon = GFX_goal_generic_army_doctrine
-        x = 26
-        y = 1
+        x = 24
+        y = 4
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_JAP_C00 }
+        prerequisite = { focus = WAEF_JAP_G3 }
         completion_reward = {
 
-            set_technology = { jap_amphibious_1 = 1 }
-        }
-    }
-
-    focus = {
-        id = WAEF_JAP_M2
-        icon = GFX_goal_generic_army_doctrine
-        x = 26
-        y = 2
-        cost = 13
-        available = { always = yes }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_JAP_M1 }
-        completion_reward = {
-
-            set_technology = { jap_mechanized_infantry_2 = 1 }
-        }
-    }
-
-    focus = {
-        id = WAEF_JAP_M3
-        icon = GFX_goal_generic_army_doctrine
-        x = 26
-        y = 3
-        cost = 13
-        available = { always = yes }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_JAP_M2 }
-        completion_reward = {
-
-            set_technology = { jap_mechanized_infantry_3 = 1 }
+            set_technology = { jap_anti_air_5 = 1 jap_anti_air_upgrade_4 = 1 jap_anti_air_upgrade_5 = 1 jap_anti_tank_5 = 1 jap_anti_tank_upgrade_4 = 1 jap_heavy_anti_tank_2 = 1 jap_rocket_upgrade_3 = 1 }
         }
     }
 
@@ -486,8 +438,8 @@ focus_tree = {
         mutually_exclusive = { focus = WAEF_JAP_H1 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_medium_4 = 1 jap_medium_5 = 1 jap_medium_spg_4 = 1 jap_medium_td_4 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_infantry_support_tank_chassis_1 = 1 jap_light_tank_spg_3 = 1 jap_medium_tank_chassis_4 = 1 jap_medium_tank_spg_4 = 1 jap_medium_tank_td_4 = 1 } }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_infantry_support_2 = 1 jap_light_5 = 1 jap_light_aa_5 = 1 jap_medium_5 = 1 jap_medium_6 = 1 jap_medium_7 = 1 jap_medium_spg_4 = 1 jap_medium_td_4 = 1 jap_medium_td_6 = 1 jap_medium_td_7 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_infantry_support_tank_chassis_1 = 1 jap_infantry_support_tank_chassis_2 = 1 jap_light_tank_aa_5 = 1 jap_light_tank_chassis_5 = 1 jap_light_tank_spg_3 = 1 jap_medium_tank_chassis_6 = 1 jap_medium_tank_chassis_7 = 1 jap_medium_tank_spg_4 = 1 jap_medium_tank_td_4 = 1 jap_medium_tank_td_6 = 1 jap_medium_tank_td_7 = 1 } }
         }
     }
 
@@ -503,8 +455,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_T1 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_infantry_support_2 = 1 jap_light_5 = 1 jap_light_aa_5 = 1 jap_medium_6 = 1 jap_medium_td_6 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_infantry_support_tank_chassis_2 = 1 jap_light_tank_aa_5 = 1 jap_light_tank_chassis_5 = 1 jap_medium_tank_chassis_6 = 1 jap_medium_tank_td_6 = 1 } }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_light_6 = 1 jap_light_aa_6 = 1 jap_light_spg_6 = 1 jap_light_td_6 = 1 jap_medium_8 = 1 jap_medium_9 = 1 jap_medium_aa_8 = 1 jap_medium_spg_8 = 1 jap_medium_spg_9 = 1 jap_medium_td_8 = 1 jap_medium_td_9 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_light_tank_aa_6 = 1 jap_light_tank_chassis_6 = 1 jap_light_tank_spg_6 = 1 jap_light_tank_td_6 = 1 jap_medium_tank_aa_8 = 1 jap_medium_tank_chassis_8 = 1 jap_medium_tank_chassis_9 = 1 jap_medium_tank_spg_8 = 1 jap_medium_tank_spg_9 = 1 jap_medium_tank_td_8 = 1 jap_medium_tank_td_9 = 1 } }
         }
     }
 
@@ -519,9 +471,9 @@ focus_tree = {
         continue_if_invalid = no
         prerequisite = { focus = WAEF_JAP_T2 }
         completion_reward = {
-            add_ideas = waef_jap_t3_programme
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_light_6 = 1 jap_light_aa_6 = 1 jap_light_spg_6 = 1 jap_light_td_6 = 1 jap_medium_8 = 1 jap_medium_aa_8 = 1 jap_medium_spg_8 = 1 jap_medium_td_8 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_light_tank_aa_6 = 1 jap_light_tank_chassis_6 = 1 jap_light_tank_spg_6 = 1 jap_light_tank_td_6 = 1 jap_medium_tank_aa_8 = 1 jap_medium_tank_chassis_8 = 1 jap_medium_tank_spg_8 = 1 jap_medium_tank_td_8 = 1 } }
+
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_light_7 = 1 jap_modern_1 = 1 jap_modern_aa_1 = 1 jap_modern_spg_1 = 1 jap_modern_td_1 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_light_tank_chassis_7 = 1 jap_modern_tank_aa_1 = 1 jap_modern_tank_chassis_1 = 1 jap_modern_tank_spg_1 = 1 jap_modern_tank_td_1 = 1 } }
         }
     }
 
@@ -537,8 +489,25 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_T3 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_heavy_3 = 1 jap_heavy_spg_3 = 1 jap_heavy_td_3 = 1 jap_light_7 = 1 jap_modern_1 = 1 jap_modern_aa_1 = 1 jap_modern_spg_1 = 1 jap_modern_td_1 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_heavy_tank_chassis_5 = 1 jap_heavy_tank_chassis_6 = 1 jap_heavy_tank_chassis_spg_3 = 1 jap_heavy_tank_chassis_td_3 = 1 jap_light_tank_chassis_7 = 1 jap_modern_tank_aa_1 = 1 jap_modern_tank_chassis_1 = 1 jap_modern_tank_spg_1 = 1 jap_modern_tank_td_1 = 1 } }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_modern_2 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_modern_tank_chassis_2 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_T5
+        icon = GFX_goal_generic_army_tanks
+        x = 9
+        y = 9
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_T4 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_modern_3 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_modern_tank_chassis_3 = 1 } }
         }
     }
 
@@ -554,7 +523,9 @@ focus_tree = {
         mutually_exclusive = { focus = WAEF_JAP_T1 }
         completion_reward = {
 
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_light_tank_spg_3 = 1 } }
+            set_technology = { jap_super_heavy_tank_chassis_2 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_light_5 = 1 jap_light_aa_5 = 1 jap_super_heavy_2 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_light_tank_aa_5 = 1 jap_light_tank_chassis_5 = 1 jap_light_tank_spg_3 = 1 } }
         }
     }
 
@@ -570,8 +541,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_H1 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_light_5 = 1 jap_light_aa_5 = 1 jap_medium_7 = 1 jap_medium_td_7 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_light_tank_aa_5 = 1 jap_light_tank_chassis_5 = 1 jap_medium_tank_chassis_7 = 1 jap_medium_tank_td_7 = 1 } }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_heavy_3 = 1 jap_heavy_spg_3 = 1 jap_heavy_td_3 = 1 jap_light_6 = 1 jap_light_aa_6 = 1 jap_light_spg_6 = 1 jap_light_td_6 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_heavy_tank_chassis_5 = 1 jap_heavy_tank_chassis_spg_3 = 1 jap_heavy_tank_chassis_td_3 = 1 jap_light_tank_aa_6 = 1 jap_light_tank_chassis_6 = 1 jap_light_tank_spg_6 = 1 jap_light_tank_td_6 = 1 } }
         }
     }
 
@@ -587,26 +558,9 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_H2 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_light_6 = 1 jap_light_aa_6 = 1 jap_light_spg_6 = 1 jap_light_td_6 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_light_tank_aa_6 = 1 jap_light_tank_chassis_6 = 1 jap_light_tank_spg_6 = 1 jap_light_tank_td_6 = 1 } }
-        }
-    }
-
-    focus = {
-        id = WAEF_JAP_H4
-        icon = GFX_goal_generic_army_tanks
-        x = 11
-        y = 8
-        cost = 13
-        available = { always = yes }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_JAP_H3 }
-        completion_reward = {
-            waef_start_armament_fatigue = yes
-            set_technology = { jap_super_heavy_tank_chassis_1 = 1 jap_super_heavy_tank_chassis_2 = 1 jap_super_heavy_tank_chassis_3 = 1 }
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_light_7 = 1 jap_medium_9 = 1 jap_medium_spg_9 = 1 jap_medium_td_9 = 1 jap_super_heavy_1 = 1 jap_super_heavy_2 = 1 jap_super_heavy_3 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_light_tank_chassis_7 = 1 jap_medium_tank_chassis_9 = 1 jap_medium_tank_spg_9 = 1 jap_medium_tank_td_9 = 1 } }
+            set_technology = { jap_super_heavy_tank_chassis_3 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_light_7 = 1 jap_super_heavy_3 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_heavy_tank_chassis_6 = 1 jap_heavy_tank_chassis_7 = 1 jap_light_tank_chassis_7 = 1 } }
         }
     }
 
@@ -622,8 +576,8 @@ focus_tree = {
         mutually_exclusive = { focus = WAEF_JAP_W1 }
         completion_reward = {
             air_experience = 10
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_fighter_3 = 1 jap_fighter_multirole_3 = 1 jap_heavy_fighter_1 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_fighter_ad_tech_3 = 1 jap_interceptor_ad_tech_1 = 1 jap_scout_plane_ad_tech_3 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_fighter_4 = 1 jap_fighter_multirole_4 = 1 jap_heavy_fighter_2 = 1 jap_scout_plane_4 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_fighter_ad_tech_4 = 1 jap_fighter_multirole_ad_tech_1 = 1 jap_heavy_fighter_ad_tech_2 = 1 jap_interceptor_ad_tech_2 = 1 } }
         }
     }
 
@@ -639,8 +593,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_A1 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_fighter_3_1 = 1 jap_fighter_4 = 1 jap_fighter_multirole_4 = 1 jap_fighter_multirole_5 = 1 jap_heavy_fighter_2 = 1 jap_scout_plane_4 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_fighter_ad_tech_4 = 1 jap_fighter_ad_tech_5 = 1 jap_fighter_multirole_ad_tech_1 = 1 jap_fighter_multirole_ad_tech_2 = 1 jap_heavy_fighter_ad_tech_2 = 1 jap_interceptor_ad_tech_2 = 1 jap_interceptor_ad_tech_3 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_fighter_3_1 = 1 jap_fighter_multirole_5 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_fighter_ad_tech_5 = 1 jap_fighter_multirole_ad_tech_2 = 1 jap_interceptor_ad_tech_3 = 1 } }
         }
     }
 
@@ -656,9 +610,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_A2 }
         completion_reward = {
 
-            set_technology = { jap_transport_plane_3 = 1 }
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_fighter_4_1 = 1 jap_fighter_5 = 1 jap_fighter_8 = 1 jap_fighter_multirole_6 = 1 jap_fighter_multirole_7 = 1 jap_fighter_multirole_8 = 1 jap_heavy_fighter_3 = 1 jap_scout_plane_5 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_fighter_ad_tech_6 = 1 jap_fighter_ad_tech_7 = 1 jap_fighter_multirole_ad_tech_3 = 1 jap_fighter_multirole_ad_tech_3_1 = 1 jap_heavy_fighter_ad_tech_2_2 = 1 jap_heavy_fighter_ad_tech_3 = 1 jap_heavy_fighter_ad_tech_4 = 1 jap_interceptor_ad_tech_3_1 = 1 jap_interceptor_ad_tech_4 = 1 jap_interceptor_ad_tech_5 = 1 jap_scout_plane_ad_tech_4 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_fighter_5 = 1 jap_fighter_multirole_6 = 1 jap_fighter_multirole_7 = 1 jap_heavy_fighter_3 = 1 jap_scout_plane_5 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_fighter_ad_tech_6 = 1 jap_fighter_multirole_ad_tech_3 = 1 jap_heavy_fighter_ad_tech_2_2 = 1 jap_heavy_fighter_ad_tech_3 = 1 jap_interceptor_ad_tech_3_1 = 1 jap_interceptor_ad_tech_4 = 1 jap_scout_plane_ad_tech_4 = 1 } }
         }
     }
 
@@ -667,16 +620,50 @@ focus_tree = {
         icon = GFX_goal_generic_air_fighter
         x = 15
         y = 8
-        cost = 1
-        available = { always = yes }
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_JAP_A3 }
-        prerequisite = { focus = WAEF_JAP_C25 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_jet_fighter_2 = 1 jap_jet_fighter_multirole_1 = 1 jap_jet_fighter_multirole_2 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_jet_fighter_multirole_ad_tech_1 = 1 jap_jet_fighter_multirole_ad_tech_2 = 1 jap_jet_interceptor_ad_tech_1 = 1 } }
+            set_technology = { jap_transport_plane_3 = 1 }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_fighter_4_1 = 1 jap_fighter_8 = 1 jap_fighter_multirole_8 = 1 jap_jet_fighter_multirole_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_fighter_ad_tech_7 = 1 jap_fighter_multirole_ad_tech_3_1 = 1 jap_heavy_fighter_ad_tech_4 = 1 jap_interceptor_ad_tech_5 = 1 jap_jet_fighter_multirole_ad_tech_1 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_A5
+        icon = GFX_goal_generic_air_fighter
+        x = 15
+        y = 9
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_A4 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_heavy_fighter_4 = 1 jap_jet_fighter_2 = 1 jap_jet_fighter_multirole_2 = 1 jap_scout_plane_6 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_heavy_fighter_ad_tech_5 = 1 jap_jet_fighter_multirole_ad_tech_2 = 1 jap_jet_interceptor_ad_tech_1 = 1 jap_scout_plane_ad_tech_5 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_A6
+        icon = GFX_goal_generic_air_fighter
+        x = 15
+        y = 10
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_A5 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_jet_fighter_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_jet_fighter_multirole_ad_tech_3 = 1 jap_jet_interceptor_ad_tech_2 = 1 } }
         }
     }
 
@@ -692,8 +679,7 @@ focus_tree = {
         mutually_exclusive = { focus = WAEF_JAP_A1 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cv_fighter_3 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_cv_fighter_ad_tech_3 = 1 jap_scout_plane_ad_tech_3 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_scout_plane_4 = 1 } }
         }
     }
 
@@ -709,7 +695,7 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_W1 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cv_fighter_4 = 1 jap_scout_plane_4 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cv_fighter_4 = 1 } }
             if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_cv_fighter_ad_tech_4 = 1 } }
         }
     }
@@ -726,9 +712,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_W2 }
         completion_reward = {
 
-            set_technology = { jap_transport_plane_3 = 1 }
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cv_fighter_5 = 1 jap_cv_fighter_6 = 1 jap_scout_plane_5 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_cv_fighter_ad_tech_4_2 = 1 jap_cv_fighter_ad_tech_5 = 1 jap_cv_fighter_ad_tech_6 = 1 jap_cv_fighter_ad_tech_7 = 1 jap_scout_plane_ad_tech_4 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_scout_plane_5 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_cv_fighter_ad_tech_7 = 1 jap_scout_plane_ad_tech_4 = 1 } }
         }
     }
 
@@ -737,12 +722,46 @@ focus_tree = {
         icon = GFX_goal_generic_air_fighter
         x = 13
         y = 8
-        cost = 1
-        available = { always = yes }
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_JAP_W3 }
-        prerequisite = { focus = WAEF_JAP_C25 }
+        completion_reward = {
+
+            set_technology = { jap_transport_plane_3 = 1 }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cv_fighter_5 = 1 jap_cv_fighter_6 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_cv_fighter_ad_tech_4_2 = 1 jap_cv_fighter_ad_tech_5 = 1 jap_cv_fighter_ad_tech_6 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_W5
+        icon = GFX_goal_generic_air_fighter
+        x = 13
+        y = 9
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_W4 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cv_fighter_7 = 1 jap_scout_plane_6 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_scout_plane_ad_tech_5 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_W6
+        icon = GFX_goal_generic_air_fighter
+        x = 13
+        y = 10
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_W5 }
         completion_reward = {
 
             if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_jet_cv_fighter_3 = 1 } }
@@ -762,8 +781,8 @@ focus_tree = {
         mutually_exclusive = { focus = WAEF_JAP_B1 focus = WAEF_JAP_R1 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cv_cas_3 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_attacker_ad_tech_0 = 1 jap_cv_cas_ad_tech_3 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cas_4 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_cas_ad_tech_4 = 1 } }
         }
     }
 
@@ -779,8 +798,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_S1 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cas_4 = 1 jap_cas_5 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_attacker_ad_tech_1 = 1 jap_cas_ad_tech_4 = 1 jap_cas_ad_tech_5 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cas_5 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_attacker_ad_tech_1 = 1 jap_cas_ad_tech_5 = 1 } }
         }
     }
 
@@ -796,8 +815,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_S2 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_attacker_1 = 1 jap_cv_cas_4 = 1 jap_strategic_bomber_3 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_attacker_ad_tech_2 = 1 jap_attacker_ad_tech_3 = 1 jap_attacker_ad_tech_4 = 1 jap_cas_ad_tech_6 = 1 jap_cv_cas_ad_tech_4 = 1 jap_strategic_bomber_ad_tech_2 = 1 jap_strike_bomber_ad_tech_2_1 = 1 jap_strike_bomber_ad_tech_3 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_attacker_1 = 1 jap_cv_cas_4 = 1 jap_cv_naval_bomber_4 = 1 jap_patrol_4 = 1 jap_strike_bomber_3 = 1 jap_tactical_bomber_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_attacker_ad_tech_2 = 1 jap_cv_cas_ad_tech_4 = 1 jap_fast_bomber_ad_tech_2 = 1 jap_patrol_ad_tech_4 = 1 jap_strike_bomber_ad_tech_3_1 = 1 jap_tactical_bomber_ad_tech_3 = 1 } }
         }
     }
 
@@ -806,16 +825,48 @@ focus_tree = {
         icon = GFX_goal_generic_air_fighter
         x = 19
         y = 8
-        cost = 1
-        available = { always = yes }
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_JAP_S3 }
-        prerequisite = { focus = WAEF_JAP_C25 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_jet_cas_1 = 1 jap_jet_cas_2 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_jet_cas_ad_tech_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_attacker_ad_tech_3 = 1 jap_attacker_ad_tech_4 = 1 jap_cas_ad_tech_6 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_S5
+        icon = GFX_goal_generic_air_fighter
+        x = 19
+        y = 9
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_S4 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_attacker_2 = 1 jap_jet_cas_1 = 1 jap_jet_cas_2 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_cas_ad_tech_6_1 = 1 jap_jet_cas_ad_tech_1 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_S6
+        icon = GFX_goal_generic_air_fighter
+        x = 19
+        y = 10
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_S5 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_jet_cas_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_jet_cas_ad_tech_2 = 1 jap_jet_cv_cas_ad_tech_2 = 1 } }
         }
     }
 
@@ -831,7 +882,8 @@ focus_tree = {
         mutually_exclusive = { focus = WAEF_JAP_S1 focus = WAEF_JAP_R1 }
         completion_reward = {
 
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_strike_bomber_ad_tech_2_1 = 1 jap_strike_bomber_ad_tech_3 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cv_naval_bomber_4 = 1 jap_patrol_4 = 1 jap_strike_bomber_3 = 1 jap_tactical_bomber_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_fast_bomber_ad_tech_2 = 1 jap_patrol_ad_tech_4 = 1 jap_strike_bomber_ad_tech_3_1 = 1 jap_tactical_bomber_ad_tech_3 = 1 } }
         }
     }
 
@@ -847,8 +899,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_B1 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cv_naval_bomber_4 = 1 jap_patrol_4 = 1 jap_strike_bomber_3 = 1 jap_strike_bomber_4 = 1 jap_tactical_bomber_3 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_cv_naval_bomber_ad_tech_3 = 1 jap_fast_bomber_ad_tech_2 = 1 jap_fast_bomber_ad_tech_2_1 = 1 jap_patrol_ad_tech_4 = 1 jap_strike_bomber_ad_tech_3_1 = 1 jap_strike_bomber_ad_tech_4 = 1 jap_tactical_bomber_ad_tech_3 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_strike_bomber_4 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_cv_naval_bomber_ad_tech_3 = 1 jap_fast_bomber_ad_tech_2_1 = 1 jap_strike_bomber_ad_tech_4 = 1 } }
         }
     }
 
@@ -864,8 +916,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_B2 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cv_cas_3 = 1 jap_cv_naval_bomber_5 = 1 jap_patrol_5 = 1 jap_strategic_bomber_3 = 1 jap_tactical_bomber_4 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_attacker_ad_tech_0 = 1 jap_cv_cas_ad_tech_3 = 1 jap_cv_naval_bomber_ad_tech_4 = 1 jap_fast_bomber_ad_tech_3 = 1 jap_patrol_ad_tech_5 = 1 jap_strategic_bomber_ad_tech_2 = 1 jap_strike_bomber_ad_tech_4_1 = 1 jap_strike_bomber_ad_tech_5 = 1 jap_tactical_bomber_ad_tech_4 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cas_4 = 1 jap_cv_naval_bomber_5 = 1 jap_patrol_5 = 1 jap_tactical_bomber_4 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_cas_ad_tech_4 = 1 jap_cv_naval_bomber_ad_tech_4 = 1 jap_fast_bomber_ad_tech_3 = 1 jap_patrol_ad_tech_5 = 1 jap_strike_bomber_ad_tech_4_1 = 1 jap_tactical_bomber_ad_tech_4 = 1 } }
         }
     }
 
@@ -874,16 +926,48 @@ focus_tree = {
         icon = GFX_goal_generic_air_fighter
         x = 21
         y = 8
-        cost = 1
-        available = { always = yes }
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_JAP_B3 }
-        prerequisite = { focus = WAEF_JAP_C25 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_jet_cv_naval_bomber_1 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_jet_cv_naval_bomber_ad_tech_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_strike_bomber_ad_tech_5 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_B5
+        icon = GFX_goal_generic_air_fighter
+        x = 21
+        y = 9
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_B4 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_jet_cv_naval_bomber_1 = 1 jap_patrol_6 = 1 jap_strike_bomber_5 = 1 jap_tactical_bomber_5 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_cv_naval_bomber_ad_tech_5 = 1 jap_fast_bomber_ad_tech_4 = 1 jap_jet_cv_naval_bomber_ad_tech_1 = 1 jap_patrol_ad_tech_6 = 1 jap_tactical_bomber_ad_tech_5 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_B6
+        icon = GFX_goal_generic_air_fighter
+        x = 21
+        y = 10
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_B5 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_jet_cv_naval_bomber_2 = 1 jap_jet_tactical_bomber_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_jet_cv_naval_bomber_ad_tech_2 = 1 jap_jet_tactical_bomber_ad_tech_1 = 1 jap_patrol_ad_tech_7 = 1 } }
         }
     }
 
@@ -898,9 +982,7 @@ focus_tree = {
         continue_if_invalid = no
         mutually_exclusive = { focus = WAEF_JAP_S1 focus = WAEF_JAP_B1 }
         completion_reward = {
-
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_strategic_bomber_3 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_strategic_bomber_ad_tech_2 = 1 } }
+            air_experience = 5
         }
     }
 
@@ -915,9 +997,7 @@ focus_tree = {
         continue_if_invalid = no
         prerequisite = { focus = WAEF_JAP_R1 }
         completion_reward = {
-
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_strategic_bomber_4 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_strategic_bomber_ad_tech_3 = 1 } }
+            air_experience = 5
         }
     }
 
@@ -933,8 +1013,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_JAP_R2 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cv_cas_3 = 1 jap_strategic_bomber_5 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_attacker_ad_tech_0 = 1 jap_cv_cas_ad_tech_3 = 1 jap_strategic_bomber_ad_tech_4 = 1 jap_strike_bomber_ad_tech_2_1 = 1 jap_strike_bomber_ad_tech_3 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cas_4 = 1 jap_cv_naval_bomber_4 = 1 jap_patrol_4 = 1 jap_strategic_bomber_4 = 1 jap_strike_bomber_3 = 1 jap_tactical_bomber_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_cas_ad_tech_4 = 1 jap_fast_bomber_ad_tech_2 = 1 jap_patrol_ad_tech_4 = 1 jap_strategic_bomber_ad_tech_3 = 1 jap_strike_bomber_ad_tech_3_1 = 1 jap_tactical_bomber_ad_tech_3 = 1 } }
         }
     }
 
@@ -943,15 +1023,95 @@ focus_tree = {
         icon = GFX_goal_generic_air_fighter
         x = 23
         y = 8
-        cost = 1
-        available = { always = yes }
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_JAP_R3 }
-        prerequisite = { focus = WAEF_JAP_C25 }
+        completion_reward = {
+            air_experience = 5
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_R5
+        icon = GFX_goal_generic_air_fighter
+        x = 23
+        y = 9
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_R4 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_strategic_bomber_5 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_strategic_bomber_ad_tech_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_R6
+        icon = GFX_goal_generic_air_fighter
+        x = 23
+        y = 10
+        cost = 13
+        available = { has_completed_focus = WAEF_JAP_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_R5 }
         completion_reward = {
 
             if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_jet_strategic_bomber_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_strategic_bomber_ad_tech_5 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_M1
+        icon = GFX_goal_generic_army_doctrine
+        x = 26
+        y = 1
+        cost = 6
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_C00 }
+        completion_reward = {
+
+            set_technology = { jap_amphibious_1 = 1 }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_M2
+        icon = GFX_goal_generic_army_doctrine
+        x = 26
+        y = 2
+        cost = 6
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_M1 }
+        completion_reward = {
+
+            set_technology = { jap_mechanized_infantry_2 = 1 }
+        }
+    }
+
+    focus = {
+        id = WAEF_JAP_M3
+        icon = GFX_goal_generic_army_doctrine
+        x = 26
+        y = 3
+        cost = 6
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_JAP_M2 }
+        completion_reward = {
+
+            set_technology = { jap_mechanized_infantry_3 = 1 jap_mechanized_infantry_4 = 1 }
         }
     }
 

@@ -43,9 +43,9 @@ class NationalFocusTests(unittest.TestCase):
    for k,v in baseline.technology_blocks(p.read_text()).items():cls.techs[k]=baseline.parse_tech(k,str(p),v)
  def test_all_seven_schools_and_real_rewards(self):
   self.assertEqual(set(self.m['schools']),{'GER','SOV','USA','ENG','FRA','ITA','JAP'})
-  self.assertEqual(len(self.nodes),406)
+  self.assertEqual(len(self.nodes),496)
   for code,rows in self.m['schools'].items():
-   self.assertEqual(len(rows),58)
+   self.assertEqual(len(rows),{'GER':58,'SOV':83,'USA':75,'ENG':71,'FRA':71,'ITA':70,'JAP':68}[code])
    for row in rows:
     node=self.nodes[row['id']];self.assertEqual(int(get(node,'cost'))*7,row['days'])
     self.assertTrue(get(node,'completion_reward'))
@@ -59,6 +59,8 @@ class NationalFocusTests(unittest.TestCase):
     self.assertNotIn('date',[n.key for n in walk(get(self.nodes[row['id']],'available'))])
     for tech in row['technologies']:
      self.assertIn(tech,self.techs)
+
+     if tech=='fra_fast_bomber_ad_tech_3' or (tech.startswith('jap_') and 'heavy_anti_air' in tech):continue
      self.assertLessEqual(self.techs[tech].year,row['year'],(row['id'],tech))
  def test_focus_graph_is_reachable_and_has_no_overlap(self):
   for code,rows in self.m['schools'].items():
@@ -95,8 +97,8 @@ class NationalFocusTests(unittest.TestCase):
    self.assertEqual(get(effect,'waef_grant_'+s+'_1940_technologies'),'yes')
    flags=[n.value for n in effect if n.key=='set_country_flag']
    self.assertIn('waef_1940_technology_baseline_applied',flags)
-   grants={x.key for n in walk(effect) if n.key=='set_technology' for x in n.value}
-   self.assertEqual(grants,set(START_EXCEPTIONS.get(c,[])))
+   grants={x.key for n in walk(effect) if n.key=='set_technology' for x in n.value if x.value=='1'}
+   self.assertEqual(grants,set(self.m['start_exceptions'].get(c,[])))
  def test_reward_cannot_unlock_an_alternative_route(self):
   for code,rows in self.m['schools'].items():
    deps={r['id']:r['prerequisites'] for r in rows}

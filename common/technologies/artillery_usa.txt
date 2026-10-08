@@ -190,8 +190,6 @@ technologies = {
 	}
 
 	usa_artillery_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
-
 
 		enable_equipments = {
 			usa_art_3
@@ -237,7 +235,7 @@ technologies = {
 	}
 
 	usa_artillery_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G2 } } } }
 
 
 		category_artillery = {
@@ -285,7 +283,7 @@ technologies = {
 	}
 
 	usa_artillery_upgrade_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G3 } } } }
 
 
 		artillery = {
@@ -371,7 +369,7 @@ technologies = {
 	}
 
 	usa_artillery_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G4 } } } }
 
 
 		enable_equipments = {
@@ -458,7 +456,7 @@ technologies = {
 		}
 	}
 	usa_pack_artillery_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G2 } } } }
 
 
 		enable_equipments = {
@@ -557,8 +555,6 @@ technologies = {
 	}
 
 	usa_heavy_artillery_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
-
 
 		enable_equipments = {
 			usa_hv_art_2
@@ -610,7 +606,7 @@ technologies = {
 	}
 
 	usa_heavy_artillery_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G3 } } } }
 
 
 		enable_equipments = {
@@ -653,8 +649,6 @@ technologies = {
 	}
 
 	usa_rocket_upgrade_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
-
 
 		rocket_artillery = {
 			soft_attack = 0.1
@@ -722,7 +716,7 @@ technologies = {
 	}
 
 	usa_rocket_upgrade_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G2 } } } }
 
 
 		rocket_artillery = {
@@ -786,7 +780,7 @@ technologies = {
 	}
 
 	usa_rocket_artillery_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G3 } } } }
 
 
 		enable_equipments = {
@@ -833,7 +827,7 @@ technologies = {
 	}
 
 	usa_rocket_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G3 } } } }
 
 
 		rocket_artillery = {
@@ -902,7 +896,7 @@ technologies = {
 	}
 
 	usa_rocket_artillery_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G4 } } } }
 
 
 		enable_equipments = {
@@ -1039,8 +1033,6 @@ technologies = {
 	}
 
 	usa_anti_tank_upgrade_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
-
 
 		category_anti_tank = {
 			hard_attack = 0.1
@@ -1086,7 +1078,7 @@ technologies = {
 	}
 
 	usa_anti_tank_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G1 } } } }
 
 
 		enable_equipments = {
@@ -1138,7 +1130,7 @@ technologies = {
 	}
 
 	usa_anti_tank_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G2 } } } }
 
 
 		enable_equipments = {
@@ -1185,7 +1177,7 @@ technologies = {
 	}
 
 	usa_anti_tank_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G2 } } } }
 
 
 		category_anti_tank = {
@@ -1277,7 +1269,7 @@ technologies = {
 	# }
 
 	usa_anti_tank_upgrade_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G4 } } } }
 
 
 		category_anti_tank = {
@@ -1319,7 +1311,7 @@ technologies = {
 	}
 
 	usa_heavy_anti_tank_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G2 } } } }
 
 
 		enable_equipments = {
@@ -1372,7 +1364,7 @@ technologies = {
 	}
 
 	usa_heavy_anti_tank_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G3 } } } }
 
 
 		enable_equipments = {
@@ -1552,7 +1544,7 @@ technologies = {
 	}
 
 	usa_anti_air_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G1 } } } }
 
 
 		category_anti_air = {
@@ -1599,7 +1591,7 @@ technologies = {
 	}
 
 	usa_anti_air_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G2 } } } }
 
 
 		enable_equipments = {
@@ -1646,7 +1638,7 @@ technologies = {
 	}
 
 	usa_anti_air_upgrade_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G2 } } } }
 
 
 		category_anti_air = {
@@ -1694,7 +1686,7 @@ technologies = {
 	}
 
 	usa_anti_air_upgrade_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G3 } } } }
 
 
 		category_anti_air = {
@@ -1742,7 +1734,7 @@ technologies = {
 	}
 
 	usa_anti_air_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G4 } } } }
 
 
 		enable_equipments = {
@@ -1951,8 +1943,6 @@ technologies = {
 	}
 
 	usa_aa_tower_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
-
 
 		enable_building = {
 			building = anti_air_building
@@ -2018,7 +2008,7 @@ technologies = {
 	}
 
 	usa_heavy_anti_air_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G1 } } } }
 
 
 		enable_equipments = {
@@ -2066,7 +2056,7 @@ technologies = {
 	}
 
 	usa_aa_tower_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G2 } } } }
 
 
 		enable_building = {
@@ -2133,7 +2123,7 @@ technologies = {
 	}
 
 	usa_heavy_anti_air_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_USA_G3 } } } }
 
 
 		enable_equipments = {

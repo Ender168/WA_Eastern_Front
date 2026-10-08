@@ -229,7 +229,7 @@ technologies = {
 	}
 
 	jap_infantry_weapons_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I1 } } } }
 
 
 		enable_equipments = {
@@ -260,7 +260,7 @@ technologies = {
 	}
 
     jap_infantry_weapons_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I1 } } } }
 
 
 		path = {
@@ -315,7 +315,7 @@ technologies = {
 	}
 
 	jap_infantry_weapons_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I1 } } } }
 
 
 		enable_equipments = {
@@ -355,7 +355,7 @@ technologies = {
 	}
 
 	jap_infantry_weapons_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I3 } } } }
 
 
 		enable_equipments = {
@@ -396,7 +396,7 @@ technologies = {
 	}
 
 	jap_night_vision_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I2 } } } }
 
 
         path = {
@@ -440,7 +440,7 @@ technologies = {
 	}
 
 	jap_night_vision_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I3 } } } }
 
 
 		land_night_attack = 0.15
@@ -778,7 +778,7 @@ technologies = {
 	}
 
 	jap_heavy_infantry_weapons_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I1 } } } }
 
 
 		enable_equipments = {
@@ -823,7 +823,7 @@ technologies = {
 	}
 
 	jap_heavy_infantry_weapons_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I1 } } } }
 
 
 		enable_equipments = {
@@ -853,7 +853,7 @@ technologies = {
 	}
 
 	jap_heavy_infantry_weapons_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I2 } } } }
 
 
 		enable_equipments = {
@@ -1071,7 +1071,7 @@ technologies = {
 	}
 
 	jap_paratroopers2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I1 } } } }
 
 
 		xp_research_type = army
@@ -1232,7 +1232,7 @@ technologies = {
 	}
 
 	jap_paratroopers3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I2 } } } }
 
 
 		xp_research_type = army
@@ -1297,7 +1297,7 @@ technologies = {
 	}
 
 	jap_recon_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I2 } } } }
 
 
 		xp_research_type = army
@@ -1565,7 +1565,7 @@ technologies = {
 	}
 
 	jap_tech_mountaineers2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I1 } } } }
 
 
 		xp_research_type = army
@@ -1709,7 +1709,7 @@ technologies = {
 	}
 
 	jap_tech_mountaineers3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I2 } } } }
 
 
 		xp_research_type = army
@@ -1983,7 +1983,7 @@ technologies = {
 	}
 
 	jap_marines2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I1 } } } }
 
 
 		xp_research_type = army
@@ -2206,7 +2206,7 @@ technologies = {
 	}
 
 	jap_marines3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I2 } } } }
 
 
 		xp_research_type = army
@@ -2335,7 +2335,7 @@ technologies = {
 	}
 
 	jap_tank_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I2 } } } }
 
 
 		xp_research_type = army
@@ -2401,7 +2401,7 @@ technologies = {
 	}
 
 	jap_water_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I2 } } } }
 
 
 		xp_research_type = army
@@ -2534,7 +2534,7 @@ technologies = {
 	}
 
 	jap_jungle_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I2 } } } }
 
 
 		xp_research_type = army
@@ -2695,7 +2695,7 @@ technologies = {
 
 
 	jap_extreme_environment_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I1 } } } }
 
 
 		xp_research_type = army
@@ -2728,7 +2728,7 @@ technologies = {
 
 
 	jap_survival_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I1 } } } }
 
 
 		xp_research_type = army
@@ -2759,7 +2759,7 @@ technologies = {
 
 
 	jap_elite_forces = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_JAP_I3 } } } }
 
 
 		xp_research_type = army

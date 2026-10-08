@@ -5,7 +5,7 @@ ideas = {
             allowed = { always = no }
             allowed_civil_war = { always = yes }
             removal_cost = -1
-            modifier = { research_speed_factor = 10.0 }
+            modifier = { research_speed_factor = -10.0 }
         }
 
         waef_unyielding_resistance = {

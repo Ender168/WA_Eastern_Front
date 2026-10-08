@@ -315,7 +315,7 @@ technologies = {
 	}
 
     ita_infantry_weapons_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I2 } } } }
 
 
         path = {
@@ -365,7 +365,7 @@ technologies = {
 	}
 
 	ita_infantry_weapons_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I2 } } } }
  #Armaguerra Model 39 FNAB-43
 
 		enable_equipments = {
@@ -415,7 +415,7 @@ technologies = {
 	}
 
 	ita_infantry_weapons_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I2 } } } }
  #Armaguerra Model 39 FNAB-43
 
 		enable_equipments = {
@@ -465,7 +465,7 @@ technologies = {
 	}
 
 	ita_infantry_weapons_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I4 } } } }
  #Armaguerra Mod 45 - TZ-45
 
 		enable_equipments = {
@@ -510,7 +510,7 @@ technologies = {
 	}
 
 	ita_night_vision_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I3 } } } }
 
 
 		land_night_attack = 0.1
@@ -549,7 +549,7 @@ technologies = {
 	}
 
 	ita_night_vision_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I4 } } } }
 
 
 		land_night_attack = 0.15
@@ -811,7 +811,7 @@ technologies = {
 	}
 
     ita_heavy_infantry_weapons_upgrade_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I1 } } } }
 
 
         path = {
@@ -857,7 +857,7 @@ technologies = {
 	}
 
 	ita_heavy_infantry_weapons_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I2 } } } }
 
 
 		enable_equipments = {
@@ -902,7 +902,7 @@ technologies = {
 	}
 
 	ita_heavy_infantry_weapons_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I3 } } } }
 
 
 		enable_equipments = {
@@ -947,7 +947,7 @@ technologies = {
 	}
 
 	ita_heavy_infantry_weapons_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I4 } } } }
 
 
 		enable_equipments = {
@@ -1165,7 +1165,7 @@ technologies = {
 	}
 
 	ita_paratroopers2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I1 } } } }
 
 
 		xp_research_type = army
@@ -1312,7 +1312,7 @@ technologies = {
 	}
 
 	ita_paratroopers3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I2 } } } }
 
 
 		xp_research_type = army
@@ -1374,7 +1374,7 @@ technologies = {
 	}
 
 	ita_recon_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I2 } } } }
 
 
 		xp_research_type = army
@@ -1643,7 +1643,7 @@ technologies = {
 	}
 
 	ita_tech_mountaineers2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I1 } } } }
 
 
 		xp_research_type = army
@@ -1757,7 +1757,7 @@ technologies = {
 	}
 
 	ita_tech_mountaineers3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I2 } } } }
 
 
 		xp_research_type = army
@@ -1989,7 +1989,7 @@ technologies = {
 	}
 
 	ita_marines2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I1 } } } }
 
 
 		xp_research_type = army
@@ -2170,7 +2170,7 @@ technologies = {
 	}
 
 	ita_marines3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I2 } } } }
 
 
 		xp_research_type = army
@@ -2269,7 +2269,7 @@ technologies = {
 	}
 
 	ita_tank_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I2 } } } }
 
 
 		xp_research_type = army
@@ -2330,7 +2330,7 @@ technologies = {
 	}
 
 	ita_water_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I3 } } } }
 
 
 		xp_research_type = army
@@ -2437,7 +2437,7 @@ technologies = {
 	}
 
 	ita_jungle_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I3 } } } }
 
 
 		xp_research_type = army
@@ -2586,7 +2586,7 @@ technologies = {
 
 
 	ita_extreme_environment_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I1 } } } }
 
 
 		xp_research_type = army
@@ -2619,7 +2619,7 @@ technologies = {
 
 
 	ita_survival_training = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I1 } } } }
 
 
 		xp_research_type = army
@@ -2649,7 +2649,7 @@ technologies = {
 	}
 
 	ita_elite_forces = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_ITA_I3 } } } }
 
 
 		xp_research_type = army

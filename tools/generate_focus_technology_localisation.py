@@ -6,6 +6,7 @@ def main():
     names=json.loads((ROOT/'docs/TECHNOLOGY_LOCALISATION_CATALOGUE.json').read_text())
     manifest=json.loads((ROOT/'docs/NATIONAL_FOCUS_MANIFEST.json').read_text())
     required={t for rows in manifest['schools'].values() for row in rows for t in row['technologies']}
+    required|={t for ids in manifest.get('start_exceptions',{}).values() for t in ids}
     assert not required-names.keys(),required-names.keys()
     for lang in ['english','russian']:
         lines=['l_'+lang+':']

@@ -15,7 +15,7 @@ import national_focus_revision as national
 ROOT = Path(__file__).resolve().parents[1]
 SCHOOLS = {'GER':'german','SOV':'soviet','USA':'unitedstates','ENG':'british','FRA':'french','ITA':'italian','JAP':'japanese'}
 FILENAMES = {'GER':'germany','SOV':'soviet','USA':'unitedstates','ENG':'british','FRA':'french','ITA':'italian','JAP':'japanese'}
-START_EXCEPTIONS = {'USA': ['usa_medium_tank_chassis_2','usa_medium_2'], 'ITA':['ita_interceptor_ad_tech_2','ita_fighter_4']}
+START_EXCEPTIONS = {'USA': ['usa_medium_tank_chassis_2','usa_medium_2'], 'ITA':['ita_medium_3','ita_medium_tank_chassis_3']}
 EXPENSIVE = {'GER':'H1','SOV':'TB2','USA':'TB4','FRA':'TB4','ITA':'TB5','JAP':'TB5'}
 EN = {
 'C00':'Military Research Organisation','C11':'Industry 1941','C13':'Industry 1943','C15':'Industry 1945',
@@ -102,6 +102,8 @@ def main():
     for stem in ['industry','electronic_mechanical_engineering','support']+[f'{stem}_{c.lower()}' for c in SCHOOLS for stem in ('infantry','artillery','armor','air_techs')]:
         rel=f'common/technologies/{stem}.txt';raw=(wa/rel).read_text(encoding='utf-8-sig');sources[rel]=raw
         for name,body in baseline.technology_blocks(raw).items():techs[name]=baseline.parse_tech(name,rel,body)
+    for code in SCHOOLS:
+        if code!='GER':START_EXCEPTIONS[code]=sorted(set(START_EXCEPTIONS.get(code,[]))|national.start_ids(code,techs))
     conditions=baseline.effective_conditions(techs)
     # Only include an explicitly supported DLC variant, preserving conditions inherited
     # from parent technologies (WA has hidden aircraft conversion subtechnologies).
@@ -119,7 +121,7 @@ def main():
         return '\n'.join(out)
     locales={'russian':{},'english':{}}
     def loc(key,ru,en):locales['russian'][key]=ru;locales['english'][key]=en
-    restrictions={};manifest={'wa_commit':baseline.WA_COMMIT,'plan_version':'1.1','german_revision':'2026-10-08','national_revision':'2026-10-08','calendar_gates':False,'schools':{},'research_gates':{},'start_exceptions':START_EXCEPTIONS}
+    restrictions={};manifest={'wa_commit':baseline.WA_COMMIT,'plan_version':'1.1','german_revision':'2026-10-08','national_revision':'2026-10-08 document schedules','calendar_gates':False,'schools':{},'research_gates':{},'start_exceptions':START_EXCEPTIONS}
     ideas=[]
     for c,(ident,mods,ru,en) in COMMON_MODS.items():
         ideas.append(f'    {ident} = {{ picture = generic_research allowed = {{ always = no }} removal_cost = -1 modifier = {{ {mods} }} }}')
@@ -175,11 +177,6 @@ def main():
             for node in packages:
                 if not node.startswith('C'):packages[node]=revised[node]
             for name,options in revised_gates.items():restrictions[name]=(techs[name].year,options)
-        # Re.2001 is the shared Italian 1941 fighter, not a late route reward.
-        if code=='ITA':
-            for name in ['ita_fighter_multirole_ad_tech_1','ita_fighter_multirole_1']:
-                for ids in packages.values():ids.discard(name)
-                packages['A1'].add(name);packages['W1'].add(name);restrictions[name]=(1941,['WAEF_ITA_A1','WAEF_ITA_W1'])
         # Start exceptions never recur in reward lists.
         for name in START_EXCEPTIONS.get(code,[]):
             assert name in techs,name
@@ -229,6 +226,7 @@ def main():
             if (code,bonus_node)==('ITA','TB5'):bonus=('reliability',.05)
             if (code,bonus_node)==('USA','M4'):bonus=('reliability',.05)
             if (code,bonus_node)==('JAP','I3'):bonus=('build_cost_ic',-.05)
+            if code!='GER':bonus=None
             if bonus:
                 family=[n for n in by_code if n.startswith(re.sub(r'\d$','',node))];ids=set().union(*(packages[n] for n in family));equipment=set()
                 for tname in ids:
@@ -242,10 +240,9 @@ def main():
                     label={'build_cost_ic':('Стоимость','Production cost'),'breakthrough':('Прорыв','Breakthrough'),'reliability':('Надёжность','Reliability')}[stat]
                     rus=f'{label[0]} выбранного семейства: {value:+.0%}.';ens=f'{label[1]} of the selected equipment family: {value:+.0%}.'
                     loc(ident,title,(german.EN.get(node,EN[node]) if code=='GER' else (national.english(code,node) or EN[node])));loc(ident+'_desc',rus,ens);ru_effect.append(rus);en_effect.append(ens)
-            if (code,bonus_node)==('SOV','TA4'):
-                ident='waef_sov_serial_armour';ideas.append(f'    {ident} = {{ picture = generic_research allowed = {{ always = no }} removal_cost = -1 modifier = {{ production_factory_efficiency_gain_factor = 0.10 }} }}');reward.append('add_ideas = '+ident);loc(ident,'Серийная бронетанковая программа','Serial Armour Programme');loc(ident+'_desc','+10% прироста производственной эффективности.','+10% production efficiency growth.');ru_effect.append('+10% прироста эффективности.');en_effect.append('+10% efficiency growth.')
+            if code!='GER' and not packages[node] and not reward:reward.append('army_experience = 5' if node[0] in ('I','G','T','H','M') else 'air_experience = 5')
             grants=grant(packages[node]);rewards='\n'.join('            '+r for r in reward)+ ('\n'+grants if grants else '')
-            hidden_links=layout.hidden_links(node,code)
+            hidden_links=[dep for dep in layout.hidden_links(node,code) if dep in deps]
             visible_deps=[dep for dep in deps if dep not in hidden_links]
             availability=' '.join('has_completed_focus = WAEF_'+code+'_'+dep for dep in hidden_links) or 'always = yes'
             rows=[f'    focus = {{\n        id = {fid}\n        icon = {icon(node)}\n        x = {x}\n        y = {y}\n        cost = {days//7}','        available = { '+availability+' }','        cancel_if_invalid = yes','        continue_if_invalid = no']
@@ -327,6 +324,7 @@ def main():
         marker='waef_assimilate_'+school+'_technologies';start=text.index(marker);m=re.search(r'complete_effect\s*=\s*\{',text[start:]);op=start+m.end()-1;end=baseline.matching_brace(text,op)
         original=text[op+1:end];doctrine=re.search(r'set_grand_doctrine\s*=\s*(\w+)',original)
         extra=grant(START_EXCEPTIONS.get(code,[]))
+        if code=='ENG':extra+='\n            set_technology = { '+ ' '.join(n+' = 0' for n in sorted(national.BASELINE_REMOVE))+' }'
         body=f'''\n            set_country_flag = {school}_technologies_tree_flag
             set_country_flag = waef_technology_assimilated
             waef_grant_shared_1940_technologies = yes

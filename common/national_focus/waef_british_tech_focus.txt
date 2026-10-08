@@ -326,7 +326,7 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_C00 }
         completion_reward = {
 
-            set_technology = { eng_extreme_environment_training = 1 eng_infantry_weapons_2 = 1 eng_infantry_weapons_upgrade_4 = 1 eng_marines2 = 1 eng_paratroopers2 = 1 eng_survival_training = 1 eng_tech_mountaineers2 = 1 }
+            set_technology = { eng_extreme_environment_training = 1 eng_heavy_infantry_weapons_3 = 1 eng_heavy_infantry_weapons_upgrade_3 = 1 eng_infantry_weapons_2 = 1 eng_infantry_weapons_upgrade_4 = 1 eng_marines2 = 1 eng_paratroopers2 = 1 eng_survival_training = 1 eng_tech_mountaineers2 = 1 }
         }
     }
 
@@ -342,7 +342,7 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_I1 }
         completion_reward = {
 
-            set_technology = { eng_heavy_infantry_weapons_3 = 1 eng_heavy_infantry_weapons_upgrade_3 = 1 eng_infantry_weapons_upgrade_5 = 1 eng_marines3 = 1 eng_paratroopers3 = 1 eng_recon_training = 1 eng_tank_training = 1 eng_tech_mountaineers3 = 1 }
+            set_technology = { eng_infantry_weapons_3 = 1 eng_infantry_weapons_upgrade_5 = 1 eng_jungle_training = 1 eng_marines3 = 1 eng_night_vision_1 = 1 eng_paratroopers3 = 1 eng_recon_training = 1 eng_tank_training = 1 eng_tech_mountaineers3 = 1 eng_water_training = 1 }
         }
     }
 
@@ -358,7 +358,7 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_I2 }
         completion_reward = {
 
-            set_technology = { eng_infantry_weapons_3 = 1 eng_jungle_training = 1 eng_night_vision_1 = 1 eng_water_training = 1 }
+            set_technology = { eng_elite_forces = 1 eng_infantry_weapons_4 = 1 eng_night_vision_2 = 1 }
         }
     }
 
@@ -374,7 +374,7 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_I3 }
         completion_reward = {
 
-            set_technology = { eng_elite_forces = 1 }
+            set_technology = { eng_heavy_infantry_weapons_4 = 1 eng_infantry_weapons_5 = 1 }
         }
     }
 
@@ -390,7 +390,7 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_C00 }
         completion_reward = {
 
-            set_technology = { eng_aa_tower_2 = 1 eng_anti_air_upgrade_3 = 1 eng_anti_tank_2 = 1 eng_heavy_artillery_3 = 1 eng_rocket_upgrade_1 = 1 }
+            set_technology = { eng_anti_tank_upgrade_3 = 1 eng_artillery_upgrade_3 = 1 }
         }
     }
 
@@ -406,7 +406,7 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_G1 }
         completion_reward = {
 
-            set_technology = { eng_aa_tower_3 = 1 eng_anti_air_upgrade_4 = 1 eng_anti_tank_3 = 1 eng_anti_tank_upgrade_3 = 1 eng_artillery_upgrade_3 = 1 eng_heavy_anti_tank_1 = 1 eng_pack_artillery_3 = 1 eng_rocket_upgrade_2 = 1 }
+            set_technology = { eng_aa_tower_3 = 1 eng_anti_air_2 = 1 eng_anti_air_upgrade_4 = 1 eng_anti_tank_3 = 1 eng_heavy_anti_air_3 = 1 eng_heavy_anti_tank_1 = 1 eng_pack_artillery_3 = 1 eng_rocket_artillery_1 = 1 eng_rocket_upgrade_2 = 1 }
         }
     }
 
@@ -422,55 +422,23 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_G2 }
         completion_reward = {
 
-            set_technology = { eng_anti_air_2 = 1 eng_anti_tank_4 = 1 eng_artillery_upgrade_4 = 1 eng_heavy_anti_air_3 = 1 eng_heavy_anti_tank_2 = 1 eng_heavy_artillery_4 = 1 eng_rocket_artillery_1 = 1 }
+            set_technology = { eng_anti_air_upgrade_5 = 1 eng_anti_tank_4 = 1 eng_anti_tank_upgrade_4 = 1 eng_artillery_upgrade_4 = 1 eng_heavy_anti_tank_2 = 1 eng_heavy_artillery_4 = 1 eng_rocket_upgrade_3 = 1 }
         }
     }
 
     focus = {
-        id = WAEF_ENG_M1
+        id = WAEF_ENG_G4
         icon = GFX_goal_generic_army_doctrine
-        x = 26
-        y = 1
+        x = 24
+        y = 4
         cost = 13
         available = { always = yes }
         cancel_if_invalid = yes
         continue_if_invalid = no
-        prerequisite = { focus = WAEF_ENG_C00 }
+        prerequisite = { focus = WAEF_ENG_G3 }
         completion_reward = {
 
-            set_technology = { eng_mechanized_artillery_1 = 1 }
-        }
-    }
-
-    focus = {
-        id = WAEF_ENG_M2
-        icon = GFX_goal_generic_army_doctrine
-        x = 26
-        y = 2
-        cost = 13
-        available = { always = yes }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_ENG_M1 }
-        completion_reward = {
-
-            set_technology = { eng_amphibious_1 = 1 eng_mechanized_infantry_2 = 1 }
-        }
-    }
-
-    focus = {
-        id = WAEF_ENG_M3
-        icon = GFX_goal_generic_army_doctrine
-        x = 26
-        y = 3
-        cost = 13
-        available = { always = yes }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_ENG_M2 }
-        completion_reward = {
-
-            set_technology = { eng_mechanized_artillery_2 = 1 eng_mechanized_infantry_3 = 1 eng_mechanized_infantry_4 = 1 }
+            set_technology = { eng_anti_air_3 = 1 eng_artillery_4 = 1 }
         }
     }
 
@@ -486,6 +454,7 @@ focus_tree = {
         mutually_exclusive = { focus = WAEF_ENG_H1 }
         completion_reward = {
 
+            set_technology = { eng_mechanized_artillery_1 = 1 }
             if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_light_3 = 1 eng_light_spg_2 = 1 eng_medium_5 = 1 eng_medium_aa_4 = 1 eng_medium_spg_4 = 1 } }
             if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_light_tank_chassis_3 = 1 eng_light_tank_spg_3 = 1 eng_medium_tank_aa_4 = 1 eng_medium_tank_chassis_3_2 = 1 } }
         }
@@ -503,8 +472,9 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_T1 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_armoured_car_2 = 1 eng_light_4 = 1 eng_medium_6 = 1 eng_medium_7 = 1 eng_medium_9 = 1 eng_medium_aa_5 = 1 eng_medium_aa_7 = 1 eng_medium_spg_6 = 1 eng_medium_spg_9 = 1 eng_medium_td_6 = 1 eng_scout_car_2 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_combat_armoured_car_2 = 1 eng_medium_tank_aa_5 = 1 eng_medium_tank_aa_7 = 1 eng_medium_tank_chassis_4 = 1 eng_medium_tank_chassis_4_2 = 1 eng_medium_tank_spg_6 = 1 eng_medium_tank_spg_7 = 1 eng_medium_tank_td_6 = 1 eng_scout_armoured_car_3 = 1 } }
+            set_technology = { eng_mechanized_infantry_2 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_armoured_car_2 = 1 eng_light_4 = 1 eng_medium_6 = 1 eng_medium_aa_5 = 1 eng_medium_aa_7 = 1 eng_scout_car_2 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_combat_armoured_car_2 = 1 eng_medium_tank_aa_5 = 1 eng_medium_tank_chassis_4 = 1 eng_scout_armoured_car_3 = 1 } }
         }
     }
 
@@ -520,8 +490,9 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_T2 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_medium_8 = 1 eng_medium_spg_8 = 1 eng_medium_td_7 = 1 eng_medium_td_9 = 1 eng_scout_car_3 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_combat_armoured_car_3 = 1 eng_medium_tank_chassis_5 = 1 eng_medium_tank_spg_8 = 1 eng_medium_tank_td_7 = 1 } }
+            set_technology = { eng_amphibious_1 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_medium_7 = 1 eng_medium_9 = 1 eng_medium_spg_6 = 1 eng_medium_spg_9 = 1 eng_medium_td_6 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_medium_tank_aa_7 = 1 eng_medium_tank_chassis_4_2 = 1 eng_medium_tank_spg_6 = 1 eng_medium_tank_spg_7 = 1 eng_medium_tank_td_6 = 1 } }
         }
     }
 
@@ -537,8 +508,63 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_T3 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_armoured_car_4 = 1 eng_light_5 = 1 eng_light_6 = 1 eng_light_spg_4 = 1 eng_medium_td_8 = 1 eng_modern_1 = 1 eng_modern_2 = 1 eng_modern_2_spg = 1 eng_scout_car_4 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_combat_armoured_car_4 = 1 eng_light_tank_chassis_5 = 1 eng_light_tank_chassis_6 = 1 eng_light_tank_spg_4 = 1 eng_medium_tank_td_8 = 1 eng_modern_tank_chassis_1 = 1 eng_modern_tank_chassis_1_2 = 1 eng_modern_tank_spg_2 = 1 eng_scout_armoured_car_4 = 1 } }
+            set_technology = { eng_mechanized_artillery_2 = 1 eng_mechanized_infantry_3 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_medium_8 = 1 eng_medium_spg_8 = 1 eng_medium_td_7 = 1 eng_medium_td_9 = 1 eng_scout_car_3 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_combat_armoured_car_3 = 1 eng_medium_tank_chassis_5 = 1 eng_medium_tank_spg_8 = 1 eng_medium_tank_td_7 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_T5
+        icon = GFX_goal_generic_army_tanks
+        x = 9
+        y = 9
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_T4 }
+        completion_reward = {
+
+            set_technology = { eng_mechanized_infantry_4 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_light_5 = 1 eng_light_spg_4 = 1 eng_modern_1 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_light_tank_chassis_5 = 1 eng_light_tank_spg_4 = 1 eng_modern_tank_chassis_1 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_T6
+        icon = GFX_goal_generic_army_tanks
+        x = 9
+        y = 10
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_T5 }
+        completion_reward = {
+
+            set_technology = { eng_mechanized_infantry_5 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_armoured_car_4 = 1 eng_light_6 = 1 eng_medium_td_8 = 1 eng_modern_2 = 1 eng_modern_2_spg = 1 eng_scout_car_4 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_combat_armoured_car_4 = 1 eng_light_tank_chassis_6 = 1 eng_medium_tank_td_8 = 1 eng_modern_tank_chassis_1_2 = 1 eng_modern_tank_spg_2 = 1 eng_scout_armoured_car_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_T7
+        icon = GFX_goal_generic_army_tanks
+        x = 9
+        y = 11
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_T6 }
+        completion_reward = {
+
+            set_technology = { eng_mechanized_infantry_6 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_modern_3 = 1 eng_modern_3_aa = 1 eng_modern_3_spg = 1 eng_modern_3_td = 1 eng_modern_4 = 1 eng_scout_car_5 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_modern_tank_aa_3 = 1 eng_modern_tank_chassis_1_3 = 1 eng_modern_tank_chassis_1_4 = 1 eng_modern_tank_spg_3 = 1 eng_modern_tank_td_3 = 1 eng_scout_armoured_car_4_2 = 1 } }
         }
     }
 
@@ -554,7 +580,7 @@ focus_tree = {
         mutually_exclusive = { focus = WAEF_ENG_T1 }
         completion_reward = {
 
-            set_technology = { eng_heavy_tank_chassis_3 = 1 }
+            set_technology = { eng_heavy_tank_chassis_3 = 1 eng_mechanized_artillery_1 = 1 }
             if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_heavy_1_spg = 1 eng_heavy_4 = 1 eng_heavy_td_3 = 1 eng_light_3 = 1 eng_light_spg_2 = 1 } }
             if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_heavy_tank_spg_1 = 1 eng_heavy_tank_td_3 = 1 eng_light_tank_chassis_3 = 1 eng_light_tank_spg_3 = 1 } }
         }
@@ -572,9 +598,9 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_H1 }
         completion_reward = {
 
-            set_technology = { eng_heavy_tank_chassis_3_2 = 1 eng_heavy_tank_chassis_3_3 = 1 eng_heavy_tank_spg_5 = 1 }
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_armoured_car_2 = 1 eng_heavy_5 = 1 eng_heavy_5_spg = 1 eng_heavy_6 = 1 eng_heavy_td_7 = 1 eng_light_4 = 1 eng_scout_car_2 = 1 eng_support_4 = 1 eng_support_5 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_combat_armoured_car_2 = 1 eng_heavy_tank_td_4 = 1 eng_scout_armoured_car_3 = 1 eng_support_tank_chassis_3_2 = 1 eng_support_tank_chassis_3_3 = 1 } }
+            set_technology = { eng_heavy_tank_chassis_3_2 = 1 eng_heavy_tank_spg_5 = 1 eng_mechanized_infantry_2 = 1 eng_super_heavy_tank_chassis_1 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_armoured_car_2 = 1 eng_heavy_5 = 1 eng_heavy_5_spg = 1 eng_light_4 = 1 eng_scout_car_2 = 1 eng_super_heavy_1 = 1 eng_support_4 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_combat_armoured_car_2 = 1 eng_scout_armoured_car_3 = 1 eng_support_tank_chassis_3_2 = 1 } }
         }
     }
 
@@ -590,9 +616,9 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_H2 }
         completion_reward = {
 
-            set_technology = { eng_heavy_tank_td_8 = 1 }
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_heavy_td_8 = 1 eng_scout_car_3 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_combat_armoured_car_3 = 1 } }
+            set_technology = { eng_amphibious_1 = 1 eng_heavy_tank_chassis_3_3 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_heavy_6 = 1 eng_heavy_td_7 = 1 eng_support_5 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_heavy_tank_td_4 = 1 eng_support_tank_chassis_3_3 = 1 } }
         }
     }
 
@@ -608,9 +634,45 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_H3 }
         completion_reward = {
 
-            set_technology = { eng_heavy_tank_chassis_4 = 1 eng_heavy_tank_chassis_5 = 1 eng_heavy_tank_spg_8 = 1 eng_heavy_tank_spg_9 = 1 eng_super_heavy_tank_chassis_1 = 1 }
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_armoured_car_4 = 1 eng_heavy_8 = 1 eng_heavy_9 = 1 eng_heavy_spg_8 = 1 eng_heavy_spg_9 = 1 eng_light_5 = 1 eng_light_6 = 1 eng_light_spg_4 = 1 eng_scout_car_4 = 1 eng_super_heavy_1 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_combat_armoured_car_4 = 1 eng_light_tank_chassis_5 = 1 eng_light_tank_chassis_6 = 1 eng_light_tank_spg_4 = 1 eng_scout_armoured_car_4 = 1 } }
+            set_technology = { eng_heavy_tank_chassis_4 = 1 eng_heavy_tank_td_8 = 1 eng_mechanized_artillery_2 = 1 eng_mechanized_infantry_3 = 1 eng_mechanized_infantry_4 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_heavy_8 = 1 eng_heavy_td_8 = 1 eng_light_5 = 1 eng_light_spg_4 = 1 eng_scout_car_3 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_combat_armoured_car_3 = 1 eng_light_tank_chassis_5 = 1 eng_light_tank_spg_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_H5
+        icon = GFX_goal_generic_army_tanks
+        x = 11
+        y = 9
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_H4 }
+        completion_reward = {
+
+            set_technology = { eng_heavy_tank_chassis_5 = 1 eng_heavy_tank_spg_8 = 1 eng_heavy_tank_spg_9 = 1 eng_mechanized_infantry_5 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_armoured_car_4 = 1 eng_heavy_9 = 1 eng_heavy_spg_8 = 1 eng_heavy_spg_9 = 1 eng_light_6 = 1 eng_scout_car_4 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_combat_armoured_car_4 = 1 eng_light_tank_chassis_6 = 1 eng_scout_armoured_car_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_H6
+        icon = GFX_goal_generic_army_tanks
+        x = 11
+        y = 10
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_H5 }
+        completion_reward = {
+
+            set_technology = { eng_heavy_tank_chassis_6 = 1 eng_heavy_tank_spg_10 = 1 eng_heavy_tank_td_10 = 1 eng_mechanized_infantry_6 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { eng_heavy_10 = 1 eng_heavy_spg_10 = 1 eng_heavy_td_10 = 1 eng_scout_car_5 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { eng_scout_armoured_car_4_2 = 1 } }
         }
     }
 
@@ -654,15 +716,15 @@ focus_tree = {
         x = 15
         y = 7
         cost = 13
-        available = { always = yes }
+        available = { has_completed_focus = WAEF_ENG_C25 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_ENG_A2 }
         completion_reward = {
 
             set_technology = { eng_transport_plane_2 = 1 }
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_fighter_6 = 1 eng_fighter_7 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_fighter_ad_tech_6 = 1 eng_fighter_ad_tech_7 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_fighter_6 = 1 eng_fighter_7 = 1 eng_jet_fighter_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_fighter_ad_tech_6 = 1 eng_fighter_ad_tech_7 = 1 eng_jet_fighter_ad_tech_1 = 1 } }
         }
     }
 
@@ -671,16 +733,48 @@ focus_tree = {
         icon = GFX_goal_generic_air_fighter
         x = 15
         y = 8
-        cost = 1
-        available = { always = yes }
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_ENG_A3 }
-        prerequisite = { focus = WAEF_ENG_C25 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_jet_fighter_1 = 1 eng_jet_fighter_2 = 1 eng_jet_scout_plane_1 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_jet_fighter_ad_tech_1 = 1 } }
+            set_technology = { eng_transport_plane_3 = 1 }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_jet_fighter_2 = 1 eng_jet_scout_plane_1 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_A5
+        icon = GFX_goal_generic_air_fighter
+        x = 15
+        y = 9
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_A4 }
+        completion_reward = {
+
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_jet_fighter_ad_tech_2 = 1 eng_jet_scout_plane_ad_tech_1 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_A6
+        icon = GFX_goal_generic_air_fighter
+        x = 15
+        y = 10
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_A5 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_jet_fighter_3 = 1 eng_jet_scout_plane_2 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_jet_fighter_ad_tech_3 = 1 eng_jet_fighter_ad_tech_4 = 1 } }
         }
     }
 
@@ -696,8 +790,8 @@ focus_tree = {
         mutually_exclusive = { focus = WAEF_ENG_A1 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_fighter_multirole_3 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_fighter_multirole_ad_tech_3 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_cv_fighter_3 = 1 eng_fighter_multirole_2 = 1 eng_fighter_multirole_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_fighter_multirole_ad_tech_2 = 1 eng_fighter_multirole_ad_tech_3 = 1 } }
         }
     }
 
@@ -742,16 +836,50 @@ focus_tree = {
         icon = GFX_goal_generic_air_fighter
         x = 13
         y = 8
-        cost = 1
-        available = { always = yes }
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_ENG_W3 }
-        prerequisite = { focus = WAEF_ENG_C25 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_jet_cv_fighter_1 = 1 eng_jet_cv_fighter_2 = 1 eng_jet_fighter_multirole_1 = 1 eng_jet_scout_plane_1 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_jet_fighter_multirole_ad_tech_1 = 1 } }
+            set_technology = { eng_transport_plane_3 = 1 }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_cv_fighter_7 = 1 eng_jet_cv_fighter_1 = 1 eng_jet_cv_fighter_2 = 1 eng_jet_fighter_multirole_1 = 1 eng_jet_scout_plane_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_cv_fighter_ad_tech_6 = 1 eng_cv_fighter_ad_tech_7 = 1 eng_jet_fighter_multirole_ad_tech_1 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_W5
+        icon = GFX_goal_generic_air_fighter
+        x = 13
+        y = 9
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_W4 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_jet_fighter_multirole_2 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_jet_cv_fighter_ad_tech_1 = 1 eng_jet_fighter_multirole_ad_tech_2 = 1 eng_jet_scout_plane_ad_tech_1 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_W6
+        icon = GFX_goal_generic_air_fighter
+        x = 13
+        y = 10
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_W5 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_jet_cv_fighter_3 = 1 eng_jet_fighter_multirole_3 = 1 eng_jet_scout_plane_2 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_jet_cv_fighter_ad_tech_2 = 1 eng_jet_fighter_multirole_ad_tech_3 = 1 } }
         }
     }
 
@@ -802,7 +930,7 @@ focus_tree = {
         completion_reward = {
 
             set_technology = { eng_attacker_ad_tech_3 = 1 }
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_attacker_3 = 1 eng_cas_7 = 1 eng_cas_8 = 1 eng_cv_cas_5 = 1 eng_patrol_3 = 1 eng_strategic_bomber_2 = 1 eng_tactical_bomber_4 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_attacker_3 = 1 eng_cas_7 = 1 eng_cas_8 = 1 eng_patrol_3 = 1 eng_strategic_bomber_2 = 1 eng_tactical_bomber_4 = 1 } }
             if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_cas_ad_tech_7 = 1 eng_cas_ad_tech_8 = 1 eng_cv_cas_ad_tech_5 = 1 eng_patrol_ad_tech_3 = 1 eng_strategic_bomber_ad_tech_3 = 1 eng_tactical_bomber_ad_tech_4 = 1 } }
         }
     }
@@ -812,16 +940,48 @@ focus_tree = {
         icon = GFX_goal_generic_air_fighter
         x = 19
         y = 8
-        cost = 1
-        available = { always = yes }
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_ENG_S3 }
-        prerequisite = { focus = WAEF_ENG_C25 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_jet_cv_cas_1 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_jet_cv_cas_ad_tech_1 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_cv_cas_7 = 1 eng_jet_cv_cas_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_cv_cas_ad_tech_7 = 1 eng_jet_cv_cas_ad_tech_1 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_S5
+        icon = GFX_goal_generic_air_fighter
+        x = 19
+        y = 9
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_S4 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_jet_cv_cas_2 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_S6
+        icon = GFX_goal_generic_air_fighter
+        x = 19
+        y = 10
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_S5 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_jet_cv_cas_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_jet_cv_cas_ad_tech_2 = 1 eng_jet_cv_cas_ad_tech_3 = 1 } }
         }
     }
 
@@ -882,15 +1042,50 @@ focus_tree = {
         icon = GFX_goal_generic_air_fighter
         x = 21
         y = 8
-        cost = 1
-        available = { always = yes }
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_ENG_B3 }
-        prerequisite = { focus = WAEF_ENG_C25 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_naval_bomber_4 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_cv_naval_bomber_ad_tech_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_B5
+        icon = GFX_goal_generic_air_fighter
+        x = 21
+        y = 9
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_B4 }
         completion_reward = {
 
             set_technology = { eng_jet_strike_bomber_ad_tech_1 = 1 }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_naval_bomber_5 = 1 eng_patrol_5 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_cv_naval_bomber_ad_tech_5 = 1 eng_patrol_ad_tech_5 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_B6
+        icon = GFX_goal_generic_air_fighter
+        x = 21
+        y = 10
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_B5 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_jet_naval_bomber_1 = 1 eng_jet_tactical_bomber_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_cv_jet_naval_bomber_ad_tech_1 = 1 eng_jet_tactical_bomber_ad_tech_1 = 1 } }
         }
     }
 
@@ -923,8 +1118,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_R1 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_strategic_bomber_3 = 1 eng_strategic_bomber_4 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_heavy_strategic_bomber_ad_tech_3 = 1 eng_heavy_strategic_bomber_ad_tech_3_1 = 1 eng_heavy_strategic_bomber_ad_tech_4 = 1 eng_strategic_bomber_ad_tech_1_1 = 1 eng_strategic_bomber_ad_tech_4 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_strategic_bomber_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_heavy_strategic_bomber_ad_tech_3 = 1 eng_heavy_strategic_bomber_ad_tech_3_1 = 1 eng_strategic_bomber_ad_tech_1_1 = 1 eng_strategic_bomber_ad_tech_4 = 1 } }
         }
     }
 
@@ -940,8 +1135,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_ENG_R2 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_patrol_3 = 1 eng_strategic_bomber_5 = 1 eng_tactical_bomber_4 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_cv_cas_ad_tech_2 = 1 eng_patrol_ad_tech_3 = 1 eng_strategic_bomber_ad_tech_5 = 1 eng_tactical_bomber_ad_tech_4 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_patrol_3 = 1 eng_strategic_bomber_4 = 1 eng_tactical_bomber_4 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_cv_cas_ad_tech_2 = 1 eng_heavy_strategic_bomber_ad_tech_4 = 1 eng_patrol_ad_tech_3 = 1 eng_tactical_bomber_ad_tech_4 = 1 } }
         }
     }
 
@@ -950,12 +1145,43 @@ focus_tree = {
         icon = GFX_goal_generic_air_fighter
         x = 23
         y = 8
-        cost = 1
-        available = { always = yes }
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
         cancel_if_invalid = yes
         continue_if_invalid = no
         prerequisite = { focus = WAEF_ENG_R3 }
-        prerequisite = { focus = WAEF_ENG_C25 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_strategic_bomber_5 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { eng_strategic_bomber_ad_tech_5 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_R5
+        icon = GFX_goal_generic_air_fighter
+        x = 23
+        y = 9
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_R4 }
+        completion_reward = {
+            air_experience = 5
+        }
+    }
+
+    focus = {
+        id = WAEF_ENG_R6
+        icon = GFX_goal_generic_air_fighter
+        x = 23
+        y = 10
+        cost = 13
+        available = { has_completed_focus = WAEF_ENG_C25 }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_ENG_R5 }
         completion_reward = {
 
             if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { eng_jet_strategic_bomber_1 = 1 } }

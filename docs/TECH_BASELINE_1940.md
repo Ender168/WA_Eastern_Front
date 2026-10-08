@@ -13,6 +13,7 @@ Rules:
 - standard_industry is granted as the neutral common industry philosophy;
 - concentrated_industry and dispersed_industry are intentionally excluded.
 - the three hidden WA division-design unlock technologies are forced into every national package.
+- Hurricane Mk II is deliberately withheld from the British baseline and unlocked by its first aircraft focus.
 - French upgrades requiring inherited equipment variants are excluded: fra_fast_bomber_ad_tech_1_2 and fra_cv_cas_ad_tech_2_2.
 
 Shared technologies: **116**.
@@ -969,8 +970,8 @@ Source files:
 - `common/technologies/infantry_eng.txt`
 - `common/technologies/naval_eng.txt`
 
-National technologies: **193**.
-Total with shared: **309**.
+National technologies: **191**.
+Total with shared: **307**.
 
 Technology IDs:
 
@@ -1047,10 +1048,8 @@ Technology IDs:
 - `eng_fighter_ad_tech_2` (1937)
 - `eng_fighter_ad_tech_3` (1939)
 - `eng_fighter_multirole_1` (1938)
-- `eng_fighter_multirole_2` (1940)
 - `eng_fighter_multirole_ad_tech_0` (1933)
 - `eng_fighter_multirole_ad_tech_1` (1938)
-- `eng_fighter_multirole_ad_tech_2` (1940)
 - `eng_fort_training` (1939)
 - `eng_frigate_1` (1928)
 - `eng_frigate_2` (1930)

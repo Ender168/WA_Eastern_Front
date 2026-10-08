@@ -429,6 +429,7 @@ def main() -> None:
         files = selected_national_files(paths, suffix)
         school_files[school] = files
         national = closure(eligible_seed(files, all_techs), all_techs)
+        if suffix=='eng':national -= {'eng_fighter_multirole_2','eng_fighter_multirole_ad_tech_2'}
         school_sets[school] = national - shared
     if FORCE_EXCLUDE & (shared | set().union(*school_sets.values())):
         raise RuntimeError("An excluded technology survived generation")
@@ -467,6 +468,7 @@ def main() -> None:
         "- standard_industry is granted as the neutral common industry philosophy;",
         "- concentrated_industry and dispersed_industry are intentionally excluded.",
         "- the three hidden WA division-design unlock technologies are forced into every national package.",
+        "- Hurricane Mk II is deliberately withheld from the British baseline and unlocked by its first aircraft focus.",
         "- French upgrades requiring inherited equipment variants are excluded: fra_fast_bomber_ad_tech_1_2 and fra_cv_cas_ad_tech_2_2.",
         "",
         f"Shared technologies: **{len(shared)}**.",

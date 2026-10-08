@@ -67,8 +67,8 @@ waef_technology_assimilation = {
             set_country_flag = waef_technology_assimilated
             waef_grant_shared_1940_technologies = yes
             waef_grant_italian_1940_technologies = yes
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ita_fighter_4 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ita_interceptor_ad_tech_2 = 1 } }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ita_medium_3 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { ita_medium_tank_chassis_3 = 1 } }
             remove_ideas = improvised_weapons
             add_ideas = mobile_warfare_drive_spirit
             add_ideas = firepower_induction_spirit
@@ -106,7 +106,11 @@ waef_technology_assimilation = {
             set_country_flag = waef_technology_assimilated
             waef_grant_shared_1940_technologies = yes
             waef_grant_japanese_1940_technologies = yes
-
+            set_technology = { jap_super_heavy_tank_chassis_1 = 1 }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { jap_cv_cas_3 = 1 jap_cv_fighter_3 = 1 jap_fighter_3 = 1 jap_fighter_multirole_3 = 1 jap_heavy_fighter_1 = 1 jap_strategic_bomber_3 = 1 } }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { jap_medium_4 = 1 jap_super_heavy_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { jap_attacker_ad_tech_0 = 1 jap_cv_cas_ad_tech_3 = 1 jap_cv_fighter_ad_tech_3 = 1 jap_fighter_ad_tech_3 = 1 jap_interceptor_ad_tech_1 = 1 jap_scout_plane_ad_tech_3 = 1 jap_strategic_bomber_ad_tech_2 = 1 jap_strike_bomber_ad_tech_2_1 = 1 jap_strike_bomber_ad_tech_3 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { jap_medium_tank_chassis_4 = 1 } }
             remove_ideas = improvised_weapons
             add_ideas = mobile_warfare_drive_spirit
             add_ideas = firepower_induction_spirit
@@ -182,7 +186,9 @@ waef_technology_assimilation = {
             set_country_flag = waef_technology_assimilated
             waef_grant_shared_1940_technologies = yes
             waef_grant_soviet_1940_technologies = yes
-
+            set_technology = { sov_anti_air_upgrade_2 = 1 sov_anti_tank_3 = 1 sov_artillery_3 = 1 sov_rocket_artillery_1 = 1 }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { sov_attacker_1 = 1 sov_fighter_3 = 1 sov_fighter_multirole_5 = 1 sov_strike_bomber_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { sov_attacker_ad_tech_1 = 1 sov_fighter_ad_tech_3 = 1 sov_fighter_multirole_ad_tech_5 = 1 sov_strike_bomber_ad_tech_3 = 1 } }
             remove_ideas = improvised_weapons
             add_ideas = mobile_warfare_drive_spirit
             add_ideas = firepower_induction_spirit
@@ -220,7 +226,8 @@ waef_technology_assimilation = {
             set_country_flag = waef_technology_assimilated
             waef_grant_shared_1940_technologies = yes
             waef_grant_british_1940_technologies = yes
-
+            set_technology = { eng_aa_tower_2 = 1 eng_anti_air_upgrade_3 = 1 eng_anti_tank_2 = 1 eng_heavy_artillery_3 = 1 eng_rocket_upgrade_1 = 1 }
+            set_technology = { eng_fighter_multirole_2 = 0 eng_fighter_multirole_ad_tech_2 = 0 }
             remove_ideas = improvised_weapons
             add_ideas = mobile_warfare_drive_spirit
             add_ideas = firepower_induction_spirit
@@ -258,6 +265,7 @@ waef_technology_assimilation = {
             set_country_flag = waef_technology_assimilated
             waef_grant_shared_1940_technologies = yes
             waef_grant_unitedstates_1940_technologies = yes
+            set_technology = { usa_aa_tower_2 = 1 usa_anti_tank_upgrade_2 = 1 usa_artillery_3 = 1 usa_heavy_artillery_2 = 1 usa_rocket_upgrade_1 = 1 }
             if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { usa_medium_2 = 1 } }
             if = { limit = { has_dlc = "No Step Back" } set_technology = { usa_medium_tank_chassis_2 = 1 } }
             remove_ideas = improvised_weapons
