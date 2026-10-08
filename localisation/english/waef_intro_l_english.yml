@@ -1,0 +1,8 @@
+﻿l_english:
+ waef_intro.1.t:0 "Welcome to WA Eastern Front"
+ waef_intro.1.d:0 "Two sides, an equal start, one goal: defeat your opponent. Would you like a quick introduction?"
+ waef_intro.1.read:0 "About the Mod"
+ waef_intro.1.skip:0 "Skip"
+ waef_intro.2.t:0 "How to Play"
+ waef_intro.2.d:0 "§YSetup.§! Use decisions to choose a national school, assimilate its technologies and form your army. Your school determines the focus tree and available equipment.\n\n§YVictory.§! Capture 16 of the opponent’s 20 strategic cities and maintain that advantage for 30 days. Captures and liberations are confirmed after 14 days of control.\n\n§YOperations.§! Tactical offensives boost one state; strategic operations boost an air region. Preparation adds fatigue immediately; offensives add more every 7 or 10 days respectively. Full conquest stops the timer and refunds preparation fatigue.\n\n§YEconomy.§! Watch fatigue from laws and armament programmes. Recruitment increases on 1 March and 1 September. Initial production and doctrine bonuses are temporary."
+ waef_intro.2.close:0 "Let’s Begin!"

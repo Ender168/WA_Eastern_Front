@@ -1,0 +1,20 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            WEF = {
+                if = {
+                    limit = { NOT = { has_country_flag = waef_intro_shown } }
+                    set_country_flag = waef_intro_shown
+                    country_event = { id = waef_intro.1 }
+                }
+            }
+            EEF = {
+                if = {
+                    limit = { NOT = { has_country_flag = waef_intro_shown } }
+                    set_country_flag = waef_intro_shown
+                    country_event = { id = waef_intro.1 }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+add_namespace = waef_intro
+
+country_event = {
+    id = waef_intro.1
+    title = waef_intro.1.t
+    desc = waef_intro.1.d
+    picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes
+    option = {
+        name = waef_intro.1.read
+        ai_chance = { factor = 0 }
+        country_event = { id = waef_intro.2 }
+    }
+    option = {
+        name = waef_intro.1.skip
+        ai_chance = { factor = 100 }
+    }
+}
+
+country_event = {
+    id = waef_intro.2
+    title = waef_intro.2.t
+    desc = waef_intro.2.d
+    picture = GFX_report_event_generic_military_parade
+    is_triggered_only = yes
+    option = { name = waef_intro.2.close }
+}
