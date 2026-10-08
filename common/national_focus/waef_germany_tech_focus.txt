@@ -118,7 +118,7 @@ focus_tree = {
         continue_if_invalid = no
         prerequisite = { focus = WAEF_GER_C23 }
         completion_reward = {
-            waef_grant_german_jet_aircraft = yes
+
             set_technology = { advanced_sonar = 1 improved_rocket_engines = 1 improved_submarine_snorkel = 1 jet_engines = 1 long_lance = 1 modern_naval_mines = 1 mtg_large_landing_craft = 1 mtg_tank_floats = 1 rocket_engines = 1 squid_depth_charge_mortar = 1 superior_computing_machine = 1 }
             if = { limit = { NOT = { has_dlc = "La Resistance" } } set_technology = { superior_decryption = 1 superior_encryption = 1 } }
         }
@@ -358,7 +358,23 @@ focus_tree = {
         prerequisite = { focus = WAEF_GER_I2 }
         completion_reward = {
 
-            set_technology = { ger_elite_forces = 1 ger_heavy_infantry_weapons_6 = 1 ger_heavy_infantry_weapons_7 = 1 ger_infantry_weapons_7 = 1 ger_infantry_weapons_upgrade_3 = 1 ger_jungle_training = 1 ger_night_vision_1 = 1 ger_water_training = 1 }
+            set_technology = { ger_heavy_infantry_weapons_6 = 1 ger_infantry_weapons_upgrade_3 = 1 ger_jungle_training = 1 ger_night_vision_1 = 1 ger_water_training = 1 }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_I4
+        icon = GFX_goal_generic_army_doctrine
+        x = 22
+        y = 4
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_GER_I3 }
+        completion_reward = {
+
+            set_technology = { ger_elite_forces = 1 ger_heavy_infantry_weapons_7 = 1 ger_infantry_weapons_7 = 1 }
         }
     }
 
@@ -506,8 +522,25 @@ focus_tree = {
         completion_reward = {
 
             set_technology = { ger_combat_armoured_car_5_2 = 1 }
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_armoured_car_6 = 1 ger_light_3_td = 1 ger_light_5 = 1 ger_light_5_aa = 1 ger_light_5_spg = 1 ger_light_5_td = 1 ger_medium_5_aa = 1 ger_medium_6 = 1 ger_medium_6_aa = 1 ger_medium_6_td = 1 ger_modern_2 = 1 ger_modern_2_aa = 1 ger_modern_2_spg = 1 ger_modern_2_td = 1 ger_modern_3 = 1 ger_modern_3_spg = 1 ger_modern_3_td = 1 ger_modern_4 = 1 } }
-            if = { limit = { has_dlc = "No Step Back" } set_technology = { ger_light_tank_3_td = 1 ger_light_tank_5_aa = 1 ger_light_tank_5_spg = 1 ger_light_tank_5_td = 1 ger_light_tank_chassis_5 = 1 ger_medium_tank_6_aa = 1 ger_medium_tank_7_aa = 1 ger_medium_tank_7_td = 1 ger_modern_tank_1_2_spg = 1 ger_modern_tank_1_2_td = 1 ger_modern_tank_1_aa = 1 ger_modern_tank_1_spg = 1 ger_modern_tank_1_td = 1 ger_modern_tank_chassis_1_2 = 1 ger_modern_tank_chassis_1_3 = 1 ger_modern_tank_chassis_2 = 1 } }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_armoured_car_6 = 1 ger_light_3_td = 1 ger_light_5 = 1 ger_light_5_aa = 1 ger_light_5_spg = 1 ger_light_5_td = 1 ger_medium_5_aa = 1 ger_medium_6 = 1 ger_medium_6_aa = 1 ger_medium_6_td = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { ger_light_tank_3_td = 1 ger_light_tank_5_aa = 1 ger_light_tank_5_spg = 1 ger_light_tank_5_td = 1 ger_light_tank_chassis_5 = 1 ger_medium_tank_6_aa = 1 ger_medium_tank_7_aa = 1 ger_medium_tank_7_td = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_T4
+        icon = GFX_goal_generic_army_tanks
+        x = 9
+        y = 8
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_GER_T3 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_modern_2 = 1 ger_modern_2_aa = 1 ger_modern_2_spg = 1 ger_modern_2_td = 1 ger_modern_3 = 1 ger_modern_3_spg = 1 ger_modern_3_td = 1 ger_modern_4 = 1 } }
+            if = { limit = { has_dlc = "No Step Back" } set_technology = { ger_modern_tank_1_2_spg = 1 ger_modern_tank_1_2_td = 1 ger_modern_tank_1_aa = 1 ger_modern_tank_1_spg = 1 ger_modern_tank_1_td = 1 ger_modern_tank_chassis_1_2 = 1 ger_modern_tank_chassis_1_3 = 1 ger_modern_tank_chassis_2 = 1 } }
         }
     }
 
@@ -541,8 +574,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_GER_H1 }
         completion_reward = {
 
-            set_technology = { ger_combat_armoured_car_5_1 = 1 ger_heavy_assault_tank_3_spg = 1 ger_heavy_tank_1_td = 1 ger_heavy_tank_2_td = 1 ger_heavy_tank_chassis_2 = 1 ger_heavy_tank_chassis_3 = 1 ger_landkruiser_tank_chassis_1 = 1 ger_scout_armoured_car_5 = 1 }
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_armoured_car_5 = 1 ger_heavy_1_td = 1 ger_heavy_2 = 1 ger_heavy_2_td = 1 ger_heavy_3 = 1 ger_heavy_assault_3_spg = 1 ger_landkruiser_1 = 1 ger_light_3_spg = 1 ger_light_4 = 1 ger_light_4_spg = 1 ger_light_4_td = 1 ger_scout_car_5 = 1 } }
+            set_technology = { ger_combat_armoured_car_5_1 = 1 ger_heavy_assault_tank_3_spg = 1 ger_heavy_tank_1_td = 1 ger_heavy_tank_2_td = 1 ger_heavy_tank_chassis_2 = 1 ger_heavy_tank_chassis_3 = 1 ger_scout_armoured_car_5 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_armoured_car_5 = 1 ger_heavy_1_td = 1 ger_heavy_2 = 1 ger_heavy_2_td = 1 ger_heavy_3 = 1 ger_heavy_assault_3_spg = 1 ger_light_3_spg = 1 ger_light_4 = 1 ger_light_4_spg = 1 ger_light_4_td = 1 ger_scout_car_5 = 1 } }
             if = { limit = { has_dlc = "No Step Back" } set_technology = { ger_light_tank_2_td = 1 ger_light_tank_3_aa = 1 ger_light_tank_3_spg = 1 ger_light_tank_4_1_td = 1 ger_light_tank_4_spg = 1 ger_light_tank_4_td = 1 ger_light_tank_chassis_4 = 1 } }
         }
     }
@@ -559,9 +592,26 @@ focus_tree = {
         prerequisite = { focus = WAEF_GER_H2 }
         completion_reward = {
 
-            set_technology = { ger_combat_armoured_car_5_2 = 1 ger_heavy_assault_tank_4_spg = 1 ger_heavy_tank_4_spg = 1 ger_heavy_tank_4_td = 1 ger_heavy_tank_chassis_4 = 1 ger_heavy_tank_chassis_5 = 1 ger_super_heavy_tank_chassis_1 = 1 }
-            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_armoured_car_6 = 1 ger_heavy_4 = 1 ger_heavy_4_spg = 1 ger_heavy_4_td = 1 ger_light_3_td = 1 ger_light_5 = 1 ger_light_5_aa = 1 ger_light_5_spg = 1 ger_light_5_td = 1 ger_super_heavy_1 = 1 } }
+            set_technology = { ger_combat_armoured_car_5_2 = 1 ger_heavy_tank_4_spg = 1 ger_heavy_tank_4_td = 1 ger_heavy_tank_chassis_4 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_armoured_car_6 = 1 ger_heavy_4 = 1 ger_heavy_4_spg = 1 ger_heavy_4_td = 1 ger_light_3_td = 1 ger_light_5 = 1 ger_light_5_aa = 1 ger_light_5_spg = 1 ger_light_5_td = 1 } }
             if = { limit = { has_dlc = "No Step Back" } set_technology = { ger_light_tank_3_td = 1 ger_light_tank_5_aa = 1 ger_light_tank_5_spg = 1 ger_light_tank_5_td = 1 ger_light_tank_chassis_5 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_H4
+        icon = GFX_goal_generic_army_tanks
+        x = 11
+        y = 8
+        cost = 13
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_GER_H3 }
+        completion_reward = {
+
+            set_technology = { ger_heavy_assault_tank_4_spg = 1 ger_heavy_tank_chassis_5 = 1 ger_landkruiser_tank_chassis_1 = 1 ger_super_heavy_tank_chassis_1 = 1 }
+            if = { limit = { NOT = { has_dlc = "No Step Back" } } set_technology = { ger_landkruiser_1 = 1 ger_super_heavy_1 = 1 } }
         }
     }
 
@@ -577,8 +627,8 @@ focus_tree = {
         mutually_exclusive = { focus = WAEF_GER_W1 }
         completion_reward = {
             air_experience = 10
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cv_fighter_2 = 1 ger_fighter_6 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_cv_fighter_ad_tech__2 = 1 ger_fighter_ad_tech_6 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cv_fighter_2 = 1 ger_fighter_6 = 1 ger_scout_plane_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_cv_fighter_ad_tech__2 = 1 ger_fighter_ad_tech_6 = 1 ger_scout_plane_ad_tech_3 = 1 } }
         }
     }
 
@@ -594,8 +644,9 @@ focus_tree = {
         prerequisite = { focus = WAEF_GER_A1 }
         completion_reward = {
 
+            set_technology = { ger_transport_plane_3 = 1 }
             if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_fighter_7 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_fighter_ad_tech_7 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_air_upgrade_1 = 1 ger_fighter_ad_tech_7 = 1 ger_heavy_fighter_ad_tech_2 = 1 } }
         }
     }
 
@@ -610,9 +661,28 @@ focus_tree = {
         continue_if_invalid = no
         prerequisite = { focus = WAEF_GER_A2 }
         completion_reward = {
-            waef_grant_german_jet_aircraft = yes
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cv_fighter_4 = 1 ger_fighter_8 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_cv_fighter_ad_tech__4 = 1 ger_fighter_ad_tech_8 = 1 } }
+
+            set_technology = { ger_transport_plane_4 = 1 }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cv_fighter_4 = 1 ger_fighter_8 = 1 ger_heavy_fighter_3 = 1 ger_heavy_fighter_4 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_cv_fighter_ad_tech__4 = 1 ger_fighter_ad_tech_8 = 1 ger_heavy_fighter_ad_tech_2_2 = 1 ger_heavy_fighter_ad_tech_3 = 1 ger_heavy_fighter_ad_tech_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_A4
+        icon = GFX_goal_generic_air_fighter
+        x = 15
+        y = 8
+        cost = 1
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_GER_A3 }
+        prerequisite = { focus = WAEF_GER_C25 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_jet_cv_fighter_1 = 1 ger_jet_fighter_1 = 1 ger_jet_fighter_multirole_1 = 1 ger_jet_fighter_multirole_2 = 1 ger_jet_scout_plane_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_jet_cv_fighter_ad_tech_1 = 1 ger_jet_fighter_ad_tech_1 = 1 ger_jet_fighter_ad_tech_2 = 1 ger_jet_fighter_multirole_ad_tech_1 = 1 ger_jet_fighter_multirole_ad_tech_1_2 = 1 ger_jet_fighter_multirole_ad_tech_2 = 1 ger_jet_scout_plane_ad_tech_1 = 1 } }
         }
     }
 
@@ -628,8 +698,8 @@ focus_tree = {
         mutually_exclusive = { focus = WAEF_GER_A1 focus = WAEF_GER_H1 }
         completion_reward = {
             air_experience = 10
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_fighter_multirole_1 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_fighter_multirole_ad_tech_1 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_fighter_multirole_1 = 1 ger_scout_plane_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_fighter_multirole_ad_tech_1 = 1 ger_scout_plane_ad_tech_3 = 1 } }
         }
     }
 
@@ -645,8 +715,9 @@ focus_tree = {
         prerequisite = { focus = WAEF_GER_W1 }
         completion_reward = {
 
+            set_technology = { ger_transport_plane_3 = 1 }
             if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cv_fighter_3 = 1 ger_fighter_multirole_2 = 1 ger_fighter_multirole_3 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_fighter_multirole_ad_tech_2 = 1 ger_fighter_multirole_ad_tech_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_air_upgrade_1 = 1 ger_fighter_multirole_ad_tech_2 = 1 ger_fighter_multirole_ad_tech_3 = 1 } }
         }
     }
 
@@ -661,62 +732,28 @@ focus_tree = {
         continue_if_invalid = no
         prerequisite = { focus = WAEF_GER_W2 }
         completion_reward = {
-            waef_grant_german_jet_aircraft = yes
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cv_fighter_5 = 1 ger_fighter_multirole_4 = 1 ger_fighter_multirole_5 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_fighter_multirole_ad_tech_4 = 1 ger_fighter_multirole_ad_tech_5 = 1 } }
-        }
-    }
 
-    focus = {
-        id = WAEF_GER_U1
-        icon = GFX_goal_generic_air_fighter
-        x = 20
-        y = 1
-        cost = 13
-        available = { always = yes }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_C00 }
-        completion_reward = {
-
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_scout_plane_3 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_scout_plane_ad_tech_3 = 1 } }
-        }
-    }
-
-    focus = {
-        id = WAEF_GER_U2
-        icon = GFX_goal_generic_air_fighter
-        x = 20
-        y = 2
-        cost = 13
-        available = { always = yes }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_U1 }
-        completion_reward = {
-
-            set_technology = { ger_transport_plane_3 = 1 }
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_heavy_fighter_2 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_air_upgrade_1 = 1 ger_heavy_fighter_ad_tech_2 = 1 ger_heavy_fighter_ad_tech_conversion_2 = 1 ger_heavy_fighter_ad_tech_conversion_2_2 = 1 ger_heavy_fighter_ad_tech_conversion_3_2 = 1 } }
-        }
-    }
-
-    focus = {
-        id = WAEF_GER_U3
-        icon = GFX_goal_generic_air_fighter
-        x = 20
-        y = 3
-        cost = 13
-        available = { always = yes }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_GER_U2 }
-        completion_reward = {
-            waef_grant_german_jet_aircraft = yes
             set_technology = { ger_transport_plane_4 = 1 }
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_heavy_fighter_3 = 1 ger_heavy_fighter_4 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_heavy_fighter_ad_tech_2_2 = 1 ger_heavy_fighter_ad_tech_3 = 1 ger_heavy_fighter_ad_tech_4 = 1 ger_heavy_fighter_ad_tech_conversion_4 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cv_fighter_5 = 1 ger_fighter_multirole_4 = 1 ger_fighter_multirole_5 = 1 ger_heavy_fighter_3 = 1 ger_heavy_fighter_4 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_fighter_multirole_ad_tech_4 = 1 ger_fighter_multirole_ad_tech_5 = 1 ger_heavy_fighter_ad_tech_3 = 1 ger_heavy_fighter_ad_tech_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_W4
+        icon = GFX_goal_generic_air_fighter
+        x = 13
+        y = 8
+        cost = 1
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_GER_W3 }
+        prerequisite = { focus = WAEF_GER_C25 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_jet_fighter_1 = 1 ger_jet_fighter_2 = 1 ger_jet_scout_plane_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_jet_fighter_ad_tech_1 = 1 ger_jet_fighter_ad_tech_2 = 1 ger_jet_fighter_ad_tech_3 = 1 ger_jet_scout_plane_ad_tech_1 = 1 } }
         }
     }
 
@@ -765,9 +802,27 @@ focus_tree = {
         continue_if_invalid = no
         prerequisite = { focus = WAEF_GER_S2 }
         completion_reward = {
-            waef_grant_german_jet_aircraft = yes
+
             if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cas_6 = 1 ger_cv_cas_6 = 1 ger_naval_bomber_2 = 1 ger_patrol_2 = 1 ger_strategic_bomber_1 = 1 ger_strike_bomber_3 = 1 } }
             if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_cas_ad_tech_6 = 1 ger_cas_ad_tech_7_1 = 1 ger_cv_cas_ad_tech_6 = 1 ger_fast_bomber_ad_tech_3 = 1 ger_naval_bomber_ad_tech_2 = 1 ger_patrol_ad_tech_2 = 1 ger_strategic_bomber_ad_tech_1 = 1 ger_strike_bomber_ad_tech_3 = 1 ger_tactical_bomber_ad_tech_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_S4
+        icon = GFX_goal_generic_air_fighter
+        x = 19
+        y = 8
+        cost = 1
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_GER_S3 }
+        prerequisite = { focus = WAEF_GER_C25 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_jet_cas_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_jet_cas_ad_tech_1 = 1 } }
         }
     }
 
@@ -800,8 +855,8 @@ focus_tree = {
         prerequisite = { focus = WAEF_GER_B1 }
         completion_reward = {
 
-            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_strike_bomber_4 = 1 ger_tactical_bomber_4 = 1 ger_tactical_bomber_5 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_fast_bomber_ad_tech_4 = 1 ger_patrol_ad_tech_3 = 1 ger_strike_bomber_ad_tech_3_2 = 1 ger_tactical_bomber_ad_tech_4_2 = 1 } }
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_heavy_fighter_2 = 1 ger_strike_bomber_4 = 1 ger_tactical_bomber_4 = 1 ger_tactical_bomber_5 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_fast_bomber_ad_tech_4 = 1 ger_heavy_fighter_ad_tech_conversion_2 = 1 ger_heavy_fighter_ad_tech_conversion_2_2 = 1 ger_heavy_fighter_ad_tech_conversion_3_2 = 1 ger_patrol_ad_tech_3 = 1 ger_strike_bomber_ad_tech_3_2 = 1 ger_tactical_bomber_ad_tech_4_2 = 1 } }
         }
     }
 
@@ -816,9 +871,27 @@ focus_tree = {
         continue_if_invalid = no
         prerequisite = { focus = WAEF_GER_B2 }
         completion_reward = {
-            waef_grant_german_jet_aircraft = yes
+
             if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cas_4 = 1 ger_cv_cas_3 = 1 ger_naval_bomber_3 = 1 ger_patrol_3 = 1 ger_strategic_bomber_1 = 1 ger_strike_bomber_5 = 1 } }
-            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_cas_ad_tech_4 = 1 ger_cv_cas_ad_tech_5 = 1 ger_naval_bomber_ad_tech_3 = 1 ger_patrol_ad_tech_4 = 1 ger_strategic_bomber_ad_tech_1 = 1 ger_strike_bomber_ad_tech_3_3 = 1 ger_tactical_bomber_ad_tech_4_3 = 1 ger_tactical_bomber_ad_tech_5 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_cas_ad_tech_4 = 1 ger_cv_cas_ad_tech_5 = 1 ger_heavy_fighter_ad_tech_conversion_4 = 1 ger_naval_bomber_ad_tech_3 = 1 ger_patrol_ad_tech_4 = 1 ger_strategic_bomber_ad_tech_1 = 1 ger_strike_bomber_ad_tech_3_3 = 1 ger_tactical_bomber_ad_tech_4_3 = 1 ger_tactical_bomber_ad_tech_5 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_B4
+        icon = GFX_goal_generic_air_fighter
+        x = 21
+        y = 8
+        cost = 1
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_GER_B3 }
+        prerequisite = { focus = WAEF_GER_C25 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_jet_naval_bomber_1 = 1 ger_jet_tactical_bomber_1 = 1 ger_jet_tactical_bomber_2 = 1 ger_jet_tactical_bomber_3 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_jet_fast_bomber_ad_tech_1 = 1 ger_jet_fast_bomber_ad_tech_2 = 1 ger_jet_naval_bomber_ad_tech_1 = 1 ger_jet_tactical_bomber_ad_tech_1 = 1 } }
         }
     }
 
@@ -867,9 +940,27 @@ focus_tree = {
         continue_if_invalid = no
         prerequisite = { focus = WAEF_GER_R2 }
         completion_reward = {
-            waef_grant_german_jet_aircraft = yes
+
             if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_cas_4 = 1 ger_cv_cas_3 = 1 ger_naval_bomber_2 = 1 ger_patrol_2 = 1 ger_strike_bomber_3 = 1 } }
             if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_cas_ad_tech_4 = 1 ger_cv_cas_ad_tech_5 = 1 ger_fast_bomber_ad_tech_3 = 1 ger_naval_bomber_ad_tech_2 = 1 ger_patrol_ad_tech_2 = 1 ger_strategic_bomber_ad_tech_3 = 1 ger_strike_bomber_ad_tech_3 = 1 ger_tactical_bomber_ad_tech_4 = 1 } }
+        }
+    }
+
+    focus = {
+        id = WAEF_GER_R4
+        icon = GFX_goal_generic_air_fighter
+        x = 23
+        y = 8
+        cost = 1
+        available = { always = yes }
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        prerequisite = { focus = WAEF_GER_R3 }
+        prerequisite = { focus = WAEF_GER_C25 }
+        completion_reward = {
+
+            if = { limit = { NOT = { has_dlc = "By Blood Alone" } } set_technology = { ger_jet_strategic_bomber_1 = 1 } }
+            if = { limit = { has_dlc = "By Blood Alone" } set_technology = { ger_jet_heavy_strategic_bomber_ad_tech_1 = 1 } }
         }
     }
 

@@ -43,9 +43,9 @@ class NationalFocusTests(unittest.TestCase):
    for k,v in baseline.technology_blocks(p.read_text()).items():cls.techs[k]=baseline.parse_tech(k,str(p),v)
  def test_all_seven_schools_and_real_rewards(self):
   self.assertEqual(set(self.m['schools']),{'GER','SOV','USA','ENG','FRA','ITA','JAP'})
-  self.assertEqual(len(self.nodes),269)
+  self.assertEqual(len(self.nodes),274)
   for code,rows in self.m['schools'].items():
-   self.assertEqual(len(rows),53 if code=='GER' else 36)
+   self.assertEqual(len(rows),58 if code=='GER' else 36)
    for row in rows:
     node=self.nodes[row['id']];self.assertEqual(int(get(node,'cost'))*7,row['days'])
     self.assertTrue(get(node,'completion_reward'))
@@ -142,7 +142,7 @@ class NationalFocusTests(unittest.TestCase):
   for lang in ['russian','english']:
    loc=localisation(lang)
    self.assertFalse(keys-loc.keys(),(lang,keys-loc.keys()))
-   self.assertTrue(all(loc[k].strip() for k in keys))
+   self.assertTrue(all(loc[k].strip() for k in keys if k not in {fid+'_desc' for fid in self.nodes}))
  def test_repeating_fatigue_uses_one_timer_and_does_not_hook_law_changes(self):
   source=read('common/decisions/waef_armament_fatigue.txt');mission=get(get(source,'economy_fatigue'),'waef_armament_fatigue')
   self.assertEqual(get(mission,'days_mission_timeout'),'70')

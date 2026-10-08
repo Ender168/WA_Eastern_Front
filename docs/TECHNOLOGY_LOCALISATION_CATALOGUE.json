@@ -5306,5 +5306,53 @@
   "ger_jet_strategic_bomber_1": {
     "english": "Junkers Ju 132",
     "russian": "Junkers Ju 132"
+  },
+  "ger_jet_cas_1": {
+    "english": "Me 262 \"Schnellbomber\"",
+    "russian": "Me 262 \"Schnellbomber\""
+  },
+  "ger_jet_cas_ad_tech_1": {
+    "english": "Messerschmitt Me 262 A-2a `Sturmvogel`",
+    "russian": "Messerschmitt Me 262 A-2a `Sturmvogel`"
+  },
+  "ger_jet_fighter_1": {
+    "english": "Ho 229",
+    "russian": "Ho 229"
+  },
+  "ger_jet_fighter_2": {
+    "english": "Ta 183",
+    "russian": "Ta 183"
+  },
+  "ger_jet_fighter_ad_tech_2": {
+    "english": "Horten Ho 229",
+    "russian": "Horten Ho 229"
+  },
+  "ger_jet_fighter_ad_tech_3": {
+    "english": "Focke-Wulf Ta 183 I `Huckebein`",
+    "russian": "Focke-Wulf Ta 183 I `Huckebein`"
+  },
+  "ger_jet_fighter_multirole_2": {
+    "english": "Me 262 HG I",
+    "russian": "Me 262 HG I"
+  },
+  "ger_jet_fighter_multirole_ad_tech_2": {
+    "english": "Messerschmitt Me 262 HG-I `Schwalbe`",
+    "russian": "Messerschmitt Me 262 HG-I `Schwalbe`"
+  },
+  "ger_jet_naval_bomber_1": {
+    "english": "Me 262 \"Sturmvogel\"",
+    "russian": "Me 262 \"Sturmvogel\""
+  },
+  "ger_jet_naval_bomber_ad_tech_1": {
+    "english": "Messerschmitt Me 262 A-2c `Sturmvogel`",
+    "russian": "Messerschmitt Me 262 A-2c `Sturmvogel`"
+  },
+  "ger_jet_tactical_bomber_3": {
+    "english": "Fw 3000",
+    "russian": "Fw 3000"
+  },
+  "ger_jet_tactical_bomber_ad_tech_1": {
+    "english": "Focke-Wulf Fw 239 `1000x1000x1000`",
+    "russian": "Focke-Wulf Fw 239 `1000x1000x1000`"
   }
 }

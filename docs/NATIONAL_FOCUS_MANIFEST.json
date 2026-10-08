@@ -195,9 +195,7 @@
           "superior_decryption",
           "superior_encryption"
         ],
-        "effects": [
-          "waef_grant_german_jet_aircraft = yes"
-        ]
+        "effects": []
       },
       {
         "id": "WAEF_GER_C31",
@@ -510,7 +508,7 @@
       {
         "id": "WAEF_GER_I3",
         "code": "I3",
-        "year": 1945,
+        "year": 1944,
         "days": 91,
         "prerequisites": [
           "WAEF_GER_I2"
@@ -521,14 +519,31 @@
         "availability_requires": [],
         "exclusive": [],
         "technologies": [
-          "ger_elite_forces",
           "ger_heavy_infantry_weapons_6",
-          "ger_heavy_infantry_weapons_7",
-          "ger_infantry_weapons_7",
           "ger_infantry_weapons_upgrade_3",
           "ger_jungle_training",
           "ger_night_vision_1",
           "ger_water_training"
+        ],
+        "effects": []
+      },
+      {
+        "id": "WAEF_GER_I4",
+        "code": "I4",
+        "year": 1945,
+        "days": 91,
+        "prerequisites": [
+          "WAEF_GER_I3"
+        ],
+        "display_prerequisites": [
+          "WAEF_GER_I3"
+        ],
+        "availability_requires": [],
+        "exclusive": [],
+        "technologies": [
+          "ger_elite_forces",
+          "ger_heavy_infantry_weapons_7",
+          "ger_infantry_weapons_7"
         ],
         "effects": []
       },
@@ -787,7 +802,24 @@
           "ger_medium_6_td",
           "ger_medium_tank_6_aa",
           "ger_medium_tank_7_aa",
-          "ger_medium_tank_7_td",
+          "ger_medium_tank_7_td"
+        ],
+        "effects": []
+      },
+      {
+        "id": "WAEF_GER_T4",
+        "code": "T4",
+        "year": 1945,
+        "days": 91,
+        "prerequisites": [
+          "WAEF_GER_T3"
+        ],
+        "display_prerequisites": [
+          "WAEF_GER_T3"
+        ],
+        "availability_requires": [],
+        "exclusive": [],
+        "technologies": [
           "ger_modern_2",
           "ger_modern_2_aa",
           "ger_modern_2_spg",
@@ -859,8 +891,6 @@
           "ger_heavy_tank_2_td",
           "ger_heavy_tank_chassis_2",
           "ger_heavy_tank_chassis_3",
-          "ger_landkruiser_1",
-          "ger_landkruiser_tank_chassis_1",
           "ger_light_3_spg",
           "ger_light_4",
           "ger_light_4_spg",
@@ -896,11 +926,9 @@
           "ger_heavy_4",
           "ger_heavy_4_spg",
           "ger_heavy_4_td",
-          "ger_heavy_assault_tank_4_spg",
           "ger_heavy_tank_4_spg",
           "ger_heavy_tank_4_td",
           "ger_heavy_tank_chassis_4",
-          "ger_heavy_tank_chassis_5",
           "ger_light_3_td",
           "ger_light_5",
           "ger_light_5_aa",
@@ -910,7 +938,28 @@
           "ger_light_tank_5_aa",
           "ger_light_tank_5_spg",
           "ger_light_tank_5_td",
-          "ger_light_tank_chassis_5",
+          "ger_light_tank_chassis_5"
+        ],
+        "effects": []
+      },
+      {
+        "id": "WAEF_GER_H4",
+        "code": "H4",
+        "year": 1945,
+        "days": 91,
+        "prerequisites": [
+          "WAEF_GER_H3"
+        ],
+        "display_prerequisites": [
+          "WAEF_GER_H3"
+        ],
+        "availability_requires": [],
+        "exclusive": [],
+        "technologies": [
+          "ger_heavy_assault_tank_4_spg",
+          "ger_heavy_tank_chassis_5",
+          "ger_landkruiser_1",
+          "ger_landkruiser_tank_chassis_1",
           "ger_super_heavy_1",
           "ger_super_heavy_tank_chassis_1"
         ],
@@ -935,7 +984,9 @@
           "ger_cv_fighter_2",
           "ger_cv_fighter_ad_tech__2",
           "ger_fighter_6",
-          "ger_fighter_ad_tech_6"
+          "ger_fighter_ad_tech_6",
+          "ger_scout_plane_3",
+          "ger_scout_plane_ad_tech_3"
         ],
         "effects": [
           "air_experience = 10"
@@ -955,8 +1006,11 @@
         "availability_requires": [],
         "exclusive": [],
         "technologies": [
+          "ger_air_upgrade_1",
           "ger_fighter_7",
-          "ger_fighter_ad_tech_7"
+          "ger_fighter_ad_tech_7",
+          "ger_heavy_fighter_ad_tech_2",
+          "ger_transport_plane_3"
         ],
         "effects": []
       },
@@ -977,11 +1031,46 @@
           "ger_cv_fighter_4",
           "ger_cv_fighter_ad_tech__4",
           "ger_fighter_8",
-          "ger_fighter_ad_tech_8"
+          "ger_fighter_ad_tech_8",
+          "ger_heavy_fighter_3",
+          "ger_heavy_fighter_4",
+          "ger_heavy_fighter_ad_tech_2_2",
+          "ger_heavy_fighter_ad_tech_3",
+          "ger_heavy_fighter_ad_tech_4",
+          "ger_transport_plane_4"
         ],
-        "effects": [
-          "waef_grant_german_jet_aircraft = yes"
-        ]
+        "effects": []
+      },
+      {
+        "id": "WAEF_GER_A4",
+        "code": "A4",
+        "year": 1947,
+        "days": 7,
+        "prerequisites": [
+          "WAEF_GER_A3",
+          "WAEF_GER_C25"
+        ],
+        "display_prerequisites": [
+          "WAEF_GER_A3",
+          "WAEF_GER_C25"
+        ],
+        "availability_requires": [],
+        "exclusive": [],
+        "technologies": [
+          "ger_jet_cv_fighter_1",
+          "ger_jet_cv_fighter_ad_tech_1",
+          "ger_jet_fighter_1",
+          "ger_jet_fighter_ad_tech_1",
+          "ger_jet_fighter_ad_tech_2",
+          "ger_jet_fighter_multirole_1",
+          "ger_jet_fighter_multirole_2",
+          "ger_jet_fighter_multirole_ad_tech_1",
+          "ger_jet_fighter_multirole_ad_tech_1_2",
+          "ger_jet_fighter_multirole_ad_tech_2",
+          "ger_jet_scout_plane_1",
+          "ger_jet_scout_plane_ad_tech_1"
+        ],
+        "effects": []
       },
       {
         "id": "WAEF_GER_W1",
@@ -1001,7 +1090,9 @@
         ],
         "technologies": [
           "ger_fighter_multirole_1",
-          "ger_fighter_multirole_ad_tech_1"
+          "ger_fighter_multirole_ad_tech_1",
+          "ger_scout_plane_3",
+          "ger_scout_plane_ad_tech_3"
         ],
         "effects": [
           "air_experience = 10"
@@ -1021,11 +1112,13 @@
         "availability_requires": [],
         "exclusive": [],
         "technologies": [
+          "ger_air_upgrade_1",
           "ger_cv_fighter_3",
           "ger_fighter_multirole_2",
           "ger_fighter_multirole_3",
           "ger_fighter_multirole_ad_tech_2",
-          "ger_fighter_multirole_ad_tech_3"
+          "ger_fighter_multirole_ad_tech_3",
+          "ger_transport_plane_3"
         ],
         "effects": []
       },
@@ -1047,80 +1140,40 @@
           "ger_fighter_multirole_4",
           "ger_fighter_multirole_5",
           "ger_fighter_multirole_ad_tech_4",
-          "ger_fighter_multirole_ad_tech_5"
-        ],
-        "effects": [
-          "waef_grant_german_jet_aircraft = yes"
-        ]
-      },
-      {
-        "id": "WAEF_GER_U1",
-        "code": "U1",
-        "year": 1941,
-        "days": 91,
-        "prerequisites": [
-          "WAEF_GER_C00"
-        ],
-        "display_prerequisites": [
-          "WAEF_GER_C00"
-        ],
-        "availability_requires": [],
-        "exclusive": [],
-        "technologies": [
-          "ger_scout_plane_3",
-          "ger_scout_plane_ad_tech_3"
-        ],
-        "effects": []
-      },
-      {
-        "id": "WAEF_GER_U2",
-        "code": "U2",
-        "year": 1943,
-        "days": 91,
-        "prerequisites": [
-          "WAEF_GER_U1"
-        ],
-        "display_prerequisites": [
-          "WAEF_GER_U1"
-        ],
-        "availability_requires": [],
-        "exclusive": [],
-        "technologies": [
-          "ger_air_upgrade_1",
-          "ger_heavy_fighter_2",
-          "ger_heavy_fighter_ad_tech_2",
-          "ger_heavy_fighter_ad_tech_conversion_2",
-          "ger_heavy_fighter_ad_tech_conversion_2_2",
-          "ger_heavy_fighter_ad_tech_conversion_3_2",
-          "ger_transport_plane_3"
-        ],
-        "effects": []
-      },
-      {
-        "id": "WAEF_GER_U3",
-        "code": "U3",
-        "year": 1945,
-        "days": 91,
-        "prerequisites": [
-          "WAEF_GER_U2"
-        ],
-        "display_prerequisites": [
-          "WAEF_GER_U2"
-        ],
-        "availability_requires": [],
-        "exclusive": [],
-        "technologies": [
+          "ger_fighter_multirole_ad_tech_5",
           "ger_heavy_fighter_3",
           "ger_heavy_fighter_4",
-          "ger_heavy_fighter_ad_tech_2_2",
           "ger_heavy_fighter_ad_tech_3",
           "ger_heavy_fighter_ad_tech_4",
-          "ger_heavy_fighter_ad_tech_conversion_4",
           "ger_transport_plane_4"
         ],
-        "effects": [
-          "waef_grant_german_jet_aircraft = yes"
-        ]
+        "effects": []
+      },
+      {
+        "id": "WAEF_GER_W4",
+        "code": "W4",
+        "year": 1947,
+        "days": 7,
+        "prerequisites": [
+          "WAEF_GER_W3",
+          "WAEF_GER_C25"
+        ],
+        "display_prerequisites": [
+          "WAEF_GER_W3",
+          "WAEF_GER_C25"
+        ],
+        "availability_requires": [],
+        "exclusive": [],
+        "technologies": [
+          "ger_jet_fighter_1",
+          "ger_jet_fighter_2",
+          "ger_jet_fighter_ad_tech_1",
+          "ger_jet_fighter_ad_tech_2",
+          "ger_jet_fighter_ad_tech_3",
+          "ger_jet_scout_plane_1",
+          "ger_jet_scout_plane_ad_tech_1"
+        ],
+        "effects": []
       },
       {
         "id": "WAEF_GER_S1",
@@ -1201,9 +1254,28 @@
           "ger_strike_bomber_ad_tech_3",
           "ger_tactical_bomber_ad_tech_4"
         ],
-        "effects": [
-          "waef_grant_german_jet_aircraft = yes"
-        ]
+        "effects": []
+      },
+      {
+        "id": "WAEF_GER_S4",
+        "code": "S4",
+        "year": 1947,
+        "days": 7,
+        "prerequisites": [
+          "WAEF_GER_S3",
+          "WAEF_GER_C25"
+        ],
+        "display_prerequisites": [
+          "WAEF_GER_S3",
+          "WAEF_GER_C25"
+        ],
+        "availability_requires": [],
+        "exclusive": [],
+        "technologies": [
+          "ger_jet_cas_1",
+          "ger_jet_cas_ad_tech_1"
+        ],
+        "effects": []
       },
       {
         "id": "WAEF_GER_B1",
@@ -1248,6 +1320,10 @@
         "exclusive": [],
         "technologies": [
           "ger_fast_bomber_ad_tech_4",
+          "ger_heavy_fighter_2",
+          "ger_heavy_fighter_ad_tech_conversion_2",
+          "ger_heavy_fighter_ad_tech_conversion_2_2",
+          "ger_heavy_fighter_ad_tech_conversion_3_2",
           "ger_patrol_ad_tech_3",
           "ger_strike_bomber_4",
           "ger_strike_bomber_ad_tech_3_2",
@@ -1275,6 +1351,7 @@
           "ger_cas_ad_tech_4",
           "ger_cv_cas_3",
           "ger_cv_cas_ad_tech_5",
+          "ger_heavy_fighter_ad_tech_conversion_4",
           "ger_naval_bomber_3",
           "ger_naval_bomber_ad_tech_3",
           "ger_patrol_3",
@@ -1286,9 +1363,34 @@
           "ger_tactical_bomber_ad_tech_4_3",
           "ger_tactical_bomber_ad_tech_5"
         ],
-        "effects": [
-          "waef_grant_german_jet_aircraft = yes"
-        ]
+        "effects": []
+      },
+      {
+        "id": "WAEF_GER_B4",
+        "code": "B4",
+        "year": 1947,
+        "days": 7,
+        "prerequisites": [
+          "WAEF_GER_B3",
+          "WAEF_GER_C25"
+        ],
+        "display_prerequisites": [
+          "WAEF_GER_B3",
+          "WAEF_GER_C25"
+        ],
+        "availability_requires": [],
+        "exclusive": [],
+        "technologies": [
+          "ger_jet_fast_bomber_ad_tech_1",
+          "ger_jet_fast_bomber_ad_tech_2",
+          "ger_jet_naval_bomber_1",
+          "ger_jet_naval_bomber_ad_tech_1",
+          "ger_jet_tactical_bomber_1",
+          "ger_jet_tactical_bomber_2",
+          "ger_jet_tactical_bomber_3",
+          "ger_jet_tactical_bomber_ad_tech_1"
+        ],
+        "effects": []
       },
       {
         "id": "WAEF_GER_R1",
@@ -1362,9 +1464,28 @@
           "ger_strike_bomber_ad_tech_3",
           "ger_tactical_bomber_ad_tech_4"
         ],
-        "effects": [
-          "waef_grant_german_jet_aircraft = yes"
-        ]
+        "effects": []
+      },
+      {
+        "id": "WAEF_GER_R4",
+        "code": "R4",
+        "year": 1947,
+        "days": 7,
+        "prerequisites": [
+          "WAEF_GER_R3",
+          "WAEF_GER_C25"
+        ],
+        "display_prerequisites": [
+          "WAEF_GER_R3",
+          "WAEF_GER_C25"
+        ],
+        "availability_requires": [],
+        "exclusive": [],
+        "technologies": [
+          "ger_jet_heavy_strategic_bomber_ad_tech_1",
+          "ger_jet_strategic_bomber_1"
+        ],
+        "effects": []
       },
       {
         "id": "WAEF_GER_O2",
@@ -8127,7 +8248,7 @@
     "ger_modern_2": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8135,7 +8256,7 @@
     "ger_modern_2_td": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8143,7 +8264,7 @@
     "ger_modern_2_spg": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8151,7 +8272,7 @@
     "ger_modern_2_aa": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8159,7 +8280,7 @@
     "ger_modern_3": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8167,7 +8288,7 @@
     "ger_modern_3_td": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8175,7 +8296,7 @@
     "ger_modern_3_spg": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8183,7 +8304,7 @@
     "ger_modern_4": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8191,7 +8312,7 @@
     "ger_modern_5": {
       "year": 1946,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8199,7 +8320,7 @@
     "ger_modern_5_td": {
       "year": 1947,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8207,7 +8328,7 @@
     "ger_modern_5_spg": {
       "year": 1947,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8215,7 +8336,7 @@
     "ger_modern_5_aa": {
       "year": 1947,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8223,7 +8344,7 @@
     "ger_modern_6": {
       "year": 1948,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8231,7 +8352,7 @@
     "ger_modern_7": {
       "year": 1950,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8239,7 +8360,7 @@
     "ger_modern_8": {
       "year": 1950,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8359,7 +8480,7 @@
     "ger_super_heavy_1": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_H1"
+        "WAEF_GER_H4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8367,7 +8488,7 @@
     "ger_super_heavy_2": {
       "year": 1946,
       "requires_focus": [
-        "WAEF_GER_H1"
+        "WAEF_GER_H4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8375,7 +8496,7 @@
     "ger_landkruiser_1": {
       "year": 1943,
       "requires_focus": [
-        "WAEF_GER_H1"
+        "WAEF_GER_H4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8671,7 +8792,7 @@
     "ger_modern_tank_chassis_1_2": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8679,7 +8800,7 @@
     "ger_modern_tank_1_td": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8687,7 +8808,7 @@
     "ger_modern_tank_1_spg": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8695,7 +8816,7 @@
     "ger_modern_tank_1_aa": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8703,7 +8824,7 @@
     "ger_modern_tank_chassis_1_3": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8711,7 +8832,7 @@
     "ger_modern_tank_1_2_td": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8719,7 +8840,7 @@
     "ger_modern_tank_1_2_spg": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8727,7 +8848,7 @@
     "ger_modern_tank_chassis_2": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8735,7 +8856,7 @@
     "ger_modern_tank_chassis_3": {
       "year": 1946,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8743,7 +8864,7 @@
     "ger_modern_tank_3_td": {
       "year": 1947,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8751,7 +8872,7 @@
     "ger_modern_tank_3_spg": {
       "year": 1947,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8759,7 +8880,7 @@
     "ger_modern_tank_3_aa": {
       "year": 1947,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8767,7 +8888,7 @@
     "ger_modern_tank_chassis_3_1": {
       "year": 1948,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8775,7 +8896,7 @@
     "ger_modern_tank_chassis_4": {
       "year": 1950,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8783,7 +8904,7 @@
     "ger_modern_tank_chassis_5": {
       "year": 1950,
       "requires_focus": [
-        "WAEF_GER_T1"
+        "WAEF_GER_T4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8863,7 +8984,7 @@
     "ger_heavy_assault_tank_4_spg": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_H1"
+        "WAEF_GER_H4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8879,7 +9000,7 @@
     "ger_heavy_tank_chassis_5": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_H1"
+        "WAEF_GER_H4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8935,7 +9056,7 @@
     "ger_super_heavy_tank_chassis_1": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_H1"
+        "WAEF_GER_H4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8943,7 +9064,7 @@
     "ger_super_heavy_tank_chassis_2": {
       "year": 1946,
       "requires_focus": [
-        "WAEF_GER_H1"
+        "WAEF_GER_H4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -8951,7 +9072,7 @@
     "ger_landkruiser_tank_chassis_1": {
       "year": 1943,
       "requires_focus": [
-        "WAEF_GER_H1"
+        "WAEF_GER_H4"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -9297,7 +9418,7 @@
     "ger_jet_fighter_multirole_1": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_A1"
+        "WAEF_GER_A4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9307,7 +9428,7 @@
     "ger_jet_cv_fighter_1": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_A1"
+        "WAEF_GER_A4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9317,7 +9438,8 @@
     "ger_jet_fighter_1": {
       "year": 1946,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A4",
+        "WAEF_GER_W4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9327,7 +9449,7 @@
     "ger_jet_fighter_2": {
       "year": 1947,
       "requires_focus": [
-        "WAEF_GER_W1"
+        "WAEF_GER_W4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9337,7 +9459,7 @@
     "ger_jet_cv_fighter_2": {
       "year": 1948,
       "requires_focus": [
-        "WAEF_GER_W1"
+        "WAEF_GER_W4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9347,7 +9469,7 @@
     "ger_jet_fighter_3": {
       "year": 1950,
       "requires_focus": [
-        "WAEF_GER_W1"
+        "WAEF_GER_W4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9357,7 +9479,7 @@
     "ger_jet_cv_fighter_3": {
       "year": 1950,
       "requires_focus": [
-        "WAEF_GER_W1"
+        "WAEF_GER_W4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9367,7 +9489,7 @@
     "ger_jet_fighter_multirole_2": {
       "year": 1946,
       "requires_focus": [
-        "WAEF_GER_A1"
+        "WAEF_GER_A4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9377,7 +9499,7 @@
     "ger_jet_fighter_multirole_3": {
       "year": 1948,
       "requires_focus": [
-        "WAEF_GER_A1"
+        "WAEF_GER_A4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9387,7 +9509,7 @@
     "ger_jet_fighter_multirole_4": {
       "year": 1950,
       "requires_focus": [
-        "WAEF_GER_A1"
+        "WAEF_GER_A4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9413,7 +9535,8 @@
     "ger_heavy_fighter_3": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A1",
+        "WAEF_GER_W1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -9421,7 +9544,8 @@
     "ger_heavy_fighter_4": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A1",
+        "WAEF_GER_W1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -9481,7 +9605,7 @@
     "ger_jet_cas_1": {
       "year": 1946,
       "requires_focus": [
-        "WAEF_GER_S1"
+        "WAEF_GER_S4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9491,7 +9615,7 @@
     "ger_jet_cas_2": {
       "year": 1949,
       "requires_focus": [
-        "WAEF_GER_S1"
+        "WAEF_GER_S4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9519,7 +9643,7 @@
     "ger_jet_naval_bomber_1": {
       "year": 1946,
       "requires_focus": [
-        "WAEF_GER_B1"
+        "WAEF_GER_B4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9529,7 +9653,7 @@
     "ger_jet_naval_bomber_2": {
       "year": 1949,
       "requires_focus": [
-        "WAEF_GER_B1"
+        "WAEF_GER_B4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9573,7 +9697,7 @@
     "ger_heavy_fighter_2": {
       "year": 1943,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_B1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -9607,7 +9731,7 @@
     "ger_jet_tactical_bomber_1": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_B1"
+        "WAEF_GER_B4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9617,7 +9741,7 @@
     "ger_jet_tactical_bomber_2": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_B1"
+        "WAEF_GER_B4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9627,7 +9751,7 @@
     "ger_jet_tactical_bomber_3": {
       "year": 1947,
       "requires_focus": [
-        "WAEF_GER_B1"
+        "WAEF_GER_B4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9637,7 +9761,7 @@
     "ger_jet_tactical_bomber_4": {
       "year": 1950,
       "requires_focus": [
-        "WAEF_GER_B1"
+        "WAEF_GER_B4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9673,7 +9797,7 @@
     "ger_jet_strategic_bomber_1": {
       "year": 1947,
       "requires_focus": [
-        "WAEF_GER_R1"
+        "WAEF_GER_R4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9683,7 +9807,7 @@
     "ger_jet_strategic_bomber_2": {
       "year": 1950,
       "requires_focus": [
-        "WAEF_GER_R1"
+        "WAEF_GER_R4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9693,7 +9817,8 @@
     "ger_scout_plane_3": {
       "year": 1941,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A1",
+        "WAEF_GER_W1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -9701,7 +9826,8 @@
     "ger_jet_scout_plane_1": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A4",
+        "WAEF_GER_W4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9711,7 +9837,8 @@
     "ger_transport_plane_3": {
       "year": 1942,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A1",
+        "WAEF_GER_W1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -9719,7 +9846,8 @@
     "ger_transport_plane_4": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A1",
+        "WAEF_GER_W1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -9767,7 +9895,8 @@
     "ger_jet_fighter_ad_tech_1": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A4",
+        "WAEF_GER_W4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9777,7 +9906,8 @@
     "ger_jet_fighter_ad_tech_2": {
       "year": 1946,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A4",
+        "WAEF_GER_W4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9827,7 +9957,7 @@
     "ger_jet_fighter_multirole_ad_tech_1": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_A1"
+        "WAEF_GER_A4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9837,7 +9967,7 @@
     "ger_jet_cv_fighter_ad_tech_1": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_A1"
+        "WAEF_GER_A4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9847,7 +9977,7 @@
     "ger_jet_fighter_multirole_ad_tech_1_2": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_A1"
+        "WAEF_GER_A4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9857,7 +9987,7 @@
     "ger_jet_fighter_ad_tech_3": {
       "year": 1947,
       "requires_focus": [
-        "WAEF_GER_W1"
+        "WAEF_GER_W4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9867,7 +9997,7 @@
     "ger_jet_cv_fighter_ad_tech_2": {
       "year": 1948,
       "requires_focus": [
-        "WAEF_GER_W1"
+        "WAEF_GER_W4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9877,7 +10007,7 @@
     "ger_jet_fighter_ad_tech_4": {
       "year": 1950,
       "requires_focus": [
-        "WAEF_GER_W1"
+        "WAEF_GER_W4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9887,7 +10017,7 @@
     "ger_jet_cv_fighter_ad_tech_3": {
       "year": 1950,
       "requires_focus": [
-        "WAEF_GER_W1"
+        "WAEF_GER_W4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9897,7 +10027,7 @@
     "ger_jet_fighter_multirole_ad_tech_2": {
       "year": 1946,
       "requires_focus": [
-        "WAEF_GER_A1"
+        "WAEF_GER_A4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9907,7 +10037,7 @@
     "ger_jet_fighter_multirole_ad_tech_3": {
       "year": 1948,
       "requires_focus": [
-        "WAEF_GER_A1"
+        "WAEF_GER_A4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9917,7 +10047,7 @@
     "ger_jet_fighter_multirole_ad_tech_4": {
       "year": 1950,
       "requires_focus": [
-        "WAEF_GER_A1"
+        "WAEF_GER_A4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -9943,7 +10073,7 @@
     "ger_heavy_fighter_ad_tech_2": {
       "year": 1943,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -9951,7 +10081,7 @@
     "ger_heavy_fighter_ad_tech_2_2": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -9959,7 +10089,8 @@
     "ger_heavy_fighter_ad_tech_3": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A1",
+        "WAEF_GER_W1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -9967,7 +10098,8 @@
     "ger_heavy_fighter_ad_tech_4": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A1",
+        "WAEF_GER_W1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -10027,7 +10159,7 @@
     "ger_jet_cas_ad_tech_1": {
       "year": 1946,
       "requires_focus": [
-        "WAEF_GER_S1"
+        "WAEF_GER_S4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -10037,7 +10169,7 @@
     "ger_jet_cas_ad_tech_2": {
       "year": 1949,
       "requires_focus": [
-        "WAEF_GER_S1"
+        "WAEF_GER_S4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -10065,7 +10197,7 @@
     "ger_jet_naval_bomber_ad_tech_1": {
       "year": 1946,
       "requires_focus": [
-        "WAEF_GER_B1"
+        "WAEF_GER_B4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -10075,7 +10207,7 @@
     "ger_jet_naval_bomber_ad_tech_2": {
       "year": 1949,
       "requires_focus": [
-        "WAEF_GER_B1"
+        "WAEF_GER_B4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -10111,7 +10243,7 @@
     "ger_heavy_fighter_ad_tech_conversion_2": {
       "year": 1942,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_B1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -10119,7 +10251,7 @@
     "ger_heavy_fighter_ad_tech_conversion_2_2": {
       "year": 1943,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_B1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -10127,7 +10259,7 @@
     "ger_heavy_fighter_ad_tech_conversion_3_2": {
       "year": 1942,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_B1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -10135,7 +10267,7 @@
     "ger_heavy_fighter_ad_tech_conversion_4": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_B1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -10161,7 +10293,7 @@
     "ger_jet_fast_bomber_ad_tech_1": {
       "year": 1944,
       "requires_focus": [
-        "WAEF_GER_B1"
+        "WAEF_GER_B4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -10171,7 +10303,7 @@
     "ger_jet_fast_bomber_ad_tech_2": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_B1"
+        "WAEF_GER_B4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -10181,7 +10313,7 @@
     "ger_jet_fast_bomber_ad_tech_3": {
       "year": 1949,
       "requires_focus": [
-        "WAEF_GER_B1"
+        "WAEF_GER_B4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -10251,7 +10383,7 @@
     "ger_jet_tactical_bomber_ad_tech_1": {
       "year": 1947,
       "requires_focus": [
-        "WAEF_GER_B1"
+        "WAEF_GER_B4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -10261,7 +10393,7 @@
     "ger_jet_tactical_bomber_ad_tech_2": {
       "year": 1950,
       "requires_focus": [
-        "WAEF_GER_B1"
+        "WAEF_GER_B4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -10297,7 +10429,7 @@
     "ger_jet_strategic_bomber_ad_tech_1": {
       "year": 1949,
       "requires_focus": [
-        "WAEF_GER_R1"
+        "WAEF_GER_R4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -10323,7 +10455,7 @@
     "ger_jet_heavy_strategic_bomber_ad_tech_1": {
       "year": 1947,
       "requires_focus": [
-        "WAEF_GER_R1"
+        "WAEF_GER_R4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -10333,7 +10465,7 @@
     "ger_jet_heavy_strategic_bomber_ad_tech_2": {
       "year": 1950,
       "requires_focus": [
-        "WAEF_GER_R1"
+        "WAEF_GER_R4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -10343,7 +10475,8 @@
     "ger_scout_plane_ad_tech_3": {
       "year": 1941,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A1",
+        "WAEF_GER_W1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -10351,7 +10484,8 @@
     "ger_jet_scout_plane_ad_tech_1": {
       "year": 1945,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A4",
+        "WAEF_GER_W4"
       ],
       "requires_all_focus": [
         "WAEF_GER_C25"
@@ -10369,7 +10503,8 @@
     "ger_air_upgrade_1": {
       "year": 1942,
       "requires_focus": [
-        "WAEF_GER_U1"
+        "WAEF_GER_A1",
+        "WAEF_GER_W1"
       ],
       "requires_all_focus": [],
       "calendar_gate": false
@@ -19568,61 +19703,5 @@
       "ita_interceptor_ad_tech_2",
       "ita_fighter_4"
     ]
-  },
-  "german_jet_rewards": [
-    {
-      "requires_all": [
-        "WAEF_GER_C25"
-      ],
-      "requires_any": [
-        "WAEF_GER_A3"
-      ],
-      "technologies": [
-        "ger_jet_cv_fighter_1",
-        "ger_jet_cv_fighter_ad_tech_1",
-        "ger_jet_fighter_multirole_1",
-        "ger_jet_fighter_multirole_ad_tech_1",
-        "ger_jet_fighter_multirole_ad_tech_1_2"
-      ]
-    },
-    {
-      "requires_all": [
-        "WAEF_GER_C25"
-      ],
-      "requires_any": [
-        "WAEF_GER_B3"
-      ],
-      "technologies": [
-        "ger_jet_fast_bomber_ad_tech_1",
-        "ger_jet_fast_bomber_ad_tech_2",
-        "ger_jet_tactical_bomber_1",
-        "ger_jet_tactical_bomber_2"
-      ]
-    },
-    {
-      "requires_all": [
-        "WAEF_GER_C25"
-      ],
-      "requires_any": [
-        "WAEF_GER_R3"
-      ],
-      "technologies": [
-        "ger_jet_heavy_strategic_bomber_ad_tech_1",
-        "ger_jet_strategic_bomber_1"
-      ]
-    },
-    {
-      "requires_all": [
-        "WAEF_GER_C25"
-      ],
-      "requires_any": [
-        "WAEF_GER_U3"
-      ],
-      "technologies": [
-        "ger_jet_fighter_ad_tech_1",
-        "ger_jet_scout_plane_1",
-        "ger_jet_scout_plane_ad_tech_1"
-      ]
-    }
-  ]
+  }
 }

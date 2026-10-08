@@ -120,7 +120,6 @@ def main():
     def loc(key,ru,en):locales['russian'][key]=ru;locales['english'][key]=en
     restrictions={};manifest={'wa_commit':baseline.WA_COMMIT,'plan_version':'1.1','german_revision':'2026-10-08','calendar_gates':False,'schools':{},'research_gates':{},'start_exceptions':START_EXCEPTIONS}
     ideas=[]
-    german_jet_rewards=[]
     for c,(ident,mods,ru,en) in COMMON_MODS.items():
         ideas.append(f'    {ident} = {{ picture = generic_research allowed = {{ always = no }} removal_cost = -1 modifier = {{ {mods} }} }}')
         loc(ident,spec['common'][[x[0] for x in spec['common']].index(c)][1],EN[c]);loc(ident+'_desc',ru,en)
@@ -167,8 +166,7 @@ def main():
                 else:assign(t,[n for n in by_code if re.fullmatch(route+r'[2-5]',n)])
             restrictions[name]=(t.year, f'WAEF_{code}_{branch}' if branch else None)
         if code=='GER':
-            german_packages,german_gates,german_jet_rewards=german.packages(techs,records)
-            manifest['german_jet_rewards']=german_jet_rewards
+            german_packages,german_gates=german.packages(techs,records)
             for node in packages:
                 if not node.startswith('C'):packages[node]=german_packages[node]
             for name,options in german_gates.items():restrictions[name]=(techs[name].year,options)
@@ -218,17 +216,6 @@ def main():
             if node=='O2':reward.append(f'set_country_flag = waef_{prefix}_operations_specialisation');ru_effect.append(desc);en_effect.append('Improves the national operational programme; see the decision description.')
             if node==EXPENSIVE.get(code):
                 reward.append('waef_start_armament_fatigue = yes');ru_effect.append('Дорогая программа: повторяющаяся миссия повышает усталость на 1 каждые 70 дней.');en_effect.append('Expensive programme: a recurring mission adds 1 fatigue every 70 days.')
-            if code=='GER' and node in german.JET_COMPLETIONS:
-                reward.append(german.JET_EFFECT+' = yes')
-                ru_effect.append('Реактивная техника выдаётся после электроники III и этапа III соответствующей авиационной ветви, в любом порядке завершения.')
-                en_effect.append('Jet aircraft are granted after Electronics III and stage III of their aviation route, completed in either order.')
-            if code=='GER' and node=='R3':
-                en_effect.append('Grants He 277 A-1 (BBA). Ju 132 requires Electronics III; compatible equipment mode is selected automatically.')
-            if code=='GER' and node=='R2':
-                en_effect.append('Grants the He 177 A-5, Me 264 and Ta 400 strategic package.')
-            if code=='GER' and node in ['S3','B3','R3']:
-                ru_effect.append('Также выдаёт базовые технологии этапа I двух других ударных авиационных направлений.')
-                en_effect.append('Also grants the stage I technologies of the other two strike aviation routes.')
             # Specific family bonuses, scoped to equipment granted by the selected route.
             bonus=None
             if (code,node) in [('SOV','TB4'),('FRA','TB4')]:bonus=('breakthrough',.05)
@@ -264,10 +251,7 @@ def main():
             if code=='GER':
                 for old,new in [('1941','I'),('1943','II'),('1945','III')]:entitle=entitle.replace(old,new)
             loc(fid,title,entitle)
-            rule_ru=f'Длительность: {days} дней. Без календарного ограничения.';rule_en=f'Duration: {days} days. No calendar restriction.'
-            if packages[node]:rule_ru+=' '+desc+'. Выдаёт доступные по DLC технологии своего периода.';rule_en+=' Grants period technologies compatible with the enabled DLC.'
-            if node in excludes:rule_ru+=' Исключает: '+', '.join(by_code[other][1] for other in excludes[node])+'.';rule_en+=' Mutually exclusive with '+', '.join((german.EN.get(other,EN[other]) if code=='GER' else NATIONAL_EN.get(code,{}).get(other,EN[other])) for other in excludes[node])+'.'
-            loc(fid+'_desc',' '.join([rule_ru]+ru_effect),' '.join([rule_en]+en_effect))
+            loc(fid+'_desc','','')
             nation_manifest.append({'id':fid,'code':node,'year':yr,'days':days,'prerequisites':[f'WAEF_{code}_{d}' for d in deps],'display_prerequisites':[f'WAEF_{code}_{d}' for d in visible_deps],'availability_requires':[f'WAEF_{code}_{d}' for d in hidden_links],'exclusive':[f'WAEF_{code}_{other}' for other in excludes.get(node,[])],'technologies':sorted(packages[node]),'effects':reward})
         chunks.append('}');write(f'common/national_focus/waef_{FILENAMES[code]}_tech_focus.txt','\n\n'.join(chunks)+'\n')
         loc(tree,nation['title']+': военные разработки',{'GER':'Germany','SOV':'Soviet Union','USA':'United States','ENG':'Britain','FRA':'France','ITA':'Italy','JAP':'Japan'}[code]+': Military Research')
@@ -311,14 +295,6 @@ def main():
     }
 }
 ''')
-    jets=['# A repeated call safely keeps the same technologies; either completion order works.',german.JET_EFFECT+' = {']
-    for entry in german_jet_rewards:
-        checks=' '.join('has_completed_focus = '+f for f in entry['requires_all'])
-        checks+=' OR = { '+' '.join('has_completed_focus = '+f for f in entry['requires_any'])+' }'
-        jets.append('    if = { limit = { '+checks+' }\n'+grant(entry['technologies'],indent='        ')+'\n    }')
-    jets.append('}')
-    effects=ROOT/'common/scripted_effects/waef_focus_effects.txt'
-    effects.write_text(effects.read_text()+'\n'+'\n'.join(jets)+'\n')
     write('common/decisions/waef_armament_fatigue.txt','''economy_fatigue = {
     waef_armament_fatigue = {
         icon = economy_fatigue

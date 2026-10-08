@@ -30,7 +30,6 @@ class GermanRevisionTests(unittest.TestCase):
         cls.manifest=json.loads((ROOT/'docs/NATIONAL_FOCUS_MANIFEST.json').read_text())
         cls.rows={r['code']:r for r in cls.manifest['schools']['GER']}
         cls.nodes=focus_nodes()
-        cls.jet_effect=get(read('common/scripted_effects/waef_focus_effects.txt'),'waef_grant_german_jet_aircraft')
         cls.catalogue=json.loads((ROOT/'docs/TECHNOLOGY_LOCALISATION_CATALOGUE.json').read_text())
         cls.air=baseline.technology_blocks((ROOT/'common/technologies/air_techs_ger.txt').read_text())
 
@@ -38,7 +37,7 @@ class GermanRevisionTests(unittest.TestCase):
         coords=[(int(get(self.nodes[r['id']],'x')),int(get(self.nodes[r['id']],'y'))) for r in self.rows.values()]
         self.assertEqual(min(x for x,y in coords),9)
         self.assertLessEqual(max(x for x,y in coords)-min(x for x,y in coords),17)
-        self.assertLessEqual(max(y for x,y in coords),7)
+        self.assertLessEqual(max(y for x,y in coords),8)
         # Nonoverlapping coordinates are not enough: adjacent labels also need room.
         for y in {y for x,y in coords}:
             xs=sorted(x for x,row in coords if row==y)
@@ -121,29 +120,22 @@ class GermanRevisionTests(unittest.TestCase):
         self.assertIn('ger_cv_fighter_3',self.rows['W2']['technologies'])
         self.assertIn('ger_cv_fighter_5',self.rows['W3']['technologies'])
 
-    def test_jet_grants_require_electronics_and_work_in_both_orders_and_dlc_modes(self):
-        for c in ['C25','A3','W3','S3','B3','R3','U3']:
-            self.assertEqual(get(get(self.nodes['WAEF_GER_'+c],'completion_reward'),'waef_grant_german_jet_aircraft'),'yes')
-        for r in self.rows.values():self.assertFalse(any('_jet_' in t for t in r['technologies']))
-        for dlcs in [set(),{'By Blood Alone'}, {'By Blood Alone','No Step Back'}]:
-            designer='By Blood Alone' in dlcs
-            for route in ['A3','B3','R3','U3']:
-                aircraft=set().union(*(set(e['technologies']) for e in self.manifest['german_jet_rewards'] if 'WAEF_GER_'+route in e['requires_any']))
-                expected={t for t in aircraft if ('_ad_tech_' in t)==designer}
-                self.assertTrue(expected)
-                for order in itertools.permutations(['C25',route]):
-                    done=set();awarded=set()
-                    for step in order:
-                        done.add('WAEF_GER_'+step)
-                        awarded|=grants(self.jet_effect,done,dlcs)
-                        if len(done)==1:self.assertFalse(awarded)
-                    self.assertEqual(awarded,expected,(order,dlcs))
-            # Focke-Wulf cannot receive or research Messerschmitt jet fighters.
-            self.assertFalse(grants(self.jet_effect,{'WAEF_GER_C25','WAEF_GER_W3'},dlcs))
-            # Finishing a strike alternative never awards the closed bomber jets.
-            self.assertFalse(grants(self.jet_effect,{'WAEF_GER_C25','WAEF_GER_S3'},dlcs))
-            strategic=grants(self.jet_effect,{'WAEF_GER_C25','WAEF_GER_R3'},dlcs)
-            self.assertEqual(strategic,{'ger_jet_heavy_strategic_bomber_ad_tech_1'} if designer else {'ger_jet_strategic_bomber_1'})
+    def test_jet_fourth_stages_have_two_native_prerequisites_and_seven_day_rewards(self):
+        for prefix in ['A','W','S','B','R']:
+            r=self.rows[prefix+'4'];node=self.nodes[r['id']]
+            self.assertEqual(r['days'],7)
+            expected={'WAEF_GER_'+prefix+'3','WAEF_GER_C25'}
+            self.assertEqual(set(r['prerequisites']),expected)
+            self.assertEqual({get(n.value,'focus') for n in node if n.key=='prerequisite'},expected)
+            self.assertTrue(r['technologies'])
+            self.assertTrue(all('_jet_' in t for t in r['technologies']))
+            for dlcs in [set(),{'By Blood Alone'}]:
+                actual=grants(get(node,'completion_reward'),set(),dlcs)
+                self.assertTrue(actual)
+                self.assertTrue(all(('_ad_tech_' in t)==('By Blood Alone' in dlcs) for t in actual))
+        for c,r in self.rows.items():
+            if c not in ['A4','W4','S4','B4','R4']:self.assertFalse(any('_jet_' in t for t in r['technologies']))
+        self.assertNotIn('waef_grant_german_jet_aircraft',(ROOT/'common/scripted_effects/waef_focus_effects.txt').read_text())
 
     def test_all_jet_research_including_postwar_models_requires_finished_electronics(self):
         checked=[]
@@ -160,9 +152,9 @@ class GermanRevisionTests(unittest.TestCase):
             checked.append(name)
         self.assertGreater(len(checked),20)
         for name in ['ger_jet_fighter_multirole_1','ger_jet_fighter_multirole_ad_tech_1']:
-            self.assertEqual(self.manifest['research_gates'][name]['requires_focus'],['WAEF_GER_A1'])
+            self.assertEqual(self.manifest['research_gates'][name]['requires_focus'],['WAEF_GER_A4'])
         for name in ['ger_jet_fighter_2','ger_jet_fighter_ad_tech_3']:
-            self.assertEqual(self.manifest['research_gates'][name]['requires_focus'],['WAEF_GER_W1'])
+            self.assertEqual(self.manifest['research_gates'][name]['requires_focus'],['WAEF_GER_W4'])
 
     def test_strategic_reallocation_fighter_swap_and_no_heavy_bonus(self):
         old_third={'ger_heavy_strategic_bomber_ad_tech_1','ger_heavy_strategic_bomber_ad_tech_2','ger_strategic_bomber_3','ger_strategic_bomber_ad_tech_2'}
@@ -178,7 +170,6 @@ class GermanRevisionTests(unittest.TestCase):
 
     def test_all_reward_technology_names_and_screenshot_keys_are_localized(self):
         required={t for rs in self.manifest['schools'].values() for r in rs for t in r['technologies']}
-        required|={t for entry in self.manifest['german_jet_rewards'] for t in entry['technologies']}
         required|={'ger_transport_plane_3','ger_attacker_ad_tech_3','ger_cas_ad_tech_4','ger_fast_bomber_ad_tech_3','ger_patrol_ad_tech_2','ger_strategic_bomber_ad_tech_1'}
         for lang in ['english','russian']:
             labels=localisation(lang);self.assertFalse(required-labels.keys())

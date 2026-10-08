@@ -30,7 +30,7 @@ class NationalLayoutTests(unittest.TestCase):
                     self.assertEqual((x,y),(int(get(ref[r['code']],'x')),int(get(ref[r['code']],'y'))))
             self.assertEqual(min(x for x,y in coords),9)
             self.assertLessEqual(max(x for x,y in coords),26)
-            self.assertLessEqual(max(y for x,y in coords),7)
+            self.assertLessEqual(max(y for x,y in coords),8 if code=='GER' else 7)
             for y in {y for x,y in coords}:
                 xs=sorted(x for x,row in coords if row==y)
                 self.assertTrue(all(b-a>=2 for a,b in zip(xs,xs[1:])),(code,y,xs))

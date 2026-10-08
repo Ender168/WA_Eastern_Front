@@ -3440,7 +3440,7 @@ technologies = {
 	}
 
 	ger_modern_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Panther G
 		enable_equipments = {
 			ger_modern_equipment_2
@@ -3496,7 +3496,7 @@ technologies = {
 	}
 
 	ger_modern_2_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Jagdpanther
 		enable_equipments = {
 			ger_modern_td_equipment_2
@@ -3531,7 +3531,7 @@ technologies = {
 	}
 
 	ger_modern_2_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #GW Panther
 		enable_equipments = {
 			ger_modern_spg_equipment_2
@@ -3566,7 +3566,7 @@ technologies = {
 	}
 
 	ger_modern_2_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Coelian
 		enable_equipments = {
 			ger_modern_aa_equipment_2
@@ -3601,7 +3601,7 @@ technologies = {
 	}
 
 	ger_modern_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Panther F
 		enable_equipments = {
 			ger_modern_equipment_3
@@ -3651,7 +3651,7 @@ technologies = {
 	}
 
 	ger_modern_3_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Skorpion
 		enable_equipments = {
 			ger_modern_td_equipment_3
@@ -3686,7 +3686,7 @@ technologies = {
 	}
 
 	ger_modern_3_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #RB Panther
 		enable_equipments = {
 			ger_modern_spg_equipment_3
@@ -3721,7 +3721,7 @@ technologies = {
 	}
 
 	ger_modern_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Panther II
 		enable_equipments = {
 			ger_modern_equipment_4
@@ -3766,7 +3766,7 @@ technologies = {
 	}
 
 	ger_modern_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #E 50
 		enable_equipments = {
 			ger_modern_equipment_5
@@ -3817,7 +3817,7 @@ technologies = {
 	}
 
 	ger_modern_5_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Jagdpanther E50
 		enable_equipments = {
 			ger_modern_td_equipment_5
@@ -3852,7 +3852,7 @@ technologies = {
 	}
 
 	ger_modern_5_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #GW E 50
 		enable_equipments = {
 			ger_modern_spg_equipment_5
@@ -3887,7 +3887,7 @@ technologies = {
 	}
 
 	ger_modern_5_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Flakpanzer E 50
 		enable_equipments = {
 			ger_modern_aa_equipment_4
@@ -3922,7 +3922,7 @@ technologies = {
 	}
 
 	ger_modern_6 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #E 55
 		enable_equipments = {
 			ger_modern_equipment_6
@@ -3972,7 +3972,7 @@ technologies = {
 	}
 
 	ger_modern_7 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #E 60
 		enable_equipments = {
 			ger_modern_equipment_7
@@ -4012,7 +4012,7 @@ technologies = {
 	}
 
 	ger_modern_8 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Leopard I
 		enable_equipments = {
 			ger_modern_equipment_8
@@ -4567,7 +4567,7 @@ technologies = {
 	}
 
 	ger_super_heavy_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H4 } } } }
  #Maus
 		enable_equipments = {
 			ger_super_heavy_equipment_1
@@ -4596,7 +4596,7 @@ technologies = {
 	}
 
 	ger_super_heavy_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H4 } } } }
  #E 100
 		enable_equipments = {
 			ger_super_heavy_equipment_2
@@ -4621,7 +4621,7 @@ technologies = {
 	}
 
 	ger_landkruiser_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H4 } } } }
  #Ratte
 		enable_equipments = {
 			ger_landkruiser_equipment_1
@@ -7427,7 +7427,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_1_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Panther G
 		enable_equipments = {
 			tank_ger_modern_chassis_1_2
@@ -7490,7 +7490,7 @@ technologies = {
 	}
 
 	ger_modern_tank_1_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Jagdpanther
 		enable_equipments = {
 			tank_ger_modern_chassis_td_1
@@ -7530,7 +7530,7 @@ technologies = {
 	}
 
 	ger_modern_tank_1_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #GW Panther
 		enable_equipments = {
 			tank_ger_modern_chassis_spg_1
@@ -7570,7 +7570,7 @@ technologies = {
 	}
 
 	ger_modern_tank_1_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Coelian
 		enable_equipments = {
 			tank_ger_modern_chassis_aa_1
@@ -7610,7 +7610,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_1_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Panther F
 		enable_equipments = {
 			tank_ger_modern_chassis_1_3
@@ -7663,7 +7663,7 @@ technologies = {
 	}
 
 	ger_modern_tank_1_2_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Skorpion
 		enable_equipments = {
 			tank_ger_modern_chassis_td_1_2
@@ -7703,7 +7703,7 @@ technologies = {
 	}
 
 	ger_modern_tank_1_2_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #RB Panther
 		enable_equipments = {
 			tank_ger_modern_chassis_spg_1_2
@@ -7743,7 +7743,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Panther II
 		enable_equipments = {
 			tank_ger_modern_chassis_2
@@ -7792,7 +7792,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_3 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #E 50
 		enable_equipments = {
 			tank_ger_modern_chassis_3
@@ -7843,7 +7843,7 @@ technologies = {
 	}
 
 	ger_modern_tank_3_td = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Jagdpanther E50
 		enable_equipments = {
 			tank_ger_modern_chassis_td_3
@@ -7883,7 +7883,7 @@ technologies = {
 	}
 
 	ger_modern_tank_3_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #GW E 50
 		enable_equipments = {
 			tank_ger_modern_chassis_spg_3
@@ -7923,7 +7923,7 @@ technologies = {
 	}
 
 	ger_modern_tank_3_aa = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Flakpanzer E 50
 		enable_equipments = {
 			tank_ger_modern_chassis_aa_3
@@ -7963,7 +7963,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_3_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #E 50m
 		enable_equipments = {
 			tank_ger_modern_chassis_3_2
@@ -8017,7 +8017,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_4 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #E 60
 		enable_equipments = {
 			tank_ger_modern_chassis_4
@@ -8057,7 +8057,7 @@ technologies = {
 	}
 
 	ger_modern_tank_chassis_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_T4 } } } }
  #Leopard I
 		enable_equipments = {
 			tank_ger_modern_chassis_5
@@ -8537,7 +8537,7 @@ technologies = {
 	}
 
 	ger_heavy_assault_tank_4_spg = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H4 } } } }
  #SturmTiger Bär
 		enable_equipments = {
 			tank_ger_heavy_chassis_assault_4
@@ -8602,7 +8602,7 @@ technologies = {
 	}
 
 	ger_heavy_tank_chassis_5 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H4 } } } }
  #Lowe
 		enable_equipments = {
 			tank_ger_heavy_chassis_5
@@ -8910,7 +8910,7 @@ technologies = {
 	}
 
 	ger_super_heavy_tank_chassis_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H4 } } } }
  #Maus
 		enable_equipments = {
 			tank_ger_super_heavy_chassis_1
@@ -8943,7 +8943,7 @@ technologies = {
 	}
 
 	ger_super_heavy_tank_chassis_2 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H4 } } } }
  #E 100
 		enable_equipments = {
 			tank_ger_super_heavy_chassis_2
@@ -8972,7 +8972,7 @@ technologies = {
 	}
 
 	ger_landkruiser_tank_chassis_1 = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H1 } } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_H4 } } } }
  #Ratte
 		enable_equipments = {
 			tank_ger_landkruiser_chassis_1
