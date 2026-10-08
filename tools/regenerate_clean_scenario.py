@@ -62,7 +62,7 @@ PLAYER_RESOURCE_PACKAGE = {
 PLAYER_BUILDING_PACKAGE = {
     "fuel_silo": 1,
     "hydro_steel_refinery": 1,
-    "hydro_aluminium_refinery": 5,
+    "hydro_aluminium_refinery": 1,
 }
 
 
@@ -159,7 +159,7 @@ def render_state(s: dict) -> str:
     ]
     if player:
         lines += [
-            "\t\t\tindustrial_complex = 2",
+            "\t\t\tindustrial_complex = 3",
             "\t\t\tarms_factory = 5",
         ]
         lines += [f"\t\t\t{key} = {value}" for key, value in PLAYER_BUILDING_PACKAGE.items()]

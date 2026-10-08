@@ -5,7 +5,8 @@ Branch: `test/strategic-state-mapicon` (retained for the next visual experiment)
 All 40 strategic cities from `tools/waef_strategic_cities.json` have 10 VP.
 Every other existing VP location, including OBS territory, has 1 VP.
 Provinces without a VP entry do not receive a new entry. City positions,
-state categories, 40 building slots and the supply network are preserved.
+state categories and the supply network are preserved. All categories now have
+20 base building slots.
 The map generator applies the same rule on regeneration and checks that
 every objective has a VP entry in its expected state.
 

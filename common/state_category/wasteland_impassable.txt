@@ -1,6 +1,6 @@
 state_categories= {
 	wasteland_impassable = {
-		local_building_slots = 0
+		local_building_slots = 20
 
 		color = { 40 40 40 }
 

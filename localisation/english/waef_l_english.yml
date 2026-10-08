@@ -174,3 +174,5 @@
  waef_unyielding_resistance_desc:0 "The front fights on until the scenario defeat conditions are met."
  waef_initial_production_drive:0 "Initial Production Drive"
  waef_initial_production_drive_desc:0 "A temporary industrial effort during the first six months of the scenario."
+ waef_accelerated_research:0 "Accelerated Research"
+ waef_accelerated_research_desc:0 "Extensive research support accelerates the development of the front."

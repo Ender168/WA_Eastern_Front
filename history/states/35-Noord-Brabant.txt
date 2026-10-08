@@ -35,11 +35,11 @@ state = {
 		}
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 2
+			industrial_complex = 3
 			arms_factory = 5
 			fuel_silo = 1
 			hydro_steel_refinery = 1
-			hydro_aluminium_refinery = 5
+			hydro_aluminium_refinery = 1
 		}
 	}
 

@@ -1,5 +1,13 @@
 ideas = {
     country = {
+        waef_accelerated_research = {
+            picture = generic_research
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { research_speed_factor = 10.0 }
+        }
+
         waef_unyielding_resistance = {
             picture = generic_manpower_bonus
             allowed = { always = no }

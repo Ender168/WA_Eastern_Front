@@ -174,3 +174,5 @@
  waef_unyielding_resistance_desc:0 "Фронт продолжает борьбу до выполнения условий поражения сценария."
  waef_initial_production_drive:0 "Стартовый производственный рывок"
  waef_initial_production_drive_desc:0 "Временное усиление промышленности на первые полгода сценария."
+ waef_accelerated_research:0 "Ускоренные исследования"
+ waef_accelerated_research_desc:0 "Масштабная поддержка исследований для ускоренного развития фронта."

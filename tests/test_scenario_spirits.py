@@ -44,10 +44,31 @@ class ScenarioSpiritTests(unittest.TestCase):
             self.assertEqual(get(get(limit, 'NOT'), 'has_idea'), 'waef_naval_doctrine_lock')
             self.assertFalse(any(n.key == 'has_idea' and n.value == 'waef_initial_doctrine_window' for n in walk(limit)))
 
+    def test_permanent_research_boost_for_both_sides(self):
+        ideas = get(get(read('common/ideas/waef_scenario_ideas.txt'), 'ideas'), 'country')
+        self.assertEqual(float(get(get(get(ideas, 'waef_accelerated_research'), 'modifier'), 'research_speed_factor')), 10.0)
+        for tag, name in [('WEF', 'Western'), ('EEF', 'Eastern')]:
+            history = read(f'history/countries/{tag} - {name} Front.txt')
+            self.assertEqual(sum(n.key == 'add_ideas' and n.value == 'waef_accelerated_research' for n in history), 1)
+
+    def test_player_buildings_and_all_category_slots(self):
+        for p in (ROOT/'history/states').glob('*.txt'):
+            state = get(read(p.relative_to(ROOT)), 'state')
+            history = get(state, 'history')
+            buildings = get(history, 'buildings')
+            if get(history, 'owner') in ('WEF', 'EEF'):
+                self.assertEqual(get(buildings, 'hydro_aluminium_refinery'), '1', p.name)
+                self.assertEqual(get(buildings, 'industrial_complex'), '3', p.name)
+            else:
+                self.assertIsNone(get(buildings, 'industrial_complex'), p.name)
+        for p in (ROOT/'common/state_category').glob('*.txt'):
+            slots = [n.value for n in walk(read(p.relative_to(ROOT))) if n.key == 'local_building_slots']
+            self.assertEqual(slots, ['20'], p.name)
+
     def test_localisation_for_both_languages(self):
         for lang in ('english', 'russian'):
             text = (ROOT/f'localisation/{lang}/waef_l_{lang}.yml').read_text(encoding='utf-8-sig')
-            for key in ('waef_unyielding_resistance', 'waef_initial_production_drive'):
+            for key in ('waef_unyielding_resistance', 'waef_initial_production_drive', 'waef_accelerated_research'):
                 for suffix in ('', '_desc'):
                     self.assertEqual(text.count(f' {key}{suffix}:0 '), 1)
 
