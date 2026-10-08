@@ -31,7 +31,7 @@ def main():
  loc('waef_operations_desc','Подготовка оборонительных рубежей.','Prepare defensive lines.')
  loc('waef_tactical_operations','Тактические наступления','Tactical Offensives')
  loc('waef_strategic_operations','Стратегические операции','Strategic Operations')
- loc('waef_tactical_operations_desc','Бонус действует в выбранном стейте с минимум 7 сухопутными провинциями. Подготовка: 7 дней, усталость +2% сразу. Наступление: 14 дней, +5% атаки. Каждые 10 дней наступления: +1% усталости. Полный захват цели завершает миссию и возвращает усталость подготовки.','The bonus applies in the selected state with at least 7 land provinces. Preparation: 7 days and +2% fatigue immediately. Offensive: 14 days and +5% attack. Every 10 offensive days: +1% fatigue. Full conquest completes the mission and refunds preparation fatigue.')
+ loc('waef_tactical_operations_desc','Бонус действует в выбранном стейте с минимум 7 сухопутными провинциями. Подготовка: 7 дней, усталость +2% сразу. Наступление: 14 дней, +5% атаки. Каждые 7 дней наступления: +1% усталости. Полный захват цели завершает миссию и возвращает усталость подготовки.','The bonus applies in the selected state with at least 7 land provinces. Preparation: 7 days and +2% fatigue immediately. Offensive: 14 days and +5% attack. Every 7 offensive days: +1% fatigue. Full conquest completes the mission and refunds preparation fatigue.')
  loc('waef_strategic_operations_desc','Бонус действует во всех игровых стейтах выбранного воздушного региона. Для запуска противник должен контролировать больше половины его сухопутных провинций. Подготовка: 30 дней, усталость +5% сразу. Наступление: 60 дней, +5% атаки и +10% восстановления организации. Каждые 10 дней наступления: +1% усталости. Полный захват целей завершает миссию и возвращает усталость подготовки.','The bonus applies in every playable state of the selected air region. The opponent must control more than half its land provinces at launch. Preparation: 30 days and +5% fatigue immediately. Offensive: 60 days, +5% attack and +10% organisation recovery. Every 10 offensive days: +1% fatigue. Full conquest completes the mission and refunds preparation fatigue.')
  loc('waef_local_offensive','[FROM.GetName]','[FROM.GetName]')
  loc('waef_local_offensive_desc','Подготовка: 7 дней.','Preparation: 7 days.')
@@ -40,6 +40,7 @@ def main():
  for key,amount in [('waef_local_cost_tt',25),('waef_regional_cost_tt',50)]:
   loc(key+'_blocked',f'£command_power §R{amount}§! £pol_power §R{amount}§!',f'£command_power §R{amount}§! £pol_power §R{amount}§!')
   loc(key+'_tooltip',f'£command_power §Y{amount}§! £pol_power §Y{amount}§!',f'£command_power §Y{amount}§! £pol_power §Y{amount}§!')
+ loc('waef_enemy_region_majority_tt','Противник контролирует больше половины сухопутных провинций региона.','The opponent controls more than half of the region’s land provinces.')
  loc('waef_fort_cost_tt','25 политвласти; с французским оперативным фокусом: 15.','25 political power; 15 with the French operational focus.')
  allowed='allowed = { OR = { tag = WEF tag = EEF } }'
  root_avail='NOT = { has_country_flag = waef_operation_in_progress }'
@@ -83,7 +84,7 @@ def main():
   prep.append(f'''    {key} = {{
         icon = generic_operation {allowed}
         visible = {{ always = yes }}
-        available = {{ {root_avail} waef_enemy_majority_region_{rid} = yes }}
+        available = {{ {root_avail} custom_trigger_tooltip = {{ tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_{rid} = yes }} }}
         custom_cost_trigger = {{ command_power > 49 has_political_power > 49 }}
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {{
@@ -111,10 +112,11 @@ def main():
         }}
     }}''')
  for scale,days in [('local',14),('regional',60)]:
+  interval=7 if scale=='local' else 10
   key=f'waef_{scale}_offensive_{days}';fatigue=f'waef_{scale}_operation_fatigue'
   loc(key,'Наступление','Offensive');loc(key+'_desc','Захватите все целевые провинции до истечения срока.','Capture every target province before the deadline.')
   loc(fatigue,'Усталость наступления','Offensive Fatigue')
-  loc(fatigue+'_desc','Каждые 10 дней: +1% усталости. Полный захват целей прекращает начисление.','Every 10 days: +1% fatigue. Full conquest stops further charges.')
+  loc(fatigue+'_desc',f'Каждые {interval} дней: +1% усталости. Полный захват целей прекращает начисление.',f'Every {interval} days: +1% fatigue. Full conquest stops further charges.')
   prep.append(f'''    {key} = {{
         icon = generic_operation {allowed}
         activation = {{ always = no }} selectable_mission = no
@@ -126,7 +128,7 @@ def main():
             if = {{ limit = {{ has_country_flag = waef_operation_{scale} }}
                 if = {{ limit = {{ waef_operation_full_control = yes }} waef_win_operation = yes }}
                 else = {{
-                    while_loop_effect = {{ limit = {{ check_variable = {{ waef_operation_fatigue_ticks < {days//10} }} }} waef_charge_offensive_fatigue = yes }}
+                    while_loop_effect = {{ limit = {{ check_variable = {{ waef_operation_fatigue_ticks < {days//interval} }} }} waef_charge_offensive_fatigue = yes }}
                     waef_cleanup_operation = yes
                 }}
             }}
@@ -136,7 +138,7 @@ def main():
         icon = economy_fatigue {allowed}
         activation = {{ always = no }} selectable_mission = no
         visible = {{ has_active_mission = {fatigue} }} available = {{ always = no }}
-        days_mission_timeout = 10 is_good = no
+        days_mission_timeout = {interval} is_good = no
         timeout_effect = {{
             if = {{ limit = {{ has_country_flag = waef_operation_active has_country_flag = waef_operation_{scale} }}
                 if = {{ limit = {{ waef_operation_full_control = yes }} waef_win_operation = yes }}

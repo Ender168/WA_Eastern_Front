@@ -19,9 +19,9 @@ Strategic launch requires strictly more than half of the full air region's land 
 
 ## Missions and fatigue
 
-Clicking a launch decision charges preparation fatigue immediately and starts a native 7/30-day preparation mission. Preparation adds no repeating charges. After preparation, the 14/60-day offensive mission and a separate repeating 10-day fatigue mission activate together. Each offensive fatigue timeout gives +1 fatigue point and reactivates its timer while the operation remains active. A 30-day offensive therefore costs 3 offensive points; the configured 60-day strategic offensive costs 6.
+Clicking a launch decision charges preparation fatigue immediately and starts a native 7/30-day preparation mission. Preparation adds no repeating charges. After preparation, the 14/60-day offensive mission and a separate repeating fatigue mission: every 7 days for tactical operations and every 10 days for strategic operations activate together. Each offensive fatigue timeout gives +1 fatigue point and reactivates its timer while the operation remains active. A 30-day offensive therefore costs 3 offensive points; the configured 60-day strategic offensive costs 6.
 
-Victory requires full control by the attacker of every target state, including all its provinces. Daily checks resolve victory automatically; fatigue and deadline callbacks check victory before charging. Cleanup removes preparation, offensive and fatigue missions, side-specific bonuses, flags and target arrays. Continued charges stop after victory. Offensive deadline failure adds no extra penalty and gives no refund. The final deadline settles any missing full 10-day interval to avoid callback-order undercharging, then stops all timers.
+Victory requires full control by the attacker of every target state, including all its provinces. Daily checks resolve victory automatically; fatigue and deadline callbacks check victory before charging. Cleanup removes preparation, offensive and fatigue missions, side-specific bonuses, flags and target arrays. Continued charges stop after victory. Offensive deadline failure adds no extra penalty and gives no refund. The final deadline settles any missing full fatigue interval (7/10 days) to avoid callback-order undercharging, then stops all timers.
 
 Success refunds only the actual preparation increase recorded at click time. Native WA fatigue effects maintain the fatigue idea and clamp 0..100. A blocked charge at cap 100 creates no refund credit. Offensive fatigue remains. Other fatigue mechanics are never reset to a launch snapshot. If the objective is conquered during preparation, the daily check also ends the mission and refunds preparation.
 
@@ -43,4 +43,8 @@ Read upstream WA 9.6 at 691c7085f3ec1333ac2a0742983da8a64011ca8b:
 
 ## Verification
 
-86 Python checks pass, including map thresholds, strict majority, immediate preparation charge, 30-day three-point accounting, cap refunds, success cancellation, category independence, no cooldown/failure war-support penalties, complete cleanup and temporary war access. Generated files reproduce from the generator. No in-game test has been performed in this environment. Begin a new test campaign; migrating an already active legacy operation is not supported.
+88 Python checks pass, including map thresholds, strict majority, immediate preparation charge, 30-day three-point accounting, cap refunds, success cancellation, category independence, no cooldown/failure war-support penalties, complete cleanup and temporary war access. Generated files reproduce from the generator. No in-game test has been performed in this environment. Begin a new test campaign; migrating an already active legacy operation is not supported.
+
+## Compact strategic condition tooltip
+
+Strategic availability wraps the exact province-count trigger in `custom_trigger_tooltip`. The UI shows one checked/failed sentence about enemy majority instead of expanding both country branches and every province. The full predicate still determines launch availability. Tactical fatigue localisation and the final-deadline accounting now use a 7-day interval; the 14-day tactical offensive therefore adds 2 offensive fatigue points if it runs its full duration. Strategic fatigue remains every 10 days.

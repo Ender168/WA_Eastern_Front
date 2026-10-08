@@ -39,3 +39,8 @@ class OperationsPrototypeTests(unittest.TestCase):
         for _ in range(16): op.tick()
         op.tick(victory=True)
         self.assertEqual((op.phase, op.fatigue), ('victory', 0))
+
+    def test_tactical_seven_day_intervals_give_two_points_in_fourteen_days(self):
+        op = Operation(7, 14, fatigue_interval=7)
+        for _ in range(21): op.tick()
+        self.assertEqual((op.phase, op.fatigue), ('failed', 4))

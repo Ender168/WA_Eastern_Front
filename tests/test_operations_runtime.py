@@ -32,7 +32,7 @@ class OperationsRuntimeTests(unittest.TestCase):
         for scale,cat in [('local','waef_tactical_operations'),('regional','waef_strategic_operations')]:
             key=f'waef_{scale}_operation_fatigue'
             mission=get(get(cats,cat),key)
-            self.assertEqual(get(mission,'days_mission_timeout'),'10')
+            self.assertEqual(get(mission,'days_mission_timeout'),'7' if scale=='local' else '10')
             timeout=list(walk(get(mission,'timeout_effect')))
             self.assertIn('waef_win_operation',[n.key for n in timeout])
             self.assertIn('waef_charge_offensive_fatigue',[n.key for n in timeout])
@@ -54,3 +54,14 @@ class OperationsRuntimeTests(unittest.TestCase):
         self.assertNotIn('add_timed_idea',[n.key for n in nodes])
         self.assertEqual({n.value for n in nodes if n.key=='target'},{'WEF','EEF'})
         self.assertEqual(get(decision,'cost'),'0')
+
+    def test_region_province_list_is_hidden_behind_one_tooltip(self):
+        cats=read('common/decisions/waef_focus_operations.txt')
+        for decision in get(cats,'waef_strategic_operations'):
+            if get(decision.value,'custom_cost_text') != 'waef_regional_cost_tt':
+                continue
+            available=get(decision.value,'available')
+            tooltip=get(available,'custom_trigger_tooltip')
+            self.assertEqual(get(tooltip,'tooltip'),'waef_enemy_region_majority_tt')
+            self.assertTrue(any(n.key.startswith('waef_enemy_majority_region_') for n in tooltip))
+            self.assertFalse(any(n.key.startswith('waef_enemy_majority_region_') for n in available))
