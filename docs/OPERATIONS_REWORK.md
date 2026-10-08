@@ -61,3 +61,9 @@ Read the actual upstream WA code, not a copied wiki example:
 - `SOV_set_military_offensive_effect` / `SOV_clean_military_offensive_effect` show a saved state array, scoped dynamic modifiers and explicit cleanup. Use this structure for independent WEF/EEF target lists.
 
 Interface decision: tactical icons on the map and visible in the decisions view, as Japan; strategic operations as named regional decisions with target-state highlights, as Soviet regional operations. Localisation must name the region, list target states, show preparation/offensive timers, weekly fatigue and refundable preparation points. No country-wide offensive modifier.
+
+## Implemented interface checkpoint: separate categories from game start
+
+The operations generator now emits `waef_tactical_operations` and `waef_strategic_operations` as separate categories visible immediately for WEF/EEF. Offensive launch decisions no longer require the `waef_operations_unlocked` flag. War remains a launch requirement. Each category has a disabled peacetime information card, so it is not empty before war. Active mission timers are visible only in their corresponding category. Fortification decisions remain in the existing, separately named Defensive Lines category and retain their original focus requirement.
+
+This checkpoint changes the actual game decision interface. It does not yet replace the old offensive durations/fatigue mechanics with the new accounting prototype above. That replacement is the next checkpoint.

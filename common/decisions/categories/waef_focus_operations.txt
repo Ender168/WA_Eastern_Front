@@ -1,1 +1,3 @@
+waef_tactical_operations = { icon = decision_category_military_operation allowed = { OR = { tag = WEF tag = EEF } } visible = { always = yes } }
+waef_strategic_operations = { icon = decision_category_military_operation allowed = { OR = { tag = WEF tag = EEF } } visible = { always = yes } }
 waef_operations = { icon = decision_category_military_operation allowed = { OR = { tag = WEF tag = EEF } } visible = { has_country_flag = waef_operations_unlocked } }

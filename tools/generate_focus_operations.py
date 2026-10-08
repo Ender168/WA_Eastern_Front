@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate focus-unlocked WAEF operations using WA's timed decision/mission pattern."""
+"""Generate initially visible tactical/strategic WAEF operations using WA's timed decision/mission pattern."""
 from pathlib import Path
 import json,re,argparse,csv
 from collections import Counter,defaultdict
@@ -27,8 +27,12 @@ def main():
  assert len(states)==282,len(states)
  locales={'russian':{},'english':{}}
  def loc(k,ru,en):locales['russian'][k]=ru;locales['english'][k]=en
- loc('waef_operations','Наступательные операции и оборонительные рубежи','Offensive Operations and Defensive Lines')
- loc('waef_operations_desc','Планируйте ограниченные операции на фронте. Усталость и ресурсы списываются при начале подготовки. Одновременно разрешена одна наступательная операция и одна работа по укреплению.','Plan limited frontline operations. Fatigue and resources are charged when preparation begins. One offensive operation and one fortification project may be active at a time.')
+ loc('waef_operations','Оборонительные рубежи','Defensive Lines')
+ loc('waef_tactical_operations','Тактические наступления','Tactical Offensives')
+ loc('waef_strategic_operations','Стратегические операции','Strategic Operations')
+ loc('waef_tactical_operations_desc','Операции в отдельных стейтах. Раздел доступен с начала игры; запуск требует войны.','Operations in individual states. Available from the start of the game; launching requires war.')
+ loc('waef_strategic_operations_desc','Операции в воздушных регионах. Раздел доступен с начала игры; запуск требует войны.','Operations in air regions. Available from the start of the game; launching requires war.')
+ loc('waef_operations_desc','Подготовка оборонительных рубежей после изучения оперативного фокуса.','Prepare defensive lines after completing the operations focus.')
  loc('waef_operation_targets_tt','Требуется полный контроль всех провинций целевых стейтов. Полный контроль союзной страны также засчитывается.','Every province of each target state must be under full friendly control. A fully controlling allied country also qualifies.')
  loc('waef_local_offensive','Локальное наступление: [FROM.GetName]','Local Offensive: [FROM.GetName]')
  loc('waef_local_offensive_desc','Цель: один соседний вражеский стейт. Подготовка: 7 дней, наступление: 21 день, либо 28 после японского оперативного фокуса. Цена: 25 политвласти и 25 командного ресурса, усталость +2. Во время наступления +5% атаки только в целевом стейте. Успех: усталость −1, поддержка войны +1 п.п.; провал: усталость +1, поддержка войны −2 п.п. Повтор по этому стейту закрыт на 365 дней. Итальянский оперативный фокус снижает политическую цену до 20.','Target: one adjacent enemy state. Preparation: 7 days. Offensive: 21 days, or 28 after the Japanese operational focus. Cost: 25 political power, 25 command power and +2 fatigue. +5% attack in the target state during the offensive. Success: −1 fatigue, +1 percentage point war support. Failure: +1 fatigue, −2 percentage points war support. Each target has a 365-day cooldown. The Italian operational focus reduces political cost to 20.')
@@ -39,7 +43,7 @@ def main():
  stamp='if = { limit = { ROOT = { tag = WEF } } set_state_flag = { flag = waef_wef_operation_cooldown days = 365 } } else = { set_state_flag = { flag = waef_eef_operation_cooldown days = 365 } }'
  frontline='controller = { has_war_with = ROOT } any_neighbor_state = { is_fully_controlled_by = ROOT }'
  allowed='allowed = { OR = { tag = WEF tag = EEF } }'
- root_avail='has_war = yes has_country_flag = waef_operations_unlocked NOT = { has_country_flag = waef_operation_in_progress }'
+ root_avail='has_war = yes NOT = { has_country_flag = waef_operation_in_progress }'
  targets=' '.join(str(s) for s in sorted(states))
  prep=[]
  prep.append(f'''    waef_local_offensive = {{
@@ -112,7 +116,7 @@ def main():
   prep.append(f'''    {key} = {{
         icon = generic_operation {allowed}
         activation = {{ always = no }} selectable_mission = no
-        visible = {{ has_country_flag = waef_operation_in_progress }}
+        visible = {{ has_active_mission = {key} }}
         available = {{ has_country_flag = waef_operation_in_progress waef_operation_full_control = yes }}
         days_mission_timeout = {days} is_good = yes
         cancel_trigger = {{ NOT = {{ has_war = yes }} }}
@@ -159,8 +163,18 @@ def main():
         }}
         ai_will_do = {{ base = 0 }}
     }}''')
- write('common/decisions/waef_focus_operations.txt','waef_operations = {\n'+'\n'.join(prep)+'\n}\n')
- write('common/decisions/categories/waef_focus_operations.txt','waef_operations = { icon = decision_category_military_operation allowed = { OR = { tag = WEF tag = EEF } } visible = { has_country_flag = waef_operations_unlocked } }\n')
+ groups={'waef_tactical_operations':[], 'waef_strategic_operations':[], 'waef_operations':[]}
+ for kind in ['tactical','strategic']:
+  key='waef_'+kind+'_operations_peacetime'
+  loc(key,'Подготовка наступлений: требуется война','Offensive Planning: War Required')
+  loc(key+'_desc','Раздел доступен с начала игры. Наступательные операции можно запускать после начала войны.','This category is available from the start of the game. Offensive operations can be launched once the war begins.')
+  groups['waef_'+kind+'_operations'].append(f'    {key} = {{ icon = generic_operation {allowed} visible = {{ has_war = no }} available = {{ always = no }} ai_will_do = {{ base = 0 }} }}')
+ for entry in prep:
+  key=re.search(r'waef_\w+',entry)[0]
+  category='waef_tactical_operations' if key.startswith('waef_local_offensive') else 'waef_strategic_operations' if key.startswith('waef_regional_offensive') else 'waef_operations'
+  groups[category].append(entry)
+ write('common/decisions/waef_focus_operations.txt','\n'.join(key+' = {\n'+'\n'.join(entries)+'\n}' for key,entries in groups.items())+'\n')
+ write('common/decisions/categories/waef_focus_operations.txt','waef_tactical_operations = { icon = decision_category_military_operation allowed = { OR = { tag = WEF tag = EEF } } visible = { always = yes } }\nwaef_strategic_operations = { icon = decision_category_military_operation allowed = { OR = { tag = WEF tag = EEF } } visible = { always = yes } }\nwaef_operations = { icon = decision_category_military_operation allowed = { OR = { tag = WEF tag = EEF } } visible = { has_country_flag = waef_operations_unlocked } }\n')
  write('common/scripted_triggers/waef_focus_operations.txt','''waef_operation_full_control = {
     check_variable = { waef_operation_states^num > 0 }
     all_of_scopes = {
