@@ -7,7 +7,7 @@ on_actions = {
             if = {
                 limit = {
                     date > 1941.1.29
-                    has_idea = waef_initial_doctrine_window
+                    NOT = { has_idea = waef_naval_doctrine_lock }
                 }
                 swap_ideas = {
                     remove_idea = waef_initial_doctrine_window
@@ -25,7 +25,7 @@ on_actions = {
             if = {
                 limit = {
                     date > 1941.1.29
-                    has_idea = waef_initial_doctrine_window
+                    NOT = { has_idea = waef_naval_doctrine_lock }
                 }
                 swap_ideas = {
                     remove_idea = waef_initial_doctrine_window

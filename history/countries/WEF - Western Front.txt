@@ -8,7 +8,11 @@ add_political_power = 800
 # Competitive doctrine setup.
 army_experience = 100
 air_experience = 100
-add_ideas = waef_initial_doctrine_window
+# 1 January to 30 January 1941; the timed idea exposes its expiry in the UI.
+add_timed_idea = { idea = waef_initial_doctrine_window days = 29 }
+add_ideas = waef_unyielding_resistance
+# First six calendar months: 1 January to 1 July 1941.
+add_timed_idea = { idea = waef_initial_production_drive days = 181 }
 add_ideas = waef_reduced_fuel_capacity_civilian
 
 # World Ablaze economic fatigue, initialized symmetrically at scenario start.

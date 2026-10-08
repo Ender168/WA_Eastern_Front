@@ -170,3 +170,7 @@
  waef_war_preparation_countdown_desc:0 "The 172-day preparations expire on June 22, 1941. At that point either front may use the scenario war declaration decision."
  waef_declare_scenario_war:0 "Declare War on the Opposing Front"
  waef_declare_scenario_war_desc:0 "Declare war directly on the opposing player, without justifying a war goal. The declaring side gains +10% division attack for 90 days."
+ waef_unyielding_resistance:0 "Unyielding Resistance"
+ waef_unyielding_resistance_desc:0 "The front fights on until the scenario defeat conditions are met."
+ waef_initial_production_drive:0 "Initial Production Drive"
+ waef_initial_production_drive_desc:0 "A temporary industrial effort during the first six months of the scenario."

@@ -1,5 +1,43 @@
 ideas = {
     country = {
+        waef_unyielding_resistance = {
+            picture = generic_manpower_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { surrender_limit = 1.0 }
+        }
+
+        waef_initial_production_drive = {
+            picture = generic_air_bonus
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = { production_factory_efficiency_gain_factor = 0.80 }
+            # WA 9.6 aircraft archetypes, including carrier aircraft and transports.
+            equipment_bonus = {
+                transport_plane_equipment = { instant = yes build_cost_ic = -0.20 }
+                small_fighter_airframe = { instant = yes build_cost_ic = -0.20 }
+                cv_small_fighter_airframe = { instant = yes build_cost_ic = -0.20 }
+                small_fighter_multirole_airframe = { instant = yes build_cost_ic = -0.20 }
+                small_fighter_interceptor_airframe = { instant = yes build_cost_ic = -0.20 }
+                small_bomber_airframe = { instant = yes build_cost_ic = -0.20 }
+                cv_small_bomber_airframe = { instant = yes build_cost_ic = -0.20 }
+                medium_fighter_multirole_airframe = { instant = yes build_cost_ic = -0.20 }
+                fast_bomber_airframe = { instant = yes build_cost_ic = -0.20 }
+                medium_bomber_airframe = { instant = yes build_cost_ic = -0.20 }
+                medium_heavy_bomber_airframe = { instant = yes build_cost_ic = -0.20 }
+                large_bomber_airframe = { instant = yes build_cost_ic = -0.20 }
+                large_heavy_bomber_airframe = { instant = yes build_cost_ic = -0.20 }
+                small_naval_bomber_airframe = { instant = yes build_cost_ic = -0.20 }
+                cv_small_naval_bomber_airframe = { instant = yes build_cost_ic = -0.20 }
+                medium_fighter_airframe = { instant = yes build_cost_ic = -0.20 }
+                medium_scout_airframe = { instant = yes build_cost_ic = -0.20 }
+                large_maritime_patrol_airframe = { instant = yes build_cost_ic = -0.20 }
+                suicide_craft_equipment = { instant = yes build_cost_ic = -0.20 }
+            }
+        }
+
         waef_mobilization_05 = {
             picture = generic_manpower_bonus
             allowed = { always = no }

@@ -13,6 +13,10 @@ ideas = {
 
             removal_cost = -1
 
+            # Expiry must retain the naval and dockyard restrictions, even if
+            # the engine expires the timer before the daily on_action runs.
+            on_remove = { add_ideas = waef_naval_doctrine_lock }
+
             modifier = {
                 land_doctrine_cost_factor = -1.0
                 air_doctrine_cost_factor = -1.0
