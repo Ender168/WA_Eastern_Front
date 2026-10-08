@@ -61,8 +61,8 @@ waef_tactical_operations = {
 waef_strategic_operations = {
     waef_regional_offensive_5 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_5 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_5 = yes waef_frontline_region_5 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_5 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_5 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -84,8 +84,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_6 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_6 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_6 = yes waef_frontline_region_6 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_6 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_6 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -104,8 +104,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_7 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_7 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_7 = yes waef_frontline_region_7 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_7 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_7 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -128,8 +128,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_8 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_8 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_8 = yes waef_frontline_region_8 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_8 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_8 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -151,8 +151,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_14 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_14 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_14 = yes waef_frontline_region_14 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_14 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_14 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -168,8 +168,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_19 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_19 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_19 = yes waef_frontline_region_19 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_19 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_19 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -188,8 +188,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_21 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_21 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_21 = yes waef_frontline_region_21 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_21 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_21 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -207,8 +207,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_22 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_22 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_22 = yes waef_frontline_region_22 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_22 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_22 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -231,8 +231,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_23 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_23 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_23 = yes waef_frontline_region_23 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_23 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_23 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -250,8 +250,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_24 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_24 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_24 = yes waef_frontline_region_24 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_24 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_24 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -281,8 +281,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_26 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_26 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_26 = yes waef_frontline_region_26 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_26 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_26 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -303,8 +303,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_27 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_27 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_27 = yes waef_frontline_region_27 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_27 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_27 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -328,8 +328,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_30 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_30 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_30 = yes waef_frontline_region_30 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_30 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_30 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -343,8 +343,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_37 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_37 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_37 = yes waef_frontline_region_37 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_37 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_37 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -370,8 +370,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_38 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_38 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_38 = yes waef_frontline_region_38 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_38 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_38 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -396,8 +396,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_39 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_39 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_39 = yes waef_frontline_region_39 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_39 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_39 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -419,8 +419,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_40 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_40 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_40 = yes waef_frontline_region_40 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_40 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_40 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -438,8 +438,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_116 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_116 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_116 = yes waef_frontline_region_116 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_116 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_116 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -454,8 +454,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_130 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_130 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_130 = yes waef_frontline_region_130 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_130 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_130 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -476,8 +476,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_131 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_131 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_131 = yes waef_frontline_region_131 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_131 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_131 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -497,8 +497,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_132 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_132 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_132 = yes waef_frontline_region_132 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_132 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_132 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -517,8 +517,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_133 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_133 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_133 = yes waef_frontline_region_133 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_133 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_133 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -540,8 +540,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_134 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_134 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_134 = yes waef_frontline_region_134 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_134 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_134 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -558,8 +558,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_135 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_135 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_135 = yes waef_frontline_region_135 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_135 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_135 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -575,8 +575,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_137 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_137 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_137 = yes waef_frontline_region_137 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_137 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_137 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -595,8 +595,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_138 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_138 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_138 = yes waef_frontline_region_138 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_138 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_138 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -613,8 +613,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_150 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_150 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_150 = yes waef_frontline_region_150 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_150 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_150 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -633,8 +633,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_239 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_239 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_239 = yes waef_frontline_region_239 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_239 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_239 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -649,8 +649,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_257 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_257 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_257 = yes waef_frontline_region_257 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_257 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_257 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -670,8 +670,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_270 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_270 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_270 = yes waef_frontline_region_270 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_270 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_270 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -692,8 +692,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_271 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_271 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_271 = yes waef_frontline_region_271 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_271 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_271 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -712,8 +712,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_272 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_272 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_272 = yes waef_frontline_region_272 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_272 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_272 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -731,8 +731,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_273 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_273 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_273 = yes waef_frontline_region_273 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_273 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_273 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -751,8 +751,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_274 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_274 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_274 = yes waef_frontline_region_274 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_274 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_274 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -766,8 +766,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_275 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_275 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_275 = yes waef_frontline_region_275 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_275 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_275 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -786,8 +786,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_288 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_288 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_288 = yes waef_frontline_region_288 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_288 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_288 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -803,8 +803,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_293 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_293 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_293 = yes waef_frontline_region_293 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_293 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_293 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -821,8 +821,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_294 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_294 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_294 = yes waef_frontline_region_294 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_294 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_294 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -843,8 +843,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_295 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_295 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_295 = yes waef_frontline_region_295 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_295 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_295 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -869,8 +869,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_296 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_296 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_296 = yes waef_frontline_region_296 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_296 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_296 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -895,8 +895,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_326 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_326 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_326 = yes waef_frontline_region_326 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_326 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_326 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -913,8 +913,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_339 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_339 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_339 = yes waef_frontline_region_339 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_339 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_339 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {
@@ -930,8 +930,8 @@ waef_strategic_operations = {
     }
     waef_regional_offensive_343 = {
         icon = generic_operation allowed = { OR = { tag = WEF tag = EEF } }
-        visible = { always = yes }
-        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_343 = yes } }
+        visible = { NOT = { has_country_flag = waef_operation_in_progress } command_power > 49 has_political_power > 49 waef_enemy_majority_region_343 = yes waef_frontline_region_343 = yes }
+        available = { NOT = { has_country_flag = waef_operation_in_progress } custom_trigger_tooltip = { tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_343 = yes } custom_trigger_tooltip = { tooltip = waef_region_frontline_tt waef_frontline_region_343 = yes } }
         custom_cost_trigger = { command_power > 49 has_political_power > 49 }
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {

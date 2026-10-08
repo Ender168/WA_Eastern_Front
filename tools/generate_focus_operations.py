@@ -41,6 +41,7 @@ def main():
   loc(key+'_blocked',f'£command_power §R{amount}§! £pol_power §R{amount}§!',f'£command_power §R{amount}§! £pol_power §R{amount}§!')
   loc(key+'_tooltip',f'£command_power §Y{amount}§! £pol_power §Y{amount}§!',f'£command_power §Y{amount}§! £pol_power §Y{amount}§!')
  loc('waef_enemy_region_majority_tt','Противник контролирует больше половины сухопутных провинций региона.','The opponent controls more than half of the region’s land provinces.')
+ loc('waef_region_frontline_tt','Целевой регион примыкает к нашему фронту.','The target region borders our frontline.')
  loc('waef_fort_cost_tt','25 политвласти; с французским оперативным фокусом: 15.','25 political power; 15 with the French operational focus.')
  allowed='allowed = { OR = { tag = WEF tag = EEF } }'
  root_avail='NOT = { has_country_flag = waef_operation_in_progress }'
@@ -77,14 +78,16 @@ def main():
  for rid,sids in sorted(regions.items()):
   ps=sorted(p for p,r in region_of.items() if r==rid and provinces.get(p)=='land')
   triggers.append(f'waef_enemy_majority_region_{rid} = {{ {enemy_check(ps,len(ps)//2+1)} }}')
+  frontline='OR = { '+' '.join(f'{sid} = {{ ROOT = {{ waef_enemy_in_state_{sid} = yes }} any_neighbor_state = {{ is_controlled_by = ROOT }} }}' for sid in sorted(sids))+' }'
+  triggers.append(f'waef_frontline_region_{rid} = {{ {frontline} }}')
   key=f'waef_regional_offensive_{rid}'
   loc(key,names_by_region[str(rid)]['russian'],names_by_region[str(rid)]['english'])
   loc(key+'_desc','Подготовка: 30 дней.','Preparation: 30 days.')
   add='\n'.join(f'            {sid} = {{ ROOT = {{ add_to_array = {{ waef_operation_states = PREV }} }} }}' for sid in sorted(sids))
   prep.append(f'''    {key} = {{
         icon = generic_operation {allowed}
-        visible = {{ always = yes }}
-        available = {{ {root_avail} custom_trigger_tooltip = {{ tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_{rid} = yes }} }}
+        visible = {{ {root_avail} command_power > 49 has_political_power > 49 waef_enemy_majority_region_{rid} = yes waef_frontline_region_{rid} = yes }}
+        available = {{ {root_avail} custom_trigger_tooltip = {{ tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_{rid} = yes }} custom_trigger_tooltip = {{ tooltip = waef_region_frontline_tt waef_frontline_region_{rid} = yes }} }}
         custom_cost_trigger = {{ command_power > 49 has_political_power > 49 }}
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {{

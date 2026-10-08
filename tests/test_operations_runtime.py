@@ -65,3 +65,21 @@ class OperationsRuntimeTests(unittest.TestCase):
             self.assertEqual(get(tooltip,'tooltip'),'waef_enemy_region_majority_tt')
             self.assertTrue(any(n.key.startswith('waef_enemy_majority_region_') for n in tooltip))
             self.assertFalse(any(n.key.startswith('waef_enemy_majority_region_') for n in available))
+
+    def test_unavailable_and_rear_regions_are_hidden(self):
+        cats=read('common/decisions/waef_focus_operations.txt')
+        triggers=read('common/scripted_triggers/waef_focus_operations.txt')
+        for decision in get(cats,'waef_strategic_operations'):
+            if get(decision.value,'custom_cost_text') != 'waef_regional_cost_tt':
+                continue
+            rid=decision.key.rsplit('_',1)[1]
+            visible=get(decision.value,'visible')
+            self.assertEqual(get(visible,'command_power'),'49')
+            self.assertEqual(get(visible,'has_political_power'),'49')
+            self.assertEqual(get(visible,'waef_enemy_majority_region_'+rid),'yes')
+            self.assertEqual(get(visible,'waef_frontline_region_'+rid),'yes')
+            self.assertIn('waef_operation_in_progress',[n.value for n in walk(visible) if n.key=='has_country_flag'])
+            frontline=get(triggers,'waef_frontline_region_'+rid)
+            for target in get(frontline,'OR'):
+                self.assertEqual(get(get(target.value,'ROOT'),'waef_enemy_in_state_'+target.key),'yes')
+                self.assertEqual(get(get(target.value,'any_neighbor_state'),'is_controlled_by'),'ROOT')

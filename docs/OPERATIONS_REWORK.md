@@ -43,8 +43,12 @@ Read upstream WA 9.6 at 691c7085f3ec1333ac2a0742983da8a64011ca8b:
 
 ## Verification
 
-88 Python checks pass, including map thresholds, strict majority, immediate preparation charge, 30-day three-point accounting, cap refunds, success cancellation, category independence, no cooldown/failure war-support penalties, complete cleanup and temporary war access. Generated files reproduce from the generator. No in-game test has been performed in this environment. Begin a new test campaign; migrating an already active legacy operation is not supported.
+89 Python checks pass, including map thresholds, strict majority, immediate preparation charge, 30-day three-point accounting, cap refunds, success cancellation, category independence, no cooldown/failure war-support penalties, complete cleanup and temporary war access. Generated files reproduce from the generator. No in-game test has been performed in this environment. Begin a new test campaign; migrating an already active legacy operation is not supported.
 
 ## Compact strategic condition tooltip
 
 Strategic availability wraps the exact province-count trigger in `custom_trigger_tooltip`. The UI shows one checked/failed sentence about enemy majority instead of expanding both country branches and every province. The full predicate still determines launch availability. Tactical fatigue localisation and the final-deadline accounting now use a 7-day interval; the 14-day tactical offensive therefore adds 2 offensive fatigue points if it runs its full duration. Strategic fatigue remains every 10 days.
+
+## Frontline and availability filtering
+
+Strategic launch decisions are visible only when all launch conditions and costs are met: no current operation, 50 command/political power, enemy control of more than half the region, and an enemy-held target state adjacent to a state controlled by the launching side. The frontline condition checks opponent-held provinces, so a friendly state in the region cannot make an otherwise remote region eligible by itself. Availability repeats the geographic checks using compact custom tooltips. Already running preparation/offensive/fatigue missions remain visible independently of the launch filter. Both categories retain their start-of-game visibility and do not require war.

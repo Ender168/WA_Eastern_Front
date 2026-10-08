@@ -14,6 +14,7 @@
  waef_regional_cost_tt_blocked:0 "£command_power §R50§! £pol_power §R50§!"
  waef_regional_cost_tt_tooltip:0 "£command_power §Y50§! £pol_power §Y50§!"
  waef_enemy_region_majority_tt:0 "Противник контролирует больше половины сухопутных провинций региона."
+ waef_region_frontline_tt:0 "Целевой регион примыкает к нашему фронту."
  waef_fort_cost_tt:0 "25 политвласти; с французским оперативным фокусом: 15."
  waef_regional_offensive_5:0 "Бенилюкс"
  waef_regional_offensive_5_desc:0 "Подготовка: 30 дней."

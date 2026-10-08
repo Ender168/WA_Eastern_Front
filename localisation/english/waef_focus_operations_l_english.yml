@@ -14,6 +14,7 @@
  waef_regional_cost_tt_blocked:0 "£command_power §R50§! £pol_power §R50§!"
  waef_regional_cost_tt_tooltip:0 "£command_power §Y50§! £pol_power §Y50§!"
  waef_enemy_region_majority_tt:0 "The opponent controls more than half of the region’s land provinces."
+ waef_region_frontline_tt:0 "The target region borders our frontline."
  waef_fort_cost_tt:0 "25 political power; 15 with the French operational focus."
  waef_regional_offensive_5:0 "Benelux Region"
  waef_regional_offensive_5_desc:0 "Preparation: 30 days."
