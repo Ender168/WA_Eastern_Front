@@ -11,20 +11,21 @@
     "effects"
   ],
   "schools": {
-    "SOV": "2fec66e89ab66fdbd2e0ae46552e7154c6bcea0c598eda110c7ffd4bf4dd9704",
-    "USA": "d6c582c4c86b30a58cc8ff37d553bdb3b506db88cd00bfc52e3b9229e7429108",
-    "ENG": "68211a1a96f28d091164ff9951f9f2891ef5e3d44e21249262aadbf24d51ffbd",
-    "FRA": "6ba7bb5bd3a73716581236784228bf910d976d41af2e81988493b412f6763415",
-    "ITA": "66a7b036609de5bcc2d891b640446fe7c6a789620a919ad0beab354b90b6f5de",
-    "JAP": "586ea787c3fbb7e264ee1aa43f60abceb4f211201dd86e753dba7cb1909095bb"
+    "SOV": "7cd618474b2a4ce5ab7f93b32d388480412f6b6adfac0a235ccbc944cd8bb27c",
+    "USA": "fc7e26ac2e16eb07b432e1811191988d8a3ba8fb5bc7a9a98599010edc45d569",
+    "ENG": "8743c40db39e6baae481e4606339c4e649fadeb02d7e44a07ce3685723fbaa72",
+    "FRA": "935266b487214662cba11ceebb7f6baad0854d1c08ee50492566e60c28922207",
+    "ITA": "a4e8e7ce323a192d21091f04390807fd6984801ecf69c3e59123ef29c7fd1df2",
+    "JAP": "ab09efa425e9216e59c5e359a32e2b90fb776812575da12de7a88100ab75871d"
   },
   "reward_ast": {
-    "SOV": "f85de38077a6cfc2d7ba1a868a1d08fc9e9a58c5a1135ce15ad059c5e130f3f3",
-    "USA": "392761f39d201ca2486e7a6701362da7e3ff09421a5e7ad3b5c366417307ee15",
-    "ENG": "72c0211cc01a8a92830cce5bc4b4e6225a19edd46ecf7bda9eea861b1ff90e3a",
-    "FRA": "85ecb7c049433a070a9854dbf5dcde69516ba297107bfc8c5e45eb89b4ecae84",
-    "ITA": "df164c48e30288f6451820db6cf5eb61e785a224c1041cb39a8ad9d91d29ab74",
-    "JAP": "2e206511641fc5c3a46635af67c73e1eab023ff6c422b69ebe962916e4d42c3c"
+    "SOV": "929d9016433307dcfff6aa61a6f3eaa4788eef2d6a6e8f9d74e3c5f5f829c79f",
+    "USA": "0830c112329ff0f638307866a05330eba12f85d3d81f7881e63f89d827438573",
+    "ENG": "5aba17c47e9a615862d495dc173f9565421006ac1b49479d8b33cfec298852df",
+    "FRA": "d051e1f8c9996cce596e38f93035a218691544fcc13a404c3590a8b54d4e2cf4",
+    "ITA": "8f773daa3da684d8815f1e1afbd40cde8363fa15035dc2a1056a92bb321f7c08",
+    "JAP": "a8ee3011be4a6cf1d0c0300e6e6574ae7d177daee6bc20d97fcbb1cc7627a229"
   },
-  "revision": "User document research speed надо.docx: country-specific years, model sequences and startup grants"
+  "revision": "User document research speed надо.docx: country-specific years, model sequences and startup grants",
+  "review_revision": "2026-10-13: remove inert O2 focuses and condition production-line grants on the production choice"
 }

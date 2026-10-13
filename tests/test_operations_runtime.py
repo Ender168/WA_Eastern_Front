@@ -74,8 +74,8 @@ class OperationsRuntimeTests(unittest.TestCase):
                 continue
             rid=decision.key.rsplit('_',1)[1]
             visible=get(decision.value,'visible')
-            self.assertEqual(get(visible,'command_power'),'49')
-            self.assertEqual(get(visible,'has_political_power'),'49')
+            for resource in ('command_power', 'has_political_power'):
+                self.assertTrue(any(n.key == 'NOT' and any(c.key == resource and c.op == '<' and c.value == '50' for c in n.value) for n in visible))
             self.assertEqual(get(visible,'waef_enemy_majority_region_'+rid),'yes')
             self.assertEqual(get(visible,'waef_frontline_region_'+rid),'yes')
             self.assertIn('waef_operation_in_progress',[n.value for n in walk(visible) if n.key=='has_country_flag'])

@@ -67,9 +67,10 @@ focus_tree = {
         continue_if_invalid = no
         prerequisite = { focus = WAEF_JAP_C13 }
         completion_reward = {
-
+            set_country_flag = waef_advanced_industry_complete
+            waef_sync_production_line = yes
             set_technology = { fuel_refining6 = 1 modern_oil_processing = 1 modern_rubber_processing = 1 }
-            if = { limit = { NOT = { has_dlc = "Arms Against Tyranny" } } set_technology = { airbase6_comp = 1 construction6_comp = 1 excavation6_comp = 1 expanded_industry6_comp = 1 flexible_line_comp = 1 industry_infrastructure6_comp = 1 industry_organization6_comp = 1 streamlined_line_comp = 1 } }
+            if = { limit = { NOT = { has_dlc = "Arms Against Tyranny" } } set_technology = { airbase6_comp = 1 construction6_comp = 1 excavation6_comp = 1 expanded_industry6_comp = 1 industry_infrastructure6_comp = 1 industry_organization6_comp = 1 } }
             if = { limit = { has_dlc = "Arms Against Tyranny" } set_technology = { airbase6 = 1 construction6 = 1 excavation6 = 1 expanded_industry6 = 1 industry_infrastructure6 = 1 industry_organization6 = 1 } }
         }
     }
@@ -185,6 +186,7 @@ focus_tree = {
         mutually_exclusive = { focus = WAEF_JAP_C42 }
         completion_reward = {
             add_ideas = waef_serial_production
+            waef_sync_production_line = yes
         }
     }
 
@@ -201,6 +203,7 @@ focus_tree = {
         mutually_exclusive = { focus = WAEF_JAP_C41 }
         completion_reward = {
             add_ideas = waef_flexible_production
+            waef_sync_production_line = yes
         }
     }
 
@@ -1112,21 +1115,6 @@ focus_tree = {
         completion_reward = {
 
             set_technology = { jap_mechanized_infantry_3 = 1 jap_mechanized_infantry_4 = 1 }
-        }
-    }
-
-    focus = {
-        id = WAEF_JAP_O2
-        icon = GFX_goal_generic_army_doctrine
-        x = 26
-        y = 5
-        cost = 10
-        available = { has_completed_focus = WAEF_JAP_I1 }
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        prerequisite = { focus = WAEF_JAP_C70 }
-        completion_reward = {
-            set_country_flag = waef_jap_operations_specialisation
         }
     }
 

@@ -26,7 +26,7 @@ class NationalLayoutTests(unittest.TestCase):
             coords=[]
             for r in rows:
                 node=self.nodes[r['id']];x,y=int(get(node,'x')),int(get(node,'y'));coords.append((x,y))
-                if r['code'].startswith('C') or r['code']=='O2':
+                if r['code'].startswith('C'):
                     self.assertEqual((x,y),(int(get(ref[r['code']],'x')),int(get(ref[r['code']],'y'))))
             self.assertEqual(min(x for x,y in coords),9)
             self.assertLessEqual(max(x for x,y in coords),26)

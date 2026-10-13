@@ -43,9 +43,9 @@ class NationalFocusTests(unittest.TestCase):
    for k,v in baseline.technology_blocks(p.read_text()).items():cls.techs[k]=baseline.parse_tech(k,str(p),v)
  def test_all_seven_schools_and_real_rewards(self):
   self.assertEqual(set(self.m['schools']),{'GER','SOV','USA','ENG','FRA','ITA','JAP'})
-  self.assertEqual(len(self.nodes),496)
+  self.assertEqual(len(self.nodes),491)
   for code,rows in self.m['schools'].items():
-   self.assertEqual(len(rows),{'GER':58,'SOV':83,'USA':75,'ENG':71,'FRA':71,'ITA':70,'JAP':68}[code])
+   self.assertEqual(len(rows),{'GER':57,'SOV':82,'USA':74,'ENG':71,'FRA':71,'ITA':69,'JAP':67}[code])
    for row in rows:
     node=self.nodes[row['id']];self.assertEqual(int(get(node,'cost'))*7,row['days'])
     self.assertTrue(get(node,'completion_reward'))

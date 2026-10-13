@@ -129,6 +129,8 @@ def main():
     for nation in spec['nations']:
         code=nation['code'];prefix=code.lower();school=SCHOOLS[code]
         records=german.records(spec['common']) if code=='GER' else national.records(spec['common'],nation,techs)
+        if code not in ('ENG', 'FRA'):
+            records = [r for r in records if r[0] != 'O2']
         by_code={r[0]:r for r in records}
         coordinates=layout.coordinates(records,code)
         packages={r[0]:set() for r in records};route_roots={}
@@ -143,7 +145,7 @@ def main():
             if t.doctrine or (not t.has_folder and 'enable_equipments' not in t.body) or t.year<=1940 or name in baseline.FORCE_EXCLUDE:continue
             file=Path(t.path).stem
             if file in ('industry','electronic_mechanical_engineering','support'):
-                if name in ('concentrated_industry','dispersed_industry','streamlined_line','flexible_line'):continue
+                if name in ('concentrated_industry','dispersed_industry','streamlined_line','flexible_line','streamlined_line_comp','flexible_line_comp'):continue
                 branch={'industry':'C1','electronic_mechanical_engineering':'C2','support':'C3'}[file]
                 assign(t,[branch+x for x in ('1','3','5')]);restrictions[name]=(t.year,None);continue
             if not file.endswith('_'+prefix):continue
@@ -213,6 +215,8 @@ def main():
             if node in ['P1','P2']:reward.append('set_technology = { standard_industry = 0 }')
             if node in COMMON_MODS:
                 ident,mods,ru,en=COMMON_MODS[node];reward.append('add_ideas = '+ident);ru_effect.append(ru);en_effect.append(en)
+            if node=='C15':reward.extend(['set_country_flag = waef_advanced_industry_complete', 'waef_sync_production_line = yes'])
+            if node in ('C41','C42'):reward.append('waef_sync_production_line = yes')
             if node=='C70':reward.append('set_country_flag = waef_operations_unlocked');ru_effect.append('Открывает наступательные операции и подготовку оборонительных рубежей.');en_effect.append('Unlocks offensive operations and defensive line preparation.')
             if node=='O2':reward.append(f'set_country_flag = waef_{prefix}_operations_specialisation');ru_effect.append(desc);en_effect.append('Improves the national operational programme; see the decision description.')
             if node==(EXPENSIVE.get(code) if code=='GER' else national.EXPENSIVE.get(code)):
@@ -278,7 +282,7 @@ def main():
         write(rel,raw)
     # Common production-line technologies require their chosen focus.
     raw=(ROOT/'common/technologies/industry.txt').read_text()
-    for name,node in [('streamlined_line','C41'),('flexible_line','C42')]:
+    for name,node in [('streamlined_line','C41'),('flexible_line','C42'),('streamlined_line_comp','C41'),('flexible_line_comp','C42')]:
         t=techs[name];m=re.search(r'\b'+name+r'\s*=\s*\{',raw);pos=raw.find('{',m.start())+1
         allowed=' '.join(f'has_completed_focus = WAEF_{code}_{node}' for code in SCHOOLS)
         gate=f'\n        allow = {{ OR = {{ NOT = {{ OR = {{ tag = WEF tag = EEF }} }} AND = {{ OR = {{ {allowed} }} }} }} }}\n'
@@ -288,7 +292,24 @@ def main():
     write('common/ideas/waef_focus_programmes.txt','ideas = { country = {\n'+'\n'.join(ideas)+'\n} }\n')
     loc('waef_armament_fatigue','Усталость от дорогой программы вооружений','Armament Programme Fatigue')
     loc('waef_armament_fatigue_desc','Каждые 70 дней активная дорогая программа повышает экономическую усталость на 1. Следующие фокусы и смена законов не сбрасывают таймер.','Every 70 days the active expensive programme adds 1 economic fatigue. Further focuses and law changes do not reset this timer.')
-    write('common/scripted_effects/waef_focus_effects.txt','''waef_start_armament_fatigue = {
+    write('common/scripted_effects/waef_focus_effects.txt','''waef_sync_production_line = {
+    if = {
+        limit = {
+            NOT = { has_dlc = "Arms Against Tyranny" }
+            has_country_flag = waef_advanced_industry_complete
+        }
+        if = {
+            limit = { has_idea = waef_serial_production }
+            set_technology = { flexible_line_comp = 0 streamlined_line_comp = 1 }
+        }
+        else_if = {
+            limit = { has_idea = waef_flexible_production }
+            set_technology = { streamlined_line_comp = 0 flexible_line_comp = 1 }
+        }
+    }
+}
+
+waef_start_armament_fatigue = {
     set_country_flag = waef_expensive_armament_programme
     if = {
         limit = { NOT = { has_active_mission = waef_armament_fatigue } }

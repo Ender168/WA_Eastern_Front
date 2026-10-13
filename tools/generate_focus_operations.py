@@ -63,7 +63,7 @@ def main():
         target_root_trigger = {{ {root_avail} }}
         target_trigger = {{ FROM = {{ {tactical_state_check} any_neighbor_state = {{ is_controlled_by = ROOT }} }} }}
         visible = {{ always = yes }} available = {{ {root_avail} }}
-        custom_cost_trigger = {{ command_power > 24 has_political_power > 24 }}
+        custom_cost_trigger = {{ NOT = {{ command_power < 25 }} NOT = {{ has_political_power < 25 }} }}
         custom_cost_text = waef_local_cost_tt fire_only_once = no
         complete_effect = {{
             set_country_flag = waef_operation_in_progress set_country_flag = waef_operation_local
@@ -86,9 +86,9 @@ def main():
   add='\n'.join(f'            {sid} = {{ ROOT = {{ add_to_array = {{ waef_operation_states = PREV }} }} }}' for sid in sorted(sids))
   prep.append(f'''    {key} = {{
         icon = generic_operation {allowed}
-        visible = {{ {root_avail} command_power > 49 has_political_power > 49 waef_enemy_majority_region_{rid} = yes waef_frontline_region_{rid} = yes }}
+        visible = {{ {root_avail} NOT = {{ command_power < 50 }} NOT = {{ has_political_power < 50 }} waef_enemy_majority_region_{rid} = yes waef_frontline_region_{rid} = yes }}
         available = {{ {root_avail} custom_trigger_tooltip = {{ tooltip = waef_enemy_region_majority_tt waef_enemy_majority_region_{rid} = yes }} custom_trigger_tooltip = {{ tooltip = waef_region_frontline_tt waef_frontline_region_{rid} = yes }} }}
-        custom_cost_trigger = {{ command_power > 49 has_political_power > 49 }}
+        custom_cost_trigger = {{ NOT = {{ command_power < 50 }} NOT = {{ has_political_power < 50 }} }}
         custom_cost_text = waef_regional_cost_tt fire_only_once = no
         complete_effect = {{
             set_country_flag = waef_operation_in_progress set_country_flag = waef_operation_regional
@@ -165,7 +165,7 @@ def main():
         target_trigger = {{ FROM = {{ is_fully_controlled_by = ROOT NOT = {{ has_state_flag = waef_defensive_line_completed }} }} }}
         visible = {{ has_country_flag = waef_operations_unlocked {school} }}
         available = {{ NOT = {{ has_country_flag = waef_fortification_in_progress }} }}
-        custom_cost_trigger = {{ OR = {{ AND = {{ has_country_flag = waef_fra_operations_specialisation has_political_power > 14 }} AND = {{ NOT = {{ has_country_flag = waef_fra_operations_specialisation }} has_political_power > 24 }} }} }}
+        custom_cost_trigger = {{ OR = {{ AND = {{ has_country_flag = waef_fra_operations_specialisation NOT = {{ has_political_power < 15 }} }} AND = {{ NOT = {{ has_country_flag = waef_fra_operations_specialisation }} NOT = {{ has_political_power < 25 }} }} }} }}
         custom_cost_text = waef_fort_cost_tt
         days_remove = {days} fire_only_once = no
         modifier = {{ civilian_factory_use = 2 }}

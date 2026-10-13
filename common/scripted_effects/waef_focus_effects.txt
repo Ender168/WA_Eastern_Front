@@ -1,3 +1,20 @@
+waef_sync_production_line = {
+    if = {
+        limit = {
+            NOT = { has_dlc = "Arms Against Tyranny" }
+            has_country_flag = waef_advanced_industry_complete
+        }
+        if = {
+            limit = { has_idea = waef_serial_production }
+            set_technology = { flexible_line_comp = 0 streamlined_line_comp = 1 }
+        }
+        else_if = {
+            limit = { has_idea = waef_flexible_production }
+            set_technology = { streamlined_line_comp = 0 flexible_line_comp = 1 }
+        }
+    }
+}
+
 waef_start_armament_fatigue = {
     set_country_flag = waef_expensive_armament_programme
     if = {

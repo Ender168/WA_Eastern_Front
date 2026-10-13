@@ -267,7 +267,7 @@ technologies = {
 	}
 
 	flexible_line_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_C42 has_completed_focus = WAEF_SOV_C42 has_completed_focus = WAEF_USA_C42 has_completed_focus = WAEF_ENG_C42 has_completed_focus = WAEF_FRA_C42 has_completed_focus = WAEF_ITA_C42 has_completed_focus = WAEF_JAP_C42 } } } }
 
 
 		production_factory_max_efficiency_factor = 0.1
@@ -312,7 +312,7 @@ technologies = {
 	}
 
 	streamlined_line_comp = {
-        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { always = yes } } }
+        allow = { OR = { NOT = { OR = { tag = WEF tag = EEF } } AND = { OR = { has_completed_focus = WAEF_GER_C41 has_completed_focus = WAEF_SOV_C41 has_completed_focus = WAEF_USA_C41 has_completed_focus = WAEF_ENG_C41 has_completed_focus = WAEF_FRA_C41 has_completed_focus = WAEF_ITA_C41 has_completed_focus = WAEF_JAP_C41 } } } }
 
 
 		production_factory_max_efficiency_factor = 0.1

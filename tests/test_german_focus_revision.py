@@ -50,7 +50,7 @@ class GermanRevisionTests(unittest.TestCase):
                                 if b.key=='set_technology' for x in b.value))
 
     def test_hidden_long_links_preserve_real_focus_requirements(self):
-        for c in ['T1','H1','A1','W1','S1','B1','R1','C70','O2']:
+        for c in ['T1','H1','A1','W1','S1','B1','R1','C70']:
             row=self.rows[c];node=self.nodes[row['id']]
             required=row['availability_requires']
             actual=[get(n.value,'focus') for n in node if n.key=='prerequisite']

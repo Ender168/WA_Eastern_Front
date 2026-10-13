@@ -111,17 +111,18 @@
           "excavation6_comp",
           "expanded_industry6",
           "expanded_industry6_comp",
-          "flexible_line_comp",
           "fuel_refining6",
           "industry_infrastructure6",
           "industry_infrastructure6_comp",
           "industry_organization6",
           "industry_organization6_comp",
           "modern_oil_processing",
-          "modern_rubber_processing",
-          "streamlined_line_comp"
+          "modern_rubber_processing"
         ],
-        "effects": []
+        "effects": [
+          "set_country_flag = waef_advanced_industry_complete",
+          "waef_sync_production_line = yes"
+        ]
       },
       {
         "id": "WAEF_GER_C21",
@@ -298,7 +299,8 @@
         ],
         "technologies": [],
         "effects": [
-          "add_ideas = waef_serial_production"
+          "add_ideas = waef_serial_production",
+          "waef_sync_production_line = yes"
         ]
       },
       {
@@ -318,7 +320,8 @@
         ],
         "technologies": [],
         "effects": [
-          "add_ideas = waef_flexible_production"
+          "add_ideas = waef_flexible_production",
+          "waef_sync_production_line = yes"
         ]
       },
       {
@@ -1487,27 +1490,6 @@
           "ger_jet_strategic_bomber_1"
         ],
         "effects": []
-      },
-      {
-        "id": "WAEF_GER_O2",
-        "code": "O2",
-        "year": 1942,
-        "days": 70,
-        "prerequisites": [
-          "WAEF_GER_C70",
-          "WAEF_GER_I1"
-        ],
-        "display_prerequisites": [
-          "WAEF_GER_C70"
-        ],
-        "availability_requires": [
-          "WAEF_GER_I1"
-        ],
-        "exclusive": [],
-        "technologies": [],
-        "effects": [
-          "set_country_flag = waef_ger_operations_specialisation"
-        ]
       }
     ],
     "SOV": [
@@ -1616,17 +1598,18 @@
           "excavation6_comp",
           "expanded_industry6",
           "expanded_industry6_comp",
-          "flexible_line_comp",
           "fuel_refining6",
           "industry_infrastructure6",
           "industry_infrastructure6_comp",
           "industry_organization6",
           "industry_organization6_comp",
           "modern_oil_processing",
-          "modern_rubber_processing",
-          "streamlined_line_comp"
+          "modern_rubber_processing"
         ],
-        "effects": []
+        "effects": [
+          "set_country_flag = waef_advanced_industry_complete",
+          "waef_sync_production_line = yes"
+        ]
       },
       {
         "id": "WAEF_SOV_C21",
@@ -1803,7 +1786,8 @@
         ],
         "technologies": [],
         "effects": [
-          "add_ideas = waef_serial_production"
+          "add_ideas = waef_serial_production",
+          "waef_sync_production_line = yes"
         ]
       },
       {
@@ -1823,7 +1807,8 @@
         ],
         "technologies": [],
         "effects": [
-          "add_ideas = waef_flexible_production"
+          "add_ideas = waef_flexible_production",
+          "waef_sync_production_line = yes"
         ]
       },
       {
@@ -3468,27 +3453,6 @@
           "sov_jet_strategic_bomber_ad_tech_1"
         ],
         "effects": []
-      },
-      {
-        "id": "WAEF_SOV_O2",
-        "code": "O2",
-        "year": 1942,
-        "days": 70,
-        "prerequisites": [
-          "WAEF_SOV_C70",
-          "WAEF_SOV_I1"
-        ],
-        "display_prerequisites": [
-          "WAEF_SOV_C70"
-        ],
-        "availability_requires": [
-          "WAEF_SOV_I1"
-        ],
-        "exclusive": [],
-        "technologies": [],
-        "effects": [
-          "set_country_flag = waef_sov_operations_specialisation"
-        ]
       }
     ],
     "USA": [
@@ -3597,17 +3561,18 @@
           "excavation6_comp",
           "expanded_industry6",
           "expanded_industry6_comp",
-          "flexible_line_comp",
           "fuel_refining6",
           "industry_infrastructure6",
           "industry_infrastructure6_comp",
           "industry_organization6",
           "industry_organization6_comp",
           "modern_oil_processing",
-          "modern_rubber_processing",
-          "streamlined_line_comp"
+          "modern_rubber_processing"
         ],
-        "effects": []
+        "effects": [
+          "set_country_flag = waef_advanced_industry_complete",
+          "waef_sync_production_line = yes"
+        ]
       },
       {
         "id": "WAEF_USA_C21",
@@ -3784,7 +3749,8 @@
         ],
         "technologies": [],
         "effects": [
-          "add_ideas = waef_serial_production"
+          "add_ideas = waef_serial_production",
+          "waef_sync_production_line = yes"
         ]
       },
       {
@@ -3804,7 +3770,8 @@
         ],
         "technologies": [],
         "effects": [
-          "add_ideas = waef_flexible_production"
+          "add_ideas = waef_flexible_production",
+          "waef_sync_production_line = yes"
         ]
       },
       {
@@ -5307,27 +5274,6 @@
           "usa_mechanized_infantry_7"
         ],
         "effects": []
-      },
-      {
-        "id": "WAEF_USA_O2",
-        "code": "O2",
-        "year": 1942,
-        "days": 70,
-        "prerequisites": [
-          "WAEF_USA_C70",
-          "WAEF_USA_I1"
-        ],
-        "display_prerequisites": [
-          "WAEF_USA_C70"
-        ],
-        "availability_requires": [
-          "WAEF_USA_I1"
-        ],
-        "exclusive": [],
-        "technologies": [],
-        "effects": [
-          "set_country_flag = waef_usa_operations_specialisation"
-        ]
       }
     ],
     "ENG": [
@@ -5436,17 +5382,18 @@
           "excavation6_comp",
           "expanded_industry6",
           "expanded_industry6_comp",
-          "flexible_line_comp",
           "fuel_refining6",
           "industry_infrastructure6",
           "industry_infrastructure6_comp",
           "industry_organization6",
           "industry_organization6_comp",
           "modern_oil_processing",
-          "modern_rubber_processing",
-          "streamlined_line_comp"
+          "modern_rubber_processing"
         ],
-        "effects": []
+        "effects": [
+          "set_country_flag = waef_advanced_industry_complete",
+          "waef_sync_production_line = yes"
+        ]
       },
       {
         "id": "WAEF_ENG_C21",
@@ -5623,7 +5570,8 @@
         ],
         "technologies": [],
         "effects": [
-          "add_ideas = waef_serial_production"
+          "add_ideas = waef_serial_production",
+          "waef_sync_production_line = yes"
         ]
       },
       {
@@ -5643,7 +5591,8 @@
         ],
         "technologies": [],
         "effects": [
-          "add_ideas = waef_flexible_production"
+          "add_ideas = waef_flexible_production",
+          "waef_sync_production_line = yes"
         ]
       },
       {
@@ -7169,17 +7118,18 @@
           "excavation6_comp",
           "expanded_industry6",
           "expanded_industry6_comp",
-          "flexible_line_comp",
           "fuel_refining6",
           "industry_infrastructure6",
           "industry_infrastructure6_comp",
           "industry_organization6",
           "industry_organization6_comp",
           "modern_oil_processing",
-          "modern_rubber_processing",
-          "streamlined_line_comp"
+          "modern_rubber_processing"
         ],
-        "effects": []
+        "effects": [
+          "set_country_flag = waef_advanced_industry_complete",
+          "waef_sync_production_line = yes"
+        ]
       },
       {
         "id": "WAEF_FRA_C21",
@@ -7356,7 +7306,8 @@
         ],
         "technologies": [],
         "effects": [
-          "add_ideas = waef_serial_production"
+          "add_ideas = waef_serial_production",
+          "waef_sync_production_line = yes"
         ]
       },
       {
@@ -7376,7 +7327,8 @@
         ],
         "technologies": [],
         "effects": [
-          "add_ideas = waef_flexible_production"
+          "add_ideas = waef_flexible_production",
+          "waef_sync_production_line = yes"
         ]
       },
       {
@@ -8873,17 +8825,18 @@
           "excavation6_comp",
           "expanded_industry6",
           "expanded_industry6_comp",
-          "flexible_line_comp",
           "fuel_refining6",
           "industry_infrastructure6",
           "industry_infrastructure6_comp",
           "industry_organization6",
           "industry_organization6_comp",
           "modern_oil_processing",
-          "modern_rubber_processing",
-          "streamlined_line_comp"
+          "modern_rubber_processing"
         ],
-        "effects": []
+        "effects": [
+          "set_country_flag = waef_advanced_industry_complete",
+          "waef_sync_production_line = yes"
+        ]
       },
       {
         "id": "WAEF_ITA_C21",
@@ -9060,7 +9013,8 @@
         ],
         "technologies": [],
         "effects": [
-          "add_ideas = waef_serial_production"
+          "add_ideas = waef_serial_production",
+          "waef_sync_production_line = yes"
         ]
       },
       {
@@ -9080,7 +9034,8 @@
         ],
         "technologies": [],
         "effects": [
-          "add_ideas = waef_flexible_production"
+          "add_ideas = waef_flexible_production",
+          "waef_sync_production_line = yes"
         ]
       },
       {
@@ -10402,27 +10357,6 @@
           "ita_mechanized_infantry_5"
         ],
         "effects": []
-      },
-      {
-        "id": "WAEF_ITA_O2",
-        "code": "O2",
-        "year": 1942,
-        "days": 70,
-        "prerequisites": [
-          "WAEF_ITA_C70",
-          "WAEF_ITA_I1"
-        ],
-        "display_prerequisites": [
-          "WAEF_ITA_C70"
-        ],
-        "availability_requires": [
-          "WAEF_ITA_I1"
-        ],
-        "exclusive": [],
-        "technologies": [],
-        "effects": [
-          "set_country_flag = waef_ita_operations_specialisation"
-        ]
       }
     ],
     "JAP": [
@@ -10531,17 +10465,18 @@
           "excavation6_comp",
           "expanded_industry6",
           "expanded_industry6_comp",
-          "flexible_line_comp",
           "fuel_refining6",
           "industry_infrastructure6",
           "industry_infrastructure6_comp",
           "industry_organization6",
           "industry_organization6_comp",
           "modern_oil_processing",
-          "modern_rubber_processing",
-          "streamlined_line_comp"
+          "modern_rubber_processing"
         ],
-        "effects": []
+        "effects": [
+          "set_country_flag = waef_advanced_industry_complete",
+          "waef_sync_production_line = yes"
+        ]
       },
       {
         "id": "WAEF_JAP_C21",
@@ -10718,7 +10653,8 @@
         ],
         "technologies": [],
         "effects": [
-          "add_ideas = waef_serial_production"
+          "add_ideas = waef_serial_production",
+          "waef_sync_production_line = yes"
         ]
       },
       {
@@ -10738,7 +10674,8 @@
         ],
         "technologies": [],
         "effects": [
-          "add_ideas = waef_flexible_production"
+          "add_ideas = waef_flexible_production",
+          "waef_sync_production_line = yes"
         ]
       },
       {
@@ -12041,27 +11978,6 @@
           "jap_mechanized_infantry_4"
         ],
         "effects": []
-      },
-      {
-        "id": "WAEF_JAP_O2",
-        "code": "O2",
-        "year": 1942,
-        "days": 70,
-        "prerequisites": [
-          "WAEF_JAP_C70",
-          "WAEF_JAP_I1"
-        ],
-        "display_prerequisites": [
-          "WAEF_JAP_C70"
-        ],
-        "availability_requires": [
-          "WAEF_JAP_I1"
-        ],
-        "exclusive": [],
-        "technologies": [],
-        "effects": [
-          "set_country_flag = waef_jap_operations_specialisation"
-        ]
       }
     ]
   },
@@ -12074,18 +11990,6 @@
     },
     "assembly_cranes_comp": {
       "year": 1943,
-      "requires_focus": null,
-      "requires_all_focus": [],
-      "calendar_gate": false
-    },
-    "flexible_line_comp": {
-      "year": 1945,
-      "requires_focus": null,
-      "requires_all_focus": [],
-      "calendar_gate": false
-    },
-    "streamlined_line_comp": {
-      "year": 1945,
       "requires_focus": null,
       "requires_all_focus": [],
       "calendar_gate": false
@@ -29228,6 +29132,16 @@
       "calendar_gate": false
     },
     "flexible_line": {
+      "year": 1945,
+      "choice": "C42",
+      "calendar_gate": false
+    },
+    "streamlined_line_comp": {
+      "year": 1945,
+      "choice": "C41",
+      "calendar_gate": false
+    },
+    "flexible_line_comp": {
       "year": 1945,
       "choice": "C42",
       "calendar_gate": false
